@@ -2944,7 +2944,7 @@ function showProduct(id) {
 
   document.getElementById('detailTitle').textContent = currentProduct.brand;
   document.getElementById('detailBrand').textContent = currentProduct.name + ' \u00B7 ' + currentProduct.type;
-  var productImageHtml = getProductImage(currentProduct, 110);
+  var productImageHtml = '<div onclick="openImageLightbox()" style="cursor:pointer;display:inline-block;position:relative;">' + getProductImage(currentProduct, 160) + '<div style="position:absolute;bottom:6px;right:6px;background:rgba(0,0,0,0.45);border-radius:6px;padding:3px 6px;font-size:10px;color:white;font-family:Poppins,sans-serif;pointer-events:none;">tap to zoom &#x1F50D;</div></div>';
   if (!productHasImage(currentProduct)) {
     productImageHtml += '<div style="text-align:center;"><button class="add-photo-btn" onclick="addPhotoToProduct('+currentProduct.id+')"><span>&#128247;</span> Add Photo</button></div>';
   }
@@ -4129,6 +4129,27 @@ function addPhotoToProduct(productId) {
 
 // findProductByBarcode is defined earlier in the file (with BARCODE_MAP lookup)
 
+
+function openImageLightbox() {
+  if (!currentProduct) return;
+  var imgKey = currentProduct.brand + ' - ' + currentProduct.name;
+  var imgPath = currentProduct._userPhoto || productImageMap[imgKey] || productImageMap[currentProduct.name] || null;
+  var overlay = document.createElement('div');
+  overlay.id = 'imgLightbox';
+  overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.88);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;box-sizing:border-box;';
+  overlay.onclick = function() { document.body.removeChild(overlay); };
+  var inner = '';
+  if (imgPath) {
+    inner = '<img src="'+imgPath+'" style="max-width:100%;max-height:80vh;object-fit:contain;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,0.5);" onerror="this.style.display='none'">';
+  } else {
+    inner = '<div style="width:260px;height:260px;border-radius:16px;background:linear-gradient(145deg,'+currentProduct.imgBg+',#333);display:flex;align-items:center;justify-content:center;font-size:48px;">'+currentProduct.imgText+'</div>';
+  }
+  inner += '<div style="color:white;margin-top:16px;font-family:Poppins,sans-serif;font-weight:700;font-size:16px;text-align:center;">'+currentProduct.brand+'</div>';
+  inner += '<div style="color:#aaa;margin-top:4px;font-family:Poppins,sans-serif;font-size:13px;text-align:center;">'+currentProduct.name+'</div>';
+  inner += '<div style="color:#888;margin-top:16px;font-family:Poppins,sans-serif;font-size:12px;">tap anywhere to close</div>';
+  overlay.innerHTML = inner;
+  document.body.appendChild(overlay);
+}
 </script>
 
 <!-- PRODUCT NOT FOUND SCREEN (Enhanced with Photo + OCR + Scoring) -->
