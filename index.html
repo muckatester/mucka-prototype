@@ -562,6 +562,9 @@ body::before {
   <button onclick="showNotFoundScreen('')" style="width:100%; margin-top:16px; padding:14px 20px; background:white; border:2px dashed #cbd5e0; border-radius:12px; font-size:14px; font-weight:600; font-family:'Poppins',sans-serif; color:#4a5568; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px; transition:all 0.2s;" onmousedown="this.style.borderColor='#EF973F';this.style.color='#EF973F'" onmouseup="this.style.borderColor='#cbd5e0';this.style.color='#4a5568'">
     <span style="font-size:20px;">&#128269;</span> Can't find a product? Report it here
   </button>
+  <button onclick="showScreen('about')" style="width:100%; margin-top:10px; padding:14px 20px; background:linear-gradient(135deg,#202C94,#75CFE7); border:none; border-radius:12px; font-size:14px; font-weight:600; font-family:'Poppins',sans-serif; color:white; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px; transition:all 0.2s;" onmousedown="this.style.opacity='0.85'" onmouseup="this.style.opacity='1'">
+    <span style="font-size:20px;">&#9733;</span> How We Score
+  </button>
   <div class="home-footer-stat" id="homeFooterStat">1164+ products &middot; Made in Australia 🇦🇺</div>
 </div>
 
@@ -692,12 +695,15 @@ body::before {
   </div>
   <div class="section-card">
     <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#202C94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>Settings</h2>
-    <div class="cred-row"><span class="cred-label">Products in Database</span><span class="cred-value">1,076</span></div>
+    <div class="cred-row"><span class="cred-label">Products in Database</span><span class="cred-value" id="profileProductCount">1,164</span></div>
     <div class="cred-row"><span class="cred-label">App Version</span><span class="cred-value">2.1 Beta</span></div>
     <div class="cred-row"><span class="cred-label">Region</span><span class="cred-value">&#127462;&#127482; Australia</span></div>
     <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #f0f4f8;">
       <button onclick="showNotFoundScreen('')" style="width: 100%; padding: 12px; background: linear-gradient(135deg, #75CFE7, #202C94); color: white; border: none; border-radius: 10px; font-size: 14px; font-weight: 600; font-family: 'Poppins', sans-serif; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;">
         <span style="font-size: 18px;">&#128270;</span> Report a Missing Product
+      </button>
+      <button onclick="showScreen('about')" style="width: 100%; padding: 12px; background: white; color: #202C94; border: 2px solid #202C94; border-radius: 10px; font-size: 14px; font-weight: 600; font-family: 'Poppins', sans-serif; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 10px;">
+        <span style="font-size: 18px;">&#9881;&#65039;</span> How We Score
       </button>
     </div>
   </div>
@@ -808,6 +814,85 @@ body::before {
 
   <button class="score-it-btn" onclick="scoreNewProduct()">&#128062; Score This Product!</button>
   <div id="addResult" style="margin-top:20px;"></div>
+</div>
+
+<!-- ABOUT / METHODOLOGY SCREEN -->
+<div class="screen" id="screen-about">
+  <div style="padding: 0 0 80px 0;">
+    <div style="background: linear-gradient(135deg, #202C94, #75CFE7); padding: 24px 20px 20px; margin-bottom: 0;">
+      <button onclick="showScreen('profile')" style="background:none;border:none;color:white;font-size:22px;cursor:pointer;padding:0;margin-bottom:12px;">&#8592;</button>
+      <div style="font-size:22px;font-weight:800;color:white;font-family:Poppins,sans-serif;">How We Score</div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.8);font-family:Poppins,sans-serif;margin-top:4px;">Science-based. Transparent. Australian-first.</div>
+    </div>
+    <div style="padding: 20px 16px 0;">
+      <div style="background:white;border-radius:12px;padding:16px;border:2px solid #e2e8f0;box-shadow:0 2px 8px rgba(0,0,0,0.06);margin-bottom:16px;">
+        <p style="font-size:14px;color:#4a5568;font-family:Poppins,sans-serif;line-height:1.6;margin:0;">Every product in Mucka receives a score from <strong>0 to 100</strong> based on two things: how good the ingredients are, and how trustworthy the company behind the food is. We follow veterinary science and Australian standards &mdash; not marketing claims or consumer trends.</p>
+      </div>
+
+      <div style="font-size:16px;font-weight:800;color:#202C94;font-family:Poppins,sans-serif;margin-bottom:12px;">&#128200; The Score Breakdown</div>
+      <div style="background:white;border-radius:12px;border:2px solid #e2e8f0;box-shadow:0 2px 8px rgba(0,0,0,0.06);overflow:hidden;margin-bottom:16px;">
+        <div style="display:flex;align-items:center;padding:14px 16px;border-bottom:1px solid #f0f4f8;">
+          <div style="width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,#48bb78,#276749);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">&#127807;</div>
+          <div style="margin-left:14px;flex:1;"><div style="font-weight:700;font-size:15px;font-family:Poppins,sans-serif;">Ingredient Quality</div><div style="font-size:12px;color:#718096;font-family:Poppins,sans-serif;">Up to 85 points</div></div>
+          <div style="font-size:22px;font-weight:800;color:#48bb78;font-family:Poppins,sans-serif;">85%</div>
+        </div>
+        <div style="display:flex;align-items:center;padding:14px 16px;">
+          <div style="width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,#202C94,#75CFE7);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">&#127963;</div>
+          <div style="margin-left:14px;flex:1;"><div style="font-weight:700;font-size:15px;font-family:Poppins,sans-serif;">Manufacturer Trust</div><div style="font-size:12px;color:#718096;font-family:Poppins,sans-serif;">Up to 15 points</div></div>
+          <div style="font-size:22px;font-weight:800;color:#202C94;font-family:Poppins,sans-serif;">15%</div>
+        </div>
+      </div>
+
+      <div style="font-size:16px;font-weight:800;color:#202C94;font-family:Poppins,sans-serif;margin-bottom:12px;">&#127807; What Makes a Good Ingredient Score?</div>
+      <div style="background:white;border-radius:12px;border:2px solid #e2e8f0;box-shadow:0 2px 8px rgba(0,0,0,0.06);padding:16px;margin-bottom:16px;">
+        <p style="font-size:13px;color:#4a5568;font-family:Poppins,sans-serif;line-height:1.6;margin:0 0 12px;">We analyse the full ingredient list and apply bonuses and penalties:</p>
+        <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:8px;"><span style="color:#48bb78;font-weight:800;font-size:18px;flex-shrink:0;line-height:1.4;">+</span><span style="font-size:13px;color:#4a5568;font-family:Poppins,sans-serif;">Named whole meat as first ingredient (e.g. &ldquo;Chicken&rdquo; not &ldquo;Poultry&rdquo;)</span></div>
+        <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:8px;"><span style="color:#48bb78;font-weight:800;font-size:18px;flex-shrink:0;line-height:1.4;">+</span><span style="font-size:13px;color:#4a5568;font-family:Poppins,sans-serif;">Multiple named protein sources</span></div>
+        <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:8px;"><span style="color:#48bb78;font-weight:800;font-size:18px;flex-shrink:0;line-height:1.4;">+</span><span style="font-size:13px;color:#4a5568;font-family:Poppins,sans-serif;">Named healthy oils, probiotics, glucosamine, omega-3</span></div>
+        <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:8px;"><span style="color:#e53e3e;font-weight:800;font-size:18px;flex-shrink:0;line-height:1.4;">&minus;</span><span style="font-size:13px;color:#4a5568;font-family:Poppins,sans-serif;">Vague ingredients like &ldquo;meat by-products&rdquo; or &ldquo;animal ingredients&rdquo;</span></div>
+        <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:8px;"><span style="color:#e53e3e;font-weight:800;font-size:18px;flex-shrink:0;line-height:1.4;">&minus;</span><span style="font-size:13px;color:#4a5568;font-family:Poppins,sans-serif;">Artificial colours, preservatives, or unspecified flavours</span></div>
+        <div style="display:flex;align-items:flex-start;gap:10px;"><span style="color:#e53e3e;font-weight:800;font-size:18px;flex-shrink:0;line-height:1.4;">&minus;</span><span style="font-size:13px;color:#4a5568;font-family:Poppins,sans-serif;">Cheap fillers as major ingredients</span></div>
+      </div>
+
+      <div style="font-size:16px;font-weight:800;color:#202C94;font-family:Poppins,sans-serif;margin-bottom:12px;">&#127963; What Affects Manufacturer Trust?</div>
+      <div style="background:white;border-radius:12px;border:2px solid #e2e8f0;box-shadow:0 2px 8px rgba(0,0,0,0.06);padding:16px;margin-bottom:16px;">
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f0f4f8;"><span style="font-size:13px;font-family:Poppins,sans-serif;">&#x2705; Employs a vet nutritionist</span><span style="font-size:13px;font-weight:700;color:#202C94;font-family:Poppins,sans-serif;">+5 pts</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f0f4f8;"><span style="font-size:13px;font-family:Poppins,sans-serif;">&#x2705; Conducts feeding trials</span><span style="font-size:13px;font-weight:700;color:#202C94;font-family:Poppins,sans-serif;">+4 pts</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f0f4f8;"><span style="font-size:13px;font-family:Poppins,sans-serif;">&#x2705; WSAVA compliant</span><span style="font-size:13px;font-weight:700;color:#202C94;font-family:Poppins,sans-serif;">+3 pts</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f0f4f8;"><span style="font-size:13px;font-family:Poppins,sans-serif;">&#x2705; Transparent about sourcing</span><span style="font-size:13px;font-weight:700;color:#202C94;font-family:Poppins,sans-serif;">+2 pts</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;"><span style="font-size:13px;font-family:Poppins,sans-serif;">&#x26A0;&#xFE0F; Recall history</span><span style="font-size:13px;font-weight:700;color:#e53e3e;font-family:Poppins,sans-serif;">up to -12 pts</span></div>
+      </div>
+
+      <div style="font-size:16px;font-weight:800;color:#202C94;font-family:Poppins,sans-serif;margin-bottom:12px;">&#127775; Score Tiers</div>
+      <div style="background:white;border-radius:12px;border:2px solid #e2e8f0;box-shadow:0 2px 8px rgba(0,0,0,0.06);overflow:hidden;margin-bottom:16px;">
+        <div style="display:flex;align-items:center;padding:12px 16px;border-bottom:1px solid #f0f4f8;"><div style="width:42px;height:42px;border-radius:50%;background:#38a169;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:white;font-family:Poppins,sans-serif;flex-shrink:0;">80-100</div><div style="margin-left:14px;flex:1;"><div style="font-size:15px;font-weight:700;font-family:Poppins,sans-serif;color:#38a169;">Excellent</div><div style="font-size:12px;color:#718096;font-family:Poppins,sans-serif;">Great ingredients &amp; trusted manufacturer</div></div></div>
+        <div style="display:flex;align-items:center;padding:12px 16px;border-bottom:1px solid #f0f4f8;"><div style="width:42px;height:42px;border-radius:50%;background:#68D391;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:white;font-family:Poppins,sans-serif;flex-shrink:0;">60-79</div><div style="margin-left:14px;flex:1;"><div style="font-size:15px;font-weight:700;font-family:Poppins,sans-serif;color:#38a169;">Good</div><div style="font-size:12px;color:#718096;font-family:Poppins,sans-serif;">Solid choice with minor concerns</div></div></div>
+        <div style="display:flex;align-items:center;padding:12px 16px;border-bottom:1px solid #f0f4f8;"><div style="width:42px;height:42px;border-radius:50%;background:#ed8936;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:white;font-family:Poppins,sans-serif;flex-shrink:0;">35-59</div><div style="margin-left:14px;flex:1;"><div style="font-size:15px;font-weight:700;font-family:Poppins,sans-serif;color:#c05621;">Concerning</div><div style="font-size:12px;color:#718096;font-family:Poppins,sans-serif;">Ingredient or manufacturer concerns</div></div></div>
+        <div style="display:flex;align-items:center;padding:12px 16px;"><div style="width:42px;height:42px;border-radius:50%;background:#e53e3e;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:white;font-family:Poppins,sans-serif;flex-shrink:0;">0-34</div><div style="margin-left:14px;flex:1;"><div style="font-size:15px;font-weight:700;font-family:Poppins,sans-serif;color:#e53e3e;">Avoid</div><div style="font-size:12px;color:#718096;font-family:Poppins,sans-serif;">Poor ingredients or serious concerns</div></div></div>
+      </div>
+
+      <div style="background:#fff7ed;border-radius:12px;border:2px solid #fed7aa;padding:16px;margin-bottom:16px;">
+        <div style="font-size:13px;font-weight:700;color:#c05621;font-family:Poppins,sans-serif;margin-bottom:6px;">&#9888;&#65039; Important Note</div>
+        <p style="font-size:12px;color:#744210;font-family:Poppins,sans-serif;line-height:1.6;margin:0;">Mucka scores are for general guidance only and are not veterinary advice. Every pet is different &mdash; always consult your vet before making major changes to your pet&rsquo;s diet.</p>
+      </div>
+
+      <div style="font-size:16px;font-weight:800;color:#202C94;font-family:Poppins,sans-serif;margin-bottom:12px;">&#128218; Standards We Reference</div>
+      <div style="background:white;border-radius:12px;border:2px solid #e2e8f0;box-shadow:0 2px 8px rgba(0,0,0,0.06);padding:16px;margin-bottom:16px;">
+        <div style="font-size:13px;color:#4a5568;font-family:Poppins,sans-serif;line-height:2;">
+          &#127462;&#127482; <strong>PFIAA</strong> &mdash; Pet Food Industry Association of Australia<br>
+          &#127462;&#127482; <strong>AS 5812</strong> &mdash; Australian Standard for Manufacturing and Marketing of Pet Food<br>
+          &#127758; <strong>WSAVA</strong> &mdash; World Small Animal Veterinary Association<br>
+          &#127758; <strong>AAFCO</strong> &mdash; Association of American Feed Control Officials<br>
+          &#127758; <strong>FEDIAF</strong> &mdash; European Pet Food Industry Federation
+        </div>
+      </div>
+
+      <div style="text-align:center;padding:8px 0 16px;">
+        <div style="font-size:12px;color:#a0aec0;font-family:Poppins,sans-serif;">Mucka</div>
+        <div style="font-size:11px;color:#cbd5e0;font-family:Poppins,sans-serif;margin-top:4px;">Scoring methodology v2.1 &mdash; April 2026</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- BOTTOM NAV -->
