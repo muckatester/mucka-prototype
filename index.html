@@ -4414,41 +4414,73 @@ function fcHandlePhoto(input) {
   var file = input.files[0];
   var reader = new FileReader();
   reader.onload = function(e) {
-    fcCurrentPhoto = e.target.result;
-    var preview = document.getElementById('fcPhotoPreview');
-    preview.src = e.target.result;
-    preview.style.display = 'block';
-    document.getElementById('fcPhotoStatus').textContent = '✓ Taken';
-    document.getElementById('fcPhotoStatus').style.color = '#38a169';
-    document.getElementById('fcPhotoBtn').innerHTML = '<span style="font-size:18px;">&#128260;</span> Retake Photo';
-    fcUpdateSaveBtn();
+    // Compress the photo before storing — full-resolution camera photos
+    // are 2-5MB each and quickly fill up localStorage (5MB limit on most phones)
+    var img = new Image();
+    img.onload = function() {
+      var maxW = 1200;
+      var scale = Math.min(1, maxW / img.width);
+      var w = Math.round(img.width * scale);
+      var h = Math.round(img.height * scale);
+      var canvas = document.createElement('canvas');
+      canvas.width = w;
+      canvas.height = h;
+      var ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, w, h);
+      // JPEG @ 0.75 quality — typical 4MB camera photo becomes ~150KB
+      fcCurrentPhoto = canvas.toDataURL('image/jpeg', 0.75);
+
+      var preview = document.getElementById('fcPhotoPreview');
+      preview.src = fcCurrentPhoto;
+      preview.style.display = 'block';
+      document.getElementById('fcPhotoStatus').textContent = '✓ Taken';
+      document.getElementById('fcPhotoStatus').style.color = '#38a169';
+      document.getElementById('fcPhotoBtn').innerHTML = '<span style="font-size:18px;">&#128260;</span> Retake Photo';
+      fcUpdateSaveBtn();
+    };
+    img.onerror = function() {
+      alert('Could not read that photo. Please try again.');
+    };
+    img.src = e.target.result;
   };
   reader.readAsDataURL(file);
 }
 
 function fcSaveCapture() {
   if (!fcCurrentBarcode || !fcCurrentPhoto) return;
+  var btn = document.getElementById('fcSaveBtn');
 
   var queue = fcGetQueue();
-
   queue.push({
     id: Date.now(),
     timestamp: new Date().toISOString(),
     barcode: fcCurrentBarcode,
     photo: fcCurrentPhoto
   });
-  fcSaveQueue(queue);
 
-  // Visual confirmation
-  var btn = document.getElementById('fcSaveBtn');
-  btn.innerHTML = '<span style="font-size:18px;">&#127881;</span> Saved!';
-  btn.style.background = '#2f855a';
-  try { if (navigator.vibrate) navigator.vibrate([60, 40, 60]); } catch(e) {}
+  // Try to save — localStorage can fail if it's full
+  var saved = false;
+  try {
+    fcSaveQueue(queue);
+    saved = true;
+  } catch (err) {
+    console.error('Save failed:', err);
+    btn.innerHTML = '<span style="font-size:18px;">&#9888;</span> Storage Full!';
+    btn.style.background = '#c53030';
+    alert('Phone storage is full. Open the queue and submit/clear some captures, then try again.');
+  }
 
+  if (saved) {
+    btn.innerHTML = '<span style="font-size:18px;">&#127881;</span> Saved!';
+    btn.style.background = '#2f855a';
+    try { if (navigator.vibrate) navigator.vibrate([60, 40, 60]); } catch(e) {}
+  }
+
+  // ALWAYS reset the button after 800ms so the user is never stuck
   setTimeout(function() {
     btn.innerHTML = '<span style="font-size:18px;">&#9989;</span> Save &amp; Capture Next';
     btn.style.background = '#38a169';
-    fcResetCurrent();
+    if (saved) fcResetCurrent();
   }, 800);
 }
 
