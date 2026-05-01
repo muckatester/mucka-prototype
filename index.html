@@ -3118,11 +3118,11 @@ function openScanner() {
       }
 
       var matched = findProductByBarcode(decodedText);
+      var wasFieldCapture = window._fcScanning;
       closeScanner();
 
       // If Field Capture mode is active, route the barcode there instead
-      if (window._fcScanning) {
-        window._fcScanning = false;
+      if (wasFieldCapture) {
         fcHandleScannedBarcode(decodedText);
         showScreen('fieldcapture');
         scannedCount++;
