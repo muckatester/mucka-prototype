@@ -4256,6 +4256,47 @@ function addPhotoToProduct(productId) {
   </button>
 </div>
 
+<!-- Field Capture: Submit modal — shown when user taps Submit on a queue item -->
+<div id="fcSubmitModal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.85); z-index:10000; overflow-y:auto; -webkit-overflow-scrolling:touch;">
+  <div style="max-width:480px; margin:20px auto; background:white; border-radius:16px; padding:18px; font-family:'Poppins',sans-serif;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+      <div style="font-size:18px; font-weight:800; color:#202C94;">Submit Capture</div>
+      <button onclick="fcCloseSubmitModal()" style="background:#e2e8f0; border:none; width:32px; height:32px; border-radius:16px; font-size:18px; cursor:pointer; color:#4a5568;">&times;</button>
+    </div>
+
+    <!-- Step 1 -->
+    <div style="background:#f0fff4; border-left:4px solid #38a169; padding:12px; border-radius:8px; margin-bottom:12px;">
+      <div style="font-size:13px; font-weight:800; color:#22543d; margin-bottom:6px;">STEP 1 &middot; Save photo to your camera roll</div>
+      <div style="font-size:13px; color:#22543d; line-height:1.5;">Press and hold the photo below, then choose <strong>"Save to Photos"</strong> (or "Add to Photos" / "Download Image").</div>
+    </div>
+
+    <img id="fcSubmitPhoto" src="" alt="Captured product" style="width:100%; border-radius:12px; margin-bottom:14px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+
+    <div style="background:#f7fafc; padding:12px; border-radius:8px; margin-bottom:14px;">
+      <div style="font-size:11px; font-weight:700; color:#718096; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:4px;">Barcode</div>
+      <div id="fcSubmitBarcode" style="font-family:monospace; font-size:18px; font-weight:700; color:#202C94;">—</div>
+    </div>
+
+    <!-- Step 2 -->
+    <div style="background:#fffaf0; border-left:4px solid #EF973F; padding:12px; border-radius:8px; margin-bottom:14px;">
+      <div style="font-size:13px; font-weight:800; color:#7b341e; margin-bottom:6px;">STEP 2 &middot; Open the Google Form</div>
+      <div style="font-size:13px; color:#7b341e; line-height:1.5;">The form will have the barcode filled in. Just attach the photo you saved (from Photos) and hit submit.</div>
+    </div>
+
+    <button onclick="fcOpenFormFromModal()" style="width:100%; padding:14px; background:linear-gradient(135deg, #202C94, #75CFE7); color:white; border:none; border-radius:10px; font-size:15px; font-weight:700; font-family:'Poppins',sans-serif; cursor:pointer; margin-bottom:8px;">
+      Open Google Form &rarr;
+    </button>
+
+    <button onclick="fcMarkSubmitted()" style="width:100%; padding:12px; background:#38a169; color:white; border:none; border-radius:10px; font-size:14px; font-weight:700; font-family:'Poppins',sans-serif; cursor:pointer; margin-bottom:8px;">
+      &#9989; Done &mdash; Remove from Queue
+    </button>
+
+    <button onclick="fcCloseSubmitModal()" style="width:100%; padding:12px; background:white; color:#4a5568; border:2px solid #e2e8f0; border-radius:10px; font-size:14px; font-weight:700; font-family:'Poppins',sans-serif; cursor:pointer;">
+      Cancel
+    </button>
+  </div>
+</div>
+
 <script>
 // =================================================================
 // FIELD CAPTURE MODE
@@ -4518,34 +4559,50 @@ function fcShowQueue() {
   showScreen('fieldqueue');
 }
 
+// Track which item is being submitted (modal is shared between items)
+var fcSubmittingItemId = null;
+
 function fcSubmitItem(id) {
   var queue = fcGetQueue();
   var item = queue.find(function(i) { return i.id === id; });
   if (!item) return;
 
-  // Download the photo so user can attach it in the form
-  var link = document.createElement('a');
-  link.href = item.photo;
-  link.download = 'mucka_' + item.barcode + '.jpg';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+  fcSubmittingItemId = id;
 
-  // Open Google Form pre-filled with barcode
-  var notesText = 'Field Capture submission\nBarcode: ' + item.barcode + '\nCaptured: ' + item.timestamp + '\n\nPhoto downloaded as: mucka_' + item.barcode + '.jpg\nPlease attach the photo in this form.';
+  // Populate the modal
+  document.getElementById('fcSubmitPhoto').src = item.photo;
+  document.getElementById('fcSubmitBarcode').textContent = item.barcode;
+  document.getElementById('fcSubmitModal').style.display = 'block';
+
+  // Lock body scroll while modal is open
+  document.body.style.overflow = 'hidden';
+}
+
+function fcCloseSubmitModal() {
+  document.getElementById('fcSubmitModal').style.display = 'none';
+  document.body.style.overflow = '';
+  fcSubmittingItemId = null;
+}
+
+function fcOpenFormFromModal() {
+  var queue = fcGetQueue();
+  var item = queue.find(function(i) { return i.id === fcSubmittingItemId; });
+  if (!item) return;
+
+  var notesText = 'Field Capture submission\nBarcode: ' + item.barcode + '\nCaptured: ' + item.timestamp;
   var formUrl = 'https://docs.google.com/forms/d/1qGUNdFfloerM1rsFE0jcrXLxjs7UKPHEr7wtSLnli0o/viewform' +
     '?entry.876314724=' +
     '&entry.920980565=' +
     '&entry.101502950=' + encodeURIComponent(item.barcode) +
     '&entry.161365944=' + encodeURIComponent(notesText);
   window.open(formUrl, '_blank');
+}
 
-  // Mark as submitted (remove from queue) after a short delay
-  setTimeout(function() {
-    if (confirm('Form opened in a new tab and photo downloaded. Remove this item from the queue?')) {
-      fcDeleteItem(id);
-    }
-  }, 500);
+function fcMarkSubmitted() {
+  if (fcSubmittingItemId === null) return;
+  var id = fcSubmittingItemId;
+  fcCloseSubmitModal();
+  fcDeleteItem(id);
 }
 
 function fcDeleteItem(id) {
