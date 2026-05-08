@@ -6,6 +6,7 @@
 <title>Mucka Collector</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <style>
   :root {
     --navy: #202C94;
@@ -860,7 +861,7 @@
     </button>
 
     <button class="btn-secondary" onclick="showScreen('screenSend')" id="sendBtn" style="display:none;">
-      <span>📤</span> Send to Tex
+      <span>📦</span> Download & Share (<span id="queueCountBtn">0</span>)
     </button>
 
     <!-- TODAY'S QUEUE PREVIEW -->
@@ -963,7 +964,7 @@
           🐾 Back to Mucka
         </a>
         <button class="btn-secondary" onclick="showScreen('screenSend')">
-          📤 Send Queue to Tex
+          📦 Download & Share Queue
         </button>
       </div>
     </div>
@@ -993,9 +994,9 @@
   <div class="screen" id="screenSend">
 
     <div class="send-card">
-      <span class="send-icon">📤</span>
-      <div class="send-title">Send to Tex</div>
-      <div class="send-desc">This will email your collected products to muckatester@gmail.com</div>
+      <span class="send-icon">📦</span>
+      <div class="send-title">Download & Share</div>
+      <div class="send-desc">Downloads a zip file with all barcodes and photos. Share it to Tex however you like — email, WhatsApp, AirDrop, anything.</div>
     </div>
 
     <div class="card">
@@ -1020,7 +1021,7 @@
     </div>
 
     <button class="btn-primary btn-orange" onclick="sendEmail()">
-      📤 Send Email to Tex
+      📦 Download Zip File
     </button>
     <button class="btn-ghost" onclick="showScreen('screenHome')">← Back</button>
 
@@ -1360,24 +1361,68 @@ function updateSendScreen() {
 
 function sendEmail() {
   if (queue.length === 0) {
-    showToast('Nothing in the queue to send!');
+    showToast('Nothing in the queue to download!');
     return;
   }
 
-  // Build plain text summary for email body
-  const lines = queue.map((p, i) => {
+  const btn = document.querySelector('.btn-primary.btn-orange');
+  if (btn) { btn.textContent = '⏳ Building zip...'; btn.disabled = true; }
+
+  const zip = new JSZip();
+  const date = new Date().toLocaleDateString('en-AU').replace(/\//g, '-');
+  const folderName = `Mucka-Collector-${date}`;
+
+  // Summary text file
+  const summary = queue.map((p, i) => {
     const hasF = p.front ? 'Yes' : 'No';
     const hasI = p.ingredients ? 'Yes' : 'No';
-    return `Product ${i + 1}:\nBarcode: ${p.barcode}\nFront photo: ${hasF}\nIngredients photo: ${hasI}\nCaptured: ${new Date(p.timestamp).toLocaleString('en-AU')}`;
-  }).join('\n\n');
+    return `Product ${i + 1}\nBarcode: ${p.barcode}\nFront photo: ${hasF}\nIngredients photo: ${hasI}\nCaptured: ${new Date(p.timestamp).toLocaleString('en-AU')}`;
+  }).join('\n\n---\n\n');
 
-  const subject = `Mucka Collector — ${queue.length} product${queue.length !== 1 ? 's' : ''} — ${new Date().toLocaleDateString('en-AU')}`;
-  const body = `Hi Tex,\n\nHere's my Mucka Collector session — ${queue.length} product${queue.length !== 1 ? 's' : ''} logged.\n\n${lines}\n\n— Sent from Mucka Collector`;
+  zip.file(`${folderName}/SUMMARY.txt`,
+    `Mucka Collector Export\nDate: ${new Date().toLocaleString('en-AU')}\nProducts: ${queue.length}\n\n---\n\n${summary}`
+  );
 
-  const mailtoLink = `mailto:muckatester@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  window.location.href = mailtoLink;
+  // One folder per product with photos
+  queue.forEach((p, i) => {
+    const folder = `${folderName}/product-${String(i + 1).padStart(2, '0')}-${p.barcode}`;
 
-  showToast('Opening email app...');
+    // Info file
+    zip.file(`${folder}/info.txt`,
+      `Barcode: ${p.barcode}\nCaptured: ${new Date(p.timestamp).toLocaleString('en-AU')}`
+    );
+
+    // Front photo
+    if (p.front) {
+      const base64Data = p.front.split(',')[1];
+      zip.file(`${folder}/front.jpg`, base64Data, { base64: true });
+    }
+
+    // Ingredients photo
+    if (p.ingredients) {
+      const base64Data = p.ingredients.split(',')[1];
+      zip.file(`${folder}/ingredients.jpg`, base64Data, { base64: true });
+    }
+  });
+
+  // Generate and trigger download
+  zip.generateAsync({ type: 'blob' }).then(function(content) {
+    const url = URL.createObjectURL(content);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${folderName}.zip`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+
+    if (btn) { btn.textContent = '📦 Download Zip File'; btn.disabled = false; }
+    showToast(`✅ Downloaded ${queue.length} product${queue.length !== 1 ? 's' : ''}!`);
+  }).catch(function(err) {
+    console.error('Zip error:', err);
+    if (btn) { btn.textContent = '📦 Download Zip File'; btn.disabled = false; }
+    showToast('Something went wrong — try again');
+  });
 }
 
 // ============================================================
