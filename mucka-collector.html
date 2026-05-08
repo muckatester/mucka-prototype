@@ -944,7 +944,6 @@
       <button class="btn-primary btn-green" id="saveBtn" onclick="saveProduct()" style="display:none;">
         ✅ Save Product
       </button>
-      <button class="btn-ghost" onclick="saveProduct()">Skip & Save</button>
     </div>
 
   </div>
@@ -1059,7 +1058,7 @@ let html5QrCode = null;
 // ============================================================
 function saveState() {
   try {
-    // Save queue metadata (not full image data for perf)
+    // Save queue metadata WITHOUT photos (photos stored separately)
     const meta = queue.map(q => ({
       barcode: q.barcode,
       timestamp: q.timestamp,
@@ -1067,22 +1066,51 @@ function saveState() {
       hasIngredients: !!q.ingredients
     }));
     localStorage.setItem('mucka_collector_meta', JSON.stringify(meta));
-    // Save full queue with images
-    localStorage.setItem('mucka_collector_queue', JSON.stringify(queue));
+
+    // Save each product's photos separately by index
+    // This avoids hitting the 5MB localStorage limit with one giant entry
+    queue.forEach((p, i) => {
+      try {
+        const key = `mucka_product_${i}`;
+        localStorage.setItem(key, JSON.stringify({
+          barcode: p.barcode,
+          timestamp: p.timestamp,
+          front: p.front || null,
+          ingredients: p.ingredients || null
+        }));
+      } catch(e) {
+        console.warn(`Could not save product ${i} photos:`, e);
+      }
+    });
+
+    // Save the count so we know how many to load back
+    localStorage.setItem('mucka_collector_count', String(queue.length));
+
   } catch(e) {
-    console.warn('Storage full, saving metadata only');
+    console.warn('saveState error:', e);
   }
 }
 
 function loadState() {
   try {
-    const saved = localStorage.getItem('mucka_collector_queue');
-    if (saved) {
-      queue = JSON.parse(saved);
-      updateAllCounts();
-      renderRecentList();
-      renderQueueList();
+    const count = parseInt(localStorage.getItem('mucka_collector_count') || '0');
+    if (count === 0) return;
+
+    queue = [];
+    for (let i = 0; i < count; i++) {
+      try {
+        const raw = localStorage.getItem(`mucka_product_${i}`);
+        if (raw) {
+          queue.push(JSON.parse(raw));
+        }
+      } catch(e) {
+        console.warn(`Could not load product ${i}:`, e);
+      }
     }
+
+    updateAllCounts();
+    renderRecentList();
+    renderQueueList();
   } catch(e) {
     queue = [];
   }
@@ -1322,8 +1350,15 @@ function renderQueueList() {
 function clearQueue() {
   if (queue.length === 0) return;
   if (confirm(`Clear all ${queue.length} products from the queue? This can't be undone.`)) {
+    // Clear all product keys
+    const count = parseInt(localStorage.getItem('mucka_collector_count') || '0');
+    for (let i = 0; i < count; i++) {
+      localStorage.removeItem(`mucka_product_${i}`);
+    }
+    localStorage.removeItem('mucka_collector_count');
+    localStorage.removeItem('mucka_collector_meta');
+    localStorage.removeItem('mucka_collector_queue');
     queue = [];
-    saveState();
     updateAllCounts();
     renderRecentList();
     renderQueueList();
