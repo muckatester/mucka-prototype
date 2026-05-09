@@ -16,99 +16,110 @@
   * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
   body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); max-width: 480px; margin: 0 auto; min-height: 100vh; }
 
+  /* HEADER */
   .header {
     background: linear-gradient(135deg, var(--navy), var(--sky));
-    padding: 16px 20px 14px; color: white; position: sticky; top: 0; z-index: 100;
+    padding: 14px 20px 12px; color: white; position: sticky; top: 0; z-index: 100;
     box-shadow: 0 2px 12px rgba(32,44,148,0.3); display: flex; align-items: center; justify-content: space-between;
   }
   .app-title { font-size: 20px; font-weight: 800; }
   .app-title span { color: var(--orange); }
-  .app-sub { font-size: 10px; opacity: 0.8; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
-  .counter-pill { background: rgba(255,255,255,0.2); border: 2px solid rgba(255,255,255,0.35); border-radius: 20px; padding: 5px 12px; display: flex; align-items: center; gap: 6px; }
-  .counter-num { font-size: 20px; font-weight: 800; color: var(--orange); line-height: 1; }
-  .counter-label { font-size: 10px; font-weight: 600; line-height: 1.2; }
+  .app-sub { font-size: 10px; opacity: 0.8; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 1px; }
+  .counter-pill { background: rgba(255,255,255,0.2); border: 2px solid rgba(255,255,255,0.35); border-radius: 20px; padding: 5px 14px; display: flex; align-items: center; gap: 6px; cursor: pointer; }
+  .counter-num { font-size: 22px; font-weight: 800; color: var(--orange); line-height: 1; }
+  .counter-label { font-size: 10px; font-weight: 600; line-height: 1.2; opacity: 0.9; }
 
+  /* CONTENT */
   .content { padding: 16px 16px 90px; }
   .screen { display: none; }
   .screen.active { display: block; }
 
+  /* CARDS */
   .card { background: white; border-radius: 14px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
 
+  /* BUTTONS */
   .btn { width: 100%; padding: 15px 20px; border: none; border-radius: 12px; font-size: 15px; font-weight: 700; font-family: 'Poppins', sans-serif; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: transform 0.15s; margin-bottom: 10px; }
   .btn:active { transform: scale(0.97); }
-  .btn-navy { background: linear-gradient(135deg, var(--navy), #2d3db5); color: white; box-shadow: 0 4px 14px rgba(32,44,148,0.3); }
+  .btn:last-child { margin-bottom: 0; }
   .btn-orange { background: linear-gradient(135deg, var(--orange), #f5a84a); color: white; box-shadow: 0 4px 14px rgba(239,151,63,0.35); }
   .btn-green { background: linear-gradient(135deg, var(--green), #48bb78); color: white; box-shadow: 0 4px 14px rgba(56,161,105,0.3); }
   .btn-ghost { background: white; color: var(--muted); border: 2px solid var(--border); box-shadow: none; }
   .btn-red { background: white; color: var(--red); border: 2px solid var(--red); box-shadow: none; }
+  .btn-navy { background: linear-gradient(135deg, var(--navy), #2d3db5); color: white; box-shadow: 0 4px 14px rgba(32,44,148,0.3); }
 
-  .scanner-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.93); z-index: 200; display: none; flex-direction: column; align-items: center; justify-content: center; padding: 20px; }
+  /* SCANNER OVERLAY */
+  .scanner-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 200; display: none; flex-direction: column; align-items: center; justify-content: center; padding: 20px; }
   .scanner-overlay.active { display: flex; }
-  .scanner-title { color: white; font-size: 18px; font-weight: 700; margin-bottom: 6px; text-align: center; }
-  .scanner-sub { color: rgba(255,255,255,0.6); font-size: 13px; margin-bottom: 20px; text-align: center; }
+  .scan-header { text-align: center; margin-bottom: 20px; }
+  .scan-header .sh-count { font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 4px; }
+  .scan-header .sh-title { font-size: 18px; font-weight: 700; color: white; }
   #qr-reader { width: 270px; height: 270px; border-radius: 16px; overflow: hidden; position: relative; border: 3px solid var(--sky); }
   .scan-line { position: absolute; width: 100%; height: 3px; background: var(--sky); box-shadow: 0 0 10px var(--sky); animation: scanMove 1.5s ease-in-out infinite; z-index: 10; pointer-events: none; }
-  @keyframes scanMove { 0% { top: 0; } 50% { top: calc(100% - 3px); } 100% { top: 0; } }
-  .scanner-or { color: rgba(255,255,255,0.4); font-size: 11px; margin: 16px 0 10px; text-transform: uppercase; letter-spacing: 1px; }
-  .manual-input { width: 100%; max-width: 270px; padding: 12px 16px; border: 2px solid rgba(255,255,255,0.2); border-radius: 10px; font-size: 15px; font-family: 'Poppins', sans-serif; background: rgba(255,255,255,0.1); color: white; text-align: center; outline: none; margin-bottom: 10px; }
-  .manual-input::placeholder { color: rgba(255,255,255,0.35); }
+  @keyframes scanMove { 0%{top:0} 50%{top:calc(100% - 3px)} 100%{top:0} }
+  .scan-tip { color: rgba(255,255,255,0.5); font-size: 12px; margin-top: 14px; text-align: center; }
+  .scanner-or { color: rgba(255,255,255,0.35); font-size: 11px; margin: 14px 0 10px; text-transform: uppercase; letter-spacing: 1px; }
+  .manual-input { width: 100%; max-width: 270px; padding: 11px 16px; border: 2px solid rgba(255,255,255,0.2); border-radius: 10px; font-size: 15px; font-family: 'Poppins', sans-serif; background: rgba(255,255,255,0.1); color: white; text-align: center; outline: none; margin-bottom: 8px; }
+  .manual-input::placeholder { color: rgba(255,255,255,0.3); }
   .manual-input:focus { border-color: var(--sky); }
-  .btn-manual-go { width: 100%; max-width: 270px; padding: 12px; background: var(--sky); color: var(--navy); border: none; border-radius: 10px; font-size: 14px; font-weight: 700; font-family: 'Poppins', sans-serif; cursor: pointer; margin-bottom: 14px; }
-  .btn-cancel-scan { color: rgba(255,255,255,0.5); font-size: 13px; background: none; border: 1px solid rgba(255,255,255,0.2); padding: 10px 28px; border-radius: 10px; cursor: pointer; font-family: 'Poppins', sans-serif; }
+  .btn-manual-go { width: 100%; max-width: 270px; padding: 11px; background: var(--sky); color: var(--navy); border: none; border-radius: 10px; font-size: 14px; font-weight: 700; font-family: 'Poppins', sans-serif; cursor: pointer; margin-bottom: 14px; }
+  .btn-cancel-scan { color: rgba(255,255,255,0.45); font-size: 13px; background: none; border: 1px solid rgba(255,255,255,0.15); padding: 9px 28px; border-radius: 10px; cursor: pointer; font-family: 'Poppins', sans-serif; }
 
-  .result-card { border-radius: 16px; padding: 18px; margin-bottom: 12px; text-align: center; }
-  .result-card.found { background: linear-gradient(135deg, #f0fff4, #c6f6d5); border: 2px solid #68d391; }
-  .result-card.notfound { background: linear-gradient(135deg, #fffaf0, #feebc8); border: 2px solid var(--orange); }
-  .result-icon { font-size: 40px; margin-bottom: 8px; display: block; }
-  .result-title { font-size: 17px; font-weight: 800; margin-bottom: 4px; }
-  .result-barcode { font-size: 12px; color: var(--muted); font-family: monospace; margin-bottom: 10px; }
+  /* RESULT OVERLAY — shown over scanner screen after scan */
+  .result-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 150; display: none; align-items: flex-end; justify-content: center; padding: 0 16px 100px; }
+  .result-overlay.active { display: flex; }
+  .result-sheet { background: white; border-radius: 20px 20px 16px 16px; padding: 20px; width: 100%; max-width: 448px; box-shadow: 0 -8px 40px rgba(0,0,0,0.3); animation: slideUp 0.25s ease-out; }
+  @keyframes slideUp { from{transform:translateY(40px);opacity:0} to{transform:translateY(0);opacity:1} }
 
-  .photo-preview { width: 100%; border-radius: 10px; overflow: hidden; margin-bottom: 10px; background: var(--bg); min-height: 130px; display: flex; align-items: center; justify-content: center; position: relative; border: 2px dashed var(--border); }
+  .result-found { border-top: 5px solid var(--green); }
+  .result-notfound { border-top: 5px solid var(--orange); }
+
+  .result-top { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .result-icon { font-size: 36px; flex-shrink: 0; }
+  .result-info { flex: 1; }
+  .result-title { font-size: 16px; font-weight: 800; }
+  .result-bc { font-size: 11px; color: var(--muted); font-family: monospace; margin-top: 2px; }
+
+  /* PHOTO */
+  .photo-preview { width: 100%; border-radius: 10px; overflow: hidden; margin-bottom: 10px; background: var(--bg); min-height: 120px; display: flex; align-items: center; justify-content: center; position: relative; border: 2px dashed var(--border); }
   .photo-preview img { width: 100%; display: block; border-radius: 10px; }
-  .photo-preview.has-photo { border: none; }
+  .photo-preview.has-photo { border: none; min-height: auto; }
   .retake-btn { position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.55); color: white; border: none; border-radius: 6px; padding: 5px 10px; font-size: 11px; font-weight: 600; font-family: 'Poppins', sans-serif; cursor: pointer; }
+  .file-input { display: none; }
+
+  /* QUEUE SCREEN */
+  .queue-hero { background: linear-gradient(135deg, var(--navy), #2d3db5); border-radius: 16px; padding: 16px 18px; color: white; margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; }
+  .qh-left .qh-count { font-size: 32px; font-weight: 800; color: var(--orange); line-height: 1; }
+  .qh-left .qh-label { font-size: 12px; opacity: 0.8; font-weight: 500; }
+  .qh-right { display: flex; flex-direction: column; gap: 8px; }
 
   .queue-item { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); }
   .queue-item:last-child { border-bottom: none; }
   .queue-num { width: 28px; height: 28px; background: linear-gradient(135deg, var(--navy), var(--sky)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: white; flex-shrink: 0; }
   .queue-info { flex: 1; min-width: 0; }
-  .queue-barcode { font-size: 13px; font-weight: 700; font-family: monospace; }
+  .queue-barcode { font-size: 13px; font-weight: 700; font-family: monospace; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .queue-meta { font-size: 11px; color: var(--muted); margin-top: 2px; }
-
-  .hero { background: linear-gradient(135deg, var(--navy), #2d3db5); border-radius: 18px; padding: 20px; color: white; text-align: center; margin-bottom: 12px; }
-  .hero-icon { font-size: 44px; display: block; margin-bottom: 10px; }
-  .hero-title { font-size: 18px; font-weight: 800; margin-bottom: 6px; }
-  .hero-desc { font-size: 13px; opacity: 0.8; line-height: 1.5; }
+  .queue-photo-thumb { width: 36px; height: 36px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
 
   .empty { text-align: center; padding: 28px 16px; color: var(--muted); }
   .empty .e-icon { font-size: 44px; display: block; margin-bottom: 10px; opacity: 0.4; }
   .empty .e-text { font-size: 14px; }
 
-  .send-hero { background: linear-gradient(135deg, var(--orange), #f5a84a); border-radius: 18px; padding: 20px; color: white; text-align: center; margin-bottom: 12px; }
-  .send-hero .s-icon { font-size: 44px; display: block; margin-bottom: 8px; }
-  .send-hero .s-title { font-size: 18px; font-weight: 800; margin-bottom: 4px; }
-  .send-hero .s-desc { font-size: 13px; opacity: 0.9; line-height: 1.5; }
-
-  .stat-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
-  .stat-row:last-child { border-bottom: none; }
-  .stat-label { font-size: 14px; color: var(--muted); }
-  .stat-val { font-size: 16px; font-weight: 800; color: var(--navy); }
-
+  /* BOTTOM NAV */
   .bottom-nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; background: white; display: flex; align-items: flex-end; border-top: 3px solid var(--orange); z-index: 100; padding: 6px 0 max(8px, env(safe-area-inset-bottom)); }
-  .nav-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 6px 0; cursor: pointer; color: var(--muted); border: none; background: none; font-family: 'Poppins', sans-serif; }
+  .nav-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 6px 0; cursor: pointer; color: var(--muted); border: none; background: none; font-family: 'Poppins', sans-serif; transition: color 0.2s; }
   .nav-item.active { color: var(--navy); }
-  .nav-item .ni { font-size: 20px; }
-  .nav-item .nl { font-size: 10px; font-weight: 600; }
-  .nav-scan-raised { position: relative; flex: 1; display: flex; flex-direction: column; align-items: center; cursor: pointer; border: none; background: none; font-family: 'Poppins', sans-serif; padding: 0; }
-  .nav-scan-circle { width: 54px; height: 54px; border-radius: 50%; background: linear-gradient(135deg, var(--orange), var(--navy)); display: flex; align-items: center; justify-content: center; border: 3px solid white; box-shadow: 0 4px 14px rgba(239,151,63,0.45); transform: translateY(-18px); margin-bottom: -10px; font-size: 22px; transition: transform 0.15s; }
-  .nav-scan-raised:active .nav-scan-circle { transform: translateY(-16px) scale(0.95); }
-  .nav-scan-raised .nl { font-size: 10px; font-weight: 600; color: var(--muted); }
+  .nav-item .ni { font-size: 22px; }
+  .nav-item .nl { font-size: 10px; font-weight: 700; }
+  .nav-scan-btn { flex: 1.2; display: flex; flex-direction: column; align-items: center; cursor: pointer; border: none; background: none; font-family: 'Poppins', sans-serif; padding: 0; }
+  .nav-scan-circle { width: 58px; height: 58px; border-radius: 50%; background: linear-gradient(135deg, var(--orange), var(--navy)); display: flex; align-items: center; justify-content: center; border: 3px solid white; box-shadow: 0 4px 16px rgba(239,151,63,0.5); transform: translateY(-20px); margin-bottom: -12px; font-size: 24px; transition: transform 0.15s; }
+  .nav-scan-btn:active .nav-scan-circle { transform: translateY(-18px) scale(0.95); }
+  .nav-scan-btn .nl { font-size: 10px; font-weight: 700; color: var(--muted); }
 
-  .flash { position: fixed; inset: 0; background: rgba(56,161,105,0.25); z-index: 300; pointer-events: none; opacity: 0; transition: opacity 0.1s; }
+  /* FLASH & TOAST */
+  .flash { position: fixed; inset: 0; background: rgba(56,161,105,0.2); z-index: 300; pointer-events: none; opacity: 0; transition: opacity 0.1s; }
   .flash.show { opacity: 1; }
-  .toast { position: fixed; bottom: 85px; left: 50%; transform: translateX(-50%) translateY(16px); background: var(--text); color: white; padding: 10px 18px; border-radius: 10px; font-size: 13px; font-weight: 600; opacity: 0; transition: all 0.3s; z-index: 400; white-space: nowrap; pointer-events: none; }
+  .toast { position: fixed; bottom: 88px; left: 50%; transform: translateX(-50%) translateY(16px); background: #2d3748; color: white; padding: 10px 18px; border-radius: 10px; font-size: 13px; font-weight: 600; opacity: 0; transition: all 0.3s; z-index: 500; white-space: nowrap; pointer-events: none; }
   .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
-  .file-input { display: none; }
 </style>
 </head>
 <body>
@@ -116,22 +127,34 @@
 <div class="flash" id="flash"></div>
 <div class="toast" id="toast"></div>
 
+<!-- SCANNER OVERLAY -->
 <div class="scanner-overlay" id="scannerOverlay">
-  <div class="scanner-title">Scan Barcode</div>
-  <div class="scanner-sub">Point camera at the barcode</div>
+  <div class="scan-header">
+    <div class="sh-count" id="scanQueueCount">0 in queue</div>
+    <div class="sh-title">Scan a barcode</div>
+  </div>
   <div id="qr-reader"><div class="scan-line"></div></div>
+  <div class="scan-tip">Hold steady — point at the barcode on the back of the pack</div>
   <div class="scanner-or">or enter manually</div>
   <input type="text" class="manual-input" id="manualBarcode" placeholder="Type barcode number" inputmode="numeric">
   <button class="btn-manual-go" onclick="submitManual()">Use This Barcode →</button>
-  <button class="btn-cancel-scan" onclick="closeScanner()">Cancel</button>
+  <button class="btn-cancel-scan" onclick="closeScanner()">Done — View Queue</button>
 </div>
 
+<!-- RESULT SHEET — slides up after scan -->
+<div class="result-overlay" id="resultOverlay">
+  <div class="result-sheet" id="resultSheet">
+    <!-- filled dynamically -->
+  </div>
+</div>
+
+<!-- HEADER -->
 <div class="header">
   <div>
     <div class="app-title">Mucka <span>Collector</span></div>
     <div class="app-sub">Field Data Tool</div>
   </div>
-  <div class="counter-pill">
+  <div class="counter-pill" onclick="showScreen('screenQueue');setNav('navQueue')">
     <div class="counter-num" id="headerCount">0</div>
     <div class="counter-label">in<br>queue</div>
   </div>
@@ -139,86 +162,67 @@
 
 <div class="content">
 
-  <!-- HOME -->
-  <div class="screen active" id="screenHome">
-    <div class="hero">
-      <span class="hero-icon">🐾</span>
-      <div class="hero-title">Ready to collect!</div>
-      <div class="hero-desc">Scan any product. Already in Mucka? It'll tell you. New one? Photo it and queue it.</div>
-    </div>
-    <button class="btn btn-orange" onclick="openScanner()"><span style="font-size:20px;">📷</span> Scan a Product</button>
-    <button class="btn btn-ghost" onclick="goQueue()" id="viewQueueBtn" style="display:none;"><span style="font-size:18px;">📋</span> View Queue (<span id="queueCountBtn">0</span>)</button>
-    <button class="btn btn-ghost" onclick="showScreen('screenSend')" id="downloadBtn" style="display:none;"><span style="font-size:18px;">📦</span> Download & Share</button>
-    <div id="emptyState" class="empty"><span class="e-icon">📦</span><div class="e-text">No products logged yet.<br>Hit Scan to get started!</div></div>
-    <div class="card" id="recentCard" style="display:none;">
-      <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:10px;">Recent</div>
-      <div id="recentList"></div>
+  <!-- SCAN SCREEN (default) -->
+  <div class="screen active" id="screenScan">
+    <div style="text-align:center; padding: 40px 20px 20px;">
+      <div style="font-size:72px; margin-bottom:16px;">📷</div>
+      <div style="font-size:22px; font-weight:800; color:var(--navy); margin-bottom:8px;">Ready to scan</div>
+      <div style="font-size:14px; color:var(--muted); line-height:1.6; margin-bottom:32px;">
+        Tap the scan button below.<br>Already in Mucka? You'll see a green tick.<br>New product? Photo it and queue it.
+      </div>
+      <button class="btn btn-orange" onclick="openScanner()" style="font-size:17px; padding:18px;">
+        <span style="font-size:24px;">📷</span> Scan a Product
+      </button>
     </div>
   </div>
 
-  <!-- RESULT -->
-  <div class="screen" id="screenResult">
-    <div id="resultCard"></div>
-    <div id="captureSection" style="display:none;">
-      <div class="card" style="padding:14px;">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
-          <span style="font-size:26px;">📸</span>
-          <div>
-            <div style="font-size:14px;font-weight:800;color:var(--text);">Photo the front of the pack</div>
-            <div style="font-size:11px;color:var(--muted);">Brand name and product line in shot</div>
-          </div>
-        </div>
-        <div class="photo-preview" id="photoPreview"><span style="font-size:26px;color:var(--muted);">📷</span></div>
-        <input type="file" accept="image/*" capture="environment" class="file-input" id="photoInput" onchange="handlePhoto(this)">
-        <button class="btn btn-orange" onclick="document.getElementById('photoInput').click()">📷 Take Photo</button>
-        <button class="btn btn-green" id="saveBtn" onclick="saveProduct()" style="display:none;">✅ Save to Queue</button>
+  <!-- QUEUE SCREEN -->
+  <div class="screen" id="screenQueue">
+
+    <div class="queue-hero">
+      <div class="qh-left">
+        <div class="qh-count" id="queueHeroCount">0</div>
+        <div class="qh-label">products in queue</div>
+      </div>
+      <div class="qh-right">
+        <button class="btn btn-orange" onclick="downloadZip()" id="downloadZipBtn" style="margin:0; padding:10px 16px; font-size:13px; border-radius:10px; min-width:160px;">
+          📦 Download & Share
+        </button>
+        <button class="btn btn-ghost" onclick="openScanner()" style="margin:0; padding:10px 16px; font-size:13px; border-radius:10px; min-width:160px; background:rgba(255,255,255,0.15); color:white; border-color:rgba(255,255,255,0.3);">
+          📷 Scan Another
+        </button>
       </div>
     </div>
-    <button class="btn btn-ghost" onclick="openScanner()">📷 Scan Next Product</button>
-    <button class="btn btn-ghost" onclick="showScreen('screenHome');setNav('navHome')">← Back to Home</button>
-  </div>
 
-  <!-- QUEUE -->
-  <div class="screen" id="screenQueue">
     <div class="card">
-      <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:10px;">Product Queue</div>
-      <div id="queueList"></div>
+      <div id="queueList">
+        <div class="empty"><span class="e-icon">📦</span><div class="e-text">No products yet.<br>Tap Scan to get started!</div></div>
+      </div>
     </div>
-    <button class="btn btn-orange" onclick="openScanner()">📷 Scan Another</button>
-    <button class="btn btn-ghost" onclick="showScreen('screenHome');setNav('navHome')">← Back to Home</button>
-    <button class="btn btn-red" onclick="clearQueue()">🗑 Clear Queue</button>
-  </div>
 
-  <!-- SEND -->
-  <div class="screen" id="screenSend">
-    <div class="send-hero">
-      <span class="s-icon">📦</span>
-      <div class="s-title">Download & Share</div>
-      <div class="s-desc">Downloads a zip file with all barcodes and photos. Share it to Tex via email, WhatsApp — whatever works.</div>
-    </div>
-    <div class="card">
-      <div class="stat-row"><span class="stat-label">Products logged</span><span class="stat-val" id="sendCount">0</span></div>
-      <div class="stat-row"><span class="stat-label">Photos captured</span><span class="stat-val" id="sendPhotos">0</span></div>
-    </div>
-    <div class="card" id="sendQueueCard">
-      <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:10px;">In this batch</div>
-      <div id="sendList"></div>
-    </div>
-    <button class="btn btn-orange" id="downloadZipBtn" onclick="downloadZip()">📦 Download Zip File</button>
-    <button class="btn btn-ghost" onclick="showScreen('screenHome');setNav('navHome')">← Back</button>
+    <button class="btn btn-red" onclick="clearQueue()" style="margin-top:4px;">🗑 Clear Queue</button>
+
   </div>
 
 </div>
 
+<!-- BOTTOM NAV -->
 <div class="bottom-nav">
-  <button class="nav-item active" id="navHome" onclick="showScreen('screenHome');setNav('navHome')"><span class="ni">🏠</span><span class="nl">Home</span></button>
-  <button class="nav-scan-raised" onclick="openScanner()"><div class="nav-scan-circle">📷</div><span class="nl">Scan</span></button>
-  <button class="nav-item" id="navQueue" onclick="goQueue();setNav('navQueue')"><span class="ni">📋</span><span class="nl">Queue</span></button>
+  <button class="nav-item active" id="navScan" onclick="showScreen('screenScan');setNav('navScan')">
+    <span class="ni">🔍</span><span class="nl">Scan</span>
+  </button>
+  <button class="nav-scan-btn" onclick="openScanner()">
+    <div class="nav-scan-circle">📷</div>
+    <span class="nl">Go</span>
+  </button>
+  <button class="nav-item" id="navQueue" onclick="showScreen('screenQueue');setNav('navQueue');renderQueueList()">
+    <span class="ni">📋</span><span class="nl">Queue</span>
+  </button>
 </div>
 
 <script>
 // ============================================================
-// KNOWN BARCODES — products already in Mucka database
+// KNOWN BARCODES
 // ============================================================
 var KNOWN_BARCODES = new Set([
   '0017800182829','0017800185707','0017800185868','0021006599381','0038100119315',
@@ -340,7 +344,7 @@ var KNOWN_BARCODES = new Set([
 ]);
 
 // ============================================================
-// STATE — in memory only, no localStorage
+// STATE
 // ============================================================
 var queue = [];
 var currentBarcode = null;
@@ -351,19 +355,15 @@ var html5QrCode = null;
 // NAV
 // ============================================================
 function showScreen(id) {
-  document.querySelectorAll('.screen').forEach(function(s) { s.classList.remove('active'); });
+  document.querySelectorAll('.screen').forEach(function(s){ s.classList.remove('active'); });
   document.getElementById(id).classList.add('active');
-  if (id === 'screenSend') updateSendScreen();
-  if (id === 'screenQueue') renderQueueList();
-  window.scrollTo(0, 0);
+  window.scrollTo(0,0);
 }
 
 function setNav(id) {
-  document.querySelectorAll('.nav-item').forEach(function(n) { n.classList.remove('active'); });
-  if (id) { var el = document.getElementById(id); if (el) el.classList.add('active'); }
+  document.querySelectorAll('.nav-item').forEach(function(n){ n.classList.remove('active'); });
+  if (id) { var el = document.getElementById(id); if(el) el.classList.add('active'); }
 }
-
-function goQueue() { renderQueueList(); showScreen('screenQueue'); }
 
 // ============================================================
 // SCANNER
@@ -371,14 +371,19 @@ function goQueue() { renderQueueList(); showScreen('screenQueue'); }
 function openScanner() {
   currentBarcode = null;
   currentPhotoData = null;
-  document.getElementById('scannerOverlay').classList.add('active');
+  closeResultSheet();
   document.getElementById('manualBarcode').value = '';
+  updateScanCounter();
+  document.getElementById('scannerOverlay').classList.add('active');
   startQr();
 }
 
 function closeScanner() {
   document.getElementById('scannerOverlay').classList.remove('active');
   stopQr();
+  showScreen('screenQueue');
+  setNav('navQueue');
+  renderQueueList();
 }
 
 function startQr() {
@@ -387,9 +392,9 @@ function startQr() {
   html5QrCode.start(
     { facingMode: 'environment' },
     { fps: 10, qrbox: { width: 210, height: 210 } },
-    function(decoded) { stopQr(); closeScanner(); barcodeScanned(decoded); },
+    function(decoded) { stopQr(); barcodeScanned(decoded); },
     function() {}
-  ).catch(function(e) { console.warn('Camera:', e); });
+  ).catch(function(e){ console.warn('Camera:', e); });
 }
 
 function stopQr() {
@@ -399,8 +404,12 @@ function stopQr() {
 function submitManual() {
   var val = document.getElementById('manualBarcode').value.trim();
   if (val.length < 4) { showToast('Enter a valid barcode'); return; }
-  closeScanner();
+  stopQr();
   barcodeScanned(val);
+}
+
+function updateScanCounter() {
+  document.getElementById('scanQueueCount').textContent = queue.length + ' in queue';
 }
 
 // ============================================================
@@ -413,36 +422,59 @@ function barcodeScanned(barcode) {
   currentPhotoData = null;
 
   var inDatabase = KNOWN_BARCODES.has(barcode);
+  var sheet = document.getElementById('resultSheet');
 
-  // Reset photo section
-  document.getElementById('photoPreview').className = 'photo-preview';
-  document.getElementById('photoPreview').innerHTML = '<span style="font-size:26px;color:var(--muted);">📷</span>';
-  document.getElementById('saveBtn').style.display = 'none';
-  document.getElementById('photoInput').value = '';
-
-  var card = document.getElementById('resultCard');
   if (inDatabase) {
-    card.innerHTML =
-      '<div class="result-card found">' +
+    sheet.className = 'result-sheet result-found';
+    sheet.innerHTML =
+      '<div class="result-top">' +
         '<span class="result-icon">✅</span>' +
-        '<div class="result-title" style="color:#276749;">Already in Mucka!</div>' +
-        '<div class="result-barcode">' + barcode + '</div>' +
-        '<div style="font-size:13px;color:#276749;">This one\'s already in the database. Scan the next one!</div>' +
-      '</div>';
-    document.getElementById('captureSection').style.display = 'none';
+        '<div class="result-info">' +
+          '<div class="result-title" style="color:#276749;">Already in Mucka!</div>' +
+          '<div class="result-bc">' + barcode + '</div>' +
+          '<div style="font-size:12px;color:#276749;">This one\'s in the database already.</div>' +
+        '</div>' +
+      '</div>' +
+      '<button class="btn btn-green" onclick="scanNext()" style="margin-bottom:8px;">📷 Scan Next Product</button>' +
+      '<button class="btn btn-ghost" onclick="closeResultAndGoQueue()">📋 View Queue</button>';
   } else {
-    card.innerHTML =
-      '<div class="result-card notfound">' +
+    sheet.className = 'result-sheet result-notfound';
+    sheet.innerHTML =
+      '<div class="result-top">' +
         '<span class="result-icon">🆕</span>' +
-        '<div class="result-title" style="color:#744210;">Not in Mucka yet!</div>' +
-        '<div class="result-barcode">' + barcode + '</div>' +
-        '<div style="font-size:13px;color:#744210;">Photo the front of the pack then save it to the queue.</div>' +
-      '</div>';
-    document.getElementById('captureSection').style.display = 'block';
+        '<div class="result-info">' +
+          '<div class="result-title" style="color:#744210;">Not in Mucka yet!</div>' +
+          '<div class="result-bc">' + barcode + '</div>' +
+          '<div style="font-size:12px;color:#744210;">Photo the front of the pack then save it.</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="photo-preview" id="photoPreview"><span style="font-size:24px;color:var(--muted);">📷</span></div>' +
+      '<input type="file" accept="image/*" capture="environment" class="file-input" id="photoInput" onchange="handlePhoto(this)">' +
+      '<button class="btn btn-orange" onclick="document.getElementById(\'photoInput\').click()" style="margin-bottom:8px;">📷 Take Photo</button>' +
+      '<button class="btn btn-green" id="saveBtn" onclick="saveProduct()" style="display:none;margin-bottom:8px;">✅ Save to Queue</button>' +
+      '<button class="btn btn-ghost" onclick="scanNext()">Skip — Scan Next</button>';
   }
 
-  showScreen('screenResult');
-  setNav('');
+  document.getElementById('resultOverlay').classList.add('active');
+}
+
+function closeResultSheet() {
+  document.getElementById('resultOverlay').classList.remove('active');
+}
+
+function scanNext() {
+  closeResultSheet();
+  updateScanCounter();
+  startQr();
+}
+
+function closeResultAndGoQueue() {
+  closeResultSheet();
+  document.getElementById('scannerOverlay').classList.remove('active');
+  stopQr();
+  showScreen('screenQueue');
+  setNav('navQueue');
+  renderQueueList();
 }
 
 // ============================================================
@@ -468,53 +500,43 @@ function handlePhoto(input) {
 function saveProduct() {
   queue.push({ barcode: currentBarcode, timestamp: new Date().toISOString(), photo: currentPhotoData || null });
   updateCounts();
-  renderRecentList();
-  var count = queue.length;
-  showToast('✅ Saved! ' + count + ' product' + (count !== 1 ? 's' : '') + ' in queue');
-  flashGreen();
   if (navigator.vibrate) navigator.vibrate([50,50,100]);
-  setTimeout(function() { openScanner(); }, 800);
+  showToast('✅ Saved! ' + queue.length + ' in queue');
+  flashGreen();
+  setTimeout(function(){ scanNext(); }, 600);
 }
 
 // ============================================================
-// RENDERS
+// QUEUE
 // ============================================================
-function renderRecentList() {
-  var recentCard = document.getElementById('recentCard');
-  var emptyState = document.getElementById('emptyState');
-  if (queue.length === 0) {
-    recentCard.style.display = 'none';
-    emptyState.style.display = 'block';
-    document.getElementById('viewQueueBtn').style.display = 'none';
-    document.getElementById('downloadBtn').style.display = 'none';
-    return;
-  }
-  emptyState.style.display = 'none';
-  recentCard.style.display = 'block';
-  document.getElementById('viewQueueBtn').style.display = 'flex';
-  document.getElementById('downloadBtn').style.display = 'flex';
-  var recent = queue.slice().reverse().slice(0, 4);
-  document.getElementById('recentList').innerHTML = recent.map(function(p, i) {
-    var time = new Date(p.timestamp).toLocaleTimeString('en-AU', {hour:'2-digit',minute:'2-digit'});
-    return '<div class="queue-item"><div class="queue-num">' + (queue.length - i) + '</div><div class="queue-info"><div class="queue-barcode">' + p.barcode + '</div><div class="queue-meta">' + time + ' · ' + (p.photo ? '📸' : '—') + '</div></div><span style="font-size:18px;">✅</span></div>';
-  }).join('');
-}
-
 function renderQueueList() {
   var list = document.getElementById('queueList');
-  if (queue.length === 0) { list.innerHTML = '<div class="empty"><span class="e-icon">📦</span><div class="e-text">Queue is empty</div></div>'; return; }
+  document.getElementById('queueHeroCount').textContent = queue.length;
+
+  if (queue.length === 0) {
+    list.innerHTML = '<div class="empty"><span class="e-icon">📦</span><div class="e-text">No products yet.<br>Tap Scan to get started!</div></div>';
+    return;
+  }
+
   list.innerHTML = queue.slice().reverse().map(function(p, i) {
     var time = new Date(p.timestamp).toLocaleTimeString('en-AU', {hour:'2-digit',minute:'2-digit'});
-    return '<div class="queue-item"><div class="queue-num">' + (queue.length - i) + '</div><div class="queue-info"><div class="queue-barcode">' + p.barcode + '</div><div class="queue-meta">' + time + ' · ' + (p.photo ? '📸 Photo' : 'No photo') + '</div></div></div>';
+    var thumb = p.photo ? '<img class="queue-photo-thumb" src="' + p.photo + '">' : '<span style="font-size:22px;width:36px;text-align:center;">—</span>';
+    return '<div class="queue-item">' +
+      '<div class="queue-num">' + (queue.length - i) + '</div>' +
+      '<div class="queue-info">' +
+        '<div class="queue-barcode">' + p.barcode + '</div>' +
+        '<div class="queue-meta">' + time + ' · ' + (p.photo ? '📸 Photo' : 'No photo') + '</div>' +
+      '</div>' +
+      thumb +
+    '</div>';
   }).join('');
 }
 
 function clearQueue() {
   if (queue.length === 0) return;
-  if (confirm('Clear all ' + queue.length + ' products? This cannot be undone.')) {
+  if (confirm('Clear all ' + queue.length + ' products? Cannot be undone.')) {
     queue = [];
     updateCounts();
-    renderRecentList();
     renderQueueList();
     showToast('Queue cleared');
   }
@@ -522,39 +544,34 @@ function clearQueue() {
 
 function updateCounts() {
   document.getElementById('headerCount').textContent = queue.length;
-  document.getElementById('queueCountBtn').textContent = queue.length;
+  document.getElementById('queueHeroCount').textContent = queue.length;
 }
 
 // ============================================================
-// SEND
+// DOWNLOAD
 // ============================================================
-function updateSendScreen() {
-  document.getElementById('sendCount').textContent = queue.length;
-  document.getElementById('sendPhotos').textContent = queue.filter(function(p){return !!p.photo;}).length;
-  var list = document.getElementById('sendList');
-  if (queue.length === 0) { list.innerHTML = '<div class="empty"><span class="e-icon">📦</span><div class="e-text">Nothing to send yet</div></div>'; return; }
-  list.innerHTML = queue.map(function(p,i) {
-    return '<div class="queue-item"><div class="queue-num">' + (i+1) + '</div><div class="queue-info"><div class="queue-barcode">' + p.barcode + '</div><div class="queue-meta">' + (p.photo ? '📸 Photo included' : 'No photo') + '</div></div></div>';
-  }).join('');
-}
-
 function downloadZip() {
-  if (queue.length === 0) { showToast('Nothing in the queue!'); return; }
+  if (queue.length === 0) { showToast('Nothing in the queue yet!'); return; }
   var btn = document.getElementById('downloadZipBtn');
   btn.textContent = '⏳ Building zip...';
   btn.disabled = true;
+
   var zip = new JSZip();
   var date = new Date().toLocaleDateString('en-AU').replace(/\//g,'-');
   var folder = 'Mucka-Collector-' + date;
+
   var summary = queue.map(function(p,i) {
     return 'Product ' + (i+1) + '\nBarcode: ' + p.barcode + '\nPhoto: ' + (p.photo?'Yes':'No') + '\nCaptured: ' + new Date(p.timestamp).toLocaleString('en-AU');
   }).join('\n\n---\n\n');
+
   zip.file(folder + '/SUMMARY.txt', 'Mucka Collector Export\nDate: ' + new Date().toLocaleString('en-AU') + '\nProducts: ' + queue.length + '\n\n---\n\n' + summary);
+
   queue.forEach(function(p,i) {
     var pf = folder + '/product-' + String(i+1).padStart(2,'0') + '-' + p.barcode;
     zip.file(pf + '/info.txt', 'Barcode: ' + p.barcode + '\nCaptured: ' + new Date(p.timestamp).toLocaleString('en-AU'));
     if (p.photo) { zip.file(pf + '/photo.jpg', p.photo.split(',')[1], {base64:true}); }
   });
+
   zip.generateAsync({type:'blob'}).then(function(content) {
     var url = URL.createObjectURL(content);
     var a = document.createElement('a');
@@ -562,12 +579,12 @@ function downloadZip() {
     document.body.appendChild(a); a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-    btn.textContent = '📦 Download Zip File';
+    btn.innerHTML = '📦 Download & Share';
     btn.disabled = false;
     showToast('✅ Downloaded!');
   }).catch(function(e) {
     console.error(e);
-    btn.textContent = '📦 Download Zip File';
+    btn.innerHTML = '📦 Download & Share';
     btn.disabled = false;
     showToast('Something went wrong — try again');
   });
@@ -578,7 +595,7 @@ function downloadZip() {
 // ============================================================
 function flashGreen() { var f=document.getElementById('flash'); f.classList.add('show'); setTimeout(function(){f.classList.remove('show');},180); }
 function showToast(msg) { var t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(function(){t.classList.remove('show');},2500); }
-document.getElementById('manualBarcode').addEventListener('keydown', function(e) { if(e.key==='Enter') submitManual(); });
+document.getElementById('manualBarcode').addEventListener('keydown', function(e){ if(e.key==='Enter') submitManual(); });
 </script>
 </body>
 </html>
