@@ -9,1298 +9,520 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <style>
   :root {
-    --navy: #202C94;
-    --sky: #75CFE7;
-    --orange: #EF973F;
-    --bg: #f0f4f8;
-    --white: #ffffff;
-    --text: #2d3748;
-    --muted: #718096;
-    --border: #e2e8f0;
-    --green: #38a169;
-    --red: #e53e3e;
+    --navy: #202C94; --sky: #75CFE7; --orange: #EF973F;
+    --bg: #f0f4f8; --white: #ffffff; --text: #2d3748;
+    --muted: #718096; --border: #e2e8f0; --green: #38a169; --red: #e53e3e;
   }
-
   * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); max-width: 480px; margin: 0 auto; min-height: 100vh; }
 
-  body {
-    font-family: 'Poppins', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    max-width: 480px;
-    margin: 0 auto;
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
-
-  /* HEADER */
   .header {
     background: linear-gradient(135deg, var(--navy), var(--sky));
-    padding: 18px 20px 16px;
-    color: white;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 12px rgba(32,44,148,0.3);
+    padding: 16px 20px 14px; color: white; position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(32,44,148,0.3); display: flex; align-items: center; justify-content: space-between;
   }
+  .app-title { font-size: 20px; font-weight: 800; }
+  .app-title span { color: var(--orange); }
+  .app-sub { font-size: 10px; opacity: 0.8; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+  .counter-pill { background: rgba(255,255,255,0.2); border: 2px solid rgba(255,255,255,0.35); border-radius: 20px; padding: 5px 12px; display: flex; align-items: center; gap: 6px; }
+  .counter-num { font-size: 20px; font-weight: 800; color: var(--orange); line-height: 1; }
+  .counter-label { font-size: 10px; font-weight: 600; line-height: 1.2; }
 
-  .header-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 4px;
-  }
-
-  .app-title {
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-  }
-
-  .app-title span {
-    color: var(--orange);
-  }
-
-  .app-subtitle {
-    font-size: 11px;
-    opacity: 0.85;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-  }
-
-  /* COUNTER PILL */
-  .counter-pill {
-    background: rgba(255,255,255,0.2);
-    border: 2px solid rgba(255,255,255,0.4);
-    border-radius: 20px;
-    padding: 6px 14px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .counter-num {
-    font-size: 22px;
-    font-weight: 800;
-    color: var(--orange);
-    line-height: 1;
-  }
-
-  .counter-label {
-    font-size: 10px;
-    font-weight: 600;
-    opacity: 0.9;
-    line-height: 1.2;
-  }
-
-  /* MAIN CONTENT */
-  .content {
-    padding: 20px 16px 100px;
-  }
-
-  /* SCREEN MANAGEMENT */
+  .content { padding: 16px 16px 90px; }
   .screen { display: none; }
   .screen.active { display: block; }
 
-  /* CARDS */
-  .card {
-    background: white;
-    border-radius: 16px;
-    padding: 20px;
-    margin-bottom: 16px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  }
+  .card { background: white; border-radius: 14px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
 
-  .card-title {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    margin-bottom: 12px;
-  }
+  .btn { width: 100%; padding: 15px 20px; border: none; border-radius: 12px; font-size: 15px; font-weight: 700; font-family: 'Poppins', sans-serif; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: transform 0.15s; margin-bottom: 10px; }
+  .btn:active { transform: scale(0.97); }
+  .btn-navy { background: linear-gradient(135deg, var(--navy), #2d3db5); color: white; box-shadow: 0 4px 14px rgba(32,44,148,0.3); }
+  .btn-orange { background: linear-gradient(135deg, var(--orange), #f5a84a); color: white; box-shadow: 0 4px 14px rgba(239,151,63,0.35); }
+  .btn-green { background: linear-gradient(135deg, var(--green), #48bb78); color: white; box-shadow: 0 4px 14px rgba(56,161,105,0.3); }
+  .btn-ghost { background: white; color: var(--muted); border: 2px solid var(--border); box-shadow: none; }
+  .btn-red { background: white; color: var(--red); border: 2px solid var(--red); box-shadow: none; }
 
-  /* HOME SCREEN */
-  .hero-card {
-    background: linear-gradient(135deg, var(--navy), #2d3db5);
-    border-radius: 20px;
-    padding: 24px 20px;
-    color: white;
-    margin-bottom: 16px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .hero-card::before {
-    content: '';
-    position: absolute;
-    top: -30px;
-    right: -30px;
-    width: 120px;
-    height: 120px;
-    background: rgba(117,207,231,0.15);
-    border-radius: 50%;
-  }
-
-  .hero-card::after {
-    content: '';
-    position: absolute;
-    bottom: -20px;
-    left: -20px;
-    width: 80px;
-    height: 80px;
-    background: rgba(239,151,63,0.15);
-    border-radius: 50%;
-  }
-
-  .hero-icon {
-    font-size: 48px;
-    margin-bottom: 12px;
-    display: block;
-  }
-
-  .hero-title {
-    font-size: 20px;
-    font-weight: 800;
-    margin-bottom: 6px;
-  }
-
-  .hero-desc {
-    font-size: 13px;
-    opacity: 0.8;
-    line-height: 1.5;
-  }
-
-  /* BIG SCAN BUTTON */
-  .btn-scan-big {
-    width: 100%;
-    padding: 18px 24px;
-    background: linear-gradient(135deg, var(--orange), #f5a84a);
-    color: white;
-    border: none;
-    border-radius: 16px;
-    font-size: 18px;
-    font-weight: 800;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    box-shadow: 0 6px 20px rgba(239,151,63,0.4);
-    transition: transform 0.15s, box-shadow 0.15s;
-    margin-bottom: 12px;
-    letter-spacing: -0.3px;
-  }
-
-  .btn-scan-big:active {
-    transform: scale(0.97);
-    box-shadow: 0 3px 10px rgba(239,151,63,0.3);
-  }
-
-  .btn-secondary {
-    width: 100%;
-    padding: 14px 24px;
-    background: white;
-    color: var(--navy);
-    border: 2px solid var(--border);
-    border-radius: 16px;
-    font-size: 15px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    transition: all 0.15s;
-    margin-bottom: 12px;
-  }
-
-  .btn-secondary:active {
-    background: var(--bg);
-    transform: scale(0.97);
-  }
-
-  /* QUEUE LIST */
-  .queue-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .queue-item:last-child { border-bottom: none; }
-
-  .queue-num {
-    width: 32px;
-    height: 32px;
-    background: linear-gradient(135deg, var(--navy), var(--sky));
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-    font-weight: 800;
-    color: white;
-    flex-shrink: 0;
-  }
-
-  .queue-info { flex: 1; min-width: 0; }
-
-  .queue-barcode {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--text);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .queue-status {
-    font-size: 11px;
-    color: var(--muted);
-    margin-top: 2px;
-  }
-
-  .queue-tick {
-    font-size: 20px;
-    flex-shrink: 0;
-  }
-
-  /* SCANNER */
-  .scanner-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 200;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-
+  .scanner-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.93); z-index: 200; display: none; flex-direction: column; align-items: center; justify-content: center; padding: 20px; }
   .scanner-overlay.active { display: flex; }
-
-  .scanner-title {
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 8px;
-    text-align: center;
-  }
-
-  .scanner-sub {
-    color: rgba(255,255,255,0.6);
-    font-size: 13px;
-    margin-bottom: 24px;
-    text-align: center;
-  }
-
-  #qr-reader {
-    width: 280px;
-    height: 280px;
-    border-radius: 16px;
-    overflow: hidden;
-    position: relative;
-    border: 3px solid var(--sky);
-  }
-
-  .scan-line {
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background: var(--sky);
-    box-shadow: 0 0 10px var(--sky);
-    animation: scanMove 1.5s ease-in-out infinite;
-    z-index: 10;
-    pointer-events: none;
-  }
-
-  @keyframes scanMove {
-    0% { top: 0; }
-    50% { top: calc(100% - 3px); }
-    100% { top: 0; }
-  }
-
-  .scanner-or {
-    color: rgba(255,255,255,0.5);
-    font-size: 12px;
-    margin: 20px 0 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  .manual-input {
-    width: 100%;
-    max-width: 280px;
-    padding: 14px 16px;
-    border: 2px solid rgba(255,255,255,0.2);
-    border-radius: 12px;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    background: rgba(255,255,255,0.1);
-    color: white;
-    text-align: center;
-    outline: none;
-    margin-bottom: 12px;
-  }
-
-  .manual-input::placeholder { color: rgba(255,255,255,0.4); }
+  .scanner-title { color: white; font-size: 18px; font-weight: 700; margin-bottom: 6px; text-align: center; }
+  .scanner-sub { color: rgba(255,255,255,0.6); font-size: 13px; margin-bottom: 20px; text-align: center; }
+  #qr-reader { width: 270px; height: 270px; border-radius: 16px; overflow: hidden; position: relative; border: 3px solid var(--sky); }
+  .scan-line { position: absolute; width: 100%; height: 3px; background: var(--sky); box-shadow: 0 0 10px var(--sky); animation: scanMove 1.5s ease-in-out infinite; z-index: 10; pointer-events: none; }
+  @keyframes scanMove { 0% { top: 0; } 50% { top: calc(100% - 3px); } 100% { top: 0; } }
+  .scanner-or { color: rgba(255,255,255,0.4); font-size: 11px; margin: 16px 0 10px; text-transform: uppercase; letter-spacing: 1px; }
+  .manual-input { width: 100%; max-width: 270px; padding: 12px 16px; border: 2px solid rgba(255,255,255,0.2); border-radius: 10px; font-size: 15px; font-family: 'Poppins', sans-serif; background: rgba(255,255,255,0.1); color: white; text-align: center; outline: none; margin-bottom: 10px; }
+  .manual-input::placeholder { color: rgba(255,255,255,0.35); }
   .manual-input:focus { border-color: var(--sky); }
+  .btn-manual-go { width: 100%; max-width: 270px; padding: 12px; background: var(--sky); color: var(--navy); border: none; border-radius: 10px; font-size: 14px; font-weight: 700; font-family: 'Poppins', sans-serif; cursor: pointer; margin-bottom: 14px; }
+  .btn-cancel-scan { color: rgba(255,255,255,0.5); font-size: 13px; background: none; border: 1px solid rgba(255,255,255,0.2); padding: 10px 28px; border-radius: 10px; cursor: pointer; font-family: 'Poppins', sans-serif; }
 
-  .btn-manual-go {
-    width: 100%;
-    max-width: 280px;
-    padding: 14px;
-    background: var(--sky);
-    color: var(--navy);
-    border: none;
-    border-radius: 12px;
-    font-size: 15px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    margin-bottom: 16px;
-  }
+  .result-card { border-radius: 16px; padding: 18px; margin-bottom: 12px; text-align: center; }
+  .result-card.found { background: linear-gradient(135deg, #f0fff4, #c6f6d5); border: 2px solid #68d391; }
+  .result-card.notfound { background: linear-gradient(135deg, #fffaf0, #feebc8); border: 2px solid var(--orange); }
+  .result-icon { font-size: 40px; margin-bottom: 8px; display: block; }
+  .result-title { font-size: 17px; font-weight: 800; margin-bottom: 4px; }
+  .result-barcode { font-size: 12px; color: var(--muted); font-family: monospace; margin-bottom: 10px; }
 
-  .btn-cancel-scan {
-    color: rgba(255,255,255,0.6);
-    font-size: 14px;
-    background: none;
-    border: 1px solid rgba(255,255,255,0.2);
-    padding: 12px 32px;
-    border-radius: 12px;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 8px;
-  }
+  .photo-preview { width: 100%; border-radius: 10px; overflow: hidden; margin-bottom: 10px; background: var(--bg); min-height: 130px; display: flex; align-items: center; justify-content: center; position: relative; border: 2px dashed var(--border); }
+  .photo-preview img { width: 100%; display: block; border-radius: 10px; }
+  .photo-preview.has-photo { border: none; }
+  .retake-btn { position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.55); color: white; border: none; border-radius: 6px; padding: 5px 10px; font-size: 11px; font-weight: 600; font-family: 'Poppins', sans-serif; cursor: pointer; }
 
-  /* CAPTURE SCREEN */
-  .step-indicator {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 20px;
-    justify-content: center;
-  }
+  .queue-item { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+  .queue-item:last-child { border-bottom: none; }
+  .queue-num { width: 28px; height: 28px; background: linear-gradient(135deg, var(--navy), var(--sky)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: white; flex-shrink: 0; }
+  .queue-info { flex: 1; min-width: 0; }
+  .queue-barcode { font-size: 13px; font-weight: 700; font-family: monospace; }
+  .queue-meta { font-size: 11px; color: var(--muted); margin-top: 2px; }
 
-  .step-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--border);
-    transition: all 0.3s;
-  }
+  .hero { background: linear-gradient(135deg, var(--navy), #2d3db5); border-radius: 18px; padding: 20px; color: white; text-align: center; margin-bottom: 12px; }
+  .hero-icon { font-size: 44px; display: block; margin-bottom: 10px; }
+  .hero-title { font-size: 18px; font-weight: 800; margin-bottom: 6px; }
+  .hero-desc { font-size: 13px; opacity: 0.8; line-height: 1.5; }
 
-  .step-dot.active {
-    background: var(--orange);
-    width: 28px;
-    border-radius: 5px;
-  }
+  .empty { text-align: center; padding: 28px 16px; color: var(--muted); }
+  .empty .e-icon { font-size: 44px; display: block; margin-bottom: 10px; opacity: 0.4; }
+  .empty .e-text { font-size: 14px; }
 
-  .step-dot.done { background: var(--green); }
+  .send-hero { background: linear-gradient(135deg, var(--orange), #f5a84a); border-radius: 18px; padding: 20px; color: white; text-align: center; margin-bottom: 12px; }
+  .send-hero .s-icon { font-size: 44px; display: block; margin-bottom: 8px; }
+  .send-hero .s-title { font-size: 18px; font-weight: 800; margin-bottom: 4px; }
+  .send-hero .s-desc { font-size: 13px; opacity: 0.9; line-height: 1.5; }
 
-  .barcode-display {
-    background: linear-gradient(135deg, var(--navy), #2d3db5);
-    border-radius: 12px;
-    padding: 14px 16px;
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+  .stat-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+  .stat-row:last-child { border-bottom: none; }
+  .stat-label { font-size: 14px; color: var(--muted); }
+  .stat-val { font-size: 16px; font-weight: 800; color: var(--navy); }
 
-  .barcode-display .bc-icon { font-size: 24px; }
-
-  .barcode-display .bc-text {
-    flex: 1;
-  }
-
-  .barcode-display .bc-label {
-    font-size: 10px;
-    color: rgba(255,255,255,0.6);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    font-weight: 600;
-  }
-
-  .barcode-display .bc-num {
-    font-size: 16px;
-    font-weight: 800;
-    color: white;
-    letter-spacing: 1px;
-  }
-
-  .photo-prompt {
-    text-align: center;
-    padding: 20px 0;
-  }
-
-  .photo-icon {
-    font-size: 64px;
-    display: block;
-    margin-bottom: 12px;
-    animation: pulse 2s ease-in-out infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-  }
-
-  .photo-title {
-    font-size: 20px;
-    font-weight: 800;
-    color: var(--text);
-    margin-bottom: 8px;
-  }
-
-  .photo-desc {
-    font-size: 14px;
-    color: var(--muted);
-    line-height: 1.5;
-    margin-bottom: 24px;
-    padding: 0 10px;
-  }
-
-  .photo-tip {
-    background: linear-gradient(135deg, rgba(117,207,231,0.1), rgba(32,44,148,0.05));
-    border: 1px solid rgba(117,207,231,0.3);
-    border-radius: 10px;
-    padding: 12px 14px;
-    font-size: 12px;
-    color: var(--navy);
-    font-weight: 600;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    text-align: left;
-  }
-
-  /* PHOTO PREVIEW */
-  .photo-preview {
-    width: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 16px;
-    background: var(--bg);
-    min-height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-
-  .photo-preview img {
-    width: 100%;
-    display: block;
-    border-radius: 12px;
-  }
-
-  .photo-preview.empty {
-    border: 2px dashed var(--border);
-    color: var(--muted);
-    font-size: 13px;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  /* FILE INPUT HIDDEN */
-  .file-input { display: none; }
-
-  /* BUTTONS */
-  .btn-primary {
-    width: 100%;
-    padding: 16px 24px;
-    background: linear-gradient(135deg, var(--navy), #2d3db5);
-    color: white;
-    border: none;
-    border-radius: 14px;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    box-shadow: 0 4px 15px rgba(32,44,148,0.3);
-    transition: transform 0.15s;
-    margin-bottom: 10px;
-  }
-
-  .btn-primary:active { transform: scale(0.97); }
-
-  .btn-orange {
-    background: linear-gradient(135deg, var(--orange), #f5a84a);
-    box-shadow: 0 4px 15px rgba(239,151,63,0.35);
-  }
-
-  .btn-green {
-    background: linear-gradient(135deg, #38a169, #48bb78);
-    box-shadow: 0 4px 15px rgba(56,161,105,0.35);
-  }
-
-  .btn-ghost {
-    width: 100%;
-    padding: 14px 24px;
-    background: transparent;
-    color: var(--muted);
-    border: 2px solid var(--border);
-    border-radius: 14px;
-    font-size: 14px;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    transition: all 0.15s;
-    margin-bottom: 10px;
-  }
-
-  .btn-ghost:active { background: var(--bg); }
-
-  /* SUCCESS ANIMATION */
-  .success-screen {
-    text-align: center;
-    padding: 30px 0;
-  }
-
-  .success-circle {
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(135deg, var(--green), #48bb78);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    margin: 0 auto 20px;
-    animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-
-  @keyframes popIn {
-    0% { transform: scale(0); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
-  }
-
-  .success-title {
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--text);
-    margin-bottom: 8px;
-  }
-
-  .success-sub {
-    font-size: 14px;
-    color: var(--muted);
-    margin-bottom: 8px;
-  }
-
-  .success-count {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--navy);
-    margin-bottom: 28px;
-  }
-
-  /* SEND SCREEN */
-  .send-card {
-    background: linear-gradient(135deg, var(--orange), #f5a84a);
-    border-radius: 20px;
-    padding: 24px 20px;
-    color: white;
-    text-align: center;
-    margin-bottom: 16px;
-  }
-
-  .send-icon { font-size: 48px; margin-bottom: 12px; display: block; }
-  .send-title { font-size: 20px; font-weight: 800; margin-bottom: 6px; }
-  .send-desc { font-size: 13px; opacity: 0.9; line-height: 1.5; }
-
-  .summary-stat {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .summary-stat:last-child { border-bottom: none; }
-  .summary-stat .s-label { font-size: 14px; color: var(--muted); }
-  .summary-stat .s-val { font-size: 16px; font-weight: 800; color: var(--navy); }
-
-  /* EMPTY QUEUE */
-  .empty-queue {
-    text-align: center;
-    padding: 32px 20px;
-    color: var(--muted);
-  }
-
-  .empty-queue .eq-icon { font-size: 48px; margin-bottom: 12px; display: block; opacity: 0.5; }
-  .empty-queue .eq-text { font-size: 14px; }
-
-  /* BOTTOM NAV */
-  .bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 480px;
-    background: white;
-    display: flex;
-    align-items: flex-end;
-    border-top: 3px solid var(--orange);
-    z-index: 100;
-    padding: 8px 0 max(8px, env(safe-area-inset-bottom));
-  }
-
-  .nav-item {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3px;
-    padding: 8px 0;
-    cursor: pointer;
-    color: var(--muted);
-    transition: color 0.2s;
-    border: none;
-    background: none;
-    font-family: 'Poppins', sans-serif;
-  }
-
+  .bottom-nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; background: white; display: flex; align-items: flex-end; border-top: 3px solid var(--orange); z-index: 100; padding: 6px 0 max(8px, env(safe-area-inset-bottom)); }
+  .nav-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 6px 0; cursor: pointer; color: var(--muted); border: none; background: none; font-family: 'Poppins', sans-serif; }
   .nav-item.active { color: var(--navy); }
-  .nav-item .nav-icon { font-size: 22px; }
-  .nav-item .nav-label { font-size: 10px; font-weight: 600; }
+  .nav-item .ni { font-size: 20px; }
+  .nav-item .nl { font-size: 10px; font-weight: 600; }
+  .nav-scan-raised { position: relative; flex: 1; display: flex; flex-direction: column; align-items: center; cursor: pointer; border: none; background: none; font-family: 'Poppins', sans-serif; padding: 0; }
+  .nav-scan-circle { width: 54px; height: 54px; border-radius: 50%; background: linear-gradient(135deg, var(--orange), var(--navy)); display: flex; align-items: center; justify-content: center; border: 3px solid white; box-shadow: 0 4px 14px rgba(239,151,63,0.45); transform: translateY(-18px); margin-bottom: -10px; font-size: 22px; transition: transform 0.15s; }
+  .nav-scan-raised:active .nav-scan-circle { transform: translateY(-16px) scale(0.95); }
+  .nav-scan-raised .nl { font-size: 10px; font-weight: 600; color: var(--muted); }
 
-  .nav-scan-raised {
-    position: relative;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-    background: none;
-    font-family: 'Poppins', sans-serif;
-    padding: 0;
-  }
-
-  .nav-scan-circle {
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--orange), var(--navy));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid white;
-    box-shadow: 0 4px 14px rgba(239,151,63,0.45);
-    transform: translateY(-20px);
-    margin-bottom: -12px;
-    font-size: 24px;
-    transition: transform 0.15s;
-  }
-
-  .nav-scan-raised:active .nav-scan-circle { transform: translateY(-18px) scale(0.95); }
-  .nav-scan-raised .nav-label { font-size: 10px; font-weight: 600; color: var(--muted); }
-
-  /* FLASH FEEDBACK */
-  .flash {
-    position: fixed;
-    inset: 0;
-    background: rgba(56,161,105,0.3);
-    z-index: 300;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.1s;
-  }
-
+  .flash { position: fixed; inset: 0; background: rgba(56,161,105,0.25); z-index: 300; pointer-events: none; opacity: 0; transition: opacity 0.1s; }
   .flash.show { opacity: 1; }
-
-  /* RETAKE OVERLAY */
-  .retake-btn {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: rgba(0,0,0,0.6);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 6px 12px;
-    font-size: 12px;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-  }
-
-  /* TOAST */
-  .toast {
-    position: fixed;
-    bottom: 90px;
-    left: 50%;
-    transform: translateX(-50%) translateY(20px);
-    background: var(--text);
-    color: white;
-    padding: 12px 20px;
-    border-radius: 12px;
-    font-size: 14px;
-    font-weight: 600;
-    opacity: 0;
-    transition: all 0.3s;
-    z-index: 400;
-    white-space: nowrap;
-    pointer-events: none;
-  }
-
-  .toast.show {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-
-  /* MUCKA LINK */
-  .mucka-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 14px;
-    background: linear-gradient(135deg, rgba(32,44,148,0.08), rgba(117,207,231,0.08));
-    border: 2px solid rgba(32,44,148,0.15);
-    border-radius: 14px;
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--navy);
-    cursor: pointer;
-    margin-bottom: 10px;
-    text-decoration: none;
-    transition: all 0.15s;
-  }
-
-  .mucka-link:active { background: rgba(32,44,148,0.12); }
-
-  /* PROGRESS BAR */
-  .capture-progress {
-    display: flex;
-    gap: 6px;
-    margin-bottom: 16px;
-  }
-
-  .progress-seg {
-    flex: 1;
-    height: 5px;
-    border-radius: 3px;
-    background: var(--border);
-    transition: background 0.3s;
-  }
-
-  .progress-seg.done { background: var(--green); }
-  .progress-seg.active { background: var(--orange); }
+  .toast { position: fixed; bottom: 85px; left: 50%; transform: translateX(-50%) translateY(16px); background: var(--text); color: white; padding: 10px 18px; border-radius: 10px; font-size: 13px; font-weight: 600; opacity: 0; transition: all 0.3s; z-index: 400; white-space: nowrap; pointer-events: none; }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  .file-input { display: none; }
 </style>
 </head>
 <body>
 
-<!-- FLASH OVERLAY -->
 <div class="flash" id="flash"></div>
-
-<!-- TOAST -->
 <div class="toast" id="toast"></div>
 
-<!-- HEADER -->
-<div class="header">
-  <div class="header-top">
-    <div style="text-align:left;">
-      <div class="app-title">Mucka <span>Collector</span></div>
-      <div class="app-subtitle">Field Data App</div>
-    </div>
-    <div class="counter-pill">
-      <div class="counter-num" id="headerCount">0</div>
-      <div class="counter-label">products<br>logged</div>
-    </div>
-  </div>
-</div>
-
-<!-- SCANNER OVERLAY -->
 <div class="scanner-overlay" id="scannerOverlay">
   <div class="scanner-title">Scan Barcode</div>
-  <div class="scanner-sub">Point camera at the product barcode</div>
-  <div id="qr-reader">
-    <div class="scan-line"></div>
-  </div>
+  <div class="scanner-sub">Point camera at the barcode</div>
+  <div id="qr-reader"><div class="scan-line"></div></div>
   <div class="scanner-or">or enter manually</div>
   <input type="text" class="manual-input" id="manualBarcode" placeholder="Type barcode number" inputmode="numeric">
-  <button class="btn-manual-go" onclick="submitManualBarcode()">Use This Barcode →</button>
+  <button class="btn-manual-go" onclick="submitManual()">Use This Barcode →</button>
   <button class="btn-cancel-scan" onclick="closeScanner()">Cancel</button>
 </div>
 
-<!-- MAIN CONTENT -->
+<div class="header">
+  <div>
+    <div class="app-title">Mucka <span>Collector</span></div>
+    <div class="app-sub">Field Data Tool</div>
+  </div>
+  <div class="counter-pill">
+    <div class="counter-num" id="headerCount">0</div>
+    <div class="counter-label">in<br>queue</div>
+  </div>
+</div>
+
 <div class="content">
 
-  <!-- HOME SCREEN -->
+  <!-- HOME -->
   <div class="screen active" id="screenHome">
-
-    <div class="hero-card">
+    <div class="hero">
       <span class="hero-icon">🐾</span>
       <div class="hero-title">Ready to collect!</div>
-      <div class="hero-desc">Scan products not in the Mucka database. Build the queue, send it to Tex later.</div>
+      <div class="hero-desc">Scan any product. Already in Mucka? It'll tell you. New one? Photo it and queue it.</div>
     </div>
-
-    <button class="btn-scan-big" onclick="openScanner()">
-      <span>📷</span> Scan New Product
-    </button>
-
-    <button class="btn-secondary" onclick="showScreen('screenQueue')">
-      <span>📋</span> View Queue (<span id="queueCountBtn">0</span>)
-    </button>
-
-    <button class="btn-secondary" onclick="showScreen('screenSend')" id="sendBtn" style="display:none;">
-      <span>📦</span> Download & Share (<span id="queueCountBtn">0</span>)
-    </button>
-
-    <!-- TODAY'S QUEUE PREVIEW -->
+    <button class="btn btn-orange" onclick="openScanner()"><span style="font-size:20px;">📷</span> Scan a Product</button>
+    <button class="btn btn-ghost" onclick="goQueue()" id="viewQueueBtn" style="display:none;"><span style="font-size:18px;">📋</span> View Queue (<span id="queueCountBtn">0</span>)</button>
+    <button class="btn btn-ghost" onclick="showScreen('screenSend')" id="downloadBtn" style="display:none;"><span style="font-size:18px;">📦</span> Download & Share</button>
+    <div id="emptyState" class="empty"><span class="e-icon">📦</span><div class="e-text">No products logged yet.<br>Hit Scan to get started!</div></div>
     <div class="card" id="recentCard" style="display:none;">
-      <div class="card-title">Recent Captures</div>
+      <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:10px;">Recent</div>
       <div id="recentList"></div>
     </div>
-
-    <div class="card" id="emptyCard">
-      <div class="empty-queue">
-        <span class="eq-icon">📦</span>
-        <div class="eq-text">No products logged yet.<br>Hit Scan to get started!</div>
-      </div>
-    </div>
-
   </div>
 
-  <!-- CAPTURE SCREEN -->
-  <div class="screen" id="screenCapture">
-
-    <div class="barcode-display">
-      <span class="bc-icon">▌▌▌▌▌▌</span>
-      <div class="bc-text">
-        <div class="bc-label">Barcode captured</div>
-        <div class="bc-num" id="captureBarcode">—</div>
+  <!-- RESULT -->
+  <div class="screen" id="screenResult">
+    <div id="resultCard"></div>
+    <div id="captureSection" style="display:none;">
+      <div class="card" style="padding:14px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <span style="font-size:26px;">📸</span>
+          <div>
+            <div style="font-size:14px;font-weight:800;color:var(--text);">Photo the front of the pack</div>
+            <div style="font-size:11px;color:var(--muted);">Brand name and product line in shot</div>
+          </div>
+        </div>
+        <div class="photo-preview" id="photoPreview"><span style="font-size:26px;color:var(--muted);">📷</span></div>
+        <input type="file" accept="image/*" capture="environment" class="file-input" id="photoInput" onchange="handlePhoto(this)">
+        <button class="btn btn-orange" onclick="document.getElementById('photoInput').click()">📷 Take Photo</button>
+        <button class="btn btn-green" id="saveBtn" onclick="saveProduct()" style="display:none;">✅ Save to Queue</button>
       </div>
-      <span style="font-size:20px;">✅</span>
     </div>
-
-    <!-- STEP 1: Product photo -->
-    <div id="step1" class="card">
-      <div class="card-title">📦 Take a Photo of the Product</div>
-      <div class="photo-prompt">
-        <span class="photo-icon">📸</span>
-        <div class="photo-title">Photo the front of the pack</div>
-        <div class="photo-desc">Get the brand name, product line and flavour in one shot. We'll look up the ingredients later.</div>
-      </div>
-      <div class="photo-tip">
-        💡 Hold the phone flat and steady. Make sure the brand name is clearly visible.
-      </div>
-      <div class="photo-preview empty" id="preview1">
-        <span style="font-size:32px;">📷</span>
-        <span>No photo yet</span>
-      </div>
-      <input type="file" accept="image/*" capture="environment" class="file-input" id="fileInput1" onchange="handlePhoto(1, this)">
-      <button class="btn-primary btn-orange" onclick="document.getElementById('fileInput1').click()">
-        📷 Take Photo
-      </button>
-      <button class="btn-primary btn-green" id="next1Btn" onclick="saveProduct()" style="display:none;">
-        ✅ Save Product
-      </button>
-    </div>
-
-
-
+    <button class="btn btn-ghost" onclick="openScanner()">📷 Scan Next Product</button>
+    <button class="btn btn-ghost" onclick="showScreen('screenHome');setNav('navHome')">← Back to Home</button>
   </div>
 
-  <!-- SUCCESS SCREEN -->
-  <div class="screen" id="screenSuccess">
-    <div class="card">
-      <div class="success-screen">
-        <div class="success-circle">✅</div>
-        <div class="success-title">Product Saved!</div>
-        <div class="success-sub">Added to your queue</div>
-        <div class="success-count" id="successCount">1 product logged today</div>
-        <button class="btn-primary btn-orange" onclick="scanAnother()">
-          📷 Scan Another Product
-        </button>
-        <a class="mucka-link" href="index.html" target="_blank">
-          🐾 Back to Mucka
-        </a>
-        <button class="btn-secondary" onclick="showScreen('screenSend')">
-          📦 Download & Share Queue
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- QUEUE SCREEN -->
+  <!-- QUEUE -->
   <div class="screen" id="screenQueue">
     <div class="card">
-      <div class="card-title">📋 Product Queue</div>
-      <div id="queueList">
-        <div class="empty-queue">
-          <span class="eq-icon">📦</span>
-          <div class="eq-text">Queue is empty</div>
-        </div>
-      </div>
+      <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:10px;">Product Queue</div>
+      <div id="queueList"></div>
     </div>
-    <button class="btn-primary btn-orange" onclick="openScanner()">
-      📷 Scan Another
-    </button>
-    <button class="btn-ghost" onclick="showScreen('screenHome')">← Back to Home</button>
-    <button class="btn-ghost" style="color:var(--red); border-color:var(--red);" onclick="clearQueue()">
-      🗑 Clear Queue
-    </button>
+    <button class="btn btn-orange" onclick="openScanner()">📷 Scan Another</button>
+    <button class="btn btn-ghost" onclick="showScreen('screenHome');setNav('navHome')">← Back to Home</button>
+    <button class="btn btn-red" onclick="clearQueue()">🗑 Clear Queue</button>
   </div>
 
-  <!-- SEND SCREEN -->
+  <!-- SEND -->
   <div class="screen" id="screenSend">
-
-    <div class="send-card">
-      <span class="send-icon">📦</span>
-      <div class="send-title">Download & Share</div>
-      <div class="send-desc">Downloads a zip file with all barcodes and photos. Share it to Tex however you like — email, WhatsApp, AirDrop, anything.</div>
+    <div class="send-hero">
+      <span class="s-icon">📦</span>
+      <div class="s-title">Download & Share</div>
+      <div class="s-desc">Downloads a zip file with all barcodes and photos. Share it to Tex via email, WhatsApp — whatever works.</div>
     </div>
-
     <div class="card">
-      <div class="card-title">Session Summary</div>
-      <div class="summary-stat">
-        <span class="s-label">Products logged</span>
-        <span class="s-val" id="sendCount">0</span>
-      </div>
-      <div class="summary-stat">
-        <span class="s-label">Photos captured</span>
-        <span class="s-val" id="sendPhotos">0</span>
-      </div>
-      <div class="summary-stat">
-        <span class="s-label">Sending to</span>
-        <span class="s-val" style="font-size:13px;">muckatester@gmail.com</span>
-      </div>
+      <div class="stat-row"><span class="stat-label">Products logged</span><span class="stat-val" id="sendCount">0</span></div>
+      <div class="stat-row"><span class="stat-label">Photos captured</span><span class="stat-val" id="sendPhotos">0</span></div>
     </div>
-
-    <div class="card" id="sendQueuePreview">
-      <div class="card-title">Products in this batch</div>
+    <div class="card" id="sendQueueCard">
+      <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:10px;">In this batch</div>
       <div id="sendList"></div>
     </div>
-
-    <button class="btn-primary btn-orange" onclick="sendEmail()">
-      📦 Download Zip File
-    </button>
-    <button class="btn-ghost" onclick="showScreen('screenHome')">← Back</button>
-
+    <button class="btn btn-orange" id="downloadZipBtn" onclick="downloadZip()">📦 Download Zip File</button>
+    <button class="btn btn-ghost" onclick="showScreen('screenHome');setNav('navHome')">← Back</button>
   </div>
 
 </div>
 
-<!-- BOTTOM NAV -->
 <div class="bottom-nav">
-  <button class="nav-item active" id="navHome" onclick="showScreen('screenHome'); setNav('navHome')">
-    <span class="nav-icon">🏠</span>
-    <span class="nav-label">Home</span>
-  </button>
-  <button class="nav-scan-raised" onclick="openScanner()">
-    <div class="nav-scan-circle">📷</div>
-    <span class="nav-label">Scan</span>
-  </button>
-  <button class="nav-item" id="navQueue" onclick="showScreen('screenQueue'); setNav('navQueue')">
-    <span class="nav-icon">📋</span>
-    <span class="nav-label">Queue</span>
-  </button>
+  <button class="nav-item active" id="navHome" onclick="showScreen('screenHome');setNav('navHome')"><span class="ni">🏠</span><span class="nl">Home</span></button>
+  <button class="nav-scan-raised" onclick="openScanner()"><div class="nav-scan-circle">📷</div><span class="nl">Scan</span></button>
+  <button class="nav-item" id="navQueue" onclick="goQueue();setNav('navQueue')"><span class="ni">📋</span><span class="nl">Queue</span></button>
 </div>
 
 <script>
 // ============================================================
-// STATE
+// KNOWN BARCODES — products already in Mucka database
 // ============================================================
-let queue = [];
-let currentBarcode = null;
-let currentPhotos = { front: null, ingredients: null };
-let html5QrCode = null;
+var KNOWN_BARCODES = new Set([
+  '0017800182829','0017800185707','0017800185868','0021006599381','0038100119315',
+  '0038100119339','0052742024516','0052742284200','0064992501112','0064992541606',
+  '0076344884170','0076344884828','022808382546','050000040803','050000172986',
+  '050000429844','050000503896','050000836123','052742176901','058496723026',
+  '058496723040','064992714437','076344089322','1014171872761','129510721202',
+  '186011000052','186011000076','265681000002','277746000001','2820181299974',
+  '300650481182','3182550401937','3182550702225','3182550707688','3182550708180',
+  '3182550708203','3182550716253','3182550721400','3182550756419','3182550771269',
+  '3182550793582','3182550805254','3182550842938','3182551055658','4008429037894',
+  '4008429037962','4008429037979','4008429037986','4008429105173','4008429110788',
+  '4008429112584','4057166006847','4434567349658','5000161029662','5010394984584',
+  '5051220846515','5051220851465','5060122490511','5060122492515','5060122497886',
+  '5060333431792','5060333433628','5060333434540','5060333438012','5060333439880',
+  '5060481893138','5060481899550','5060708560799','5060708562762','5060708565626',
+  '5300647109964','5900951259050','5900951305504','6090410573540','60992990024',
+  '628451123934','642863041105','642863101380','642863101397','642863102912',
+  '642863107030','642863107047','642863107610','64992530112','64992570125',
+  '64992613105','680196604635','680569859822','6977085247726','717226208805',
+  '721866456052','726481421362','74198609581','74198610716','74198611010',
+  '74198611379','74198614035','74198614455','74198615070','7427067528989',
+  '7613035379831','7613036667463','763163284082','763163284341','76344079187',
+  '76344088530','76344179962','76344884156','780348001227','780348002774',
+  '780348006963','793618002978','799439797444','815436011595','815436013056',
+  '815436013087','815436013094','815436013179','815436018464','855958006570',
+  '859610007646','8850011072693','8850011072716','8850011076028','8850124047748',
+  '8850124048226','8850124086846','8850124097750','8850125071360','8850127000658',
+  '8850127003918','8850127006827','8850127009538','8852084172874','885210169040',
+  '8853301000949','8853301000987','8853301001083','8853301001106','8853301001120',
+  '8853301001786','8853301001809','8853301008112','8853301016872','8853301016889',
+  '8858772602296','886817002143','8888056777778','9003579008201','9003579008454',
+  '9003579015902','9300462340418','9300603224898','9300605025530','9300605038103',
+  '9300605038202','9300605038400','9300605056497','9300605080546','9300605080553',
+  '9300605104495','9300605108189','9300605108196','9300605109605','9300605109773',
+  '9300605110878','9300605111110','9300605116177','9300605122666','9300605122970',
+  '9300605128446','9300605132443','9300605133037','9300605136069','9300605139886',
+  '9300605139893','9300605139916','9300605140875','9300605140899','9300605141223',
+  '9300605141445','9300605141681','9300605141704','9300605141728','9300605143944',
+  '9300605145634','9300605146709','9300605147331','9300605147355','9300605147379',
+  '9300605147386','9300605147393','9300605147409','9300605147423','9300605147430',
+  '9300605147454','9300605147461','9300605147478','9300605147485','9300605147492',
+  '9300605153899','9300605153912','9300605153929','9300605153943','9300605153950',
+  '9300605156456','9300605156463','9300605157231','9300605157248','9300605157255',
+  '9300605157262','9300605157279','9300605162204','9300605162211','9300607563412',
+  '9300633092627','9300633553821','9300633553852','9300633553869','9300633553982',
+  '9300633554040','9300633554057','9300633554071','9300633554118','9300633554125',
+  '9300633554163','9300633588441','9300633683542','9300633948955','9300633948962',
+  '9300644123563','9300645041385','9300657014537','9300681169586','9300681224551',
+  '9300683504460','9300745511054','9309001273194','9309001273545','9309001273552',
+  '9310015205200','9310022018206','9310022018305','9310022020308','9310022020506',
+  '9310022034305','9310022034404','9310022034800','9310022037207','9310022061806',
+  '9310022062308','9310022062407','9310022067006','9310022161100','9310022161308',
+  '9310022161902','9310022193002','9310022193101','9310022193309','9310022195402',
+  '9310022360800','9310022379703','9310022392603','9310022396809','9310022528507',
+  '9310022567308','9310022867798','9310022867804','9310022867811','9310023144003',
+  '9310085001399','9310085001412','9310320003829','9310768112527','9310768112558',
+  '9310768115337','9310768115344','9310768115498','9311503141208','9312141000636',
+  '9312239029143','9312239029860','9312239041695','9312239045853','9312239047680',
+  '9312239047710','9312239047772','9312239047802','9312239048397','9312239048403',
+  '9312239049585','9312239049707','9312239051984','9312239052196','9312239052219',
+  '9312239052233','9312239052271','9313010001211','9313107123079','9314364111243',
+  '9314364335724','9314364335748','9314364335762','9314364335779','9314364336196',
+  '9314364336202','9314364337476','9314364337568','9314364337575','9314364404741',
+  '9315822022088','9316203000114','9316401201412','9318191901015','9319185002817',
+  '9319185002923','9319185004064','9319185004088','9319185007010','9319185007027',
+  '9319185007034','9319185009472','9319185009502','9319185009557','9319185009564',
+  '9319185009571','9319185009588','9319185009632','9319185009649','9319185009663',
+  '9319185009700','9319185009755','9319185254995','9319185255008','9319185550202',
+  '9319185724580','9319185728960','9319185743307','9319993800575','9319993801138',
+  '9319993801299','9319993801404','9319993801510','9321855000504','9321855002232',
+  '9321855003093','9323961006623','9323961007415','9323961008160','9325242000764',
+  '9325242000771','9328174001724','9330171023098','9330471024221','9332596024063',
+  '9332613004207','9332613004214','9332613004245','9332613005341','9332613006409',
+  '9332613006416','9332613006546','9332613006560','9334214002781','9334214007380',
+  '9334214008219','9334214009599','9334214010922','9334214010939','9334214017273',
+  '9334214018232','9334214018256','9334214018362','9334214018409','9334214018447',
+  '9334214018805','9334214019086','9334214019499','9334214019529','9334214021201',
+  '9334214021744','9334214022871','9334214023281','9334214025506','9334214028880',
+  '9334214029788','9334214030616','9334214030722','9334214030739','9334214034652',
+  '9334214035055','9334214035789','9334214035864','9334214038759','9334214038780',
+  '9334214038810','9334214040424','9334214040851','9334214041889','9334214042107',
+  '9334214044217','9334214044804','9334214044828','9334214044842','9334214045511',
+  '9334214045580','9334214046846','9334214049496','9334214049526','9334214053486',
+  '9334214053509','9334214054483','9334214054506','9334214054704','9334214054728',
+  '9334214054780','9334214054827','9334214054964','9334214058764','9334214059037',
+  '9334214060330','9334214061313','9334214061627','9334214063270','9334214063324',
+  '9334214063379','9334214064482','9334214065175','9334214065229','9334214066424',
+  '9334214066486','9334214066493','9334214066516','9334864004821','9334864005804',
+  '9334864005811','9334864005965','9334864007334','9335355000315','9335355000346',
+  '9335355000384','9335355060012','9335607000872','9338362000941','9338362001405',
+  '9338362001870','9339687022403','9339687056446','9339687207176','9339687316236',
+  '9339687327263','9339687340439','9339687341351','9339687341368','9339687362042',
+  '9339687362219','9339687362929','9339687362998','9339687384709','9339687386277',
+  '9339687404582','9339687419456','9339687419494','9339687419548','9339687419920',
+  '9339687419944','9339687419951','9339687419968','9339687419975','9339687420315',
+  '9339687428311','9339687428335','9339687428342','9340156029465','9340621001002',
+  '9340710005034','9340710005041','9340710005294','9343005006099','9343723007224',
+  '9344154021445','9344378005009','9347042003264','9347810000174','9347810001669',
+  '9348509000017','9348509000031','9348601002964','9348601003510','9348601004692',
+  '9348601004715','9348601004746','9349107001451','9349673003071','9350327001107',
+  '9353767306214','9353767306221','9353767306504','9356335003744','9356335003768',
+  '9356335003904','9356391000114','9357667050031','9357667050055','9360747000369',
+  '9360747000390','9360747000598','9360747000741','9360770000022','9360770000121',
+  '9361410000020','9392596008234','9392596008241','9392596008258','9392596008319',
+  '9392596027440','9392596027457','9392596027471','9392596027495','9392596027556',
+  '9400539190974','9400539191414','9400539207429','9415022021017','9417986935690',
+  '9421016593187','9421016593965','9421016594641','9421016594672','9421016594702',
+  '9421016595761','9421016595792','9421016595815','9421016596416','9421900779512',
+  '9421900779871','9421904897540','9421904897588','9421907880129','0064992501457',
+  '9360770000015','9334214031767','9334214045740','9334214044231','9334214002743',
+  '9334214019482','9334214045856','9334214066448','9312239052141','8853301007467',
+  '8853301007757','9334214046815','9300605098640','5000161029778','642863111372',
+  '642863111396','9360747000710','9319185005221','9348601004005','9348601000069',
+  '9309001273569','9334214066479','9325242000535','9310022067709','9339687084432',
+  '9300605127982','9300605153905','9309001273446','9300605136106','9300605149229',
+  '3182550710664','7322540549034','74198611089','9334214063768','76344884132',
+  '9310022389702'
+]);
 
 // ============================================================
-// PERSISTENCE - Save/Load from localStorage
+// STATE — in memory only, no localStorage
 // ============================================================
-function saveState() {
-  try {
-    // Save queue metadata WITHOUT photos (photos stored separately)
-    const meta = queue.map(q => ({
-      barcode: q.barcode,
-      timestamp: q.timestamp,
-      hasfront: !!q.front,
-      hasIngredients: !!q.ingredients
-    }));
-    localStorage.setItem('mucka_collector_meta', JSON.stringify(meta));
-
-    // Save each product's photos separately by index
-    // This avoids hitting the 5MB localStorage limit with one giant entry
-    queue.forEach((p, i) => {
-      try {
-        const key = `mucka_product_${i}`;
-        localStorage.setItem(key, JSON.stringify({
-          barcode: p.barcode,
-          timestamp: p.timestamp,
-          front: p.front || null,
-          ingredients: p.ingredients || null
-        }));
-      } catch(e) {
-        console.warn(`Could not save product ${i} photos:`, e);
-      }
-    });
-
-    // Save the count so we know how many to load back
-    localStorage.setItem('mucka_collector_count', String(queue.length));
-
-  } catch(e) {
-    console.warn('saveState error:', e);
-  }
-}
-
-function loadState() {
-  try {
-    const count = parseInt(localStorage.getItem('mucka_collector_count') || '0');
-    if (count === 0) return;
-
-    queue = [];
-    for (let i = 0; i < count; i++) {
-      try {
-        const raw = localStorage.getItem(`mucka_product_${i}`);
-        if (raw) {
-          queue.push(JSON.parse(raw));
-        }
-      } catch(e) {
-        console.warn(`Could not load product ${i}:`, e);
-      }
-    }
-
-    updateAllCounts();
-    renderRecentList();
-    renderQueueList();
-  } catch(e) {
-    queue = [];
-  }
-}
+var queue = [];
+var currentBarcode = null;
+var currentPhotoData = null;
+var html5QrCode = null;
 
 // ============================================================
-// NAVIGATION
+// NAV
 // ============================================================
 function showScreen(id) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.screen').forEach(function(s) { s.classList.remove('active'); });
   document.getElementById(id).classList.add('active');
   if (id === 'screenSend') updateSendScreen();
   if (id === 'screenQueue') renderQueueList();
   window.scrollTo(0, 0);
 }
 
-function setNav(activeId) {
-  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-  const el = document.getElementById(activeId);
-  if (el) el.classList.add('active');
+function setNav(id) {
+  document.querySelectorAll('.nav-item').forEach(function(n) { n.classList.remove('active'); });
+  if (id) { var el = document.getElementById(id); if (el) el.classList.add('active'); }
 }
+
+function goQueue() { renderQueueList(); showScreen('screenQueue'); }
 
 // ============================================================
 // SCANNER
 // ============================================================
 function openScanner() {
+  currentBarcode = null;
+  currentPhotoData = null;
   document.getElementById('scannerOverlay').classList.add('active');
   document.getElementById('manualBarcode').value = '';
-  startQrScanner();
+  startQr();
 }
 
 function closeScanner() {
   document.getElementById('scannerOverlay').classList.remove('active');
-  stopQrScanner();
+  stopQr();
 }
 
-function startQrScanner() {
-  if (html5QrCode) {
-    html5QrCode.clear();
-  }
-  html5QrCode = new Html5Qrcode("qr-reader");
+function startQr() {
+  if (html5QrCode) { html5QrCode.clear(); }
+  html5QrCode = new Html5Qrcode('qr-reader');
   html5QrCode.start(
-    { facingMode: "environment" },
-    { fps: 10, qrbox: { width: 220, height: 220 } },
-    (decodedText) => {
-      stopQrScanner();
-      closeScanner();
-      barcodeFound(decodedText);
-    },
-    () => {}
-  ).catch(err => {
-    console.warn('Camera error:', err);
-  });
+    { facingMode: 'environment' },
+    { fps: 10, qrbox: { width: 210, height: 210 } },
+    function(decoded) { stopQr(); closeScanner(); barcodeScanned(decoded); },
+    function() {}
+  ).catch(function(e) { console.warn('Camera:', e); });
 }
 
-function stopQrScanner() {
-  if (html5QrCode) {
-    html5QrCode.stop().catch(() => {});
-    html5QrCode = null;
-  }
+function stopQr() {
+  if (html5QrCode) { html5QrCode.stop().catch(function(){}); html5QrCode = null; }
 }
 
-function submitManualBarcode() {
-  const val = document.getElementById('manualBarcode').value.trim();
-  if (val.length < 4) {
-    showToast('Please enter a valid barcode');
-    return;
-  }
+function submitManual() {
+  var val = document.getElementById('manualBarcode').value.trim();
+  if (val.length < 4) { showToast('Enter a valid barcode'); return; }
   closeScanner();
-  barcodeFound(val);
+  barcodeScanned(val);
 }
 
-function barcodeFound(barcode) {
-  // Haptic feedback
+// ============================================================
+// BARCODE RESULT
+// ============================================================
+function barcodeScanned(barcode) {
   if (navigator.vibrate) navigator.vibrate(50);
-  // Flash
   flashGreen();
-  // Set current barcode and start capture
   currentBarcode = barcode;
-  currentPhotos = { front: null, ingredients: null };
-  startCapture(barcode);
+  currentPhotoData = null;
+
+  var inDatabase = KNOWN_BARCODES.has(barcode);
+
+  // Reset photo section
+  document.getElementById('photoPreview').className = 'photo-preview';
+  document.getElementById('photoPreview').innerHTML = '<span style="font-size:26px;color:var(--muted);">📷</span>';
+  document.getElementById('saveBtn').style.display = 'none';
+  document.getElementById('photoInput').value = '';
+
+  var card = document.getElementById('resultCard');
+  if (inDatabase) {
+    card.innerHTML =
+      '<div class="result-card found">' +
+        '<span class="result-icon">✅</span>' +
+        '<div class="result-title" style="color:#276749;">Already in Mucka!</div>' +
+        '<div class="result-barcode">' + barcode + '</div>' +
+        '<div style="font-size:13px;color:#276749;">This one\'s already in the database. Scan the next one!</div>' +
+      '</div>';
+    document.getElementById('captureSection').style.display = 'none';
+  } else {
+    card.innerHTML =
+      '<div class="result-card notfound">' +
+        '<span class="result-icon">🆕</span>' +
+        '<div class="result-title" style="color:#744210;">Not in Mucka yet!</div>' +
+        '<div class="result-barcode">' + barcode + '</div>' +
+        '<div style="font-size:13px;color:#744210;">Photo the front of the pack then save it to the queue.</div>' +
+      '</div>';
+    document.getElementById('captureSection').style.display = 'block';
+  }
+
+  showScreen('screenResult');
+  setNav('');
 }
 
 // ============================================================
-// CAPTURE FLOW
+// PHOTO
 // ============================================================
-function startCapture(barcode) {
-  document.getElementById('captureBarcode').textContent = barcode;
-  // Reset steps
-  document.getElementById('step1').style.display = 'block';
-  document.getElementById('next1Btn').style.display = 'none';
-  document.getElementById('preview1').innerHTML = '<span style="font-size:32px;">📷</span><span>No photo yet</span>';
-  document.getElementById('preview1').className = 'photo-preview empty';
-  showScreen('screenCapture');
-}
-
-function handlePhoto(step, input) {
-  const file = input.files[0];
+function handlePhoto(input) {
+  var file = input.files[0];
   if (!file) return;
-
-  const reader = new FileReader();
+  var reader = new FileReader();
   reader.onload = function(e) {
-    const dataUrl = e.target.result;
-
-    currentPhotos.front = dataUrl;
-      const preview = document.getElementById('preview1');
-      preview.className = 'photo-preview';
-      preview.innerHTML = `<img src="${dataUrl}"><button class="retake-btn" onclick="document.getElementById('fileInput1').click()">Retake</button>`;
-      document.getElementById('next1Btn').style.display = 'flex';
+    currentPhotoData = e.target.result;
+    var preview = document.getElementById('photoPreview');
+    preview.className = 'photo-preview has-photo';
+    preview.innerHTML = '<img src="' + currentPhotoData + '"><button class="retake-btn" onclick="document.getElementById(\'photoInput\').click()">Retake</button>';
+    document.getElementById('saveBtn').style.display = 'flex';
   };
   reader.readAsDataURL(file);
 }
 
+// ============================================================
+// SAVE
+// ============================================================
 function saveProduct() {
-  const product = {
-    barcode: currentBarcode,
-    timestamp: new Date().toISOString(),
-    front: currentPhotos.front || null
-  };
-
-  queue.push(product);
-  saveState();
-  updateAllCounts();
+  queue.push({ barcode: currentBarcode, timestamp: new Date().toISOString(), photo: currentPhotoData || null });
+  updateCounts();
   renderRecentList();
-
-  // Show success
-  const count = queue.length;
-  document.getElementById('successCount').textContent =
-    `${count} product${count !== 1 ? 's' : ''} logged this session`;
-  showScreen('screenSuccess');
+  var count = queue.length;
+  showToast('✅ Saved! ' + count + ' product' + (count !== 1 ? 's' : '') + ' in queue');
   flashGreen();
-  if (navigator.vibrate) navigator.vibrate([50, 50, 100]);
-}
-
-function scanAnother() {
-  currentBarcode = null;
-  currentPhotos = { front: null, ingredients: null };
-  showScreen('screenHome');
-  setTimeout(() => openScanner(), 300);
+  if (navigator.vibrate) navigator.vibrate([50,50,100]);
+  setTimeout(function() { openScanner(); }, 800);
 }
 
 // ============================================================
-// QUEUE
+// RENDERS
 // ============================================================
 function renderRecentList() {
-  const recentCard = document.getElementById('recentCard');
-  const emptyCard = document.getElementById('emptyCard');
-  const recentList = document.getElementById('recentList');
-
+  var recentCard = document.getElementById('recentCard');
+  var emptyState = document.getElementById('emptyState');
   if (queue.length === 0) {
     recentCard.style.display = 'none';
-    emptyCard.style.display = 'block';
-    document.getElementById('sendBtn').style.display = 'none';
+    emptyState.style.display = 'block';
+    document.getElementById('viewQueueBtn').style.display = 'none';
+    document.getElementById('downloadBtn').style.display = 'none';
     return;
   }
-
+  emptyState.style.display = 'none';
   recentCard.style.display = 'block';
-  emptyCard.style.display = 'none';
-  document.getElementById('sendBtn').style.display = 'flex';
-
-  const recent = [...queue].reverse().slice(0, 5);
-  recentList.innerHTML = recent.map((p, i) => {
-    const photos = [p.front ? '📦' : '', p.ingredients ? '🧪' : ''].filter(Boolean).join(' ');
-    const time = new Date(p.timestamp).toLocaleTimeString('en-AU', { hour: '2-digit', minute: '2-digit' });
-    return `
-      <div class="queue-item">
-        <div class="queue-num">${queue.length - i}</div>
-        <div class="queue-info">
-          <div class="queue-barcode">${p.barcode}</div>
-          <div class="queue-status">${time} · ${photos || 'No photos'}</div>
-        </div>
-        <span class="queue-tick">✅</span>
-      </div>
-    `;
+  document.getElementById('viewQueueBtn').style.display = 'flex';
+  document.getElementById('downloadBtn').style.display = 'flex';
+  var recent = queue.slice().reverse().slice(0, 4);
+  document.getElementById('recentList').innerHTML = recent.map(function(p, i) {
+    var time = new Date(p.timestamp).toLocaleTimeString('en-AU', {hour:'2-digit',minute:'2-digit'});
+    return '<div class="queue-item"><div class="queue-num">' + (queue.length - i) + '</div><div class="queue-info"><div class="queue-barcode">' + p.barcode + '</div><div class="queue-meta">' + time + ' · ' + (p.photo ? '📸' : '—') + '</div></div><span style="font-size:18px;">✅</span></div>';
   }).join('');
 }
 
 function renderQueueList() {
-  const queueList = document.getElementById('queueList');
-  if (queue.length === 0) {
-    queueList.innerHTML = `<div class="empty-queue"><span class="eq-icon">📦</span><div class="eq-text">Queue is empty</div></div>`;
-    return;
-  }
-
-  queueList.innerHTML = [...queue].reverse().map((p, i) => {
-    const photos = [];
-    if (p.front) photos.push('📦 Front');
-    if (p.ingredients) photos.push('🧪 Ingredients');
-    const time = new Date(p.timestamp).toLocaleTimeString('en-AU', { hour: '2-digit', minute: '2-digit' });
-    return `
-      <div class="queue-item">
-        <div class="queue-num">${queue.length - i}</div>
-        <div class="queue-info">
-          <div class="queue-barcode">${p.barcode}</div>
-          <div class="queue-status">${time} · ${photos.join(' · ') || 'No photos'}</div>
-        </div>
-        <span class="queue-tick">✅</span>
-      </div>
-    `;
+  var list = document.getElementById('queueList');
+  if (queue.length === 0) { list.innerHTML = '<div class="empty"><span class="e-icon">📦</span><div class="e-text">Queue is empty</div></div>'; return; }
+  list.innerHTML = queue.slice().reverse().map(function(p, i) {
+    var time = new Date(p.timestamp).toLocaleTimeString('en-AU', {hour:'2-digit',minute:'2-digit'});
+    return '<div class="queue-item"><div class="queue-num">' + (queue.length - i) + '</div><div class="queue-info"><div class="queue-barcode">' + p.barcode + '</div><div class="queue-meta">' + time + ' · ' + (p.photo ? '📸 Photo' : 'No photo') + '</div></div></div>';
   }).join('');
 }
 
 function clearQueue() {
   if (queue.length === 0) return;
-  if (confirm(`Clear all ${queue.length} products from the queue? This can't be undone.`)) {
-    // Clear all product keys
-    const count = parseInt(localStorage.getItem('mucka_collector_count') || '0');
-    for (let i = 0; i < count; i++) {
-      localStorage.removeItem(`mucka_product_${i}`);
-    }
-    localStorage.removeItem('mucka_collector_count');
-    localStorage.removeItem('mucka_collector_meta');
-    localStorage.removeItem('mucka_collector_queue');
+  if (confirm('Clear all ' + queue.length + ' products? This cannot be undone.')) {
     queue = [];
-    updateAllCounts();
+    updateCounts();
     renderRecentList();
     renderQueueList();
     showToast('Queue cleared');
   }
+}
+
+function updateCounts() {
+  document.getElementById('headerCount').textContent = queue.length;
+  document.getElementById('queueCountBtn').textContent = queue.length;
 }
 
 // ============================================================
@@ -1308,130 +530,55 @@ function clearQueue() {
 // ============================================================
 function updateSendScreen() {
   document.getElementById('sendCount').textContent = queue.length;
-  const photoCount = queue.reduce((n, p) => n + (p.front ? 1 : 0), 0);
-  document.getElementById('sendPhotos').textContent = photoCount;
-
-  const sendList = document.getElementById('sendList');
-  if (queue.length === 0) {
-    sendList.innerHTML = '<div class="empty-queue"><span class="eq-icon">📦</span><div class="eq-text">Nothing to send yet</div></div>';
-    return;
-  }
-
-  sendList.innerHTML = queue.map((p, i) => {
-    const photos = [p.front ? '📦' : '', p.ingredients ? '🧪' : ''].filter(Boolean).join(' ');
-    return `
-      <div class="queue-item">
-        <div class="queue-num">${i + 1}</div>
-        <div class="queue-info">
-          <div class="queue-barcode">${p.barcode}</div>
-          <div class="queue-status">${photos || 'No photos'}</div>
-        </div>
-      </div>
-    `;
+  document.getElementById('sendPhotos').textContent = queue.filter(function(p){return !!p.photo;}).length;
+  var list = document.getElementById('sendList');
+  if (queue.length === 0) { list.innerHTML = '<div class="empty"><span class="e-icon">📦</span><div class="e-text">Nothing to send yet</div></div>'; return; }
+  list.innerHTML = queue.map(function(p,i) {
+    return '<div class="queue-item"><div class="queue-num">' + (i+1) + '</div><div class="queue-info"><div class="queue-barcode">' + p.barcode + '</div><div class="queue-meta">' + (p.photo ? '📸 Photo included' : 'No photo') + '</div></div></div>';
   }).join('');
 }
 
-function sendEmail() {
-  if (queue.length === 0) {
-    showToast('Nothing in the queue to download!');
-    return;
-  }
-
-  const btn = document.querySelector('.btn-primary.btn-orange');
-  if (btn) { btn.textContent = '⏳ Building zip...'; btn.disabled = true; }
-
-  const zip = new JSZip();
-  const date = new Date().toLocaleDateString('en-AU').replace(/\//g, '-');
-  const folderName = `Mucka-Collector-${date}`;
-
-  // Summary text file
-  const summary = queue.map((p, i) => {
-    const hasF = p.front ? 'Yes' : 'No';
-    return `Product ${i + 1}\nBarcode: ${p.barcode}\nFront photo: ${hasF}\nCaptured: ${new Date(p.timestamp).toLocaleString('en-AU')}`;
+function downloadZip() {
+  if (queue.length === 0) { showToast('Nothing in the queue!'); return; }
+  var btn = document.getElementById('downloadZipBtn');
+  btn.textContent = '⏳ Building zip...';
+  btn.disabled = true;
+  var zip = new JSZip();
+  var date = new Date().toLocaleDateString('en-AU').replace(/\//g,'-');
+  var folder = 'Mucka-Collector-' + date;
+  var summary = queue.map(function(p,i) {
+    return 'Product ' + (i+1) + '\nBarcode: ' + p.barcode + '\nPhoto: ' + (p.photo?'Yes':'No') + '\nCaptured: ' + new Date(p.timestamp).toLocaleString('en-AU');
   }).join('\n\n---\n\n');
-
-  zip.file(`${folderName}/SUMMARY.txt`,
-    `Mucka Collector Export\nDate: ${new Date().toLocaleString('en-AU')}\nProducts: ${queue.length}\n\n---\n\n${summary}`
-  );
-
-  // One folder per product with photos
-  queue.forEach((p, i) => {
-    const folder = `${folderName}/product-${String(i + 1).padStart(2, '0')}-${p.barcode}`;
-
-    // Info file
-    zip.file(`${folder}/info.txt`,
-      `Barcode: ${p.barcode}\nCaptured: ${new Date(p.timestamp).toLocaleString('en-AU')}`
-    );
-
-    // Front photo
-    if (p.front) {
-      const base64Data = p.front.split(',')[1];
-      zip.file(`${folder}/front.jpg`, base64Data, { base64: true });
-    }
-
+  zip.file(folder + '/SUMMARY.txt', 'Mucka Collector Export\nDate: ' + new Date().toLocaleString('en-AU') + '\nProducts: ' + queue.length + '\n\n---\n\n' + summary);
+  queue.forEach(function(p,i) {
+    var pf = folder + '/product-' + String(i+1).padStart(2,'0') + '-' + p.barcode;
+    zip.file(pf + '/info.txt', 'Barcode: ' + p.barcode + '\nCaptured: ' + new Date(p.timestamp).toLocaleString('en-AU'));
+    if (p.photo) { zip.file(pf + '/photo.jpg', p.photo.split(',')[1], {base64:true}); }
   });
-
-  // Generate and trigger download
-  zip.generateAsync({ type: 'blob' }).then(function(content) {
-    const url = URL.createObjectURL(content);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${folderName}.zip`;
-    document.body.appendChild(a);
-    a.click();
+  zip.generateAsync({type:'blob'}).then(function(content) {
+    var url = URL.createObjectURL(content);
+    var a = document.createElement('a');
+    a.href = url; a.download = folder + '.zip';
+    document.body.appendChild(a); a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-
-    if (btn) { btn.textContent = '📦 Download Zip File'; btn.disabled = false; }
-    showToast(`✅ Downloaded ${queue.length} product${queue.length !== 1 ? 's' : ''}!`);
-  }).catch(function(err) {
-    console.error('Zip error:', err);
-    if (btn) { btn.textContent = '📦 Download Zip File'; btn.disabled = false; }
+    btn.textContent = '📦 Download Zip File';
+    btn.disabled = false;
+    showToast('✅ Downloaded!');
+  }).catch(function(e) {
+    console.error(e);
+    btn.textContent = '📦 Download Zip File';
+    btn.disabled = false;
     showToast('Something went wrong — try again');
   });
 }
 
 // ============================================================
-// COUNTS & UI
-// ============================================================
-function updateAllCounts() {
-  const count = queue.length;
-  document.getElementById('headerCount').textContent = count;
-  document.getElementById('queueCountBtn').textContent = count;
-}
-
-// ============================================================
 // UTILS
 // ============================================================
-function flashGreen() {
-  const flash = document.getElementById('flash');
-  flash.classList.add('show');
-  setTimeout(() => flash.classList.remove('show'), 200);
-}
-
-function showToast(msg) {
-  const toast = document.getElementById('toast');
-  toast.textContent = msg;
-  toast.classList.add('show');
-  setTimeout(() => toast.classList.remove('show'), 2500);
-}
-
-// ============================================================
-// INIT
-// ============================================================
-loadState();
-
-// Handle incoming barcode from Mucka (via URL param)
-const urlParams = new URLSearchParams(window.location.search);
-const incomingBarcode = urlParams.get('barcode');
-if (incomingBarcode) {
-  setTimeout(() => barcodeFound(incomingBarcode), 500);
-}
-
-// Keyboard support for manual entry
-document.getElementById('manualBarcode').addEventListener('keydown', function(e) {
-  if (e.key === 'Enter') submitManualBarcode();
-});
+function flashGreen() { var f=document.getElementById('flash'); f.classList.add('show'); setTimeout(function(){f.classList.remove('show');},180); }
+function showToast(msg) { var t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(function(){t.classList.remove('show');},2500); }
+document.getElementById('manualBarcode').addEventListener('keydown', function(e) { if(e.key==='Enter') submitManual(); });
 </script>
 </body>
 </html>
