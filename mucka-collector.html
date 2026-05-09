@@ -891,19 +891,13 @@
       <span style="font-size:20px;">✅</span>
     </div>
 
-    <!-- Step indicators -->
-    <div class="capture-progress">
-      <div class="progress-seg" id="seg1"></div>
-      <div class="progress-seg" id="seg2"></div>
-    </div>
-
     <!-- STEP 1: Product photo -->
     <div id="step1" class="card">
-      <div class="card-title">📦 Step 1 of 2 — Product Photo</div>
+      <div class="card-title">📦 Take a Photo of the Product</div>
       <div class="photo-prompt">
         <span class="photo-icon">📸</span>
         <div class="photo-title">Photo the front of the pack</div>
-        <div class="photo-desc">Get the brand name, product line and flavour in one shot.</div>
+        <div class="photo-desc">Get the brand name, product line and flavour in one shot. We'll look up the ingredients later.</div>
       </div>
       <div class="photo-tip">
         💡 Hold the phone flat and steady. Make sure the brand name is clearly visible.
@@ -916,35 +910,12 @@
       <button class="btn-primary btn-orange" onclick="document.getElementById('fileInput1').click()">
         📷 Take Photo
       </button>
-      <button class="btn-primary" id="next1Btn" onclick="goStep2()" style="display:none;">
-        Next → Ingredients Photo
-      </button>
-      <button class="btn-ghost" onclick="goStep2()">Skip this photo</button>
-    </div>
-
-    <!-- STEP 2: Ingredients photo -->
-    <div id="step2" class="card" style="display:none;">
-      <div class="card-title">🧪 Step 2 of 2 — Ingredients Panel</div>
-      <div class="photo-prompt">
-        <span class="photo-icon">🔬</span>
-        <div class="photo-title">Photo the ingredients</div>
-        <div class="photo-desc">Capture the full ingredients list. This is the most important part!</div>
-      </div>
-      <div class="photo-tip">
-        💡 Get close, hold steady, make sure all the small text is sharp and readable.
-      </div>
-      <div class="photo-preview empty" id="preview2">
-        <span style="font-size:32px;">📷</span>
-        <span>No photo yet</span>
-      </div>
-      <input type="file" accept="image/*" capture="environment" class="file-input" id="fileInput2" onchange="handlePhoto(2, this)">
-      <button class="btn-primary btn-orange" onclick="document.getElementById('fileInput2').click()">
-        📷 Take Photo
-      </button>
-      <button class="btn-primary btn-green" id="saveBtn" onclick="saveProduct()" style="display:none;">
+      <button class="btn-primary btn-green" id="next1Btn" onclick="saveProduct()" style="display:none;">
         ✅ Save Product
       </button>
     </div>
+
+
 
   </div>
 
@@ -959,7 +930,7 @@
         <button class="btn-primary btn-orange" onclick="scanAnother()">
           📷 Scan Another Product
         </button>
-        <a class="mucka-link" href="index.html">
+        <a class="mucka-link" href="index.html" target="_blank">
           🐾 Back to Mucka
         </a>
         <button class="btn-secondary" onclick="showScreen('screenSend')">
@@ -1201,28 +1172,10 @@ function startCapture(barcode) {
   document.getElementById('captureBarcode').textContent = barcode;
   // Reset steps
   document.getElementById('step1').style.display = 'block';
-  document.getElementById('step2').style.display = 'none';
   document.getElementById('next1Btn').style.display = 'none';
-  document.getElementById('saveBtn').style.display = 'none';
   document.getElementById('preview1').innerHTML = '<span style="font-size:32px;">📷</span><span>No photo yet</span>';
   document.getElementById('preview1').className = 'photo-preview empty';
-  document.getElementById('preview2').innerHTML = '<span style="font-size:32px;">📷</span><span>No photo yet</span>';
-  document.getElementById('preview2').className = 'photo-preview empty';
-  // Progress
-  updateProgress(1);
   showScreen('screenCapture');
-}
-
-function updateProgress(step) {
-  const seg1 = document.getElementById('seg1');
-  const seg2 = document.getElementById('seg2');
-  if (step === 1) {
-    seg1.className = 'progress-seg active';
-    seg2.className = 'progress-seg';
-  } else {
-    seg1.className = 'progress-seg done';
-    seg2.className = 'progress-seg active';
-  }
 }
 
 function handlePhoto(step, input) {
@@ -1233,36 +1186,20 @@ function handlePhoto(step, input) {
   reader.onload = function(e) {
     const dataUrl = e.target.result;
 
-    if (step === 1) {
-      currentPhotos.front = dataUrl;
+    currentPhotos.front = dataUrl;
       const preview = document.getElementById('preview1');
       preview.className = 'photo-preview';
       preview.innerHTML = `<img src="${dataUrl}"><button class="retake-btn" onclick="document.getElementById('fileInput1').click()">Retake</button>`;
       document.getElementById('next1Btn').style.display = 'flex';
-    } else {
-      currentPhotos.ingredients = dataUrl;
-      const preview = document.getElementById('preview2');
-      preview.className = 'photo-preview';
-      preview.innerHTML = `<img src="${dataUrl}"><button class="retake-btn" onclick="document.getElementById('fileInput2').click()">Retake</button>`;
-      document.getElementById('saveBtn').style.display = 'flex';
-    }
   };
   reader.readAsDataURL(file);
-}
-
-function goStep2() {
-  document.getElementById('step1').style.display = 'none';
-  document.getElementById('step2').style.display = 'block';
-  updateProgress(2);
-  window.scrollTo(0, 0);
 }
 
 function saveProduct() {
   const product = {
     barcode: currentBarcode,
     timestamp: new Date().toISOString(),
-    front: currentPhotos.front,
-    ingredients: currentPhotos.ingredients
+    front: currentPhotos.front || null
   };
 
   queue.push(product);
@@ -1371,7 +1308,7 @@ function clearQueue() {
 // ============================================================
 function updateSendScreen() {
   document.getElementById('sendCount').textContent = queue.length;
-  const photoCount = queue.reduce((n, p) => n + (p.front ? 1 : 0) + (p.ingredients ? 1 : 0), 0);
+  const photoCount = queue.reduce((n, p) => n + (p.front ? 1 : 0), 0);
   document.getElementById('sendPhotos').textContent = photoCount;
 
   const sendList = document.getElementById('sendList');
@@ -1410,8 +1347,7 @@ function sendEmail() {
   // Summary text file
   const summary = queue.map((p, i) => {
     const hasF = p.front ? 'Yes' : 'No';
-    const hasI = p.ingredients ? 'Yes' : 'No';
-    return `Product ${i + 1}\nBarcode: ${p.barcode}\nFront photo: ${hasF}\nIngredients photo: ${hasI}\nCaptured: ${new Date(p.timestamp).toLocaleString('en-AU')}`;
+    return `Product ${i + 1}\nBarcode: ${p.barcode}\nFront photo: ${hasF}\nCaptured: ${new Date(p.timestamp).toLocaleString('en-AU')}`;
   }).join('\n\n---\n\n');
 
   zip.file(`${folderName}/SUMMARY.txt`,
@@ -1433,11 +1369,6 @@ function sendEmail() {
       zip.file(`${folder}/front.jpg`, base64Data, { base64: true });
     }
 
-    // Ingredients photo
-    if (p.ingredients) {
-      const base64Data = p.ingredients.split(',')[1];
-      zip.file(`${folder}/ingredients.jpg`, base64Data, { base64: true });
-    }
   });
 
   // Generate and trigger download
