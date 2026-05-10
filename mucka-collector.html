@@ -467,9 +467,14 @@ function closeResultSheet() {
 }
 
 function scanNext() {
+  currentBarcode = null;
+  currentPhotoData = null;
   closeResultSheet();
+  document.getElementById('manualBarcode').value = '';
   updateScanCounter();
-  startQr();
+  document.getElementById('scannerOverlay').classList.add('active');
+  // Small delay to let overlay render before starting camera
+  setTimeout(function() { startQr(); }, 150);
 }
 
 function closeResultAndGoQueue() {
