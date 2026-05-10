@@ -390,25 +390,37 @@ function closeScanner() {
 }
 
 function startQr() {
-  if (html5QrCode) { html5QrCode.clear(); }
+  var reader = document.getElementById('qr-reader');
+  if (reader) reader.innerHTML = '';
   html5QrCode = new Html5Qrcode('qr-reader');
   html5QrCode.start(
     { facingMode: 'environment' },
     { fps: 10, qrbox: { width: 210, height: 210 } },
-    function(decoded) { stopQr(); barcodeScanned(decoded); },
+    function(decoded) { stopQr(function() { barcodeScanned(decoded); }); },
     function() {}
   ).catch(function(e){ console.warn('Camera:', e); });
 }
 
-function stopQr() {
-  if (html5QrCode) { html5QrCode.stop().catch(function(){}); html5QrCode = null; }
+function stopQr(callback) {
+  if (html5QrCode) {
+    var qr = html5QrCode;
+    html5QrCode = null;
+    qr.stop().then(function() {
+      qr.clear();
+      if (callback) callback();
+    }).catch(function() {
+      try { qr.clear(); } catch(e) {}
+      if (callback) callback();
+    });
+  } else {
+    if (callback) callback();
+  }
 }
 
 function submitManual() {
   var val = document.getElementById('manualBarcode').value.trim();
   if (val.length < 4) { showToast('Enter a valid barcode'); return; }
-  stopQr();
-  barcodeScanned(val);
+  stopQr(function() { barcodeScanned(val); });
 }
 
 function updateScanCounter() {
@@ -473,8 +485,10 @@ function scanNext() {
   document.getElementById('manualBarcode').value = '';
   updateScanCounter();
   document.getElementById('scannerOverlay').classList.add('active');
-  // Small delay to let overlay render before starting camera
-  setTimeout(function() { startQr(); }, 150);
+  // Stop any running camera first, then restart cleanly
+  stopQr(function() {
+    setTimeout(function() { startQr(); }, 300);
+  });
 }
 
 function closeResultAndGoQueue() {

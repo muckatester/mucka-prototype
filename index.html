@@ -603,7 +603,7 @@ body::before {
 <!-- Detail Header -->
 <div class="header" id="detailHeader" style="display:none;">
   <div class="detail-header">
-    <button class="back-btn" onclick="showScreen('home')">&#8592;</button>
+    <button class="back-btn" onclick="goBackToCategory()" id="detailBackBtn" style="font-size:13px;display:flex;align-items:center;gap:4px;padding:8px 12px;border-radius:20px;background:#f0f4f8;border:none;color:#202C94;font-weight:700;font-family:'Poppins',sans-serif;cursor:pointer;">&#8592; <span id="detailBackLabel">Products</span></button>
     <div style="flex:1;">
       <h1 id="detailTitle" style="font-size:20px; font-weight:800; text-align:left; line-height:1.15;"></h1>
       <div class="subtitle" id="detailBrand" style="text-align:left; font-size:12px; margin-top:3px;"></div>
