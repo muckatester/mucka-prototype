@@ -374,11 +374,13 @@ function setNav(id) {
 function openScanner() {
   currentBarcode = null;
   currentPhotoData = null;
-  closeResultSheet();
+  document.getElementById('resultOverlay').classList.remove('active');
   document.getElementById('manualBarcode').value = '';
   updateScanCounter();
   document.getElementById('scannerOverlay').classList.add('active');
-  startQr();
+  stopQr(function() {
+    setTimeout(function() { startQr(); }, 400);
+  });
 }
 
 function closeScanner() {
@@ -390,8 +392,10 @@ function closeScanner() {
 }
 
 function startQr() {
+  // Reset the reader div but keep the scan line
   var reader = document.getElementById('qr-reader');
-  if (reader) reader.innerHTML = '';
+  if (reader) reader.innerHTML = '<div class="scan-line"></div>';
+  if (html5QrCode) { html5QrCode = null; }
   html5QrCode = new Html5Qrcode('qr-reader');
   html5QrCode.start(
     { facingMode: 'environment' },
@@ -481,18 +485,19 @@ function closeResultSheet() {
 function scanNext() {
   currentBarcode = null;
   currentPhotoData = null;
-  closeResultSheet();
+  // Hide result overlay first
+  document.getElementById('resultOverlay').classList.remove('active');
   document.getElementById('manualBarcode').value = '';
   updateScanCounter();
   document.getElementById('scannerOverlay').classList.add('active');
-  // Stop any running camera first, then restart cleanly
+  // Stop any existing camera stream then restart cleanly
   stopQr(function() {
-    setTimeout(function() { startQr(); }, 300);
+    setTimeout(function() { startQr(); }, 400);
   });
 }
 
 function closeResultAndGoQueue() {
-  closeResultSheet();
+  document.getElementById('resultOverlay').classList.remove('active');
   document.getElementById('scannerOverlay').classList.remove('active');
   stopQr();
   showScreen('screenQueue');
@@ -618,19 +623,37 @@ function downloadZip() {
 // ============================================================
 function flashGreen() { var f=document.getElementById('flash'); f.classList.add('show'); setTimeout(function(){f.classList.remove('show');},180); }
 function showToast(msg) { var t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(function(){t.classList.remove('show');},2500); }
-document.getElementById('manualBarcode').addEventListener('keydown', function(e){ if(e.key==='Enter') submitManual(); });
 
-// ── Read barcode from URL param (passed from Mucka main app) ──
-(function() {
+// ── Wait for Html5Qrcode library then initialise ─────────
+function initCollector() {
+  if (typeof Html5Qrcode === 'undefined') {
+    // Library not loaded yet - retry in 100ms
+    setTimeout(initCollector, 100);
+    return;
+  }
+
+  document.getElementById('manualBarcode').addEventListener('keydown', function(e){
+    if (e.key === 'Enter') submitManual();
+  });
+
   var params = new URLSearchParams(window.location.search);
   var bc = params.get('barcode');
   if (bc && bc.trim()) {
-    // Small delay to let the page fully render first
-    setTimeout(function() {
-      barcodeScanned(bc.trim());
-    }, 600);
+    // Coming from main app with a barcode - go straight to result, don't start camera
+    document.getElementById('scannerOverlay').classList.remove('active');
+    setTimeout(function() { barcodeScanned(bc.trim()); }, 300);
+  } else {
+    // Normal launch - start the scanner
+    setTimeout(function() { startQr(); }, 300);
   }
-})();
+}
+
+// Kick off as soon as DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initCollector);
+} else {
+  initCollector();
+}
 </script>
 </body>
 </html>
