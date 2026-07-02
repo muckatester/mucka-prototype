@@ -391,7 +391,26 @@ function closeScanner() {
   renderQueueList();
 }
 
-function startQr() {
+// Forcibly release any leftover camera stream (phones sometimes
+// keep the camera locked, causing a black screen on the next scan)
+function killVideoTracks() {
+  try {
+    var vids = document.querySelectorAll('#qr-reader video');
+    for (var i = 0; i < vids.length; i++) {
+      var v = vids[i];
+      try {
+        if (v.srcObject) {
+          v.srcObject.getTracks().forEach(function(t){ t.stop(); });
+          v.srcObject = null;
+        }
+      } catch(e) {}
+    }
+  } catch(e) {}
+}
+
+function startQr(isRetry) {
+  // Make sure no zombie camera stream is holding the camera
+  killVideoTracks();
   // Reset the reader div but keep the scan line
   var reader = document.getElementById('qr-reader');
   if (reader) reader.innerHTML = '<div class="scan-line"></div>';
@@ -400,9 +419,20 @@ function startQr() {
   html5QrCode.start(
     { facingMode: 'environment' },
     { fps: 10, qrbox: { width: 210, height: 210 } },
-    function(decoded) { stopQr(function() { barcodeScanned(decoded); }); },
+    function(decoded) {
+      // Defer the stop so we're not stopping from inside the scan callback
+      setTimeout(function() { stopQr(function() { barcodeScanned(decoded); }); }, 0);
+    },
     function() {}
-  ).catch(function(e){ console.warn('Camera:', e); });
+  ).catch(function(e){
+    console.warn('Camera:', e);
+    // Camera refused to start (usually still locked) - retry once
+    if (!isRetry) {
+      stopQr(function() {
+        setTimeout(function() { startQr(true); }, 700);
+      });
+    }
+  });
 }
 
 function stopQr(callback) {
@@ -411,12 +441,15 @@ function stopQr(callback) {
     html5QrCode = null;
     qr.stop().then(function() {
       qr.clear();
+      killVideoTracks();
       if (callback) callback();
     }).catch(function() {
       try { qr.clear(); } catch(e) {}
+      killVideoTracks();
       if (callback) callback();
     });
   } else {
+    killVideoTracks();
     if (callback) callback();
   }
 }
