@@ -537,7 +537,7 @@ body::before {
 }
 
 
-/* ── How We Score Modal ── */
+/* ── About the assessment Modal ── */
 .scoring-modal-overlay {
   display: none; position: fixed; inset: 0; z-index: 7000;
   background: rgba(0,0,0,0.6); align-items: flex-end; justify-content: center;
@@ -565,6 +565,23 @@ body::before {
 .tier-range { font-size: 12px; color: #718096; margin-left: auto; }
 .modal-close-btn { width: 100%; margin-top: 16px; padding: 14px; background: #202C94; color: white; border: none; border-radius: 12px; font-size: 15px; font-weight: 700; font-family: 'Poppins', sans-serif; cursor: pointer; }
 
+/* Neutral assessment preview */
+.assessment-intro { margin: 14px 0 20px; padding: 18px; background: #eef4fa; border-radius: 16px; color: #25344b; }
+.assessment-intro strong { font-size: 16px; }
+.assessment-intro p, .assessment-panel p { font-size: 13px; line-height: 1.7; margin: 8px 0; }
+.text-link { background: none; border: none; padding: 4px 0; color: #202C94; text-decoration: underline; font: inherit; font-size: 13px; cursor: pointer; }
+.assessment-panel { margin: 16px 0; padding: 20px; border: 1px solid #cfdae7; border-radius: 16px; background: #f4f7fb; color: #34445a; }
+.assessment-panel h2 { font-size: 20px; color: #202C94; margin: 6px 0; }
+.assessment-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.assessment-badge { flex-shrink: 0; max-width: 84px; padding: 7px 9px; border-radius: 10px; color: #4a5568; background: #edf1f5; font-size: 10px; font-weight: 600; line-height: 1.3; text-align: center; }
+.evidence-note { color: #526174; font-size: 13px; line-height: 1.7; margin: 8px 0 14px; }
+.catalogue-facts { margin: 0; font-size: 13px; }
+.catalogue-facts > div { display: flex; justify-content: space-between; gap: 18px; padding: 10px 0; border-bottom: 1px solid #edf0f4; }
+.catalogue-facts dt { color: #526174; }
+.catalogue-facts dd { margin: 0; text-align: right; overflow-wrap: anywhere; font-weight: 600; }
+.ingredient-names { padding-left: 20px; color: #34445a; font-size: 14px; line-height: 1.8; }
+.ingredient-text { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 14px; line-height: 1.8; }
+@media (max-width: 380px) { .assessment-badge { max-width: 62px; font-size: 9px; } }
 </style>
 </head>
 <body>
@@ -618,8 +635,13 @@ body::before {
 
 <!-- HOME SCREEN -->
 <div class="screen active" id="screen-home">
+  <div class="assessment-intro">
+    <strong>Product information, with room to learn.</strong>
+    <p>Health ratings are paused while we review our assessment method. Browse by brand and name, and check catalogue details against your pack.</p>
+    <button class="text-link" onclick="showScoringModal()">About this review</button>
+  </div>
   <div class="tip-of-day-card">
-    <div class="tip-of-day-label">Tip of the Day</div>
+    <div class="tip-of-day-label">Using Mucka</div>
     <div class="tip-of-day-text" id="tipOfDayText"></div>
   </div>
 
@@ -668,7 +690,6 @@ body::before {
     <button class="filter-pill" onclick="setFilter('wet')" data-filter="wet">Wet</button>
     <button class="filter-pill" onclick="setFilter('raw')" data-filter="raw">Raw</button>
     <button class="filter-pill" onclick="setFilter('treat')" data-filter="treat">Treats</button>
-    <button class="filter-pill" onclick="setFilter('top')" data-filter="top">Top Rated</button>
   </div>
 
   <div class="product-count" id="productCount">Showing 1080 products</div>
@@ -678,49 +699,32 @@ body::before {
 
 <!-- DETAIL SCREEN -->
 <div class="screen" id="screen-detail">
-  <div class="score-ring-container" style="margin:12px 0 8px;">
-    <div class="score-ring">
-      <svg width="180" height="180" viewBox="0 0 140 140">
-        <circle cx="70" cy="70" r="58" stroke="#e2e8f0" stroke-width="10" fill="none"/>
-        <circle id="scoreArc" cx="70" cy="70" r="58" stroke="#38a169" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="0 364.4"/>
-      </svg>
-      <div class="score-value" id="scoreValue">0</div>
-      <div class="score-label" id="scoreScaleLabel">out of 100</div>
-    </div>
+  <div class="assessment-panel" role="status">
+    <div class="assessment-eyebrow">Product information</div>
+    <h2 id="assessmentStatus">Assessment under review</h2>
+    <p id="assessmentNotice">Health ratings are paused while we review our assessment method.</p>
   </div>
-
-  <div class="score-tier-external" id="scoreTier"></div>
-  <p id="scoreReviewNotice" style="display:none;text-align:center;color:#4a5568;font-size:13px;margin:0 16px 16px;">We still need to check this product's ingredients and scoring information.</p>
-
-  <div class="sub-score-bars" id="subScoreBars">
-    <div class="sub-score-bar">
-      <div class="sub-label" id="ingredientScoreLabel">Ingredient Quality: 0/85</div>
-      <div class="bar-track"><div class="bar-fill" id="ingredientBar" style="width:0%;"></div></div>
-    </div>
-    <div class="sub-score-bar">
-      <div class="sub-label" id="credScoreLabel">Manufacturer Trust: 0/15</div>
-      <div class="bar-track"><div class="bar-fill" id="credBar" style="width:0%;"></div></div>
-    </div>
-  </div>
-
   <div id="detailProductImage" style="text-align:center; margin:12px 0; display:flex; flex-direction:column; align-items:center;"></div>
-
-  <div class="stars" id="stars"></div>
+  <div class="section-card">
+    <h2>Catalogue details</h2>
+    <p class="evidence-note">Check these details against your pack. Catalogue entries are still being verified.</p>
+    <dl class="catalogue-facts" id="catalogueFacts"></dl>
+  </div>
 
   <div class="section-card">
-    <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#202C94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>Ingredient Breakdown</h2>
+    <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#202C94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>Ingredient information</h2>
     <div id="ingredientList"></div>
   </div>
 
   <div class="section-card">
-    <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#202C94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Manufacturer Credibility</h2>
+    <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#202C94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Evidence to check</h2>
     <div id="credList"></div>
   </div>
 
   <div style="text-align:center; margin: 4px 16px 8px;">
     <button onclick="showScoringModal()" style="background:none; border:2px solid #202C94; color:#202C94; border-radius:20px; padding:8px 20px; font-size:13px; font-weight:700; font-family:'Poppins',sans-serif; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#202C94" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-      How We Score
+      About the assessment
     </button>
   </div>
 
@@ -798,7 +802,7 @@ body::before {
   </div>
   <div class="section-card">
     <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#202C94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>Settings</h2>
-    <div class="cred-row"><span class="cred-label">Products in Database</span><span class="cred-value">1,076</span></div>
+    <div class="cred-row"><span class="cred-label">Products in Database</span><span class="cred-value" id="profileProductCount">1,080</span></div>
     <div class="cred-row"><span class="cred-label">App Version</span><span class="cred-value">2.1 Beta</span></div>
     <div class="cred-row"><span class="cred-label">Region</span><span class="cred-value">&#127462;&#127482; Australia</span></div>
     <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #f0f4f8;">
@@ -829,72 +833,25 @@ body::before {
   </div>
 </div>
 
-<!-- RECOMMEND SCREEN -->
+<!-- EXPLORE SCREEN -->
 <div class="screen" id="screen-recommend">
   <div class="add-section">
-    <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="#EF973F" stroke="#EF973F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg>Find the Best Food</h2>
-    <p style="font-size:13px; color:#718096; margin-bottom:18px;">Tell us what you're looking for and we'll pick the top 5 recommendations from our database.</p>
-
-    <div class="filter-group">
-      <div class="filter-group-label">&#128062; Pet Type</div>
-      <div class="filter-chips">
-        <button class="filter-chip selected" onclick="toggleChip(this,'pet')" data-val="dog">&#128021; Dog</button>
-        <button class="filter-chip" onclick="toggleChip(this,'pet')" data-val="cat">&#128049; Cat</button>
-      </div>
-    </div>
-
-    <div class="filter-group">
-      <div class="filter-group-label">&#127874; Life Stage</div>
-      <div class="filter-chips">
-        <button class="filter-chip" onclick="toggleChip(this,'stage')" data-val="puppy">Puppy/Kitten</button>
-        <button class="filter-chip selected" onclick="toggleChip(this,'stage')" data-val="adult">Adult</button>
-        <button class="filter-chip" onclick="toggleChip(this,'stage')" data-val="senior">Senior</button>
-        <button class="filter-chip" onclick="toggleChip(this,'stage')" data-val="all">All Ages</button>
-      </div>
-    </div>
-
-    <div class="filter-group">
-      <div class="filter-group-label">&#127806; Dietary Preference</div>
-      <div class="filter-chips">
-        <button class="filter-chip selected" onclick="toggleChip(this,'diet')" data-val="any">Any</button>
-        <button class="filter-chip" onclick="toggleChip(this,'diet')" data-val="grain-free">Grain Free</button>
-        <button class="filter-chip" onclick="toggleChip(this,'diet')" data-val="limited">Limited Ingredient</button>
-        <button class="filter-chip" onclick="toggleChip(this,'diet')" data-val="weight">Weight Management</button>
-      </div>
-    </div>
-
-    <div class="filter-group">
-      <div class="filter-group-label">&#129385; Preferred Protein</div>
-      <div class="filter-chips">
-        <button class="filter-chip selected" onclick="toggleChip(this,'protein')" data-val="any">Any</button>
-        <button class="filter-chip" onclick="toggleChip(this,'protein')" data-val="chicken">Chicken</button>
-        <button class="filter-chip" onclick="toggleChip(this,'protein')" data-val="lamb">Lamb</button>
-        <button class="filter-chip" onclick="toggleChip(this,'protein')" data-val="beef">Beef</button>
-        <button class="filter-chip" onclick="toggleChip(this,'protein')" data-val="fish">Fish/Salmon</button>
-        <button class="filter-chip" onclick="toggleChip(this,'protein')" data-val="kangaroo">Kangaroo</button>
-      </div>
-    </div>
-
-    <div class="filter-group">
-      <div class="filter-group-label">&#128207; Dog Size</div>
-      <div class="filter-chips">
-        <button class="filter-chip selected" onclick="toggleChip(this,'size')" data-val="any">Any</button>
-        <button class="filter-chip" onclick="toggleChip(this,'size')" data-val="small">Small Breed</button>
-        <button class="filter-chip" onclick="toggleChip(this,'size')" data-val="medium">Medium</button>
-        <button class="filter-chip" onclick="toggleChip(this,'size')" data-val="large">Large Breed</button>
-      </div>
-    </div>
+    <h2>Explore the catalogue</h2>
+    <p class="evidence-note">Find products by name or browse the categories. Listings are alphabetical by brand and name.</p>
+    <button class="recommend-btn" onclick="handleCategoryClick('all-products')">Browse all products</button>
+    <button class="photo-btn" onclick="openSearchOverlay()">Search by name or brand</button>
   </div>
-
-  <button class="recommend-btn" onclick="getRecommendations()">&#128062; Show Me the Top 5!</button>
-  <div id="recResults" style="margin-top:20px;"></div>
+  <div class="assessment-panel">
+    <h2>Recommendations are paused</h2>
+    <div id="recResults"><p class="evidence-note">Recommendations are paused while the assessment method is under review. Browse or search the catalogue to find product information.</p></div>
+  </div>
 </div>
 
 <!-- ADD PRODUCT SCREEN -->
 <div class="screen" id="screen-add">
   <div class="add-section">
     <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#202C94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>Add a New Product</h2>
-    <p style="font-size:13px; color:#718096; margin-bottom:16px;">Found something at the store that's not in our database? Add it here and get an instant score!</p>
+    <p style="font-size:13px; color:#718096; margin-bottom:16px;">Add product details for this visit. Your entry stays unverified and receives no health rating. Use Collector to keep a product capture for later review.</p>
     <input class="add-input" type="text" id="addName" placeholder="Product name (e.g. Advance Adult Chicken)">
     <input class="add-input" type="text" id="addBrand" placeholder="Brand (e.g. Advance, Royal Canin)">
     <select class="add-input" id="addType" style="color:#4a5568;">
@@ -905,14 +862,14 @@ body::before {
 
   <div class="add-section">
     <h2>&#129385; Ingredients</h2>
-    <p style="font-size:13px; color:#718096; margin-bottom:12px;">Take a photo of the ingredient list on the back of the pack, or type them in manually.</p>
-    <button class="photo-btn" id="photoIngBtn" onclick="simulatePhoto()">&#128247; Photograph Ingredient List</button>
+    <p style="font-size:13px; color:#718096; margin-bottom:12px;">Copy the ingredient list exactly as printed. To photograph a pack, open Mucka Collector.</p>
+    <button class="photo-btn" id="photoIngBtn" onclick="openMuckaCollector('')">&#128247; Open Collector for photos</button>
     <div class="or-divider">&mdash; or type them in &mdash;</div>
     <textarea class="add-textarea" id="addIngredients" placeholder="Paste or type ingredients here, separated by commas."></textarea>
     <div class="add-helper">Tip: Copy them exactly as they appear on the packet</div>
   </div>
 
-  <button class="score-it-btn" onclick="scoreNewProduct()">&#128062; Score This Product!</button>
+  <button class="score-it-btn" onclick="scoreNewProduct()">&#128062; Add for this visit</button>
   <div id="addResult" style="margin-top:20px;"></div>
 </div>
 
@@ -922,7 +879,7 @@ body::before {
     <span class="nav-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span><span class="nav-label">Home</span>
   </button>
   <button class="nav-item" onclick="showScreen('recommend')" id="nav-recommend">
-    <span class="nav-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></span><span class="nav-label">Top 5</span>
+    <span class="nav-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></span><span class="nav-label">Explore</span>
   </button>
   <button class="nav-scan-raised" onclick="openScanner()" id="nav-scan">
     <div class="nav-scan-circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
@@ -2717,152 +2674,15 @@ var BARCODE_MAP = {
 
 
 
-// ============================================================
-// === SCORING ENGINE v2 — Rebalanced April 2026 ===
-// Based on Score Validation Report recommendations.
-//
-// WHAT CHANGED AND WHY:
-// 1. Credibility weight dropped from 30% to 15% — ingredient
-//    quality now matters much more than who makes it.
-// 2. Ingredient quality floor — if ingredients are bad (below 40),
-//    the total score gets capped. Good branding can't save bad food.
-// 3. Budget brands get reduced credibility — Pedigree doesn't get
-//    the same trust score as Royal Canin just because Mars owns both.
-// 4. Recall penalties are stronger — serious recalls (where pets
-//    got sick or died) now have a real impact on the score.
-// ============================================================
-
-// --- Scoring settings (easy to tweak) ---
-var SCORE_SETTINGS = {
-  INGREDIENT_MAX: 85,          // Ingredients are now worth up to 85 points (was 70)
-  CREDIBILITY_MAX: 15,         // Credibility now worth up to 15 points (was 30)
-  INGREDIENT_FLOOR: 40,        // If ingredient quality is below 40/85, cap the total
-  FLOOR_CAP: 55,               // Maximum total score when floor kicks in
-  BUDGET_MULTIPLIER: 0.6,      // Budget brands only get 60% of parent company credibility
-  RECALL_PENALTY_SEVERE: 12,   // Pets died or got very sick (e.g. Advance 2018, Hill's 2019)
-  RECALL_PENALTY_MODERATE: 6,  // Salmonella, contamination, lawsuits
-  RECALL_PENALTY_MINOR: 2      // Minor issues, mislabelling, mould
-};
-
-// --- Budget sub-brands that shouldn't get full parent company credibility ---
-// These are lower-cost product lines. They use cheaper ingredients than the
-// parent company's premium brands, so they shouldn't get the same trust boost.
-var BUDGET_BRANDS = [
-  'Pedigree', 'Optimum', 'My Dog', 'Schmackos', 'Whiskas', 'Dine',        // Mars budget lines
-  'Supercoat', 'Friskies', 'Felix', 'Fancy Feast', 'Temptations',          // Nestle/Purina budget lines
-  'Cesar', 'Sheba',                                                         // Mars budget lines
-  "Nature's Gift", 'Fussy Cat',                                             // Real Pet Food Co budget
-  'Baxters (Woolworths)', 'Smitten (Woolworths)',                           // Woolworths budget
-  "Woofin' Good (Coles)",                                                   // Coles budget
-  'Heart to Tail (ALDI)', 'Julius (ALDI)',                                  // ALDI budget
-  'Leaps & Bounds', 'Snappy Tom'                                            // Other budget
-];
-
-// --- Figure out how bad the recalls are ---
-// Looks at the recall text and decides: severe, moderate, minor, or none.
-function getRecallSeverity(recallText) {
-  if (!recallText) return 'none';
-  var lower = recallText.toLowerCase();
-
-  // No meaningful recalls
-  if (lower.indexOf('no recalls') >= 0 || lower.indexOf('no significant') >= 0 ||
-      lower.indexOf('no data') >= 0 || lower.indexOf('no major') >= 0 ||
-      lower.indexOf('no formal recalls') >= 0) {
-    return 'none';
-  }
-
-  // SEVERE: pets died, got very sick, or massive recalls
-  if (lower.indexOf('died') >= 0 || lower.indexOf('megaesophagus') >= 0 ||
-      lower.indexOf('toxic') >= 0 || lower.indexOf('hundreds of dogs') >= 0 ||
-      lower.indexOf('dogs ill') >= 0 || lower.indexOf('22m cans') >= 0) {
-    return 'severe';
-  }
-
-  // MODERATE: salmonella, contamination, heavy metals, lawsuits, melamine
-  if (lower.indexOf('salmonella') >= 0 || lower.indexOf('contamination') >= 0 ||
-      lower.indexOf('melamine') >= 0 || lower.indexOf('heavy metals') >= 0 ||
-      lower.indexOf('lawsuit') >= 0 || lower.indexOf('settlement') >= 0 ||
-      lower.indexOf('irradiation') >= 0) {
-    return 'moderate';
-  }
-
-  // MINOR: mould, mislabelling, minor issues
-  if (lower.indexOf('mould') >= 0 || lower.indexOf('mislabel') >= 0 ||
-      lower.indexOf('moisture') >= 0 || lower.indexOf('consumer issues') >= 0 ||
-      lower.indexOf('batch recall') >= 0) {
-    return 'minor';
-  }
-
-  // If there's recall text but we can't classify it, assume minor
-  return 'minor';
-}
-
-// --- The main score calculator ---
-// Takes a product's raw data and calculates a fair score.
+// Ratings are withheld until a reviewed assessment method is available.
+// Historical catalogue values remain in the source for provenance, but are
+// cleared at runtime so no consumer can accidentally reuse them as a rating.
 function recalculateScore(product) {
-  // Catalogue placeholders are missing data, not a nutritional rating.
-  if (!hasScoreData(product) || !Number.isFinite(product.credScore)) {
-    product.score = null;
-    product._ingredientScore = null;
-    product._credScore = null;
-    return;
-  }
-  // Step 1: Work out the original ingredient score
-  // Original system: total = ingredients (out of 70) + credibility (out of 30)
-  var originalIngredient = product.score - product.credScore;
-  // Scale it to the new max of 85 (was out of 70)
-  var ingredientScore = Math.round((originalIngredient / 70) * SCORE_SETTINGS.INGREDIENT_MAX);
-  // Keep it in range
-  ingredientScore = Math.max(0, Math.min(SCORE_SETTINGS.INGREDIENT_MAX, ingredientScore));
-
-  // Step 2: Calculate new credibility score (now out of 15 instead of 30)
-  var rawCred = product.credScore; // Original credibility out of 30
-
-  // If this is a budget brand, reduce the credibility they inherit
-  var isBudget = BUDGET_BRANDS.indexOf(product.brand) >= 0;
-  if (isBudget) {
-    rawCred = Math.round(rawCred * SCORE_SETTINGS.BUDGET_MULTIPLIER);
-  }
-
-  // Scale credibility from /30 to /15
-  var credScore = Math.round((rawCred / 30) * SCORE_SETTINGS.CREDIBILITY_MAX);
-  credScore = Math.max(0, Math.min(SCORE_SETTINGS.CREDIBILITY_MAX, credScore));
-
-  // Step 3: Combine ingredient + credibility
-  var totalScore = ingredientScore + credScore;
-
-  // Step 4: Apply ingredient quality floor
-  // If the ingredients are bad, the score gets capped — no amount of
-  // corporate credibility can make bad food good.
-  if (ingredientScore < SCORE_SETTINGS.INGREDIENT_FLOOR) {
-    totalScore = Math.min(totalScore, SCORE_SETTINGS.FLOOR_CAP);
-  }
-
-  // Step 5: Apply recall penalty
-  var severity = getRecallSeverity(product.recalls);
-  if (severity === 'severe') {
-    totalScore -= SCORE_SETTINGS.RECALL_PENALTY_SEVERE;
-  } else if (severity === 'moderate') {
-    totalScore -= SCORE_SETTINGS.RECALL_PENALTY_MODERATE;
-  } else if (severity === 'minor') {
-    totalScore -= SCORE_SETTINGS.RECALL_PENALTY_MINOR;
-  }
-
-  // Keep total in valid range (5–100)
-  totalScore = Math.max(5, Math.min(100, totalScore));
-
-  // Save the new scores back onto the product
-  product.score = totalScore;
-  product._ingredientScore = ingredientScore;  // Store for display
-  product._credScore = credScore;              // Store for display
-  product._isBudget = isBudget;                // Store for display
-  product._recallSeverity = severity;          // Store for display
+  product.score = null;
+  product._ingredientScore = null;
+  product._credScore = null;
 }
-
-// --- Run the recalculation on every product at startup ---
-products.forEach(function(p) {
-  recalculateScore(p);
-});
+products.forEach(recalculateScore);
 
 // === APP STATE ===
 var favourites = [];
@@ -2874,64 +2694,40 @@ var scoreBarsTimer = null;
 var currentPage = 1;
 var perPage = 20;
 var currentFilter = 'all';
-var filteredProducts = products.slice();
+var filteredProducts = products.slice().sort(compareProductScores);
 var searchDebounceTimer = null;
 
-// === SCORING TIERS (4 tiers - simple and clear) ===
-// 80-100: EXCELLENT - Green  #38a169
-// 60-79:  GOOD      - Blue   #3182ce - Decent, but could be better
-// 35-59:  POOR      - Orange #ed8936
-// 0-34:   BAD       - Red    #e53e3e
-
-// Existing ingredient entries do not imply independent veterinary validation.
+// These legacy entry points cannot activate a rating, even when data is added.
 function hasScoreData(product) {
-  return !!product && product.needsReview !== true &&
-    Array.isArray(product.ingredients) && product.ingredients.length > 0 &&
-    Number.isFinite(product.score);
+  return false;
 }
 
 function getScoreBadge(product) {
-  if (!hasScoreData(product)) return '<div class="score-badge score-unscored">Not scored</div>';
-  return '<div class="score-badge '+getScoreClass(product.score)+'" style="width:40px;height:40px;font-size:14px;">'+product.score+'</div>';
+  return '<span class="assessment-badge">Under review</span>';
 }
 
 function compareProductScores(a, b) {
-  var aScored = hasScoreData(a), bScored = hasScoreData(b);
-  if (aScored !== bScored) return aScored ? -1 : 1;
-  return aScored ? b.score - a.score : 0;
+  return (a.brand || '').localeCompare(b.brand || '', 'en-AU', {sensitivity: 'base'}) ||
+    (a.name || '').localeCompare(b.name || '', 'en-AU', {sensitivity: 'base'}) || a.id - b.id;
 }
 
-function getScoreClass(score) {
-  if (score >= 80) return 'score-excellent';
-  if (score >= 60) return 'score-good';
-  if (score >= 35) return 'score-poor';
-  return 'score-bad';
+function escapeHtml(value) {
+  return String(value == null ? '' : value).replace(/[&<>"']/g, function(ch) {
+    return {'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[ch];
+  });
 }
 
-function getScoreColour(score) {
-  if (score >= 80) return '#38a169';  // Green - EXCELLENT
-  if (score >= 60) return '#68D391';  // Yellow-green - GOOD
-  if (score >= 35) return '#ed8936';  // Orange - POOR
-  return '#e53e3e';                    // Red - BAD
-}
-
-function getAnimationTier(score) {
-  if (score >= 80) return 'excellent';
-  if (score >= 60) return 'good';
-  if (score >= 35) return 'poor';
-  return 'bad';
-}
-
-function getReaction(score) {
-  if (score >= 80) return { emoji: '', text: "Excellent choice!" };
-  if (score >= 60) return { emoji: '', text: "Good choice, but not perfect." };
-  if (score >= 35) return { emoji: '', text: "This food has some concerns." };
-  return { emoji: '', text: "Avoid this food!" };
-}
-
-function getStars(score) {
-  var s = Math.round(score / 20);
-  return '\u2605'.repeat(s) + '\u2606'.repeat(5 - s);
+function getIngredientListHtml(product) {
+  if (product._userIngredientText) {
+    return '<p class="evidence-note">You supplied this text. It has not been verified against the pack.</p>' +
+      '<p class="ingredient-text">' + escapeHtml(product._userIngredientText) + '</p>';
+  }
+  var entries = product.ingredients || [];
+  if (!entries.length) return '<p class="evidence-note">Ingredient information has not been added yet.</p>';
+  return '<p class="evidence-note">These existing ingredient notes may be incomplete. They have not yet been verified against the full label for this pack.</p>' +
+    '<ul class="ingredient-names">' + entries.map(function(entry) {
+      return '<li>' + escapeHtml(entry.name) + '</li>';
+    }).join('') + '</ul>';
 }
 
 function getFoodSVGIcon(foodType, petType, iconSize) {
@@ -2963,7 +2759,7 @@ function getProductImage(p, size) {
   // Try user-submitted photo first
   if (p._userPhoto) {
     return '<div style="width:'+s+'px;height:'+s+'px;border-radius:'+radius+'px;flex-shrink:0;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.12);background:#e2e8f0;display:flex;align-items:center;justify-content:center;">' +
-      '<img src="'+p._userPhoto+'" alt="'+p.name+'" style="width:100%;height:100%;object-fit:cover;">' +
+      '<img src="'+p._userPhoto+'" alt="'+escapeHtml(p.name)+'" style="width:100%;height:100%;object-fit:cover;">' +
       '</div>';
   }
   // Try to find real image
@@ -2972,7 +2768,7 @@ function getProductImage(p, size) {
   if (imgPath) {
     var bg = '#f7f8fa';
     return '<div style="width:'+s+'px;height:'+s+'px;border-radius:'+radius+'px;flex-shrink:0;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.12);background:'+bg+';display:flex;align-items:center;justify-content:center;">' +
-      '<img src="'+imgPath+'" alt="'+p.name+'" style="width:100%;height:100%;object-fit:contain;" onerror="this.style.display=\'none\'">' +
+      '<img src="'+imgPath+'" alt="'+escapeHtml(p.name)+'" style="width:100%;height:100%;object-fit:contain;" onerror="this.style.display=\'none\'">' +
       '</div>';
   }
   return getProductPlaceholder(p, s);
@@ -2992,7 +2788,7 @@ function getProductPlaceholder(p, s) {
   var svgIcon = getFoodSVGIcon(p.foodType, p.petType, iconSize);
   return '<div style="width:'+s+'px;height:'+s+'px;border-radius:'+radius+'px;background:linear-gradient(145deg,'+p.imgBg+','+adjustColor(p.imgBg,-20)+');flex-shrink:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:'+gap+'px;color:'+p.imgAccent+';box-shadow:0 2px 6px rgba(0,0,0,0.12);">' +
     svgIcon +
-    '<div style="font-size:'+textSize+'px;font-weight:800;color:'+p.imgAccent+';line-height:1;text-align:center;max-width:'+(s-8)+'px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;letter-spacing:0.3px;text-transform:uppercase;">'+p.imgText+'</div>' +
+    '<div style="font-size:'+textSize+'px;font-weight:800;color:'+p.imgAccent+';line-height:1;text-align:center;max-width:'+(s-8)+'px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;letter-spacing:0.3px;text-transform:uppercase;">'+escapeHtml(p.imgText)+'</div>' +
     (s > 60 ? '<div style="font-size:'+typeSize+'px;color:'+p.imgAccent+';opacity:0.7;line-height:1;text-transform:uppercase;letter-spacing:0.5px;">'+(p.foodType||'')+'</div>' : '') +
     '</div>';
 }
@@ -3019,9 +2815,10 @@ function applyFilters() {
     if (currentFilter === 'wet') return p.foodType === 'wet' || p.foodType === 'canned';
     if (currentFilter === 'raw') return p.foodType === 'raw';
     if (currentFilter === 'treat') return p.foodType === 'treat' || p.foodType === 'treats' || p.foodType === 'topper' || p.foodType === 'toppers';
-    if (currentFilter === 'top') return hasScoreData(p) && p.score >= 80;
+    if (currentFilter === 'top') return false; // Retired filter: never revive old rankings.
     return true;
   });
+  filteredProducts.sort(compareProductScores);
   currentPage = 1;
   renderPage();
 }
@@ -3051,7 +2848,7 @@ function renderPage() {
   container.innerHTML = pageProducts.map(function(p) {
     return '<div class="product-card" onclick="showProduct('+p.id+')">' +
       getProductImage(p, 52) +
-      '<div class="product-info"><h3>'+p.name+'</h3><p>'+p.brand+' \u00B7 '+p.type+'</p></div>' +
+      '<div class="product-info"><h3>'+escapeHtml(p.name)+'</h3><p>'+escapeHtml(p.brand)+' \u00B7 '+escapeHtml(p.type)+'</p></div>' +
       getScoreBadge(p) + '</div>';
   }).join('');
 
@@ -3078,7 +2875,7 @@ function showProduct(id) {
   document.getElementById('detailBrand').textContent = currentProduct.name + ' \u00B7 ' + currentProduct.type;
   var productImageHtml = getProductImage(currentProduct, 110);
   if (!productHasImage(currentProduct)) {
-    productImageHtml += '<div style="text-align:center;"><button class="add-photo-btn" onclick="addPhotoToProduct('+currentProduct.id+')"><span>&#128247;</span> Add Photo</button></div>';
+    productImageHtml += '<div style="text-align:center;"><button class="add-photo-btn" onclick="openMuckaCollector(currentProduct.barcode)"><span>&#128247;</span> Open Collector for photos</button></div>';
   }
   document.getElementById('detailProductImage').innerHTML = productImageHtml;
   // Wire up lightbox on product image tap
@@ -3091,88 +2888,28 @@ function showProduct(id) {
     if (wrap) wrap.style.cursor = 'zoom-in';
   }
 
-  var score = currentProduct.score;
-  var scored = hasScoreData(currentProduct);
-  var colour = scored ? getScoreColour(score) : '#718096';
   clearInterval(scoreCountTimer);
   clearTimeout(scoreArcTimer);
   clearTimeout(scoreBarsTimer);
-  document.getElementById('scoreScaleLabel').style.display = scored ? '' : 'none';
-  document.getElementById('scoreReviewNotice').style.display = scored ? 'none' : 'block';
-  document.getElementById('scoreReviewNotice').textContent = currentProduct.identityNotice || "We still need to check this product's ingredients and scoring information.";
-  document.getElementById('subScoreBars').style.display = scored ? '' : 'none';
-  var arc = document.getElementById('scoreArc');
-  var circumference = 2 * Math.PI * 58;
-  arc.style.stroke = colour;
-  arc.style.transition = 'stroke-dasharray 1s ease';
-  arc.style.strokeDasharray = '0 ' + circumference;
-
-  if (scored) scoreArcTimer = setTimeout(function() {
-    arc.style.strokeDasharray = ((score / 100) * circumference) + ' ' + circumference;
-  }, 100);
-
-  var scoreVal = document.getElementById('scoreValue');
-  scoreVal.style.color = colour;
-  scoreVal.textContent = scored ? '0' : '\u2014';
-  var count = 0;
-  if (scored) scoreCountTimer = setInterval(function() {
-    count += 2;
-    if (count >= score) { count = score; clearInterval(scoreCountTimer); }
-    scoreVal.textContent = count;
-  }, 20);
-
-  // === SCORE TIER LABEL ===
-  var tierLabel = '';
-  var tierColour = colour;
-  if (score >= 90) { tierLabel = 'Excellent'; tierColour = '#38a169'; }
-  else if (score >= 75) { tierLabel = 'Very Good'; tierColour = '#38a169'; }
-  else if (score >= 60) { tierLabel = 'Good'; tierColour = '#68D391'; }
-  else if (score >= 45) { tierLabel = 'Average'; tierColour = '#ed8936'; }
-  else if (score >= 30) { tierLabel = 'Below Average'; tierColour = '#ed8936'; }
-  else { tierLabel = 'Poor'; tierColour = '#e53e3e'; }
-  var scoreTierEl = document.getElementById('scoreTier');
-  scoreTierEl.textContent = scored ? tierLabel : 'Not scored';
-  if (!scored) tierColour = colour;
-  scoreTierEl.style.color = tierColour;
-
-  // === SUB-SCORE BARS (v2 — 85/15 split) ===
-  var ingredientScore = Number.isFinite(currentProduct._ingredientScore) ? currentProduct._ingredientScore : Math.round(score * 0.85);
-  var credibilityScore = Number.isFinite(currentProduct._credScore) ? currentProduct._credScore : Math.round(score * 0.15);
-  document.getElementById('ingredientScoreLabel').textContent = 'Ingredient Quality: ' + ingredientScore + '/' + SCORE_SETTINGS.INGREDIENT_MAX;
-  document.getElementById('credScoreLabel').textContent = 'Manufacturer Trust: ' + credibilityScore + '/' + SCORE_SETTINGS.CREDIBILITY_MAX;
-  var ingredientBar = document.getElementById('ingredientBar');
-  var credBar = document.getElementById('credBar');
-  ingredientBar.style.background = colour;
-  credBar.style.background = colour;
-  ingredientBar.style.width = '0%';
-  credBar.style.width = '0%';
-  if (scored) scoreBarsTimer = setTimeout(function() {
-    ingredientBar.style.width = ((ingredientScore / SCORE_SETTINGS.INGREDIENT_MAX) * 100) + '%';
-    credBar.style.width = ((credibilityScore / SCORE_SETTINGS.CREDIBILITY_MAX) * 100) + '%';
-  }, 200);
-
-  // === SCORE DISPLAY ===
-  document.getElementById('stars').innerHTML = scored ? '<span style="color:'+colour+'">'+getStars(score)+'</span>' : '';
-
-  document.getElementById('ingredientList').innerHTML = (currentProduct.ingredients || []).map(function(i) {
-    return '<div class="ingredient-row"><div class="ingredient-dot dot-'+i.rating+'"></div><div><div class="ingredient-name">'+i.name+'</div><div class="ingredient-desc">'+i.desc+'</div></div></div>';
-  }).join('') || '<p style="font-size:13px;color:#4a5568;">Ingredient information has not been added yet.</p>';
-
+  document.getElementById('assessmentStatus').textContent = 'Assessment under review';
+  document.getElementById('assessmentNotice').textContent = currentProduct.identityNotice ||
+    'Health ratings are paused while we review our assessment method. This is not a judgement about this food.';
   var p = currentProduct;
-  // Show credibility details — now out of 15 instead of 30
-  var credDisplay = (p._credScore || 0) + '/' + SCORE_SETTINGS.CREDIBILITY_MAX;
-  var budgetNote = p._isBudget ? ' <span style="font-size:11px;color:#ed8936;">(budget brand, reduced)</span>' : '';
-  var recallNote = '';
-  if (p._recallSeverity === 'severe') recallNote = ' <span style="font-size:11px;color:#e53e3e;">(-' + SCORE_SETTINGS.RECALL_PENALTY_SEVERE + ' pts)</span>';
-  else if (p._recallSeverity === 'moderate') recallNote = ' <span style="font-size:11px;color:#ed8936;">(-' + SCORE_SETTINGS.RECALL_PENALTY_MODERATE + ' pts)</span>';
-  else if (p._recallSeverity === 'minor') recallNote = ' <span style="font-size:11px;color:#ecc94b;">(-' + SCORE_SETTINGS.RECALL_PENALTY_MINOR + ' pts)</span>';
-  document.getElementById('credList').innerHTML = !scored ?
-    '<p style="font-size:13px;color:#4a5568;">Manufacturer information still needs review.</p>' :
-    '<div class="cred-row"><span class="cred-label">Credibility Score</span><span class="cred-value">'+credDisplay+budgetNote+'</span></div>' +
-    '<div class="cred-row"><span class="cred-label">Vet Nutritionist</span><span class="cred-value '+(p.vetNutritionist?'cred-yes':'cred-no')+'">'+(p.vetNutritionist?'\u2705 Yes':'\u274C No')+'</span></div>' +
-    '<div class="cred-row"><span class="cred-label">Feeding Trials</span><span class="cred-value '+(p.feedingTrials?'cred-yes':'cred-no')+'">'+(p.feedingTrials?'\u2705 Yes':'\u274C No')+'</span></div>' +
-    '<div class="cred-row"><span class="cred-label">WSAVA Compliant</span><span class="cred-value '+(p.wsava?'cred-yes':'cred-no')+'">'+(p.wsava?'\u2705 Yes':'\u274C No')+'</span></div>' +
-    '<div class="cred-row"><span class="cred-label">Recall History</span><span class="cred-value" style="font-size:12px;max-width:180px;text-align:right;">'+p.recalls+recallNote+'</span></div>';
+  var facts = [
+    ['Species in catalogue', p.petType === 'dog' ? 'Dog' : p.petType === 'cat' ? 'Cat' : 'Not recorded'],
+    ['Food form in catalogue', p.foodType || 'Not recorded'],
+    ['Barcode in catalogue', p.barcode || 'Not recorded'],
+    ['Life stage', 'Not verified'],
+    ['Feeding purpose', 'Not verified'],
+    ['Nutritional adequacy', 'Not verified']
+  ];
+  document.getElementById('catalogueFacts').innerHTML = facts.map(function(row) {
+    return '<div><dt>' + escapeHtml(row[0]) + '</dt><dd>' + escapeHtml(row[1]) + '</dd></div>';
+  }).join('');
+  document.getElementById('ingredientList').innerHTML = getIngredientListHtml(p);
+  document.getElementById('credList').innerHTML =
+    '<p class="evidence-note">We still need sourced evidence for nutritional adequacy for this product, manufacturer expertise, quality controls and recall history. A missing record does not mean a food has failed a nutritional requirement.</p>' +
+    '<p class="evidence-note">Treats, supplements and therapeutic foods need their own context. Check the intended use on the pack and follow advice from your vet for a therapeutic diet.</p>';
 
   renderBuyLinks(currentProduct);
 
@@ -3219,7 +2956,7 @@ function toggleFav() {
 }
 
 function renderFavourites() {
-  var list = products.filter(function(p) { return favourites.indexOf(p.id) >= 0; });
+  var list = products.filter(function(p) { return favourites.indexOf(p.id) >= 0; }).sort(compareProductScores);
   var container = document.getElementById('favList');
   var empty = document.getElementById('favEmpty');
   if (list.length === 0) {
@@ -3230,7 +2967,7 @@ function renderFavourites() {
     container.innerHTML = list.map(function(p) {
       return '<div class="product-card" onclick="showProduct('+p.id+')">' +
         getProductImage(p, 52) +
-        '<div class="product-info"><h3>'+p.name+'</h3><p>'+p.brand+' \u00B7 '+p.type+'</p></div>' +
+        '<div class="product-info"><h3>'+escapeHtml(p.name)+'</h3><p>'+escapeHtml(p.brand)+' \u00B7 '+escapeHtml(p.type)+'</p></div>' +
         getScoreBadge(p) + '</div>';
     }).join('');
   }
@@ -3257,6 +2994,7 @@ function showScreen(name) {
   if (name === 'add') document.getElementById('addResult').innerHTML = '';
   if (name === 'favourites') renderFavourites();
   if (name === 'profile') updateProfile();
+  if (name === 'recommend') getRecommendations();
 
   // Force scroll to top AFTER new screen is visible
   requestAnimationFrame(function() {
@@ -3271,6 +3009,8 @@ function showScreen(name) {
 function updateProfile() {
   document.getElementById('statScanned').textContent = scannedCount;
   document.getElementById('statFavs').textContent = favourites.length;
+  document.getElementById('profileProductCount').textContent = products.length.toLocaleString();
+  document.getElementById('headerProductCount').textContent = products.length.toLocaleString();
 }
 
 // === BARCODE SCANNER (real camera) ===
@@ -3473,127 +3213,32 @@ var goodKeywords = ['chicken','beef','lamb','salmon','turkey','duck','kangaroo',
 var okKeywords = ['rice','peas','chickpeas','lentils','tapioca','canola oil','animal fat','egg','potato','natural flavour','vegetable protein','wheat','corn','soy','soybean','brewers yeast','lecithin','cellulose','guar gum','carrageenan'];
 var badKeywords = ['by-product','by product','meat meal','poultry meal','cereals','grain','artificial','preservative','colour','color','bha','bht','ethoxyquin','propylene glycol','sugar','salt','corn syrup','sodium','nitrate','nitrite','menadione','flavour','flavor','digest','thickener','binder','filler','unspecified','and/or'];
 
-function classifyIngredient(name) {
-  var lower = name.toLowerCase().trim();
-  for (var i = 0; i < badKeywords.length; i++) { if (lower.indexOf(badKeywords[i]) >= 0) return 'bad'; }
-  for (var i = 0; i < goodKeywords.length; i++) { if (lower.indexOf(goodKeywords[i]) >= 0) return 'good'; }
-  for (var i = 0; i < okKeywords.length; i++) { if (lower.indexOf(okKeywords[i]) >= 0) return 'ok'; }
-  return 'ok';
-}
-
-function getIngredientDesc(name, rating) {
-  var lower = name.toLowerCase();
-  if (rating === 'good') {
-    if (lower.indexOf('chicken') >= 0 || lower.indexOf('beef') >= 0 || lower.indexOf('lamb') >= 0 || lower.indexOf('salmon') >= 0 || lower.indexOf('turkey') >= 0 || lower.indexOf('duck') >= 0 || lower.indexOf('kangaroo') >= 0) return 'Named meat source \u2014 exactly what you want to see first';
-    if (lower.indexOf('fish oil') >= 0 || lower.indexOf('flaxseed') >= 0 || lower.indexOf('omega') >= 0) return 'Great source of omega fatty acids for coat and joints';
-    if (lower.indexOf('sweet potato') >= 0 || lower.indexOf('pumpkin') >= 0) return 'Nutritious whole food, good source of fibre and vitamins';
-    if (lower.indexOf('beet pulp') >= 0) return 'Excellent fibre source for healthy digestion';
-    if (lower.indexOf('probiotics') >= 0 || lower.indexOf('glucosamine') >= 0) return 'Beneficial supplement for health and wellbeing';
-    if (lower.indexOf('brown rice') >= 0 || lower.indexOf('oats') >= 0 || lower.indexOf('barley') >= 0) return 'Quality whole grain, easy to digest';
-    if (lower.indexOf('coconut oil') >= 0 || lower.indexOf('turmeric') >= 0 || lower.indexOf('kelp') >= 0) return 'Natural superfood ingredient';
-    return 'Quality ingredient \u2014 good to see this on the list';
-  }
-  if (rating === 'bad') {
-    if (lower.indexOf('by-product') >= 0 || lower.indexOf('by product') >= 0) return "Vague by-products \u2014 you don't know what parts of what animal";
-    if (lower.indexOf('cereals') >= 0 || lower.indexOf('grain') >= 0) return 'Unspecified grains \u2014 cheapest available, zero transparency';
-    if (lower.indexOf('artificial') >= 0 || lower.indexOf('colour') >= 0 || lower.indexOf('color') >= 0) return "Artificial additives \u2014 your pet doesn't need this";
-    if (lower.indexOf('preservative') >= 0 || lower.indexOf('bha') >= 0 || lower.indexOf('bht') >= 0) return 'Concerning preservative \u2014 natural alternatives exist';
-    if (lower.indexOf('sugar') >= 0 || lower.indexOf('corn syrup') >= 0) return 'Added sugar \u2014 completely unnecessary in pet food';
-    if (lower.indexOf('and/or') >= 0) return "Ingredient swapping \u2014 they use whatever's cheapest at the time";
-    if (lower.indexOf('flavour') >= 0 || lower.indexOf('flavor') >= 0 || lower.indexOf('digest') >= 0) return 'Vague flavouring \u2014 no transparency about what this actually is';
-    if (lower.indexOf('thickener') >= 0 || lower.indexOf('binder') >= 0 || lower.indexOf('filler') >= 0) return 'Filler ingredient \u2014 adds bulk, not nutrition';
-    return 'Concerning ingredient \u2014 raises red flags';
-  }
-  if (lower.indexOf('peas') >= 0 || lower.indexOf('lentils') >= 0 || lower.indexOf('chickpeas') >= 0) return 'Provides protein and fibre but overused in some formulas';
-  if (lower.indexOf('rice') >= 0 || lower.indexOf('potato') >= 0) return 'Common carbohydrate source, easily digestible';
-  if (lower.indexOf('animal fat') >= 0) return "Energy source but vague \u2014 doesn't specify which animal";
-  if (lower.indexOf('wheat') >= 0 || lower.indexOf('corn') >= 0 || lower.indexOf('soy') >= 0) return 'Common allergen for some pets, cheaper filler grain';
-  return 'Neutral ingredient \u2014 neither great nor terrible';
-}
-
-function scoreIngredients(ingredientStr) {
-  var parts = ingredientStr.split(/[,;]/).map(function(s) { return s.trim(); }).filter(function(s) { return s.length > 0; });
-  if (parts.length === 0) return null;
-  var score = 35, classified = [], goodCount = 0, badCount = 0;
-  parts.forEach(function(name, i) {
-    var rating = classifyIngredient(name);
-    var desc = getIngredientDesc(name, rating);
-    classified.push({ name: name, rating: rating, desc: desc });
-    var weight = i < 3 ? 2 : 1;
-    if (rating === 'good') { score += 4 * weight; goodCount++; }
-    else if (rating === 'bad') { score -= 5 * weight; badCount++; }
-  });
-  var firstLower = parts[0].toLowerCase();
-  var namedMeats = ['chicken','beef','lamb','salmon','turkey','duck','kangaroo','venison','fish'];
-  if (namedMeats.some(function(m) { return firstLower.indexOf(m) >= 0; })) score += 8;
-  if (goodCount >= 4) score += 5;
-  if (badCount >= 4) score -= 8;
-  score = Math.max(5, Math.min(95, score));
-  return { score: Math.round(score), ingredients: classified };
-}
-
-function simulatePhoto() {
-  var btn = document.getElementById('photoIngBtn');
-  btn.innerHTML = '\u23F3 Processing image...';
-  btn.disabled = true;
-  setTimeout(function() {
-    btn.innerHTML = '\uD83D\uDCF7 Photograph Ingredient List';
-    btn.disabled = false;
-    var ta = document.getElementById('addIngredients');
-    ta.value = 'Chicken, rice, chicken fat (preserved with mixed tocopherols), dried beet pulp, fish oil, flaxseed, natural flavour, salt, vitamins and minerals';
-    ta.style.borderColor = '#38a169';
-    setTimeout(function() { ta.style.borderColor = '#e2e8f0'; }, 1500);
-  }, 2000);
-}
-
 function scoreNewProduct() {
   var name = document.getElementById('addName').value.trim();
   var brand = document.getElementById('addBrand').value.trim();
   var ingText = document.getElementById('addIngredients').value.trim();
   if (!name) { alert('Please enter a product name'); return; }
   if (!ingText) { alert('Please enter the ingredients'); return; }
-  var result = scoreIngredients(ingText);
-  if (!result) { alert('Could not parse ingredients. Try separating them with commas.'); return; }
-  var score = result.score;
-  var colour = getScoreColour(score);
-  var reaction = getReaction(score);
-  var brandDisplay = brand || 'Unknown Brand';
-  var newId = products.length + 1000;
+  var newId = Math.max.apply(null, products.map(function(p) { return p.id; })) + 1;
   var newProduct = {
-    id: newId, name: name, brand: brandDisplay, score: score, credScore: 0,
-    imgBg: colour, imgText: name.substring(0, 12).toUpperCase(), imgAccent: '#fff',
-    type: brand ? brand : 'User Added', petType: document.getElementById('addType').value,
-    foodType: 'dry', keyProtein: 'Mixed',
-    vetNutritionist: false, feedingTrials: false, wsava: false, recalls: 'Not yet researched',
-    ingredients: result.ingredients
+    id: newId, name: name, brand: brand || 'Unknown brand', score: null,
+    imgBg: '#202C94', imgText: name.substring(0, 12).toUpperCase(), imgAccent: '#fff',
+    type: 'User entry', petType: document.getElementById('addType').value,
+    foodType: '', barcode: null, keyProtein: '', needsReview: true,
+    _userIngredientText: ingText, ingredients: [],
+    identityNotice: 'You supplied these details for this visit. The product and ingredient label have not been verified.'
   };
-  // Apply v2 scoring to user-added products too
-  // For new products, ingredient score IS the score (no credibility data yet)
-  newProduct._ingredientScore = Math.min(score, SCORE_SETTINGS.INGREDIENT_MAX);
-  newProduct._credScore = 0;
-  newProduct._isBudget = false;
-  newProduct._recallSeverity = 'none';
-  // Apply ingredient floor: if ingredients are bad, cap the total
-  if (newProduct._ingredientScore < SCORE_SETTINGS.INGREDIENT_FLOOR) {
-    newProduct.score = Math.min(score, SCORE_SETTINGS.FLOOR_CAP);
-  }
-  score = newProduct.score; // Update local var for display below
-  colour = getScoreColour(score);
-  reaction = getReaction(score);
+  recalculateScore(newProduct);
   products.push(newProduct);
+  filteredProducts = products.slice().sort(compareProductScores);
+  renderCategoryGrid();
+  updateProfile();
   var resultDiv = document.getElementById('addResult');
-  resultDiv.innerHTML =
-    '<div class="add-result">' +
-    '<div style="text-align:center;margin-bottom:16px;"><div style="font-size:14px;font-weight:700;color:'+colour+';margin-bottom:8px;">'+reaction.text+'</div><div style="font-size:64px;font-weight:800;color:'+colour+';">'+score+'</div>' +
-      '<div style="font-size:14px;color:#718096;">out of 100</div>' +
-      '<div style="font-size:13px;color:#718096;margin-top:4px;">'+name+' · '+brandDisplay+'</div></div>' +
-    '<div class="section-card"><h2>\uD83E\uDD69 Ingredient Breakdown</h2>' +
-      result.ingredients.map(function(i) {
-        return '<div class="ingredient-row"><div class="ingredient-dot dot-'+i.rating+'"></div><div><div class="ingredient-name">'+i.name+'</div><div class="ingredient-desc">'+i.desc+'</div></div></div>';
-      }).join('') + '</div>' +
-    '<div class="section-card" style="text-align:center;"><p style="font-size:13px;color:#718096;">\u2705 Product added to your local database!</p></div>' +
-    '<button class="score-it-btn" onclick="showProduct('+newId+')" style="margin-top:8px;">View Full Product Page \u2192</button></div>';
-  resultDiv.scrollIntoView({ behavior: 'smooth' });
+  resultDiv.innerHTML = '<div class="add-result"><h2>Added for this visit</h2>' +
+    '<p>' + escapeHtml(newProduct.brand) + ' · ' + escapeHtml(name) + '</p>' +
+    '<p class="evidence-note">Assessment under review. This entry will be lost when the page reloads. Use Collector to keep a capture for later review.</p>' +
+    '<button class="score-it-btn" onclick="showProduct(' + newId + ')">View product details</button></div>';
+  resultDiv.scrollIntoView({behavior: 'smooth'});
 }
 
 // === WHERE TO BUY ===
@@ -3617,173 +3262,19 @@ function renderBuyLinks(product) {
     '<div class="buy-note">Search Australian pet retailers on Google</div>';
 }
 
-// === RECOMMEND ENGINE ===
-var recFilters = { pet: 'dog', stage: 'adult', diet: 'any', protein: 'any', size: 'any' };
-
-function toggleChip(el, group) {
-  el.parentElement.querySelectorAll('.filter-chip').forEach(function(c) { c.classList.remove('selected'); });
-  el.classList.add('selected');
-  recFilters[group] = el.dataset.val;
-}
-
+// Retired recommendation entry point: even direct callers receive no ranking.
 function getRecommendations() {
-  var filtered = products.filter(hasScoreData);
-  if (recFilters.pet === 'cat') {
-    filtered = filtered.filter(function(p) { return p.petType === 'cat'; });
-  } else {
-    filtered = filtered.filter(function(p) { return p.petType === 'dog'; });
-  }
-  if (recFilters.protein !== 'any') {
-    var prot = recFilters.protein.toLowerCase();
-    var protFiltered = filtered.filter(function(p) {
-      var lower = (p.name + ' ' + p.keyProtein).toLowerCase();
-      if (prot === 'fish') return lower.indexOf('fish') >= 0 || lower.indexOf('salmon') >= 0 || lower.indexOf('ocean') >= 0 || lower.indexOf('tuna') >= 0;
-      return lower.indexOf(prot) >= 0;
-    });
-    if (protFiltered.length > 0) filtered = protFiltered;
-  }
-  if (recFilters.stage !== 'all') {
-    var stageFiltered = filtered.filter(function(p) {
-      var lower = p.name.toLowerCase();
-      if (recFilters.stage === 'puppy') return lower.indexOf('puppy') >= 0 || lower.indexOf('kitten') >= 0 || lower.indexOf('junior') >= 0;
-      if (recFilters.stage === 'senior') return lower.indexOf('senior') >= 0 || lower.indexOf('mature') >= 0 || lower.indexOf('7+') >= 0;
-      if (recFilters.stage === 'adult') return lower.indexOf('adult') >= 0 || (lower.indexOf('puppy') < 0 && lower.indexOf('kitten') < 0 && lower.indexOf('senior') < 0 && lower.indexOf('junior') < 0);
-      return true;
-    });
-    if (stageFiltered.length > 0) filtered = stageFiltered;
-  }
-  if (recFilters.diet === 'grain-free') {
-    var gf = filtered.filter(function(p) { return p.name.toLowerCase().indexOf('grain free') >= 0 || p.name.toLowerCase().indexOf('grain-free') >= 0; });
-    if (gf.length > 0) filtered = gf;
-  }
-  if (recFilters.diet === 'weight') {
-    var wf = filtered.filter(function(p) { return p.name.toLowerCase().indexOf('weight') >= 0 || p.name.toLowerCase().indexOf('light') >= 0; });
-    if (wf.length > 0) filtered = wf;
-  }
-  if (recFilters.size !== 'any') {
-    var sf = filtered.filter(function(p) {
-      var lower = p.name.toLowerCase();
-      if (recFilters.size === 'large') return lower.indexOf('large') >= 0;
-      if (recFilters.size === 'small') return lower.indexOf('small') >= 0 || lower.indexOf('mini') >= 0 || lower.indexOf('toy') >= 0;
-      if (recFilters.size === 'medium') return lower.indexOf('medium') >= 0;
-      return true;
-    });
-    if (sf.length > 0) filtered = sf;
-  }
-  filtered.sort(function(a, b) { return b.score - a.score; });
-  var top5 = filtered.slice(0, 5);
-  var resultsDiv = document.getElementById('recResults');
-  if (top5.length === 0) {
-    resultsDiv.innerHTML = '<div class="add-section" style="text-align:center;"><div style="font-size:48px;margin-bottom:12px;">\uD83D\uDC15\uD83E\uDD14</div><p style="font-weight:700;">No matches yet!</p><p style="font-size:13px;color:#718096;margin-top:8px;">Try broadening your filters.</p></div>';
-    return;
-  }
-  var reactionMsg = top5[0].score >= 70 ? "Great options found! \uD83D\uDC15\u2728" : "Here's the best available \u2014 the market could use better options! \uD83D\uDC15\uD83E\uDD14";
-  resultsDiv.innerHTML =
-    '<div class="add-section" style="text-align:center;margin-bottom:12px;"><div style="font-size:14px;font-weight:600;color:#202C94;">'+reactionMsg+'</div></div>' +
-    '<h3 style="font-size:15px;font-weight:700;margin-bottom:12px;">\uD83C\uDFC6 Top '+top5.length+' Recommendations</h3>' +
-    top5.map(function(p, i) {
-      return '<div class="rec-card" onclick="showProduct('+p.id+')" style="animation-delay:'+i*0.1+'s;"><div class="rec-rank">'+getRosetteSVG(i+1)+'</div>'+getProductImage(p, 44)+'<div style="flex:1;min-width:0;"><div style="font-weight:700;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">'+p.name+'</div><div style="font-size:12px;color:#718096;">'+p.brand+'</div>'+getMatchTags(p)+'</div><div class="score-badge '+getScoreClass(p.score)+'" style="width:38px;height:38px;font-size:13px;">'+p.score+'</div></div>';
-    }).join('') +
-    '<div class="add-section" style="text-align:center;margin-top:12px;"><p style="font-size:12px;color:#718096;">Tap any product to see the full breakdown</p></div>';
-  resultsDiv.scrollIntoView({ behavior: 'smooth' });
-}
-
-function getRosetteSVG(rank) {
-  var colors = {
-    1: { fill: '#2563eb', stroke: '#1e40af', text: '#ffffff' },
-    2: { fill: '#dc2626', stroke: '#991b1b', text: '#ffffff' },
-    3: { fill: '#ffffff', stroke: '#1e293b', text: '#1e293b' },
-    4: { fill: '#16a34a', stroke: '#15803d', text: '#ffffff' },
-    5: { fill: '#fbbf24', stroke: '#d97706', text: '#1e293b' }
-  };
-  var c = colors[rank] || colors[5];
-  return '<svg width="40" height="56" viewBox="0 0 40 56" xmlns="http://www.w3.org/2000/svg">' +
-    '<g transform="translate(20 28) rotate(-15)">' +
-      '<path d="M -6 0 L 6 0 L 6 22 L 0 17 L -6 22 Z" fill="'+c.fill+'" stroke="'+c.stroke+'" stroke-width="1.5"/>' +
-    '</g>' +
-    '<g transform="translate(20 28) rotate(15)">' +
-      '<path d="M -6 0 L 6 0 L 6 22 L 0 17 L -6 22 Z" fill="'+c.fill+'" stroke="'+c.stroke+'" stroke-width="1.5"/>' +
-    '</g>' +
-    '<circle cx="20" cy="20" r="17" fill="'+c.fill+'" stroke="'+c.stroke+'" stroke-width="2"/>' +
-    '<circle cx="20" cy="20" r="13" fill="none" stroke="'+c.stroke+'" stroke-width="1" opacity="0.5"/>' +
-    '<text x="20" y="26" text-anchor="middle" font-family="Poppins, sans-serif" font-size="16" font-weight="800" fill="'+c.text+'">'+rank+'</text>' +
-  '</svg>';
-}
-
-function getMatchTags(p) {
-  var tags = [];
-  var lower = p.name.toLowerCase();
-  if (lower.indexOf('grain free') >= 0 || lower.indexOf('grain-free') >= 0) tags.push('Grain Free');
-  if (p.vetNutritionist) tags.push('Vet Formulated');
-  if (p.wsava) tags.push('WSAVA');
-  if (p.score >= 80) tags.push('Top Rated');
-  if (tags.length === 0) return '';
-  return '<div style="margin-top:3px;">'+tags.map(function(t) { return '<span class="rec-match">'+t+'</span>'; }).join(' ')+'</div>';
+  document.getElementById('recResults').innerHTML =
+    '<p class="evidence-note">Recommendations are paused while the assessment method is under review. Browse or search the catalogue to find product information.</p>';
 }
 
 // === TIP OF THE DAY ===
 var tipsOfTheDay = [
-  "Look for named meat sources like 'chicken' or 'lamb' \u2014 not vague terms like 'meat meal' or 'animal by-products'.",
-  "The first ingredient on the label should be a specific, named protein source. That's the biggest clue about quality.",
-  "Rice, corn, and wheat are common fillers. They bulk out food cheaply but offer less nutritional value than meat.",
-  "Ingredient lists are ordered by weight. Whatever is listed first makes up the most of the food.",
-  "'Meat meal' isn't always bad \u2014 chicken meal can actually be more protein-dense than fresh chicken (less water).",
-  "Natural preservatives like rosemary extract or tocopherols (Vitamin E) are better than BHA, BHT, or ethoxyquin.",
-  "Avoid foods with artificial colours \u2014 your dog doesn't care what colour their food is, but some dyes can cause issues.",
-  "Look for omega-3 fatty acids from fish oil or flaxseed \u2014 great for skin, coat and joint health.",
-  "Probiotics in pet food support digestive health. Look for them in the ingredients list.",
-  "Whole grains like brown rice and oats are better than refined grains like white rice or corn gluten meal.",
-  "Never feed your dog grapes, raisins, chocolate, onions, garlic, xylitol, or macadamia nuts \u2014 all toxic to dogs!",
-  "Cats can't taste sweetness, but chocolate is still toxic to them. Keep it well out of reach.",
-  "Raw bones can be beneficial but cooked bones splinter and can cause serious injury. Never feed cooked bones.",
-  "Xylitol (found in sugar-free gum and some peanut butters) is extremely toxic to dogs. Always check labels!",
-  "Avocado contains persin which can be harmful to pets in large quantities. Skip the guac for your dog.",
-  "Macadamia nuts can cause weakness and tremors in dogs \u2014 keep them away from the nut bowl.",
-  "Raw fish can contain parasites and thiamine-destroying enzymes. Cook fish before sharing with pets.",
-  "Some dog foods imported from overseas may not meet Australian nutritional standards. Check for AAFCO or similar certification.",
-  "Mouldy or expired food can contain mycotoxins that are dangerous to pets. Always check use-by dates.",
-  "Fat trimmings and bones from human meals can cause pancreatitis. Stick to their normal diet.",
-  "Portion size matters! Overfeeding is one of the biggest contributors to pet obesity in Australia.",
-  "Feed your adult dog twice a day (morning and evening) rather than leaving food out all day.",
-  "Puppies need 3-4 small meals a day until around 6 months old, then transition to twice daily.",
-  "Fresh water should always be available. Change it daily and wash the bowl regularly.",
-  "Rotating between 2-3 different high-quality foods can prevent food sensitivities and broaden nutrition.",
-  "Transition to new foods gradually over 7-10 days to avoid digestive upset.",
-  "Treats shouldn't make up more than 10% of your dog's daily calorie intake.",
-  "Active working dogs need more calories than couch companions \u2014 adjust portions accordingly.",
-  "Elderly dogs benefit from joint-supporting ingredients like glucosamine and green-lipped mussel.",
-  "If your dog gulps food too fast, try a slow-feeder bowl to prevent bloat and aid digestion.",
-  "A shiny coat and healthy skin usually indicate good nutrition. Dull coat? Time to review the diet.",
-  "Consistent stool quality is a great indicator of how well your pet is digesting their food.",
-  "Weight fluctuations can signal diet issues. Weigh your dog monthly and adjust portions if needed.",
-  "Bad breath in dogs isn't just unpleasant \u2014 it can indicate dental disease or dietary problems.",
-  "Excessive scratching or licking may indicate a food sensitivity. Common triggers: chicken, beef, dairy.",
-  "Fresh breath often comes from a balanced diet. Dental chews help but won't fix a poor diet.",
-  "Hydration matters! Wet food can help pets who don't drink enough water on their own.",
-  "A healthy pet should have bright eyes, clean ears, a shiny coat, and good energy levels.",
-  "Regular vet check-ups catch nutrition-related issues early. Annual visits minimum!",
-  "Signs of food allergies: itchy skin, ear infections, digestive upset, excessive paw licking.",
-  "Large breed puppies need specific food formulated to support controlled growth and joint development.",
-  "Small breed dogs have faster metabolisms and often need calorie-dense foods in smaller kibble sizes.",
-  "Senior dogs (7+) benefit from easier-to-digest proteins and added joint support ingredients.",
-  "Working breeds like kelpies and border collies need higher protein and fat for sustained energy.",
-  "Indoor cats need different nutrition than outdoor cats \u2014 typically lower calories to match activity levels.",
-  "Kittens need 2-3x more protein than adult cats for growth and development.",
-  "Pregnant and nursing dogs need up to 4x their normal calorie intake for puppy development.",
-  "Brachycephalic breeds (pugs, bulldogs) benefit from specially shaped kibble they can pick up easily.",
-  "Support local! Many Australian-made pet foods use local ingredients and meet strict local standards.",
-  "Australian regulations for pet food are less strict than human food \u2014 reading labels matters even more.",
-  "Consider raw feeding? Research BARF diets carefully and consult your vet before making the switch.",
-  "Homemade pet food can work but needs careful planning to ensure complete nutrition. Consult a vet nutritionist.",
-  "Storage matters \u2014 keep kibble in an airtight container and wet food refrigerated after opening.",
-  "Buy smaller bags of kibble to ensure freshness \u2014 big bags can go stale before they're finished.",
-  "Check the 'best before' date on every bag. Freshness affects both taste and nutritional value.",
-  "If your pet suddenly stops eating their regular food, it could indicate illness \u2014 consult a vet if it continues.",
-  "Every dog is an individual. What works for one may not work for another \u2014 observe and adjust.",
-  "Expensive doesn't always mean better. Read ingredients carefully rather than relying on price tags.",
-  "Your pet's best advocate is an informed owner. Keep learning and asking questions!",
-  "Kibble stored in heat or humidity can spoil. Keep it somewhere cool, dry, and dark.",
-  "Fresh food toppers (like steamed veggies or a spoon of yogurt) can enhance a balanced kibble diet."
+  "Match the recipe and pack size after scanning. A barcode result still needs to be checked against the product in your hand.",
+  "Tap the heart on a product to find it again in Favourites during this visit.",
+  "Search by product name or brand, or use All products to browse the full catalogue.",
+  "Not verified means we still need evidence. It is not a judgement about the food.",
+  "Use Mucka Collector to photograph a missing product and its ingredient label for later review."
 ];
 
 function getTipOfDay() {
@@ -3866,7 +3357,7 @@ function renderCategoryPage() {
   container.innerHTML = pageProducts.map(function(p) {
     return '<div class="product-card" onclick="showProduct('+p.id+')">' +
       getProductImage(p, 52) +
-      '<div class="product-info"><h3>'+p.name+'</h3><p>'+p.brand+' \u00B7 '+p.type+'</p></div>' +
+      '<div class="product-info"><h3>'+escapeHtml(p.name)+'</h3><p>'+escapeHtml(p.brand)+' \u00B7 '+escapeHtml(p.type)+'</p></div>' +
       getScoreBadge(p) +
     '</div>';
   }).join('');
@@ -3916,15 +3407,15 @@ function runOverlaySearch() {
     return p.name.toLowerCase().indexOf(q) >= 0 ||
            p.brand.toLowerCase().indexOf(q) >= 0 ||
            (p.keyProtein || '').toLowerCase().indexOf(q) >= 0;
-  }).slice(0, 60);
+  }).sort(compareProductScores).slice(0, 60);
   if (matches.length === 0) {
-    resEl.innerHTML = '<div class="so-empty">No products matched "'+q+'".</div>';
+    resEl.innerHTML = '<div class="so-empty">No products matched "'+escapeHtml(q)+'".</div>';
     return;
   }
   resEl.innerHTML = matches.map(function(p) {
     return '<div class="product-card" onclick="closeSearchOverlay();showProduct('+p.id+')">' +
       getProductImage(p, 52) +
-      '<div class="product-info"><h3>'+p.name+'</h3><p>'+p.brand+' \u00B7 '+p.type+'</p></div>' +
+      '<div class="product-info"><h3>'+escapeHtml(p.name)+'</h3><p>'+escapeHtml(p.brand)+' \u00B7 '+escapeHtml(p.type)+'</p></div>' +
       getScoreBadge(p) +
     '</div>';
   }).join('');
@@ -3985,7 +3476,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 
-// ── How We Score Modal ────────────────────────────────────
+// ── About the assessment Modal ────────────────────────────────────
 function showScoringModal() {
   document.getElementById('scoringModal').classList.add('active');
   document.body.style.overflow = 'hidden';
@@ -4017,37 +3508,25 @@ try {
 </script>
 
 
-<!-- HOW WE SCORE MODAL -->
+<!-- ASSESSMENT EXPLANATION -->
 <div class="scoring-modal-overlay" id="scoringModal" onclick="closeScoringModal(event)">
-  <div class="scoring-modal">
+  <div class="scoring-modal" role="dialog" aria-modal="true" aria-labelledby="assessmentModalTitle">
     <div class="scoring-modal-handle"></div>
-    <h2>How We Score</h2>
-    <p class="modal-sub">Every product gets a score out of 100 based on two things.</p>
-
+    <h2 id="assessmentModalTitle">About the assessment</h2>
+    <p class="modal-sub">Health ratings and ranked recommendations are paused.</p>
     <div class="score-component">
-      <h3>Ingredient Quality <span>70 points</span></h3>
-      <p>We analyse every ingredient — rewarding named proteins, natural preservatives, and beneficial additions like omega oils and probiotics. We penalise vague labelling, artificial additives, and excessive cheap fillers.</p>
+      <h3>Why the change?</h3>
+      <p>Our previous scores have not been validated as measures of nutritional quality or suitability for an individual pet. We are reviewing the method before publishing new assessments.</p>
     </div>
-
     <div class="score-component">
-      <h3>Manufacturer Credibility <span>30 points</span></h3>
-      <p>The company behind the food matters. We reward brands that employ vet nutritionists, conduct feeding trials, meet WSAVA guidelines, and are transparent about their manufacturing.</p>
+      <h3>What you can use today</h3>
+      <p>Scan, search and save favourites. Catalogue details and existing ingredient notes are shown with their verification status. Check the recipe and pack size against the label.</p>
     </div>
-
     <div class="score-component">
-      <h3>Score Tiers</h3>
-      <div class="score-tier-row"><div class="tier-dot" style="background:#38a169"></div><div class="tier-label">Excellent</div><div class="tier-range">80–100</div></div>
-      <div class="score-tier-row"><div class="tier-dot" style="background:#68d391"></div><div class="tier-label">Good</div><div class="tier-range">65–79</div></div>
-      <div class="score-tier-row"><div class="tier-dot" style="background:#ecc94b"></div><div class="tier-label">Okay</div><div class="tier-range">50–64</div></div>
-      <div class="score-tier-row"><div class="tier-dot" style="background:#ed8936"></div><div class="tier-label">Concerning</div><div class="tier-range">40–49</div></div>
-      <div class="score-tier-row"><div class="tier-dot" style="background:#e53e3e"></div><div class="tier-label">Avoid</div><div class="tier-range">0–39</div></div>
+      <h3>What still needs checking</h3>
+      <p>Product identity, full ingredient labels, nutritional adequacy, life stage, feeding purpose and manufacturer evidence. Missing information stays unknown.</p>
+      <p>Treats, supplements and therapeutic diets will be considered separately. Mucka does not currently recommend which diet is suitable for your pet.</p>
     </div>
-
-    <p style="font-size:11px; color:#a0aec0; text-align:center; margin-top:12px; line-height:1.5;">
-      Mucka scores are based on veterinary nutrition science, not marketing claims or popular opinion. 
-      Scores are for guidance only and not a substitute for veterinary advice.
-    </p>
-
     <button class="modal-close-btn" onclick="closeScoringModal()">Got it</button>
   </div>
 </div>
