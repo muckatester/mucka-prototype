@@ -6128,6 +6128,58 @@
         "ingredients",
         "nutritional adequacy"
       ]
+    },
+    {
+      "appId": 83,
+      "before": {
+        "barcode": "9310022161902"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "reason": "Catalogue 3kg listing carries barcode associated by manufacturer with 15kg variant. No replacement assigned pending pack barcode verification.",
+      "sources": [
+        "https://www.pedigree.com.au/our-products/dry/pedigree-adult-dry-dog-food-real-beef-vegies"
+      ]
+    },
+    {
+      "appId": 333,
+      "before": {
+        "barcode": "9334214010939"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "reason": "Catalogue 7pk Medium Dentastix listing carries manufacturer identifier of 28pk720g variant. No replacement assigned pending pack barcode verification.",
+      "sources": [
+        "https://www.pedigree.com.au/our-products/dental-treats/pedigree-dentastix-medium-dental-daily-dog-treats"
+      ]
+    },
+    {
+      "appId": 315,
+      "before": {
+        "barcode": "9421016595792"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "reason": "The manufacturer explicitly assigns this barcode to the 1kg cat Mackerel & Lamb variant; this catalogue listing is 400g. Conflicting code removed, with no replacement assigned pending pack barcode verification.",
+      "sources": [
+        "https://ziwipets.com/products/air-dried-mackerel-and-lamb-cat-food",
+        "https://ziwipets.com/products/air-dried-mackerel-and-lamb-cat-food.js"
+      ]
     }
   ],
   "collectorBarcodeRemovals": [
@@ -6175,6 +6227,21 @@
       "barcode": "9310022062308",
       "appId": 735,
       "reason": "Australian distributor and retailer records identify this barcode as My Dog Gourmet Beef 100g. It must not identify Naturally Crafted Beef Capsicum & Green Beans."
+    },
+    {
+      "barcode": "9310022161902",
+      "appId": 83,
+      "reason": "Catalogue 3kg listing carries barcode associated by manufacturer with 15kg variant. No replacement assigned pending pack barcode verification."
+    },
+    {
+      "barcode": "9334214010939",
+      "appId": 333,
+      "reason": "Catalogue 7pk Medium Dentastix listing carries manufacturer identifier of 28pk720g variant. No replacement assigned pending pack barcode verification."
+    },
+    {
+      "barcode": "9421016595792",
+      "appId": 315,
+      "reason": "The manufacturer explicitly assigns this barcode to the 1kg cat Mackerel & Lamb variant; this catalogue listing is 400g. Conflicting code removed, with no replacement assigned pending pack barcode verification."
     }
   ]
 }

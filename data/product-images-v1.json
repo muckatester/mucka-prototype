@@ -26,6 +26,116 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 45,
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Air-Dried Beef",
+        "petType": "dog",
+        "foodType": "air-dried",
+        "type": "Air-Dried · 454g",
+        "barcode": "9421016593187"
+      },
+      "localPath": "assets/product-images/batch25-45-ziwi.png",
+      "sourcePage": "https://ziwipets.com/products/air-dried-beef-dog-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0670/4041/1951/files/ZIWI-Peak-Originals-DogBeef454g-LeftAngle.png?v=1717479904",
+      "sourceKind": "manufacturer",
+      "shownPack": "454g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer product variant explicitly links this image to the required size; visible brand, recipe, species, air-dried form and net weight match. Photo matching scope excludes catalogue barcode where conflicting or absent.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "cf585c1fb94558acc958a391f632cf51fe128a88d01d042eab810ae344cf6c04",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 46,
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Air-Dried Chicken",
+        "petType": "dog",
+        "foodType": "air-dried",
+        "type": "Air-Dried · 454g",
+        "barcode": "9421016596811"
+      },
+      "localPath": "assets/product-images/batch25-46-ziwi.png",
+      "sourcePage": "https://ziwipets.com/products/air-dried-chicken-dog-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0670/4041/1951/files/ZIWI-Peak-Originals-DogChicken454g-LeftAngle.png?v=1717480337",
+      "sourceKind": "manufacturer",
+      "shownPack": "454g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer product variant explicitly links this image to the required size; visible brand, recipe, species, air-dried form and net weight match. Photo matching scope excludes catalogue barcode where conflicting or absent.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "7f5fac000fc256fa20de553e2e0c1950e9db249986187742975718a7b26b9a9a",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 47,
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Air-Dried Lamb",
+        "petType": "dog",
+        "foodType": "air-dried",
+        "type": "Air-Dried · 454g",
+        "barcode": "9421016593965"
+      },
+      "localPath": "assets/product-images/batch25-47-ziwi.png",
+      "sourcePage": "https://ziwipets.com/products/air-dried-lamb-recipe-for-dogs",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0670/4041/1951/files/ZIWI-Peak-Originals-DogLamb454g-LeftAngle.png?v=1717480630",
+      "sourceKind": "manufacturer",
+      "shownPack": "454g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer product variant explicitly links this image to the required size; visible brand, recipe, species, air-dried form and net weight match. Photo matching scope excludes catalogue barcode where conflicting or absent.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "cdf2c2f847c298ac95d062fa101775c54870f5e9b80639aa881136341950d4eb",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 48,
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Air-Dried Venison",
+        "petType": "dog",
+        "foodType": "air-dried",
+        "type": "Air-Dried · 454g",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch25-48-ziwi.png",
+      "sourcePage": "https://ziwipets.com/products/air-dried-venison-recipe-for-dogs",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0670/4041/1951/files/ZIWI-Peak-Originals-DogVenison454g-LeftAngle.png?v=1717481609",
+      "sourceKind": "manufacturer",
+      "shownPack": "454g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer product variant explicitly links this image to the required size; visible brand, recipe, species, air-dried form and net weight match. Photo matching scope excludes catalogue barcode where conflicting or absent.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "3956efcfbbfc76ed1d49e10328c45f76c7074544e2dc355a70dce3ad53e423f0",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 49,
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Air-Dried Mackerel & Lamb",
+        "petType": "dog",
+        "foodType": "air-dried",
+        "type": "Air-Dried · 454g",
+        "barcode": "9421016596416"
+      },
+      "localPath": "assets/product-images/batch25-49-ziwi.png",
+      "sourcePage": "https://ziwipets.com/products/mackerel-lamb-for-dogs",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0670/4041/1951/files/ZIWI-Peak-Originals-DogMackeral_Lamb454g-LeftAngle.png?v=1717480987",
+      "sourceKind": "manufacturer",
+      "shownPack": "454g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer product variant explicitly links this image to the required size; visible brand, recipe, species, air-dried form and net weight match. Photo matching scope excludes catalogue barcode where conflicting or absent.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "a556872f10e1aaa5e302cfe7ce91c0edf1c70be5c822a52569b2c4720c9a1f03",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 55,
       "identity": {
         "brand": "Taste of the Wild",
@@ -46,6 +156,72 @@
       "checkedDate": "2026-09-14",
       "sha256": "becd90945ef9dd45f0a208dd04c97bfc8bef5587ae895f7fc50c51fadc2a62af",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 83,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Adult Beef & Vegetables",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch25-83-pedigree.png",
+      "sourcePage": "https://www.pedigree.com.au/our-products/dry/pedigree-adult-dry-dog-food-real-beef-vegies",
+      "imageUrl": "https://www.pedigree.com.au/sites/g/files/fnmzdf8421/files/2026-02/9310022160905_1_PEDIGREE_Adult_Dry_Dog_Food_with_Real_Beef___Vegies_3kg%20%281%29.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "3kg bag",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer exact variant page and directly inspected image agree with catalogue brand, species, product form and pack configuration. Printed barcode remains unverified. Existing catalogue barcode conflicts with manufacturer 15kg variant; bind only after barcode removal proposal is applied.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "3eca9249cfd4061803e306341c77dcf1ab7ebb3c964f649618fc46c30c1eb1f6",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 85,
+      "identity": {
+        "brand": "Supercoat",
+        "name": "Puppy Chicken",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9310022020506"
+      },
+      "localPath": "assets/product-images/batch25-85-supercoat.jpg",
+      "sourcePage": "https://www.woolworths.com.au/shop/productdetails/516917/supercoat-puppy-chicken-dry-dog-food-chicken",
+      "imageUrl": "https://assets.woolworths.com.au/images/1005/516917.jpg?h=600&impolicy=wowsmkqiema&w=600",
+      "sourceKind": "retailer",
+      "shownPack": "3kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Retailer page and original downloaded pack image agree with named recipe, dog dry form and exact stated pack size. Older packaging; barcode not visually verified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "968e72eb9000c49cd28547e25c70a4862eba87bc805dff94d20a7509c7175286",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 88,
+      "identity": {
+        "brand": "Supercoat",
+        "name": "Adult Beef",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 7.5kg",
+        "barcode": "9300605147454"
+      },
+      "localPath": "assets/product-images/batch25-88-supercoat.jpg",
+      "sourcePage": "https://www.woolworths.com.au/Shop/ProductDetails/516945/supercoat-adult-dog-food-beef",
+      "imageUrl": "https://assets.woolworths.com.au/images/1005/516945.jpg?h=600&impolicy=wowsmkqiema&w=600",
+      "sourceKind": "retailer",
+      "shownPack": "7.5kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Retailer page and original downloaded pack image agree with named recipe, dog dry form and exact stated pack size. Older packaging; barcode not visually verified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "6409ce7736eea6a55bd222cfb815c5e697312003d5528372d7c7b83be4a0d796",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 101,
@@ -90,6 +266,28 @@
       "checkedDate": "2026-09-14",
       "sha256": "57c32746f8b50dbde14272ede5bbf039f7c11be78ff327fb14aa44be0c6a0ffc",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 143,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Homestyle Chicken Rice & Veg",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 700g can",
+        "barcode": "9310022034305"
+      },
+      "localPath": "assets/product-images/batch25-143-pedigree.jpg",
+      "sourcePage": "https://www.woolworths.com.au/shop/productdetails/27671/pedigree-homestyle-with-chicken-rice-veggies-wet-dog-food-can",
+      "imageUrl": "https://assets.woolworths.com.au/images/1005/27671.jpg?h=600&impolicy=wowsmkqiema&w=600",
+      "sourceKind": "retailer",
+      "shownPack": "700g single can",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Woolworths exact 700g listing and directly inspected front image agree on Pedigree Adult Chicken, Rice & Vegies Homestyle single can. Manufacturer page independently corroborates recipe, wet dog form, and 700g variant; current manufacturer hero is a rear can view, so retailer front photo is used.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "d397a2cc590ffae88cfc162ec4f4259a06b32923cdf44c89fe729ced60f53803",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 148,
@@ -376,6 +574,28 @@
       "checkedDate": "2026-09-14",
       "sha256": "779293d1a7111e741fc20edf01687c6a6ccd1df6f37cbfa2278a527335960e58",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 187,
+      "identity": {
+        "brand": "Supercoat",
+        "name": "Adult Chicken Dry",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9300605147461"
+      },
+      "localPath": "assets/product-images/batch25-187-supercoat.jpg",
+      "sourcePage": "https://www.woolworths.com.au/shop/productdetails/516927/supercoat-adult-chicken-dry-dog-food-chicken",
+      "imageUrl": "https://assets.woolworths.com.au/images/1005/516927.jpg?h=600&impolicy=wowsmkqiema&w=600",
+      "sourceKind": "retailer",
+      "shownPack": "3kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Followed observed retailer image link, downloaded original and visually inspected. Supercoat Adult with Real Chicken dry dog bag clearly says3kg; exact named recipe/species/form/pack match. Older packaging; barcode not visually verified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "4c046b09f34e82c5819f302a60f33464ca7a51ad6a1f73fd3ca9c0e5199cf42a",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 200,
@@ -686,6 +906,94 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 311,
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Air-Dried Beef Cat",
+        "petType": "cat",
+        "foodType": "air-dried",
+        "type": "Air-Dried · 400g",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch25-311-ziwi.png",
+      "sourcePage": "https://ziwipets.com/products/air-dried-beef-recipe-for-cats",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0670/4041/1951/products/ZIWI-Peak-Originals-Air-Dried_Beef_Cat_Left-Angle_400g_1600x2223px.png?v=1675751886",
+      "sourceKind": "manufacturer",
+      "shownPack": "400g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer product variant explicitly links this image to the required size; visible brand, recipe, species, air-dried form and net weight match. Photo matching scope excludes catalogue barcode where conflicting or absent.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "b3496c2392989a0092fab9b39e6502d73057c096dc550eef15fd5bf0e00f9ebd",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 313,
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Air-Dried Venison Cat",
+        "petType": "cat",
+        "foodType": "air-dried",
+        "type": "Air-Dried · 400g",
+        "barcode": "1014171872761"
+      },
+      "localPath": "assets/product-images/batch25-313-ziwi.png",
+      "sourcePage": "https://ziwipets.com/products/air-dried-venison-recipe-for-cats",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0670/4041/1951/products/ZIWI-Peak-Originals-Air-Dried_Venison_Cat_Left-Angle_400g_1600x2223px.png?v=1675228678",
+      "sourceKind": "manufacturer",
+      "shownPack": "400g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer product variant explicitly links this image to the required size; visible brand, recipe, species, air-dried form and net weight match. Photo matching scope excludes catalogue barcode where conflicting or absent.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "1a45c83f5b4f66e8a082cfd801af97f0a2477da6643443ff52e63898f80c175e",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 314,
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Air-Dried Lamb Cat",
+        "petType": "cat",
+        "foodType": "air-dried",
+        "type": "Air-Dried · 400g",
+        "barcode": "9421016595761"
+      },
+      "localPath": "assets/product-images/batch25-314-ziwi.png",
+      "sourcePage": "https://ziwipets.com/products/air-dried-lamb-recipe-for-cats",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0670/4041/1951/products/ZIWI-Peak-Originals-Air-Dried_Lamb_Cat_Left-Angle_400g_1600x2223px.png?v=1675751975",
+      "sourceKind": "manufacturer",
+      "shownPack": "400g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer product variant explicitly links this image to the required size; visible brand, recipe, species, air-dried form and net weight match. Photo matching scope excludes catalogue barcode where conflicting or absent.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "0be7ad83fbdef38b382f2c5c7ff005b1f646140315c3e7aa505ad268fd86586b",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 315,
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Air-Dried Mackerel & Lamb Cat",
+        "petType": "cat",
+        "foodType": "air-dried",
+        "type": "Air-Dried · 400g",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch25-315-ziwi.png",
+      "sourcePage": "https://ziwipets.com/products/air-dried-mackerel-and-lamb-cat-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0670/4041/1951/products/ZIWI-Peak-Originals-Air-Dried_Mackerel-Lamb_Cat_Left-Angle_400g_1600x2223px.png?v=1675751999",
+      "sourceKind": "manufacturer",
+      "shownPack": "400g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer product variant explicitly links this image to the required size; visible brand, recipe, species, air-dried form and net weight match. Photo matching scope excludes catalogue barcode where conflicting or absent.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "1699f9e077835baad9d729b529e703bdf52501c87e5d802ff213f0847d6a3bc5",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 325,
       "identity": {
         "brand": "Savourlife",
@@ -728,6 +1036,72 @@
       "checkedDate": "2026-09-14",
       "sha256": "d7cadd5f344c2c9308c8f649a2fad8743bef51d3cb4b3263b18e26dc0edf738c",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 332,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Dentastix Small Dog",
+        "petType": "dog",
+        "foodType": "treat (dental)",
+        "type": "Treat (Dental) · 7pk",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch25-332-pedigree.png",
+      "sourcePage": "https://www.pedigree.com.au/our-products/dental-treats/pedigree-dentastix-small-dental-daily-dog-treats",
+      "imageUrl": "https://www.pedigree.com.au/sites/g/files/fnmzdf8421/files/2025-10/MARSP_5010394984577-1%20%281%29.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "7 sticks, Small dogs 5–10kg (110g from manufacturer page)",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer exact variant page and directly inspected image agree with catalogue brand, species, product form and pack configuration. Printed barcode remains unverified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "bd278cbe071715a9be77a9c75a3c955e9493ed5ed780199a99a28d3f28bcb9ae",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 333,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Dentastix Medium Dog",
+        "petType": "dog",
+        "foodType": "treat (dental)",
+        "type": "Treat (Dental) · 7pk",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch25-333-pedigree.png",
+      "sourcePage": "https://www.pedigree.com.au/our-products/dental-treats/pedigree-dentastix-medium-dental-daily-dog-treats",
+      "imageUrl": "https://www.pedigree.com.au/sites/g/files/fnmzdf8421/files/2025-10/MARSP_5010394984584-1%20%281%29.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "7 sticks, Medium dogs 10-25kg (180g from manufacturer page)",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Official 7 Sticks 180g variant page and directly inspected photo agree on Medium Dentastix 7pk. Existing catalogue barcode belongs to 28pk 720g variant; bind only after documented barcode removal. Printed 7pk barcode unverified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "6444e465df8243f2f4440b23b41dccabbea75a26fce42eb879dddd2d5809b8bf",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 334,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Dentastix Large Dog",
+        "petType": "dog",
+        "foodType": "treat (dental)",
+        "type": "Treat (Dental) · 7pk",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch25-334-pedigree.png",
+      "sourcePage": "https://www.pedigree.com.au/our-products/dental-treats/pedigree-dentastix-daily-oral-care-large-dog-treat-triple-action-dental-chew",
+      "imageUrl": "https://www.pedigree.com.au/sites/g/files/fnmzdf8421/files/2025-10/MARSP_5998749109113-4_0.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "7 sticks, Large/Giant dogs 25kg+ (270g from manufacturer page)",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer exact variant page and directly inspected image agree with catalogue brand, species, product form and pack configuration. Printed barcode remains unverified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "eac26e26d96f9496973c2306dec199dee9a86fd13d6469e5d05e1bd0f0c4a5da",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 344,
@@ -1192,6 +1566,50 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 764,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Adult Beef Pasta & Vegies Homestyle",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 700g",
+        "barcode": "9310022034404"
+      },
+      "localPath": "assets/product-images/batch25-764-pedigree.png",
+      "sourcePage": "https://www.pedigree.com.au/our-products/wet/pedigree-adult-wet-dog-food-beef-pasta-vegies-homestyle",
+      "imageUrl": "https://www.pedigree.com.au/sites/g/files/fnmzdf8421/files/2026-02/9310022034404_2_PEDIGREE_Adult_Wet_Dog_Food_with_Beef__Pasta_Vegies_Homestyle_700g_Can%20%281%29.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "700g single can",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Official Australian manufacturer page and directly inspected photo agree on Pedigree dog food, stated recipe/life stage, wet form, and one 700g can. Manufacturer asset identifier contains catalogue barcode; printed digits are not verified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "65b41a226f0ab24a4dc5cf4b9d0e28b143537a1120f778d5dfd0a2dd7b9a4f67",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 768,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Puppy Minced Chicken & Rice",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 700g",
+        "barcode": "9310022037207"
+      },
+      "localPath": "assets/product-images/batch25-768-pedigree.png",
+      "sourcePage": "https://www.pedigree.com.au/our-products/wet/pedigree-core-puppy-mince-chicken-rice",
+      "imageUrl": "https://www.pedigree.com.au/sites/g/files/fnmzdf8421/files/2026-02/9310022037207_1_PEDIGREE_Puppy_Wet_Dog_Food_with_Chicken___Rice_Mince_700g_Can%20%281%29.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "700g single can",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Official Australian manufacturer page and directly inspected photo agree on Pedigree dog food, stated recipe/life stage, wet form, and one 700g can. Manufacturer asset identifier contains catalogue barcode; printed digits are not verified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "75ddedc059605eb7393f6bdb8fcb3d4d254ff4efe97ed7bedee9a0ed8b15ef0b",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 874,
       "identity": {
         "brand": "Royal Canin Veterinary",
@@ -1322,6 +1740,28 @@
       "checkedDate": "2026-09-14",
       "sha256": "d340a71e1d44484fed6cf36a5eb789b6ab7ba0efff910046dc55707d440c0073",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 975,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Adult with Beef Veggie & Gravy 700g Tin",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 700g can",
+        "barcode": "9310022018206"
+      },
+      "localPath": "assets/product-images/batch25-975-pedigree.png",
+      "sourcePage": "https://www.pedigree.com.au/our-products/wet/pedigree-adult-wet-dog-food-beef-vegies-gravy-casserole",
+      "imageUrl": "https://www.pedigree.com.au/sites/g/files/fnmzdf8421/files/2026-02/9310022018206_1_PEDIGREE_Adult_Wet_Dog_Food_with_Beef__Vegies___Gravy_Casserole_700g_Can%20%281%29.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "700g single can",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Official Australian manufacturer page and directly inspected photo agree on Pedigree dog food, stated recipe/life stage, wet form, and one 700g can. Manufacturer asset identifier contains catalogue barcode; printed digits are not verified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "835a610701783beacd65738c309e836f12cbd39ab9f593ec51b53e95b230ad23",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 991,
