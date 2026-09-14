@@ -56,6 +56,7 @@ body { font-family: 'Poppins', sans-serif; background: #f0f4f8; color: #2d3748; 
 .score-good { background: #68D391; }
 .score-poor { background: #ed8936; }
 .score-bad { background: #e53e3e; }
+.score-badge.score-unscored { background: #edf2f7; color: #4a5568; border-radius: 8px; width: 72px; height: auto; min-height: 40px; padding: 6px; font-size: 11px; text-align: center; line-height: 1.3; }
 
 .back-btn { background: none; border: none; font-size: 24px; cursor: pointer; padding: 12px; color: white; flex-shrink: 0; }
 .detail-header { display: flex; align-items: flex-start; gap: 8px; }
@@ -271,6 +272,9 @@ body { font-family: 'Poppins', sans-serif; background: #f0f4f8; color: #2d3748; 
 .category-card .cat-icon { font-size: 32px; line-height: 1; margin-bottom: 8px; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; }
 .category-card .cat-name { font-size: 14px; font-weight: 700; color: #2d3748; margin-bottom: 2px; }
 .category-card .cat-count { font-size: 11px; font-weight: 600; color: #718096; }
+.category-card.category-all { grid-column: 1 / -1; flex-direction: row; gap: 12px; text-align: left; border-color: #202C94; padding: 14px 16px; }
+.category-all .cat-icon { width: 36px; height: 36px; margin-bottom: 0; flex-shrink: 0; color: #202C94; }
+.category-all .cat-count { margin-left: auto; white-space: nowrap; }
 
 .tip-of-day-card {
   background: linear-gradient(135deg, #f0f4ff 0%, #fff7ed 100%);
@@ -624,7 +628,7 @@ body::before {
 
 
 
-  <div class="home-footer-stat" id="homeFooterStat">1166+ products &middot; Made in Australia 🇦🇺</div>
+  <div class="home-footer-stat" id="homeFooterStat">Products &middot; Made in Australia 🇦🇺</div>
 </div>
 
 <!-- CATEGORY BROWSE SCREEN -->
@@ -642,7 +646,7 @@ body::before {
 <div class="search-overlay" id="searchOverlay">
   <div class="search-overlay-header">
     <button class="so-close" onclick="closeSearchOverlay()" aria-label="Close">&times;</button>
-    <input type="text" class="so-input" id="soInput" placeholder="Search 1166 products..." oninput="onOverlaySearchChange()">
+    <input type="text" class="so-input" id="soInput" placeholder="Search products..." oninput="onOverlaySearchChange()">
   </div>
   <div class="so-results" id="soResults">
     <div class="so-empty">Start typing to search products by name, brand, or protein.</div>
@@ -653,7 +657,7 @@ body::before {
 <div class="screen" id="screen-home-legacy" style="display:none;">
   <div class="search-box">
     <span class="search-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
-    <input type="text" placeholder="Search 1166 products..." id="searchInput" oninput="onSearchChange()">
+    <input type="text" placeholder="Search products..." id="searchInput" oninput="onSearchChange()">
   </div>
 
   <div class="filter-bar" id="filterBar">
@@ -681,11 +685,12 @@ body::before {
         <circle id="scoreArc" cx="70" cy="70" r="58" stroke="#38a169" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="0 364.4"/>
       </svg>
       <div class="score-value" id="scoreValue">0</div>
-      <div class="score-label">out of 100</div>
+      <div class="score-label" id="scoreScaleLabel">out of 100</div>
     </div>
   </div>
 
   <div class="score-tier-external" id="scoreTier"></div>
+  <p id="scoreReviewNotice" style="display:none;text-align:center;color:#4a5568;font-size:13px;margin:0 16px 16px;">We still need to check this product's ingredients and scoring information.</p>
 
   <div class="sub-score-bars" id="subScoreBars">
     <div class="sub-score-bar">
@@ -1527,7 +1532,7 @@ const products = [
 {id:485,barcode:"7613035379831",name:"Daily Oral Care Small/Medium Breed",brand:"DentaLife",score:50,credScore:20,imgBg:"#cccccc",imgText:"DENTALIFE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:486,barcode:"9334214018409",name:"Classic Collection Beef & Liver in Gravy",brand:"Dine",score:50,credScore:20,imgBg:"#cccccc",imgText:"DINE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:487,barcode:"9334214059037",name:"Classic Collection Chicken Slices in Jelly",brand:"Dine",score:50,credScore:20,imgBg:"#cccccc",imgText:"DINE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
-{id:488,barcode:"9334214018362",name:"Kitten Chicken",brand:"Purina Pro Plan",score:50,credScore:20,imgBg:"#cccccc",imgText:"DINE",imgAccent:"#999999",type:"dry",petType:"cat",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
+{id:488,name:"Kitten Chicken",brand:"Purina Pro Plan",score:50,credScore:20,imgBg:"#cccccc",imgText:"PURINA PRO",imgAccent:"#999999",type:"dry",petType:"cat",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[],needsReview:true,identityNotice:"Product details are being checked after a barcode mismatch."},
 {id:489,barcode:"4008429037986",name:"Cat Treats with Delicious Cheese",brand:"Dreamies",score:50,credScore:20,imgBg:"#cccccc",imgText:"DREAMIES",imgAccent:"#999999",type:"treat",petType:"cat",foodType:"treat",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:490,barcode:"4008429037979",name:"Cat Treats with Heavenly Tuna",brand:"Dreamies",score:50,credScore:20,imgBg:"#cccccc",imgText:"DREAMIES",imgAccent:"#999999",type:"treat",petType:"cat",foodType:"treat",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:491,barcode:"4008429037962",name:"Cat Treats with Scrumptious Salmon",brand:"Dreamies",score:50,credScore:20,imgBg:"#cccccc",imgText:"DREAMIES",imgAccent:"#999999",type:"treat",petType:"cat",foodType:"treat",keyProtein:"Salmon",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
@@ -1608,7 +1613,7 @@ const products = [
 {id:571,barcode:"0052742047393",name:"z/d Skin/Food Sensitivities",brand:"Hill's Prescription Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S PRE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:573,name:"Adult 7+ Youthful Vitality Chicken & Rice",brand:"Hill's Science Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S SCI",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:574,barcode:"9356335003904",name:"Adult Advanced Fitness Lamb Meal & Brown Rice",brand:"Hill's Science Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S SCI",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Lamb",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
-{id:575,name:"Adult Beef & Vegetable Stew",brand:"Hill's Science Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S SCI",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
+{id:575,name:"Adult Beef & Vegetable Stew",brand:"Hill's Science Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S SCI",imgAccent:"#999999",type:"Wet",petType:"dog",foodType:"wet",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:579,name:"Adult Healthy Mobility Chicken Meal, Brown Rice & Barley",brand:"Hill's Science Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S SCI",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:580,barcode:"0052742024516",name:"Adult Indoor",brand:"Hill's Science Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S SCI",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:583,name:"Adult Perfect Weight Chicken",brand:"Hill's Science Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S SCI",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
@@ -1737,7 +1742,7 @@ const products = [
 {id:722,name:"Dingo Bones Dental Chew",brand:"Lyka",score:50,credScore:20,imgBg:"#cccccc",imgText:"LYKA",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:724,name:"Puppy Fresh Bowl",brand:"Lyka",score:50,credScore:20,imgBg:"#cccccc",imgText:"LYKA",imgAccent:"#999999",type:"fresh",petType:"dog",foodType:"fresh",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:725,name:"Roo Bites Training Treats",brand:"Lyka",score:50,credScore:20,imgBg:"#cccccc",imgText:"LYKA",imgAccent:"#999999",type:"treat",petType:"dog",foodType:"treat",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
-{id:727,barcode:"9310022067006",name:"Classic Loaf Beef & Veal",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
+{id:727,barcode:"9310022067006",name:"Classic Loaf Beef & Veal",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"Wet · 400g",petType:"dog",foodType:"wet",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:728,barcode:"9334214054964",name:"Classic Loaf Gourmet Beef",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:729,barcode:"9334214035789",name:"Fillets in Gravy Beef",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:730,barcode:"9334214035864",name:"Fillets in Gravy Chicken",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
@@ -1770,11 +1775,11 @@ const products = [
 {id:761,name:"Mature Salmon in Jelly Pouch",brand:"Optimum",score:50,credScore:20,imgBg:"#cccccc",imgText:"OPTIMUM",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Salmon",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:762,barcode:"0064992284183",name:"Fit & Trim",brand:"Orijen",score:50,credScore:20,imgBg:"#cccccc",imgText:"ORIJEN",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:763,name:"Puppy Large Breed",brand:"Orijen",score:50,credScore:20,imgBg:"#cccccc",imgText:"ORIJEN",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
-{id:764,barcode:"9310022034404",name:"Adult Beef Pasta & Vegies Homestyle",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
+{id:764,barcode:"9310022034404",name:"Adult Beef Pasta & Vegies Homestyle",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"Wet · 700g",petType:"dog",foodType:"wet",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:765,barcode:"9310022018305",name:"Adult Lamb & Gravy Casserole",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Lamb",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:766,barcode:"122914000152",name:"Dentastix Chewy Chunx Small/Medium Dog",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:767,barcode:"9334214022871",name:"Dentastix Daily Oral Care Small",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
-{id:768,barcode:"9310022037207",name:"Puppy Minced Chicken & Rice",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
+{id:768,barcode:"9310022037207",name:"Puppy Minced Chicken & Rice",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"Wet · 700g",petType:"dog",foodType:"wet",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:769,name:"Ranchos Beef",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:770,barcode:"4008429105173",name:"Ranchos Chicken",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:975,barcode:"9310022018206",name:"Adult with Beef Veggie & Gravy 700g Tin",brand:"Pedigree",score:94,credScore:27,imgBg:"#f5a623",imgText:"PEDIGREE",imgAccent:"#8b0000",type:"Wet · 700g can",petType:"dog",foodType:"wet",keyProtein:"Beef",vetNutritionist:true,feedingTrials:true,wsava:true,recalls:"2006: Royal Canin excess vitamin D; 2007: Melamine contamination; 2018: Advance ",ingredients:[{"name": "Beef", "rating": "good", "desc": "Named meat source \u2014 exactly what you want to see first"}, {"name": "Vegetables", "rating": "good", "desc": "Added vegetables for vitamins and fibre"}, {"name": "Water", "rating": "ok", "desc": "Normal for wet food \u2014 provides hydration"}, {"name": "Gravy", "rating": "ok", "desc": "Adds palatability and moisture"}, {"name": "Fish Oil", "rating": "good", "desc": "Excellent source of omega-3 for coat and joints"}, {"name": "Dried Beet Pulp", "rating": "good", "desc": "Excellent fibre source for healthy digestion"}]},
@@ -1952,7 +1957,7 @@ const products = [
 {id:957,barcode:"815436013056",name:"Toothbrush Large",brand:"Whimzees",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHIMZEES",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:958,barcode:"815436013087",name:"Toothbrush Medium",brand:"Whimzees",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHIMZEES",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:959,barcode:"815436013094",name:"Toothbrush Small",brand:"Whimzees",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHIMZEES",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
-{id:960,barcode:"9310022360800",name:"Adult Beef Mince Can",brand:"Whiskas",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHISKAS",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
+{id:960,barcode:"9310022360800",name:"Adult Beef Mince Can",brand:"Whiskas",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHISKAS",imgAccent:"#999999",type:"Wet · 400g",petType:"cat",foodType:"wet",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:961,barcode:"9334214054827",name:"Adult Chicken & Rabbit Flavours",brand:"Whiskas",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHISKAS",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:962,name:"Adult Chicken Favourites in Gravy",brand:"Whiskas",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHISKAS",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:963,barcode:"9310022392603",name:"Adult Chicken Loaf Can",brand:"Whiskas",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHISKAS",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
@@ -2329,7 +2334,6 @@ var BARCODE_MAP = {
   '7613035379831': 485,
   '9334214018409': 486,
   '9334214059037': 487,
-  '9334214018362': 488,
   '4008429037986': 489,
   '4008429037979': 490,
   '4008429037962': 491,
@@ -2796,6 +2800,13 @@ function getRecallSeverity(recallText) {
 // --- The main score calculator ---
 // Takes a product's raw data and calculates a fair score.
 function recalculateScore(product) {
+  // Catalogue placeholders are missing data, not a nutritional rating.
+  if (!hasScoreData(product) || !Number.isFinite(product.credScore)) {
+    product.score = null;
+    product._ingredientScore = null;
+    product._credScore = null;
+    return;
+  }
   // Step 1: Work out the original ingredient score
   // Original system: total = ingredients (out of 70) + credibility (out of 30)
   var originalIngredient = product.score - product.credScore;
@@ -2857,6 +2868,9 @@ products.forEach(function(p) {
 var favourites = [];
 var scannedCount = 0;
 var currentProduct = null;
+var scoreCountTimer = null;
+var scoreArcTimer = null;
+var scoreBarsTimer = null;
 var currentPage = 1;
 var perPage = 20;
 var currentFilter = 'all';
@@ -2868,6 +2882,24 @@ var searchDebounceTimer = null;
 // 60-79:  GOOD      - Blue   #3182ce - Decent, but could be better
 // 35-59:  POOR      - Orange #ed8936
 // 0-34:   BAD       - Red    #e53e3e
+
+// Existing ingredient entries do not imply independent veterinary validation.
+function hasScoreData(product) {
+  return !!product && product.needsReview !== true &&
+    Array.isArray(product.ingredients) && product.ingredients.length > 0 &&
+    Number.isFinite(product.score);
+}
+
+function getScoreBadge(product) {
+  if (!hasScoreData(product)) return '<div class="score-badge score-unscored">Not scored</div>';
+  return '<div class="score-badge '+getScoreClass(product.score)+'" style="width:40px;height:40px;font-size:14px;">'+product.score+'</div>';
+}
+
+function compareProductScores(a, b) {
+  var aScored = hasScoreData(a), bScored = hasScoreData(b);
+  if (aScored !== bScored) return aScored ? -1 : 1;
+  return aScored ? b.score - a.score : 0;
+}
 
 function getScoreClass(score) {
   if (score >= 80) return 'score-excellent';
@@ -2979,7 +3011,7 @@ function adjustColor(hex, amount) {
 function applyFilters() {
   var q = document.getElementById('searchInput').value.toLowerCase().trim();
   filteredProducts = products.filter(function(p) {
-    if (q && !(p.name.toLowerCase().indexOf(q) >= 0 || p.brand.toLowerCase().indexOf(q) >= 0 || p.keyProtein.toLowerCase().indexOf(q) >= 0)) return false;
+    if (q && !(p.name.toLowerCase().indexOf(q) >= 0 || p.brand.toLowerCase().indexOf(q) >= 0 || (p.keyProtein || '').toLowerCase().indexOf(q) >= 0)) return false;
     if (currentFilter === 'all') return true;
     if (currentFilter === 'dog') return p.petType === 'dog';
     if (currentFilter === 'cat') return p.petType === 'cat';
@@ -2987,7 +3019,7 @@ function applyFilters() {
     if (currentFilter === 'wet') return p.foodType === 'wet' || p.foodType === 'canned';
     if (currentFilter === 'raw') return p.foodType === 'raw';
     if (currentFilter === 'treat') return p.foodType === 'treat' || p.foodType === 'treats' || p.foodType === 'topper' || p.foodType === 'toppers';
-    if (currentFilter === 'top') return p.score >= 80;
+    if (currentFilter === 'top') return hasScoreData(p) && p.score >= 80;
     return true;
   });
   currentPage = 1;
@@ -3020,7 +3052,7 @@ function renderPage() {
     return '<div class="product-card" onclick="showProduct('+p.id+')">' +
       getProductImage(p, 52) +
       '<div class="product-info"><h3>'+p.name+'</h3><p>'+p.brand+' \u00B7 '+p.type+'</p></div>' +
-      '<div class="score-badge '+getScoreClass(p.score)+'" style="width:40px;height:40px;font-size:14px;">'+p.score+'</div></div>';
+      getScoreBadge(p) + '</div>';
   }).join('');
 
   var pagDiv = document.getElementById('pagination');
@@ -3060,23 +3092,32 @@ function showProduct(id) {
   }
 
   var score = currentProduct.score;
-  var colour = getScoreColour(score);
+  var scored = hasScoreData(currentProduct);
+  var colour = scored ? getScoreColour(score) : '#718096';
+  clearInterval(scoreCountTimer);
+  clearTimeout(scoreArcTimer);
+  clearTimeout(scoreBarsTimer);
+  document.getElementById('scoreScaleLabel').style.display = scored ? '' : 'none';
+  document.getElementById('scoreReviewNotice').style.display = scored ? 'none' : 'block';
+  document.getElementById('scoreReviewNotice').textContent = currentProduct.identityNotice || "We still need to check this product's ingredients and scoring information.";
+  document.getElementById('subScoreBars').style.display = scored ? '' : 'none';
   var arc = document.getElementById('scoreArc');
   var circumference = 2 * Math.PI * 58;
   arc.style.stroke = colour;
   arc.style.transition = 'stroke-dasharray 1s ease';
   arc.style.strokeDasharray = '0 ' + circumference;
 
-  setTimeout(function() {
+  if (scored) scoreArcTimer = setTimeout(function() {
     arc.style.strokeDasharray = ((score / 100) * circumference) + ' ' + circumference;
   }, 100);
 
   var scoreVal = document.getElementById('scoreValue');
   scoreVal.style.color = colour;
+  scoreVal.textContent = scored ? '0' : '\u2014';
   var count = 0;
-  var interval = setInterval(function() {
+  if (scored) scoreCountTimer = setInterval(function() {
     count += 2;
-    if (count > score) { count = score; clearInterval(interval); }
+    if (count >= score) { count = score; clearInterval(scoreCountTimer); }
     scoreVal.textContent = count;
   }, 20);
 
@@ -3090,12 +3131,13 @@ function showProduct(id) {
   else if (score >= 30) { tierLabel = 'Below Average'; tierColour = '#ed8936'; }
   else { tierLabel = 'Poor'; tierColour = '#e53e3e'; }
   var scoreTierEl = document.getElementById('scoreTier');
-  scoreTierEl.textContent = tierLabel;
+  scoreTierEl.textContent = scored ? tierLabel : 'Not scored';
+  if (!scored) tierColour = colour;
   scoreTierEl.style.color = tierColour;
 
   // === SUB-SCORE BARS (v2 — 85/15 split) ===
-  var ingredientScore = currentProduct._ingredientScore || Math.round(score * 0.85);
-  var credibilityScore = currentProduct._credScore || Math.round(score * 0.15);
+  var ingredientScore = Number.isFinite(currentProduct._ingredientScore) ? currentProduct._ingredientScore : Math.round(score * 0.85);
+  var credibilityScore = Number.isFinite(currentProduct._credScore) ? currentProduct._credScore : Math.round(score * 0.15);
   document.getElementById('ingredientScoreLabel').textContent = 'Ingredient Quality: ' + ingredientScore + '/' + SCORE_SETTINGS.INGREDIENT_MAX;
   document.getElementById('credScoreLabel').textContent = 'Manufacturer Trust: ' + credibilityScore + '/' + SCORE_SETTINGS.CREDIBILITY_MAX;
   var ingredientBar = document.getElementById('ingredientBar');
@@ -3104,17 +3146,17 @@ function showProduct(id) {
   credBar.style.background = colour;
   ingredientBar.style.width = '0%';
   credBar.style.width = '0%';
-  setTimeout(function() {
+  if (scored) scoreBarsTimer = setTimeout(function() {
     ingredientBar.style.width = ((ingredientScore / SCORE_SETTINGS.INGREDIENT_MAX) * 100) + '%';
     credBar.style.width = ((credibilityScore / SCORE_SETTINGS.CREDIBILITY_MAX) * 100) + '%';
   }, 200);
 
   // === SCORE DISPLAY ===
-  document.getElementById('stars').innerHTML = '<span style="color:'+colour+'">'+getStars(score)+'</span>';
+  document.getElementById('stars').innerHTML = scored ? '<span style="color:'+colour+'">'+getStars(score)+'</span>' : '';
 
-  document.getElementById('ingredientList').innerHTML = currentProduct.ingredients.map(function(i) {
+  document.getElementById('ingredientList').innerHTML = (currentProduct.ingredients || []).map(function(i) {
     return '<div class="ingredient-row"><div class="ingredient-dot dot-'+i.rating+'"></div><div><div class="ingredient-name">'+i.name+'</div><div class="ingredient-desc">'+i.desc+'</div></div></div>';
-  }).join('');
+  }).join('') || '<p style="font-size:13px;color:#4a5568;">Ingredient information has not been added yet.</p>';
 
   var p = currentProduct;
   // Show credibility details — now out of 15 instead of 30
@@ -3124,7 +3166,8 @@ function showProduct(id) {
   if (p._recallSeverity === 'severe') recallNote = ' <span style="font-size:11px;color:#e53e3e;">(-' + SCORE_SETTINGS.RECALL_PENALTY_SEVERE + ' pts)</span>';
   else if (p._recallSeverity === 'moderate') recallNote = ' <span style="font-size:11px;color:#ed8936;">(-' + SCORE_SETTINGS.RECALL_PENALTY_MODERATE + ' pts)</span>';
   else if (p._recallSeverity === 'minor') recallNote = ' <span style="font-size:11px;color:#ecc94b;">(-' + SCORE_SETTINGS.RECALL_PENALTY_MINOR + ' pts)</span>';
-  document.getElementById('credList').innerHTML =
+  document.getElementById('credList').innerHTML = !scored ?
+    '<p style="font-size:13px;color:#4a5568;">Manufacturer information still needs review.</p>' :
     '<div class="cred-row"><span class="cred-label">Credibility Score</span><span class="cred-value">'+credDisplay+budgetNote+'</span></div>' +
     '<div class="cred-row"><span class="cred-label">Vet Nutritionist</span><span class="cred-value '+(p.vetNutritionist?'cred-yes':'cred-no')+'">'+(p.vetNutritionist?'\u2705 Yes':'\u274C No')+'</span></div>' +
     '<div class="cred-row"><span class="cred-label">Feeding Trials</span><span class="cred-value '+(p.feedingTrials?'cred-yes':'cred-no')+'">'+(p.feedingTrials?'\u2705 Yes':'\u274C No')+'</span></div>' +
@@ -3188,7 +3231,7 @@ function renderFavourites() {
       return '<div class="product-card" onclick="showProduct('+p.id+')">' +
         getProductImage(p, 52) +
         '<div class="product-info"><h3>'+p.name+'</h3><p>'+p.brand+' \u00B7 '+p.type+'</p></div>' +
-        '<div class="score-badge '+getScoreClass(p.score)+'" style="width:40px;height:40px;font-size:14px;">'+p.score+'</div></div>';
+        getScoreBadge(p) + '</div>';
     }).join('');
   }
 }
@@ -3584,7 +3627,7 @@ function toggleChip(el, group) {
 }
 
 function getRecommendations() {
-  var filtered = products.slice();
+  var filtered = products.filter(hasScoreData);
   if (recFilters.pet === 'cat') {
     filtered = filtered.filter(function(p) { return p.petType === 'cat'; });
   } else {
@@ -3768,6 +3811,7 @@ var catIcons = {
 };
 
 var homeCategories = [
+  { id: 'all-products', icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>', name: 'All products', match: function(){ return true; } },
   { id: 'dog-kibble',  icon: catIcons['dog-kibble'],  name: 'Dog Kibble',    match: function(p){ return p.petType==='dog' && p.foodType==='dry'; } },
   { id: 'dog-wet',     icon: catIcons['dog-wet'],      name: 'Dog Canned Food',  match: function(p){ return p.petType==='dog' && (p.foodType==='wet' || p.foodType==='canned'); } },
   { id: 'dog-rolls',   icon: catIcons['dog-rolls'],    name: 'Dog Rolls',     match: function(p){ return p.petType==='dog' && p.foodType==='roll'; } },
@@ -3783,12 +3827,16 @@ function renderCategoryGrid() {
   if (!grid) return;
   grid.innerHTML = homeCategories.map(function(cat) {
     var count = products.filter(cat.match).length;
-    return '<button class="category-card" onclick="handleCategoryClick(\''+cat.id+'\')">' +
+    return '<button class="category-card'+(cat.id === 'all-products' ? ' category-all' : '')+'" onclick="handleCategoryClick(\''+cat.id+'\')">' +
              '<div class="cat-icon">'+cat.icon+'</div>' +
              '<div class="cat-name">'+cat.name+'</div>' +
              '<div class="cat-count">'+count+' product'+(count!==1?'s':'')+'</div>' +
            '</button>';
   }).join('');
+  ['searchInput', 'soInput'].forEach(function(id) {
+    var input = document.getElementById(id);
+    if (input) input.placeholder = 'Search ' + products.length + ' products...';
+  });
   var footer = document.getElementById('homeFooterStat');
   if (footer) footer.innerHTML = products.length + '+ products &middot; Made in Australia \uD83C\uDDE6\uD83C\uDDFA';
 }
@@ -3801,7 +3849,7 @@ function handleCategoryClick(catId) {
   var cat = homeCategories.find(function(c){ return c.id === catId; });
   if (!cat) return;
   currentCategoryId = catId;
-  currentCategoryProducts = products.filter(cat.match).sort(function(a, b) { return b.score - a.score; });
+  currentCategoryProducts = products.filter(cat.match).sort(compareProductScores);
   currentCategoryPage = 1;
   document.getElementById('categoryTitle').textContent = cat.name;
   renderCategoryPage();
@@ -3819,7 +3867,7 @@ function renderCategoryPage() {
     return '<div class="product-card" onclick="showProduct('+p.id+')">' +
       getProductImage(p, 52) +
       '<div class="product-info"><h3>'+p.name+'</h3><p>'+p.brand+' \u00B7 '+p.type+'</p></div>' +
-      '<div class="score-badge '+getScoreClass(p.score)+'" style="width:40px;height:40px;font-size:14px;">'+p.score+'</div>' +
+      getScoreBadge(p) +
     '</div>';
   }).join('');
   var pag = document.getElementById('categoryPagination');
@@ -3877,7 +3925,7 @@ function runOverlaySearch() {
     return '<div class="product-card" onclick="closeSearchOverlay();showProduct('+p.id+')">' +
       getProductImage(p, 52) +
       '<div class="product-info"><h3>'+p.name+'</h3><p>'+p.brand+' \u00B7 '+p.type+'</p></div>' +
-      '<div class="score-badge '+getScoreClass(p.score)+'" style="width:40px;height:40px;font-size:14px;">'+p.score+'</div>' +
+      getScoreBadge(p) +
     '</div>';
   }).join('');
 }
