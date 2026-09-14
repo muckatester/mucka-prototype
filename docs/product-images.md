@@ -1,6 +1,6 @@
 # Sourced product photographs
 
-The image manifest in `data/product-images-v1.json` adds source-recorded photographs to listings that previously had no image assignment. It preserves the legacy image map and does not validate the identities of those older pictures.
+The image manifest in `data/product-images-v1.json` records sourced photographs. The separate `data/legacy-image-review-v1.json` records a visual review of all 849 original image assignments across 690 original image paths. The legacy filename map remains historical source data; the app displays photographs only through identity-bound reviewed records or a user's own photo.
 
 Each new assignment records the source page, original image URL where known, pictured pack, visual inspection, date and SHA-256 of the local asset. The app shows a source link alongside the photo. Existing local assets with manufacturer identity corroboration use the label **Product source**, because their original image provenance is unknown.
 
@@ -19,4 +19,17 @@ The runtime binds each photograph to the app ID and exact brand, name, species, 
 
 Run `node --test tests/*.test.cjs` after an update. The image tests check every manifest assignment, identity-change guards and the visible distinction between matched packs and recipe-only photos.
 
-The dated source research, complete availability audit and remaining identity/source worklist are kept in the project review folder, `Mucka_Review_2026-09-14/Image_Sourcing_2026-09-14`. The original 849-assigned / 231-missing audit is retained as a historical baseline.
+## Older image review
+
+The legacy review compares each local photograph with every listing to which it was assigned. It records the visible wording, pictured pack where legible, catalogue identity snapshot, result, reason and SHA-256. It is a visual check of the existing asset, not manufacturer verification or recovery of the original image source.
+
+- `visual_match`: the visible product details and stated pack agree.
+- `recipe_match_pack_unverified`: the recipe, species and food form agree, but pack configuration cannot be confirmed.
+- `confirmed_mismatch`: the photograph conflicts with the listing's recipe, species, food form or stated pack.
+- `unreadable`: the image does not provide enough readable identity information.
+
+Mismatched and unreadable photographs are withheld. If a reviewed identity changes, that old photo also stays withheld until rechecked. The product remains searchable and displays a placeholder with a short explanation. No filename fallback can restore an unreviewed or rejected photo.
+
+Run `node scripts/sync-legacy-image-review.cjs` to embed the reviewed runtime data, or add `--check` to verify it. The script requires all 849 original assignments, unique IDs, recognised states, exact path case and unchanged image hashes. Original observations are retained in the dated project review folder, including any subsequent metadata correction and re-evaluation.
+
+The current catalogue/photo audit and worklist are in `Mucka_Review_2026-09-14/Catalogue_Photo_Review_2026-09-14`. The earlier sourced-photo milestone remains in `Image_Sourcing_2026-09-14`, and the original 849-assigned / 231-missing audit is retained as a historical baseline.

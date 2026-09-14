@@ -95,7 +95,8 @@ test('Confirmed conflicting barcodes cannot match in either scanner or Collector
   vm.runInContext(html.match(/var BARCODE_MAP = \{[\s\S]*?\n};/)[0] + fn('findProductByBarcode'), c);
   const collector = fs.readFileSync(path.join(root, 'mucka-collector.html'), 'utf8');
   vm.runInContext(collector.match(/var KNOWN_BARCODES = new Set\(\[[\s\S]*?\]\);/)[0], c);
-  for (const code of ['9334214018362','9310022018305']) {
+  const corrections = JSON.parse(fs.readFileSync(path.join(root, 'docs/catalogue-corrections-2026-09-14.json')));
+  for (const {barcode: code} of corrections.collectorBarcodeRemovals) {
     assert.equal(c.findProductByBarcode(code), null);
     assert.equal(c.KNOWN_BARCODES.has(code), false);
   }

@@ -576,6 +576,28 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 282,
+      "localPath": "assets/product-images/ziwi-lamb-cat-85g.png",
+      "sourcePage": "https://ziwipets.com/en-au/products/lamb-cat-food",
+      "imageUrl": "https://ziwipets.com/cdn/shop/files/85gFOP_48c133b6-221e-491f-8688-4795d1f48b27.png?v=1768432480",
+      "sourceKind": "manufacturer",
+      "shownPack": "85g can",
+      "identityEvidence": "Manufacturer page and visually checked photo identify ZIWI Peak Lamb Recipe for Cats, 85g. The conflicting Whiskas barcode was removed separately. Pictured English/French export artwork does not establish Australian pack barcode or availability.",
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Lamb Wet Cat Food",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 85g",
+        "barcode": null
+      },
+      "matchStatus": "pack_match",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "742f499ad9c51317166968fc0a5ffe33e206b7718a67dc7a2b320d58c54ca142",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 283,
       "identity": {
         "brand": "Ziwi Peak",
@@ -618,6 +640,28 @@
       "checkedDate": "2026-09-14",
       "sha256": "01448a4967981093ec07405fe199f021eebf9721917a0cee7b279d3fec3e18de",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 305,
+      "localPath": "assets/product-images/kit-cat-chicken-salmon-80g.jpg",
+      "sourcePage": "https://www.petso.com.au/products/kit-cat-chicken-salmon-toppers-wet-canned-cat-food",
+      "imageUrl": "https://www.petso.com.au/cdn/shop/files/Kit-Cat-Chicken-Salmon-2.jpg?v=1783906093",
+      "sourceKind": "retailer",
+      "shownPack": "80g can (size stated on retailer page)",
+      "identityEvidence": "Petso lists the Chicken & Salmon wet cat can in 80g and 24x80g options. Visually checked image shows the same Chicken & Salmon in Aspic can; weight is not readable on the front. The conflicting puree-stick barcode was removed separately.",
+      "identity": {
+        "brand": "Kit Cat",
+        "name": "Chicken & Salmon Wet",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 80g can",
+        "barcode": null
+      },
+      "matchStatus": "pack_match",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "454f272e24b0e8729c127ddb6faf4ae3663d4a520509ff092255551bd0808b8c",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 308,
@@ -950,6 +994,28 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 494,
+      "identity": {
+        "brand": "Dreamies",
+        "name": "Variety Snack Box (Chicken, Cheese & Salmon)",
+        "petType": "cat",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": "4008429110788"
+      },
+      "localPath": "assets/product-images/review-494.png",
+      "sourcePage": "https://www.dreamiestreats.co.uk/our-treats/favourites/dreamies-cat-treat-biscuits-variety-snack-box-60g",
+      "imageUrl": "https://www.dreamiestreats.co.uk/cdn-cgi/image/format=auto,q=90/sites/g/files/fnmzdf5196/files/migrate-product-files/images/k6tp9bscawryjpfrhcyh.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "12 x 60g (720g) UK cat treat variety box",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer and visible package confirm cat treat variety box Chicken, Cheese & Salmon. Catalogue currently incorrectly labels dog/dry; correct species and form before assignment. Barcode unverified. Catalogue species/form corrected separately; pack size and barcode remain unverified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "fe0965101e5db872da88aadfd11123cc6186492f99ce07005a0747055412d58a",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 565,
       "identity": {
         "brand": "Hill's Prescription Diet",
@@ -970,6 +1036,50 @@
       "checkedDate": "2026-09-14",
       "sha256": "17fbf53dfda6369dc7457760ca5f99fcec339789ff36f1c18163808c17253a65",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 719,
+      "identity": {
+        "brand": "Love Em",
+        "name": "Beef Jerky with Tomato",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/review-719.jpg",
+      "sourcePage": "https://rpfco.com/products/loveem-beef-jerky-with-tomato-dog-treats-200g",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0834/8896/4911/products/12745107767326_606b8cc4-665c-49b4-899f-0302a7848c82.jpg?v=1695173260",
+      "sourceKind": "manufacturer",
+      "shownPack": "200g pouch",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer product title and photograph match catalogue brand, recipe and product form. Downloaded product image inspected directly; stated pack size is visible. Catalogue species/form corrected separately; pack size and barcode remain unverified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "f1c0d109d0feed6bb3fbe2177d1c67de6f1a6b9842190a59cdd335928075cf70",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 720,
+      "identity": {
+        "brand": "Love Em",
+        "name": "Lamb & Rosemary Jerky",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/review-720.jpg",
+      "sourcePage": "https://rpfco.com/products/loveem-grain-free-lamb-jerky-with-rosemary-flavour-200g",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0834/8896/4911/products/12744957591582_88dcf203-f668-4acb-816f-b42ffc1f1f10.jpg?v=1695174697",
+      "sourceKind": "manufacturer",
+      "shownPack": "200g pouch",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer product title and photograph match catalogue brand, recipe and product form. Downloaded product image inspected directly; stated pack size is visible. Catalogue species/form corrected separately; pack size and barcode remain unverified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "7dede8d586fe6f8aa5475ad57e523d963a506587074f882c53bac28279782441",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 727,
@@ -1036,6 +1146,28 @@
       "checkedDate": "2026-09-14",
       "sha256": "810f02a6e9a7090ce173f83c6aa804b7940e553918c168b869ba648327025620",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 754,
+      "identity": {
+        "brand": "Nature's Goodness",
+        "name": "Grain Free Adult Kangaroo with Sweet Potato & Green Beans",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/review-754.png",
+      "sourcePage": "https://rpfco.com/products/natures-goodness-grain-free-kangaroo-with-sweet-potato-and-green-beans-wet-dog-food-400g",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0834/8896/4911/files/RPET-19319185146808-0.png?v=1773891485",
+      "sourceKind": "manufacturer",
+      "shownPack": "12 x 400g can tray (pack size from manufacturer page)",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer lists matching Nature’s Goodness Grain Free Adult Kangaroo with Sweet Potato and Green Beans Wet Dog Food. Catalogue species/form corrected separately; pack size and barcode remain unverified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "bb6c0496181333e566a301afb2eefb053de5a69cc9da071e2602bf3a68c22fec",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 755,
@@ -1278,6 +1410,28 @@
       "checkedDate": "2026-09-14",
       "sha256": "bc173061f19c21c2b0d4859db0824b3c831ed7ae847a7a038eecc57e83a06398",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 1055,
+      "identity": {
+        "brand": "Big Dog",
+        "name": "BARF Combo for Small Dogs",
+        "petType": "dog",
+        "foodType": "raw",
+        "type": "Raw",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/review-1055.webp",
+      "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog/combo-raw-dog-food-for-small-dogs",
+      "imageUrl": "https://cdn.prod.website-files.com/6976b4e420a29743ab6eee68/6a31df318e89663e3dba4b6b_Big%20Dog%20Pet%20Foods%20small%20dog%20combo%20main%20image.webp",
+      "sourceKind": "manufacturer",
+      "shownPack": "1.5kg, 12 individual portions",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer identifies Combo Raw Dog Food for Small Dogs, 12 individual portions; frozen storage and raw patties establish raw form. Catalogue species/form corrected separately; pack size and barcode remain unverified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-14",
+      "sha256": "7e6dfb487cd7ff7bfffd376fca5d3955341053c1a6b656de5c2eeacd54d37d1f",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 1058,

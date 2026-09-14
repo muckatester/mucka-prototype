@@ -41,9 +41,45 @@ test('photo captions distinguish matched packs from recipes with unknown pack id
   c.showProduct(1146);
   assert.match(element('detailProductImage').innerHTML, /catalogue pack size and barcode are unverified/);
   assert.match(element('detailProductImage').innerHTML, /Photo source/);
-  c.showProduct(960);
-  // An existing catalogue image still keeps its original verification limits.
-  c.productImageMap[c.currentProduct.brand + ' - ' + c.currentProduct.name] = 'legacy.jpg';
-  c.showProduct(960);
-  assert.match(element('detailProductImage').innerHTML, /pack configuration has not been verified/);
+});
+
+test('all original image assignments have a complete visual review and unchanged assets', () => {
+  execFileSync(process.execPath, [path.join(root, 'scripts/sync-legacy-image-review.cjs'), '--check']);
+  const {c, element} = setup();
+  const records = JSON.parse(fs.readFileSync(path.join(root, 'data/legacy-image-review-v1.json'))).records;
+  for (const record of records) {
+    const p = c.products.find(p => p.id === record.appId);
+    assert.ok(p);
+    c.showProduct(p.id);
+    const available = ['visual_match', 'recipe_match_pack_unverified'].includes(record.status) &&
+      Object.entries(record.identitySnapshot).every(([key,value]) => (p[key] || null) === (value || null));
+    assert.equal(!!c.getLegacyProductImage(p), available, 'Legacy photo ' + p.id);
+    if (!available && !c.getSourcedProductImage(p)) {
+      assert.equal(c.productHasImage(p), false);
+      assert.doesNotMatch(element('detailProductImage').innerHTML, /<img /);
+      assert.match(element('detailProductImage').innerHTML, /older photo is withheld/);
+    } else if (!c.getSourcedProductImage(p)) {
+      assert.match(element('detailProductImage').innerHTML, /Original photo source and barcode have not been verified/);
+    }
+  }
+});
+
+test('a wrong, unreadable or identity-changed old photo never reappears through filename fallback', () => {
+  const {c} = setup();
+  const p = c.products.find(p => c.getLegacyProductImage(p));
+  assert.ok(p);
+  const record = c.legacyImageReviews[p.id];
+  c.productImageMap[p.brand + ' - ' + p.name] = record.imagePath;
+  for (const status of ['confirmed_mismatch', 'unreadable']) {
+    record.status = status;
+    assert.equal(c.productHasImage(p), false);
+    assert.doesNotMatch(c.getProductImage(p), /<img /);
+  }
+  record.status = 'visual_match';
+  for (const key of ['id', 'brand', 'name', 'petType', 'foodType', 'type', 'barcode']) {
+    const changed = {...p, [key]: key === 'id' ? 999999 : 'other identity'};
+    assert.equal(c.productHasImage(changed), false, key);
+  }
+  assert.equal(c.productHasImage({...p, _userIngredientText:'Temporary recipe'}), false);
+  assert.equal(c.productHasImage({...p, _userPhoto:'data:image/png;base64,user-photo'}), true);
 });

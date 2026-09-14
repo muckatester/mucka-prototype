@@ -13,6 +13,7 @@ test('Raw catalogue preserves all 1,080 records and only the documented metadata
   for (const change of corrections.changes) {
     const product = expected.find(p => p.id === change.appId);
     for (const [field, value] of Object.entries(change.before)) assert.deepEqual(product[field], value);
+    for (const field of change.absentBeforeFields || []) assert.equal(Object.hasOwn(product, field), false);
     Object.assign(product, change.after);
     for (const field of change.removeFields || []) delete product[field];
   }
