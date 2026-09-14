@@ -75,7 +75,40 @@ test('All 636 missing ingredient records are unscored; existing 444 results stay
       assert.equal(p._credScore, null);
     } else assert.equal(p.score, old.products.find(q => q.id === p.id).score, 'Existing score for ' + p.id);
   }
-  assert.equal(productsLiteral(html), productsLiteral(baseline), 'Catalogue data is untouched');
+  const expectedCatalogue = JSON.parse(JSON.stringify(vm.runInNewContext(productsLiteral(baseline))));
+  const corrections = JSON.parse(fs.readFileSync(path.join(root, 'docs/catalogue-corrections-2026-09-14.json'), 'utf8'));
+  for (const change of corrections.changes) {
+    const product = expectedCatalogue.find(p => p.id === change.appId);
+    for (const [field, value] of Object.entries(change.before)) assert.deepEqual(product[field], value, 'Recorded original field ' + change.appId + '.' + field);
+    Object.assign(product, change.after);
+    for (const field of change.removeFields || []) delete product[field];
+  }
+  assert.deepEqual(JSON.parse(JSON.stringify(vm.runInNewContext(productsLiteral(html)))), expectedCatalogue, 'Only documented catalogue metadata changes');
+});
+
+test('Wrong Dine barcode cannot resolve to the Pro Plan record through either lookup path', () => {
+  const {c, element} = setup();
+  vm.runInContext(html.match(/var BARCODE_MAP = \{[\s\S]*?\n};/)[0] + fn(html, 'findProductByBarcode'), c);
+  const disputedBarcode = '9334214018362';
+  assert.equal(c.BARCODE_MAP[disputedBarcode], undefined);
+  assert.equal(c.products.some(p => p.barcode === disputedBarcode), false);
+  assert.equal(c.findProductByBarcode(disputedBarcode), null);
+  for (const id of [727, 764, 768, 960]) {
+    const p = c.products.find(p => p.id === id);
+    assert.equal(c.findProductByBarcode(p.barcode).id, id);
+    delete c.BARCODE_MAP[p.barcode];
+    assert.equal(c.findProductByBarcode(p.barcode).id, id, 'Direct product fallback ' + id);
+    assert.equal(p.foodType, 'wet');
+    assert.equal(c.hasScoreData(p), false);
+  }
+  c.showProduct(488);
+  assert.equal(element('scoreTier').textContent, 'Not scored');
+  assert.match(element('scoreReviewNotice').textContent, /barcode mismatch/);
+  c.showProduct(727);
+  assert.doesNotMatch(element('scoreReviewNotice').textContent, /barcode mismatch/);
+  c.showProduct(1094);
+  assert.equal(element('scoreReviewNotice').textContent, "We still need to check this product's ingredients and scoring information.");
+  assert.doesNotMatch(element('scoreReviewNotice').textContent, /Placeholder score/);
 });
 
 test('Unscored detail has no rating, stars, fabricated trust flags or crash for missing ingredients', () => {

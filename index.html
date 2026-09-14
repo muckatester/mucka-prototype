@@ -272,6 +272,9 @@ body { font-family: 'Poppins', sans-serif; background: #f0f4f8; color: #2d3748; 
 .category-card .cat-icon { font-size: 32px; line-height: 1; margin-bottom: 8px; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; }
 .category-card .cat-name { font-size: 14px; font-weight: 700; color: #2d3748; margin-bottom: 2px; }
 .category-card .cat-count { font-size: 11px; font-weight: 600; color: #718096; }
+.category-card.category-all { grid-column: 1 / -1; flex-direction: row; gap: 12px; text-align: left; border-color: #202C94; padding: 14px 16px; }
+.category-all .cat-icon { width: 36px; height: 36px; margin-bottom: 0; flex-shrink: 0; color: #202C94; }
+.category-all .cat-count { margin-left: auto; white-space: nowrap; }
 
 .tip-of-day-card {
   background: linear-gradient(135deg, #f0f4ff 0%, #fff7ed 100%);
@@ -1529,7 +1532,7 @@ const products = [
 {id:485,barcode:"7613035379831",name:"Daily Oral Care Small/Medium Breed",brand:"DentaLife",score:50,credScore:20,imgBg:"#cccccc",imgText:"DENTALIFE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:486,barcode:"9334214018409",name:"Classic Collection Beef & Liver in Gravy",brand:"Dine",score:50,credScore:20,imgBg:"#cccccc",imgText:"DINE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:487,barcode:"9334214059037",name:"Classic Collection Chicken Slices in Jelly",brand:"Dine",score:50,credScore:20,imgBg:"#cccccc",imgText:"DINE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
-{id:488,barcode:"9334214018362",name:"Kitten Chicken",brand:"Purina Pro Plan",score:50,credScore:20,imgBg:"#cccccc",imgText:"DINE",imgAccent:"#999999",type:"dry",petType:"cat",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
+{id:488,name:"Kitten Chicken",brand:"Purina Pro Plan",score:50,credScore:20,imgBg:"#cccccc",imgText:"PURINA PRO",imgAccent:"#999999",type:"dry",petType:"cat",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[],needsReview:true,identityNotice:"Product details are being checked after a barcode mismatch."},
 {id:489,barcode:"4008429037986",name:"Cat Treats with Delicious Cheese",brand:"Dreamies",score:50,credScore:20,imgBg:"#cccccc",imgText:"DREAMIES",imgAccent:"#999999",type:"treat",petType:"cat",foodType:"treat",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:490,barcode:"4008429037979",name:"Cat Treats with Heavenly Tuna",brand:"Dreamies",score:50,credScore:20,imgBg:"#cccccc",imgText:"DREAMIES",imgAccent:"#999999",type:"treat",petType:"cat",foodType:"treat",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:491,barcode:"4008429037962",name:"Cat Treats with Scrumptious Salmon",brand:"Dreamies",score:50,credScore:20,imgBg:"#cccccc",imgText:"DREAMIES",imgAccent:"#999999",type:"treat",petType:"cat",foodType:"treat",keyProtein:"Salmon",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
@@ -1610,7 +1613,7 @@ const products = [
 {id:571,barcode:"0052742047393",name:"z/d Skin/Food Sensitivities",brand:"Hill's Prescription Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S PRE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:573,name:"Adult 7+ Youthful Vitality Chicken & Rice",brand:"Hill's Science Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S SCI",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:574,barcode:"9356335003904",name:"Adult Advanced Fitness Lamb Meal & Brown Rice",brand:"Hill's Science Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S SCI",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Lamb",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
-{id:575,name:"Adult Beef & Vegetable Stew",brand:"Hill's Science Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S SCI",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
+{id:575,name:"Adult Beef & Vegetable Stew",brand:"Hill's Science Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S SCI",imgAccent:"#999999",type:"Wet",petType:"dog",foodType:"wet",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:579,name:"Adult Healthy Mobility Chicken Meal, Brown Rice & Barley",brand:"Hill's Science Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S SCI",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:580,barcode:"0052742024516",name:"Adult Indoor",brand:"Hill's Science Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S SCI",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:583,name:"Adult Perfect Weight Chicken",brand:"Hill's Science Diet",score:50,credScore:20,imgBg:"#cccccc",imgText:"HILL'S SCI",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
@@ -1739,7 +1742,7 @@ const products = [
 {id:722,name:"Dingo Bones Dental Chew",brand:"Lyka",score:50,credScore:20,imgBg:"#cccccc",imgText:"LYKA",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:724,name:"Puppy Fresh Bowl",brand:"Lyka",score:50,credScore:20,imgBg:"#cccccc",imgText:"LYKA",imgAccent:"#999999",type:"fresh",petType:"dog",foodType:"fresh",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:725,name:"Roo Bites Training Treats",brand:"Lyka",score:50,credScore:20,imgBg:"#cccccc",imgText:"LYKA",imgAccent:"#999999",type:"treat",petType:"dog",foodType:"treat",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
-{id:727,barcode:"9310022067006",name:"Classic Loaf Beef & Veal",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
+{id:727,barcode:"9310022067006",name:"Classic Loaf Beef & Veal",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"Wet · 400g",petType:"dog",foodType:"wet",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:728,barcode:"9334214054964",name:"Classic Loaf Gourmet Beef",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:729,barcode:"9334214035789",name:"Fillets in Gravy Beef",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:730,barcode:"9334214035864",name:"Fillets in Gravy Chicken",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
@@ -1772,11 +1775,11 @@ const products = [
 {id:761,name:"Mature Salmon in Jelly Pouch",brand:"Optimum",score:50,credScore:20,imgBg:"#cccccc",imgText:"OPTIMUM",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Salmon",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:762,barcode:"0064992284183",name:"Fit & Trim",brand:"Orijen",score:50,credScore:20,imgBg:"#cccccc",imgText:"ORIJEN",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:763,name:"Puppy Large Breed",brand:"Orijen",score:50,credScore:20,imgBg:"#cccccc",imgText:"ORIJEN",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
-{id:764,barcode:"9310022034404",name:"Adult Beef Pasta & Vegies Homestyle",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
+{id:764,barcode:"9310022034404",name:"Adult Beef Pasta & Vegies Homestyle",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"Wet · 700g",petType:"dog",foodType:"wet",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:765,barcode:"9310022018305",name:"Adult Lamb & Gravy Casserole",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Lamb",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:766,barcode:"122914000152",name:"Dentastix Chewy Chunx Small/Medium Dog",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:767,barcode:"9334214022871",name:"Dentastix Daily Oral Care Small",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
-{id:768,barcode:"9310022037207",name:"Puppy Minced Chicken & Rice",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
+{id:768,barcode:"9310022037207",name:"Puppy Minced Chicken & Rice",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"Wet · 700g",petType:"dog",foodType:"wet",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:769,name:"Ranchos Beef",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:770,barcode:"4008429105173",name:"Ranchos Chicken",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:975,barcode:"9310022018206",name:"Adult with Beef Veggie & Gravy 700g Tin",brand:"Pedigree",score:94,credScore:27,imgBg:"#f5a623",imgText:"PEDIGREE",imgAccent:"#8b0000",type:"Wet · 700g can",petType:"dog",foodType:"wet",keyProtein:"Beef",vetNutritionist:true,feedingTrials:true,wsava:true,recalls:"2006: Royal Canin excess vitamin D; 2007: Melamine contamination; 2018: Advance ",ingredients:[{"name": "Beef", "rating": "good", "desc": "Named meat source \u2014 exactly what you want to see first"}, {"name": "Vegetables", "rating": "good", "desc": "Added vegetables for vitamins and fibre"}, {"name": "Water", "rating": "ok", "desc": "Normal for wet food \u2014 provides hydration"}, {"name": "Gravy", "rating": "ok", "desc": "Adds palatability and moisture"}, {"name": "Fish Oil", "rating": "good", "desc": "Excellent source of omega-3 for coat and joints"}, {"name": "Dried Beet Pulp", "rating": "good", "desc": "Excellent fibre source for healthy digestion"}]},
@@ -1954,7 +1957,7 @@ const products = [
 {id:957,barcode:"815436013056",name:"Toothbrush Large",brand:"Whimzees",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHIMZEES",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:958,barcode:"815436013087",name:"Toothbrush Medium",brand:"Whimzees",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHIMZEES",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:959,barcode:"815436013094",name:"Toothbrush Small",brand:"Whimzees",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHIMZEES",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
-{id:960,barcode:"9310022360800",name:"Adult Beef Mince Can",brand:"Whiskas",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHISKAS",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
+{id:960,barcode:"9310022360800",name:"Adult Beef Mince Can",brand:"Whiskas",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHISKAS",imgAccent:"#999999",type:"Wet · 400g",petType:"cat",foodType:"wet",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:961,barcode:"9334214054827",name:"Adult Chicken & Rabbit Flavours",brand:"Whiskas",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHISKAS",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:962,name:"Adult Chicken Favourites in Gravy",brand:"Whiskas",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHISKAS",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:963,barcode:"9310022392603",name:"Adult Chicken Loaf Can",brand:"Whiskas",score:50,credScore:20,imgBg:"#cccccc",imgText:"WHISKAS",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
@@ -2331,7 +2334,6 @@ var BARCODE_MAP = {
   '7613035379831': 485,
   '9334214018409': 486,
   '9334214059037': 487,
-  '9334214018362': 488,
   '4008429037986': 489,
   '4008429037979': 490,
   '4008429037962': 491,
@@ -3097,6 +3099,7 @@ function showProduct(id) {
   clearTimeout(scoreBarsTimer);
   document.getElementById('scoreScaleLabel').style.display = scored ? '' : 'none';
   document.getElementById('scoreReviewNotice').style.display = scored ? 'none' : 'block';
+  document.getElementById('scoreReviewNotice').textContent = currentProduct.identityNotice || "We still need to check this product's ingredients and scoring information.";
   document.getElementById('subScoreBars').style.display = scored ? '' : 'none';
   var arc = document.getElementById('scoreArc');
   var circumference = 2 * Math.PI * 58;
@@ -3808,6 +3811,7 @@ var catIcons = {
 };
 
 var homeCategories = [
+  { id: 'all-products', icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>', name: 'All products', match: function(){ return true; } },
   { id: 'dog-kibble',  icon: catIcons['dog-kibble'],  name: 'Dog Kibble',    match: function(p){ return p.petType==='dog' && p.foodType==='dry'; } },
   { id: 'dog-wet',     icon: catIcons['dog-wet'],      name: 'Dog Canned Food',  match: function(p){ return p.petType==='dog' && (p.foodType==='wet' || p.foodType==='canned'); } },
   { id: 'dog-rolls',   icon: catIcons['dog-rolls'],    name: 'Dog Rolls',     match: function(p){ return p.petType==='dog' && p.foodType==='roll'; } },
@@ -3823,7 +3827,7 @@ function renderCategoryGrid() {
   if (!grid) return;
   grid.innerHTML = homeCategories.map(function(cat) {
     var count = products.filter(cat.match).length;
-    return '<button class="category-card" onclick="handleCategoryClick(\''+cat.id+'\')">' +
+    return '<button class="category-card'+(cat.id === 'all-products' ? ' category-all' : '')+'" onclick="handleCategoryClick(\''+cat.id+'\')">' +
              '<div class="cat-icon">'+cat.icon+'</div>' +
              '<div class="cat-name">'+cat.name+'</div>' +
              '<div class="cat-count">'+count+' product'+(count!==1?'s':'')+'</div>' +
