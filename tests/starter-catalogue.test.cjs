@@ -78,10 +78,12 @@ test('Unknown and conflicting claims stay withheld and untrusted source text sta
   const p = c.products.find(p => p.id === 960), r = c.getProductEvidence(p);
   r.fields.adequacyStatement = {status:'unknown', value:'SECRET_UNSUPPORTED_ADEQUACY', note:'Statement not located.', sourceIds:[]};
   r.fields.ingredients = {status:'conflict', value:'SECRET_CONFLICTING_INGREDIENTS', note:'Two recipes disagree.', sourceIds:[]};
-  r.fields.lifeStage = {status:'source_checked', value:'<svg onload=alert(1)> adult', sourceIds:[r.sources[0].id]};
+  r.fields.lifeStage = {status:'source_checked', value:'<svg onload=alert(1)> adult', note:'Source qualification: <img src=x onerror=alert(1)>', sourceIds:[r.sources[0].id]};
   c.showProduct(p.id);
   assert.doesNotMatch(element('catalogueFacts').innerHTML, /SECRET_|<svg/);
   assert.match(element('catalogueFacts').innerHTML, /&lt;svg/);
+  assert.match(element('catalogueFacts').innerHTML, /Source qualification: &lt;img src=x onerror=alert\(1\)&gt;/);
+  assert.doesNotMatch(element('catalogueFacts').innerHTML, /<img/);
   assert.doesNotMatch(element('ingredientList').innerHTML, /SECRET_|Chicken/);
   assert.match(element('ingredientList').innerHTML, /sources conflict/);
   r.sources[0].url = 'javascript:alert(1)';

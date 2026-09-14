@@ -2733,7 +2733,7 @@ var starterCatalogue = {
           "label": "Pack image",
           "kind": "manufacturer_pack_image",
           "checkedAt": "2026-09-14",
-          "observation": "Root viewed transition artwork showing Beef & Veal 400 g can; printed barcode was not readable."
+          "observation": "The transition artwork shows a Beef & Veal 400 g can; the printed barcode is not readable."
         },
         {
           "id": "claim",
@@ -2741,7 +2741,7 @@ var starterCatalogue = {
           "label": "Manufacturer claim image",
           "kind": "manufacturer_claim_image",
           "checkedAt": "2026-09-14",
-          "observation": "Root visually read the complete-and-balanced claim in the product-linked image."
+          "observation": "The product-linked image contains a legible complete-and-balanced claim."
         }
       ],
       "fields": {
@@ -2870,7 +2870,7 @@ var starterCatalogue = {
           "label": "Published label image",
           "kind": "manufacturer_pack_image",
           "checkedAt": "2026-09-14",
-          "observation": "Root visually read barcode 9334214054964, Gourmet Beef wording, complete-and-balanced claim, AAFCO adult-maintenance statement and label energy 80 kcal/100 g. The linked page reports 68 kcal/100 g."
+          "observation": "The label image shows barcode 9334214054964, Gourmet Beef wording, a complete-and-balanced claim, an AAFCO adult-maintenance statement and energy of 80 kcal/100 g. The linked page reports 68 kcal/100 g."
         }
       ],
       "fields": {
@@ -3004,7 +3004,7 @@ var starterCatalogue = {
           "label": "Ingredient image",
           "kind": "manufacturer_ingredient_image",
           "checkedAt": "2026-09-14",
-          "observation": "Root visually read the full 4800 x 4800 image in a browser after the research agent could not access image content. All ingredient wording and qualifiers match the earlier candidate transcription."
+          "observation": "The full ingredient list and qualifiers are legible in the 4800 x 4800 manufacturer image and agree with the recorded transcription. This is online image evidence, not a physical-pack inspection."
         }
       ],
       "fields": {
@@ -3086,7 +3086,7 @@ var starterCatalogue = {
           "sourceIds": [
             "ingredients"
           ],
-          "note": "Full manufacturer ingredient graphic visually read by root; not a physical-pack inspection."
+          "note": "Transcribed from the full manufacturer ingredient graphic; not a physical-pack inspection."
         }
       },
       "limitations": [
@@ -3131,7 +3131,7 @@ var starterCatalogue = {
           "label": "Ingredient image",
           "kind": "manufacturer_ingredient_image",
           "checkedAt": "2026-09-14",
-          "observation": "Root visually read the full 4800 x 4800 image in a browser after the research agent could not access image content. All ingredient wording and qualifiers match the earlier candidate transcription."
+          "observation": "The full ingredient list and qualifiers are legible in the 4800 x 4800 manufacturer image and agree with the recorded transcription. This is online image evidence, not a physical-pack inspection."
         }
       ],
       "fields": {
@@ -3211,7 +3211,7 @@ var starterCatalogue = {
           "sourceIds": [
             "ingredients"
           ],
-          "note": "Full manufacturer ingredient graphic visually read by root; not a physical-pack inspection."
+          "note": "Transcribed from the full manufacturer ingredient graphic; not a physical-pack inspection."
         }
       },
       "limitations": [
@@ -3240,7 +3240,7 @@ var starterCatalogue = {
           "page",
           "pack"
         ],
-        "note": "Root visually read barcode 9310022360800 and 400 g on the manufacturer back-of-pack image; recipe, adult-cat identity and wet form agree with the Australian page."
+        "note": "Barcode 9310022360800 and 400 g are legible on the manufacturer back-of-pack image; recipe, adult-cat identity and wet form agree with the Australian page."
       },
       "sources": [
         {
@@ -3249,7 +3249,7 @@ var starterCatalogue = {
           "label": "Product page",
           "kind": "manufacturer_page",
           "checkedAt": "2026-09-14",
-          "observation": "Root visually read barcode 9310022360800 and 400 g on the manufacturer back-of-pack image; recipe, adult-cat identity and wet form agree with the Australian page."
+          "observation": "Barcode 9310022360800 and 400 g are legible on the manufacturer back-of-pack image; recipe, adult-cat identity and wet form agree with the Australian page."
         },
         {
           "id": "pack",
@@ -3419,7 +3419,8 @@ function getEvidenceFieldHtml(record, key) {
   if (!field) return 'Not checked';
   var links = getEvidenceLinks(record, field.sourceIds);
   if (field.status === 'source_checked' && field.value && links) {
-    return escapeHtml(field.value) + '<small class="fact-attribution">Manufacturer source · ' + links + '</small>';
+    return escapeHtml(field.value) + '<small class="fact-attribution">Manufacturer source · ' + links + '</small>' +
+      (field.note ? '<small class="fact-attribution">' + escapeHtml(field.note) + '</small>' : '');
   }
   var label = field.status === 'conflict' ? 'Conflicting information' : field.status === 'not_applicable' ? 'Not applicable' : 'Unknown';
   return label + (field.note ? '<small class="fact-attribution">' + escapeHtml(field.note) + '</small>' : '') + (links ? '<small class="fact-attribution">' + links + '</small>' : '');
