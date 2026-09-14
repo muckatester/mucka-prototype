@@ -588,6 +588,7 @@ body::before {
 .source-summary { margin-top: 18px; padding: 14px; border-radius: 10px; background: #eef4fa; font-size: 12px; line-height: 1.7; }
 .source-summary p { margin: 8px 0 0; }
 @media (max-width: 380px) { .assessment-badge { max-width: 62px; font-size: 9px; } }
+#favouriteFeedback:empty { display: none; }
 </style>
 </head>
 <body>
@@ -705,6 +706,7 @@ body::before {
 
 <!-- DETAIL SCREEN -->
 <div class="screen" id="screen-detail">
+  <p class="evidence-note" id="favouriteFeedback" role="status" aria-live="polite"></p>
   <div class="assessment-panel" role="status">
     <div class="assessment-eyebrow">Product information</div>
     <h2 id="assessmentStatus">Assessment under review</h2>
@@ -777,6 +779,7 @@ body::before {
 <!-- FAVOURITES SCREEN -->
 <div class="screen" id="screen-favourites">
   <h2 style="font-size:18px; font-weight:700; margin-bottom:16px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="#EF973F" stroke="#EF973F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Your Favourites</h2>
+  <p class="evidence-note" id="favouriteStorageStatus" role="status"></p>
   <div id="favList"></div>
   <div class="empty-state" id="favEmpty">
     <div class="emoji">&#128062;</div>
@@ -787,56 +790,25 @@ body::before {
 <!-- PROFILE SCREEN -->
 <div class="screen" id="screen-profile">
   <div class="profile-card">
-    <div class="profile-avatar">&#128054;</div>
-    <div class="profile-name">Tex</div>
-    <div class="profile-sub">Mucka Pet Food Scanner</div>
+    <div class="profile-avatar" aria-hidden="true">&#128054;</div>
+    <div class="profile-name">Your Mucka</div>
+    <div class="profile-sub">This browser · No account needed</div>
     <div class="stat-row">
-      <div class="stat"><div class="num" id="statScanned">0</div><div class="label">Scanned</div></div>
+      <div class="stat"><div class="num" id="statViewed">0</div><div class="label">Viewed this visit</div></div>
       <div class="stat"><div class="num" id="statFavs">0</div><div class="label">Favourites</div></div>
-      <div class="stat"><div class="num">2</div><div class="label">Dogs</div></div>
     </div>
   </div>
   <div class="section-card">
-    <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#202C94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><circle cx="12" cy="12" r="3.5"/><path d="M6.5 2C7.3 4 8.5 5 10 5.5M17.5 2C16.7 4 15.5 5 14 5.5M2 9c2 .5 3.5 1.5 4 3M22 9c-2 .5-3.5 1.5-4 3M7 19c.5-2 2-3.5 5-3.5s4.5 1.5 5 3.5"/></svg>My Pets</h2>
-    <div style="padding:8px 0;">
-      <div style="font-weight:700;">Dog #1</div>
-      <div style="font-size:13px; color:#718096;">Border Collie &middot; Good Boy</div>
-    </div>
-    <div style="padding:8px 0; border-top:1px solid #f0f4f8;">
-      <div style="font-weight:700;">Dog #2</div>
-      <div style="font-size:13px; color:#718096;">Border Collie &middot; Also a Good Boy</div>
-    </div>
+    <h2>Your saved products</h2>
+    <p class="evidence-note" id="profileStorageStatus" role="status"></p>
+    <button class="photo-btn" onclick="showScreen('favourites')">Open favourites</button>
   </div>
   <div class="section-card">
-    <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#202C94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>Settings</h2>
-    <div class="cred-row"><span class="cred-label">Products in Database</span><span class="cred-value" id="profileProductCount">1,080</span></div>
-    <div class="cred-row"><span class="cred-label">App Version</span><span class="cred-value">2.1 Beta</span></div>
-    <div class="cred-row"><span class="cred-label">Region</span><span class="cred-value">&#127462;&#127482; Australia</span></div>
-    <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #f0f4f8;">
-      <button onclick="window.location.href='mucka-collector.html'" style="width: 100%; padding: 12px; background: white; color: #202C94; border: 2px solid #202C94; border-radius: 10px; font-size: 14px; font-weight: 600; font-family: 'Poppins', sans-serif; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;">
-        <span style="font-size: 18px;">📋</span> Open Collector Queue
-      </button>
-    </div>
-  </div>
-  <div class="section-card" style="margin-top:16px;">
-    <h2 style="text-align:center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF973F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px"><path d="M6 9l6 6 6-6"/><path d="M12 3v12"/><rect x="3" y="17" width="18" height="4" rx="1"/></svg>Membership Tiers</h2>
-    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:12px;">
-      <div style="text-align:center; flex:1; min-width:90px; max-width:120px;">
-        <div style="width:80px; height:80px; border-radius:12px; border:3px solid #75CFE7; box-shadow:0 2px 8px rgba(0,0,0,0.1); display:flex; align-items:center; justify-content:center; font-size:32px; background:#f7fafc; margin:0 auto;">&#128054;</div>
-        <div style="font-size:11px; font-weight:700; margin-top:6px; color:#202C94;">Starter Pack</div>
-        <div style="font-size:10px; color:#718096;">Free</div>
-      </div>
-      <div style="text-align:center; flex:1; min-width:90px; max-width:120px;">
-        <div style="width:80px; height:80px; border-radius:12px; border:3px solid #EF973F; box-shadow:0 2px 8px rgba(0,0,0,0.1); display:flex; align-items:center; justify-content:center; font-size:32px; background:#f7fafc; margin:0 auto;">&#11088;</div>
-        <div style="font-size:11px; font-weight:700; margin-top:6px; color:#EF973F;">Regular Runner</div>
-        <div style="font-size:10px; color:#718096;">$4.99/mo</div>
-      </div>
-      <div style="text-align:center; flex:1; min-width:90px; max-width:120px;">
-        <div style="width:80px; height:80px; border-radius:12px; border:3px solid #202C94; box-shadow:0 2px 8px rgba(0,0,0,0.1); display:flex; align-items:center; justify-content:center; font-size:32px; background:#f7fafc; margin:0 auto;">&#127942;</div>
-        <div style="font-size:11px; font-weight:700; margin-top:6px; color:#202C94;">Marathon Mutt</div>
-        <div style="font-size:10px; color:#718096;">$9.99/mo</div>
-      </div>
-    </div>
+    <h2>About Mucka</h2>
+    <div class="cred-row"><span class="cred-label">Catalogue listings</span><span class="cred-value" id="profileProductCount">1,080</span></div>
+    <div class="cred-row"><span class="cred-label">Region</span><span class="cred-value">Australia</span></div>
+    <p class="evidence-note">Pet profiles, accounts and memberships are not available yet.</p>
+    <button class="photo-btn" onclick="window.location.href='mucka-collector.html'">Open Collector Queue</button>
   </div>
 </div>
 
@@ -3366,7 +3338,10 @@ var starterCatalogue = {
 };
 
 // === APP STATE ===
-var favourites = [];
+var favouritesStorageKey = 'mucka.favourites.v1';
+var favouritesStorageIssue = '';
+var favourites = loadFavourites();
+var viewedCount = 0;
 var scannedCount = 0;
 var currentProduct = null;
 var scoreCountTimer = null;
@@ -3377,6 +3352,64 @@ var perPage = 20;
 var currentFilter = 'all';
 var filteredProducts = products.slice().sort(compareProductScores);
 var searchDebounceTimer = null;
+
+function isSaveableFavourite(id) {
+  return Number.isInteger(id) && products.some(function(p) { return p.id === id && !p._userIngredientText; });
+}
+
+function loadFavourites() {
+  try {
+    var raw = window.localStorage.getItem(favouritesStorageKey);
+    if (raw === null) { favouritesStorageIssue = ''; return []; }
+    var saved = JSON.parse(raw);
+    if (!saved || saved.version !== 1 || !Array.isArray(saved.ids)) throw new Error('Invalid favourites');
+    var ids = saved.ids.filter(isSaveableFavourite);
+    favouritesStorageIssue = ids.length !== saved.ids.length ? 'filtered' : '';
+    return Array.from(new Set(ids));
+  } catch (error) {
+    favouritesStorageIssue = error instanceof SyntaxError || error.message === 'Invalid favourites' ? 'invalid' : 'unavailable';
+    return [];
+  }
+}
+
+function saveFavourites() {
+  try {
+    window.localStorage.setItem(favouritesStorageKey, JSON.stringify({version: 1, ids: favourites.filter(isSaveableFavourite)}));
+    favouritesStorageIssue = '';
+    return true;
+  } catch (error) {
+    favouritesStorageIssue = 'unavailable';
+    return false;
+  }
+}
+
+function getFavouriteStorageMessage() {
+  var message = 'Catalogue favourites are saved in this browser for this site. They do not sync across devices or between the preview and live app. Clearing website data removes them.';
+  if (favouritesStorageIssue === 'unavailable') message = 'This browser could not save or read your favourites. Changes are kept for this visit only and may be lost when you reload.';
+  if (favouritesStorageIssue === 'invalid') message = 'Your saved favourites could not be read. You can start a new list by tapping a product heart. ' + message;
+  if (favouritesStorageIssue === 'filtered') message = 'Some saved entries are no longer available in this catalogue. ' + message;
+  if (favourites.some(function(id) { return !isSaveableFavourite(id); })) message += ' Products added for this visit are temporary and will not return after a reload.';
+  return message;
+}
+
+function updateFavouriteButton() {
+  if (!currentProduct) return;
+  var isFav = favourites.indexOf(currentProduct.id) >= 0;
+  var btn = document.getElementById('detailFavBtn');
+  btn.className = 'fav-btn' + (isFav ? ' active' : '');
+  btn.setAttribute('aria-pressed', String(isFav));
+  btn.setAttribute('aria-label', isFav ? 'Remove from favourites' : 'Add to favourites');
+}
+
+function handleFavouriteStorageChange(event) {
+  if (event.key !== favouritesStorageKey && event.key !== null) return;
+  var temporary = favourites.filter(function(id) { return !isSaveableFavourite(id); });
+  favourites = loadFavourites().concat(temporary);
+  updateFavouriteButton();
+  renderFavourites();
+  updateProfile();
+  document.getElementById('favouriteFeedback').textContent = favouritesStorageIssue ? getFavouriteStorageMessage() : 'Favourites updated in another tab.';
+}
 
 // These legacy entry points cannot activate a rating, even when data is added.
 function hasScoreData(product) {
@@ -3620,7 +3653,8 @@ function goPage(p) {
 function showProduct(id) {
   currentProduct = products.find(function(p) { return p.id === id; });
   if (!currentProduct) return;
-  scannedCount++;
+  viewedCount++;
+  document.getElementById('favouriteFeedback').textContent = '';
 
   document.getElementById('detailTitle').textContent = currentProduct.brand;
   document.getElementById('detailBrand').textContent = currentProduct.name + ' \u00B7 ' + currentProduct.type;
@@ -3660,19 +3694,18 @@ function showProduct(id) {
 
   renderBuyLinks(currentProduct);
 
-  var isFav = favourites.indexOf(id) >= 0;
-  var btn = document.getElementById('detailFavBtn');
-  btn.className = 'fav-btn' + (isFav ? ' active' : '');
+  updateFavouriteButton();
 
   // Track where we came from for back button
   detailCameFromCategory = (document.getElementById('screen-category').classList.contains('active'));
+  detailCameFromFavourites = document.getElementById('screen-favourites').classList.contains('active');
   var backLabel = document.getElementById('detailBackLabel');
   if (backLabel) {
     if (detailCameFromCategory && currentCategoryId) {
       var cat = homeCategories.find(function(c){ return c.id === currentCategoryId; });
       backLabel.textContent = cat ? cat.name : 'Products';
     } else {
-      backLabel.textContent = 'Home';
+      backLabel.textContent = detailCameFromFavourites ? 'Favourites' : 'Home';
     }
   }
 
@@ -3694,15 +3727,22 @@ function toggleFav() {
   var idx = favourites.indexOf(id);
   var added = idx === -1;
   if (idx > -1) { favourites.splice(idx, 1); } else { favourites.push(id); }
-  var isFav = favourites.indexOf(id) >= 0;
+  var saved = saveFavourites();
+  updateFavouriteButton();
   var btn = document.getElementById('detailFavBtn');
-  btn.className = 'fav-btn' + (isFav ? ' active' : '') + (added ? ' just-added' : '');
+  var feedback = added ? 'Saved in this browser.' : 'Removed from favourites.';
+  if (!isSaveableFavourite(id)) feedback = added ? 'Added for this visit. This temporary product will not be kept after a reload.' : 'Removed from favourites for this visit.';
+  else if (!saved) feedback = added ? 'Added for this visit only. This browser could not save the change.' : 'Removed for this visit only. This browser could not save the change.';
+  document.getElementById('favouriteFeedback').textContent = feedback;
+  updateProfile();
   if (added) {
+    btn.classList.add('just-added');
     setTimeout(function(){ btn.classList.remove('just-added'); }, 600);
   }
 }
 
 function renderFavourites() {
+  document.getElementById('favouriteStorageStatus').textContent = getFavouriteStorageMessage();
   var list = products.filter(function(p) { return favourites.indexOf(p.id) >= 0; }).sort(compareProductScores);
   var container = document.getElementById('favList');
   var empty = document.getElementById('favEmpty');
@@ -3754,8 +3794,9 @@ function showScreen(name) {
 }
 
 function updateProfile() {
-  document.getElementById('statScanned').textContent = scannedCount;
+  document.getElementById('statViewed').textContent = viewedCount;
   document.getElementById('statFavs').textContent = favourites.length;
+  document.getElementById('profileStorageStatus').textContent = getFavouriteStorageMessage();
   document.getElementById('profileProductCount').textContent = products.length.toLocaleString();
   document.getElementById('headerProductCount').textContent = products.length.toLocaleString();
 }
@@ -4170,6 +4211,7 @@ function runOverlaySearch() {
 }
 
 // === INIT ===
+window.addEventListener('storage', handleFavouriteStorageChange);
 // Init: each call wrapped in try/catch so one failure doesn't block the rest
 try { renderPage(); } catch(e) { console.error('renderPage error:', e); }
 try { renderCategoryGrid(); } catch(e) { console.error('renderCategoryGrid error:', e); }
@@ -4238,10 +4280,13 @@ function closeScoringModal(e) {
 
 // ── Smart back navigation ─────────────────────────────────
 var detailCameFromCategory = false;
+var detailCameFromFavourites = false;
 
 function goBackToCategory() {
   if (detailCameFromCategory) {
     showScreen('category');
+  } else if (detailCameFromFavourites) {
+    showScreen('favourites');
   } else {
     showScreen('home');
   }
