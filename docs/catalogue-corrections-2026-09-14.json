@@ -4,9 +4,18 @@
   "changes": [
     {
       "appId": 488,
-      "before": {"barcode": "9334214018362", "imgText": "DINE"},
-      "after": {"imgText": "PURINA PRO", "needsReview": true, "identityNotice": "Product details are being checked after a barcode mismatch."},
-      "removeFields": ["barcode"],
+      "before": {
+        "barcode": "9334214018362",
+        "imgText": "DINE"
+      },
+      "after": {
+        "imgText": "PURINA PRO",
+        "needsReview": true,
+        "identityNotice": "Product details are being checked after a barcode mismatch."
+      },
+      "removeFields": [
+        "barcode"
+      ],
       "reason": "The stored barcode identifies Dine kitten food, while this catalogue record is named Purina Pro Plan. Remove the active association from both the product and BARCODE_MAP; preserve the record for review. No replacement barcode or recipe identity is inferred. Placeholder brand text now agrees with the retained catalogue brand.",
       "sources": [
         "https://www.kogan.com/au/buy/pst-dine-daily-tender-chicken-wet-kitten-cat-food-14-x-85g-cd85ktcx14/",
@@ -15,38 +24,124 @@
     },
     {
       "appId": 575,
-      "before": {"type": "dry", "foodType": "dry"},
-      "after": {"type": "Wet", "foodType": "wet"},
+      "before": {
+        "type": "dry",
+        "foodType": "dry"
+      },
+      "after": {
+        "type": "Wet",
+        "foodType": "wet"
+      },
       "reason": "The distinctive adult Beef and Vegetable Stew family is wet dog food. Only food form is corrected; no pack size or barcode is assigned because the exact pack is unresolved.",
-      "sources": ["https://www.hillspet.com.au/dog-food/science-diet-adult-chunks-gravy-beef-vegetables-canned"]
+      "sources": [
+        "https://www.hillspet.com.au/dog-food/science-diet-adult-chunks-gravy-beef-vegetables-canned"
+      ]
     },
     {
       "appId": 727,
-      "before": {"type": "dry", "foodType": "dry"},
-      "after": {"type": "Wet · 400g", "foodType": "wet"},
+      "before": {
+        "type": "dry",
+        "foodType": "dry"
+      },
+      "after": {
+        "type": "Wet \u00b7 400g",
+        "foodType": "wet"
+      },
       "reason": "The manufacturer's wet Beef and Veal product page identifies the 400g can and uses catalogue barcode 9310022067006 in its product image identifiers.",
-      "sources": ["https://www.mydog.com.au/our-products/classic-loaf/classic-loaf-with-tender-beef-and-veal"]
+      "sources": [
+        "https://www.mydog.com.au/our-products/classic-loaf/classic-loaf-with-tender-beef-and-veal"
+      ]
     },
     {
       "appId": 764,
-      "before": {"type": "dry", "foodType": "dry"},
-      "after": {"type": "Wet · 700g", "foodType": "wet"},
+      "before": {
+        "type": "dry",
+        "foodType": "dry"
+      },
+      "after": {
+        "type": "Wet \u00b7 700g",
+        "foodType": "wet"
+      },
       "reason": "The manufacturer's Beef, Pasta and Vegies Homestyle page associates barcode 9310022034404 with the wet 700g can. The separate 1.2kg variant is not used.",
-      "sources": ["https://www.pedigree.com.au/our-products/wet/pedigree-adult-wet-dog-food-beef-pasta-vegies-homestyle"]
+      "sources": [
+        "https://www.pedigree.com.au/our-products/wet/pedigree-adult-wet-dog-food-beef-pasta-vegies-homestyle"
+      ]
     },
     {
       "appId": 768,
-      "before": {"type": "dry", "foodType": "dry"},
-      "after": {"type": "Wet · 700g", "foodType": "wet"},
+      "before": {
+        "type": "dry",
+        "foodType": "dry"
+      },
+      "after": {
+        "type": "Wet \u00b7 700g",
+        "foodType": "wet"
+      },
       "reason": "The manufacturer's Puppy Mince Chicken and Rice page identifies wet 700g food and uses catalogue barcode 9310022037207 in its product image identifiers.",
-      "sources": ["https://www.pedigree.com.au/our-products/wet/pedigree-core-puppy-mince-chicken-rice"]
+      "sources": [
+        "https://www.pedigree.com.au/our-products/wet/pedigree-core-puppy-mince-chicken-rice"
+      ]
     },
     {
       "appId": 960,
-      "before": {"type": "dry", "petType": "dog", "foodType": "dry"},
-      "after": {"type": "Wet · 400g", "petType": "cat", "foodType": "wet"},
+      "before": {
+        "type": "dry",
+        "petType": "dog",
+        "foodType": "dry"
+      },
+      "after": {
+        "type": "Wet \u00b7 400g",
+        "petType": "cat",
+        "foodType": "wet"
+      },
       "reason": "The manufacturer's Adult Beef Mince page identifies wet cat food in a 400g can and uses catalogue barcode 9310022360800 in its product image identifiers.",
-      "sources": ["https://www.whiskas.com.au/our-products/wet/whiskas-1-years-adult-wet-cat-food-beef-mince-400g-can"]
+      "sources": [
+        "https://www.whiskas.com.au/our-products/wet/whiskas-1-years-adult-wet-cat-food-beef-mince-400g-can"
+      ]
+    },
+    {
+      "appId": 728,
+      "before": {
+        "type": "dry",
+        "foodType": "dry"
+      },
+      "after": {
+        "type": "Wet \u00b7 24 x 100g",
+        "foodType": "wet"
+      },
+      "reason": "The Australian manufacturer 24 x 100g Gourmet Beef page associates stored barcode9334214054964 with the wet multipack. Do not use single-tray nutrition for the outer pack. Ingredient evidence is recorded separately without scores.",
+      "sources": [
+        "https://www.mydog.com.au/our-menu/classic-loaf/classic-loaf-with-gourmet-beef-24x100g"
+      ]
+    },
+    {
+      "appId": 765,
+      "before": {
+        "barcode": "9310022018305"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "A barcode linked to a different beef product was removed. This lamb product's identity and pack are still being checked."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "reason": "The stored barcode belongs to the manufacturer Beef Vegies and Gravy Casserole1.2kg product, conflicting with this lamb record. Remove the association from the product, BARCODE_MAP and Collector known-barcode list. Preserve the lamb name and other unresolved fields; do not guess a replacement.",
+      "sources": [
+        "https://www.pedigree.com.au/our-products/wet/pedigree-adult-wet-dog-food-beef-vegies-gravy-casserole"
+      ]
+    }
+  ],
+  "collectorBarcodeRemovals": [
+    {
+      "barcode": "9334214018362",
+      "appId": 488,
+      "reason": "Extend the previous confirmed Dine/Pro Plan mismatch correction to the Collector known-barcode list."
+    },
+    {
+      "barcode": "9310022018305",
+      "appId": 765,
+      "reason": "The lamb record no longer has this beef-product barcode association."
     }
   ]
 }

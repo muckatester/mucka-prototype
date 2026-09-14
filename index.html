@@ -581,6 +581,12 @@ body::before {
 .catalogue-facts dd { margin: 0; text-align: right; overflow-wrap: anywhere; font-weight: 600; }
 .ingredient-names { padding-left: 20px; color: #34445a; font-size: 14px; line-height: 1.8; }
 .ingredient-text { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 14px; line-height: 1.8; }
+.catalogue-facts dt { flex: 0 0 35%; }
+.catalogue-facts dd { flex: 1; }
+.fact-attribution { display: block; font-size: 11px; font-weight: 400; line-height: 1.6; margin-top: 5px; }
+.evidence-source { color: #202c94; text-decoration: underline; overflow-wrap: anywhere; }
+.source-summary { margin-top: 18px; padding: 14px; border-radius: 10px; background: #eef4fa; font-size: 12px; line-height: 1.7; }
+.source-summary p { margin: 8px 0 0; }
 @media (max-width: 380px) { .assessment-badge { max-width: 62px; font-size: 9px; } }
 </style>
 </head>
@@ -650,7 +656,7 @@ body::before {
 
 
 
-  <div class="home-footer-stat" id="homeFooterStat">Products &middot; Made in Australia 🇦🇺</div>
+  <div class="home-footer-stat" id="homeFooterStat">Australian product catalogue</div>
 </div>
 
 <!-- CATEGORY BROWSE SCREEN -->
@@ -706,9 +712,10 @@ body::before {
   </div>
   <div id="detailProductImage" style="text-align:center; margin:12px 0; display:flex; flex-direction:column; align-items:center;"></div>
   <div class="section-card">
-    <h2>Catalogue details</h2>
+    <h2 id="catalogueDetailsTitle">Catalogue details</h2>
     <p class="evidence-note">Check these details against your pack. Catalogue entries are still being verified.</p>
     <dl class="catalogue-facts" id="catalogueFacts"></dl>
+    <div id="sourceEvidence"></div>
   </div>
 
   <div class="section-card">
@@ -1700,7 +1707,7 @@ const products = [
 {id:724,name:"Puppy Fresh Bowl",brand:"Lyka",score:50,credScore:20,imgBg:"#cccccc",imgText:"LYKA",imgAccent:"#999999",type:"fresh",petType:"dog",foodType:"fresh",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:725,name:"Roo Bites Training Treats",brand:"Lyka",score:50,credScore:20,imgBg:"#cccccc",imgText:"LYKA",imgAccent:"#999999",type:"treat",petType:"dog",foodType:"treat",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:727,barcode:"9310022067006",name:"Classic Loaf Beef & Veal",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"Wet · 400g",petType:"dog",foodType:"wet",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
-{id:728,barcode:"9334214054964",name:"Classic Loaf Gourmet Beef",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
+{id:728,barcode:"9334214054964",name:"Classic Loaf Gourmet Beef",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"Wet · 24 x 100g",petType:"dog",foodType:"wet",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:729,barcode:"9334214035789",name:"Fillets in Gravy Beef",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:730,barcode:"9334214035864",name:"Fillets in Gravy Chicken",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:731,name:"Home Delights Braised Beef",brand:"My Dog",score:50,credScore:20,imgBg:"#cccccc",imgText:"MY DOG",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
@@ -1733,7 +1740,7 @@ const products = [
 {id:762,barcode:"0064992284183",name:"Fit & Trim",brand:"Orijen",score:50,credScore:20,imgBg:"#cccccc",imgText:"ORIJEN",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:763,name:"Puppy Large Breed",brand:"Orijen",score:50,credScore:20,imgBg:"#cccccc",imgText:"ORIJEN",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:764,barcode:"9310022034404",name:"Adult Beef Pasta & Vegies Homestyle",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"Wet · 700g",petType:"dog",foodType:"wet",keyProtein:"Beef",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
-{id:765,barcode:"9310022018305",name:"Adult Lamb & Gravy Casserole",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Lamb",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
+{id:765,name:"Adult Lamb & Gravy Casserole",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Lamb",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[],needsReview:true,identityNotice:"A barcode linked to a different beef product was removed. This lamb product's identity and pack are still being checked."},
 {id:766,barcode:"122914000152",name:"Dentastix Chewy Chunx Small/Medium Dog",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:767,barcode:"9334214022871",name:"Dentastix Daily Oral Care Small",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"dry",petType:"dog",foodType:"dry",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
 {id:768,barcode:"9310022037207",name:"Puppy Minced Chicken & Rice",brand:"Pedigree",score:50,credScore:20,imgBg:"#cccccc",imgText:"PEDIGREE",imgAccent:"#999999",type:"Wet · 700g",petType:"dog",foodType:"wet",keyProtein:"Chicken",vetNutritionist:false,feedingTrials:false,wsava:false,recalls:"",ingredients:[]},
@@ -2441,7 +2448,6 @@ var BARCODE_MAP = {
   '9319185724580': 755,
   '0064992284183': 762,
   '9310022034404': 764,
-  '9310022018305': 765,
   '122914000152': 766,
   '9334214022871': 767,
   '9310022037207': 768,
@@ -2684,6 +2690,681 @@ function recalculateScore(product) {
 }
 products.forEach(recalculateScore);
 
+// Generated from data/starter-catalogue-v1.json; keep in sync with the regression check.
+var starterCatalogue = {
+  "schemaVersion": "1.0.0",
+  "checkedAt": "2026-09-14",
+  "assessmentRulesVersion": "1.0",
+  "description": "Selected product facts checked against Australian manufacturer sources. This is not a nutritional ranking or an independent assessment.",
+  "records": [
+    {
+      "appId": 727,
+      "checkedAt": "2026-09-14",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "My Dog",
+        "name": "Classic Loaf Beef & Veal",
+        "barcode": "9310022067006",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 400g"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_asset_identifier",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "The Australian manufacturer page links this recipe and pack variant to the catalogue barcode in its image identifiers. Printed barcode digits have not been read for this record."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.mydog.com.au/our-products/classic-loaf/classic-loaf-with-tender-beef-and-veal",
+          "label": "Product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-14",
+          "observation": "The Australian manufacturer page links this recipe and pack variant to the catalogue barcode in its image identifiers. Printed barcode digits have not been read for this record."
+        },
+        {
+          "id": "pack",
+          "url": "https://www.mydog.com.au/cdn-cgi/image/width%3D472%2Cheight%3D472%2Cf%3Dauto%2Cquality%3D90/sites/g/files/fnmzdf8796/files/2026-04/large_9310022067006_Transition.png",
+          "label": "Pack image",
+          "kind": "manufacturer_pack_image",
+          "checkedAt": "2026-09-14",
+          "observation": "Root viewed transition artwork showing Beef & Veal 400 g can; printed barcode was not readable."
+        },
+        {
+          "id": "claim",
+          "url": "https://www.mydog.com.au/cdn-cgi/image/width%3D472%2Cheight%3D472%2Cf%3Dauto%2Cquality%3D90/sites/g/files/fnmzdf8796/files/2026-04/large_9310022067006_claims.png",
+          "label": "Manufacturer claim image",
+          "kind": "manufacturer_claim_image",
+          "checkedAt": "2026-09-14",
+          "observation": "Root visually read the complete-and-balanced claim in the product-linked image."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Wet",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "400 g can",
+          "sourceIds": [
+            "page",
+            "pack"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "source_checked",
+          "value": "9310022067006 — manufacturer website association; individual/outer package level not confirmed",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "lifeStage": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No explicit life-stage designation located in the inspected source."
+        },
+        "feedingPurpose": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Feeding use has not been separately classified. An adequacy claim is recorded independently."
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "Lovingly created to be 100% complete and balanced.",
+          "sourceIds": [
+            "claim"
+          ],
+          "note": "Manufacturer claim; life stage and substantiation protocol not stated in this image."
+        },
+        "adequacyMethod": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific substantiation method located in the inspected sources."
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "Calculated metabolisable energy: 68 kcal/100 g. As-fed/dry-matter basis not stated.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Source-reported value only; no conversion or comparison."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning has not been checked; no suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Meats (including Chicken &/or Beef &/or Veal &/or Sheep &/or Pork &/or Turkey &/or Kangaroo); Gelling Agents; Vegetable Fibre; Minerals & Vitamins; Colouring Agents.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer webpage transcription; not a physical-pack inspection."
+        }
+      },
+      "limitations": [
+        "Check your current pack for recipe changes.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Catalogue photos have not been verified and may show another pack configuration."
+      ]
+    },
+    {
+      "appId": 728,
+      "checkedAt": "2026-09-14",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "My Dog",
+        "name": "Classic Loaf Gourmet Beef",
+        "barcode": "9334214054964",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 24 x 100g"
+      },
+      "identityEvidence": {
+        "kind": "printed_barcode_in_manufacturer_image",
+        "sourceIds": [
+          "page",
+          "label"
+        ],
+        "note": "Barcode 9334214054964 is readable in the label image linked from the manufacturer 24 x 100 g Gourmet Beef page. Do not reuse it as an individually verified 100 g-tray barcode."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.mydog.com.au/our-menu/classic-loaf/classic-loaf-with-gourmet-beef-24x100g",
+          "label": "Product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-14",
+          "observation": "The Australian manufacturer page links this recipe and pack variant to the catalogue barcode in its image identifiers. Printed barcode digits have not been read for this record."
+        },
+        {
+          "id": "label",
+          "url": "https://www.mydog.com.au/cdn-cgi/image/width%3D472%2Cheight%3D472%2Cf%3Dauto%2Cquality%3D90/sites/g/files/fnmzdf8796/files/2026-04/large_9334214054964_c7n1_1642090010574_0.png",
+          "label": "Published label image",
+          "kind": "manufacturer_pack_image",
+          "checkedAt": "2026-09-14",
+          "observation": "Root visually read barcode 9334214054964, Gourmet Beef wording, complete-and-balanced claim, AAFCO adult-maintenance statement and label energy 80 kcal/100 g. The linked page reports 68 kcal/100 g."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Wet",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "24 x 100 g trays",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "source_checked",
+          "value": "9334214054964 — printed on the label linked to the 24 x 100 g page; individual-tray barcode not verified",
+          "sourceIds": [
+            "label",
+            "page"
+          ],
+          "note": ""
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Adult maintenance (manufacturer label statement)",
+          "sourceIds": [
+            "label"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Feeding use has not been separately classified. An adequacy claim is recorded independently."
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "MY DOG wet dog food is formulated to meet the nutritional levels established by AAFCO for Adult Dog Maintenance.",
+          "sourceIds": [
+            "label"
+          ],
+          "note": "Trademark symbol omitted; manufacturer claim, not independent certification."
+        },
+        "adequacyMethod": {
+          "status": "source_checked",
+          "value": "Formulation statement referring to AAFCO adult dog maintenance; no feeding-test claim verified.",
+          "sourceIds": [
+            "label"
+          ],
+          "note": ""
+        },
+        "energy": {
+          "status": "conflict",
+          "value": null,
+          "sourceIds": [
+            "page",
+            "label"
+          ],
+          "note": "The linked label and webpage report different energy values. Withheld until the applicable recipe/version is resolved."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning has not been checked; no suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Meats (including Chicken &/or Beef &/or Pork &/or Sheep &/or Turkey); Gelling Agents; Vegetable Oil; Colouring Agents; Minerals & Vitamins.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer webpage transcription; not a physical-pack inspection."
+        }
+      },
+      "limitations": [
+        "Check your current pack for recipe changes.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "The webpage and linked label differ on nutrient values; nutrient comparisons are withheld. Ingredient wording agrees in the inspected sources.",
+        "Catalogue photos have not been verified and may show another pack configuration."
+      ]
+    },
+    {
+      "appId": 764,
+      "checkedAt": "2026-09-14",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Pedigree",
+        "name": "Adult Beef Pasta & Vegies Homestyle",
+        "barcode": "9310022034404",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 700g"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_asset_identifier",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Name, species, wet form, 700 g-can section and catalogue barcode as website image identifier agree. This is narrower than printed-barcode or formulation verification."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.pedigree.com.au/our-products/wet/pedigree-adult-wet-dog-food-beef-pasta-vegies-homestyle",
+          "label": "Product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-14",
+          "observation": "Name, species, wet form, 700 g-can section and catalogue barcode as website image identifier agree. This is narrower than printed-barcode or formulation verification."
+        },
+        {
+          "id": "ingredients",
+          "url": "https://www.pedigree.com.au/sites/g/files/fnmzdf8421/files/2025-10/9310022034404_8_PEDIGREE_Adult_Wet_Dog_Food_with_Beef__Pasta_Vegies_Homestyle_700g_Can.png",
+          "label": "Ingredient image",
+          "kind": "manufacturer_ingredient_image",
+          "checkedAt": "2026-09-14",
+          "observation": "Root visually read the full 4800 x 4800 image in a browser after the research agent could not access image content. All ingredient wording and qualifiers match the earlier candidate transcription."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Wet",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "700 g can",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "source_checked",
+          "value": "9310022034404 — manufacturer 700 g-can image association; printed digits and outer code not verified",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Adult dogs",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Feeding use has not been separately classified. An adequacy claim is recorded independently."
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "100% complete and balanced food for adult dogs",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer statement; no AAFCO protocol located."
+        },
+        "adequacyMethod": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific substantiation method located in the inspected sources."
+        },
+        "energy": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Energy has not been checked against an unambiguous source for this pack."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning has not been checked; no suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Meat (including Chicken &/or Beef &/or Sheep &/or Pork), Vegetables, Binders (including Cereal Protein &/or Pork &/or Beef &/or Sheep), Pasta, Plant Fibre, Gelling Agents, Vegetable Oil, Vitamins & Minerals, Colouring Agents.",
+          "sourceIds": [
+            "ingredients"
+          ],
+          "note": "Full manufacturer ingredient graphic visually read by root; not a physical-pack inspection."
+        }
+      },
+      "limitations": [
+        "Check your current pack for recipe changes.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Catalogue photos have not been verified and may show another pack configuration."
+      ]
+    },
+    {
+      "appId": 768,
+      "checkedAt": "2026-09-14",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Pedigree",
+        "name": "Puppy Minced Chicken & Rice",
+        "barcode": "9310022037207",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 700g"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_asset_identifier",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Species, puppy designation, wet form, 700 g pack and barcode as website image identifier agree. Printed barcode and exact formulation were not independently checked."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.pedigree.com.au/our-products/wet/pedigree-core-puppy-mince-chicken-rice",
+          "label": "Product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-14",
+          "observation": "Species, puppy designation, wet form, 700 g pack and barcode as website image identifier agree. Printed barcode and exact formulation were not independently checked."
+        },
+        {
+          "id": "ingredients",
+          "url": "https://www.pedigree.com.au/sites/g/files/fnmzdf8421/files/2025-10/9310022037207_8_PEDIGREE_Puppy_Wet_Dog_Food_with_Chicken___Rice_Mince_700g_Can.png",
+          "label": "Ingredient image",
+          "kind": "manufacturer_ingredient_image",
+          "checkedAt": "2026-09-14",
+          "observation": "Root visually read the full 4800 x 4800 image in a browser after the research agent could not access image content. All ingredient wording and qualifiers match the earlier candidate transcription."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Wet",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "700 g can",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "source_checked",
+          "value": "9310022037207 — manufacturer 700 g-can image association; printed digits and outer code not verified",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Puppy",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Feeding use has not been separately classified. An adequacy claim is recorded independently."
+        },
+        "adequacyStatement": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No explicit adequacy statement located in the inspected sources."
+        },
+        "adequacyMethod": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific substantiation method located in the inspected sources."
+        },
+        "energy": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Energy has not been checked against an unambiguous source for this pack."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning has not been checked; no suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Meat (including Chicken &/or Beef &/or Sheep &/or Pork), Wholegrain Cereal, Plant Fibre, Gelling Agents, Vegetable Oil, Vitamins & Minerals, Colouring Agent.",
+          "sourceIds": [
+            "ingredients"
+          ],
+          "note": "Full manufacturer ingredient graphic visually read by root; not a physical-pack inspection."
+        }
+      },
+      "limitations": [
+        "Check your current pack for recipe changes.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Catalogue photos have not been verified and may show another pack configuration."
+      ]
+    },
+    {
+      "appId": 960,
+      "checkedAt": "2026-09-14",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Whiskas",
+        "name": "Adult Beef Mince Can",
+        "barcode": "9310022360800",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 400g"
+      },
+      "identityEvidence": {
+        "kind": "printed_barcode_in_manufacturer_image",
+        "sourceIds": [
+          "page",
+          "pack"
+        ],
+        "note": "Root visually read barcode 9310022360800 and 400 g on the manufacturer back-of-pack image; recipe, adult-cat identity and wet form agree with the Australian page."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.whiskas.com.au/our-products/wet/whiskas-1-years-adult-wet-cat-food-beef-mince-400g-can",
+          "label": "Product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-14",
+          "observation": "Root visually read barcode 9310022360800 and 400 g on the manufacturer back-of-pack image; recipe, adult-cat identity and wet form agree with the Australian page."
+        },
+        {
+          "id": "pack",
+          "url": "https://www.whiskas.com.au/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf8856/files/2026-04/9310022360800_BOP.png",
+          "label": "Pack image",
+          "kind": "manufacturer_pack_image",
+          "checkedAt": "2026-09-14",
+          "observation": "Rendered 600 px image in browser; visible barcode 9310022360800, 400 g, Beef Mince, 1+ Years, Complete & Balanced. This is an online pack image, not the user's packet."
+        },
+        {
+          "id": "energy",
+          "url": "https://www.whiskas.com.au/sites/g/files/fnmzdf8856/files/2026-04/beef_mince_nutrition.jpg",
+          "label": "Nutrient image",
+          "kind": "manufacturer_nutrient_image",
+          "checkedAt": "2026-09-14",
+          "observation": "Rendered 600 px nutrient image linked directly from this product page"
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Cat",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Wet",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "400 g can",
+          "sourceIds": [
+            "page",
+            "pack"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "source_checked",
+          "value": "9310022360800 — printed on the individual 400 g can",
+          "sourceIds": [
+            "pack"
+          ],
+          "note": ""
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Adult cats (1+ years); adult maintenance statement",
+          "sourceIds": [
+            "page",
+            "pack"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Feeding use has not been separately classified. An adequacy claim is recorded independently."
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "This product is formulated to meet the nutritional levels established by the AAFCO Cat Food Nutrient Profiles for Adult Maintenance.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer formulation claim; not independent certification."
+        },
+        "adequacyMethod": {
+          "status": "source_checked",
+          "value": "Formulated to AAFCO Cat Food Nutrient Profiles for adult maintenance; no feeding-test claim.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "Predicted metabolisable energy: 70 kcal/100 g. As-fed/dry-matter basis not stated.",
+          "sourceIds": [
+            "energy"
+          ],
+          "note": "Source-reported value only; no conversion or comparison."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning has not been checked; no suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Meats (including Chicken &/or Beef &/or Sheep &/or Pork); Binders (including Beef &/or Sheep &/or Pork &/or Cereal); Gelling Agents; Thickener; Flavours; Vitamins & Minerals; Colouring Agents; Taurine.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full webpage transcription; not transcribed from the curved pack photograph."
+        }
+      },
+      "limitations": [
+        "Check your current pack for recipe changes.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Catalogue photos have not been verified and may show another pack configuration."
+      ]
+    }
+  ]
+};
+
 // === APP STATE ===
 var favourites = [];
 var scannedCount = 0;
@@ -2717,10 +3398,79 @@ function escapeHtml(value) {
   });
 }
 
+function getProductEvidence(product) {
+  if (!starterCatalogue || starterCatalogue.schemaVersion !== '1.0.0') return null;
+  var record = starterCatalogue.records.find(function(entry) { return entry.appId === product.id; });
+  if (!record || !record.catalogueIdentity || !record.fields || !Array.isArray(record.sources)) return null;
+  var keys = ['brand', 'name', 'barcode', 'petType', 'foodType', 'type'];
+  return keys.every(function(key) { return record.catalogueIdentity[key] === product[key]; }) ? record : null;
+}
+
+function getEvidenceLinks(record, sourceIds) {
+  return (sourceIds || []).map(function(id) {
+    var source = record.sources.find(function(entry) { return entry.id === id; });
+    if (!source || !/^https:\/\//i.test(source.url)) return '';
+    return '<a class="evidence-source" href="' + escapeHtml(source.url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(source.label) + '</a>';
+  }).filter(Boolean).join(' · ');
+}
+
+function getEvidenceFieldHtml(record, key) {
+  var field = record.fields[key];
+  if (!field) return 'Not checked';
+  var links = getEvidenceLinks(record, field.sourceIds);
+  if (field.status === 'source_checked' && field.value && links) {
+    return escapeHtml(field.value) + '<small class="fact-attribution">Manufacturer source · ' + links + '</small>';
+  }
+  var label = field.status === 'conflict' ? 'Conflicting information' : field.status === 'not_applicable' ? 'Not applicable' : 'Unknown';
+  return label + (field.note ? '<small class="fact-attribution">' + escapeHtml(field.note) + '</small>' : '') + (links ? '<small class="fact-attribution">' + links + '</small>' : '');
+}
+
+function getProductFactsHtml(product) {
+  var evidence = getProductEvidence(product);
+  if (evidence) {
+    var rows = [['Species', 'species'], ['Food form', 'foodForm'], ['Pack size', 'packSize'],
+      ['Barcode and pack', 'barcode'], ['Life stage', 'lifeStage'], ['Feeding purpose', 'feedingPurpose'],
+      ['Nutritional adequacy claim', 'adequacyStatement'], ['Substantiation stated', 'adequacyMethod'],
+      ['Energy as stated', 'energy'], ['Therapeutic use', 'therapeuticUse']];
+    return rows.map(function(row) {
+      return '<div><dt>' + escapeHtml(row[0]) + '</dt><dd>' + getEvidenceFieldHtml(evidence, row[1]) + '</dd></div>';
+    }).join('');
+  }
+  var facts = [
+    ['Species in catalogue', product.petType === 'dog' ? 'Dog' : product.petType === 'cat' ? 'Cat' : 'Not recorded'],
+    ['Food form in catalogue', product.foodType || 'Not recorded'],
+    ['Barcode in catalogue', product.barcode || 'Not recorded'],
+    ['Life stage', 'Not verified'], ['Feeding purpose', 'Not verified'], ['Nutritional adequacy', 'Not verified']
+  ];
+  return facts.map(function(row) {
+    return '<div><dt>' + escapeHtml(row[0]) + '</dt><dd>' + escapeHtml(row[1]) + '</dd></div>';
+  }).join('');
+}
+
+function getEvidenceSummaryHtml(product) {
+  var record = getProductEvidence(product);
+  if (!record) return '';
+  return '<div class="source-summary"><strong>Sources checked online · ' + escapeHtml(record.checkedAt) + '</strong>' +
+    '<p>' + escapeHtml(record.identityEvidence.note) + '</p>' +
+    '<p>These checks confirm what the sources say. They are not a health rating, an independent nutritional assessment or a physical scan of your pack.</p>' +
+    '<p>' + record.limitations.map(escapeHtml).join(' ') + '</p></div>';
+}
+
 function getIngredientListHtml(product) {
   if (product._userIngredientText) {
     return '<p class="evidence-note">You supplied this text. It has not been verified against the pack.</p>' +
       '<p class="ingredient-text">' + escapeHtml(product._userIngredientText) + '</p>';
+  }
+  var record = getProductEvidence(product);
+  if (record) {
+    var field = record.fields.ingredients;
+    var links = field && getEvidenceLinks(record, field.sourceIds);
+    if (field && field.status === 'source_checked' && field.value && links) {
+      return '<p class="evidence-note">Full ingredient text from the cited manufacturer source, checked ' + escapeHtml(record.checkedAt) + '. Check your pack for recipe changes.</p>' +
+        '<p class="ingredient-text">' + escapeHtml(field.value) + '</p>' +
+        '<p class="evidence-note">' + links + '</p>';
+    }
+    if (field && field.status === 'conflict') return '<p class="evidence-note">Ingredient sources conflict. ' + escapeHtml(field.note || 'The list is withheld until the recipe is resolved.') + '</p>';
   }
   var entries = product.ingredients || [];
   if (!entries.length) return '<p class="evidence-note">Ingredient information has not been added yet.</p>';
@@ -2874,6 +3624,9 @@ function showProduct(id) {
   document.getElementById('detailTitle').textContent = currentProduct.brand;
   document.getElementById('detailBrand').textContent = currentProduct.name + ' \u00B7 ' + currentProduct.type;
   var productImageHtml = getProductImage(currentProduct, 110);
+  if (getProductEvidence(currentProduct) && productHasImage(currentProduct)) {
+    productImageHtml += '<p class="evidence-note">Catalogue photo — pack configuration has not been verified.</p>';
+  }
   if (!productHasImage(currentProduct)) {
     productImageHtml += '<div style="text-align:center;"><button class="add-photo-btn" onclick="openMuckaCollector(currentProduct.barcode)"><span>&#128247;</span> Open Collector for photos</button></div>';
   }
@@ -2895,20 +3648,13 @@ function showProduct(id) {
   document.getElementById('assessmentNotice').textContent = currentProduct.identityNotice ||
     'Health ratings are paused while we review our assessment method. This is not a judgement about this food.';
   var p = currentProduct;
-  var facts = [
-    ['Species in catalogue', p.petType === 'dog' ? 'Dog' : p.petType === 'cat' ? 'Cat' : 'Not recorded'],
-    ['Food form in catalogue', p.foodType || 'Not recorded'],
-    ['Barcode in catalogue', p.barcode || 'Not recorded'],
-    ['Life stage', 'Not verified'],
-    ['Feeding purpose', 'Not verified'],
-    ['Nutritional adequacy', 'Not verified']
-  ];
-  document.getElementById('catalogueFacts').innerHTML = facts.map(function(row) {
-    return '<div><dt>' + escapeHtml(row[0]) + '</dt><dd>' + escapeHtml(row[1]) + '</dd></div>';
-  }).join('');
+  var evidence = getProductEvidence(p);
+  document.getElementById('catalogueDetailsTitle').textContent = evidence ? 'Source-checked details' : 'Catalogue details';
+  document.getElementById('catalogueFacts').innerHTML = getProductFactsHtml(p);
+  document.getElementById('sourceEvidence').innerHTML = getEvidenceSummaryHtml(p);
   document.getElementById('ingredientList').innerHTML = getIngredientListHtml(p);
   document.getElementById('credList').innerHTML =
-    '<p class="evidence-note">We still need sourced evidence for nutritional adequacy for this product, manufacturer expertise, quality controls and recall history. A missing record does not mean a food has failed a nutritional requirement.</p>' +
+    (evidence ? '<p class="evidence-note">Manufacturer expertise, quality controls and recall history have not been checked for this record. No individual dietary suitability has been assessed.</p>' : '<p class="evidence-note">We still need sourced evidence for nutritional adequacy for this product, manufacturer expertise, quality controls and recall history. A missing record does not mean a food has failed a nutritional requirement.</p>') +
     '<p class="evidence-note">Treats, supplements and therapeutic foods need their own context. Check the intended use on the pack and follow advice from your vet for a therapeutic diet.</p>';
 
   renderBuyLinks(currentProduct);
@@ -3303,6 +4049,7 @@ var catIcons = {
 
 var homeCategories = [
   { id: 'all-products', icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>', name: 'All products', match: function(){ return true; } },
+  { id: 'starter-catalogue', icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 3h16v18H4zM8 7h8M8 12h8M8 17h4"/></svg>', name: 'Starter catalogue', match: function(p){ return !!getProductEvidence(p); } },
   { id: 'dog-kibble',  icon: catIcons['dog-kibble'],  name: 'Dog Kibble',    match: function(p){ return p.petType==='dog' && p.foodType==='dry'; } },
   { id: 'dog-wet',     icon: catIcons['dog-wet'],      name: 'Dog Canned Food',  match: function(p){ return p.petType==='dog' && (p.foodType==='wet' || p.foodType==='canned'); } },
   { id: 'dog-rolls',   icon: catIcons['dog-rolls'],    name: 'Dog Rolls',     match: function(p){ return p.petType==='dog' && p.foodType==='roll'; } },
@@ -3318,7 +4065,7 @@ function renderCategoryGrid() {
   if (!grid) return;
   grid.innerHTML = homeCategories.map(function(cat) {
     var count = products.filter(cat.match).length;
-    return '<button class="category-card'+(cat.id === 'all-products' ? ' category-all' : '')+'" onclick="handleCategoryClick(\''+cat.id+'\')">' +
+    return '<button class="category-card'+(cat.id === 'all-products' || cat.id === 'starter-catalogue' ? ' category-all' : '')+'" onclick="handleCategoryClick(\''+cat.id+'\')">' +
              '<div class="cat-icon">'+cat.icon+'</div>' +
              '<div class="cat-name">'+cat.name+'</div>' +
              '<div class="cat-count">'+count+' product'+(count!==1?'s':'')+'</div>' +
@@ -3329,7 +4076,7 @@ function renderCategoryGrid() {
     if (input) input.placeholder = 'Search ' + products.length + ' products...';
   });
   var footer = document.getElementById('homeFooterStat');
-  if (footer) footer.innerHTML = products.length + '+ products &middot; Made in Australia \uD83C\uDDE6\uD83C\uDDFA';
+  if (footer) footer.innerHTML = products.length + ' product listings &middot; Check your pack';
 }
 
 var currentCategoryId = null;
@@ -3526,6 +4273,7 @@ try {
       <h3>What still needs checking</h3>
       <p>Product identity, full ingredient labels, nutritional adequacy, life stage, feeding purpose and manufacturer evidence. Missing information stays unknown.</p>
       <p>Treats, supplements and therapeutic diets will be considered separately. Mucka does not currently recommend which diet is suitable for your pet.</p>
+      <p>The Starter catalogue shows selected facts checked against manufacturer sources, with links and dates. Unknown fields stay unknown. Source checks do not establish a health rating.</p>
     </div>
     <button class="modal-close-btn" onclick="closeScoringModal()">Got it</button>
   </div>

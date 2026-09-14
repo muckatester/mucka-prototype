@@ -38,11 +38,12 @@ test('All 1,080 detail views show neutral assessment and facts without ratings o
     c.showProduct(p.id);
     assert.equal(element('assessmentStatus').textContent, 'Assessment under review');
     assert.match(element('catalogueFacts').innerHTML, /Nutritional adequacy/);
-    assert.match(element('catalogueFacts').innerHTML, /Not verified/);
-    assert.match(element('credList').innerHTML, /need sourced evidence/);
+    const evidence = c.getProductEvidence(p);
+    assert.match(element('catalogueFacts').innerHTML, evidence ? /Unknown/ : /Not verified/);
+    assert.match(element('credList').innerHTML, evidence ? /have not been checked/ : /need sourced evidence/);
     assert.doesNotMatch(element('credList').innerHTML, /(?:>Yes<|>No<|\bpts\b|cred-check|cred-cross)/);
     const ingredients = element('ingredientList').innerHTML;
-    assert.match(ingredients, p.ingredients?.length ? /not yet been verified/ : /not been added/);
+    assert.match(ingredients, evidence ? /Full ingredient text from the cited manufacturer source/ : p.ingredients?.length ? /not yet been verified/ : /not been added/);
     assert.doesNotMatch(ingredients, /ingredient-(?:good|ok|bad)|\brating[=:]|\bpts\b/);
   }
   assert.equal(timers.size, 0, 'Opening details schedules no score animations');

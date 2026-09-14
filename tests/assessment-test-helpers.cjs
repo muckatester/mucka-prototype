@@ -35,9 +35,9 @@ function setup() {
     currentPage: 1, currentFilter: 'all',
   });
   vm.runInContext('var products = ' + productsLiteral(html) + ';' +
-    html.match(/var homeCategories = \[[\s\S]*?\n];/)[0] + html.match(/var perPage = \d+;/)[0], c);
+    html.match(/var starterCatalogue = [\s\S]*?;\n/)[0] + html.match(/var homeCategories = \[[\s\S]*?\n];/)[0] + html.match(/var perPage = \d+;/)[0], c);
   for (const name of ['recalculateScore', 'hasScoreData', 'getScoreBadge', 'compareProductScores',
-    'escapeHtml', 'getIngredientListHtml', 'getFoodSVGIcon', 'adjustColor', 'getProductPlaceholder',
+    'escapeHtml', 'getProductEvidence', 'getEvidenceLinks', 'getEvidenceFieldHtml', 'getProductFactsHtml', 'getEvidenceSummaryHtml', 'getIngredientListHtml', 'getFoodSVGIcon', 'adjustColor', 'getProductPlaceholder',
     'getProductImage', 'productHasImage', 'showProduct', 'renderPage', 'renderCategoryPage',
     'renderFavourites', 'runOverlaySearch', 'applyFilters', 'getRecommendations', 'renderCategoryGrid',
     'handleCategoryClick', 'gotoCategoryPage', 'scoreNewProduct']) vm.runInContext(fn(name), c);
