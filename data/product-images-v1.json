@@ -26,6 +26,72 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 35,
+      "identity": {
+        "brand": "Orijen",
+        "name": "Original High Protein",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 2kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-35-root_brands.jpg",
+      "sourcePage": "https://www.petso.com.au/products/orijen-original-biologically-appropriate-dry-dog-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0511/4685/0467/products/ORI3452.jpg?v=1681461328",
+      "sourceKind": "retailer",
+      "shownPack": "2kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Orijen Original, dog, net4.5lb/2kg clearly visible; Petso exact2kg variant binds this photograph. Photo does not verify barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "5271b22d8cdfc753eec57f37621c1604e6d4405c93eb08c092929a3629b411cc",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 40,
+      "identity": {
+        "brand": "Acana",
+        "name": "Red Meat Recipe",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 2kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-40-root_brands.png",
+      "sourcePage": "https://petrepublic.gt/products/acana-red-meat-recipe-para-perros-2kg-4-5lbs",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0681/7565/9174/files/ACANA_Dog_Red_Meat_Recipe_Front_4.5lb_USA.png?v=1780446231",
+      "sourceKind": "retailer",
+      "shownPack": "4.5lb / 2kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Unchanged retailer photo visibly says ACANA Red Meat Recipe for dogs and 4.5lb / 2kg. It is the grain-free Red Meat recipe, not Classics or Wholesome Grains. Manufacturer recipe page also lists 2kg. Regional US packaging does not verify Australian distribution.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "44628d41dd54f9e5a15212c0c8fe4d832d1bf6081351d58872899b274d5e9e07",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 42,
+      "identity": {
+        "brand": "Acana",
+        "name": "Pacifica",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 2kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-42-root_brands.webp",
+      "sourcePage": "https://acana.net/products/pacifica",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0713/6873/7062/files/nscanadaemeaapacacanahighestproteinpacificadogfrontright2kg_1_1x_93fb03fb-032f-465a-b824-ea1536c2f6cd.webp?v=1780034688",
+      "sourceKind": "retailer",
+      "shownPack": "2kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Recipe, species and printed weight checked against the unchanged source photo and the regional distributor variant association. Regional packaging does not verify Australian availability or barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "478bfa8e24e32ea6e51d4114c711d4aad07931781e6f72a91ca4fcd7abf82641",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 45,
       "identity": {
         "brand": "Ziwi Peak",
@@ -158,6 +224,28 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 82,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Adult Real Beef",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-82-mars_purina.png",
+      "sourcePage": "https://www.pedigree.com.au/our-products/dry/pedigree-adult-dry-dog-food-real-beef",
+      "imageUrl": "https://www.pedigree.com.au/sites/g/files/fnmzdf8421/files/2026-02/9310022161308_1_PEDIGREE_Adult_Dry_Dog_Food_with_Real_Beef_3kg.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "3kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer recipe page includes original front visibly printed Adult with Real Beef, dog,3kg.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "17dabe19971ed26d5f2f70a9d97931de25830c29b2f8055891359c1e1ed7f9f2",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 83,
       "identity": {
         "brand": "Pedigree",
@@ -224,6 +312,28 @@
       "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
+      "appId": 93,
+      "identity": {
+        "brand": "Optimum",
+        "name": "Adult All Breed Chicken Veg & Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-93-mars_purina.jpg",
+      "sourcePage": "https://www.vetsupply.com.au/dog-food/optimum-adult-dog-food-with-chicken-vegetable-and-rice/pet-foods-1519.aspx",
+      "imageUrl": "https://www.vetsupply.com.au/images/productimagesnew/Optimum-adult-dog-3kg_11082024_193220.jpg",
+      "sourceKind": "retailer",
+      "shownPack": "3 kg bag",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Viewed retailer original: Optimum Adult 1–7 All Breeds Chicken, Vegetable & Rice dog food, 3 kg. Exact recipe, species, dry form and known catalogue pack match. Manufacturer request was blocked; Coles corroborates exact 3 kg product.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "f5c6e502b2603260ce0f97bd616d8a0554a518226a5e52dfc241b078c8dd5f97",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 101,
       "identity": {
         "brand": "Kirkland (Costco)",
@@ -246,6 +356,28 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 114,
+      "identity": {
+        "brand": "Wellness",
+        "name": "CORE Grain Free Reduced Fat",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 1.81kg",
+        "barcode": "9339687386277"
+      },
+      "localPath": "assets/product-images/batch250-114-root_brands.png",
+      "sourcePage": "https://www.wellnesspetfood.co.th/product/core-reduced-fat-reduced-fat/",
+      "imageUrl": "https://www.wellnesspetfood.co.th/wp-content/uploads/2020/12/DD-Healthy-Weight-4lb_front.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "4 lb (front rounds to 1.8 kg; manufacturer page specifies 1.81 kg)",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer Reduced Fat product page explicitly offers 4 lb (1.81 kg). Viewed manufacturer pack-change panel shows Reduced Fat → Healthy Weight, same great nutrition. Current photo visibly reads Wellness CORE Healthy Weight, Deboned Turkey, Turkey Meal & Chicken Meal Recipe, adult dogs, grain free, 4 LBS (1.8 kg).",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "bfc16527552c292d77131a72bb827281fa95948f591e194cbb86bf70ad0966f7",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 117,
       "identity": {
         "brand": "Blue Buffalo",
@@ -266,6 +398,182 @@
       "checkedDate": "2026-09-14",
       "sha256": "57c32746f8b50dbde14272ede5bbf039f7c11be78ff327fb14aa44be0c6a0ffc",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 128,
+      "identity": {
+        "brand": "Black Hawk",
+        "name": "Grain Free Adult Beef Wet",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 100g tray",
+        "barcode": "9319185002817"
+      },
+      "localPath": "assets/product-images/batch250-128-australian_premium.png",
+      "sourcePage": "https://www.blackhawkpetcare.com/en/products/dog/grain-free-wet-dog-food-tray-beef/",
+      "imageUrl": "https://www.blackhawkpetcare.com/media/rygi11pp/bhc100-black-hawk-grain-free-dog-wet-beef-100g-front-hr-1926x1926-ce407a0.png?rmode=max&width=1926&v=1d98164cb8e8cd0",
+      "sourceKind": "manufacturer",
+      "shownPack": "100g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page identifies recipe, species, form and exact pack; downloaded original photo visually checked. Black Hawk grain free Beef, dog tray,100g.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "cbe91fba88e92cdaedb0a55957afab3e327a7350aa1eec0281ac0494c79f3251",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 129,
+      "identity": {
+        "brand": "Black Hawk",
+        "name": "Grain Free Adult Chicken Wet",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 100g tray",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-129-australian_premium.png",
+      "sourcePage": "https://www.blackhawkpetcare.com/en/products/dog/grain-free-wet-dog-food-tray-chicken/",
+      "imageUrl": "https://www.blackhawkpetcare.com/media/ooijki5d/bhc101-black-hawk-grain-free-dog-wet-chicken-100g-front-hr-1926x1926-ce407a0.png?rmode=max&width=1926&v=1d981647e1e54d0",
+      "sourceKind": "manufacturer",
+      "shownPack": "100g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page identifies recipe, species, form and exact pack; downloaded original photo visually checked. Black Hawk grain free Chicken, dog tray,100g.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "52226a20c00ec737201680de8c905cd6f2edaf2515f3f23ffdbdd6592ad3507a",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 130,
+      "identity": {
+        "brand": "Black Hawk",
+        "name": "Grain Free Adult Lamb Wet",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 100g tray",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-130-australian_premium.png",
+      "sourcePage": "https://www.blackhawkpetcare.com/en/products/dog/grain-free-wet-dog-food-tray-lamb/",
+      "imageUrl": "https://www.blackhawkpetcare.com/media/1wej2m0f/bhc102-black-hawk-grain-free-dog-wet-lamb-100g-front-hr-1926x1926-ce407a0.png?rmode=max&width=1926&v=1d981644a5a87e0",
+      "sourceKind": "manufacturer",
+      "shownPack": "100g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page identifies recipe, species, form and exact pack; downloaded original photo visually checked. Black Hawk grain free Lamb, dog tray,100g.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "ae68766b57b00d046950fff0534862bc5a7d59f8b0f22ee3131ee3e472cad9e9",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 131,
+      "identity": {
+        "brand": "Black Hawk",
+        "name": "Puppy Lamb & Veg Wet",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 85g",
+        "barcode": "9339687428311"
+      },
+      "localPath": "assets/product-images/batch250-131-australian_premium.jpg",
+      "sourcePage": "https://www.blackhawkpetcare.com/en/products/dog/original-wet-puppy-food-lamb-vegetables/",
+      "imageUrl": "https://www.blackhawkpetcare.com/media/jjrdctul/bhc103-black-hawk-original-puppy-lamb-front-85g-1926x1926.jpg?rmode=max&width=1926&v=1db4710208e3100",
+      "sourceKind": "manufacturer",
+      "shownPack": "85g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page identifies recipe, species, form and exact pack; downloaded original photo visually checked. Black Hawk Puppy Original, all breeds, Lamb & Vegetables in broth,85g pouch.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "9a6f1bd116f6b3dd59fb889619bc71e26a4fdfdf34879565fe7063a06a94066c",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 132,
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Beef Wet Dog Food",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 170g",
+        "barcode": "9310768115337"
+      },
+      "localPath": "assets/product-images/batch250-132-australian_premium.png",
+      "sourcePage": "https://ziwipets.com/products/canned-beef-dog-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0670/4041/1951/files/Shopify_ZIWI-Peak-Originals-Dog-Beef-Can-170g-PFNZ-FOP.png?v=1768593723",
+      "sourceKind": "manufacturer",
+      "shownPack": "170g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page/feed identifies exact recipe, species and form; downloaded original photo visually checked. ZIWI Peak Beef Recipe, Dog, complete and balanced meal; single 170g can.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "ca677a3233f1797dd3780bcb4e413de8559f426440ac9009edffda4a416a70e0",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 133,
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Chicken Wet Dog Food",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 170g",
+        "barcode": "9310768112527"
+      },
+      "localPath": "assets/product-images/batch250-133-australian_premium.png",
+      "sourcePage": "https://ziwipets.com/products/wet-chicken-for-dogs",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0670/4041/1951/files/Shopify_ZIWI-Peak-Originals-Dog-Chicken-Can-170g-PFNZ-FOP.png?v=1768593815",
+      "sourceKind": "manufacturer",
+      "shownPack": "170g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page/feed identifies exact recipe, species and form; downloaded original photo visually checked. ZIWI Peak Chicken Recipe, Dog, complete and balanced meal; single 170g can.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "9844319d6aaf808966021788ab3dd3504f8b73e554d9912311724f2939c32a47",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 135,
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Mackerel & Lamb Wet Dog Food",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 170g",
+        "barcode": "9310768115344"
+      },
+      "localPath": "assets/product-images/batch250-135-australian_premium.png",
+      "sourcePage": "https://ziwipets.com/products/mackerel-lamb-dog-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0670/4041/1951/files/Shopify_ZIWI-Peak-Originals-Dog-Mackerel-Lamb-Can-170g-PFNZ-FOP.png?v=1768595072",
+      "sourceKind": "manufacturer",
+      "shownPack": "170g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page/feed identifies exact recipe, species and form; downloaded original photo visually checked. ZIWI Peak Mackerel & Lamb Recipe, Dog, complete and balanced meal; single 170g can.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "9e0ec46f034cccc2291048afb8f416883b9b62f5258a781bde95cbe673dc4c45",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 136,
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Venison Wet Dog Food",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 170g",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-136-australian_premium.png",
+      "sourcePage": "https://ziwipets.com/products/canned-venison-dog-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0670/4041/1951/files/Shopify_ZIWI-Peak-Originals-Dog-Venison-Can-170g-PFNZ-FOP.png?v=1768593874",
+      "sourceKind": "manufacturer",
+      "shownPack": "170g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page/feed identifies exact recipe, species and form; downloaded original photo visually checked. ZIWI Peak Venison Recipe, Dog, complete and balanced meal; single 170g can.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "07ae3efc5439864d5cd6e975d7859e8ed81c594d5467ca8693d813d6b0550b99",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 143,
@@ -532,6 +840,28 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 176,
+      "identity": {
+        "brand": "K9 Natural",
+        "name": "Beef Feast Freeze-Dried",
+        "petType": "dog",
+        "foodType": "freeze-dried",
+        "type": "Freeze-Dried · 500g",
+        "barcode": "9309001273545"
+      },
+      "localPath": "assets/product-images/batch250-176-australian_premium.png",
+      "sourcePage": "https://au.k9natural.com/products/beef-feast-freeze-dried-dog-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0676/0313/6589/files/1344__freeze-dried-new-zealand-beef-feast-500g_1_f59d010a-9a05-4416-8336-2eb2253575a2.png?v=1769994859",
+      "sourceKind": "manufacturer",
+      "shownPack": "500g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page identifies recipe, species, form and exact pack; downloaded original photo visually checked. K9Natural Freeze-Dried Beef Feast, complete dog food,500g.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "079f6a160ebf5b75e2f687ce461fb6c28dcbe44c87bf7c47e156c47380e5279e",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 179,
       "identity": {
         "brand": "Open Farm",
@@ -618,6 +948,138 @@
       "checkedDate": "2026-09-14",
       "sha256": "2a602fd3fb0d6eb520765c3bb852c1f7cfc07e6922422499f210025446d52651",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 224,
+      "identity": {
+        "brand": "Purina Pro Plan",
+        "name": "Indoor Chicken",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 1.5kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-224-clinical_major.png",
+      "sourcePage": "https://vetslovepets.com.au/products/purina-pro-plan-indoor-hairball-control-chicken-formula-dry-cat-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0657/3293/5916/files/Purina_Pro_Plan_Indoor_Hairball_Control_Chicken_Formula_Dry_Cat_Food-PPFA_IHB01-Primary_6a4b1f09-16ac-4f9d-a188-bdf6f2fe7854.png?v=1763947975",
+      "sourceKind": "retailer",
+      "shownPack": "1.5kg bag",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Viewed original front: Purina Pro Plan Indoor Hairball Control Chicken Formula, cat, NET WEIGHT 1.5 Kg. Retailer 1.5kg variant carries this photo; primary manufacturer confirms recipe and available 1.5kg size.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "943760680b45a5d67511e18aff31a93418eb5aee78a899fdd48a6c66ab18ce99",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 228,
+      "identity": {
+        "brand": "Orijen",
+        "name": "Cat & Kitten Original",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 340g",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-228-root_brands.webp",
+      "sourcePage": "https://acana.net/products/orijen-original-cat",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0713/6873/7062/files/orijenoriginalcatfrontright340gemeaapac_1_1x_dfd8bde9-9aa4-40bb-a100-168e12391a18.webp?v=1780031958",
+      "sourceKind": "retailer",
+      "shownPack": "340g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Recipe, species and printed weight checked against the unchanged source photo and the regional distributor variant association. Regional packaging does not verify Australian availability or barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "ba239ade661e23e610af87506c16f52a10b441983a6ff550080c6874049c4d0e",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 230,
+      "identity": {
+        "brand": "Orijen",
+        "name": "Six Fish Cat",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 340g",
+        "barcode": "6977085247726"
+      },
+      "localPath": "assets/product-images/batch250-230-root_brands.webp",
+      "sourcePage": "https://acana.net/products/シックスフィッシュキャット",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0713/6873/7062/files/orijen_six_fish_cat_front_right_340g_emea_apac_bba3d005_8428_4e34_ade8_0d95557980ef.webp?v=1780031644",
+      "sourceKind": "retailer",
+      "shownPack": "340g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Recipe, species and printed weight checked against the unchanged source photo and the regional distributor variant association. Regional packaging does not verify Australian availability or barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "2185524f544f067e9a134ff5685db998647fc314a29fbe6be3d7a8f206da8556",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 231,
+      "identity": {
+        "brand": "Acana",
+        "name": "Grasslands Highest Protein Cat",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 340g",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-231-root_brands.webp",
+      "sourcePage": "https://acana.net/products/grasslands-cats",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0713/6873/7062/files/acana_cat_highest_protein_grasslands_front_right_340g_emea_apac_1_1x_0576b761-11d7-4600-b270-f56031c745da.webp?v=1780033720",
+      "sourceKind": "retailer",
+      "shownPack": "340g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Recipe, species and printed weight checked against the unchanged source photo and the regional distributor variant association. Regional packaging does not verify Australian availability or barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "0191fe42c073d20bf6f8ca04370295448aeed82c83bc264a79a495b90856a4c1",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 232,
+      "identity": {
+        "brand": "Acana",
+        "name": "Pacifica Highest Protein Cat",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 340g",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-232-root_brands.webp",
+      "sourcePage": "https://acana.net/products/pacifica-cats",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0713/6873/7062/files/acana_cat_highest_protein_pacifica_front_right_340g_emea_apac_1_1x_8b43358b-05d1-4b67-b449-ee45bcbe31df.webp?v=1780029492",
+      "sourceKind": "retailer",
+      "shownPack": "340g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Recipe, species and printed weight checked against the unchanged source photo and the regional distributor variant association. Regional packaging does not verify Australian availability or barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "fb56818841960340214bfab80d4a83e778176fe4c0a252c8d31995586438b866",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 233,
+      "identity": {
+        "brand": "Acana",
+        "name": "Indoor Entrée Cat",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 340g",
+        "barcode": "64992613105"
+      },
+      "localPath": "assets/product-images/batch250-233-root_brands.webp",
+      "sourcePage": "https://acana.net/products/indoor-entree",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0713/6873/7062/files/340g_68a98cb9_ebf5_4810_ab65_e76f13e6cef6_2_1x_b665268b-a1c5-435c-8a9a-92023bee4da9.webp?v=1780033393",
+      "sourceKind": "retailer",
+      "shownPack": "340g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Recipe, species and printed weight checked against the unchanged source photo and the regional distributor variant association. Regional packaging does not verify Australian availability or barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "c6f0839e579a2129ee747a793375783a21b3a768f7f35e2ff6a5f8d37e7e2b32",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 234,
@@ -730,6 +1192,28 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 240,
+      "identity": {
+        "brand": "Optimum",
+        "name": "Adult Furball with Chicken",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 800g",
+        "barcode": "9334214044804"
+      },
+      "localPath": "assets/product-images/batch250-240-mars_purina.png",
+      "sourcePage": "https://www.petservo.com.au/products/optimum-adult-1-furball-dry-cat-food-with-chicken-800g",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0582/5255/8423/files/55_fb478668-9fdf-4f6e-8bbe-4cc1c100d32d.png?v=1721906256",
+      "sourceKind": "retailer",
+      "shownPack": "800 g bag",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Viewed original retailer front: Optimum Furball Adult 1+ Years with Chicken, cat dry food, 800 g. Exact known catalogue pack matches. Manufacturer distributor relaunch document distinguishes this older 800 g pack from replacement 1.4 kg; no replacement-pack substitution.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "c102e4c623086bb4f95e3acb1808dc795319b7440de7d0fbe226b87a26d1d095",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 248,
       "identity": {
         "brand": "Vetalogica",
@@ -774,6 +1258,94 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 263,
+      "identity": {
+        "brand": "Whiskas",
+        "name": "Adult Chicken in Jelly Pouch",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 85g pouch (12pk)",
+        "barcode": "9334214040424"
+      },
+      "localPath": "assets/product-images/batch250-263-mars_purina.png",
+      "sourcePage": "https://www.whiskas.com.au/our-products/wet/whiskas-1-years-adult-wet-cat-food-chicken-favourites-jelly",
+      "imageUrl": "https://www.whiskas.com.au/sites/g/files/fnmzdf8856/files/2026-04/9334214040424_A1C1_EN-Photoroom.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "12×85g pouches",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer 12×85g variant uses source asset identifier 9334214040424, matching the catalogue code. Viewed front is Whiskas adult 1+ with Chicken Favourites in Jelly 12×85g; includes Chicken, Chicken & Turkey and Chicken & Duck. Adelaide’s Finest confirms the named 12×85g pack.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "e5a2211176b0864dda7d4fe5f909b0ca30f9ed73fb5387fa95d5fa1ee4ad7efa",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 265,
+      "identity": {
+        "brand": "Fancy Feast",
+        "name": "Classic Paté Chicken Feast",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 85g can",
+        "barcode": "0050000429646"
+      },
+      "localPath": "assets/product-images/batch250-265-mars_purina.jpg",
+      "sourcePage": "https://www.purina.com.au/12552998.html",
+      "imageUrl": "https://images.skulibrary.com/media/sys_master/h2a/h9a/14635368218654.jpg?response-content-disposition=inline;filename=NEST-8850124097750-1.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "Single 85 g can",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer product page and viewed single-can front identify Fancy Feast Chicken Feast Classic Paté, net weight 85 g, cat food. Petbarn corroborates 85 g cans in a 24-unit listing.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "9e8a886ccd42f6c60b31e4ac18c6a0a30d3e552f2367dc81283079b32e8d6f3d",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 266,
+      "identity": {
+        "brand": "Fancy Feast",
+        "name": "Classic Paté Salmon & Shrimp",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 85g can",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-266-mars_purina.jpg",
+      "sourcePage": "https://www.target.com/p/-/A-80282546",
+      "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_644c8148-55d3-4db3-a838-af7afd8cd05a?wid=1200&hei=1200&qlt=80",
+      "sourceKind": "retailer",
+      "shownPack": "Single 3 oz (85 g) can",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Viewed front explicitly reads Salmon & Shrimp Feast, Classic Paté, gourmet cat food, net wt 3 oz (85 g). Manufacturer exact Salmon & Shrimp product confirms recipe and cat wet form.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "cb10d49cb3ce7b5e4beb7061b62a38bc16ce88bdfe70f2888756e58d9e98c70d",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 274,
+      "identity": {
+        "brand": "Dine",
+        "name": "Slices Succulent Chicken",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 85g tray (7pk)",
+        "barcode": "9334214058764"
+      },
+      "localPath": "assets/product-images/batch250-274-mars_purina.png",
+      "sourcePage": "https://www.dine.com.au/our-products/favourites/slices/with-succulent-chicken-multipack",
+      "imageUrl": "https://www.dine.com.au/sites/g/files/fnmzdf2756/files/2023-04/DINE%20Classic%20Collection%20Slices%20with%20Succulent%20Chicken%207pk-0-min.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "7x85g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer recipe title and original viewed packaging agree on Dine Slices Succulent Chicken, cat food/treat, and pictured quantity.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "34635dac3b79eda16515acc87b1b3178b220e232c8a4a65da32c38aa9161fb37",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 280,
       "identity": {
         "brand": "Ziwi Peak",
@@ -794,6 +1366,28 @@
       "checkedDate": "2026-09-14",
       "sha256": "1e9073937e1336b304c6f81acf4741fae42d7ecc5b21c84023acffa771a8bb2d",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 281,
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Chicken Wet Cat Food",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 85g",
+        "barcode": "8850124097750"
+      },
+      "localPath": "assets/product-images/batch250-281-australian_premium.png",
+      "sourcePage": "https://ziwipets.com/products/wet-canned-chicken-cats",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0670/4041/1951/files/85g_FOP.png?v=1768431237",
+      "sourceKind": "manufacturer",
+      "shownPack": "85g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page/feed identifies exact recipe, species and form; downloaded original photo visually checked. ZIWI Peak Chicken Recipe, For Cats, complete and balanced meal; single 85g can.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "cb9c2eff31bd5c40900005c5c393249925d3b2003192c5f910a9e934921dcdae",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 282,
@@ -860,6 +1454,94 @@
       "checkedDate": "2026-09-14",
       "sha256": "01448a4967981093ec07405fe199f021eebf9721917a0cee7b279d3fec3e18de",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 285,
+      "identity": {
+        "brand": "Royal Canin",
+        "name": "Instinctive Adult Gravy Pouch",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 85g pouch",
+        "barcode": "9339687419951"
+      },
+      "localPath": "assets/product-images/batch250-285-clinical_major.jpg",
+      "sourcePage": "https://www.royalcanin.com/ae/cats/products/retail-products/instinctive-gravy-4059",
+      "imageUrl": "https://marspetcareaprimocdn.petcare.global/c0ad113e-9e4a-487a-b3f4-b1ef00126b04/c0ad113e-9e4a-487a-b3f4-b1ef00126b04_DownloadAsJpg.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "85g pouch",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Viewed original manufacturer photo: Royal Canin Instinctive Gravy; single85g cat pouch with gravy stated.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "c6905ff114c5e46b91687e9b335e722ec76dbac24dd06a9df6845f34768aaa36",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 286,
+      "identity": {
+        "brand": "Royal Canin",
+        "name": "Kitten in Gravy Pouch",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 85g pouch",
+        "barcode": "100000141396"
+      },
+      "localPath": "assets/product-images/batch250-286-clinical_major.jpg",
+      "sourcePage": "https://www.royalcanin.com/au/cats/products/retail-products/kitten-gravy-4058",
+      "imageUrl": "https://marspetcareaprimocdn.petcare.global/4b6e2331-f04f-4dce-b952-b2490009a7b0/4b6e2331-f04f-4dce-b952-b2490009a7b0_DownloadAsJpg.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "85g pouch",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Viewed original manufacturer photo: Royal Canin Kitten Chunks in gravy; single85g cat pouch with gravy stated.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "dc698736d8fe78717e33016f1387b12ba2b6a95f173e51dd9195a0e7fabcec62",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 287,
+      "identity": {
+        "brand": "Hill's Science Diet",
+        "name": "Adult Chicken Entrée",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 156g can",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-287-clinical_major.png",
+      "sourcePage": "https://www.hillspet.ca/en-ca/cat-food/science-diet-adult-chicken-canned",
+      "imageUrl": "https://pxmshare.colgatepalmolive.com/PNG_500/tdxs253CgnnBjJplsJ3iJ.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "156g can",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Canadian manufacturer source; viewed original shows Science Diet Savory Chicken Entrée Adult1–6, cat image, NET WT5.5OZ(156g).",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "909e2f0f713d941ef541bf8018751f59f26e6c05d02852092c25a1b461eedcb1",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 300,
+      "identity": {
+        "brand": "Felix",
+        "name": "Sensations Jellies Favourites",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 85g pouch (12pk)",
+        "barcode": "9300605108189"
+      },
+      "localPath": "assets/product-images/batch250-300-mars_purina.jpg",
+      "sourcePage": "https://peto.com.au/felix-sensations-jellies-favourite-menu-adult-wet-cat-food/",
+      "imageUrl": "https://cdn11.bigcommerce.com/s-ucjiusw7rc/images/stencil/original/products/5485/15446/FAVOURITE_MENU__18337.1731283609.jpg?c=2",
+      "sourceKind": "retailer",
+      "shownPack": "12 × 85g pouches",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Viewed original PetO photo: Purina Felix Sensations Jellies Favourites Menu, CAT FOOD ONLY, 12 × 85g / 1.02kg. Three recipes: Beef in Tomato Flavoured Jelly, Chicken and Spinach in Jelly, Oceanfish in Prawn Flavoured Jelly.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "5b8c06c8599ad77fdaa951dda59fbacb3e88009eb7c708e0994afd94b4632336",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 305,
@@ -991,6 +1673,72 @@
       "visualChecked": true,
       "checkedDate": "2026-09-14",
       "sha256": "1699f9e077835baad9d729b529e703bdf52501c87e5d802ff213f0847d6a3bc5",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 316,
+      "identity": {
+        "brand": "Feline Natural",
+        "name": "Chicken Feast Freeze-Dried",
+        "petType": "cat",
+        "foodType": "freeze-dried",
+        "type": "Freeze-Dried · 320g",
+        "barcode": "9421904897588"
+      },
+      "localPath": "assets/product-images/batch250-316-australian_premium.png",
+      "sourcePage": "https://www.k9natural.com/products/chicken-feast-freeze-dried-cat-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0678/7062/1807/files/2483_freeze-dried-new-zealand-chicken-feast-320g_1_c6ca43f7-28df-4be6-886f-b9e4c91854c0.png?v=1769994445",
+      "sourceKind": "manufacturer",
+      "shownPack": "320g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current K9 Natural manufacturer cat feed identifies Feline Natural; photo visibly shows matching Chicken Feast Freeze-Dried for cats,320g.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "8f31db64bfa733381dc55608d4ce56c10398dd04bc7c9d80772b2b32c156089c",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 317,
+      "identity": {
+        "brand": "Feline Natural",
+        "name": "Beef Feast Freeze-Dried",
+        "petType": "cat",
+        "foodType": "freeze-dried",
+        "type": "Freeze-Dried · 320g",
+        "barcode": "9421904897540"
+      },
+      "localPath": "assets/product-images/batch250-317-australian_premium.png",
+      "sourcePage": "https://au.k9natural.com/products/beef-feast-freeze-dried-cat-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0676/0313/6589/files/2482_freeze-dried-new-zealand-beef-feast-320g_1.png?v=1772756720",
+      "sourceKind": "manufacturer",
+      "shownPack": "320g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current K9 Natural manufacturer cat feed identifies Feline Natural; photo visibly shows matching Beef Feast Freeze-Dried for cats,320g.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "b484412a3d05d3789d8c560a5d72aa4a5eb74ae6d3d02ae8b1e825da31051dea",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 319,
+      "identity": {
+        "brand": "Feline Natural",
+        "name": "Lamb Feast Freeze-Dried",
+        "petType": "cat",
+        "foodType": "freeze-dried",
+        "type": "Freeze-Dried · 320g",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-319-australian_premium.png",
+      "sourcePage": "https://au.k9natural.com/products/lamb-feast-freeze-dried-cat-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0676/0313/6589/files/2485_freeze-dried-new-zealand-lamb-feast-320g_1_186ee3b3-1915-4c94-a47d-76fa98540b53.png?v=1772774698",
+      "sourceKind": "manufacturer",
+      "shownPack": "320g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current K9 Natural manufacturer cat feed identifies Feline Natural; photo visibly shows matching Lamb Feast Freeze-Dried for cats,320g.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "a8564c03626654a557760d95702e92f966decd088e0f42339a19caf5e5e09651",
       "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
@@ -1148,6 +1896,28 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 347,
+      "identity": {
+        "brand": "K9 Natural",
+        "name": "Freeze-Dried Lamb Treats",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat · 50g",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-347-australian_premium.jpg",
+      "sourcePage": "https://www.petso.com.au/products/k9-natural-lamb-healthy-bites-50g",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0511/4685/0467/products/Lamb-Healthy-Bites-50G_3cb665b6-5800-46e8-83c3-51308cec1b4c.jpg?v=1630574663",
+      "sourceKind": "retailer",
+      "shownPack": "50g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Downloaded source original visually checked: K9 Natural Lamb Healthy Bites, freeze-dried anytime treat for all dogs, NET WT50g/1.76oz. Older lamb/organ recipe image selected instead of current Lamb Liver recipe.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "2a577d978eda6319b7362b986c464886ccf184b0cf5eb0a500d823552ea1951e",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 349,
       "identity": {
         "brand": "FurFresh",
@@ -1214,6 +1984,204 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 353,
+      "identity": {
+        "brand": "K9 Natural",
+        "name": "Beef Feast Freeze-Dried Topper",
+        "petType": "dog",
+        "foodType": "topper",
+        "type": "Topper · 142g",
+        "barcode": "9421900779871"
+      },
+      "localPath": "assets/product-images/batch250-353-australian_premium.png",
+      "sourcePage": "https://www.sproutmaster.com/products/k9-natural-beef-feast-food-topper-142g",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0581/8171/3973/products/K9N-Beef_Feast-142g.fw.png?v=1675331477",
+      "sourceKind": "retailer",
+      "shownPack": "142g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Downloaded source original visually checked: K9 Natural Beef Feast Topper; grain free freeze-dried; for all dogs; NET WEIGHT142g/5oz.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "c9cdf3e6f2685c752c58ad159f758ee2de7ea8431af0017ae7d109149d9d4109",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 361,
+      "identity": {
+        "brand": "Dine",
+        "name": "Creamy Treats Chicken",
+        "petType": "cat",
+        "foodType": "treat",
+        "type": "Treat · 4x12g",
+        "barcode": "9334214049496"
+      },
+      "localPath": "assets/product-images/batch250-361-mars_purina.png",
+      "sourcePage": "https://www.dine.com.au/cat-treats/creamy-chicken-cat-treats",
+      "imageUrl": "https://www.dine.com.au/sites/g/files/fnmzdf2756/files/2023-04/DINE%C2%AE%20Creamy%20Treats%20Chicken-min.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "4 x 12g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer page and viewed original pack identify Dine Chicken Flavour creamy cat treats, 4 x 12g.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "ac002b4349e103bf7e0b6f3a7775ca640dfe6c3dfc757550dd27e46ccc9a974e",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 362,
+      "identity": {
+        "brand": "Dine",
+        "name": "Creamy Treats Mixed Seafood",
+        "petType": "cat",
+        "foodType": "treat",
+        "type": "Treat · 32x12g",
+        "barcode": "9334214046846"
+      },
+      "localPath": "assets/product-images/batch250-362-mars_purina.png",
+      "sourcePage": "https://www.dine.com.au/our-products/treats/dine-creamy-treats/mixed-seafood-flavour",
+      "imageUrl": "https://www.dine.com.au/sites/g/files/fnmzdf2756/files/2025-10/9334214063676_A1N1_EN-removebg-preview.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "32x12g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer recipe title and original viewed packaging agree on Dine Creamy Treats Mixed Seafood, cat food/treat, and pictured quantity.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "18b7643228fc10b55545c02ab175b52095d647e9d3561a2d66d067077403171e",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 363,
+      "identity": {
+        "brand": "Fancy Feast",
+        "name": "Savoury Purée Tuna",
+        "petType": "cat",
+        "foodType": "treat",
+        "type": "Treat · 4x10g",
+        "barcode": "8850011072716"
+      },
+      "localPath": "assets/product-images/batch250-363-mars_purina.jpg",
+      "sourcePage": "https://www.target.com/p/-/A-94649629",
+      "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_4c93c0a8-d0ca-4bb6-be6b-89d1f7778f90",
+      "sourceKind": "retailer",
+      "shownPack": "4-count sleeve; retailer total 1.4 oz / manufacturer 4 ×10 g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Viewed front reads Fancy Feast Savory Purées, With Tuna, 4 count. Target identifies With Tuna and total 1.4 oz. Canadian manufacturer and Chewy Canada specify 4 ×10 g tuna purées. Front does not show the individual gram weight legibly.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "fb09c362593c6f90882c8248a75cdb106baa7cc32732ac4c03d0169a2edcbcd0",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 409,
+      "identity": {
+        "brand": "Billy & Margot",
+        "name": "Adult Lamb",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 1.8kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-409-australian_premium.jpg",
+      "sourcePage": "https://rpfco.com/products/billy-margot-lamb-superfood-blend-dry-dog-food-1-8kg",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0834/8896/4911/products/10336679559198.jpg?v=1695171127",
+      "sourceKind": "manufacturer",
+      "shownPack": "1.8kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page identifies recipe, species, form and exact pack; downloaded original photo visually checked. Billy + Margot Adult Lamb + Superfood Blend, complete dog food1.8kg. Replaces rejected9kg photo from first manufacturer website.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "eff6be162b497f3f1020520ad53643472983433e186041f68a329ed3e52ac719",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 411,
+      "identity": {
+        "brand": "Billy & Margot",
+        "name": "Adult Kangaroo",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 1.8kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-411-australian_premium.jpg",
+      "sourcePage": "https://realpetfoodco.co.nz/products/billy-margot-wild-kangaroo-superfood-blend-dry-dog-food-1-8kg",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0572/1410/7782/files/10374677102622_ea3f9ad1-4893-4b2a-92e7-9ab07a6bca5c.jpg?v=1713775487",
+      "sourceKind": "manufacturer",
+      "shownPack": "1.8kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page identifies recipe, species, form and exact pack; downloaded original photo visually checked. Billy + Margot Adult all breeds Wild Kangaroo + Superfood Recipe,4lb(1.8kg).",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "f2d228a88860f3464d2fad26dae851b963d321bcd17e3ff32e92ce2a1c36f546",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 412,
+      "identity": {
+        "brand": "Billy & Margot",
+        "name": "Puppy Salmon",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 1.8kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-412-australian_premium.png",
+      "sourcePage": "https://www.billyandmargot.com.au/products/puppy-salmon-superfood-blend-dry-dog-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0805/1189/3813/files/B_Mrenders-700x700px_36.png?v=1692148041",
+      "sourceKind": "manufacturer",
+      "shownPack": "1.8kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page/feed identifies exact recipe, species and form; downloaded original photo visually checked. Billy + Margot Salmon + Superfoods Recipe, Puppy All Breeds, Growth Development; net weight 4lb (1.8kg).",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "c65818c9fd713e81cbdf78719886296a8162540b41c33b49af182fa9f9b40aa7",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 413,
+      "identity": {
+        "brand": "Billy & Margot",
+        "name": "Senior Wild Ocean Fish",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 1.8kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-413-australian_premium.png",
+      "sourcePage": "https://www.billyandmargot.com.au/products/wild-ocean-fish-superfood-recipe-dry-senior-support-dog-food-1-8kg",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0805/1189/3813/files/B_Mrenders-700x700px_23.png?v=1691630341",
+      "sourceKind": "manufacturer",
+      "shownPack": "1.8kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page/feed identifies exact recipe, species and form; downloaded original photo visually checked. Billy + Margot Wild Ocean Fish + Superfoods Recipe, Senior 7+, Senior Support; 4lb / 1.8kg.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "b89ede6aad2cd92b72a43b535b696b1cac8b7b20a7ba5ec7fe314ba1be1e59a5",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 416,
+      "identity": {
+        "brand": "Billy & Margot",
+        "name": "Lamb",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 395g",
+        "barcode": "9334864007334"
+      },
+      "localPath": "assets/product-images/batch250-416-australian_premium.jpg",
+      "sourcePage": "https://petz.ae/products/billy-margot-adult-lamb-with-superfoods-wet-dog-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/6536/0947/products/Billy-Margot-Adult-Lamb-with-Superfoods-Wet-Dog-Food.jpg?v=1682146180",
+      "sourceKind": "retailer",
+      "shownPack": "395g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Downloaded source original visually checked: Billy + Margot Adult Lamb with Superfoods, complete and balanced for adult dogs,395g can.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "451e37b627fa097d4d0003a2938f5e0bc53bb1d98ea7540c6d1c99ef8ec81756",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 418,
       "identity": {
         "brand": "Baxters (Woolworths)",
@@ -1256,6 +2224,116 @@
       "checkedDate": "2026-09-14",
       "sha256": "6536c2b70bd56fd49e1bfb636fc64c7600b99960339be65b395aab78a4121be5",
       "rightsStatus": "Brand product asset; no licence grant asserted."
+    },
+    {
+      "appId": 444,
+      "identity": {
+        "brand": "Snappy Tom",
+        "name": "Sardines in Jelly",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 400g",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-444-root_brands.png",
+      "sourcePage": "https://www.snappytom.com.au/cat-food",
+      "imageUrl": "https://www.snappytom.com.au/content/uploads/2026/04/Sardines-in-Jelly.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "400g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "SnappyTom Sardines in Jelly,400g, cat silhouette; exact manufacturer400g recipe section and viewed front agree. Photo does not verify barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "0863bc3d4d41c2c8be17cafc121ced6aba5a27c308909c29864cebceb0be66e5",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 467,
+      "identity": {
+        "brand": "Friskies",
+        "name": "Adult Indoor Delights",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 1kg",
+        "barcode": "9300605132443"
+      },
+      "localPath": "assets/product-images/batch250-467-mars_purina.png",
+      "sourcePage": "https://supertails.com/products/friskies-indoor-delights-adult-cat-dry-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0565/8021/0861/files/01._FOP_10_1.png?v=1773296138",
+      "sourceKind": "retailer",
+      "shownPack": "1kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Source lists exact Friskies Indoor Delights dry cat food 1kg and original photo visually shows matching recipe/life stage/form and 1kg. Indian retailer's SKU barcode differs from catalogue; regional barcode has not been independently verified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "4ee647b4ab4b6b03573c4d9c144018b30ee3527fdcf05beb4b4623aa12e7ce5c",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 468,
+      "identity": {
+        "brand": "Friskies",
+        "name": "Adult Seafood Sensations",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 1kg",
+        "barcode": "6856105072893"
+      },
+      "localPath": "assets/product-images/batch250-468-mars_purina.webp",
+      "sourcePage": "https://www.purina.co.nz/food/cat/product-friskies-adult-seafood-sensations",
+      "imageUrl": "https://www.purina.co.nz/sites/default/files/styles/product_zoom/public/2025-09/FRISKIES%20adult%20Seafood%20Sensations%201kg%2001_1080x1080.jpg.webp?itok=HHemSCGR",
+      "sourceKind": "manufacturer",
+      "shownPack": "1kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Source lists exact Friskies Seafood Sensations dry cat food 1kg and original photo visually shows matching recipe/life stage/form and 1kg. Barcode remains unverified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "fd1ac95469153c735a117a294e0f4a86fc4ff35ed6dbaf569724456203c65c9f",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 471,
+      "identity": {
+        "brand": "Friskies",
+        "name": "Kitten Discoveries",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 1kg",
+        "barcode": "8850125071360"
+      },
+      "localPath": "assets/product-images/batch250-471-mars_purina.jpg",
+      "sourcePage": "https://www.rejectshop.com.au/p/friskies-kitten-discoveries-6x1kg",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0447/0957/6866/files/30150387.jpg?v=1742505785",
+      "sourceKind": "retailer",
+      "shownPack": "1kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Source lists exact Friskies Kitten Discoveries dry cat food 1kg and original photo visually shows matching recipe/life stage/form and 1kg. Barcode remains unverified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "ab4f3750b54d722d8e0ddad3f5aefca0c5ce2148c7c09dc1487d21492f210e82",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 486,
+      "identity": {
+        "brand": "Dine",
+        "name": "Classic Collection Beef & Liver in Gravy",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": "9334214018409"
+      },
+      "localPath": "assets/product-images/batch250-486-mars_purina.png",
+      "sourcePage": "https://www.dine.com.au/our-products/favourites/cuts-in-gravy/with-beef-and-liver-multipack",
+      "imageUrl": "https://www.dine.com.au/sites/g/files/fnmzdf2756/files/2023-04/DINE%20Classic%20Collection%20Cuts%20in%20Gravy%20with%20Beef%20%26%20Liver%207pk-0-min.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "7x85g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer recipe title and original viewed packaging agree on Dine Classic Collection Beef & Liver in Gravy, cat food/treat, and pictured quantity. Pets Domain SKU and Stefmar model9334214018409 independently identify this7x85g recipe.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "820b7ae870c47addf85b484623c65fa40d00005daad75f16cb8f562de7e7f2ec",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 489,
@@ -1390,6 +2468,226 @@
       "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
+      "appId": 498,
+      "identity": {
+        "brand": "Fancy Feast",
+        "name": "Creamy Broths Chicken",
+        "petType": "cat",
+        "foodType": "topper",
+        "type": "Topper",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-498-mars_purina.jpg",
+      "sourcePage": "https://www.target.com/p/-/A-80282446",
+      "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_a4b6b49e-a9e9-4368-9a3e-c37b15e82a0f",
+      "sourceKind": "retailer",
+      "shownPack": "Single 1.4 oz (40 g) pouch",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed front reads Creamy Broths with Chicken & Vegetables, gourmet cat complement, net wt 1.4 oz (40 g). Manufacturer confirms supplemental wet cat-food complement. Frozen catalogue already records a source-backed cat/topper correction and explains its abbreviated Chicken name.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "f63dc1193dd6b874a6299cf5fb75d05321e47dc4a1339af02ca2ecdb07a1ecbc",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 501,
+      "identity": {
+        "brand": "Fancy Feast",
+        "name": "Creamy Delights Poultry & Seafood Collection",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": "8850124047748"
+      },
+      "localPath": "assets/product-images/batch250-501-mars_purina.jpg",
+      "sourcePage": "https://www.kroger.com/p/purina-fancy-feast-creamy-delights-poultry-seafood-wet-cat-food-variety-pack/0005000017230",
+      "imageUrl": "https://www.kroger.com/product/images/large/front/0005000017230",
+      "sourceKind": "retailer",
+      "shownPack": "24 ×3 oz (85 g) cans",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed box reads Creamy Delights Poultry & Seafood Collection, 24 cans, 24-3 oz (85 g), gourmet cat food, with chicken/tuna/salmon variants. Kroger exact recipe description confirms adult wet cat food. Manufacturer current individual Creamy Delights page supports the line, but an exact current collection page was not found.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "ec075f507d733d506a22c01bd288e41ccf125633b0e4ee1a35ed58ea87553a71",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 504,
+      "identity": {
+        "brand": "Fancy Feast",
+        "name": "Gravy Lovers Poultry & Beef",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": "8850127003918"
+      },
+      "localPath": "assets/product-images/batch250-504-mars_purina.jpg",
+      "sourcePage": "https://www.target.com/p/-/A-14766221",
+      "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_3e2764ff-6939-431e-b480-22e15e5d41bd",
+      "sourceKind": "retailer",
+      "shownPack": "24 ×3 oz (85 g) cans",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer exact Gravy Lovers Poultry and Beef variety pack includes Chicken, Turkey and Beef. Viewed Target box reads Poultry & Beef Collection, 24 cans, 24-3 oz (85 g), gourmet cat food, and all three matching recipes. This is not the different Australian assortment containing fish.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "a80739e03214a0ab2f49bffcfaf14a61ec5ec7a5eb727888f7a5e5fea98a60c9",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 510,
+      "identity": {
+        "brand": "Fancy Feast",
+        "name": "Inspirations Chicken with Pasta Pearls & Spinach",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-510-mars_purina.jpg",
+      "sourcePage": "https://www.superpets.sg/products/fancy-feast-inspirations-with-chicken-pasta-pearls-spinach-70g",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0943/0849/9773/files/fancy-feast-inspirations-with-chicken-pasta-pearls-spinach-70g-7392923.jpg?v=1787560387",
+      "sourceKind": "retailer",
+      "shownPack": "Single 70 g pouch",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer Singapore exact recipe identifies adult wet cat food, 70 g. Viewed retailer front reads Inspirations with Chicken, Pasta Pearls & Spinach, CAT FOOD ONLY, 70 g. Original image has a large Superpets watermark retained unchanged.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "41ea3eccbf595633f318e53844ce454ac4a9479be21a3bb35df507fca2ce4937",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 511,
+      "identity": {
+        "brand": "Fancy Feast",
+        "name": "Inspirations Turkey Peas & Carrots",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-511-mars_purina.jpg",
+      "sourcePage": "https://www.nzeconet.com/shop/item.php?it_id=1540162123",
+      "imageUrl": "https://www.nzeconet.com/data/item/1540162123/thumb-TurkeyGreenPeasCarrots_02_500x500.jpg",
+      "sourceKind": "retailer",
+      "shownPack": "Single pouch; retailer specifies 70 g, weight not legible on viewed front",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed older pouch clearly reads Inspirations with Turkey, Green Peas & Carrots and CAT FOOD ONLY. NZ retailer page specifies 70 g; Halodoc exact 70 g listing corroborates recipe. Current Purina NZ range did not establish a current exact recipe page.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "0dc2176f73680ee881665780a25d0b06e897b044c5282e081a3dbcae1ab804bd",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 520,
+      "identity": {
+        "brand": "Felix",
+        "name": "Sensations Jellies Chicken & Spinach",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": "8850124086846"
+      },
+      "localPath": "assets/product-images/batch250-520-mars_purina.jpg",
+      "sourcePage": "https://petzone.com/ksa/en/shop/offers-ksa/felix-sensations-jellies-chicken-and-spinach-in-jelly-cat-food-pouch-85-g.html",
+      "imageUrl": "https://petzone.com/media/catalog/product/cache/c2327f22c93e43d18dae91bd0ce8a518/8/8/8850124086846-1.jpg",
+      "sourceKind": "retailer",
+      "shownPack": "85g pouch (Arabic/English pack)",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed original Petzone photo: Purina Felix Sensations Jellies, With Chicken and Spinach Flavours, CAT FOOD ONLY, 85g. Retailer page calls it Chicken and Spinach in Jelly Cat Food Pouch and gives SKU 8850124086846. Purina AU names Chicken and Spinach in Jelly among Sensations recipes.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "74737d35f6f40d99970449d7294d6f88c2b2b66370d9e6ce9c66c671c749923a",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 522,
+      "identity": {
+        "brand": "Felix",
+        "name": "Sensations Jellies Meat Selection",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": "9300605139893"
+      },
+      "localPath": "assets/product-images/batch250-522-mars_purina.jpg",
+      "sourcePage": "https://www.purina.com.au/12627090.html",
+      "imageUrl": "https://images.skulibrary.com/media/products/NestleProductCatalog/NEST_9300605139893MEOW/a42420a3-7bc4-4a2c-a022-8947426c54e5.jpg?response-content-disposition=inline;filename=NEST-9300605139893MEOW-1.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "24 × 85g pouches",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed manufacturer original: Felix Sensations Jellies Meat Selection in jelly, CAT FOOD ONLY, 24 × 85g. Recipes: Chicken/Spinach, Turkey/Game jelly, Beef/Tomato jelly. Coles brand range corroborates 24-pack wet cat food.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "6d08ef836c3c6fc215bf9a5dc2e8cf2d10f635c87dca94b74c5fc76e09436afd",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 550,
+      "identity": {
+        "brand": "Hill's Prescription Diet",
+        "name": "a/d Urgent Care Recovery",
+        "petType": "both",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": "0052742548302"
+      },
+      "localPath": "assets/product-images/batch250-550-clinical_major.png",
+      "sourcePage": "https://www.hillspet.com.au/dog-food/prescription-diet-ad-urgent-care-canned",
+      "imageUrl": "https://www.hillspet.com.au/content/dam/pim/hills/en_au/pd/can/5670/5670-front-packshot-ejhczjuvjtclurnbuel4k.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "156g can",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Hill's Prescription Diet a/d Urgent Care with Chicken, can, dog and cat silhouettes.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "608210b0e763aee09519a5733d15019f8512ee5a047a53bf48f52d35bb180742",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 553,
+      "identity": {
+        "brand": "Hill's Prescription Diet",
+        "name": "c/d Multicare Urinary Care",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-553-clinical_major.png",
+      "sourcePage": "https://www.hillspet.com.au/dog-food/prescription-diet-cd-multicare-urinary-care-dry",
+      "imageUrl": "https://www.hillspet.com.au/content/dam/pim/hills/en_au/pd/bag/10104/10104-front-packshot-iszbte9ijekzuxvqtxge3.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "bag; weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Hill's Prescription Diet Urinary Care c/d Multicare, dry bag, dog pictured.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "5acd82099786426678a65093b8d25705b1a5ed8c3e74ec887407109395318cc8",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 556,
+      "identity": {
+        "brand": "Hill's Prescription Diet",
+        "name": "i/d Digestive Care",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": "0052742000220"
+      },
+      "localPath": "assets/product-images/batch250-556-clinical_major.png",
+      "sourcePage": "https://www.hillspet.com.au/dog-food/prescription-diet-id-digestive-care-dry",
+      "imageUrl": "https://www.hillspet.com.au/content/dam/pim/hills/en_au/pd/bag/8619/8619-front-packshot-04wdgtyelebfdzgyaogzc.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "bag; weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Hill's Prescription Diet Digestive Care i/d, dry bag, dog pictured.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "96fb6af81bf3595fda0efd18a0656edd378dda87aec0341c8b33c625f70d9dad",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 565,
       "identity": {
         "brand": "Hill's Prescription Diet",
@@ -1410,6 +2708,116 @@
       "checkedDate": "2026-09-14",
       "sha256": "17fbf53dfda6369dc7457760ca5f99fcec339789ff36f1c18163808c17253a65",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 569,
+      "identity": {
+        "brand": "Hill's Prescription Diet",
+        "name": "y/d Thyroid Care",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-569-clinical_major.png",
+      "sourcePage": "https://www.hillspet.com.au/cat-food/prescription-diet-yd-thyroid-care-dry",
+      "imageUrl": "https://pxmshare.colgatepalmolive.com/PNG_500/4W5Lj_w88vVAqsVx518cV.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "bag; weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer y/d Thyroid Care is dry cat food; catalogue dog conflicts.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "c296062353924a6bd8ce44e13b21262b0482ccae279a367143a6591652af4213",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 586,
+      "identity": {
+        "brand": "Hill's Science Diet",
+        "name": "Adult Sensitive Stomach & Skin Chicken",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-586-clinical_major.png",
+      "sourcePage": "https://www.hillspet.com.au/dog-food/science-diet-canine-adult-sensitive-stomach-skin-chicken-dry",
+      "imageUrl": "https://www.hillspet.com.au/content/dam/pim/hills/en_au/sd/bag/607592/607592-front-packshot-cs0gwzmamigyitnaje1bj.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "bag; weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Hill's Science Diet Sensitive Stomach & Skin Adult, Chicken Recipe, dry dog bag.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "612924b197880fa2d5aafccdcd815316d155dfe6307e31b012b3f5e91a0eb12f",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 588,
+      "identity": {
+        "brand": "Hill's Science Diet",
+        "name": "Adult Small Paws Chicken Meal & Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": "9350327001107"
+      },
+      "localPath": "assets/product-images/batch250-588-clinical_major.png",
+      "sourcePage": "https://www.hillspet.com.au/dog-food/science-diet-adult-small-paws-breed-dry",
+      "imageUrl": "https://www.hillspet.com.au/content/dam/pim/hills/en_au/sd/bag/9097/9097-front-packshot-qbwneslialcc-mxmaqrxm.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "bag; weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Hill's Science Diet Small & Mini Adult1-6, Chicken & Brown Rice Recipe, dry dog bag. Source is manufacturer small-paws URL.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "def24548c7bdd83b5e647af70236e7d5e475f64a7fd1959b616da3ece02fc0c9",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 589,
+      "identity": {
+        "brand": "Hill's Science Diet",
+        "name": "Adult Tender Chunks Chicken in Gravy",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-589-clinical_major.png",
+      "sourcePage": "https://www.hillspet.com.au/cat-food/science-diet-adult-chunks-gravy-chicken-tender-dinner-canned",
+      "imageUrl": "https://pxmshare.colgatepalmolive.com/PNG_500/kOku4qy77v9GlyHvftMui.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "156g can",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer Tender Chicken Dinner Chunks & Gravy is a wet cat can156g; catalogue dog/dry conflicts.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "9d2378cc078f87b896fab17c76e55e90c463b6fbcbfdeed0dcadc993db3c8fd9",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 599,
+      "identity": {
+        "brand": "Hill's Science Diet",
+        "name": "Senior 11+ Age Defying Chicken",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-599-clinical_major.png",
+      "sourcePage": "https://www.hillspet.com.au/cat-food/science-diet-senior-11-dry",
+      "imageUrl": "https://www.hillspet.com.au/content/dam/pim/hills/en_au/sd/bag/1463/1463-front-packshot-4zd0g1o3vfmdpuq8pupcb.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "bag; weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer Adult11+ Chicken dry food is for cats; catalogue dog conflicts.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "d7e3017d86cc89a799441cb0409c1818fd2425b0f0c1715c97ec752f4fcfbfb2",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 719,
@@ -1498,6 +2906,138 @@
       "checkedDate": "2026-09-14",
       "sha256": "ada28670cbd4f0426bc7213318662bfdbc478e4f450f235f8b443a5fd7a015e0",
       "rightsStatus": "Manufacturer product asset; no licence grant asserted."
+    },
+    {
+      "appId": 729,
+      "identity": {
+        "brand": "My Dog",
+        "name": "Fillets in Gravy Beef",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": "9334214035789"
+      },
+      "localPath": "assets/product-images/batch250-729-mars_purina.png",
+      "sourcePage": "https://www.mydog.com.au/our-products/fillets-in-gravy/fillets-in-gravy-with-succulent-beef-100g",
+      "imageUrl": "https://www.mydog.com.au/sites/g/files/fnmzdf8796/files/2026-04/lf9kdpew6jt6p0gd37ac-removebg-preview.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "100g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer product title, linked original photo and visual check agree on exact My Dog recipe, dog species and form. Catalogue pack size is unspecified; shown 100g does not establish barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "4625aefab568dd53c5978aae56d4aadd9b26e01cc56e23d7f871805b04e0d459",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 730,
+      "identity": {
+        "brand": "My Dog",
+        "name": "Fillets in Gravy Chicken",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": "9334214035864"
+      },
+      "localPath": "assets/product-images/batch250-730-mars_purina.png",
+      "sourcePage": "https://www.mydog.com.au/our-products/fillets-in-gravy/fillets-in-gravy-with-delicate-chicken",
+      "imageUrl": "https://www.mydog.com.au/sites/g/files/fnmzdf8796/files/2026-04/sitvw5d9e3tawub8eukp-removebg-preview.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "100g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer product title, linked original photo and visual check agree on exact My Dog recipe, dog species and form. Catalogue pack size is unspecified; shown 100g does not establish barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "46824e1038ac531534f723cf5218f306808bd0fdada244759345115f9360b41d",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 733,
+      "identity": {
+        "brand": "My Dog",
+        "name": "Jerky Strips Beef",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-733-mars_purina.png",
+      "sourcePage": "https://www.mydog.com.au/products/jerky-strips/my-dog-jerky-real-beef-strips",
+      "imageUrl": "https://www.mydog.com.au/sites/g/files/fnmzdf8796/files/2026-04/11c299d9-d083-4ca1-9d60-029391708e95-removebg-preview%20%281%29.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "100g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer product title, linked original photo and visual check agree on exact My Dog recipe, dog species and form. Catalogue pack size is unspecified; shown 100g does not establish barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "18ab9abbd530e93cefd9f8d925ec16f98b6aa0d0c0893b5ed1509c2f7659ff80",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 734,
+      "identity": {
+        "brand": "My Dog",
+        "name": "Jerky Strips Chicken",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-734-mars_purina.png",
+      "sourcePage": "https://www.mydog.com.au/products/jerky-strips/my-dog-jerky-real-chicken-strips",
+      "imageUrl": "https://www.mydog.com.au/sites/g/files/fnmzdf8796/files/2026-04/Chicken_FOP-removebg-preview.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "100g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer product title, linked original photo and visual check agree on exact My Dog recipe, dog species and form. Catalogue pack size is unspecified; shown 100g does not establish barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "87d54cca43221b1f0c4653dd98116368ed14c93c0b711ac15b6e9978e4d0387c",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 737,
+      "identity": {
+        "brand": "My Dog",
+        "name": "Puppy Mince Chicken Rice & Carrots",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": "9334214019086"
+      },
+      "localPath": "assets/product-images/batch250-737-mars_purina.png",
+      "sourcePage": "https://www.mydog.com.au/our-products/puppy/puppy-chicken-mince-with-rice-carrots-and-spinach",
+      "imageUrl": "https://www.mydog.com.au/sites/g/files/fnmzdf8796/files/2026-04/eeaxmduxrnknqlcr6ief-removebg-preview.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "100g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer and viewed tray show My Dog Puppy Chicken Mince with Rice, Carrots & Spinach. Catalogue names the same puppy chicken mince/rice/carrot recipe without listing spinach, and gives no pack size.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "ada17faf0b01129bc379450e842d2d92991c4099f7bd1c72906e1f4153eb4ec2",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 738,
+      "identity": {
+        "brand": "My Dog",
+        "name": "Tender Bites Chicken & Tuna",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-738-mars_purina.png",
+      "sourcePage": "https://www.mydog.com.au/our-products/dog-treats/tender-chicken-tuna-flavour",
+      "imageUrl": "https://www.mydog.com.au/sites/g/files/fnmzdf8796/files/2026-04/phiwy6bpzlj66uf4fhs9-removebg-preview.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "100g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer product title, linked original photo and visual check agree on exact My Dog recipe, dog species and form. Catalogue pack size is unspecified; shown 100g does not establish barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "700d483a6d327d9ec5b9f3f3af68d62290cac16f91efe2c214fffee026b900ca",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 752,
@@ -1610,6 +3150,490 @@
       "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
+      "appId": 769,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Ranchos Beef",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-769-mars_purina.png",
+      "sourcePage": "https://www.uk.pedigree.com/dog-food/dog-treats/pedigree-ranchos-originals-jerkies-dog-chew-treat-beef-flavour-70g",
+      "imageUrl": "https://www.uk.pedigree.com/sites/g/files/fnmzdf8691/files/migrate-product-files/images/ixq38gdsrqyqp3lmh0g4.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "70g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer page and original photo agree on Pedigree Ranchos Beef. The photographed 70g package is labelled separately; catalogue pack size is absent. UK artwork does not establish Australian distribution or barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "efd2d79a273165d9461bd54ddb1afcab3e8577b315e1d2b7da67d2eafec9f97f",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 770,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Ranchos Chicken",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": "4008429105173"
+      },
+      "localPath": "assets/product-images/batch250-770-mars_purina.png",
+      "sourcePage": "https://www.uk.pedigree.com/dog-food/dog-treats/pedigree-ranchos-originals-jerkies-dog-chew-treat-chicken-flavour-70g",
+      "imageUrl": "https://www.uk.pedigree.com/sites/g/files/fnmzdf8691/files/migrate-product-files/images/f81ogwg3eavfselbx2o4.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "70g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer page and original photo agree on Pedigree Ranchos Chicken. The photographed 70g package is labelled separately; catalogue pack size is absent. UK artwork does not establish Australian distribution or barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "a6f3a2e87809ee20552d59a092e408247009bf4c10145080e04acdd4a53b3a46",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 771,
+      "identity": {
+        "brand": "Fang",
+        "name": "Dental Sticks — Fang Layin' for Liver",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-771-australian_premium.png",
+      "sourcePage": "https://petzyo.com.au/products/fang-layin-for-liver-dental-sticks",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1653/5157/products/FANGlayin_forliver.png?v=1742989711",
+      "sourceKind": "retailer",
+      "shownPack": "200g · 5 sticks",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Photo and Petzyo product page show FANG dental dog treats200g/5 sticks. Frozen catalogue brandPetzyo and foodTypedry conflict with displayed FANG treat identity.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "d3f97cfec1d1b1005256bff00a02762d11bf3abd1bea3a5d995135989d62e72e",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 772,
+      "identity": {
+        "brand": "Fang",
+        "name": "Dental Sticks — Fang Rollin' for Roo",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-772-australian_premium.png",
+      "sourcePage": "https://petzyo.com.au/products/fang-rollin-for-roo-dental-sticks",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1653/5157/products/FANGrollin_forroo.png?v=1742989497",
+      "sourceKind": "retailer",
+      "shownPack": "200g · 5 sticks",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Photo and Petzyo product page show FANG dental dog treats200g/5 sticks. Frozen catalogue brandPetzyo and foodTyperoll conflict with displayed FANG treat identity.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "fcb239f2975134ec51da0b32d3a199e917334f8e0b4a7912b798d6754b5fb896",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 773,
+      "identity": {
+        "brand": "Fang",
+        "name": "Dental Sticks — Fang Sittin' for Chicken",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": "9339687419548"
+      },
+      "localPath": "assets/product-images/batch250-773-australian_premium.png",
+      "sourcePage": "https://petzyo.com.au/products/fang-sittin-for-chicken-dental-sticks",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1653/5157/products/FANGsittin_forchicken.png?v=1659063535",
+      "sourceKind": "retailer",
+      "shownPack": "200g · 5 sticks",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Photo and Petzyo product page show FANG dental dog treats200g/5 sticks. Frozen catalogue brandPetzyo and foodTypedry conflict with displayed FANG treat identity.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "b61776002f67b00315a6ab517f5eb02f6a2071e2e36b1ee78ff88f3cc3bbe2e1",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 782,
+      "identity": {
+        "brand": "Petzyo",
+        "name": "Raw Royalty — Chick Magnet (Chicken BARF Patties)",
+        "petType": "dog",
+        "foodType": "raw",
+        "type": "raw",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-782-australian_premium.png",
+      "sourcePage": "https://petzyo.com.au/products/2-7kg-x-barf-raw-chicken",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1653/5157/files/Chick_Magnet_2.7kg_Box_8bcf0004-d2b0-4a8f-8c54-c08ac593d95f.png?v=1743649004",
+      "sourceKind": "manufacturer",
+      "shownPack": "2.7kg box (manufacturer listing; printed weight is not legible)",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Current Petzyo manufacturer product page/feed directly associates this original image with Raw Royalty — Chick Magnet (Chicken BARF Patties). Visual check confirms PETZYO RAW ROYALTY box; small side recipe text is not fully legible, so recipe association relies on the exact manufacturer product page, not colour inference. Catalogue has no pack size.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "d2d4e4fb204f6613bcd11fcb5a212763f30c518a0e66b18df64f7b52f0b8b51b",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 783,
+      "identity": {
+        "brand": "Petzyo",
+        "name": "Raw Royalty — Got Beef (Beef BARF Patties)",
+        "petType": "dog",
+        "foodType": "raw",
+        "type": "raw",
+        "barcode": "9339687384709"
+      },
+      "localPath": "assets/product-images/batch250-783-australian_premium.png",
+      "sourcePage": "https://petzyo.com.au/products/2-7kg-x-barf-raw-beef",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1653/5157/files/Got_Beef_2.7kg_Box.png?v=1743648961",
+      "sourceKind": "manufacturer",
+      "shownPack": "2.7kg box (manufacturer listing; printed weight is not legible)",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Current Petzyo manufacturer product page/feed directly associates this original image with Raw Royalty — Got Beef (Beef BARF Patties). Visual check confirms PETZYO RAW ROYALTY box; small side recipe text is not fully legible, so recipe association relies on the exact manufacturer product page, not colour inference. Catalogue has no pack size.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "505b89bd5ddae1d6cac184e724d1a4d9f013637a9ec4615b732beebfa1aea844",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 784,
+      "identity": {
+        "brand": "Petzyo",
+        "name": "Raw Royalty — Roo's Clues (Kangaroo BARF Patties)",
+        "petType": "dog",
+        "foodType": "raw",
+        "type": "raw",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-784-australian_premium.png",
+      "sourcePage": "https://petzyo.com.au/products/2-7kg-x-barf-raw-roo",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1653/5157/files/Roo_s_Clues_2.7kg_Box.png?v=1743648987",
+      "sourceKind": "manufacturer",
+      "shownPack": "2.7kg box (manufacturer listing; printed weight is not legible)",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Current Petzyo manufacturer product page/feed directly associates this original image with Raw Royalty — Roo's Clues (Kangaroo BARF Patties). Visual check confirms PETZYO RAW ROYALTY box; small side recipe text Roo’s Clues is visible. Catalogue has no pack size.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "213a7cefbe49c4b185fc05daee900aaf559e4e724188cf5e45be9b9e4220e556",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 786,
+      "identity": {
+        "brand": "Prime100",
+        "name": "Cooked Roll Chicken & Vegetable",
+        "petType": "dog",
+        "foodType": "roll",
+        "type": "roll",
+        "barcode": "9315822022088"
+      },
+      "localPath": "assets/product-images/batch250-786-australian_premium.jpg",
+      "sourcePage": "https://prime100.com.au/products/chicken-vegetable-cooked-dog-food-roll-2kg",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0666/2091/5951/files/Prime100_Heritage_Rolls_Chicken_2kg_Front.jpg?v=1774330480",
+      "sourceKind": "manufacturer",
+      "shownPack": "2kg",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Current manufacturer product page/feed identifies exact recipe, species and form; downloaded original photo visually checked. Prime100 Chicken & Vegetables, dog silhouette, cooked cylindrical roll, 2kg.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "7aafca64a8cbbb3bfe7154ead411edfafa03d349d4b0bde676daff83e49f405b",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 796,
+      "identity": {
+        "brand": "Prime100",
+        "name": "Prime100 Kangaroo Fillet Treats",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "treat",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-796-australian_premium.jpg",
+      "sourcePage": "https://prime100.com.au/products/spt-kangaroo-fillet-dog-treats-100g",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0666/2091/5951/files/Prime100_Heritage_Fillet_Treat_Kangaroo_Front_100g.jpg?v=1774329796",
+      "sourceKind": "manufacturer",
+      "shownPack": "100g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Current manufacturer product page/feed identifies exact recipe, species and form; downloaded original photo visually checked. Prime100 Kangaroo Fillet Treats, 100% Australian Kangaroo; dog silhouette;100g pouch.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "d78e0d3af152c00f1d9236b15c8df5534da1a6ccbdd8c718506b97c41860610b",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 798,
+      "identity": {
+        "brand": "Prime100",
+        "name": "Prime100 Lamb Puppy Training Treats",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "treat",
+        "barcode": "100000060296"
+      },
+      "localPath": "assets/product-images/batch250-798-australian_premium.jpg",
+      "sourcePage": "https://prime100.com.au/products/prime100-lamb-puppy-training-treats-50g",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0666/2091/5951/files/Prime100_Heritage_Training_Treat_Lamb_Puppy_Front_50g.jpg?v=1774329809",
+      "sourceKind": "manufacturer",
+      "shownPack": "50g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Current manufacturer product page/feed identifies exact recipe, species and form; downloaded original photo visually checked. Prime100 Lamb Puppy Training Treats; puppy silhouette;50g pouch.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "3892e2cd867f007be7047af119b6ad13d21921355823d2a1203f10469a81d580",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 799,
+      "identity": {
+        "brand": "Prime100",
+        "name": "Prime100 Turkey Fillet Treats",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "treat",
+        "barcode": "9319185009755"
+      },
+      "localPath": "assets/product-images/batch250-799-australian_premium.jpg",
+      "sourcePage": "https://prime100.com.au/products/spt-turkey-fillet-dog-treats-100g",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0666/2091/5951/files/Prime100_Heritage_Fillet_Treat_Turkey_Front_100g.jpg?v=1774329797",
+      "sourceKind": "manufacturer",
+      "shownPack": "100g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Current manufacturer product page/feed identifies exact recipe, species and form; downloaded original photo visually checked. Prime100 Turkey Fillet Treats, 100% Australian Turkey; dog silhouette;100g pouch.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "e6eec3e5130890fce25fd43edfd859aae80ceabf06cc24e0737e43041a5528c2",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 810,
+      "identity": {
+        "brand": "Prime100",
+        "name": "SPD Fresh Roll Crocodile & Tapioca",
+        "petType": "dog",
+        "foodType": "fresh",
+        "type": "fresh",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-810-australian_premium.jpg",
+      "sourcePage": "https://prime100.com.au/products/npd-crocodile-tapioca-dog-food-roll-2kg",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0666/2091/5951/files/SPD_Fresh_Rolls_Crocodile_Tapioca_2kg_Front.jpg?v=1774331728",
+      "sourceKind": "manufacturer",
+      "shownPack": "2kg",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Downloaded source original visually checked: Prime100 NPD+ Crocodile & Tapioca steam-cooked fresh roll2kg. Manufacturer product description explicitly calls this same listing Prime100 SPD Fresh Roll Crocodile & Tapioca; current title/label NPD+, so documented updated presentation.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "ebd1bd32ae18cd5994646f3c620be5ce948ef1b8593f6190e15d396910eea7f3",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 830,
+      "identity": {
+        "brand": "Prime100",
+        "name": "SPD Puppy Fresh Roll Turkey & Flaxseed",
+        "petType": "dog",
+        "foodType": "fresh",
+        "type": "fresh",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-830-australian_premium.jpg",
+      "sourcePage": "https://prime100.com.au/products/spd-turkey-flaxseed-puppy-roll-2kg",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0666/2091/5951/files/SPD_Fresh_Rolls_Puppy_Turkey_Flaxseed_2kg_Front.jpg?v=1774333075",
+      "sourceKind": "manufacturer",
+      "shownPack": "2kg",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Current manufacturer product page/feed identifies exact recipe, species and form; downloaded original photo visually checked. Prime100 SPD Single Protein Diet Puppy Turkey & Flaxseed; steam cooked fresh roll;2kg.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "8d1fa0909b1b3bb3e0cfe90c43fa905a6fb2f1b1196574548591a66adffbd1c5",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 833,
+      "identity": {
+        "brand": "Prime100",
+        "name": "SPD Slow Cooked Crocodile & Algae Oil",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-833-australian_premium.jpg",
+      "sourcePage": "https://prime100.com.au/products/npd-slow-cooked-crocodile-algae-oil-354g",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0666/2091/5951/files/SPD_Slow_Cooked_Crocodile_Algae_Oil_354g_Angle_Front.jpg?v=1774333777",
+      "sourceKind": "manufacturer",
+      "shownPack": "354g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Photo and current manufacturer description identify Prime100 Crocodile & Algae Oil slow-cooked wet dog food354g, while catalogue foodType is dry. Manufacturer description explicitly retains SPD wording for the current NPD-titled product.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "a2effe900d80d5b5430b701a650f2645787aeb295a5d0164fc86612c9b12e837",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 845,
+      "identity": {
+        "brand": "Purina Pro Plan",
+        "name": "Adult Cat (Salmon & Rice)",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-845-clinical_major.jpg",
+      "sourcePage": "https://www.purina.com.au/AU-000019.html",
+      "imageUrl": "https://images.skulibrary.com/media/sys_master/h51/h64/10584389976094.jpg?response-content-disposition=inline;filename=NEST-9300605132917-1.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "7kg bag",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer page and viewed photo identify Adult Salmon Formula dry CAT food 7kg; source recipe includes rice.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "57c8a9bdd3668b610051dac899d441658ed3cc2875dc57a22d639d0d05010e29",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 847,
+      "identity": {
+        "brand": "Purina Pro Plan",
+        "name": "Complete Essentials Chicken & Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-847-clinical_major.png",
+      "sourcePage": "https://www.purina.com/dogs/shop/pro-plan-complete-essentials-shredded-blend-chicken-rice-probiotics-dry-dog-food",
+      "imageUrl": "https://live.purina.com/sites/default/files/products/2024-12/pro_plan_complete_essentials_chicken_rice_dry_dog_food_35lb.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "US 35lb bag",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed manufacturer US front: Purina Pro Plan Adult Complete Essentials Shredded Blend Chicken & Rice Formula, dog, 35 LB. Recipe/species/form agree with abbreviated catalogue name.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "a1397540edbfcae3af33d5cffc84f43f1b02b52e8a2d32b6d6015cd182505fee",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 848,
+      "identity": {
+        "brand": "Purina Pro Plan",
+        "name": "Complete Essentials Salmon & Rice Entrée",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-848-clinical_major.jpg",
+      "sourcePage": "https://www.purina.com.au/12500884.html",
+      "imageUrl": "https://images.skulibrary.com/media/sys_master/h10/h39/14578452365342.jpg?response-content-disposition=inline;filename=NEST-38100026972-0.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "85g can",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed manufacturer Complete Essentials Salmon & Rice Entrée in Sauce adult CAT wet 85g can. Central Pet Australia October Newsletter lists barcode 38100166791 as Seafood Favourites in Sauce variety pack wet cat 12×85g, while Salmon & Rice is 038100026972.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "023ccc42422ceb7d323f843c2a6106481e5539283a9962dca54d5b095423d381",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 849,
+      "identity": {
+        "brand": "Purina Pro Plan",
+        "name": "Complete Essentials Tuna Entrée",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-849-clinical_major.jpg",
+      "sourcePage": "https://www.purina.com.au/12500891.html",
+      "imageUrl": "https://images.skulibrary.com/media/sys_master/h75/hd9/14578494603294.jpg?response-content-disposition=inline;filename=NEST-38100111975-0.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "85g can",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed manufacturer Complete Essentials Tuna Entrée in Sauce adult CAT wet 85g can.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "a527b4898a8bad1686aa12ddb048f76d486f0904a49bff8ab2e81b08ce75e4ec",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 854,
+      "identity": {
+        "brand": "Purina Pro Plan",
+        "name": "Kitten Salmon & Rice",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-854-clinical_major.png",
+      "sourcePage": "https://www.purina.com/cats/shop/pro-plan-sensitive-skin-stomach-adult-kitten-dry-cat-food",
+      "imageUrl": "https://live.purina.com/sites/default/files/products/2025-05/pro-plan-sensitive-skin-stomach-salmon-kitten-dry-cat-food.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "US 3.5lb bag",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed manufacturer front: Purina Pro Plan Kitten Under One Year, Sensitive Skin & Stomach Salmon & Rice Formula, cat dry, 3.5 LB. Named kitten salmon/rice recipe agrees; full range wording is visible.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "8daee036429e54dcbedd4c5e7b961e0b51bdaedfe715fdc90972478205a67249",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 856,
+      "identity": {
+        "brand": "Purina Pro Plan",
+        "name": "LiveClear Adult 7+",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-856-clinical_major.png",
+      "sourcePage": "https://www.purina.com/cats/shop/pro-plan-liveclear-allergen-reducing-senior-prime-plus-chicken-dry-cat-food",
+      "imageUrl": "https://live.purina.com/sites/default/files/products/2025-05/pro-plan-liveclear-prime-plus-senior-chicken-rice-dry-cat-food-5.5-lb-bag.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "US 5.5lb bag",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed manufacturer US front: Pro Plan LiveClear Adult 7+ Prime Plus Formula, chicken, CAT dry 5.5 LB.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "16c7712ada89572b48408dc96caf224e2da55c755f4e3eb26f45d49062f50cda",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 870,
+      "identity": {
+        "brand": "Royal Canin",
+        "name": "Mini Senior 8+",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": "2820181299974"
+      },
+      "localPath": "assets/product-images/batch250-870-clinical_major.jpg",
+      "sourcePage": "https://www.royalcanin.com/uk/dogs/products/retail-products/mini-adult-8%2B-3002",
+      "imageUrl": "https://cdn.royalcanin-weshare-online.io/UUDczIoBRYZmsWpcJQ5g/v25/rc-shn24-dry-miniad8-3002-mv-2",
+      "sourceKind": "manufacturer",
+      "shownPack": "bag; weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed original manufacturer photo: Royal Canin Mini Adult 8+; dog dry bag.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "f0e1689bb9a432931a2d7de39960e6ebad4d647f41c4e4c59720a090ab7ccd2a",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 874,
       "identity": {
         "brand": "Royal Canin Veterinary",
@@ -1630,6 +3654,226 @@
       "checkedDate": "2026-09-14",
       "sha256": "cda0bca553839dec8c65dea2a6918ba11760bd2e9ec0f54e961fdb5b306ef2b1",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 876,
+      "identity": {
+        "brand": "Royal Canin Veterinary",
+        "name": "Gastrointestinal",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-876-clinical_major.jpg",
+      "sourcePage": "https://www.royalcanin.com/au/dogs/products/vet-products/gastrointestinal-3911",
+      "imageUrl": "https://marspetcareaprimocdn.petcare.global/42bc6cb5-e873-4e78-ba33-b2490009f62e/42bc6cb5-e873-4e78-ba33-b2490009f62e_DownloadAsJpg.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "bag; weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer canine Gastrointestinal photo visually matches name/dog/dry. However catalogue barcode3182550771269 is explicitly associated with feline gastrointestinal4kg by indexed retailer evidence.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "ef60e52afdbad5a896870804651712ccd193e6eb073953107419526c1362488e",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 877,
+      "identity": {
+        "brand": "Royal Canin Veterinary",
+        "name": "Gastrointestinal Fibre Response",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": "3182550707688"
+      },
+      "localPath": "assets/product-images/batch250-877-clinical_major.jpg",
+      "sourcePage": "https://www.royalcanin.com/mt/dogs/products/vet-products/fibre-response-3959",
+      "imageUrl": "https://cdn.royalcanin-weshare-online.io/kPkUa2QBIYfdNSoC6upu/v138/gastro-intestinal-2010-packshots-vdd-fibre-packshot",
+      "sourceKind": "manufacturer",
+      "shownPack": "bag; weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed original manufacturer photo: Royal Canin Fibre Response; dog dry bag.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "e3dd6e3d406882c75d50066a061f4034571563b81543e13ad945b753e0f6c66a",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 878,
+      "identity": {
+        "brand": "Royal Canin Veterinary",
+        "name": "Gastrointestinal Loaf",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-878-clinical_major.jpg",
+      "sourcePage": "https://www.royalcanin.com/au/dogs/products/vet-products/gastrointestinal-4038",
+      "imageUrl": "https://marspetcareaprimocdn.petcare.global/cc4275da-78ed-4cd0-b8f5-b1ef001ddbea/cc4275da-78ed-4cd0-b8f5-b1ef001ddbea_DownloadAsJpg.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "can; weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed original manufacturer photo: Royal Canin Gastrointestinal Wet ; dog wet can with Loaf stated.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "c008a45933677f5cbb7bd765453c959a80988b94f5f57e16b65438be97607d0b",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 880,
+      "identity": {
+        "brand": "Royal Canin Veterinary",
+        "name": "Urinary S/O Moderate Calorie",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-880-clinical_major.jpg",
+      "sourcePage": "https://www.royalcanin.com/uk/dogs/products/vet-products/urinary-so-moderate-calorie-3800",
+      "imageUrl": "https://marspetcareaprimocdn.petcare.global/8794d601-287c-4d09-aec1-b1ef001e80b5/8794d601-287c-4d09-aec1-b1ef001e80b5_DownloadAsJpg.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "bag; weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer canine Urinary S/O Moderate Calorie photo matches dog/dry name. Catalogue barcode3182550815475 is explicitly listed as feline Urinary S/O Moderate Calorie9kg by Rozetka.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "5dc59b6fccf9a2e20c5e2a4966ec83bb63c4011f0709007c8a775992c0788bc7",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 885,
+      "identity": {
+        "brand": "Royal Canin Veterinary",
+        "name": "Recovery",
+        "petType": "both",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-885-clinical_major.jpg",
+      "sourcePage": "https://www.royalcanin.com/au/dogs/products/vet-products/recovery-4055",
+      "imageUrl": "https://marspetcareaprimocdn.petcare.global/a6a231f3-d098-49f3-b260-b1ef001de50d/a6a231f3-d098-49f3-b260-b1ef001de50d_DownloadAsJpg.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "195g can (source page)",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer Recovery is wet canine/feline can; viewed label shows Recovery, dog and cat.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "c098712617a79e70ffa5a0a90eb36489ec2201518a30430ec420524a100947bc",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 887,
+      "identity": {
+        "brand": "Royal Canin Veterinary",
+        "name": "Renal",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-887-clinical_major.jpg",
+      "sourcePage": "https://www.royalcanin.com/uk/dogs/products/vet-products/renal-3916",
+      "imageUrl": "https://marspetcareaprimocdn.petcare.global/fd2d770c-95e1-4768-90d4-b367010169bf/fd2d770c-95e1-4768-90d4-b367010169bf_DownloadAsJpg.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "bag; weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed original manufacturer photo: Royal Canin Renal; dog dry bag.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "af13f0a0f60e4af50c274d5f14b06596955f136a13c585f01ea9fbb68ffb4c73",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 891,
+      "identity": {
+        "brand": "Royal Canin Veterinary",
+        "name": "Satiety Weight Management",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-891-clinical_major.jpg",
+      "sourcePage": "https://www.royalcanin.com/au/dogs/products/vet-products/satiety-3948",
+      "imageUrl": "https://marspetcareaprimocdn.petcare.global/d60f04f4-354d-42b7-abbe-b377010d856b/d60f04f4-354d-42b7-abbe-b377010d856b_DownloadAsJpg.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "bag; weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed canine manufacturer photo matches frozen name and dog/dry. Barcode research explicitly associates recorded code with wet feline Satiety85g pouches.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "c3994fcb4b38041ea1fdea7e7d25924222a5a3fd59bd922055015781292a4343",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 893,
+      "identity": {
+        "brand": "Royal Canin Veterinary",
+        "name": "Sensitivity Control",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-893-clinical_major.jpg",
+      "sourcePage": "https://www.royalcanin.com/au/dogs/products/vet-products/sensitivity-control-3922",
+      "imageUrl": "https://marspetcareaprimocdn.petcare.global/a9d97bdc-f15e-462e-9bb8-b2490009f567/a9d97bdc-f15e-462e-9bb8-b2490009f567_DownloadAsJpg.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "bag; weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed canine manufacturer photo matches frozen name and dog/dry. Barcode research explicitly associates recorded code with wet feline Sensitivity Control Chicken and Rice12x85g pouches.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "037f81c40fb3067d07929d2b874b6a8ef6f1fd385bd9956fc98100feb6859518",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 895,
+      "identity": {
+        "brand": "Royal Canin Veterinary",
+        "name": "Urinary S/O",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-895-clinical_major.jpg",
+      "sourcePage": "https://www.royalcanin.com/au/dogs/products/vet-products/urinary-so-3913",
+      "imageUrl": "https://marspetcareaprimocdn.petcare.global/0c232659-7eb4-41d1-9342-b2490009f7bf/0c232659-7eb4-41d1-9342-b2490009f7bf_DownloadAsJpg.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "bag; weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed canine manufacturer photo matches frozen name and dog/dry. Barcode research explicitly associates recorded code with dry feline Urinary S/O9kg.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "f2fda443c0c5eed0ce49502795d3d16b23544061785186c22ab30693c55256d6",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 896,
+      "identity": {
+        "brand": "Royal Canin Veterinary",
+        "name": "Urinary S/O Loaf in Sauce",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-896-clinical_major.jpg",
+      "sourcePage": "https://www.royalcanin.com/ca/cats/products/vet-products/urinary-so-1254",
+      "imageUrl": "https://cdn.royalcanin-weshare-online.io/cOeXqHgBaPOZra8qhacD/v17/l74291a-3d-packshot",
+      "sourceKind": "manufacturer",
+      "shownPack": "Canadian can; net weight not legible on front",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed Canadian manufacturer original: Royal Canin Veterinary Urinary SO Loaf in Sauce CAT wet can, matching named recipe but not catalogue category.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "b5f959878d9e2b4c776866344fd56eb7c3d3b281bbe063141bded7d29ddd20cb",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 901,
@@ -1742,6 +3986,94 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 937,
+      "identity": {
+        "brand": "Wellness",
+        "name": "CORE Beef, Venison & Lamb",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": "76344079187"
+      },
+      "localPath": "assets/product-images/batch250-937-root_brands.png",
+      "sourcePage": "https://shop.pfwvt.com/12-5oz-wellness-core-beef-venison-lamb-dog-can/",
+      "imageUrl": "https://cdn11.bigcommerce.com/s-6gpj77bzbo/images/stencil/1280x1280/products/1025/13134/WEL07918__07897.1753205436.png?c=2",
+      "sourceKind": "retailer",
+      "shownPack": "12.5 oz (354 g) can",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Retailer identifies Wellness CORE Beef Venison Lamb dog can, 12.5 oz. Viewed photo reads Beef, Venison & Lamb Recipe, natural food for adult dogs, grain free, net wt12.5oz (354g). Manufacturer testing results separately list Wellness Wet Dog CORE Beef, Venison & Lamb.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "c4f7ee9147aed17cde41bc400b6a86cfe195996e66d5367e336c70c464368f80",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 939,
+      "identity": {
+        "brand": "Wellness",
+        "name": "CORE Digestive Health Chicken & Brown Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": "9343005006099"
+      },
+      "localPath": "assets/product-images/batch250-939-root_brands.jpg",
+      "sourcePage": "https://www.wellnesspetfood.com/product-catalog/wellness-core-digestive-health-chicken-brown-rice/",
+      "imageUrl": "https://images.salsify.com/image/upload/s--OTV6iHFg--/w_500/ww5v63ykp8sj6xwwjpm0.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "4 lb (1.8 kg) bag",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Current manufacturer product page and linked front photo identify Wellness CORE Digestive Health Chicken & Brown Rice Recipe for adult dogs, wholesome grains dry food. Viewed photo visibly states4 LBS (1.8kg).",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "3a09d6bd456d77f9a670cb4012f57d821a1daebea20e7a1da37285e3cd3f1401",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 947,
+      "identity": {
+        "brand": "Wellness",
+        "name": "CORE Signature Selects Seafood Selection Variety Pack",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-947-root_brands.png",
+      "sourcePage": "https://wellnesspetfood.com.au/cat-wellness/natural-cat-food/signature-selects/signature-selects-seafood-selection-variety-pack/",
+      "imageUrl": "https://wellnesspetfood.com.au/wp-content/uploads/2021/07/RNDR_COR_SigSelects_VP_Seafood_Angled.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "8 ×2.8 oz (79 g) cans",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer identifies CORE Signature Selects Seafood Selection Variety Pack for cats,8×79g. Viewed box reads Seafood Selection, healthy food for adult cats,3flaked Skipjack Tuna & Wild Salmon,3flaked Skipjack Tuna & Shrimp,2chunky Boneless Chicken & Wild Salmon. Photo is cans, not dry food. Frozen Shredded descriptor conflicts with the flaked/chunky assortment.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "8fb57e161da9494b182a264a9649816cb45182bdeab90adf1fee78b9fc0b7e99",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 950,
+      "identity": {
+        "brand": "Wellness",
+        "name": "CORE Wholesome Grains Original",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": "0076344884828"
+      },
+      "localPath": "assets/product-images/batch250-950-root_brands.jpg",
+      "sourcePage": "https://www.wellnesspetfood.com/product-catalog/wellness-core-wholesome-grains-original-turkey-chicken/",
+      "imageUrl": "https://images.salsify.com/image/upload/s--Q9bZE-Rw--/w_500/uvzou80g1ixf8kvz5jkz.jpg",
+      "sourceKind": "manufacturer",
+      "shownPack": "Bag; weight not legible in the supplied manufacturer photo",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Current manufacturer product page and linked front photo identify Wellness CORE Original Deboned Turkey, Chicken Meal & Turkey Meal Recipe for adult dogs; visible band explicitly states WHOLESOME GRAINS. Pack weight is not legible in the supplied manufacturer image.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "07446a6957fad565f36a04cdf5f8460ae1ec9df9a187686fa9d98ab22e62ecaf",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 975,
       "identity": {
         "brand": "Pedigree",
@@ -1808,6 +4140,182 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 999,
+      "identity": {
+        "brand": "Advance",
+        "name": "Adult Large Breed Chicken & Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 15kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-999-clinical_major.jpg",
+      "sourcePage": "https://www.petcircle.com.au/product/advance-large-adult-dry-dog-food-chicken-with-rice/m216257",
+      "imageUrl": "https://images.cdn.australia-southeast1.gcp.commercetools.com/1e471ab9-fac6-4ff5-a665-db98006e8969/MARSP_9334214008219--lICIkiC-.jpg",
+      "sourceKind": "retailer",
+      "shownPack": "15kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Viewed original: ADVANCE Adult Large Breed, Chicken with Rice, 15kg. Manufacturer dry dog category also lists Adult Large Breed Chicken with Rice 15kg.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "6f6c7e2143d48a9eb057469488d194a1fa5194c0af754e088520e51ada98570c",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 1010,
+      "identity": {
+        "brand": "Black Hawk",
+        "name": "Adult Chicken",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 2.5kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-1010-australian_premium.jpg",
+      "sourcePage": "https://www.blackhawkpetcare.com/en/products/dog/grain-free-dog-food-chicken/",
+      "imageUrl": "https://www.blackhawkpetcare.com/media/je0owab3/bh317-black-hawk-grain-free-dog-chicken-25kg-front-1926x1926.jpg?rmode=max&width=1926&v=1d98694c1157130",
+      "sourceKind": "manufacturer",
+      "shownPack": "2.5kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page identifies recipe, species, form and exact pack; downloaded original photo visually checked. Black Hawk grain free Adult all breeds and sizes Chicken2.5kg. Catalogue generic Adult Chicken has no contrary range qualifier.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "8a8e88ff70bc7b4909ce9c68b2ba03da09e09914752428d4e4efbcf38c505a41",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 1017,
+      "identity": {
+        "brand": "Black Hawk",
+        "name": "Original Adult Chicken & Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-1017-australian_premium.png",
+      "sourcePage": "https://www.blackhawkpetcare.com/en/products/dog/original-dog-food-chicken-and-rice/",
+      "imageUrl": "https://www.blackhawkpetcare.com/media/03khekpb/bh311-80152-original-adult-chicken-rice-3kg_front-1926x1926-ce407a0.png?rmode=max&width=1926&v=1d981565d138070",
+      "sourceKind": "manufacturer",
+      "shownPack": "3kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page identifies recipe, species, form and exact pack; downloaded original photo visually checked. Black Hawk Original Adult all breeds Chicken & Rice3kg.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "ec827b8b358f9b20be5b7410703be07da3219ddd385f7e1eaead5208d83ae298",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 1021,
+      "identity": {
+        "brand": "Acana",
+        "name": "Homestead Harvest",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry",
+        "barcode": "9328174001724"
+      },
+      "localPath": "assets/product-images/batch250-1021-root_brands.webp",
+      "sourcePage": "https://acana.net/products/homestead-harvest",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0713/6873/7062/files/340g_1_1x_2630a38d-f8f0-476a-96b6-e7c7370264e4.webp?v=1780033475",
+      "sourceKind": "retailer",
+      "shownPack": "340g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Recipe, species and printed weight checked against the unchanged source photo and the regional distributor variant association. Regional packaging does not verify Australian availability or barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "2733d9e59aae89b68c4138722c5ca5355be47966c01e3f5ea437aea9a212be2d",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 1022,
+      "identity": {
+        "brand": "Black Hawk",
+        "name": "Original Adult Lamb & Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9338362000941"
+      },
+      "localPath": "assets/product-images/batch250-1022-australian_premium.jpg",
+      "sourcePage": "https://www.blackhawkpetcare.com/en/products/dog/original-dog-food-lamb-and-rice/",
+      "imageUrl": "https://www.blackhawkpetcare.com/media/hqbgwacb/bh310-original-adult-lamb-rice-3kg-front-1926x1926.jpg?rmode=max&width=1926&v=1d985e434c56650",
+      "sourceKind": "manufacturer",
+      "shownPack": "3kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page identifies recipe, species, form and exact pack; downloaded original photo visually checked. Black Hawk Original Adult all breeds Lamb & Rice3kg.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "e0cc81309db73eb0ece35ce54f157ee35b3f5a0a26cfb9d38889f3cf06b04a1c",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 1024,
+      "identity": {
+        "brand": "Acana",
+        "name": "Meadowland",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-1024-root_brands.png",
+      "sourcePage": "https://apac.acana.com/en/dogs/dog-food/ap-ds-aca-meadowlands-dog.html",
+      "imageUrl": "https://apac.acana.com/dw/image/v2/bfdw_prd/on/demandware.static/-/Sites-acana-ap-master-catalog/default/dwd7cb0f23/ACA-dog-new/DS-ACANA-HP-Right-13lb-556x800_Meadowland.png?sw=1200",
+      "sourceKind": "manufacturer",
+      "shownPack": "13lb / 5.9kg",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Visible ACANA Highest Protein Meadowland dry dog recipe; manufacturer photo prints 13lb / 5.9kg. Catalogue does not specify a pack size.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "5d5b41a2e76ef9f8953d402fdf5e05b5ebaf96c1a2d3d3478740a6044dae369a",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 1025,
+      "identity": {
+        "brand": "Black Hawk",
+        "name": "Small Breed Adult Lamb & Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9312239049585"
+      },
+      "localPath": "assets/product-images/batch250-1025-australian_premium.jpg",
+      "sourcePage": "https://www.blackhawkpetcare.com/en/products/dog/original-dog-food-for-small-breeds-lamb-and-rice/",
+      "imageUrl": "https://www.blackhawkpetcare.com/media/i3xg43gm/bh351-original-small-breed-adult-lamb-rice-3kg-front-1926x1926.jpg?rmode=max&width=1926&v=1d985ee3a8dea30",
+      "sourceKind": "manufacturer",
+      "shownPack": "3kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Current manufacturer product page identifies recipe, species, form and exact pack; downloaded original photo visually checked. Black Hawk Original Adult Small Breed Lamb & Rice3kg.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "2395bd6fa41b3e59b0bf33192793a8713a688b962542a3726ea29a9328e7bced",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 1029,
+      "identity": {
+        "brand": "Acana",
+        "name": "Highest Protein Meadowland",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-1029-root_brands.png",
+      "sourcePage": "https://apac.acana.com/en/dogs/dog-food/ap-ds-aca-meadowlands-dog.html",
+      "imageUrl": "https://apac.acana.com/dw/image/v2/bfdw_prd/on/demandware.static/-/Sites-acana-ap-master-catalog/default/dwd7cb0f23/ACA-dog-new/DS-ACANA-HP-Right-13lb-556x800_Meadowland.png?sw=1200",
+      "sourceKind": "manufacturer",
+      "shownPack": "13lb / 5.9kg",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Visible ACANA Highest Protein Meadowland dry dog recipe; manufacturer photo prints 13lb / 5.9kg. Catalogue does not specify a pack size.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "5d5b41a2e76ef9f8953d402fdf5e05b5ebaf96c1a2d3d3478740a6044dae369a",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 1033,
       "identity": {
         "brand": "Acana",
@@ -1850,6 +4358,50 @@
       "checkedDate": "2026-09-14",
       "sha256": "bc173061f19c21c2b0d4859db0824b3c831ed7ae847a7a038eecc57e83a06398",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 1045,
+      "identity": {
+        "brand": "Balanced Life",
+        "name": "Companion Treat — Chicken",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "treat",
+        "barcode": "9360747000598"
+      },
+      "localPath": "assets/product-images/batch250-1045-australian_premium.jpg",
+      "sourcePage": "https://thegeneralpawstore.com/products/balanced-life-companion-treat-chicken-dog-140g",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0650/4221/9227/products/BLCTCD140.jpg?v=1663305894",
+      "sourceKind": "retailer",
+      "shownPack": "140g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Downloaded source original visually checked: Balanced Life Air Dried Raw Chicken Companion Treat, Chicken Meat & Liver with Alfalfa, premium pet treat for dogs,140g.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "0194b002d89d80bb612d87db402596f930a9be645bca671a03fd49439cec87a0",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 1051,
+      "identity": {
+        "brand": "Balanced Life",
+        "name": "Enhanced Grain Free — Salmon",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-1051-australian_premium.png",
+      "sourcePage": "https://leagueofpets.com.au/products/enhanced-salmon-dry-dog-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0665/2343/1139/products/balanced-life-enhanced-salmon-dry-dog-food.png?v=1668349769",
+      "sourceKind": "retailer",
+      "shownPack": "9kg",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Downloaded source original visually checked: Balanced Life Salmon Recipe Enhanced,0% grain, kibble plus air-dried raw salmon pieces, premium dog food, NET WT9kg.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "6568f4d59efd4ace2bb872f297475376b0ca53c550894e37bdc38a8bf2175e71",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 1055,
@@ -1982,6 +4534,28 @@
       "checkedDate": "2026-09-14",
       "sha256": "e15663026344c1a3cdb2336c922c5733fdc94285f1952ec0aa0af60793220e20",
       "rightsStatus": "Source recorded; no licence grant asserted."
+    },
+    {
+      "appId": 1094,
+      "identity": {
+        "brand": "Acana",
+        "name": "Wholesome Grains Free-Run Poultry",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry",
+        "barcode": "0064992501457"
+      },
+      "localPath": "assets/product-images/batch250-1094-root_brands.png",
+      "sourcePage": "https://www.acana.com/en-US/dogs/dog-food/wholesome-grains%2C-free-run-poultry-and-grains-recipe/ds-aca-free-run-poultry-wg.html",
+      "imageUrl": "https://www.acana.com/dw/image/v2/bfdw_prd/on/demandware.static/-/Sites-acana-na-master-catalog/default/dw250bd9ee/ACA%20Wholesome%20Grains%20Refresh%202023/Poultry/ACANA%20Wholesome%20Grains%20Free-Run%20Poultry%20Recipe%20Front%2022.5lb%20USA.png?sw=1200",
+      "sourceKind": "manufacturer",
+      "shownPack": "22.5lb / 10.2kg",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer names the Wholesome Grains Free-Run Poultry dry dog recipe; unchanged front photo confirms recipe, dog and 22.5lb / 10.2kg. Catalogue has no pack size.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "4ead70f5bd2ae76bf7e109c421ba9e226b8c61c7fd7b561e810a45540f564a07",
+      "rightsStatus": "Public product image; no licence grant asserted."
     },
     {
       "appId": 1095,
@@ -2246,6 +4820,94 @@
       "checkedDate": "2026-09-14",
       "sha256": "f14c900a8bca7d9e437a94e56d2d3b360fc6b443749b8492929363a585511ca0",
       "rightsStatus": "Manufacturer product asset; no licence grant asserted."
+    },
+    {
+      "appId": 1147,
+      "identity": {
+        "brand": "Orijen",
+        "name": "Regional Red Cat",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry",
+        "barcode": "9339687084432"
+      },
+      "localPath": "assets/product-images/batch250-1147-root_brands.webp",
+      "sourcePage": "https://acana.net/products/orijen-regional-red-cat",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0713/6873/7062/files/4a106d7f840b3d19bae46373c4dd4286_1_1x_e9c34db1-197d-4adb-936b-c09cf8e57dee.webp?v=1780031513",
+      "sourceKind": "retailer",
+      "shownPack": "340g",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Recipe, species and printed weight checked against the unchanged source photo and the regional distributor variant association. Regional packaging does not verify Australian availability or barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "88e0c0f8428b46123fc0d5c3f8482548ca92d0c744c13a122078c9b5672bfdb6",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 1149,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Dentastix Fresh Large Dog",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": "9334214018805"
+      },
+      "localPath": "assets/product-images/batch250-1149-mars_purina.png",
+      "sourcePage": "https://www.uk.pedigree.com/dog-food/dog-dental-care/pedigree-dentastix-fresh-daily-dental-chews-large-dog-treat-810g-154g",
+      "imageUrl": "https://www.uk.pedigree.com/sites/g/files/fnmzdf8691/files/migrate-product-files/images/ng53hqjph8yqzkgg9z7n.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "21 sticks",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer page and original photo agree on Pedigree Dentastix Fresh Large Dog. The photographed 21 sticks package is labelled separately; catalogue pack size is absent. UK artwork does not establish Australian distribution or barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "0281eac8bf524b150bebfdc95264b567096190e918f3c4d5646c7369ed15d2e1",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 1150,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Dentastix Fresh Medium Dog",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/batch250-1150-mars_purina.png",
+      "sourcePage": "https://www.uk.pedigree.com/dog-food/dog-dental-care/pedigree-dentastix-fresh-daily-dental-chews-medium-dog-treat-720g-128g",
+      "imageUrl": "https://www.uk.pedigree.com/sites/g/files/fnmzdf8691/files/migrate-product-files/images/kj5yyb310matiioio5zj.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "28 sticks",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer page and original photo agree on Pedigree Dentastix Fresh Medium Dog. The photographed 28 sticks package is labelled separately; catalogue pack size is absent. UK artwork does not establish Australian distribution or barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "d3b1c6b5ffad59b444944265a776e93af5d633fc5a6bb52a25f3056f7ef55bbc",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 1151,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Dentastix Fresh Small Dog",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": "9334214010922"
+      },
+      "localPath": "assets/product-images/batch250-1151-mars_purina.png",
+      "sourcePage": "https://www.uk.pedigree.com/dog-food/dog-dental-care/pedigree-dentastix-fresh-daily-dental-chews-small-dog-treat-550g-110g",
+      "imageUrl": "https://www.uk.pedigree.com/sites/g/files/fnmzdf8691/files/migrate-product-files/images/h8kifo25sxbnv59qp6vx.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "35 sticks",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer page and original photo agree on Pedigree Dentastix Fresh Small Dog. The photographed 35 sticks package is labelled separately; catalogue pack size is absent. UK artwork does not establish Australian distribution or barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-15",
+      "sha256": "15a7c1668f563445b557112ee1d97f9e15f9b6e4f7a6c9236ed2fb3efd15fa92",
+      "rightsStatus": "Public product image; no licence grant asserted."
     }
   ]
 }

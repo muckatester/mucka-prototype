@@ -6180,6 +6180,1322 @@
         "https://ziwipets.com/products/air-dried-mackerel-and-lamb-cat-food",
         "https://ziwipets.com/products/air-dried-mackerel-and-lamb-cat-food.js"
       ]
+    },
+    {
+      "appId": 569,
+      "before": {
+        "petType": "dog"
+      },
+      "after": {
+        "petType": "cat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer y/d Thyroid Care is dry cat food; catalogue dog conflicts. Manufacturer y/d Thyroid Care is dry cat food; catalogue dog conflicts.",
+      "sources": [
+        "https://www.hillspet.com.au/cat-food/prescription-diet-yd-thyroid-care-dry"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 599,
+      "before": {
+        "petType": "dog"
+      },
+      "after": {
+        "petType": "cat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer Adult11+ Chicken dry food is for cats; catalogue dog conflicts. Manufacturer Adult11+ Chicken dry food is for cats; catalogue dog conflicts.",
+      "sources": [
+        "https://www.hillspet.com.au/cat-food/science-diet-senior-11-dry"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 589,
+      "before": {
+        "foodType": "dry",
+        "petType": "dog",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer Tender Chicken Dinner Chunks & Gravy is a wet cat can156g; catalogue dog/dry conflicts. Manufacturer Tender Chicken Dinner Chunks & Gravy is a wet cat can156g; catalogue dog/dry conflicts.",
+      "sources": [
+        "https://www.hillspet.com.au/cat-food/science-diet-adult-chunks-gravy-chicken-tender-dinner-canned"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 885,
+      "before": {
+        "foodType": "dry",
+        "petType": "dog",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "both",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer Recovery is wet canine/feline can; viewed label shows Recovery, dog and cat. Catalogue dog/dry conflicts with manufacturer's wet dog/cat Recovery. Candidate retained for metadata correction.",
+      "sources": [
+        "https://www.royalcanin.com/au/dogs/products/vet-products/recovery-4055"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 845,
+      "before": {
+        "petType": "dog"
+      },
+      "after": {
+        "petType": "cat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer page and viewed photo identify Adult Salmon Formula dry CAT food 7kg; source recipe includes rice. Catalogue name explicitly says Adult Cat but petType is dog. Candidate ready after source-supported cat correction.",
+      "sources": [
+        "https://www.purina.com.au/AU-000019.html"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 849,
+      "before": {
+        "foodType": "dry",
+        "petType": "dog",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Viewed manufacturer Complete Essentials Tuna Entrée in Sauce adult CAT wet 85g can. Catalogue dog/dry fields conflict with exact named cat/wet recipe. Candidate ready after source-supported species/form correction.",
+      "sources": [
+        "https://www.purina.com.au/12500891.html"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 856,
+      "before": {
+        "petType": "dog"
+      },
+      "after": {
+        "petType": "cat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Viewed manufacturer US front: Pro Plan LiveClear Adult 7+ Prime Plus Formula, chicken, CAT dry 5.5 LB. Catalogue dog conflicts with manufacturer cat species. Candidate ready after source-supported species correction.",
+      "sources": [
+        "https://www.purina.com/cats/shop/pro-plan-liveclear-allergen-reducing-senior-prime-plus-chicken-dry-cat-food"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 896,
+      "before": {
+        "foodType": "dry",
+        "petType": "dog",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Viewed Canadian manufacturer original: Royal Canin Veterinary Urinary SO Loaf in Sauce CAT wet can, matching named recipe but not catalogue category. Catalogue dog dry conflicts with manufacturer cat wet. Candidate ready after explicit species/form correction.",
+      "sources": [
+        "https://www.royalcanin.com/ca/cats/products/vet-products/urinary-so-1254"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 551,
+      "before": {
+        "petType": "dog"
+      },
+      "after": {
+        "petType": "cat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer identifies c/d Multicare Stress as cat dry food; catalogue dog conflicts. Candidate photo is feline c/d but does not visibly show Stress, so image requires a Stress-specific label before binding. Manufacturer identifies c/d Multicare Stress as cat dry food; catalogue dog conflicts. Candidate photo is feline c/d but does not visibly show Stress, so image requires a Stress-specific label before binding.",
+      "sources": [
+        "https://www.hillspet.com.au/cat-food/prescription-diet-cd-multicare-stress-chicken-urinary-care-dry",
+        "https://provahillsvet.com/assets/Terms%26Conditions.pdf"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 557,
+      "before": {
+        "type": "dry",
+        "foodType": "dry"
+      },
+      "after": {
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer i/d Chicken & Vegetable Stew is wet canned dog food; catalogue dry conflicts. Source image returned403 and was not visually checked. Manufacturer i/d Chicken & Vegetable Stew is wet canned dog food; catalogue dry conflicts. Source image returned403 and was not visually checked.",
+      "sources": [
+        "https://www.hillspet.com.au/dog-food/prescription-diet-id-chicken-vegetable-stew-digestive-care-canned"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 1008,
+      "before": {
+        "foodType": "canned",
+        "petType": "dog",
+        "type": "canned"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer establishes Sensitive Skin & Digestion Adult Turkey as dry cat food, conflicting with catalogue dog/canned. Manufacturer establishes Sensitive Skin & Digestion Adult Turkey as dry cat food, conflicting with catalogue dog/canned.",
+      "sources": [
+        "https://petfood.advancepet.com.au/collections/cats/health-benefit_sensitive-skin",
+        "https://peto.com.au/advance-sensitive-dry-catfood-turkey-2kg/"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 1044,
+      "before": {
+        "petType": "dog"
+      },
+      "after": {
+        "petType": "cat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer establishes Sensitive Skin & Digestion Adult Turkey as dry cat food, conflicting with catalogue dog. Manufacturer establishes Sensitive Skin & Digestion Adult Turkey as dry cat food, conflicting with catalogue dog.",
+      "sources": [
+        "https://petfood.advancepet.com.au/collections/cats/health-benefit_sensitive-skin",
+        "https://peto.com.au/advance-sensitive-dry-catfood-turkey-2kg/"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 1039,
+      "before": {
+        "petType": "dog"
+      },
+      "after": {
+        "petType": "cat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Catalogue name Adult Cat Kibble conflicts with dog species and does not identify a unique recipe. Manufacturer category contains Adult Chicken, Ocean Fish and multiple specialised recipes; no unique image assignment is supported. Catalogue name Adult Cat Kibble conflicts with dog species and does not identify a unique recipe. Manufacturer category contains Adult Chicken, Ocean Fish and multiple specialised recipes; no unique image assignment is supported.",
+      "sources": [
+        "https://petfood.advancepet.com.au/collections/cats",
+        "https://www.petcircle.com.au/advance"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 80,
+      "before": {
+        "barcode": "9300605147478"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer lists Pro Plan Large Adult Chicken 15kg. Pets Domain explicitly associates catalogue barcode 9300605147478 with Supercoat Adult Large Breed Chicken 7kg. Remove the recorded barcode only; do not infer or insert a replacement code.",
+      "sources": [
+        "https://www.purina.com.au/AU-000012.html",
+        "https://petsdomain.com.au/products/supercoat-adult-large-breed-dog-with-chicken-7kg"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 81,
+      "before": {
+        "barcode": "7613287798992"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "AU manufacturer Performance Chicken is 20kg. India manufacturer lists All Life Stages Performance Chicken 12kg, but Petstop Direct and Petwell associate 7613287798992 with Purina ONE Senior 7+ Salmon/Ocean Fish 8×85g wet cat food. Remove the recorded barcode only; do not infer or insert a replacement code.",
+      "sources": [
+        "https://www.purina.com.au/AU-000010.html",
+        "https://www.purina.in/food/dog/purina-pro-plan-all-life-stages-all-size-performance-chicken-dry-dog-food",
+        "https://www.petstopdirect.co.uk/shop/cats/cats-food/cats-food-wet/purina-one-senior-cat-food-salmon-ocean-fish-8x85g/",
+        "https://petwell.co.uk/products/purina-one-senior-7-wet-cat-food-salmon-ocean-fish"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 78,
+      "before": {
+        "barcode": "9300605133082"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer source is Sensitive Salmon & Tuna cat dry food. Pet Heaven and Rakuten associate 9300605133082 with this cat recipe in 1.5kg. Remove the recorded barcode only; do not infer or insert a replacement code.",
+      "sources": [
+        "https://www.purina.com.au/AU-000027.html",
+        "https://www.petheaven.co.za/collections/shop/purina-pro-plan-1/purina-pro-plan-cat-food/purina-pro-plan-sensitive-skin-stomach-adult-cat-food-1-5kg.html",
+        "https://item.rakuten.co.jp/akinai-r/9300605133082/"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 295,
+      "before": {
+        "barcode": "9300605133037"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer Urinary Care Chicken wet cat pouch is 12×85g; catalogue barcode 9300605133037 is explicitly assigned to Pro Plan Urinary Care Chicken DRY cat 3kg by PetO and The Nile. Remove the recorded barcode only; do not infer or insert a replacement code.",
+      "sources": [
+        "https://www.purina.com.au/12463199.html",
+        "https://peto.com.au/pro-plan-urinary-care-chicken-dry-cat-food/",
+        "https://www.thenile.com.au/home/adult-cat-urinary-3kg/9300605133037"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 157,
+      "before": {
+        "barcode": "9300605149519"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "AU manufacturer Adult Chicken in Gravy is CAT 12×85g; dog wet range has different recipes/packs. Rakuten and Netsea explicitly assign catalogue barcode 9300605149519 to Pro Plan Small/Toy Adult Chicken dry dog 2.5kg. Remove the recorded barcode only; do not infer or insert a replacement code.",
+      "sources": [
+        "https://www.purina.com.au/12463198.html",
+        "https://item.rakuten.co.jp/gooddoglife/9300605149519/",
+        "https://www.netsea.jp/shop/203358/9300605149519"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 293,
+      "before": {
+        "barcode": "9300605153929"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Viewed manufacturer Pro Plan Kitten Chicken Formula dry cat 3.5kg bag. Catalogue name says dry but fields specify wet 12×85g. Delishop and The Nile identify barcode 9300605153929 as Purina ONE Kitten Chicken in Gravy 70g. Remove the recorded barcode only; do not infer or insert a replacement code. Name says Dry but the stated 12×85g wet pack remains unresolved; no pack or form change is approved.",
+      "sources": [
+        "https://www.purina.com.au/AU-000015.html",
+        "https://delishop.asia/product/healthy-kitten-with-chicken-in-gravy-for-1-12-months-pouch-70g-purina-one?locale=en",
+        "https://www.thenile.co.nz/home/kitten-chicken-pouch-12-pack-70g/9300605153929"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 844,
+      "before": {
+        "barcode": "9300605141704"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer has distinct Complete Essentials, Sensitive Skin & Stomach and Sport salmon/rice dog recipes. PetO and The Warehouse explicitly identify catalogue barcode 9300605141704 as Purina ONE Sensitive Systems Salmon & Tuna dry CAT 1.4kg. Remove the recorded barcode only; do not infer or insert a replacement code.",
+      "sources": [
+        "https://www.purina.com/dogs/shop/pro-plan-complete-essentials-shredded-blend-salmon-rice-probiotics-dry-dog-food",
+        "https://peto.com.au/purina-one-cat-sensitive-salmon-tuna-dry-cat-food/",
+        "https://www.thewarehouse.co.nz/p/purina-one-adult-sensitive-systems-salmon-tuna-dry-cat-food-1.4kg/R2806368.html"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 848,
+      "before": {
+        "barcode": "38100166791",
+        "foodType": "dry",
+        "petType": "dog",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Viewed manufacturer Complete Essentials Salmon & Rice Entrée in Sauce adult CAT wet 85g can. Central Pet Australia October Newsletter lists barcode 38100166791 as Seafood Favourites in Sauce variety pack wet cat 12×85g, while Salmon & Rice is 038100026972. Remove the recorded barcode only; do not infer or insert a replacement code.",
+      "sources": [
+        "https://www.purina.com.au/12500884.html",
+        "https://fliphtml5.com/nucc/cuhb/October_Newsletter/"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 850,
+      "before": {
+        "barcode": "7613034643780"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Nestlé Portugal primary document and retailer catalogue identify 7613034643780 as Purina ONE Delicate Turkey & Rice 800g, not Pro Plan. Remove the recorded barcode only; do not infer or insert a replacement code.",
+      "sources": [
+        "https://saboreiaavida.nestle.pt/sites/default/files/2022-08/Regulamento_Concurso_Purina_Dia_do_Animal_2022.pdf",
+        "https://blogsrl.it/gb/brand/88-purina"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 859,
+      "before": {
+        "barcode": "9300605157248"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer lists Pro Plan Sport Performance 30/20 Chicken & Rice. The Warehouse and Drakes promotion SKU document assign 9300605157248 to Purina ONE Adult Chicken & Rice 2.5kg. Remove the recorded barcode only; do not infer or insert a replacement code.",
+      "sources": [
+        "https://www.purina.com/pro-plan/products/sport-dog-food",
+        "https://www.thewarehouse.co.nz/p/purina-one-adult-chicken-rice-dry-dog-food-2.5kg/R2986588.html",
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 873,
+      "before": {
+        "barcode": "3182550939478"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer Calm Small Dogs photo is a dog dry bag. Catalogue barcode3182550939478 is explicitly listed as Royal Canin Hypoallergenic CAT2.5kg by Maskotas2Go and Anipet. Remove the recorded barcode only; do not infer or insert a replacement code. Calm Small Dogs candidate remains held because catalogue Calm does not establish the breed-size variant.",
+      "sources": [
+        "https://www.royalcanin.com/uk/dogs/products/vet-products/calm-3956",
+        "https://maskotas.do/productos/gato-hypoallergenic-2-5kg/"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 876,
+      "before": {
+        "barcode": "3182550771269"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer canine Gastrointestinal photo visually matches name/dog/dry. However catalogue barcode3182550771269 is explicitly associated with feline gastrointestinal4kg by indexed retailer evidence. Remove the recorded barcode only; do not infer or insert a replacement code.",
+      "sources": [
+        "https://www.royalcanin.com/au/dogs/products/vet-products/gastrointestinal-3911",
+        "https://www.zap.co.il/compmodels.aspx?modelid=1229877",
+        "https://www.vetpharmacy.co.uk/royal-canin-feline-gastro-intestinal-dry-food-pd-668-vetrcw212",
+        "https://www.carrefour.es/royal-canin-veterinary-diet-gastro-intestinal-saco-de-4-kg/3182550771269/p"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 880,
+      "before": {
+        "barcode": "3182550815475"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer canine Urinary S/O Moderate Calorie photo matches dog/dry name. Catalogue barcode3182550815475 is explicitly listed as feline Urinary S/O Moderate Calorie9kg by Rozetka. Remove the recorded barcode only; do not infer or insert a replacement code.",
+      "sources": [
+        "https://www.royalcanin.com/uk/dogs/products/vet-products/urinary-so-moderate-calorie-3800",
+        "https://rozetka.com.ua/royal_canin_3182550815475/p249542796/"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 891,
+      "before": {
+        "barcode": "9003579006146"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Viewed canine manufacturer photo matches frozen name and dog/dry. Barcode research explicitly associates recorded code with wet feline Satiety85g pouches. Remove the recorded barcode only; do not infer or insert a replacement code.",
+      "sources": [
+        "https://www.royalcanin.com/au/dogs/products/vet-products/satiety-3948",
+        "https://www.carrefour.fr/p/royal-canin-9003579006146-nourriture-humide-pour-chats-85-g-9003579006146"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 893,
+      "before": {
+        "barcode": "9003579011423"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Viewed canine manufacturer photo matches frozen name and dog/dry. Barcode research explicitly associates recorded code with wet feline Sensitivity Control Chicken and Rice12x85g pouches. Remove the recorded barcode only; do not infer or insert a replacement code.",
+      "sources": [
+        "https://www.royalcanin.com/au/dogs/products/vet-products/sensitivity-control-3922",
+        "https://petzone.com/ksa/en/shop/shop-by-pet/cat/cat-food/wet-food/royal-canin-sensitivity-control-chicken-and-rice-cat-food-pouches-85-g-pack-of-12.html"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 895,
+      "before": {
+        "barcode": "3182550785242"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Viewed canine manufacturer photo matches frozen name and dog/dry. Barcode research explicitly associates recorded code with dry feline Urinary S/O9kg. Remove the recorded barcode only; do not infer or insert a replacement code.",
+      "sources": [
+        "https://www.royalcanin.com/au/dogs/products/vet-products/urinary-so-3913",
+        "https://rozetka.com.ua/ua/320441950/p320441950/"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 316,
+      "before": {
+        "brand": "K9 Natural"
+      },
+      "after": {
+        "brand": "Feline Natural"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Current K9 Natural manufacturer cat feed identifies Feline Natural; photo visibly shows matching Chicken Feast Freeze-Dried for cats,320g. Independent review of the original photo and source page supports these specific fields.",
+      "sources": [
+        "https://www.k9natural.com/products/chicken-feast-freeze-dried-cat-food",
+        "https://www.petcircle.com.au/feline-natural",
+        "https://www.k9natural.com/products/chicken-feast-freeze-dried-cat-food.js"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 317,
+      "before": {
+        "brand": "K9 Natural"
+      },
+      "after": {
+        "brand": "Feline Natural"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Current K9 Natural manufacturer cat feed identifies Feline Natural; photo visibly shows matching Beef Feast Freeze-Dried for cats,320g. Independent review of the original photo and source page supports these specific fields.",
+      "sources": [
+        "https://au.k9natural.com/products/beef-feast-freeze-dried-cat-food",
+        "https://www.petcircle.com.au/feline-natural",
+        "https://au.k9natural.com/products/beef-feast-freeze-dried-cat-food.js"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 319,
+      "before": {
+        "barcode": "133014000102",
+        "brand": "K9 Natural"
+      },
+      "after": {
+        "brand": "Feline Natural",
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Current K9 Natural manufacturer cat feed identifies Feline Natural; photo visibly shows matching Lamb Feast Freeze-Dried for cats,320g. Independent review of the original photo and source page supports these specific fields. PetO explicitly associates recorded code 133014000102 with Feline Natural canned Chicken & Venison; it is a different recipe and form. Remove this wrong code without replacing it.",
+      "sources": [
+        "https://au.k9natural.com/products/lamb-feast-freeze-dried-cat-food",
+        "https://www.petcircle.com.au/feline-natural",
+        "https://peto.com.au/feline-natural-canned-chicken-and-venison-feast-cat-food/",
+        "https://au.k9natural.com/products/lamb-feast-freeze-dried-cat-food.js"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 771,
+      "before": {
+        "type": "dry",
+        "brand": "Petzyo",
+        "foodType": "dry"
+      },
+      "after": {
+        "brand": "Fang",
+        "foodType": "treat",
+        "type": "Treat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Photo and Petzyo product page show FANG dental dog treats200g/5 sticks. Frozen catalogue brandPetzyo and foodTypedry conflict with displayed FANG treat identity. Independent review of the original photo and source page supports these specific fields.",
+      "sources": [
+        "https://petzyo.com.au/products/fang-layin-for-liver-dental-sticks",
+        "https://thedieline.com/unleashing-joy-with-fangs-playful-dog-treat-packaging/"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 772,
+      "before": {
+        "type": "roll",
+        "brand": "Petzyo",
+        "foodType": "roll"
+      },
+      "after": {
+        "brand": "Fang",
+        "foodType": "treat",
+        "type": "Treat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Photo and Petzyo product page show FANG dental dog treats200g/5 sticks. Frozen catalogue brandPetzyo and foodTyperoll conflict with displayed FANG treat identity. Independent review of the original photo and source page supports these specific fields.",
+      "sources": [
+        "https://petzyo.com.au/products/fang-rollin-for-roo-dental-sticks",
+        "https://thedieline.com/unleashing-joy-with-fangs-playful-dog-treat-packaging/"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 773,
+      "before": {
+        "type": "dry",
+        "brand": "Petzyo",
+        "foodType": "dry"
+      },
+      "after": {
+        "brand": "Fang",
+        "foodType": "treat",
+        "type": "Treat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Photo and Petzyo product page show FANG dental dog treats200g/5 sticks. Frozen catalogue brandPetzyo and foodTypedry conflict with displayed FANG treat identity. Independent review of the original photo and source page supports these specific fields. Search found no mapping for 9339687419548, so retain it as unverified rather than infer a wrong-product match.",
+      "sources": [
+        "https://petzyo.com.au/products/fang-sittin-for-chicken-dental-sticks",
+        "https://thedieline.com/unleashing-joy-with-fangs-playful-dog-treat-packaging/"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 833,
+      "before": {
+        "type": "dry",
+        "foodType": "dry"
+      },
+      "after": {
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Photo and current manufacturer description identify Prime100 Crocodile & Algae Oil slow-cooked wet dog food354g, while catalogue foodType is dry. Manufacturer description explicitly retains SPD wording for the current NPD-titled product. Independent review of the original photo and source page supports these specific fields. The current manufacturer NPD-titled page itself retains SPD Slow Cooked Crocodile & Algae Oil wording; this is direct source continuity, and only wet form is changed.",
+      "sources": [
+        "https://prime100.com.au/products/npd-slow-cooked-crocodile-algae-oil-354g",
+        "https://www.kohepets.com.sg/products/prime100-npd%E2%84%A2-slow-cooked-crocodile-algae-oil-wet-dog-food"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 1147,
+      "before": {},
+      "after": {
+        "petType": "cat",
+        "foodType": "dry"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Recipe, species and printed weight checked against the unchanged source photo and the regional distributor variant association. Regional packaging does not verify Australian availability or barcode.",
+      "sources": [
+        "https://acana.net/products/orijen-regional-red-cat"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 1094,
+      "before": {},
+      "after": {
+        "petType": "dog",
+        "foodType": "dry"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Manufacturer names the Wholesome Grains Free-Run Poultry dry dog recipe; unchanged front photo confirms recipe, dog and 22.5lb / 10.2kg. Catalogue has no pack size.",
+      "sources": [
+        "https://www.acana.com/en-US/dogs/dog-food/wholesome-grains%2C-free-run-poultry-and-grains-recipe/ds-aca-free-run-poultry-wg.html"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 1149,
+      "before": {},
+      "after": {
+        "petType": "dog",
+        "foodType": "treat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Manufacturer page and original photo agree on Pedigree Dentastix Fresh Large Dog. The photographed 21 sticks package is labelled separately; catalogue pack size is absent. UK artwork does not establish Australian distribution or barcode.",
+      "sources": [
+        "https://www.uk.pedigree.com/dog-food/dog-dental-care/pedigree-dentastix-fresh-daily-dental-chews-large-dog-treat-810g-154g"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 1150,
+      "before": {},
+      "after": {
+        "petType": "dog",
+        "foodType": "treat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Manufacturer page and original photo agree on Pedigree Dentastix Fresh Medium Dog. The photographed 28 sticks package is labelled separately; catalogue pack size is absent. UK artwork does not establish Australian distribution or barcode.",
+      "sources": [
+        "https://www.uk.pedigree.com/dog-food/dog-dental-care/pedigree-dentastix-fresh-daily-dental-chews-medium-dog-treat-720g-128g"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 1151,
+      "before": {},
+      "after": {
+        "petType": "dog",
+        "foodType": "treat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Manufacturer page and original photo agree on Pedigree Dentastix Fresh Small Dog. The photographed 35 sticks package is labelled separately; catalogue pack size is absent. UK artwork does not establish Australian distribution or barcode.",
+      "sources": [
+        "https://www.uk.pedigree.com/dog-food/dog-dental-care/pedigree-dentastix-fresh-daily-dental-chews-small-dog-treat-550g-110g"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 735,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Historical range announcement and retailer listing identify Australian Beef, Capsicum and Green Beans as wet85g trays or400g cans. Catalogue dry form is wrong, but no current manufacturer/retailer exact photo was obtained.",
+      "sources": [
+        "https://www.thegrocerygeek.com.au/portfolio-item/my-dog-naturally-crafted-wet-dog-food-range/",
+        "https://www.ubereats.com/product/b/00e090ff-c068-5688-a9b3-e44c3a43929b",
+        "https://www.mydog.com.au/our-products/all"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 765,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Retailer/distributor identify Casserole Lamb & Gravy as wet700g can, not catalogue dry. RH Hypermarket exact page returned403 to image download; mixed pantry-pack photo is unsuitable for individual recipe.",
+      "sources": [
+        "https://brural.com.au/product/dog-food-pedigree-pantry-pack/",
+        "https://www.hccatalogue.com/-mars-confectionary2",
+        "https://www.rhtradingpng.com/shop/pedigree-casser-lambgravy-700g/"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 766,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "treat",
+        "type": "Treat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer establishes dental treats, not dry kibble. Catalogue Small/Medium specifies neither beef/chicken flavour nor matching currentMini variant; no unique exact recipe image selected.",
+      "sources": [
+        "https://www.uk.pedigree.com/product-ranges/dentastix-chewy-chunx",
+        "https://www.uk.pedigree.com/dog-food/dog-dental-care/pedigree-dentastix-chewy-chunx-mini-adult-small-dog-treats-chicken-68g"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 947,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "name": "CORE Signature Selects Shredded Seafood Variety"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "name": "CORE Signature Selects Seafood Selection Variety Pack"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer identifies CORE Signature Selects Seafood Selection Variety Pack for cats,8×79g. Viewed box reads Seafood Selection, healthy food for adult cats,3flaked Skipjack Tuna & Wild Salmon,3flaked Skipjack Tuna & Shrimp,2chunky Boneless Chicken & Wild Salmon. Photo is cans, not dry food. Frozen Shredded descriptor conflicts with the flaked/chunky assortment.",
+      "sources": [
+        "https://wellnesspetfood.com.au/cat-wellness/natural-cat-food/signature-selects/signature-selects-seafood-selection-variety-pack/",
+        "https://www.chewy.com/wellness-core-signature-selects/dp/247934",
+        "https://www.peekapaw.com.au/products/wellness-core-cat-wet-food-signature-selects-seafood-selection-variety-pack-79g-x-8"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 304,
+      "before": {
+        "barcode": "076344089322"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Positive source evidence explicitly assigns the catalogue code to a different product or pack. Clear the mismatched code without guessing a replacement. Identified product: Wellness Complete Health Chicken & Herring5.5oz wet cat food",
+      "sources": [
+        "https://shop.pfwvt.com/5-5oz-wellness-chicken-herring-cat-can/",
+        "https://polypet.com.sg/products/wellness-cat-pate-chicken-herring-5-5oz"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 251,
+      "before": {
+        "barcode": "76344088530"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Positive source evidence explicitly assigns the catalogue code to a different product or pack. Clear the mismatched code without guessing a replacement. Identified product: Wellness CORE Indoor Cat11lb (UPC076344088530 after restoring the omitted leading zero)",
+      "sources": [
+        "https://shop.pfwvt.com/11-wellness-core-indoor-cat/",
+        "https://www.petwifi.pet/cat/shop/Wellness/1894/1502167332355366913"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 161,
+      "before": {
+        "barcode": "76344179962"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Positive source evidence explicitly assigns the catalogue code to a different product or pack. Clear the mismatched code without guessing a replacement. Identified product: Wellness CORE95%Beef with Carrot13.2oz wet dog food (UPC076344179962 after restoring the omitted leading zero)",
+      "sources": [
+        "https://www.admc.us/wp-content/uploads/2022/02/2025-South-Complete-Price-List_4.9.25-compressed.pdf#page=325"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 190,
+      "before": {
+        "barcode": "5900951305504"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer and viewed front establish Kitten Mixed Favourites in Jelly as wet cat 12×85g. BB Foodservice and Bestway explicitly map catalogue barcode 5900951305504 to Whiskas Kitten Chicken DRY 300g. Catalogue combines a wet multipack recipe name, dry 800g fields and a barcode for dry Chicken 300g. Identity/pack unresolved; photo remains held.",
+      "sources": [
+        "https://www.whiskas.com.au/our-products/wet/whiskas-2-12-months-kitten-wet-cat-food-mixed-favourites-jelly-12x85g-pouch",
+        "https://www.petcircle.com.au/product/whiskas-mixed-favourites-in-jelly-pouches-wet-kitten-food",
+        "https://www.bbfoodservice.co.uk/product/812236-1",
+        "https://www.bestwaywholesale.co.uk/product/812236-1"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 193,
+      "before": {
+        "barcode": "5900951259050"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "AU manufacturer and Pet Circle senior 800g dry recipe is Tuna & Sardine. Millbry Hill variant data and B&Q explicitly map 5900951259050 to Whiskas Senior 7+ Chicken dry 1.9kg. Neither checked senior recipe/pack matches catalogue Chicken & Fish 800g. Barcode identifies Chicken 1.9kg; do not change recipe or pack to fit a photo.",
+      "sources": [
+        "https://www.whiskas.com.au/our-products/dry/whiskas-7-years-adult-dry-cat-food-tuna-sardine-flavours",
+        "https://www.petcircle.com.au/whiskas",
+        "https://millbryhill.co.uk/products/whiskas-7-senior-cat-complete-dry-with-chicken",
+        "https://www.diy.com/departments/whiskas-7-cat-complete-dry-with-chicken-cat-food-1-9kg/5900951259050_BQ.prd"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 966,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Current AU manufacturer range distinguishes Ocean Fish Loaf 400g can from So Fishy Ocean Platter in Jelly. Australian export merchant Henry Cumines catalogue explicitly lists Whiskas Oh So Fishy Ocean Delights Loaf under CAT FOOD & MILK, supporting the historical named cat/wet identity. Catalogue dog/dry fields conflict with named cat loaf product. Exact historical Ocean Delights Loaf photo was not established in this bounded manufacturer/merchant check; current Ocean Fish Loaf can or Ocean Platter jelly are different recipes/forms.",
+      "sources": [
+        "https://www.whiskas.com.au/our-products/wet",
+        "https://www.whiskas.com.au/our-products/wet/whiskas-1-years-adult-wet-cat-food-ocean-fish-loaf-400g-can",
+        "https://www.hccatalogue.com/-mars-confectionary2",
+        "https://www.hccatalogue.com/about"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 486,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer recipe title and original viewed packaging agree on Dine Classic Collection Beef & Liver in Gravy, cat food/treat, and pictured quantity. Pets Domain SKU and Stefmar model9334214018409 independently identify this7x85g recipe.",
+      "sources": [
+        "https://www.dine.com.au/our-products/favourites/cuts-in-gravy/with-beef-and-liver-multipack",
+        "https://petsdomain.com.au/products/dine-beef-liver-cat-wet-food-85g-x-7pk",
+        "https://shop.stefmar.com.au/index.php?main_page=product_info&products_id=62840"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 1115,
+      "before": {},
+      "after": {
+        "petType": "cat",
+        "foodType": "wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Manufacturer identifies Classic Collection Lamb Cuts in Gravy as wet cat food; no catalogue pack is stated. Barcode/variant question remains unresolved.",
+      "sources": [
+        "https://www.dine.com.au/our-products/favourites/cuts-in-gravy/with-lamb",
+        "https://www.dine.com.au/products/cuts-gravy/dine-classic-collection-succulent-selection-gravy-pouch-24pk"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 487,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer Chicken Slices page describes sauce; retailer separately lists Morsels in Jelly with Chicken. No exact Chicken Slices in Jelly photo verified. Dog/dry fields nevertheless conflict with the named Dine cat wet-food line.",
+      "sources": [
+        "https://www.dine.com.au/our-products/favourites/slices/with-succulent-chicken-multipack",
+        "https://sussexinlet.shop.spar.com.au/category/pet-food-wet-cat"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 299,
+      "before": {
+        "barcode": "5000161029662"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "EAN 5000161029662 is positively mapped by Brand Depot to Tuna As Good As It Looks 100g, not the named Doubly Delicious Mixed 12 × 85g. Remove incorrect code; hold ambiguous selection name and photo.",
+      "sources": [
+        "https://www.thebranddepot.uk/productdetails.php?SubmittedCat=255&id=43166",
+        "https://www.purina.com.au/12625875.html"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 518,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": "9300605109605"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Doubly Delicious selections are wet cat food. Barcode 9300605109605 belongs to ordinary As Good As It Looks Mixed Selection, not Doubly Delicious. Preserve named selection pending clarification.",
+      "sources": [
+        "https://www.purina.com.au/12625875.html",
+        "https://www.mitre10.com.au/felix-as-good-as-it-looks-mixed-selections-in-jelly-wet-cat-food-85g-36-pack-7521636"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 520,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer recipe and retailer single-pouch label establish cat/wet. Retain barcode: retailer SKU agrees; no conflicting product mapping. Candidate imported 85g pouch may be shown with pack caption after correction.",
+      "sources": [
+        "https://www.purina.com.au/12627090.html",
+        "https://petzone.com/ksa/en/shop/offers-ksa/felix-sensations-jellies-chicken-and-spinach-in-jelly-cat-food-pouch-85-g.html"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 521,
+      "before": {
+        "petType": "dog",
+        "foodType": "raw",
+        "type": "raw",
+        "barcode": "9300605108196"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer establishes wet cat Ocean Fish in Prawn Flavoured Jelly. Supplied code identifies a three-recipe Fish Selection 12 × 85g carton, not the single named recipe. Remove wrong variety-pack code; retain name and hold photo.",
+      "sources": [
+        "https://www.purina.com.au/12627076.html",
+        "https://drakes.com.au/wp-content/uploads/2026/01/Socks-Holiday-Competition-2026-TCs.pdf"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 522,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer title and visible CAT FOOD ONLY label establish Sensations Jellies Meat Selection as wet cat food. No size is assigned to catalogue; candidate 24 × 85g photo requires shown-pack caption.",
+      "sources": [
+        "https://www.purina.com.au/12627090.html",
+        "https://www.coles.com.au/brands/felix-2005166437"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 523,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "AU historical retailer description and current imported retailer support named Sensations Sauces Fish as wet cat food. Do not change recipe, pack or barcode based on weaker eBay association; no safe matching photo yet.",
+      "sources": [
+        "https://www.nettopet.com.au/files/brands/felix-cat-food_dir_desc_order_name.html",
+        "https://www.zoolini.ie/felix/sensations-sauces-variety-from-the-water-12x85g"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 500,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "topper",
+        "type": "Topper"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer identifies Creamy Broths with Tuna, Chicken & Whitefish as a supplemental wet cat complement. Viewed front explicitly prints the same full recipe, gourmet cat complement and 1.4 oz (40 g). Catalogue Tuna is abbreviated; dog/dry fields conflict. Correct species and complementary food form only. Abbreviated Tuna does not prove the full Tuna, Chicken & Whitefish identity; retain name and hold photo.",
+      "sources": [
+        "https://www.purina.com/cats/shop/fancy-feast-broths-creamy-tuna-chicken-whitefish-wet-cat-food",
+        "https://www.target.com/p/-/A-50045789"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 501,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Viewed box reads Creamy Delights Poultry & Seafood Collection, 24 cans, 24-3 oz (85 g), gourmet cat food, with chicken/tuna/salmon variants. Kroger exact recipe description confirms adult wet cat food. Manufacturer current individual Creamy Delights page supports the line, but an exact current collection page was not found.",
+      "sources": [
+        "https://www.purina.com.au/12488988.html",
+        "https://www.kroger.com/p/purina-fancy-feast-creamy-delights-poultry-seafood-wet-cat-food-variety-pack/0005000017230",
+        "https://www.walmart.com/ip/759431217"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 504,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer exact Gravy Lovers Poultry and Beef variety pack includes Chicken, Turkey and Beef. Viewed Target box reads Poultry & Beef Collection, 24 cans, 24-3 oz (85 g), gourmet cat food, and all three matching recipes. This is not the different Australian assortment containing fish.",
+      "sources": [
+        "https://www.purina.com/cats/shop/fancy-feast-gravy-lovers-poultry-beef-variety-pack-24-cans-wet-cat-food",
+        "https://www.target.com/p/-/A-14766221"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 510,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer Singapore exact recipe identifies adult wet cat food, 70 g. Viewed retailer front reads Inspirations with Chicken, Pasta Pearls & Spinach, CAT FOOD ONLY, 70 g. Original image has a large Superpets watermark retained unchanged.",
+      "sources": [
+        "https://www.purina.com.sg/food/cat/fancy-feast-inspirations-chicken-pasta-pearls-spinach-wet-cat-food",
+        "https://www.superpets.sg/products/fancy-feast-inspirations-with-chicken-pasta-pearls-spinach-70g",
+        "https://www.petloverscentre.com/products/inspiration-chicken-pasta-pearls-spinach-70g"
+      ],
+      "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 511,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Viewed older pouch clearly reads Inspirations with Turkey, Green Peas & Carrots and CAT FOOD ONLY. NZ retailer page specifies 70 g; Halodoc exact 70 g listing corroborates recipe. Current Purina NZ range did not establish a current exact recipe page.",
+      "sources": [
+        "https://www.purina.co.nz/our-brands/fancy-feast",
+        "https://www.nzeconet.com/shop/item.php?it_id=1540162123",
+        "https://www.halodoc.com/obat-dan-vitamin/fancy-feast-inspirations-with-turkey-green-peas-dan-carrots-pouch-70-g"
+      ],
+      "checkedDate": "2026-09-15"
     }
   ],
   "collectorBarcodeRemovals": [
@@ -6242,6 +7558,131 @@
       "barcode": "9421016595792",
       "appId": 315,
       "reason": "The manufacturer explicitly assigns this barcode to the 1kg cat Mackerel & Lamb variant; this catalogue listing is 400g. Conflicting code removed, with no replacement assigned pending pack barcode verification."
+    },
+    {
+      "barcode": "9300605147478",
+      "appId": 80,
+      "reason": "Manufacturer lists Pro Plan Large Adult Chicken 15kg. Pets Domain explicitly associates catalogue barcode 9300605147478 with Supercoat Adult Large Breed Chicken 7kg. Remove the recorded barcode only; do not infer or insert a replacement code."
+    },
+    {
+      "barcode": "7613287798992",
+      "appId": 81,
+      "reason": "AU manufacturer Performance Chicken is 20kg. India manufacturer lists All Life Stages Performance Chicken 12kg, but Petstop Direct and Petwell associate 7613287798992 with Purina ONE Senior 7+ Salmon/Ocean Fish 8×85g wet cat food. Remove the recorded barcode only; do not infer or insert a replacement code."
+    },
+    {
+      "barcode": "9300605133082",
+      "appId": 78,
+      "reason": "Manufacturer source is Sensitive Salmon & Tuna cat dry food. Pet Heaven and Rakuten associate 9300605133082 with this cat recipe in 1.5kg. Remove the recorded barcode only; do not infer or insert a replacement code."
+    },
+    {
+      "barcode": "9300605133037",
+      "appId": 295,
+      "reason": "Manufacturer Urinary Care Chicken wet cat pouch is 12×85g; catalogue barcode 9300605133037 is explicitly assigned to Pro Plan Urinary Care Chicken DRY cat 3kg by PetO and The Nile. Remove the recorded barcode only; do not infer or insert a replacement code."
+    },
+    {
+      "barcode": "9300605149519",
+      "appId": 157,
+      "reason": "AU manufacturer Adult Chicken in Gravy is CAT 12×85g; dog wet range has different recipes/packs. Rakuten and Netsea explicitly assign catalogue barcode 9300605149519 to Pro Plan Small/Toy Adult Chicken dry dog 2.5kg. Remove the recorded barcode only; do not infer or insert a replacement code."
+    },
+    {
+      "barcode": "9300605153929",
+      "appId": 293,
+      "reason": "Viewed manufacturer Pro Plan Kitten Chicken Formula dry cat 3.5kg bag. Catalogue name says dry but fields specify wet 12×85g. Delishop and The Nile identify barcode 9300605153929 as Purina ONE Kitten Chicken in Gravy 70g. Remove the recorded barcode only; do not infer or insert a replacement code. Name says Dry but the stated 12×85g wet pack remains unresolved; no pack or form change is approved."
+    },
+    {
+      "barcode": "9300605141704",
+      "appId": 844,
+      "reason": "Manufacturer has distinct Complete Essentials, Sensitive Skin & Stomach and Sport salmon/rice dog recipes. PetO and The Warehouse explicitly identify catalogue barcode 9300605141704 as Purina ONE Sensitive Systems Salmon & Tuna dry CAT 1.4kg. Remove the recorded barcode only; do not infer or insert a replacement code."
+    },
+    {
+      "barcode": "38100166791",
+      "appId": 848,
+      "reason": "Viewed manufacturer Complete Essentials Salmon & Rice Entrée in Sauce adult CAT wet 85g can. Central Pet Australia October Newsletter lists barcode 38100166791 as Seafood Favourites in Sauce variety pack wet cat 12×85g, while Salmon & Rice is 038100026972. Remove the recorded barcode only; do not infer or insert a replacement code."
+    },
+    {
+      "barcode": "7613034643780",
+      "appId": 850,
+      "reason": "Nestlé Portugal primary document and retailer catalogue identify 7613034643780 as Purina ONE Delicate Turkey & Rice 800g, not Pro Plan. Remove the recorded barcode only; do not infer or insert a replacement code."
+    },
+    {
+      "barcode": "9300605157248",
+      "appId": 859,
+      "reason": "Manufacturer lists Pro Plan Sport Performance 30/20 Chicken & Rice. The Warehouse and Drakes promotion SKU document assign 9300605157248 to Purina ONE Adult Chicken & Rice 2.5kg. Remove the recorded barcode only; do not infer or insert a replacement code."
+    },
+    {
+      "barcode": "3182550939478",
+      "appId": 873,
+      "reason": "Manufacturer Calm Small Dogs photo is a dog dry bag. Catalogue barcode3182550939478 is explicitly listed as Royal Canin Hypoallergenic CAT2.5kg by Maskotas2Go and Anipet. Remove the recorded barcode only; do not infer or insert a replacement code. Calm Small Dogs candidate remains held because catalogue Calm does not establish the breed-size variant."
+    },
+    {
+      "barcode": "3182550771269",
+      "appId": 876,
+      "reason": "Manufacturer canine Gastrointestinal photo visually matches name/dog/dry. However catalogue barcode3182550771269 is explicitly associated with feline gastrointestinal4kg by indexed retailer evidence. Remove the recorded barcode only; do not infer or insert a replacement code."
+    },
+    {
+      "barcode": "3182550815475",
+      "appId": 880,
+      "reason": "Manufacturer canine Urinary S/O Moderate Calorie photo matches dog/dry name. Catalogue barcode3182550815475 is explicitly listed as feline Urinary S/O Moderate Calorie9kg by Rozetka. Remove the recorded barcode only; do not infer or insert a replacement code."
+    },
+    {
+      "barcode": "9003579006146",
+      "appId": 891,
+      "reason": "Viewed canine manufacturer photo matches frozen name and dog/dry. Barcode research explicitly associates recorded code with wet feline Satiety85g pouches. Remove the recorded barcode only; do not infer or insert a replacement code."
+    },
+    {
+      "barcode": "9003579011423",
+      "appId": 893,
+      "reason": "Viewed canine manufacturer photo matches frozen name and dog/dry. Barcode research explicitly associates recorded code with wet feline Sensitivity Control Chicken and Rice12x85g pouches. Remove the recorded barcode only; do not infer or insert a replacement code."
+    },
+    {
+      "barcode": "3182550785242",
+      "appId": 895,
+      "reason": "Viewed canine manufacturer photo matches frozen name and dog/dry. Barcode research explicitly associates recorded code with dry feline Urinary S/O9kg. Remove the recorded barcode only; do not infer or insert a replacement code."
+    },
+    {
+      "barcode": "133014000102",
+      "appId": 319,
+      "reason": "Current K9 Natural manufacturer cat feed identifies Feline Natural; photo visibly shows matching Lamb Feast Freeze-Dried for cats,320g. Independent review of the original photo and source page supports these specific fields. PetO explicitly associates recorded code 133014000102 with Feline Natural canned Chicken & Venison; it is a different recipe and form. Remove this wrong code without replacing it."
+    },
+    {
+      "barcode": "076344089322",
+      "appId": 304,
+      "reason": "Positive source evidence explicitly assigns the catalogue code to a different product or pack. Clear the mismatched code without guessing a replacement. Identified product: Wellness Complete Health Chicken & Herring5.5oz wet cat food"
+    },
+    {
+      "barcode": "76344088530",
+      "appId": 251,
+      "reason": "Positive source evidence explicitly assigns the catalogue code to a different product or pack. Clear the mismatched code without guessing a replacement. Identified product: Wellness CORE Indoor Cat11lb (UPC076344088530 after restoring the omitted leading zero)"
+    },
+    {
+      "barcode": "76344179962",
+      "appId": 161,
+      "reason": "Positive source evidence explicitly assigns the catalogue code to a different product or pack. Clear the mismatched code without guessing a replacement. Identified product: Wellness CORE95%Beef with Carrot13.2oz wet dog food (UPC076344179962 after restoring the omitted leading zero)"
+    },
+    {
+      "barcode": "5900951305504",
+      "appId": 190,
+      "reason": "Manufacturer and viewed front establish Kitten Mixed Favourites in Jelly as wet cat 12×85g. BB Foodservice and Bestway explicitly map catalogue barcode 5900951305504 to Whiskas Kitten Chicken DRY 300g. Catalogue combines a wet multipack recipe name, dry 800g fields and a barcode for dry Chicken 300g. Identity/pack unresolved; photo remains held."
+    },
+    {
+      "barcode": "5900951259050",
+      "appId": 193,
+      "reason": "AU manufacturer and Pet Circle senior 800g dry recipe is Tuna & Sardine. Millbry Hill variant data and B&Q explicitly map 5900951259050 to Whiskas Senior 7+ Chicken dry 1.9kg. Neither checked senior recipe/pack matches catalogue Chicken & Fish 800g. Barcode identifies Chicken 1.9kg; do not change recipe or pack to fit a photo."
+    },
+    {
+      "barcode": "5000161029662",
+      "appId": 299,
+      "reason": "EAN 5000161029662 is positively mapped by Brand Depot to Tuna As Good As It Looks 100g, not the named Doubly Delicious Mixed 12 × 85g. Remove incorrect code; hold ambiguous selection name and photo."
+    },
+    {
+      "barcode": "9300605109605",
+      "appId": 518,
+      "reason": "Doubly Delicious selections are wet cat food. Barcode 9300605109605 belongs to ordinary As Good As It Looks Mixed Selection, not Doubly Delicious. Preserve named selection pending clarification."
+    },
+    {
+      "barcode": "9300605108196",
+      "appId": 521,
+      "reason": "Manufacturer establishes wet cat Ocean Fish in Prawn Flavoured Jelly. Supplied code identifies a three-recipe Fish Selection 12 × 85g carton, not the single named recipe. Remove wrong variety-pack code; retain name and hold photo."
     }
   ]
 }

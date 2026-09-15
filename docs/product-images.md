@@ -39,3 +39,9 @@ The completed original-photo audit is in `Mucka_Review_2026-09-14/Catalogue_Phot
 All 25 selected Ziwi, Pedigree and Supercoat listings were checked. 20 exact recipe/species/form/pack photos were added; 5 remain held for insufficient matching evidence. The current catalogue displays 604 photographs across 1,080 listings, with 476 missing or withheld assignments. The per-listing outcomes and source URLs are recorded in `data/photo-batch-25-2026-09-14.json`.
 
 Three wrong-pack barcode associations (IDs 83, 333 and 315) were cleared before their photos were bound to the corrected catalogue identity. No replacement codes were inferred. Five other Ziwi code differences and a retailer-reported Supercoat Puppy pack discrepancy remain unresolved. Existing image files and prior audits remain historical evidence.
+
+## 250 product photo review 15 September 2026
+
+All 250 selected listings received a separate source check and outcome. 121 photos were added after recipe, species, food-form and pack review; 129 remain held with source-specific reasons. Current display totals are 725 of 1,080 listings, with 355 still missing or withholding a photo. Exact pack matches and recipe-only matches retain separate captions identifying the pictured pack and source.
+
+65 catalogue records were corrected, including 25 demonstrably incorrect barcode associations removed from the catalogue, scanner and Collector. No replacement barcode was inferred. The per-listing outcomes and source evidence are in `data/photo-batch-250-2026-09-15.json`; the current full audit and remaining worklist are in `Mucka_Review_2026-09-14/Photo_Batch_250_2026-09-15`. Prior audit files remain dated evidence. Photos do not verify barcode identity, current Australian availability, ingredients, nutritional adequacy or clinical suitability.
