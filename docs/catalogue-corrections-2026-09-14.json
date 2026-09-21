@@ -7732,6 +7732,350 @@
         "https://www.petbarn.com.au/p/leaps-bounds-kangaroo-vegetable-adult-dog-food"
       ],
       "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 749,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Exact recipe listing and inspected can establish wet dog food, contradicting dry classification.",
+      "sources": [
+        "https://rpfco.com/products/natures-gift-loaf-chicken-rice-vegetables-wet-dog-food-700g"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 750,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Exact recipe listing and inspected can establish wet dog food, contradicting dry classification.",
+      "sources": [
+        "https://bunnasia.com/products/natures-gift-puppy-wet-dog-food-mince-with-chicken-700g"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 1089,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "raw",
+        "type": "Raw"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer BARF product and inspected raw portion tray establish raw food rather than dry kibble.",
+      "sources": [
+        "https://caninecountry.com.au/products/inner-health-barf/"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 534,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "freeze-dried",
+        "type": "Freeze-Dried"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer title and inspected pack explicitly identify raw freeze-dried dog food.",
+      "sources": [
+        "https://frontierpets.com.au/products/free-range-lamb-wild-caught-salmon-raw-freeze-dried-dog-food-900g"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 1093,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "raw",
+        "type": "Raw"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer names Venison & Wild Boar BARF in raw 1kg portions/rolls.",
+      "sources": [
+        "https://caninecountry.com.au/our-products/"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 925,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "supplement",
+        "type": "Supplement"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Inspected Joint Support powder label and listing identify a supplement for dogs.",
+      "sources": [
+        "https://www.petservo.com.au/products/vets-all-natural-joint-support-formula"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 921,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "dehydrated",
+        "type": "Dehydrated mixer"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Complete Mix Puppy is a dry vegetable/grain mixer to combine with fresh meat; pack explicitly instructs mixing with fresh meat.",
+      "sources": [
+        "https://world4pets.com.au/products/complete-mix-puppy"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 7,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer Complete Diet title and inspected canned front explicitly identify wet cat food.",
+      "sources": [
+        "https://www.absoluteholisticpet.com/products/absolute-holistic-complete-diet-chicken-goji-berry-150g"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 9,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer Complete Diet title and inspected canned front explicitly identify wet cat food.",
+      "sources": [
+        "https://www.absoluteholisticpet.com/products/absolute-holistic-complete-diet-chicken-whitebait-150g"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 10,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer Complete Diet title and inspected canned front explicitly identify wet cat food.",
+      "sources": [
+        "https://www.absoluteholisticpet.com/products/absolute-holistic-complete-diet-chicken-shreds-150g"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 1180,
+      "before": {},
+      "after": {
+        "petType": "dog",
+        "foodType": "dry"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Manufacturer Senior Original Turkey with Chicken page and pack identify dry dog food; fill missing fields without guessing barcode or pack size.",
+      "sources": [
+        "https://wellnesscore.eu/en-uk/product/wellness-core-senior-original-turkey-with-chicken-10-kg/"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 262,
+      "before": {
+        "barcode": "9334214060330"
+      },
+      "after": {
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer asset keyed 9334214060330 visibly shows 24 × 85g, conflicting with catalogue 12 × 85g. Preserve stated 12-pack; remove conflicting code without guessing replacement.",
+      "sources": [
+        "https://www.whiskas.com.au/our-products/wet/whiskas-1-years-adult-wet-cat-food-mixed-favourites-jelly",
+        "https://www.whiskas.com.au/sites/g/files/fnmzdf8856/files/2026-04/9334214060330_A1C1_EN%20%282%29-Photoroom.png"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 603,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "treat",
+        "type": "Treat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer exact Churu Bites Chicken Recipe wraps Tuna with Salmon front identifies cat treat, not dry dog food.",
+      "sources": [
+        "https://inabafoods-europe.com/product/churu-bites-chicken-recipe-wraps-tuna-with-salmon-recipe/"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 933,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "treat",
+        "type": "Treat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Retailer explicitly identifies Natural Chicken & Fish Bites as CAT TREATS, conflicting with dog/dry catalogue. Correct species/form; photo access returned403 so image withheld.",
+      "sources": [
+        "https://www.woolworths.com.au/shop/productdetails/785623/vitapet-natural-bites-chicken-fish"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 934,
+      "before": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "treat",
+        "type": "Treat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Retailer explicitly identifies Natural Chicken Bites as CAT TREATS 85g, conflicting with dog/dry catalogue. Correct species/form; photo access returned403 so image withheld.",
+      "sources": [
+        "https://www.woolworths.com.au/shop/productdetails/785643/vitapet-natural-bites-chicken"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 955,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "treat",
+        "type": "Treat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer Hedgehog is a dog dental treat, not dry food. Size range specifies Large and Extra Large; catalogue Medium is not established. Correct form only; do not choose larger-size photo.",
+      "sources": [
+        "https://www.whimzees.com.au/products/hedgehog/"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 918,
+      "before": {
+        "petType": "dog"
+      },
+      "after": {
+        "petType": "cat"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Manufacturer confirms Tasty Chicken cat treats; distinct dry cat food and Jumbo Stuff also exist. Dog species is wrong, but Large does not resolve pack count or exact treat line; species corrected, photo held pending identity.",
+      "sources": [
+        "https://www.temptationstreats.co.nz/our-treats/temptations-tasty-chicken-180g"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 1174,
+      "before": {
+        "barcode": "9334214063768"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "treat",
+        "needsReview": true,
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "removeFields": [
+        "barcode"
+      ],
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Catalogue barcode 9334214063768 identifies mixed Chicken & Salmon Creamy Spoons 4 × 10g at multiple retailers, not chicken-only puree. Remove wrong barcode, fill cat/treat fields from manufacturer chicken puree identity. Canadian chicken page now404; exact original photo remains missing.",
+      "sources": [
+        "https://peto.com.au/temptations-creamy-spoons-tasty-chicken-and-savoury-salmon/",
+        "https://www.petso.com.au/products/temptations-creamy-spoons-tasty-chicken-savory-salmon-cat-treats-10g-x-4",
+        "https://www.temptationstreats.ca/en-ca/products/care-treats/temptations-creamy-purrrr-ee-cat-treats-chicken"
+      ],
+      "checkedDate": "2026-09-22"
     }
   ],
   "collectorBarcodeRemovals": [
@@ -7919,6 +8263,16 @@
       "barcode": "9300605108196",
       "appId": 521,
       "reason": "Manufacturer establishes wet cat Ocean Fish in Prawn Flavoured Jelly. Supplied code identifies a three-recipe Fish Selection 12 × 85g carton, not the single named recipe. Remove wrong variety-pack code; retain name and hold photo."
+    },
+    {
+      "barcode": "9334214060330",
+      "appId": 262,
+      "reason": "Manufacturer asset keyed 9334214060330 visibly shows 24 × 85g, conflicting with catalogue 12 × 85g. Preserve stated 12-pack; remove conflicting code without guessing replacement."
+    },
+    {
+      "barcode": "9334214063768",
+      "appId": 1174,
+      "reason": "Catalogue barcode 9334214063768 identifies mixed Chicken & Salmon Creamy Spoons 4 × 10g at multiple retailers, not chicken-only puree. Remove wrong barcode, fill cat/treat fields from manufacturer chicken puree identity. Canadian chicken page now404; exact original photo remains missing."
     }
   ]
 }
