@@ -1,0 +1,15 @@
+{
+  "checkedDate": "2026-09-22",
+  "testsPassed": 32,
+  "phoneViewport": {
+    "width": 390,
+    "height": 844,
+    "documentWidth": 390
+  },
+  "browserCheck": "New raw-food detail photo loads from WebP; displayed pack and barcode-unverified caption preserved. Existing browse photos load from WebP.",
+  "originalBytes": 162522318,
+  "thumbnailBytes": 3791780,
+  "largeDisplayBytes": 17978590,
+  "sourcePaths": 711,
+  "scope": "Aggregate file sizes, not a measured page load-time benchmark. Originals unchanged; identity gating and fallback retained."
+}

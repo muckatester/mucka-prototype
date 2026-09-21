@@ -14,7 +14,7 @@ test('sourced image assignments retain reviewed asset hashes and embedded data',
     assert.ok(product, 'Catalogue ID ' + record.appId);
     assert.equal(c.getSourcedProductImage(product)?.localPath, record.localPath);
     assert.equal(c.productHasImage(product), true);
-    assert.ok(c.getProductImage(product).includes(record.localPath));
+    assert.ok(c.getProductImage(product).includes(c.escapeHtml(record.localPath)));
   }
 });
 

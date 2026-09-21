@@ -7496,6 +7496,242 @@
         "https://www.halodoc.com/obat-dan-vitamin/fancy-feast-inspirations-with-turkey-green-peas-dan-carrots-pouch-70-g"
       ],
       "checkedDate": "2026-09-15"
+    },
+    {
+      "appId": 627,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "raw",
+        "type": "Raw"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Catalogue incorrectly classified this Adult Beef raw dog food patties as dry. Retailer listing and photographed pack establish the food form.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-barf-beef-adult-dog-patties-2-72kg"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 628,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "raw",
+        "type": "Raw"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Catalogue incorrectly classified this Mature 7+ Chicken & Salmon raw dog food patties as dry. Retailer listing and photographed pack establish the food form.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-barf-chicken-salmon-mature-patties-2-72kg"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 630,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "raw",
+        "type": "Raw"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Catalogue incorrectly classified this Puppy Chicken raw dog food patties as dry. Retailer listing and photographed pack establish the food form.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-barf-chicken-puppy-patties-1-5kg"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 631,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Catalogue incorrectly classified this Adult Lamb Casserole wet dog food as dry. Retailer listing and photographed pack establish the food form.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-lamb-casserole-dog-can-85gx12"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 638,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Catalogue incorrectly classified this Adult Lamb Casserole wet dog food as dry. Retailer listing and photographed pack establish the food form.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-lamb-casserole-dog-can-85gx12"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 649,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Catalogue incorrectly classified this Adult Chicken Casserole wet dog food as dry. Retailer listing and photographed pack establish the food form.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-casserole-dog-can-85gx12"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 688,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "raw",
+        "type": "Raw"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Retailer source and inspected pack establish Adult Kangaroo raw cat food. Correct the contradictory catalogue food form.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-kangaroo-vegetable-cat-barf-1-38kg"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 681,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Retailer source and inspected pack establish Adult Grain Free Lamb & Vegetables dog can, on the retailer Lamb & Rosemary listing. Correct the contradictory catalogue food form.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-grain-free-lamb-rosemary-dog-can-400gx12"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 700,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Retailer source and inspected pack establish Ocean Fish in Gravy kitten wet cat food. Correct the contradictory catalogue food form.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-ocean-fish-gravy-kitten-can-85gx12"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 672,
+      "before": {
+        "name": "Dental Chicken Cat Treat",
+        "foodType": "treat",
+        "type": "treat"
+      },
+      "after": {
+        "name": "Dental Chicken Dry Cat Food",
+        "foodType": "dry",
+        "type": "Dry"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Retailer source and inspected pack establish Dental Chicken dry cat kibble. Correct the contradictory catalogue food form and mistaken treat label.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-dental-chicken-with-thyme-cat-food-2-5kg"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 647,
+      "before": {
+        "foodType": "roll",
+        "type": "roll"
+      },
+      "after": {
+        "foodType": "dry",
+        "type": "Dry"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "The catalogue name explicitly says Puppy Chicken & Rice Dry; exact Petbarn puppy dry recipe and inspected bag confirm dry food, not a roll.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-with-rice-puppy-food"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 640,
+      "before": {
+        "foodType": "dry",
+        "type": "dry"
+      },
+      "after": {
+        "foodType": "wet",
+        "type": "Wet"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Retailer page and inspected pack establish Adult Beef & Liver wet dog food. The previous catalogue food form was contradictory.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-beef-liver-dog-can-700gx12"
+      ],
+      "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 687,
+      "before": {
+        "foodType": "roll",
+        "type": "roll"
+      },
+      "after": {
+        "foodType": "dry",
+        "type": "Dry"
+      },
+      "removeFields": [],
+      "absentBeforeFields": [],
+      "reason": "Retailer page and inspected pack establish Adult Kangaroo & Vegetable dry dog food. The previous catalogue food form was contradictory.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-kangaroo-vegetable-adult-dog-food"
+      ],
+      "checkedDate": "2026-09-22"
     }
   ],
   "collectorBarcodeRemovals": [
