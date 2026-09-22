@@ -14,7 +14,10 @@ test('Every current usable barcode resolves consistently in app and Collector, i
   if(!p.barcode)continue;const result=c.findProductByBarcode(p.barcode);assert.equal(cc.isKnownBarcode(p.barcode),!!result,'Collector '+p.id);
   if(result){matched++;assert.equal(result.id,p.id);assert.equal(c.findProductByBarcode(c.normalizeGtin(p.barcode)).id,p.id);assert.equal(cc.isKnownBarcode(c.normalizeGtin(p.barcode)),true)}else blocked++;
  }
- assert.equal(matched,557);assert.equal(blocked,68);
+ const conflicts=new Set(c.barcodeEvidence.records.filter(r=>r.status==='conflict').map(r=>c.normalizeGtin(r.barcode)));
+ const expected=c.products.filter(p=>c.normalizeGtin(p.barcode)&&!conflicts.has(c.normalizeGtin(p.barcode))&&( ['manufacturer_pack','retailer_pack'].includes(c.getBarcodeEvidence(p)?.status)||c.getProductEvidence(p)?.fields.barcode.status==='source_checked'));
+ assert.equal(matched,expected.length);assert.equal(blocked,c.products.filter(p=>p.barcode).length-expected.length);
+ for(const p of expected)assert.equal(c.findProductByBarcode(p.barcode)?.id,p.id,'Usable product '+p.id);
 });
 test('Ambiguous normalized identifiers, invalid codes and disputed codes cannot open a product',()=>{
  const {c}=context();const p=c.products.find(p=>p.id===960);c.products.push({...p,id:99999,barcode:'0'+p.barcode});assert.equal(c.findProductByBarcode(p.barcode),null);
@@ -31,4 +34,21 @@ test('Camera UPC-E expansion uses format metadata and never guesses from an eigh
  const result={result:{format:{formatName:'UPC_E'}}};assert.equal(c.getScannedGtinText('04252614',result),'042100005264');
  assert.equal(c.getScannedGtinText('04252614',{result:{format:{formatName:'EAN_8'}}}),'04252614');
  assert.equal(c.getScannedGtinText('04252615',result),'');assert.equal(c.getScannedGtinText('24252614',result),'');
+});
+
+test('Every source-checked retailer association resolves only its current identity',()=>{
+ const {c}=context();
+ for(const r of c.barcodeEvidence.records.filter(r=>r.status==='retailer_pack')){
+  const p=c.products.find(p=>p.id===r.appId);assert(p);assert.equal(c.getBarcodeEvidence(p),r);
+  assert.equal(c.findProductByBarcode(r.barcode)?.id,p.id,'Retailer product '+p.id);
+  assert.match(c.getBarcodeStatusText(p),/Printed pack and physical scan not checked/);
+  const old=p.type;p.type='changed pack';assert.equal(c.getBarcodeEvidence(p),null);p.type=old;
+ }
+});
+
+test('A format-valid old code cannot open a listing without current product evidence',()=>{
+ const {c}=context();const p=c.products.find(p=>p.barcode&&c.normalizeGtin(p.barcode)&&!c.getBarcodeEvidence(p)&&!c.getProductEvidence(p));
+ assert(p);assert.equal(c.findProductByBarcode(p.barcode),null);
+ const verified=c.barcodeEvidence.records.find(r=>r.status==='retailer_pack');const product=c.products.find(p=>p.id===verified.appId);
+ assert.equal(c.findProductByBarcode(product.barcode).id,product.id);product.type+=' changed';assert.equal(c.findProductByBarcode(product.barcode),null);
 });

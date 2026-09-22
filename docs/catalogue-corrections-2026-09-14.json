@@ -8228,6 +8228,4836 @@
       "sources": [
         "https://www.petcity.com.au/product/blackhawk-dog-small-breed-lamb-rice-3kg"
       ]
+    },
+    {
+      "appId": 624,
+      "before": {
+        "barcode": "9332613004214",
+        "type": "air-dried"
+      },
+      "after": {
+        "barcode": "9345740170509",
+        "type": "Air-Dried · 1kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-beef-adult-air-dried-meal-mixer-dog-food-1kg"
+      ]
+    },
+    {
+      "appId": 625,
+      "before": {
+        "barcode": "9332613006546",
+        "type": "air-dried"
+      },
+      "after": {
+        "barcode": "9345740170516",
+        "type": "Air-Dried · 1kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chckn-adult-air-dried-meal-mixer-dog-food-1kg"
+      ]
+    },
+    {
+      "appId": 627,
+      "before": {
+        "barcode": "9300605147379",
+        "type": "Raw"
+      },
+      "after": {
+        "barcode": "9345740131425",
+        "type": "Raw · 2.72kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-barf-beef-adult-dog-patties-2-72kg"
+      ]
+    },
+    {
+      "appId": 628,
+      "before": {
+        "barcode": "9319185009649",
+        "type": "Raw"
+      },
+      "after": {
+        "barcode": "9345740131449",
+        "type": "Raw · 2.72kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-barf-chicken-salmon-mature-patties-2-72kg"
+      ]
+    },
+    {
+      "appId": 630,
+      "before": {
+        "barcode": "9300633554071",
+        "type": "Raw"
+      },
+      "after": {
+        "barcode": "9345740078324",
+        "type": "Raw · 1.5kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-barf-chicken-puppy-patties-1-5kg"
+      ]
+    },
+    {
+      "appId": 633,
+      "before": {
+        "barcode": "9319185007010",
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "9345740107581",
+        "type": "Treat · 180g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-salmon-with-pumpkin-dog-jerky"
+      ]
+    },
+    {
+      "appId": 636,
+      "before": {
+        "barcode": "9300633554163",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9345740127190",
+        "type": "Treat · 500g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-beef-pumpkin-baked-dog-treat-500g"
+      ]
+    },
+    {
+      "appId": 637,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740131340",
+        "type": "Dry · 18kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-beef-adult-dog-food-18kg"
+      ]
+    },
+    {
+      "appId": 643,
+      "before": {
+        "barcode": "9334214019499",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740102241",
+        "type": "Dry · 3.2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-rice-small-breed-puppy-food-3-2kg"
+      ]
+    },
+    {
+      "appId": 644,
+      "before": {
+        "barcode": "9353767306221",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740125158",
+        "type": "Dry · 1.5kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-rosemary-kitten-food"
+      ]
+    },
+    {
+      "appId": 648,
+      "before": {
+        "barcode": "9334214042107",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740131333",
+        "type": "Dry · 18kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-adult-dog-food-18kg"
+      ]
+    },
+    {
+      "appId": 649,
+      "before": {
+        "barcode": "9300633554057",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740136861",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-casserole-dog-can-85gx12"
+      ]
+    },
+    {
+      "appId": 650,
+      "before": {
+        "type": "topper"
+      },
+      "after": {
+        "barcode": "19345740168169",
+        "type": "Topper · 40g x 3"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-appetisers-with-chicken-cat-pouch-40gx3"
+      ]
+    },
+    {
+      "appId": 651,
+      "before": {
+        "barcode": "9334214049526",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9345740143107",
+        "type": "Treat · 12gx7"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-creamy-cat-treat-12gx7"
+      ]
+    },
+    {
+      "appId": 652,
+      "before": {
+        "barcode": "9334214038810",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9345740163310",
+        "type": "Treat · 12g 7PK"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-creamy-kitten-treat-12g-7pk"
+      ]
+    },
+    {
+      "appId": 654,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740101388",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-in-gravy-kitten-can-85gx12"
+      ]
+    },
+    {
+      "appId": 655,
+      "before": {
+        "barcode": "9339687419944",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740100695",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-top-wduck-in-gravy-cat-can-85gx12"
+      ]
+    },
+    {
+      "appId": 656,
+      "before": {
+        "barcode": "9334214018232",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740100701",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-top-wlamb-in-gravy-cat-can-85gx12"
+      ]
+    },
+    {
+      "appId": 657,
+      "before": {
+        "barcode": "9339687419968",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740100718",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-top-wtuna-in-gravy-cat-can-85gx12"
+      ]
+    },
+    {
+      "appId": 662,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740126209",
+        "type": "Dry · 18kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-lg-brd-adult-dog-food-18kg"
+      ]
+    },
+    {
+      "appId": 665,
+      "before": {
+        "barcode": "9319185002923",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740100800",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-mousse-kitten-can-85gx12"
+      ]
+    },
+    {
+      "appId": 666,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740136847",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-mousse-puppy-can-85gx12"
+      ]
+    },
+    {
+      "appId": 668,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "9345740100537",
+        "type": "Treat · 200g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-blueberry-dog-meaty-hearts-200g"
+      ]
+    },
+    {
+      "appId": 672,
+      "before": {
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "9345740126278",
+        "type": "Dry · 2.5kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-dental-chicken-with-thyme-cat-food-2-5kg"
+      ]
+    },
+    {
+      "appId": 673,
+      "before": {
+        "barcode": "9319185009700",
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "9345740107222",
+        "type": "Treat · 200g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-duck-pumpkin-dog-meaty-hearts-200g"
+      ]
+    },
+    {
+      "appId": 674,
+      "before": {
+        "barcode": "9300605147331",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740136892",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-fish-casserole-dog-can-85gx12"
+      ]
+    },
+    {
+      "appId": 678,
+      "before": {
+        "barcode": "9319185004064",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740076559",
+        "type": "Dry · 2.5kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-gf-indoor-chicken-thyme-cat-food"
+      ]
+    },
+    {
+      "appId": 680,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740065614",
+        "type": "Dry · 2.3kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-grain-free-kangaroo-dog-food"
+      ]
+    },
+    {
+      "appId": 682,
+      "before": {
+        "barcode": "9319185009588",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740052065",
+        "type": "Dry · 2.3kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-grain-free-lamb-puppy-food"
+      ]
+    },
+    {
+      "appId": 683,
+      "before": {
+        "barcode": "9300605147430",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740131395",
+        "type": "Dry · 3.2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-healthy-weight-chicken-adult-dog-food"
+      ]
+    },
+    {
+      "appId": 684,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740125196",
+        "type": "Dry · 1.5kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-indoor-chicken-thyme-cat-food"
+      ]
+    },
+    {
+      "appId": 686,
+      "before": {
+        "barcode": "9314364336196",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740084721",
+        "type": "Dry · 3.2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-kangaroo-vegetable-adult-dog-food"
+      ]
+    },
+    {
+      "appId": 688,
+      "before": {
+        "barcode": "9335355000384",
+        "type": "Raw"
+      },
+      "after": {
+        "barcode": "9345740095215",
+        "type": "Raw · 1.38kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-kangaroo-vegetable-cat-barf-1-38kg"
+      ]
+    },
+    {
+      "appId": 689,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740126216",
+        "type": "Dry · 1.5kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-ocean-fish-with-thyme-kitten-food"
+      ]
+    },
+    {
+      "appId": 691,
+      "before": {
+        "barcode": "9300633554040",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740136885",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-lamb-casserole-dog-can-85gx12"
+      ]
+    },
+    {
+      "appId": 692,
+      "before": {
+        "barcode": "9310022034800",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740136854",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-lamb-mousse-puppy-can-85gx12"
+      ]
+    },
+    {
+      "appId": 693,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "9345740100544",
+        "type": "Treat · 180g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-lamb-with-blueberry-dog-jerky"
+      ]
+    },
+    {
+      "appId": 694,
+      "before": {
+        "barcode": "9310022193309",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740052010",
+        "type": "Dry · 15kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-lamb-with-rice-rosemary-adult-dog-food"
+      ]
+    },
+    {
+      "appId": 696,
+      "before": {
+        "barcode": "9310768112558",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740052089",
+        "type": "Dry · 3.2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-beef-mature-dog-food"
+      ]
+    },
+    {
+      "appId": 697,
+      "before": {
+        "barcode": "9300605141728",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740126247",
+        "type": "Dry · 1.5kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-fish-mature-adult-cat-food"
+      ]
+    },
+    {
+      "appId": 698,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9345740143091",
+        "type": "Treat · 12gx7"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-ocean-fish-creamy-cat-treat-12gx7"
+      ]
+    },
+    {
+      "appId": 699,
+      "before": {
+        "barcode": "5060122497886",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9345740163303",
+        "type": "Treat · 12g 7PK"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-ocean-fish-creamy-kitten-treat-12g-7pk"
+      ]
+    },
+    {
+      "appId": 700,
+      "before": {
+        "barcode": "9300605153912",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740138995",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-ocean-fish-gravy-kitten-can-85gx12"
+      ]
+    },
+    {
+      "appId": 701,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740100831",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-fish-top-wsalmon-in-gravy-cat-can-85gx12"
+      ]
+    },
+    {
+      "appId": 702,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740100817",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-fish-top-wtuna-in-gravy-cat-can-85gx12"
+      ]
+    },
+    {
+      "appId": 703,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740100862",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-fish-top-wsalmon-jelly-cat-can-85gx12"
+      ]
+    },
+    {
+      "appId": 704,
+      "before": {
+        "barcode": "9300605139886",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740100848",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-fish-top-wtuna-jelly-cat-can-85gx12"
+      ]
+    },
+    {
+      "appId": 705,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740100879",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-fish-mousse-top-wscallops-cat-can-85gx12"
+      ]
+    },
+    {
+      "appId": 707,
+      "before": {
+        "barcode": "9300605162211",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9345740100575",
+        "type": "Treat · 500g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-peanut-butter-baked-dog-treat-500g"
+      ]
+    },
+    {
+      "appId": 713,
+      "before": {
+        "barcode": "9334214064482",
+        "type": "topper"
+      },
+      "after": {
+        "barcode": "19345740168206",
+        "type": "Topper · 40g x 3"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-appetisers-wocean-fish-tuna-cat-pouch-40gx3"
+      ]
+    },
+    {
+      "appId": 714,
+      "before": {
+        "barcode": "9300633553821",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19345740100893",
+        "type": "Wet · 85g x 12"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-tuna-mousse-kitten-can-85gx12"
+      ]
+    },
+    {
+      "appId": 715,
+      "before": {
+        "barcode": "9334214038780",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9345740163341",
+        "type": "Treat · 12g 7PK"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-variety-adult-creamy-cat-treat-12g-7pk"
+      ]
+    },
+    {
+      "appId": 716,
+      "before": {
+        "barcode": "9339687420315",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9345740100582",
+        "type": "Treat · 700g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-variety-baked-dog-treat-700g"
+      ]
+    },
+    {
+      "appId": 717,
+      "before": {
+        "barcode": "9334214041889",
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "9345740114732",
+        "type": "Treat · 200g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-variety-dog-meaty-hearts-200g"
+      ]
+    },
+    {
+      "appId": 718,
+      "before": {
+        "barcode": "9310022193101",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740051952",
+        "type": "Dry · 3.2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-with-rice-puppy-food"
+      ]
+    },
+    {
+      "appId": 1141,
+      "before": {
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "9345740065591",
+        "type": "Dry · 2.3kg",
+        "petType": "dog",
+        "foodType": "dry"
+      },
+      "absentBeforeFields": [
+        "barcode",
+        "petType",
+        "foodType"
+      ],
+      "reason": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-grain-free-chicken-dog-food"
+      ]
+    },
+    {
+      "appId": 162,
+      "before": {},
+      "after": {
+        "barcode": "9337940004050"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Australian retailer variant data explicitly supplies this exact named recipe, species and pack barcode. Previously unspecified packs are now explicit. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/big-dog-barf-beef-for-dogs-3kg"
+      ]
+    },
+    {
+      "appId": 163,
+      "before": {},
+      "after": {
+        "barcode": "9337940004043"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Australian retailer variant data explicitly supplies this exact named recipe, species and pack barcode. Previously unspecified packs are now explicit. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/big-dog-barf-chicken-for-dogs-3kg"
+      ]
+    },
+    {
+      "appId": 164,
+      "before": {},
+      "after": {
+        "barcode": "9337940004067"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Australian retailer variant data explicitly supplies this exact named recipe, species and pack barcode. Previously unspecified packs are now explicit. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/big-dog-barf-lamb-for-dogs-3kg"
+      ]
+    },
+    {
+      "appId": 165,
+      "before": {},
+      "after": {
+        "barcode": "9337940007235"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Australian retailer variant data explicitly supplies this exact named recipe, species and pack barcode. Previously unspecified packs are now explicit. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/big-dog-barf-tasmania-salmon-for-dogs-3kg"
+      ]
+    },
+    {
+      "appId": 166,
+      "before": {},
+      "after": {
+        "barcode": "9337940004104"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Australian retailer variant data explicitly supplies this exact named recipe, species and pack barcode. Previously unspecified packs are now explicit. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/big-dog-barf-kangaroo-allergy-for-dogs-3kg"
+      ]
+    },
+    {
+      "appId": 167,
+      "before": {},
+      "after": {
+        "barcode": "9337940004111"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Australian retailer variant data explicitly supplies this exact named recipe, species and pack barcode. Previously unspecified packs are now explicit. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/big-dog-barf-turkey-allergy-for-dogs-3kg"
+      ]
+    },
+    {
+      "appId": 168,
+      "before": {},
+      "after": {
+        "barcode": "9337940007259"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Australian retailer variant data explicitly supplies this exact named recipe, species and pack barcode. Previously unspecified packs are now explicit. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/big-dog-barf-goat-for-dogs-3kg"
+      ]
+    },
+    {
+      "appId": 169,
+      "before": {
+        "barcode": "132412000002"
+      },
+      "after": {
+        "barcode": "9337940004098"
+      },
+      "absentBeforeFields": [],
+      "reason": "Australian retailer variant data explicitly supplies this exact named recipe, species and pack barcode. Previously unspecified packs are now explicit. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/big-dog-barf-combo-for-dogs-3kg"
+      ]
+    },
+    {
+      "appId": 1055,
+      "before": {
+        "type": "Raw"
+      },
+      "after": {
+        "barcode": "9337940004241",
+        "type": "Raw · 1.5kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Australian retailer variant data explicitly supplies this exact named recipe, species and pack barcode. Previously unspecified packs are now explicit. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/big-dog-barf-combo-for-small-dogs-1-5kg"
+      ]
+    },
+    {
+      "appId": 1063,
+      "before": {
+        "type": "raw"
+      },
+      "after": {
+        "barcode": "9337940005828",
+        "type": "Raw · 3kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Australian retailer variant data explicitly supplies this exact named recipe, species and pack barcode. Previously unspecified packs are now explicit. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/big-dog-barf-sensitive-skin-for-dogs-3kg"
+      ]
+    },
+    {
+      "appId": 1107,
+      "before": {
+        "type": "Raw/Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9337940004272",
+        "type": "Raw · 1.38kg",
+        "petType": "cat",
+        "foodType": "raw"
+      },
+      "absentBeforeFields": [
+        "barcode",
+        "petType",
+        "foodType"
+      ],
+      "reason": "Australian retailer variant data explicitly supplies this exact named recipe, species and pack barcode. Previously unspecified packs are now explicit. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/big-dog-chicken-for-cats-1-38kg"
+      ]
+    },
+    {
+      "appId": 1109,
+      "before": {
+        "barcode": "9319185007027",
+        "type": "Raw/Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9337940004135",
+        "type": "Raw · 1.38kg",
+        "petType": "cat",
+        "foodType": "raw"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Australian retailer variant data explicitly supplies this exact named recipe, species and pack barcode. Previously unspecified packs are now explicit. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/big-dog-barf-kangaroo-for-cats-1-38kg"
+      ]
+    },
+    {
+      "appId": 1110,
+      "before": {
+        "type": "Raw/Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9337940004142",
+        "type": "Raw · 1.38kg",
+        "petType": "cat",
+        "foodType": "raw"
+      },
+      "absentBeforeFields": [
+        "barcode",
+        "petType",
+        "foodType"
+      ],
+      "reason": "Australian retailer variant data explicitly supplies this exact named recipe, species and pack barcode. Previously unspecified packs are now explicit. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/big-dog-barf-turkey-for-cats-1-38kg"
+      ]
+    },
+    {
+      "appId": 212,
+      "before": {
+        "barcode": "9334214045580"
+      },
+      "after": {
+        "barcode": "9334214065106"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/advance-hairball-chicken-adult-cat-food-1-5kg"
+      ]
+    },
+    {
+      "appId": 358,
+      "before": {
+        "barcode": "642863107047"
+      },
+      "after": {
+        "barcode": "642863111334"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/greenies-tuna-cat-treat/139643"
+      ]
+    },
+    {
+      "appId": 357,
+      "before": {
+        "barcode": "642863107030"
+      },
+      "after": {
+        "barcode": "642863111303"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/greenies-roast-chicken-cat-treat/139645"
+      ]
+    },
+    {
+      "appId": 67,
+      "before": {
+        "barcode": "3182550708203"
+      },
+      "after": {
+        "barcode": "3182550708197"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-medium-adult-dog-food/29358"
+      ]
+    },
+    {
+      "appId": 198,
+      "before": {},
+      "after": {},
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-feline-hairball-care-cat-food/29337"
+      ]
+    },
+    {
+      "appId": 195,
+      "before": {
+        "barcode": "3182550702225"
+      },
+      "after": {
+        "barcode": "3182550702379"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-feline-growth-kitten-food/30342"
+      ]
+    },
+    {
+      "appId": 66,
+      "before": {
+        "barcode": "3182551055658"
+      },
+      "after": {
+        "barcode": "3182550402170"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-mini-adult-dog-food/29315"
+      ]
+    },
+    {
+      "appId": 71,
+      "before": {
+        "barcode": "9003579008454"
+      },
+      "after": {
+        "barcode": "3182550402149"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-maxi-junior-dog-food/29321"
+      ]
+    },
+    {
+      "appId": 70,
+      "before": {},
+      "after": {},
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-medium-junior-dog-food/30523"
+      ]
+    },
+    {
+      "appId": 73,
+      "before": {},
+      "after": {
+        "barcode": "3182550715614"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-labrador-dog-food/29328"
+      ]
+    },
+    {
+      "appId": 210,
+      "before": {},
+      "after": {},
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/advance-healthy-weight-chicken-adult-cat-food-1-5kg"
+      ]
+    },
+    {
+      "appId": 194,
+      "before": {
+        "barcode": "3182550716253"
+      },
+      "after": {
+        "barcode": "3182550704618"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-feline-indoor-cat-food/29788"
+      ]
+    },
+    {
+      "appId": 209,
+      "before": {},
+      "after": {
+        "barcode": "9334214065076"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/advance-indoor-chicken-adult-cat-food/147981"
+      ]
+    },
+    {
+      "appId": 365,
+      "before": {
+        "barcode": "9310022867798"
+      },
+      "after": {
+        "barcode": "8853301000963"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/temptations-tasty-chicken-cat-treat/141385"
+      ]
+    },
+    {
+      "appId": 63,
+      "before": {
+        "barcode": "0052742204208"
+      },
+      "after": {
+        "barcode": "052742693804"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/science-diet-canine-mature-adult-dog-food/118118"
+      ]
+    },
+    {
+      "appId": 64,
+      "before": {
+        "barcode": "052742046310"
+      },
+      "after": {
+        "barcode": "052742057545"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/science-diet-sensitive-stomach-skin-adult-dog-food/137413"
+      ]
+    },
+    {
+      "appId": 59,
+      "before": {},
+      "after": {
+        "barcode": "052742005188"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/science-diet-canine-small-bites-dog-food/132852"
+      ]
+    },
+    {
+      "appId": 274,
+      "before": {
+        "barcode": "9334214058764"
+      },
+      "after": {
+        "barcode": "9334214038308"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/dine-daily-slices-succulent-chicken-cat-food-tray-85g-7pk"
+      ]
+    },
+    {
+      "appId": 270,
+      "before": {
+        "barcode": "8850011076028"
+      },
+      "after": {
+        "barcode": "050000500895"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/fancy-feast-clssc-pate-vty-chck-trk-kitten-can-85g-24pk"
+      ]
+    },
+    {
+      "appId": 49,
+      "before": {
+        "barcode": "9421016596416"
+      },
+      "after": {
+        "barcode": "9421016594153"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/ziwipeak-air-dried-mackerel-lamb-adult-dog-food/134949"
+      ]
+    },
+    {
+      "appId": 50,
+      "before": {
+        "barcode": "100000024749"
+      },
+      "after": {
+        "barcode": "9421016594047"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/ziwipeak-air-dried-tripe-lamb-adult-dog-food/134950"
+      ]
+    },
+    {
+      "appId": 45,
+      "before": {},
+      "after": {},
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/ziwipeak-air-dried-beef-adult-dog-food/134443"
+      ]
+    },
+    {
+      "appId": 46,
+      "before": {
+        "barcode": "9421016596811"
+      },
+      "after": {
+        "barcode": "9421016594825"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/ziwipeak-air-dried-chicken-adult-dog-food/136795"
+      ]
+    },
+    {
+      "appId": 47,
+      "before": {
+        "barcode": "9421016593965"
+      },
+      "after": {
+        "barcode": "9421016593071"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/ziwipeak-air-dried-lamb-adult-dog-food/134442"
+      ]
+    },
+    {
+      "appId": 48,
+      "before": {},
+      "after": {
+        "barcode": "9421016593064"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/ziwipeak-air-dried-venison-adult-dog-food/134441"
+      ]
+    },
+    {
+      "appId": 1009,
+      "before": {
+        "barcode": "9312239041695"
+      },
+      "after": {
+        "barcode": "9312239042777"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/black-hawk-working-dog-lamb-beef-adullt-dog-food-20kg"
+      ]
+    },
+    {
+      "appId": 1011,
+      "before": {
+        "barcode": "9319185004088"
+      },
+      "after": {
+        "barcode": "9348601000052"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/ivory-coat-grain-free-ocean-fish-salm-adult-dog-food/135622"
+      ]
+    },
+    {
+      "appId": 1014,
+      "before": {
+        "barcode": "9348943001851"
+      },
+      "after": {
+        "barcode": "9348601002643"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/ivory-coat-grain-free-lamb-sardine-adult-dog-food/135621"
+      ]
+    },
+    {
+      "appId": 1007,
+      "before": {
+        "barcode": "9334214035055",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9334214031729",
+        "type": "Wet · 85g x 7"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/advance-delicate-tuna-adult-cat-food-85gx7-1ec59e"
+      ]
+    },
+    {
+      "appId": 1004,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9334214031705",
+        "type": "Wet · 85g x 7"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/advance-delicate-tuna-adult-cat-food-85gx7-c76ab7"
+      ]
+    },
+    {
+      "appId": 1006,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9334214031668",
+        "type": "Wet · 85g x 7"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/advance-tender-chicken-delight-kitten-food-85gx7"
+      ]
+    },
+    {
+      "appId": 1046,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9334214065144",
+        "type": "Dry · 1.5kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/advance-sensitive-skin-digestion-turkey-adult-cat-food-1-5kg"
+      ]
+    },
+    {
+      "appId": 1070,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "type": "Dry · 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/black-hawk-healthy-benefits-joints-adt-dog-food/140726"
+      ]
+    },
+    {
+      "appId": 1071,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "type": "Dry · 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/black-hawk-healthy-benefits-sens-skin-adt-dog-food/140732"
+      ]
+    },
+    {
+      "appId": 1072,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "type": "Dry · 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/black-hawk-healthy-benefits-weight-adt-dog-food/140735"
+      ]
+    },
+    {
+      "appId": 1077,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "type": "Dry · 3kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/black-hawk-fish-and-potato-adult-dog-food/127956"
+      ]
+    },
+    {
+      "appId": 486,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "type": "Wet · 85g 7PK"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/dine-daily-beef-liver-in-rich-gravy-cat-can-85g-7-pack"
+      ]
+    },
+    {
+      "appId": 502,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "8850124098894",
+        "type": "Wet · 85g x 24"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/fancy-feast-gravy-lover-beef-cat-food-can-85gx24"
+      ]
+    },
+    {
+      "appId": 503,
+      "before": {
+        "barcode": "9300605128446",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "8850124070845",
+        "type": "Wet · 85g 24PK"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/fancy-feast-vty-pk-gravy-lovers-collection-cat-can-85g-24pk"
+      ]
+    },
+    {
+      "appId": 505,
+      "before": {
+        "barcode": "050000040803",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "8850127002287",
+        "type": "Wet · 85g x 24"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/fancy-feast-grilled-chicken-cat-food-can-85gx24"
+      ]
+    },
+    {
+      "appId": 506,
+      "before": {
+        "barcode": "8850127009538",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "8850124090454",
+        "type": "Wet · 85g x 24"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/fancy-feast-grilled-liver-chicken-cat-food-can-85gx24"
+      ]
+    },
+    {
+      "appId": 507,
+      "before": {
+        "barcode": "050000503896",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "8850127004946",
+        "type": "Wet · 85g x 24"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/fancy-feast-grilled-salmon-cat-food-can-85gx24"
+      ]
+    },
+    {
+      "appId": 508,
+      "before": {
+        "barcode": "8850127006827",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "8850125069367",
+        "type": "Wet · 85g x 24"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/fancy-feast-grilled-tuna-cat-food-can-85gx24"
+      ]
+    },
+    {
+      "appId": 509,
+      "before": {
+        "barcode": "9300605109773",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "8850127003383",
+        "type": "Wet · 85g x 24"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/fancy-feast-beef-chicken-adult-cat-food-can-85gx24"
+      ]
+    },
+    {
+      "appId": 516,
+      "before": {
+        "barcode": "8850124048226",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "8850124071446",
+        "type": "Wet · 85g 24PK"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/fancy-feast-vty-pk-grilled-seafood-collectn-cat-can-85g-24pk"
+      ]
+    },
+    {
+      "appId": 551,
+      "before": {
+        "barcode": "0052742284200",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "052742022116",
+        "type": "Dry · 1.8kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/hill-s-prescription-diet-c-d-multi-care-stress-adlt-cat-food/138801"
+      ]
+    },
+    {
+      "appId": 553,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "052742001746",
+        "type": "Dry · 3.85kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/hill-s-prescription-diet-c-d-multicare-urinary-adult-dog-food/138790"
+      ]
+    },
+    {
+      "appId": 555,
+      "before": {
+        "barcode": "52742040134",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "052742040141",
+        "type": "Dry · 2.94kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/hills-prescription-diet-derm-complete-dog-food/143534"
+      ]
+    },
+    {
+      "appId": 558,
+      "before": {
+        "barcode": "0005274218030",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "052742186108",
+        "type": "Dry · 3.85kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/hill-s-prescription-diet-i-d-low-fat-canine-food/136884"
+      ]
+    },
+    {
+      "appId": 559,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "052742862002",
+        "type": "Dry · 3.85kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/hill-s-prescription-diet-j-d-joint-care-adult-dog-food/138792"
+      ]
+    },
+    {
+      "appId": 564,
+      "before": {
+        "barcode": "0052742335308",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "052742022369",
+        "type": "Dry · 3.5kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/hill-s-prescription-diet-metabolic-adult-dog-food/137624"
+      ]
+    },
+    {
+      "appId": 565,
+      "before": {
+        "barcode": "0005274277490",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "052742859903",
+        "type": "Dry · 12.5kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/hill-s-prescription-diet-r-d-weight-reduction-adult-dog-food-12-5kg"
+      ]
+    },
+    {
+      "appId": 568,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "052742867106",
+        "type": "Dry · 3.85kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/hill-s-prescription-diet-w-d-multi-benefit-adult-dog-food/138796"
+      ]
+    },
+    {
+      "appId": 569,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "052742149707",
+        "type": "Dry · 1.8kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/hills-presc-diet-y-d-thyroid-care-adult-cat-food-1-8kg"
+      ]
+    },
+    {
+      "appId": 571,
+      "before": {
+        "barcode": "0052742047393",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "052742790107",
+        "type": "Dry · 3.6kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/hills-prescription-diet-z-d-skin-food-sens-adult-dog-food/136881"
+      ]
+    },
+    {
+      "appId": 575,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "052742143118",
+        "type": "Wet · 363g x 12"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/science-diet-adult-savory-stew-with-beef-vegetables-12-x-363g"
+      ]
+    },
+    {
+      "appId": 580,
+      "before": {
+        "barcode": "0052742024516",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "052742117003",
+        "type": "Dry · 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/science-diet-feline-adult-indoor-cat-food/119985"
+      ]
+    },
+    {
+      "appId": 590,
+      "before": {
+        "barcode": "9300605153950",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "052742002156",
+        "type": "Dry · 1.58kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/hill-s-science-diet-urinary-hairball-control-adult-cat-food/133052"
+      ]
+    },
+    {
+      "appId": 599,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "052742146201",
+        "type": "Dry · 1.58kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/science-diet-senior-age-defying-cat-food/126539"
+      ]
+    },
+    {
+      "appId": 845,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9300605132979",
+        "type": "Dry · 1.5kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/pro-plan-salmon-adult-cat-food/139436"
+      ]
+    },
+    {
+      "appId": 857,
+      "before": {
+        "barcode": "9300605136069",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9300605136083",
+        "type": "Dry · 3kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/pro-plan-live-clear-indoor-adult-cat-food/139411"
+      ]
+    },
+    {
+      "appId": 862,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550717335",
+        "type": "Dry · 1.5kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-dachshund-adult-dog-food/98677"
+      ]
+    },
+    {
+      "appId": 863,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550892759",
+        "type": "Dry · 11kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-german-shepherd-adult-dog-food-11kg"
+      ]
+    },
+    {
+      "appId": 864,
+      "before": {
+        "barcode": "3182550743433",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550743440",
+        "type": "Dry · 12kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-golden-retriever-dog-food-12kg"
+      ]
+    },
+    {
+      "appId": 865,
+      "before": {
+        "barcode": "3182550821414",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550821421",
+        "type": "Dry · 3kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-jack-russell-terrier-dog-food-3kg"
+      ]
+    },
+    {
+      "appId": 867,
+      "before": {
+        "barcode": "3182550756419",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550756402",
+        "type": "Dry · 400g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-feline-british-shorthair-adult-cat-food/135038"
+      ]
+    },
+    {
+      "appId": 870,
+      "before": {
+        "barcode": "2820181299974",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550831383",
+        "type": "Dry · 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-mini-mature-plus-8-dog-food-2kg"
+      ]
+    },
+    {
+      "appId": 872,
+      "before": {
+        "barcode": "132622000091",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550825955",
+        "type": "Dry · 400g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-ragdoll-adult-cat-food/141565"
+      ]
+    },
+    {
+      "appId": 876,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "8809845906445",
+        "type": "Dry · 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-vet-diet-gastrointestinal-adult-dog-food/149772"
+      ]
+    },
+    {
+      "appId": 881,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550771719",
+        "type": "Dry · 1.5kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-veterinary-diet-hepatic-dog-food/137336"
+      ]
+    },
+    {
+      "appId": 884,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550940849",
+        "type": "Dry · 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-veterinary-diet-hypoallrg-adult-dog-dry-food/145871"
+      ]
+    },
+    {
+      "appId": 887,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550710992",
+        "type": "Dry · 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-veterinary-diet-renal-dog-food/137342"
+      ]
+    },
+    {
+      "appId": 891,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550831086",
+        "type": "Dry · 6kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-veterinary-diet-satiety-dog-food/137347"
+      ]
+    },
+    {
+      "appId": 893,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550939959",
+        "type": "Dry · 1.5kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-veterinary-diet-sens-control-adult-dry-dog-food/145875"
+      ]
+    },
+    {
+      "appId": 895,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550711036",
+        "type": "Dry · 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-veterinary-diet-urinary-s-o-dog-food/137352"
+      ]
+    },
+    {
+      "appId": 910,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "type": "Treat · 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/temptations-creamy-dairy-cat-treat-85g"
+      ]
+    },
+    {
+      "appId": 1097,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "type": "Wet · 85g x 7"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/advance-delicate-tuna-adult-cat-food-85gx7-58fd53"
+      ]
+    },
+    {
+      "appId": 1104,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9334214031682",
+        "type": "Wet · 85g x 7",
+        "petType": "cat",
+        "foodType": "wet"
+      },
+      "absentBeforeFields": [
+        "barcode",
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/advance-chicken-and-salmon-medley-kitten-food-85gx7"
+      ]
+    },
+    {
+      "appId": 1124,
+      "before": {
+        "barcode": "642863111372",
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "642863111365",
+        "type": "Treat · 60g",
+        "petType": "cat",
+        "foodType": "treat"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/greenies-catnip-cat-treat/139646"
+      ]
+    },
+    {
+      "appId": 1126,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "642863111396",
+        "type": "Treat · 60g",
+        "petType": "cat",
+        "foodType": "treat"
+      },
+      "absentBeforeFields": [
+        "barcode",
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/greenies-salmon-cat-treat/139644"
+      ]
+    },
+    {
+      "appId": 1131,
+      "before": {
+        "barcode": "9348601004005",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19348601002954",
+        "type": "Wet · 400g x 12",
+        "petType": "dog",
+        "foodType": "wet"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/ivory-coat-grain-free-lamb-kangaroo-adult-dog-can-400gx12"
+      ]
+    },
+    {
+      "appId": 1132,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9348601005200",
+        "type": "Wet · 85g x 12",
+        "petType": "cat",
+        "foodType": "wet"
+      },
+      "absentBeforeFields": [
+        "barcode",
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/ivory-coat-chicken-beef-gravy-kitten-pouch-85g-12pk"
+      ]
+    },
+    {
+      "appId": 1133,
+      "before": {
+        "barcode": "9348601000069",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "19348601003890",
+        "type": "Wet · 400g x 12",
+        "petType": "dog",
+        "foodType": "wet"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/ivory-coat-grain-free-chk-coco-oil-puppy-food-400gx12"
+      ]
+    },
+    {
+      "appId": 1157,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9300605131590",
+        "type": "Wet · 85g x 12",
+        "petType": "cat",
+        "foodType": "wet"
+      },
+      "absentBeforeFields": [
+        "barcode",
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/pro-plan-sensitive-skin-chicken-adult-cat-pouch-85gx12"
+      ]
+    },
+    {
+      "appId": 1159,
+      "before": {
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "9300605136052",
+        "type": "Dry · 3kg",
+        "petType": "cat",
+        "foodType": "dry"
+      },
+      "absentBeforeFields": [
+        "barcode",
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/pro-plan-live-clear-chicken-adult-cat-food/139409"
+      ]
+    },
+    {
+      "appId": 1160,
+      "before": {
+        "barcode": "9300605136106",
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "9300605136113",
+        "type": "Dry · 3kg",
+        "petType": "cat",
+        "foodType": "dry"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/pro-plan-live-clear-kitten-food/139407"
+      ]
+    },
+    {
+      "appId": 1168,
+      "before": {
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "3182550799775",
+        "type": "Dry · 3kg",
+        "petType": "dog",
+        "foodType": "dry"
+      },
+      "absentBeforeFields": [
+        "barcode",
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-pug-adult-dog-food/126394"
+      ]
+    },
+    {
+      "appId": 1169,
+      "before": {
+        "barcode": "3182550710664",
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "3182550710640",
+        "type": "Dry · 2kg",
+        "petType": "cat",
+        "foodType": "dry"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-maine-coon-adult-cat-food/29348"
+      ]
+    },
+    {
+      "appId": 1170,
+      "before": {
+        "barcode": "7322540549034",
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "3182550803113",
+        "type": "Dry · 15kg",
+        "petType": "dog",
+        "foodType": "dry"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact retailer product and pack GTIN checked online. Previously unspecified packs are now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-maxi-breed-aging-8-adult-dog-food/126047"
+      ]
+    },
+    {
+      "appId": 227,
+      "before": {
+        "barcode": "7613036667463"
+      },
+      "after": {
+        "barcode": "9300605132955"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact named recipe and pack variant supplies this barcode. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/pro-plan-kitten-dry-food"
+      ]
+    },
+    {
+      "appId": 138,
+      "before": {},
+      "after": {},
+      "absentBeforeFields": [],
+      "reason": "Retailer exact named recipe and pack variant supplies this barcode. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/ivory-coat-grain-free-adult-wet-dog-food-lamb-sardine-stew-400g"
+      ]
+    },
+    {
+      "appId": 311,
+      "before": {},
+      "after": {
+        "barcode": "9421016593309"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact named recipe and pack variant supplies this barcode. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/ziwi-peak-air-dried-cat-beef-400g"
+      ]
+    },
+    {
+      "appId": 1020,
+      "before": {},
+      "after": {
+        "barcode": "9348601000069"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact named recipe and pack variant supplies this barcode. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/ivory-coat-grain-free-dry-puppy-food-chicken-2kg"
+      ]
+    },
+    {
+      "appId": 128,
+      "before": {
+        "barcode": "9319185002817"
+      },
+      "after": {
+        "barcode": "9338362001825"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact named recipe and pack variant supplies this barcode. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/black-hawk-grain-free-beef-dog-wet-food-100g"
+      ]
+    },
+    {
+      "appId": 137,
+      "before": {},
+      "after": {
+        "barcode": "9348601002957"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer exact named recipe and pack variant supplies this barcode. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/ivory-coat-grain-free-adult-wet-dog-food-lamb-kangaroo-stew-400g"
+      ]
+    },
+    {
+      "appId": 1079,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "type": "Dry · 3kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer exact named recipe and pack variant supplies this barcode. No physical scan performed.",
+      "sources": [
+        "https://petsdomain.com.au/products/black-hawk-chicken-rice-small-breed-puppy-dry-food-3kg"
+      ]
+    },
+    {
+      "appId": 785,
+      "before": {
+        "type": "roll"
+      },
+      "after": {
+        "barcode": "9340710000091",
+        "type": "Roll · 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/beef-vegetable-cooked-dog-food-roll-2kg"
+      ]
+    },
+    {
+      "appId": 786,
+      "before": {
+        "barcode": "9315822022088",
+        "type": "roll"
+      },
+      "after": {
+        "barcode": "9340710000237",
+        "type": "Roll · 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/chicken-vegetable-cooked-dog-food-roll-2kg"
+      ]
+    },
+    {
+      "appId": 787,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "9340710005140",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/prime-pantry-beef-jerky-treats"
+      ]
+    },
+    {
+      "appId": 788,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "9340710005041",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/chicken-jerky-dog-treats-100g"
+      ]
+    },
+    {
+      "appId": 792,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "9340710005034",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/kangaroo-jerky-dog-treats-100g"
+      ]
+    },
+    {
+      "appId": 793,
+      "before": {
+        "barcode": "9339687419456",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9340710001265",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/prime100-beef-fillet-treats-100g"
+      ]
+    },
+    {
+      "appId": 794,
+      "before": {
+        "barcode": "122921000115",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9340710001272",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spt-chicken-fillet-dog-treats-100g"
+      ]
+    },
+    {
+      "appId": 795,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9340710002767",
+        "type": "Treat · 50g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/prime100-chicken-training-treats-50g"
+      ]
+    },
+    {
+      "appId": 796,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9340710001258",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spt-kangaroo-fillet-dog-treats-100g"
+      ]
+    },
+    {
+      "appId": 797,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9340710002781",
+        "type": "Treat · 50g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/prime100-kangaroo-training-treats-50g"
+      ]
+    },
+    {
+      "appId": 798,
+      "before": {
+        "barcode": "100000060296",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9340710002774",
+        "type": "Treat · 50g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/prime100-lamb-puppy-training-treats-50g"
+      ]
+    },
+    {
+      "appId": 799,
+      "before": {
+        "barcode": "9319185009755",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9340710001388",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spt-turkey-fillet-dog-treats-100g"
+      ]
+    },
+    {
+      "appId": 801,
+      "before": {
+        "barcode": "122512000096",
+        "type": "air-dried"
+      },
+      "after": {
+        "barcode": "9340710001906",
+        "type": "Air-Dried · 600g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-air-dried-chicken-brown-rice-dog-food-600g"
+      ]
+    },
+    {
+      "appId": 802,
+      "before": {
+        "barcode": "100000138196",
+        "type": "air-dried"
+      },
+      "after": {
+        "barcode": "9340710001883",
+        "type": "Air-Dried · 600g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-air-dried-duck-sweet-potato-dog-food-600g"
+      ]
+    },
+    {
+      "appId": 803,
+      "before": {
+        "barcode": "100000060288",
+        "type": "air-dried"
+      },
+      "after": {
+        "barcode": "9340710001876",
+        "type": "Air-Dried · 600g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-air-dried-kangaroo-pumpkin-dog-food-600g"
+      ]
+    },
+    {
+      "appId": 804,
+      "before": {
+        "barcode": "100000060290",
+        "type": "air-dried"
+      },
+      "after": {
+        "barcode": "9340710001890",
+        "type": "Air-Dried · 600g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-air-dried-lamb-rosemary-dog-food-600g"
+      ]
+    },
+    {
+      "appId": 809,
+      "before": {
+        "type": "fresh"
+      },
+      "after": {
+        "barcode": "9340710001111",
+        "type": "Fresh · 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-chicken-brown-rice-dog-food-roll-2kg"
+      ]
+    },
+    {
+      "appId": 811,
+      "before": {
+        "type": "fresh"
+      },
+      "after": {
+        "barcode": "9340710001753",
+        "type": "Fresh · 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-duck-sweet-potato-dog-food-roll-2kg"
+      ]
+    },
+    {
+      "appId": 812,
+      "before": {
+        "type": "fresh"
+      },
+      "after": {
+        "barcode": "9340710000473",
+        "type": "Fresh · 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-kangaroo-potato-dog-food-roll-2kg"
+      ]
+    },
+    {
+      "appId": 813,
+      "before": {
+        "type": "fresh"
+      },
+      "after": {
+        "barcode": "9340710001241",
+        "type": "Fresh · 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-kangaroo-pumpkin-dog-food-roll-2kg"
+      ]
+    },
+    {
+      "appId": 814,
+      "before": {
+        "type": "fresh"
+      },
+      "after": {
+        "barcode": "9340710001135",
+        "type": "Fresh · 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-lamb-rosemary-dog-food-roll-2kg"
+      ]
+    },
+    {
+      "appId": 815,
+      "before": {
+        "barcode": "9314364335779",
+        "type": "fresh"
+      },
+      "after": {
+        "barcode": "9340710001647",
+        "type": "Fresh · 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-pea-algae-dog-food-roll-2kg"
+      ]
+    },
+    {
+      "appId": 816,
+      "before": {
+        "barcode": "100000139353",
+        "type": "fresh"
+      },
+      "after": {
+        "barcode": "9340710001524",
+        "type": "Fresh · 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-salmon-tapioca-dog-food-roll-2kg"
+      ]
+    },
+    {
+      "appId": 817,
+      "before": {
+        "barcode": "9319185728960",
+        "type": "fresh"
+      },
+      "after": {
+        "barcode": "9340710001364",
+        "type": "Fresh · 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-turkey-flaxseed-dog-food-roll-2kg"
+      ]
+    },
+    {
+      "appId": 819,
+      "before": {
+        "type": "fresh"
+      },
+      "after": {
+        "barcode": "9340710001739",
+        "type": "Fresh · 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-wild-boar-pumpkin-dog-food-roll-2kg"
+      ]
+    },
+    {
+      "appId": 821,
+      "before": {
+        "barcode": "9340710005041",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9340710002149",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-prime-cut-chicken-treats-100g"
+      ]
+    },
+    {
+      "appId": 822,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9340710002156",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-prime-cut-duck-treats-100g"
+      ]
+    },
+    {
+      "appId": 823,
+      "before": {
+        "barcode": "9340710005034",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9340710002163",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-prime-cut-kangaroo-treats-100g"
+      ]
+    },
+    {
+      "appId": 824,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9340710002170",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-prime-cut-lamb-treats-100g"
+      ]
+    },
+    {
+      "appId": 825,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9340710002187",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-prime-cut-turkey-treats-100g"
+      ]
+    },
+    {
+      "appId": 828,
+      "before": {
+        "type": "air-dried"
+      },
+      "after": {
+        "barcode": "9340710001913",
+        "type": "Air-Dried · 600g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-air-dried-lamb-apple-blueberry-puppy-food-600g"
+      ]
+    },
+    {
+      "appId": 830,
+      "before": {
+        "type": "fresh"
+      },
+      "after": {
+        "barcode": "9340710002132",
+        "type": "Fresh · 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-turkey-flaxseed-puppy-roll-2kg"
+      ]
+    },
+    {
+      "appId": 832,
+      "before": {
+        "barcode": "9339687362219",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9340710002323",
+        "type": "Wet · 354g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-slow-cooked-chicken-brown-rice-354g"
+      ]
+    },
+    {
+      "appId": 834,
+      "before": {
+        "barcode": "9330471024221",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9340710002330",
+        "type": "Wet · 354g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-slow-cooked-duck-sweet-potato-354g"
+      ]
+    },
+    {
+      "appId": 835,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9340710002347",
+        "type": "Wet · 354g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-slow-cooked-kangaroo-pumpkin-354g"
+      ]
+    },
+    {
+      "appId": 837,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9340710002361",
+        "type": "Wet · 354g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer product variant explicitly publishes this exact named recipe and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://prime100.com.au/products/spd-slow-cooked-lamb-rosemary-354g"
+      ]
+    },
+    {
+      "appId": 806,
+      "before": {
+        "type": "air-dried"
+      },
+      "after": {
+        "barcode": "9340710002903",
+        "type": "Air-Dried · 600g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product variant identifies this recipe and pack barcode. Previously unspecified pack is now explicit. No physical scan performed.",
+      "sources": [
+        "https://www.vetnpetdirect.com.au/products/prime100-spd-air-dried-venison-sweet-potato"
+      ]
+    },
+    {
+      "appId": 808,
+      "before": {
+        "type": "fresh"
+      },
+      "after": {
+        "barcode": "9340710002620",
+        "type": "Fresh · 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product variant identifies this recipe and pack barcode. Previously unspecified pack is now explicit. No physical scan performed.",
+      "sources": [
+        "https://www.vetnpetdirect.com.au/products/prime100-spd-fresh-roll-beef-carrot-roll-2kg"
+      ]
+    },
+    {
+      "appId": 826,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9340710002941",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product variant identifies this recipe and pack barcode. Previously unspecified pack is now explicit. No physical scan performed.",
+      "sources": [
+        "https://www.vetnpetdirect.com.au/products/prime100-spd-prime-cut-venison-treats-100g"
+      ]
+    },
+    {
+      "appId": 836,
+      "before": {
+        "barcode": "9339687362042",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9340710002354",
+        "type": "Wet · 354g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product variant identifies this recipe and pack barcode. Previously unspecified pack is now explicit. No physical scan performed. Manufacturer reused the lamb/blueberry barcode on its salmon page; retailer supplies separate codes for the two recipes.",
+      "sources": [
+        "https://www.vetnpetdirect.com.au/products/prime100-spd-slow-cooked-lamb-blueberry-puppy-354g"
+      ]
+    },
+    {
+      "appId": 838,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9340710002378",
+        "type": "Wet · 354g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product variant identifies this recipe and pack barcode. Previously unspecified pack is now explicit. No physical scan performed. Manufacturer reused the lamb/blueberry barcode on its salmon page; retailer supplies separate codes for the two recipes.",
+      "sources": [
+        "https://www.vetnpetdirect.com.au/products/prime100-spd-slow-cooked-salmon-pumpkin-354g"
+      ]
+    },
+    {
+      "appId": 839,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9340710002408",
+        "type": "Wet · 354g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact retailer product variant identifies this recipe and pack barcode. Previously unspecified pack is now explicit. No physical scan performed.",
+      "sources": [
+        "https://www.vetnpetdirect.com.au/products/prime100-spd-slow-cooked-turkey-flaxseed-354g"
+      ]
+    },
+    {
+      "appId": 841,
+      "before": {
+        "barcode": "9339687056446",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9340710002392",
+        "type": "Wet · 354g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact retailer product variant identifies this recipe and pack barcode. Previously unspecified pack is now explicit. No physical scan performed.",
+      "sources": [
+        "https://www.vetnpetdirect.com.au/products/prime100-spd-slow-cooked-wild-boar-pumpkin-354g"
+      ]
+    },
+    {
+      "appId": 318,
+      "before": {},
+      "after": {},
+      "absentBeforeFields": [],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/freeze-dried-chicken-lamb-feast"
+      ]
+    },
+    {
+      "appId": 176,
+      "before": {
+        "barcode": "9309001273545"
+      },
+      "after": {
+        "barcode": "9421900779154"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/beef-feast-freeze-dried-dog-food"
+      ]
+    },
+    {
+      "appId": 316,
+      "before": {},
+      "after": {},
+      "absentBeforeFields": [],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/chicken-feast-freeze-dried-cat-food"
+      ]
+    },
+    {
+      "appId": 319,
+      "before": {},
+      "after": {
+        "barcode": "09421904897571"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/lamb-feast-freeze-dried-cat-food"
+      ]
+    },
+    {
+      "appId": 317,
+      "before": {},
+      "after": {},
+      "absentBeforeFields": [],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/beef-feast-freeze-dried-cat-food"
+      ]
+    },
+    {
+      "appId": 348,
+      "before": {},
+      "after": {
+        "barcode": "9421904559912"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/beef-healthy-bites-dog-treats"
+      ]
+    },
+    {
+      "appId": 347,
+      "before": {},
+      "after": {
+        "barcode": "9421900779185"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/lamb-healthy-bites-dog-treats"
+      ]
+    },
+    {
+      "appId": 610,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9421904897403",
+        "type": "Treat · 60g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/beef-lung-protein-bites-dog-treats"
+      ]
+    },
+    {
+      "appId": 611,
+      "before": {
+        "barcode": "9321855000504",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "09421904559929",
+        "type": "Treat · 50g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/chicken-healthy-bites-dog-treats"
+      ]
+    },
+    {
+      "appId": 612,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "9421900779468",
+        "type": "Treat · 50g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/green-mussels-healthy-dog-snacks"
+      ]
+    },
+    {
+      "appId": 613,
+      "before": {
+        "type": "freeze-dried"
+      },
+      "after": {
+        "barcode": "9421900779055",
+        "type": "Freeze-Dried · 200g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/lamb-green-tripe-freeze-dried-booster"
+      ]
+    },
+    {
+      "appId": 615,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9421036373073",
+        "type": "Treat · 50g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/lamb-liver-healthy-bites-dog-treats"
+      ]
+    },
+    {
+      "appId": 616,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9421904897427",
+        "type": "Treat · 50g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/lamb-lung-protein-bites-dog-treats"
+      ]
+    },
+    {
+      "appId": 617,
+      "before": {
+        "barcode": "9339687419494",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9421036373059",
+        "type": "Treat · 50g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/venison-liver-healthy-bites-dog-treats"
+      ]
+    },
+    {
+      "appId": 1134,
+      "before": {
+        "type": "Raw/Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9421904014848",
+        "type": "Freeze-Dried · 250g",
+        "petType": "dog",
+        "foodType": "freeze-dried"
+      },
+      "absentBeforeFields": [
+        "barcode",
+        "petType",
+        "foodType"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/beef-green-tripe-freeze-dried-booster"
+      ]
+    },
+    {
+      "appId": 1135,
+      "before": {
+        "type": "Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9421904518766",
+        "type": "Freeze-Dried · 500g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/beef-hoki-feast-freeze-dried-dog-food"
+      ]
+    },
+    {
+      "appId": 1136,
+      "before": {
+        "type": "Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9421904518780",
+        "type": "Freeze-Dried · 500g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/lamb-king-salmon-feast-freeze-dried-dog-food"
+      ]
+    },
+    {
+      "appId": 1137,
+      "before": {
+        "barcode": "9309001273569",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9421036372489",
+        "type": "Freeze-Dried · 500g",
+        "petType": "dog",
+        "foodType": "freeze-dried"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/lamb-vension-feast-freeze-dried-dog-food"
+      ]
+    },
+    {
+      "appId": 1138,
+      "before": {
+        "type": "Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9421036372120",
+        "type": "Freeze-Dried · 100g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://au.k9felinenatural.com/products/lamb-feast-freeze-dried-dog-food"
+      ]
+    },
+    {
+      "appId": 775,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9342737874655",
+        "type": "Dry · 8kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://petzyo.com.au/products/8kg-of-kibble-that-counts-eco-woofer-bsfl-and-superfood-extras"
+      ]
+    },
+    {
+      "appId": 777,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9342134374697",
+        "type": "Dry · 8kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://petzyo.com.au/products/8kg-of-kibble-that-counts-lamb-and-ancient-grains"
+      ]
+    },
+    {
+      "appId": 778,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9762901272627",
+        "type": "Dry · 8kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://petzyo.com.au/products/8kg-of-kibble-that-counts-salmon-ocean-fish-with-green-lipped-mussels"
+      ]
+    },
+    {
+      "appId": 525,
+      "before": {
+        "type": "Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9360589000893",
+        "type": "Freeze-Dried · 300g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://frontierpets.com.au/products/australian-kangaroo-i-raw-freeze-dried-adult-dog-food-300g"
+      ]
+    },
+    {
+      "appId": 526,
+      "before": {
+        "type": "Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9360589000343",
+        "type": "Freeze-Dried · 300g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://frontierpets.com.au/products/free-range-beef-raw-freeze-dried-cat-food-300g"
+      ]
+    },
+    {
+      "appId": 527,
+      "before": {
+        "type": "Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9360589000145",
+        "type": "Freeze-Dried · 300g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://frontierpets.com.au/products/free-range-beef-raw-freeze-dried-dog-food-300g"
+      ]
+    },
+    {
+      "appId": 529,
+      "before": {
+        "type": "Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9360589000251",
+        "type": "Freeze-Dried · 300g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://frontierpets.com.au/products/free-range-beef-raw-freeze-dried-puppy-food-300g"
+      ]
+    },
+    {
+      "appId": 530,
+      "before": {
+        "type": "Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9360589000510",
+        "type": "Freeze-Dried · 300g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://frontierpets.com.au/products/free-range-chicken-raw-freeze-dried-cat-food-copy"
+      ]
+    },
+    {
+      "appId": 531,
+      "before": {
+        "barcode": "9334864005811",
+        "type": "Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9360589000206",
+        "type": "Freeze-Dried · 300g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://frontierpets.com.au/products/free-range-chicken-raw-freeze-dried-dog-food-300g"
+      ]
+    },
+    {
+      "appId": 532,
+      "before": {
+        "barcode": "9334864004821",
+        "type": "Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9360589000312",
+        "type": "Freeze-Dried · 300g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://frontierpets.com.au/products/free-range-chicken-raw-freeze-dried-puppy-food-300g"
+      ]
+    },
+    {
+      "appId": 533,
+      "before": {
+        "type": "Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9360589000367",
+        "type": "Freeze-Dried · 300g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://frontierpets.com.au/products/free-range-lamb-wild-caught-fish-raw-freeze-dried-cat-food-300g"
+      ]
+    },
+    {
+      "appId": 535,
+      "before": {
+        "barcode": "9334864005965",
+        "type": "Freeze-Dried"
+      },
+      "after": {
+        "barcode": "9360589000176",
+        "type": "Freeze-Dried · 300g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer variant explicitly publishes this exact named recipe, species and pack barcode. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://frontierpets.com.au/products/free-range-pork-raw-freeze-dried-dog-food-300g"
+      ]
+    },
+    {
+      "appId": 675,
+      "before": {
+        "barcode": "9325242000764"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Removed incorrect cross-brand barcode: manufacturer identifies this code as love'em Beef Jerky with Tomato Dog Treats 200g, not the Leaps & Bounds catalogue item. Original value retained in correction history.",
+      "sources": [
+        "https://rpfco.com/products/loveem-beef-jerky-with-tomato-dog-treats-200g"
+      ]
+    },
+    {
+      "appId": 681,
+      "before": {
+        "barcode": "9325242000771"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Removed incorrect cross-brand barcode: manufacturer identifies this code as love'em Grain Free Lamb Jerky with Rosemary Flavour Dog Treats 200g, not the Leaps & Bounds catalogue item. Original value retained in correction history.",
+      "sources": [
+        "https://rpfco.com/products/loveem-grain-free-lamb-jerky-with-rosemary-flavour-200g"
+      ]
+    },
+    {
+      "appId": 24,
+      "before": {},
+      "after": {
+        "barcode": "609728290580"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/meals-for-mutts-dog-kangaroo-lamb-2-5kg"
+      ]
+    },
+    {
+      "appId": 25,
+      "before": {
+        "barcode": "9313107123079"
+      },
+      "after": {
+        "barcode": "610696080608"
+      },
+      "absentBeforeFields": [],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/meals-for-mutts-salmon-sardine-2-5kg"
+      ]
+    },
+    {
+      "appId": 26,
+      "before": {},
+      "after": {
+        "barcode": "799439129764"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://goldcoastpetcentre.com/products/meals-for-mutts-turkey-lamb-lite-9kg"
+      ]
+    },
+    {
+      "appId": 28,
+      "before": {},
+      "after": {
+        "barcode": "735850548739"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/meals-for-mutts-single-protein-grain-free-lamb-2-5kg"
+      ]
+    },
+    {
+      "appId": 29,
+      "before": {},
+      "after": {
+        "barcode": "799439109568"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/meals-for-mutts-puppy-turkey-salmon-2-5kg"
+      ]
+    },
+    {
+      "appId": 35,
+      "before": {},
+      "after": {
+        "barcode": "064992103453"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://www.petso.com.au/products/orijen-original-biologically-appropriate-dry-dog-food"
+      ]
+    },
+    {
+      "appId": 220,
+      "before": {},
+      "after": {
+        "barcode": "9348601004685"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://rpfco.com/products/ivory-coat-grain-free-indoor-adult-dry-cat-food-chicken-kangaroo-2kg"
+      ]
+    },
+    {
+      "appId": 222,
+      "before": {},
+      "after": {},
+      "absentBeforeFields": [],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://rpfco.com/products/ivory-coat-grain-free-adult-dry-cat-food-ocean-fish-salmon-2kg"
+      ]
+    },
+    {
+      "appId": 224,
+      "before": {},
+      "after": {
+        "barcode": "9300605133044"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://vetslovepets.com.au/products/purina-pro-plan-indoor-hairball-control-chicken-formula-dry-cat-food"
+      ]
+    },
+    {
+      "appId": 280,
+      "before": {},
+      "after": {
+        "barcode": "9421016594511"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://ziwipets.com/en-au/products/wet-beef-cat-food"
+      ]
+    },
+    {
+      "appId": 281,
+      "before": {
+        "barcode": "8850124097750"
+      },
+      "after": {
+        "barcode": "9421016594917"
+      },
+      "absentBeforeFields": [],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://ziwipets.com/products/wet-canned-chicken-cats"
+      ]
+    },
+    {
+      "appId": 282,
+      "before": {},
+      "after": {
+        "barcode": "9421016594450"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://ziwipets.com/en-au/products/lamb-cat-food"
+      ]
+    },
+    {
+      "appId": 283,
+      "before": {},
+      "after": {
+        "barcode": "9421016595969"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://ziwipets.com/en-au/products/wet-mackerel-cat-food"
+      ]
+    },
+    {
+      "appId": 284,
+      "before": {},
+      "after": {
+        "barcode": "9421016594573"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://ziwipets.com/en-au/products/wet-canned-venison-cat-food"
+      ]
+    },
+    {
+      "appId": 305,
+      "before": {},
+      "after": {
+        "barcode": "8858772602166"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://www.petso.com.au/products/kit-cat-chicken-salmon-toppers-wet-canned-cat-food"
+      ]
+    },
+    {
+      "appId": 313,
+      "before": {
+        "barcode": "1014171872761"
+      },
+      "after": {
+        "barcode": "9421016590551"
+      },
+      "absentBeforeFields": [],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://ziwipets.com/products/air-dried-venison-recipe-for-cats"
+      ]
+    },
+    {
+      "appId": 314,
+      "before": {
+        "barcode": "9421016595761"
+      },
+      "after": {
+        "barcode": "9421016590537"
+      },
+      "absentBeforeFields": [],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://ziwipets.com/products/air-dried-lamb-recipe-for-cats"
+      ]
+    },
+    {
+      "appId": 315,
+      "before": {},
+      "after": {
+        "barcode": "9421016594177"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://ziwipets.com/products/air-dried-mackerel-and-lamb-cat-food"
+      ]
+    },
+    {
+      "appId": 344,
+      "before": {
+        "barcode": "100000038991"
+      },
+      "after": {
+        "barcode": "9325242000757"
+      },
+      "absentBeforeFields": [],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://rpfco.com/products/loveem-chicken-training-treats-dog-treats-200g"
+      ]
+    },
+    {
+      "appId": 349,
+      "before": {
+        "barcode": "9357667050031"
+      },
+      "after": {
+        "barcode": "9353793000087"
+      },
+      "absentBeforeFields": [],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://furfresh.com.au/products/furfresh-australian-whole-raw-sardines-freeze-dried-65g"
+      ]
+    },
+    {
+      "appId": 352,
+      "before": {},
+      "after": {
+        "barcode": "0768114990623"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://www.barklytreats.com.au/products/kangaroo-and-carrots-dog-treats"
+      ]
+    },
+    {
+      "appId": 356,
+      "before": {
+        "barcode": "9361410000020"
+      },
+      "after": {
+        "barcode": "9353793001534"
+      },
+      "absentBeforeFields": [],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://furfresh.com.au/products/grass-fed-beef-bone-broth-concentrate-squeeze-bottle"
+      ]
+    },
+    {
+      "appId": 388,
+      "before": {},
+      "after": {
+        "barcode": "8710255202020"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://www.wellandvalleyfeeds.co.uk/products/eukanuba-thriving-mature-small-breed-3kg"
+      ]
+    },
+    {
+      "appId": 399,
+      "before": {},
+      "after": {
+        "barcode": "9314364336820"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://rpfco.com/products/natures-gift-casserole-kangaroo-vegetables-wet-dog-food-1-2kg"
+      ]
+    },
+    {
+      "appId": 409,
+      "before": {},
+      "after": {
+        "barcode": "810339020972"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://rpfco.com/products/billy-margot-lamb-superfood-blend-dry-dog-food-1-8kg"
+      ]
+    },
+    {
+      "appId": 411,
+      "before": {},
+      "after": {
+        "barcode": "810339022495"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://realpetfoodco.co.nz/products/billy-margot-wild-kangaroo-superfood-blend-dry-dog-food-1-8kg"
+      ]
+    },
+    {
+      "appId": 416,
+      "before": {
+        "barcode": "9334864007334"
+      },
+      "after": {
+        "barcode": "5060317692348"
+      },
+      "absentBeforeFields": [],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://petz.ae/products/billy-margot-adult-lamb-with-superfoods-wet-dog-food"
+      ]
+    },
+    {
+      "appId": 467,
+      "before": {
+        "barcode": "9300605132443"
+      },
+      "after": {
+        "barcode": "8850125073012"
+      },
+      "absentBeforeFields": [],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://supertails.com/products/friskies-indoor-delights-adult-cat-dry-food"
+      ]
+    },
+    {
+      "appId": 719,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "9325242000764",
+        "type": "Treat · 200g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://rpfco.com/products/loveem-beef-jerky-with-tomato-dog-treats-200g"
+      ]
+    },
+    {
+      "appId": 720,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "9325242000771",
+        "type": "Treat · 200g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://rpfco.com/products/loveem-grain-free-lamb-jerky-with-rosemary-flavour-200g"
+      ]
+    },
+    {
+      "appId": 749,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "type": "Wet · 700g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://rpfco.com/products/natures-gift-loaf-chicken-rice-vegetables-wet-dog-food-700g"
+      ]
+    },
+    {
+      "appId": 750,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "type": "Wet · 700g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Product page variant explicitly supplies the barcode for the named recipe, species and stated pack. Previously unspecified pack now explicit where applicable. Online source association only; no physical scan performed.",
+      "sources": [
+        "https://bunnasia.com/products/natures-gift-puppy-wet-dog-food-mince-with-chicken-700g"
+      ]
+    },
+    {
+      "appId": 901,
+      "before": {
+        "barcode": "9348509000017",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9348509000000",
+        "type": "Dry · 15kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Source product variant explicitly supplies this recipe barcode. Pack size supported by variant/title or checked pack photo together with retailer 1300g weight. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://stayloyal.com.au/products/chicken-lamb-fish"
+      ]
+    },
+    {
+      "appId": 903,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "type": "Dry · 8kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Source product variant explicitly supplies this recipe barcode. Pack size supported by variant/title or checked pack photo together with retailer 1300g weight. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://stayloyal.com.au/products/salmon-turkey-pork"
+      ]
+    },
+    {
+      "appId": 904,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9348509000093",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Source product variant explicitly supplies this recipe barcode. Pack size supported by variant/title or checked pack photo together with retailer 1300g weight. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://stayloyal.com.au/products/natural-joint-health-treats-100g"
+      ]
+    },
+    {
+      "appId": 1054,
+      "before": {
+        "type": "raw"
+      },
+      "after": {
+        "barcode": "9337940007839",
+        "type": "Raw · 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Source product variant explicitly supplies this recipe barcode. Pack size supported by variant/title or checked pack photo together with retailer 1300g weight. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://thebarnpetstock.com/products/big-dog-active-roll-2kg-frozen"
+      ]
+    },
+    {
+      "appId": 1057,
+      "before": {
+        "type": "raw"
+      },
+      "after": {
+        "barcode": "9337940007884",
+        "type": "Raw · 1.3kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Source product variant explicitly supplies this recipe barcode. Pack size supported by variant/title or checked pack photo together with retailer 1300g weight. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://www.noseypets.com.au/products/bigdog-raw-bites-chicken-dog-food"
+      ]
+    },
+    {
+      "appId": 1144,
+      "before": {
+        "barcode": "9325242000535",
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "9325242000740",
+        "type": "Treat · 200g",
+        "petType": "dog",
+        "foodType": "treat"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Source product variant explicitly supplies this recipe barcode. Pack size supported by variant/title or checked pack photo together with retailer 1300g weight. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://rpfco.com/products/loveem-beef-liver-training-treats-dog-treats-200g"
+      ]
+    },
+    {
+      "appId": 528,
+      "before": {
+        "barcode": "9339687404582",
+        "type": "Supplement"
+      },
+      "after": {
+        "barcode": "9360589001319",
+        "type": "Supplement · 80g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer publishes the exact 80g product barcode as 9360 589 001319. Removed spacing only; no digits inferred or changed. Pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://frontierpets.com.au/products/free-range-beef-organs-raw-freeze-dried-booster-80g"
+      ]
+    },
+    {
+      "appId": 225,
+      "before": {
+        "barcode": "9300605157262"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Removed incorrect product association. Drakes 2026 product/APN table identifies this barcode as PURINA ONE ADLT HEALTHY WGHT 2.5KG, not Purina Pro Plan Healthy Weight. Original value retained in correction history. Source table row visually checked.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=18"
+      ]
+    },
+    {
+      "appId": 291,
+      "before": {
+        "barcode": "9300681169586"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Removed incorrect product association. Drakes 2026 product/APN table identifies this barcode as GRAVOX LAMB & R/MARY LQD GRAVY 165G, not Advance Kitten Lamb in Gravy. Original value retained in correction history. Source table row visually checked.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=21"
+      ]
+    },
+    {
+      "appId": 472,
+      "before": {
+        "barcode": "9300605156456"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Removed incorrect product association. Drakes 2026 product/APN table identifies this barcode as FRISKIES SEAFOOD SENSATIONS 700G, not Friskies Senior 7+ Gravy Sensations. Original value retained in correction history. Source table row visually checked.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=10"
+      ]
+    },
+    {
+      "appId": 1,
+      "before": {
+        "barcode": "9300605156463"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Removed incorrect product association. Drakes 2026 product/APN table identifies this barcode as FRISKIES INDOOR DELIGHTS 700G, not Absolute Holistic Air Dried Cat Food — Beef & Venison. Original value retained in correction history. Source table row visually checked.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=10"
+      ]
+    },
+    {
+      "appId": 607,
+      "before": {
+        "barcode": "9300605140899"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Removed incorrect product association. Drakes 2026 product/APN table identifies this barcode as PURINA ONE C/F HAIRBALL CHICK 1.4KG, not Ivory Coat Holistic Nutrition Adult Chicken & Brown Rice. Original value retained in correction history. Source table row visually checked.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=18"
+      ]
+    },
+    {
+      "appId": 640,
+      "before": {
+        "barcode": "9300603224898"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Removed incorrect product association. Drakes 2026 product/APN table identifies this barcode as PURINA L/D BF/VEG/MB 3KG, not Leaps & Bounds Beef, Liver & Vegetables Adult Dog Food. Original value retained in correction history. Source table row visually checked.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=21"
+      ]
+    },
+    {
+      "appId": 646,
+      "before": {
+        "barcode": "9300605104495"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Removed incorrect product association. Drakes 2026 product/APN table identifies this barcode as PURINA L/DOG CHIC&VEG 3KG, not Leaps & Bounds Chicken & Vegetable Adult Dog Food. Original value retained in correction history. Source table row visually checked.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=21"
+      ]
+    },
+    {
+      "appId": 781,
+      "before": {
+        "barcode": "9417986935690"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Removed incorrect product association. Drakes 2026 product/APN table identifies this barcode as ALFA ONE RICE BRAN OIL 1L, not Petzyo Petzyo One — Chicken Fillet. Original value retained in correction history. Source table row visually checked.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=16"
+      ]
+    },
+    {
+      "appId": 843,
+      "before": {
+        "barcode": "9300605141445"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Removed incorrect product association. Drakes 2026 product/APN table identifies this barcode as PURINA ONE C/F HLTHY WGHT CHK 1.4KG, not Supercoat Adult Healthy Weight Chicken. Original value retained in correction history. Source table row visually checked.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=18"
+      ]
+    },
+    {
+      "appId": 858,
+      "before": {
+        "barcode": "9300605157279"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Removed incorrect product association. Drakes 2026 product/APN table identifies this barcode as PURINA ONE ADLT 7+ CHICKEN 2.5KG, not Purina Pro Plan Medium Puppy Chicken. Original value retained in correction history. Source table row visually checked.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=18"
+      ]
+    },
+    {
+      "appId": 1161,
+      "before": {
+        "barcode": "9300605157231"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Removed incorrect product association. Drakes 2026 product/APN table identifies this barcode as PURINA ONE PUPPY CHICKEN 2.5KG, not Purina Pro Plan Medium Puppy Chicken. Original value retained in correction history. Source table row visually checked.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=18"
+      ]
+    },
+    {
+      "appId": 1166,
+      "before": {
+        "barcode": "9300605157255"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Removed incorrect product association. Drakes 2026 product/APN table identifies this barcode as PURINA ONE SM BREED ADLT CHKN 2.5KG, not Purina Pro Plan Small & Mini Adult Chicken. Original value retained in correction history. Source table row visually checked.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=18"
+      ]
+    },
+    {
+      "appId": 300,
+      "before": {},
+      "after": {},
+      "absentBeforeFields": [],
+      "reason": "Retailer 2026 product/APN table explicitly matches this recipe and pack. Table row visually checked. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=6"
+      ]
+    },
+    {
+      "appId": 519,
+      "before": {
+        "barcode": "9300605143944",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9300605098596",
+        "type": "Wet · 12 x 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer 2026 product/APN table explicitly matches this recipe and pack. Table row visually checked. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=6"
+      ]
+    },
+    {
+      "appId": 524,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "type": "Wet · 12 x 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer 2026 product/APN table explicitly matches this recipe and pack. Table row visually checked. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=6"
+      ]
+    },
+    {
+      "appId": 912,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "type": "Treat · 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer 2026 product/APN table explicitly matches this recipe and pack. Table row visually checked. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=8"
+      ]
+    },
+    {
+      "appId": 914,
+      "before": {
+        "barcode": "8853301001106",
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "8853301001069",
+        "type": "Treat · 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer 2026 product/APN table explicitly matches this recipe and pack. Table row visually checked. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=8"
+      ]
+    },
+    {
+      "appId": 916,
+      "before": {
+        "barcode": "8853301000949",
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "8853301000925",
+        "type": "Treat · 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer 2026 product/APN table explicitly matches this recipe and pack. Table row visually checked. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=8"
+      ]
+    },
+    {
+      "appId": 963,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "type": "Wet · 400g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer 2026 product/APN table explicitly matches this recipe and pack. Table row visually checked. Previously unspecified pack now explicit. Saved packaging image independently decoded the same barcode. No physical scan performed.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=19"
+      ]
+    },
+    {
+      "appId": 965,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "type": "Wet · 400g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer 2026 product/APN table explicitly matches this recipe and pack. Table row visually checked. Previously unspecified pack now explicit. Saved packaging image independently decoded the same barcode. No physical scan performed.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=20"
+      ]
+    },
+    {
+      "appId": 971,
+      "before": {
+        "barcode": "9334214053509",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9310022413704",
+        "type": "Wet · 400g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer 2026 product/APN table explicitly matches this recipe and pack. Table row visually checked. Previously unspecified pack now explicit. Saved packaging image independently decoded the same barcode. No physical scan performed.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=20"
+      ]
+    },
+    {
+      "appId": 1181,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "type": "Wet · 400g",
+        "petType": "cat",
+        "foodType": "wet"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Retailer 2026 product/APN table explicitly matches this recipe and pack. Table row visually checked. Previously unspecified pack now explicit. No physical scan performed.",
+      "sources": [
+        "https://drakes.com.au/wp-content/uploads/2026/04/Win-a-Car-2026-TCs-1.pdf#page=19"
+      ]
+    },
+    {
+      "appId": 200,
+      "before": {},
+      "after": {},
+      "absentBeforeFields": [],
+      "reason": "Retailer product schema explicitly identifies this recipe and pack GTIN. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-urinary-care-adult-cat-food/132681"
+      ]
+    },
+    {
+      "appId": 75,
+      "before": {
+        "barcode": "3182550793582"
+      },
+      "after": {
+        "barcode": "3182550793575"
+      },
+      "absentBeforeFields": [],
+      "reason": "Retailer product schema explicitly identifies this recipe and pack GTIN. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-mini-ageing-plus-12-dog-food-1-5kg"
+      ]
+    },
+    {
+      "appId": 72,
+      "before": {},
+      "after": {
+        "barcode": "3182550811637"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer product schema explicitly identifies this recipe and pack GTIN. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-french-bulldog-dog-food-3kg"
+      ]
+    },
+    {
+      "appId": 199,
+      "before": {},
+      "after": {
+        "barcode": "3182550737593"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Retailer product schema explicitly identifies this recipe and pack GTIN. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-sterilised-adult-cat-food-2kg"
+      ]
+    },
+    {
+      "appId": 1002,
+      "before": {
+        "type": "canned"
+      },
+      "after": {
+        "barcode": "9334214029719",
+        "type": "Canned · 700g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Saved pack photograph visibly identifies Advance Adult All Breed Sensitive Skin & Digestion Chicken with Rice 700g and printed EAN 9334214029719. Apple Vision decoded the same EAN. Retailer exact 700g listing corroborates via SKU, not its zero barcode field. Photo SHA256 628ef8e90e14d71828cec1d2e4d913c9ca5583230f5d28e519ae6cb6ab7b6677. Previously unspecified pack now explicit. Saved image decoding only, no physical scan performed.",
+      "sources": [
+        "https://www.habitatpets.com.au/products/advance-sensitive-can-700g"
+      ]
     }
   ],
   "collectorBarcodeRemovals": [

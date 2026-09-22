@@ -143,7 +143,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2.5kg",
-        "barcode": null
+        "barcode": "609728290580"
       },
       "localPath": "assets/product-images/batch250r2-24.jpg",
       "sourcePage": "https://woononapetfoods.com.au/products/meals-for-mutts-dog-kangaroo-lamb-2-5kg",
@@ -165,7 +165,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2.5kg",
-        "barcode": "9313107123079"
+        "barcode": "610696080608"
       },
       "localPath": "assets/product-images/batch250r2-25.jpg",
       "sourcePage": "https://woononapetfoods.com.au/products/meals-for-mutts-salmon-sardine-2-5kg",
@@ -187,7 +187,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 9kg",
-        "barcode": null
+        "barcode": "799439129764"
       },
       "localPath": "assets/product-images/batch250r2-26.jpg",
       "sourcePage": "https://goldcoastpetcentre.com/products/meals-for-mutts-turkey-lamb-lite-9kg",
@@ -231,7 +231,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2.5kg",
-        "barcode": null
+        "barcode": "735850548739"
       },
       "localPath": "assets/product-images/batch250r2-28.jpg",
       "sourcePage": "https://woononapetfoods.com.au/products/meals-for-mutts-single-protein-grain-free-lamb-2-5kg",
@@ -253,7 +253,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2.5kg",
-        "barcode": null
+        "barcode": "799439109568"
       },
       "localPath": "assets/product-images/batch250r2-29.jpg",
       "sourcePage": "https://woononapetfoods.com.au/products/meals-for-mutts-puppy-turkey-salmon-2-5kg",
@@ -275,7 +275,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": null
+        "barcode": "064992103453"
       },
       "localPath": "assets/product-images/batch250-35-root_brands.jpg",
       "sourcePage": "https://www.petso.com.au/products/orijen-original-biologically-appropriate-dry-dog-food",
@@ -363,7 +363,7 @@
         "petType": "dog",
         "foodType": "air-dried",
         "type": "Air-Dried · 454g",
-        "barcode": "9421016596811"
+        "barcode": "9421016594825"
       },
       "localPath": "assets/product-images/batch25-46-ziwi.png",
       "sourcePage": "https://ziwipets.com/products/air-dried-chicken-dog-food",
@@ -385,7 +385,7 @@
         "petType": "dog",
         "foodType": "air-dried",
         "type": "Air-Dried · 454g",
-        "barcode": "9421016593965"
+        "barcode": "9421016593071"
       },
       "localPath": "assets/product-images/batch25-47-ziwi.png",
       "sourcePage": "https://ziwipets.com/products/air-dried-lamb-recipe-for-dogs",
@@ -407,7 +407,7 @@
         "petType": "dog",
         "foodType": "air-dried",
         "type": "Air-Dried · 454g",
-        "barcode": null
+        "barcode": "9421016593064"
       },
       "localPath": "assets/product-images/batch25-48-ziwi.png",
       "sourcePage": "https://ziwipets.com/products/air-dried-venison-recipe-for-dogs",
@@ -429,7 +429,7 @@
         "petType": "dog",
         "foodType": "air-dried",
         "type": "Air-Dried · 454g",
-        "barcode": "9421016596416"
+        "barcode": "9421016594153"
       },
       "localPath": "assets/product-images/batch25-49-ziwi.png",
       "sourcePage": "https://ziwipets.com/products/mackerel-lamb-for-dogs",
@@ -781,7 +781,7 @@
         "petType": "dog",
         "foodType": "wet",
         "type": "Wet · 100g tray",
-        "barcode": "9319185002817"
+        "barcode": "9338362001825"
       },
       "localPath": "assets/product-images/batch250-128-australian_premium.png",
       "sourcePage": "https://www.blackhawkpetcare.com/en/products/dog/grain-free-wet-dog-food-tray-beef/",
@@ -1045,7 +1045,7 @@
         "petType": "dog",
         "foodType": "raw",
         "type": "Raw · 3kg (12x250g patties)",
-        "barcode": null
+        "barcode": "9337940004050"
       },
       "localPath": "assets/product-images/162-big-dog-beef.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog/beef-raw-dog-food",
@@ -1067,7 +1067,7 @@
         "petType": "dog",
         "foodType": "raw",
         "type": "Raw · 3kg (12x250g patties)",
-        "barcode": null
+        "barcode": "9337940004043"
       },
       "localPath": "Dog Specialty/Big Dog - BARF Raw Chicken.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog/chicken-raw-dog-food",
@@ -1089,7 +1089,7 @@
         "petType": "dog",
         "foodType": "raw",
         "type": "Raw · 3kg (12x250g patties)",
-        "barcode": null
+        "barcode": "9337940004067"
       },
       "localPath": "Dog Specialty/Big Dog - BARF Raw Lamb.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog/lamb-raw-dog-food",
@@ -1111,7 +1111,7 @@
         "petType": "dog",
         "foodType": "raw",
         "type": "Raw · 3kg (12x250g patties)",
-        "barcode": null
+        "barcode": "9337940007235"
       },
       "localPath": "assets/product-images/165-big-dog-salmon.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog/tasmanian-salmon-raw-dog-food",
@@ -1133,7 +1133,7 @@
         "petType": "dog",
         "foodType": "raw",
         "type": "Raw · 3kg (12x250g patties)",
-        "barcode": null
+        "barcode": "9337940004104"
       },
       "localPath": "Dog Specialty/Big Dog - BARF Raw Kangaroo.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog/kangaroo-low-allergy-raw-dog-food",
@@ -1155,7 +1155,7 @@
         "petType": "dog",
         "foodType": "raw",
         "type": "Raw · 3kg (12x250g patties)",
-        "barcode": null
+        "barcode": "9337940004111"
       },
       "localPath": "assets/product-images/167-big-dog-turkey.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog/turkey-low-allergy-raw-dog-food",
@@ -1177,7 +1177,7 @@
         "petType": "dog",
         "foodType": "raw",
         "type": "Raw · 3kg (12x250g patties)",
-        "barcode": null
+        "barcode": "9337940007259"
       },
       "localPath": "assets/product-images/168-big-dog-goat.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog/goat-low-allergy-raw-dog-food",
@@ -1199,7 +1199,7 @@
         "petType": "dog",
         "foodType": "raw",
         "type": "Raw · 3kg (12x250g patties)",
-        "barcode": "132412000002"
+        "barcode": "9337940004098"
       },
       "localPath": "Dog Specialty/Big Dog - BARF Raw Combo.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog/combo-raw-dog-food",
@@ -1243,7 +1243,7 @@
         "petType": "dog",
         "foodType": "freeze-dried",
         "type": "Freeze-Dried · 500g",
-        "barcode": "9309001273545"
+        "barcode": "9421900779154"
       },
       "localPath": "assets/product-images/batch250-176-australian_premium.png",
       "sourcePage": "https://au.k9natural.com/products/beef-feast-freeze-dried-dog-food",
@@ -1353,7 +1353,7 @@
         "petType": "cat",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": null
+        "barcode": "9348601004685"
       },
       "localPath": "assets/product-images/batch250r2-220.jpg",
       "sourcePage": "https://rpfco.com/products/ivory-coat-grain-free-indoor-adult-dry-cat-food-chicken-kangaroo-2kg",
@@ -1397,7 +1397,7 @@
         "petType": "cat",
         "foodType": "dry",
         "type": "Dry · 1.5kg",
-        "barcode": null
+        "barcode": "9300605133044"
       },
       "localPath": "assets/product-images/batch250-224-clinical_major.png",
       "sourcePage": "https://vetslovepets.com.au/products/purina-pro-plan-indoor-hairball-control-chicken-formula-dry-cat-food",
@@ -1837,7 +1837,7 @@
         "petType": "cat",
         "foodType": "wet",
         "type": "Wet · 85g tray (7pk)",
-        "barcode": "9334214058764"
+        "barcode": "9334214038308"
       },
       "localPath": "assets/product-images/batch250-274-mars_purina.png",
       "sourcePage": "https://www.dine.com.au/our-products/favourites/slices/with-succulent-chicken-multipack",
@@ -1881,7 +1881,7 @@
         "petType": "cat",
         "foodType": "wet",
         "type": "Wet · 85g",
-        "barcode": null
+        "barcode": "9421016594511"
       },
       "localPath": "assets/product-images/280-ziwi-beef-cat-85g.png",
       "sourcePage": "https://ziwipets.com/en-au/products/wet-beef-cat-food",
@@ -1903,7 +1903,7 @@
         "petType": "cat",
         "foodType": "wet",
         "type": "Wet · 85g",
-        "barcode": "8850124097750"
+        "barcode": "9421016594917"
       },
       "localPath": "assets/product-images/batch250-281-australian_premium.png",
       "sourcePage": "https://ziwipets.com/products/wet-canned-chicken-cats",
@@ -1931,7 +1931,7 @@
         "petType": "cat",
         "foodType": "wet",
         "type": "Wet · 85g",
-        "barcode": null
+        "barcode": "9421016594450"
       },
       "matchStatus": "pack_match",
       "visualChecked": true,
@@ -1947,7 +1947,7 @@
         "petType": "cat",
         "foodType": "wet",
         "type": "Wet · 85g",
-        "barcode": null
+        "barcode": "9421016595969"
       },
       "localPath": "assets/product-images/283-ziwi-mackerel-cat-85g.png",
       "sourcePage": "https://ziwipets.com/en-au/products/wet-mackerel-cat-food",
@@ -1969,7 +1969,7 @@
         "petType": "cat",
         "foodType": "wet",
         "type": "Wet · 85g",
-        "barcode": null
+        "barcode": "9421016594573"
       },
       "localPath": "assets/product-images/284-ziwi-venison-cat-85g.png",
       "sourcePage": "https://ziwipets.com/en-au/products/wet-canned-venison-cat-food",
@@ -2085,7 +2085,7 @@
         "petType": "cat",
         "foodType": "wet",
         "type": "Wet · 80g can",
-        "barcode": null
+        "barcode": "8858772602166"
       },
       "matchStatus": "pack_match",
       "visualChecked": true,
@@ -2123,7 +2123,7 @@
         "petType": "cat",
         "foodType": "air-dried",
         "type": "Air-Dried · 400g",
-        "barcode": null
+        "barcode": "9421016593309"
       },
       "localPath": "assets/product-images/batch25-311-ziwi.png",
       "sourcePage": "https://ziwipets.com/products/air-dried-beef-recipe-for-cats",
@@ -2145,7 +2145,7 @@
         "petType": "cat",
         "foodType": "air-dried",
         "type": "Air-Dried · 400g",
-        "barcode": "1014171872761"
+        "barcode": "9421016590551"
       },
       "localPath": "assets/product-images/batch25-313-ziwi.png",
       "sourcePage": "https://ziwipets.com/products/air-dried-venison-recipe-for-cats",
@@ -2167,7 +2167,7 @@
         "petType": "cat",
         "foodType": "air-dried",
         "type": "Air-Dried · 400g",
-        "barcode": "9421016595761"
+        "barcode": "9421016590537"
       },
       "localPath": "assets/product-images/batch25-314-ziwi.png",
       "sourcePage": "https://ziwipets.com/products/air-dried-lamb-recipe-for-cats",
@@ -2189,7 +2189,7 @@
         "petType": "cat",
         "foodType": "air-dried",
         "type": "Air-Dried · 400g",
-        "barcode": null
+        "barcode": "9421016594177"
       },
       "localPath": "assets/product-images/batch25-315-ziwi.png",
       "sourcePage": "https://ziwipets.com/products/air-dried-mackerel-and-lamb-cat-food",
@@ -2255,7 +2255,7 @@
         "petType": "cat",
         "foodType": "freeze-dried",
         "type": "Freeze-Dried · 320g",
-        "barcode": null
+        "barcode": "09421904897571"
       },
       "localPath": "assets/product-images/batch250-319-australian_premium.png",
       "sourcePage": "https://au.k9natural.com/products/lamb-feast-freeze-dried-cat-food",
@@ -2475,7 +2475,7 @@
         "petType": "dog",
         "foodType": "treat",
         "type": "Treat · 200g",
-        "barcode": "100000038991"
+        "barcode": "9325242000757"
       },
       "localPath": "assets/product-images/344-official.png",
       "sourcePage": "https://rpfco.com/products/loveem-chicken-training-treats-dog-treats-200g",
@@ -2541,7 +2541,7 @@
         "petType": "dog",
         "foodType": "treat",
         "type": "Treat · 50g",
-        "barcode": null
+        "barcode": "9421900779185"
       },
       "localPath": "assets/product-images/batch250-347-australian_premium.jpg",
       "sourcePage": "https://www.petso.com.au/products/k9-natural-lamb-healthy-bites-50g",
@@ -2563,7 +2563,7 @@
         "petType": "dog",
         "foodType": "treat",
         "type": "Treat · 65g",
-        "barcode": "9357667050031"
+        "barcode": "9353793000087"
       },
       "localPath": "assets/product-images/349-official.jpg",
       "sourcePage": "https://furfresh.com.au/products/furfresh-australian-whole-raw-sardines-freeze-dried-65g",
@@ -2607,7 +2607,7 @@
         "petType": "dog",
         "foodType": "treat",
         "type": "Treat · 60g",
-        "barcode": null
+        "barcode": "0768114990623"
       },
       "localPath": "assets/product-images/352-sourced.jpg",
       "sourcePage": "https://www.barklytreats.com.au/products/kangaroo-and-carrots-dog-treats",
@@ -2651,7 +2651,7 @@
         "petType": "dog",
         "foodType": "topper",
         "type": "Topper · 350g",
-        "barcode": "9361410000020"
+        "barcode": "9353793001534"
       },
       "localPath": "assets/product-images/batch250r2-356.jpg",
       "sourcePage": "https://furfresh.com.au/products/grass-fed-beef-bone-broth-concentrate-squeeze-bottle",
@@ -2673,7 +2673,7 @@
         "petType": "cat",
         "foodType": "treat (dental)",
         "type": "Treat (Dental) · 60g",
-        "barcode": "642863107047"
+        "barcode": "642863111334"
       },
       "localPath": "assets/product-images/batch250r2-358.jpg",
       "sourcePage": "https://www.greenies.com.au/products/feline-greenies-tempting-tuna-dental-cat-treats-60g",
@@ -2893,7 +2893,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": null
+        "barcode": "8710255202020"
       },
       "localPath": "assets/product-images/batch250r2-388.jpg",
       "sourcePage": "https://www.wellandvalleyfeeds.co.uk/products/eukanuba-thriving-mature-small-breed-3kg",
@@ -2937,7 +2937,7 @@
         "petType": "dog",
         "foodType": "wet",
         "type": "Wet · 1.2kg",
-        "barcode": null
+        "barcode": "9314364336820"
       },
       "localPath": "assets/product-images/batch250r2-399.jpg",
       "sourcePage": "https://rpfco.com/products/natures-gift-casserole-kangaroo-vegetables-wet-dog-food-1-2kg",
@@ -2959,7 +2959,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 1.8kg",
-        "barcode": null
+        "barcode": "810339020972"
       },
       "localPath": "assets/product-images/batch250-409-australian_premium.jpg",
       "sourcePage": "https://rpfco.com/products/billy-margot-lamb-superfood-blend-dry-dog-food-1-8kg",
@@ -2981,7 +2981,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 1.8kg",
-        "barcode": null
+        "barcode": "810339022495"
       },
       "localPath": "assets/product-images/batch250-411-australian_premium.jpg",
       "sourcePage": "https://realpetfoodco.co.nz/products/billy-margot-wild-kangaroo-superfood-blend-dry-dog-food-1-8kg",
@@ -3047,7 +3047,7 @@
         "petType": "dog",
         "foodType": "wet",
         "type": "Wet · 395g",
-        "barcode": "9334864007334"
+        "barcode": "5060317692348"
       },
       "localPath": "assets/product-images/batch250-416-australian_premium.jpg",
       "sourcePage": "https://petz.ae/products/billy-margot-adult-lamb-with-superfoods-wet-dog-food",
@@ -3201,7 +3201,7 @@
         "petType": "cat",
         "foodType": "dry",
         "type": "Dry · 1kg",
-        "barcode": "9300605132443"
+        "barcode": "8850125073012"
       },
       "localPath": "assets/product-images/batch250-467-mars_purina.png",
       "sourcePage": "https://supertails.com/products/friskies-indoor-delights-adult-cat-dry-food",
@@ -3376,7 +3376,7 @@
         "name": "Classic Collection Beef & Liver in Gravy",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet",
+        "type": "Wet · 85g 7PK",
         "barcode": "9334214018409"
       },
       "localPath": "assets/product-images/batch250-486-mars_purina.png",
@@ -3750,8 +3750,8 @@
         "name": "c/d Multicare Stress Urinary Care",
         "petType": "cat",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": "0052742284200"
+        "type": "Dry · 1.8kg",
+        "barcode": "052742022116"
       },
       "localPath": "assets/product-images/batch250r2-551.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/hill-s-prescription-diet-c-d-multi-care-stress-adlt-cat-food",
@@ -3772,8 +3772,8 @@
         "name": "c/d Multicare Urinary Care",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 3.85kg",
+        "barcode": "052742001746"
       },
       "localPath": "assets/product-images/batch250-553-clinical_major.png",
       "sourcePage": "https://www.hillspet.com.au/dog-food/prescription-diet-cd-multicare-urinary-care-dry",
@@ -3816,8 +3816,8 @@
         "name": "r/d Weight Reduction",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": "0005274277490"
+        "type": "Dry · 12.5kg",
+        "barcode": "052742859903"
       },
       "localPath": "assets/product-images/565-hills-rd.png",
       "sourcePage": "https://www.hillspet.com.au/dog-food/prescription-diet-rd-weight-management-dry",
@@ -3838,8 +3838,8 @@
         "name": "y/d Thyroid Care",
         "petType": "cat",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 1.8kg",
+        "barcode": "052742149707"
       },
       "localPath": "assets/product-images/batch250-569-clinical_major.png",
       "sourcePage": "https://www.hillspet.com.au/cat-food/prescription-diet-yd-thyroid-care-dry",
@@ -3926,8 +3926,8 @@
         "name": "Senior 11+ Age Defying Chicken",
         "petType": "cat",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 1.58kg",
+        "barcode": "052742146201"
       },
       "localPath": "assets/product-images/batch250-599-clinical_major.png",
       "sourcePage": "https://www.hillspet.com.au/cat-food/science-diet-senior-11-dry",
@@ -3971,7 +3971,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "dry",
-        "barcode": "9300605140899"
+        "barcode": null
       },
       "localPath": "assets/product-images/batch250r2-607.jpg",
       "sourcePage": "https://www.whiskersandwags.com.au/products/ivory-coat-dog-adult-chicken-and-brown-rice",
@@ -4102,8 +4102,8 @@
         "name": "Air Dried Beef Mixer Dog Topper",
         "petType": "dog",
         "foodType": "air-dried",
-        "type": "air-dried",
-        "barcode": "9332613004214"
+        "type": "Air-Dried · 1kg",
+        "barcode": "9345740170509"
       },
       "localPath": "assets/product-images/batch250r2-624.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-beef-adult-air-dried-meal-mixer-dog-food-1kg",
@@ -4124,8 +4124,8 @@
         "name": "Air Dried Chicken Mixer Dog Topper",
         "petType": "dog",
         "foodType": "air-dried",
-        "type": "air-dried",
-        "barcode": "9332613006546"
+        "type": "Air-Dried · 1kg",
+        "barcode": "9345740170516"
       },
       "localPath": "assets/product-images/batch250r2-625.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-chckn-adult-air-dried-meal-mixer-dog-food-1kg",
@@ -4146,8 +4146,8 @@
         "name": "BARF Beef Adult Dog Patties",
         "petType": "dog",
         "foodType": "raw",
-        "type": "Raw",
-        "barcode": "9300605147379"
+        "type": "Raw · 2.72kg",
+        "barcode": "9345740131425"
       },
       "localPath": "assets/product-images/batch250r2-627.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-barf-beef-adult-dog-patties-2-72kg",
@@ -4168,8 +4168,8 @@
         "name": "BARF Chicken & Salmon Mature Dog Patties",
         "petType": "dog",
         "foodType": "raw",
-        "type": "Raw",
-        "barcode": "9319185009649"
+        "type": "Raw · 2.72kg",
+        "barcode": "9345740131449"
       },
       "localPath": "assets/product-images/batch250r2-628.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-barf-chicken-salmon-mature-patties-2-72kg",
@@ -4190,8 +4190,8 @@
         "name": "BARF Chicken Puppy Patties",
         "petType": "dog",
         "foodType": "raw",
-        "type": "Raw",
-        "barcode": "9300633554071"
+        "type": "Raw · 1.5kg",
+        "barcode": "9345740078324"
       },
       "localPath": "assets/product-images/batch250r2-630.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-barf-chicken-puppy-patties-1-5kg",
@@ -4234,8 +4234,8 @@
         "name": "Beef & Pumpkin Baked Dog Treat",
         "petType": "dog",
         "foodType": "treat",
-        "type": "treat",
-        "barcode": "9300633554163"
+        "type": "Treat · 500g",
+        "barcode": "9345740127190"
       },
       "localPath": "assets/product-images/batch250r2-636.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-beef-pumpkin-baked-dog-treat-500g",
@@ -4279,7 +4279,7 @@
         "petType": "dog",
         "foodType": "wet",
         "type": "Wet",
-        "barcode": "9300603224898"
+        "barcode": null
       },
       "localPath": "assets/product-images/batch250r2-640.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-beef-liver-dog-can-700gx12",
@@ -4322,8 +4322,8 @@
         "name": "Adult Chicken Casserole Can",
         "petType": "dog",
         "foodType": "wet",
-        "type": "Wet",
-        "barcode": "9300633554057"
+        "type": "Wet · 85g x 12",
+        "barcode": "19345740136861"
       },
       "localPath": "assets/product-images/batch250r2-649.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-chicken-casserole-dog-can-85gx12",
@@ -4344,8 +4344,8 @@
         "name": "Chicken Creamy Kitten Treat",
         "petType": "cat",
         "foodType": "treat",
-        "type": "treat",
-        "barcode": "9334214038810"
+        "type": "Treat · 12g 7PK",
+        "barcode": "9345740163310"
       },
       "localPath": "assets/product-images/batch250r2-652.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-chicken-creamy-kitten-treat-12g-7pk",
@@ -4388,8 +4388,8 @@
         "name": "Dental Chicken Dry Cat Food",
         "petType": "cat",
         "foodType": "dry",
-        "type": "Dry",
-        "barcode": null
+        "type": "Dry · 2.5kg",
+        "barcode": "9345740126278"
       },
       "localPath": "assets/product-images/batch250r2-672.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-dental-chicken-with-thyme-cat-food-2-5kg",
@@ -4432,8 +4432,8 @@
         "name": "Grain Free Kangaroo Dog Food",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 2.3kg",
+        "barcode": "9345740065614"
       },
       "localPath": "assets/product-images/batch250r2-680.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-grain-free-kangaroo-dog-food",
@@ -4455,7 +4455,7 @@
         "petType": "dog",
         "foodType": "wet",
         "type": "Wet",
-        "barcode": "9325242000771"
+        "barcode": null
       },
       "localPath": "assets/product-images/batch250r2-681.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-grain-free-lamb-rosemary-dog-can-400gx12",
@@ -4476,8 +4476,8 @@
         "name": "Grain Free Lamb Puppy Dog Food",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": "9319185009588"
+        "type": "Dry · 2.3kg",
+        "barcode": "9345740052065"
       },
       "localPath": "assets/product-images/batch250r2-682.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-grain-free-lamb-puppy-food",
@@ -4520,8 +4520,8 @@
         "name": "Kangaroo & Vegetable Cat BARF",
         "petType": "cat",
         "foodType": "raw",
-        "type": "Raw",
-        "barcode": "9335355000384"
+        "type": "Raw · 1.38kg",
+        "barcode": "9345740095215"
       },
       "localPath": "assets/product-images/batch250r2-688.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-kangaroo-vegetable-cat-barf-1-38kg",
@@ -4542,8 +4542,8 @@
         "name": "Ocean Fish Creamy Kitten Treat",
         "petType": "cat",
         "foodType": "treat",
-        "type": "treat",
-        "barcode": "5060122497886"
+        "type": "Treat · 12g 7PK",
+        "barcode": "9345740163303"
       },
       "localPath": "assets/product-images/batch250r2-699.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-ocean-fish-creamy-kitten-treat-12g-7pk",
@@ -4564,8 +4564,8 @@
         "name": "Ocean Fish in Gravy Kitten Cat Food",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet",
-        "barcode": "9300605153912"
+        "type": "Wet · 85g x 12",
+        "barcode": "19345740138995"
       },
       "localPath": "assets/product-images/batch250r2-700.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-ocean-fish-gravy-kitten-can-85gx12",
@@ -4586,8 +4586,8 @@
         "name": "Puppy Chicken & Rice Dry",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": "9310022193101"
+        "type": "Dry · 3.2kg",
+        "barcode": "9345740051952"
       },
       "localPath": "assets/product-images/batch250r2-718.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-chicken-with-rice-puppy-food",
@@ -4608,8 +4608,8 @@
         "name": "Beef Jerky with Tomato",
         "petType": "dog",
         "foodType": "treat",
-        "type": "Treat",
-        "barcode": null
+        "type": "Treat · 200g",
+        "barcode": "9325242000764"
       },
       "localPath": "assets/product-images/review-719.jpg",
       "sourcePage": "https://rpfco.com/products/loveem-beef-jerky-with-tomato-dog-treats-200g",
@@ -4630,8 +4630,8 @@
         "name": "Lamb & Rosemary Jerky",
         "petType": "dog",
         "foodType": "treat",
-        "type": "Treat",
-        "barcode": null
+        "type": "Treat · 200g",
+        "barcode": "9325242000771"
       },
       "localPath": "assets/product-images/review-720.jpg",
       "sourcePage": "https://rpfco.com/products/loveem-grain-free-lamb-jerky-with-rosemary-flavour-200g",
@@ -4894,7 +4894,7 @@
         "name": "Loaf Chicken, Rice & Vegetables",
         "petType": "dog",
         "foodType": "wet",
-        "type": "Wet",
+        "type": "Wet · 700g",
         "barcode": "9314364111243"
       },
       "localPath": "assets/product-images/batch250r2-749.jpg",
@@ -4916,7 +4916,7 @@
         "name": "Puppy Mince with Chicken",
         "petType": "dog",
         "foodType": "wet",
-        "type": "Wet",
+        "type": "Wet · 700g",
         "barcode": "9314364337575"
       },
       "localPath": "assets/product-images/batch250r2-750.jpg",
@@ -5224,8 +5224,8 @@
         "name": "Cooked Roll Chicken & Vegetable",
         "petType": "dog",
         "foodType": "roll",
-        "type": "roll",
-        "barcode": "9315822022088"
+        "type": "Roll · 2kg",
+        "barcode": "9340710000237"
       },
       "localPath": "assets/product-images/batch250-786-australian_premium.jpg",
       "sourcePage": "https://prime100.com.au/products/chicken-vegetable-cooked-dog-food-roll-2kg",
@@ -5246,8 +5246,8 @@
         "name": "Prime100 Kangaroo Fillet Treats",
         "petType": "dog",
         "foodType": "treat",
-        "type": "treat",
-        "barcode": null
+        "type": "Treat · 100g",
+        "barcode": "9340710001258"
       },
       "localPath": "assets/product-images/batch250-796-australian_premium.jpg",
       "sourcePage": "https://prime100.com.au/products/spt-kangaroo-fillet-dog-treats-100g",
@@ -5268,8 +5268,8 @@
         "name": "Prime100 Lamb Puppy Training Treats",
         "petType": "dog",
         "foodType": "treat",
-        "type": "treat",
-        "barcode": "100000060296"
+        "type": "Treat · 50g",
+        "barcode": "9340710002774"
       },
       "localPath": "assets/product-images/batch250-798-australian_premium.jpg",
       "sourcePage": "https://prime100.com.au/products/prime100-lamb-puppy-training-treats-50g",
@@ -5290,8 +5290,8 @@
         "name": "Prime100 Turkey Fillet Treats",
         "petType": "dog",
         "foodType": "treat",
-        "type": "treat",
-        "barcode": "9319185009755"
+        "type": "Treat · 100g",
+        "barcode": "9340710001388"
       },
       "localPath": "assets/product-images/batch250-799-australian_premium.jpg",
       "sourcePage": "https://prime100.com.au/products/spt-turkey-fillet-dog-treats-100g",
@@ -5334,8 +5334,8 @@
         "name": "SPD Puppy Fresh Roll Turkey & Flaxseed",
         "petType": "dog",
         "foodType": "fresh",
-        "type": "fresh",
-        "barcode": null
+        "type": "Fresh · 2kg",
+        "barcode": "9340710002132"
       },
       "localPath": "assets/product-images/batch250-830-australian_premium.jpg",
       "sourcePage": "https://prime100.com.au/products/spd-turkey-flaxseed-puppy-roll-2kg",
@@ -5378,8 +5378,8 @@
         "name": "Adult Cat (Salmon & Rice)",
         "petType": "cat",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 1.5kg",
+        "barcode": "9300605132979"
       },
       "localPath": "assets/product-images/batch250-845-clinical_major.jpg",
       "sourcePage": "https://www.purina.com.au/AU-000019.html",
@@ -5532,8 +5532,8 @@
         "name": "Mini Senior 8+",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": "2820181299974"
+        "type": "Dry · 2kg",
+        "barcode": "3182550831383"
       },
       "localPath": "assets/product-images/batch250-870-clinical_major.jpg",
       "sourcePage": "https://www.royalcanin.com/uk/dogs/products/retail-products/mini-adult-8%2B-3002",
@@ -5576,8 +5576,8 @@
         "name": "Gastrointestinal",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 2kg",
+        "barcode": "8809845906445"
       },
       "localPath": "assets/product-images/batch250-876-clinical_major.jpg",
       "sourcePage": "https://www.royalcanin.com/au/dogs/products/vet-products/gastrointestinal-3911",
@@ -5686,8 +5686,8 @@
         "name": "Renal",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 2kg",
+        "barcode": "3182550710992"
       },
       "localPath": "assets/product-images/batch250-887-clinical_major.jpg",
       "sourcePage": "https://www.royalcanin.com/uk/dogs/products/vet-products/renal-3916",
@@ -5708,8 +5708,8 @@
         "name": "Satiety Weight Management",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 6kg",
+        "barcode": "3182550831086"
       },
       "localPath": "assets/product-images/batch250-891-clinical_major.jpg",
       "sourcePage": "https://www.royalcanin.com/au/dogs/products/vet-products/satiety-3948",
@@ -5730,8 +5730,8 @@
         "name": "Sensitivity Control",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 1.5kg",
+        "barcode": "3182550939959"
       },
       "localPath": "assets/product-images/batch250-893-clinical_major.jpg",
       "sourcePage": "https://www.royalcanin.com/au/dogs/products/vet-products/sensitivity-control-3922",
@@ -5752,8 +5752,8 @@
         "name": "Urinary S/O",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 2kg",
+        "barcode": "3182550711036"
       },
       "localPath": "assets/product-images/batch250-895-clinical_major.jpg",
       "sourcePage": "https://www.royalcanin.com/au/dogs/products/vet-products/urinary-so-3913",
@@ -5796,8 +5796,8 @@
         "name": "Grain-Free Chicken, Lamb & Fish",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": "9348509000017"
+        "type": "Dry · 15kg",
+        "barcode": "9348509000000"
       },
       "localPath": "assets/product-images/901-official.png",
       "sourcePage": "https://stayloyal.com.au/products/chicken-lamb-fish",
@@ -5818,7 +5818,7 @@
         "name": "Grain-Free Salmon, Turkey & Pork",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
+        "type": "Dry · 8kg",
         "barcode": "9348509000031"
       },
       "localPath": "assets/product-images/903-official.png",
@@ -5840,8 +5840,8 @@
         "name": "Natural Joint Health Treats",
         "petType": "dog",
         "foodType": "treat",
-        "type": "treat",
-        "barcode": null
+        "type": "Treat · 100g",
+        "barcode": "9348509000093"
       },
       "localPath": "assets/product-images/904-official.jpg",
       "sourcePage": "https://stayloyal.com.au/products/natural-joint-health-treats-100g",
@@ -6237,7 +6237,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": "9319185004088"
+        "barcode": "9348601000052"
       },
       "localPath": "assets/product-images/batch250r2-1011.jpg",
       "sourcePage": "https://rpfco.com/products/ivory-coat-grain-free-adult-dry-dog-food-salmon-ocean-fish-2kg",
@@ -6259,7 +6259,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": "9348943001851"
+        "barcode": "9348601002643"
       },
       "localPath": "assets/product-images/batch250r2-1014.jpg",
       "sourcePage": "https://rpfco.com/products/ivory-coat-grain-free-adult-dry-dog-food-lamb-sardine-2kg",
@@ -6522,8 +6522,8 @@
         "name": "Active Raw Diet Bulk Roll",
         "petType": "dog",
         "foodType": "raw",
-        "type": "raw",
-        "barcode": null
+        "type": "Raw · 2kg",
+        "barcode": "9337940007839"
       },
       "localPath": "assets/product-images/batch250r2-1054.jpg",
       "sourcePage": "https://thebarnpetstock.com/products/big-dog-active-roll-2kg-frozen",
@@ -6544,8 +6544,8 @@
         "name": "BARF Combo for Small Dogs",
         "petType": "dog",
         "foodType": "raw",
-        "type": "Raw",
-        "barcode": null
+        "type": "Raw · 1.5kg",
+        "barcode": "9337940004241"
       },
       "localPath": "assets/product-images/review-1055.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog/combo-raw-dog-food-for-small-dogs",
@@ -6566,8 +6566,8 @@
         "name": "Chicken Raw Bites",
         "petType": "dog",
         "foodType": "raw",
-        "type": "raw",
-        "barcode": null
+        "type": "Raw · 1.3kg",
+        "barcode": "9337940007884"
       },
       "localPath": "assets/product-images/batch250r2-1057.jpg",
       "sourcePage": "https://www.noseypets.com.au/products/bigdog-raw-bites-chicken-dog-food",
@@ -6698,8 +6698,8 @@
         "name": "Sensitive Skin Raw Diet",
         "petType": "dog",
         "foodType": "raw",
-        "type": "raw",
-        "barcode": null
+        "type": "Raw · 3kg",
+        "barcode": "9337940005828"
       },
       "localPath": "Dog Roll/Big Dog - Sensitive Skin Raw Diet.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog/raw-dog-food-for-sensitive-skin",
@@ -6850,10 +6850,10 @@
       "identity": {
         "brand": "Big Dog",
         "name": "BARF Raw Chicken for Cats",
-        "petType": null,
-        "foodType": null,
-        "type": "Raw/Freeze-Dried",
-        "barcode": null
+        "petType": "cat",
+        "foodType": "raw",
+        "type": "Raw · 1.38kg",
+        "barcode": "9337940004272"
       },
       "localPath": "Cat Treats/Big Dog - BARF Raw Chicken for Cats.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog-for-cats/chicken-raw-cat-food",
@@ -6894,10 +6894,10 @@
       "identity": {
         "brand": "Big Dog",
         "name": "BARF Raw Kangaroo for Cats",
-        "petType": null,
-        "foodType": null,
-        "type": "Raw/Freeze-Dried",
-        "barcode": "9319185007027"
+        "petType": "cat",
+        "foodType": "raw",
+        "type": "Raw · 1.38kg",
+        "barcode": "9337940004135"
       },
       "localPath": "Dog Specialty/Big Dog - BARF Raw Kangaroo for Cats.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog-for-cats/kangaroo-raw-cat-food",
@@ -6916,10 +6916,10 @@
       "identity": {
         "brand": "Big Dog",
         "name": "BARF Raw Turkey for Cats",
-        "petType": null,
-        "foodType": null,
-        "type": "Raw/Freeze-Dried",
-        "barcode": null
+        "petType": "cat",
+        "foodType": "raw",
+        "type": "Raw · 1.38kg",
+        "barcode": "9337940004142"
       },
       "localPath": "Dog Specialty/Big Dog - BARF Raw Turkey for Cats.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog-for-cats/turkey-raw-cat-food",
@@ -7004,10 +7004,10 @@
       "identity": {
         "brand": "Leaps & Bounds",
         "name": "Grain Free Chicken Dog Food",
-        "petType": null,
-        "foodType": null,
-        "type": "Dry",
-        "barcode": null
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 2.3kg",
+        "barcode": "9345740065591"
       },
       "localPath": "assets/product-images/batch250r2-1141.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-grain-free-chicken-dog-food",
@@ -7026,10 +7026,10 @@
       "identity": {
         "brand": "Love Em",
         "name": "Beef & Liver Training Treats",
-        "petType": null,
-        "foodType": null,
-        "type": "Treat",
-        "barcode": "9325242000535"
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat · 200g",
+        "barcode": "9325242000740"
       },
       "localPath": "assets/product-images/1144-official.jpg",
       "sourcePage": "https://rpfco.com/products/loveem-beef-liver-training-treats-dog-treats-200g",
