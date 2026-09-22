@@ -4,194 +4,147 @@ const vm = require('node:vm');
 const assert = require('node:assert/strict');
 const {execFileSync} = require('node:child_process');
 const {test} = require('node:test');
-const root = path.resolve(__dirname, '..');
-const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const {root, html, productsLiteral, fn, setup} = require('./assessment-test-helpers.cjs');
 const baseline = execFileSync('git', ['show', 'fa5b689:index.html'], {cwd: root, encoding: 'utf8', maxBuffer: 10e6});
-const productsLiteral = source => source.match(/const products = (\[[\s\S]*?\n\]);/)[1];
-function fn(source, name) {
-  const match = source.match(new RegExp('^function ' + name + '\\([\\s\\S]*?^}', 'm'));
-  assert.ok(match, name);
-  return match[0];
-}
-const settings = html.match(/var SCORE_SETTINGS = \{[\s\S]*?\n};/)[0];
-const budget = html.match(/var BUDGET_BRANDS = \[[\s\S]*?\n];/)[0];
-function setup(source = html) {
-  const elements = new Map();
-  const timers = new Map();
-  let timerId = 0;
-  function element(id) {
-    if (!elements.has(id)) elements.set(id, {
-      style: {}, innerHTML: '', textContent: '', value: '', placeholder: '',
-      classList: {contains: () => false}, scrollIntoView() {},
-    });
-    return elements.get(id);
-  }
-  const c = vm.createContext({
-    document: {getElementById: element, querySelector: () => null, documentElement: {}, body: {}},
-    window: {scrollTo() {}},
-    setTimeout(cb) { const id = ++timerId; timers.set(id, {cb, repeat: false}); return id; },
-    setInterval(cb) { const id = ++timerId; timers.set(id, {cb, repeat: true}); return id; },
-    clearTimeout(id) { timers.delete(id); }, clearInterval(id) { timers.delete(id); },
-    requestAnimationFrame(cb) { cb(); },
-    getProductImage: () => '', productHasImage: () => true,
-    renderBuyLinks() {}, showScreen() {}, updateProfile() {},
-    getRosetteSVG: () => '', getMatchTags: () => '',
-    favourites: [], scannedCount: 0, currentCategoryId: null, homeCategories: [],
-    scoreCountTimer: null, scoreArcTimer: null, scoreBarsTimer: null,
-    currentPage: 1, currentCategoryPage: 1, perPage: 2000, currentFilter: 'all',
-    recFilters: {pet: 'dog', protein: 'any', stage: 'all', diet: 'any', size: 'any'},
-  });
-  vm.runInContext('var products = '+ productsLiteral(source) + ';' + settings + budget, c);
-  const names = ['getRecallSeverity', 'recalculateScore'];
-  if (source === html) names.push('hasScoreData', 'getScoreBadge', 'compareProductScores',
-    'getScoreClass', 'getScoreColour', 'getStars', 'showProduct', 'renderPage',
-    'renderCategoryPage', 'renderFavourites', 'runOverlaySearch', 'applyFilters',
-    'getRecommendations', 'renderCategoryGrid');
-  for(const name of names) vm.runInContext(fn(source, name), c);
-  vm.runInContext('products.forEach(recalculateScore); var filteredProducts = products.slice(); var currentCategoryProducts = products.slice();', c);
-  function flushTimers() {
-    for (let i=0; timers.size && i<100; i++) {
-      for(const [id,t] of [...timers]) {
-        if (!timers.has(id)) continue;
-        if (!t.repeat) timers.delete(id);
-        t.cb();
-      }
-    }
-    assert.equal(timers.size, 0, 'Animations finish');
-  }
-  return {c, element, flushTimers};
-}
 
-test('All 636 missing ingredient records are unscored; existing 444 results stay unchanged', () => {
-  const {c} = setup();
-  const old = setup(baseline).c;
-  assert.equal(c.products.length, 1080);
-  assert.equal(c.products.filter(p => p.score === null).length, 636);
-  assert.equal(c.products.filter(c.hasScoreData).length, 444);
-  for (const p of c.products) {
-    if (!p.ingredients?.length) {
-      assert.equal(p.score, null);
-      assert.equal(p._ingredientScore, null);
-      assert.equal(p._credScore, null);
-    } else assert.equal(p.score, old.products.find(q => q.id === p.id).score, 'Existing score for ' + p.id);
-  }
-  const expectedCatalogue = JSON.parse(JSON.stringify(vm.runInNewContext(productsLiteral(baseline))));
+test('Raw catalogue preserves all 1,080 records and only the documented metadata corrections', () => {
+  const expected = JSON.parse(JSON.stringify(vm.runInNewContext(productsLiteral(baseline))));
   const corrections = JSON.parse(fs.readFileSync(path.join(root, 'docs/catalogue-corrections-2026-09-14.json'), 'utf8'));
   for (const change of corrections.changes) {
-    const product = expectedCatalogue.find(p => p.id === change.appId);
-    for (const [field, value] of Object.entries(change.before)) assert.deepEqual(product[field], value, 'Recorded original field ' + change.appId + '.' + field);
+    const product = expected.find(p => p.id === change.appId);
+    for (const [field, value] of Object.entries(change.before)) assert.deepEqual(product[field], value);
+    for (const field of change.absentBeforeFields || []) assert.equal(Object.hasOwn(product, field), false);
     Object.assign(product, change.after);
     for (const field of change.removeFields || []) delete product[field];
   }
-  assert.deepEqual(JSON.parse(JSON.stringify(vm.runInNewContext(productsLiteral(html)))), expectedCatalogue, 'Only documented catalogue metadata changes');
+  const actual = JSON.parse(JSON.stringify(vm.runInNewContext(productsLiteral(html))));
+  assert.equal(actual.length, 1080);
+  assert.deepEqual(actual, expected);
 });
 
-test('Wrong Dine barcode cannot resolve to the Pro Plan record through either lookup path', () => {
+test('Every runtime score and subscore is withheld, including records with ingredient data', () => {
+  const {c} = setup();
+  assert.equal(c.products.filter(p => p.ingredients?.length).length, 444);
+  for (const p of c.products) {
+    assert.equal(p.score, null, 'Score withheld for ' + p.id);
+    assert.equal(p._ingredientScore, null);
+    assert.equal(p._credScore, null);
+    assert.equal(c.hasScoreData(p), false);
+  }
+});
+
+test('All 1,080 detail views show neutral assessment and facts without ratings or health flags', () => {
+  const {c, element, timers} = setup();
+  for (const p of c.products) {
+    c.showProduct(p.id);
+    assert.equal(element('assessmentStatus').textContent, 'Assessment under review');
+    assert.match(element('catalogueFacts').innerHTML, /Nutritional adequacy/);
+    const evidence = c.getProductEvidence(p);
+    assert.match(element('catalogueFacts').innerHTML, evidence ? /Unknown/ : /Not verified/);
+    assert.match(element('credList').innerHTML, evidence ? /have not been checked/ : /need sourced evidence/);
+    assert.doesNotMatch(element('credList').innerHTML, /(?:>Yes<|>No<|\bpts\b|cred-check|cred-cross)/);
+    const ingredients = element('ingredientList').innerHTML;
+    assert.match(ingredients, evidence ? /Full ingredient text from the cited manufacturer source/ : p.ingredients?.length ? /not yet been verified/ : /not been added/);
+    assert.doesNotMatch(ingredients, /ingredient-(?:good|ok|bad)|\brating[=:]|\bpts\b/);
+  }
+  assert.equal(timers.size, 0, 'Opening details schedules no score animations');
+  for (const id of ['scoreValue', 'stars', 'subScoreBars', 'scoreArc', 'scoreTier']) {
+    assert.doesNotMatch(html, new RegExp('id="' + id + '"'), 'Old public rating element removed: ' + id);
+  }
+});
+
+test('Wrong Dine barcode stays removed and four corrected wet products resolve through both lookup paths', () => {
   const {c, element} = setup();
-  vm.runInContext(html.match(/var BARCODE_MAP = \{[\s\S]*?\n};/)[0] + fn(html, 'findProductByBarcode'), c);
-  const disputedBarcode = '9334214018362';
-  assert.equal(c.BARCODE_MAP[disputedBarcode], undefined);
-  assert.equal(c.products.some(p => p.barcode === disputedBarcode), false);
-  assert.equal(c.findProductByBarcode(disputedBarcode), null);
+  vm.runInContext(html.match(/var BARCODE_MAP = \{[\s\S]*?\n};/)[0] + fn('findProductByBarcode'), c);
+  assert.equal(c.BARCODE_MAP['9334214018362'], undefined);
+  assert.equal(c.products.some(p => p.barcode === '9334214018362'), false);
+  assert.equal(c.findProductByBarcode('9334214018362'), null);
   for (const id of [727, 764, 768, 960]) {
     const p = c.products.find(p => p.id === id);
     assert.equal(c.findProductByBarcode(p.barcode).id, id);
     delete c.BARCODE_MAP[p.barcode];
-    assert.equal(c.findProductByBarcode(p.barcode).id, id, 'Direct product fallback ' + id);
+    assert.equal(c.findProductByBarcode(p.barcode).id, id);
     assert.equal(p.foodType, 'wet');
-    assert.equal(c.hasScoreData(p), false);
   }
   c.showProduct(488);
-  assert.equal(element('scoreTier').textContent, 'Not scored');
-  assert.match(element('scoreReviewNotice').textContent, /barcode mismatch/);
-  c.showProduct(727);
-  assert.doesNotMatch(element('scoreReviewNotice').textContent, /barcode mismatch/);
+  assert.match(element('assessmentNotice').textContent, /barcode mismatch/);
   c.showProduct(1094);
-  assert.equal(element('scoreReviewNotice').textContent, "We still need to check this product's ingredients and scoring information.");
-  assert.doesNotMatch(element('scoreReviewNotice').textContent, /Placeholder score/);
+  assert.match(element('assessmentNotice').textContent, /Health ratings are paused/);
+  assert.doesNotMatch(element('assessmentNotice').textContent, /barcode mismatch|Placeholder score/);
 });
 
-test('Unscored detail has no rating, stars, fabricated trust flags or crash for missing ingredients', () => {
-  const {c, element, flushTimers} = setup();
-  for (const p of c.products) {
-    c.showProduct(p.id);
-    if (!c.hasScoreData(p)) {
-      assert.equal(element('scoreTier').textContent, 'Not scored');
-      assert.equal(element('scoreValue').textContent, '—');
-      assert.equal(element('stars').innerHTML, '');
-      assert.equal(element('subScoreBars').style.display, 'none');
-      assert.equal(element('scoreScaleLabel').style.display, 'none');
-      assert.match(element('ingredientList').innerHTML, /not been added/);
-      assert.match(element('credList').innerHTML, /needs review/);
-      assert.doesNotMatch(element('credList').innerHTML, /Yes|No|pts/);
+test('Search, browse and favourites retain product access and neutral badges', () => {
+  const {c, element} = setup();
+  for (const id of [332, 580]) {
+    const p = c.products.find(p => p.id === id);
+    c.filteredProducts = c.currentCategoryProducts = [p]; c.favourites = [id];
+    c.renderPage(); c.renderCategoryPage(); c.renderFavourites();
+    for (const target of ['productList', 'categoryProductList', 'favList']) {
+      assert.match(element(target).innerHTML, /Under review/);
+      assert.ok(element(target).innerHTML.includes('showProduct(' + id + ')'));
+      assert.doesNotMatch(element(target).innerHTML, /score-(?:green|amber|red)|\/100/);
     }
+    element('soInput').value = p.name;
+    c.runOverlaySearch();
+    assert.match(element('soResults').innerHTML, /Under review/);
+    assert.ok(element('soResults').innerHTML.includes('showProduct(' + id + ')'));
   }
-  flushTimers();
-});
-
-test('Switching quickly between scored and unscored details cancels the previous animation', () => {
-  const {c, element, flushTimers} = setup();
-  const scored = c.products.find(c.hasScoreData);
-  const unscored = c.products.find(p => !c.hasScoreData(p));
-  c.showProduct(scored.id);
-  c.showProduct(unscored.id);
-  flushTimers();
-  assert.equal(element('scoreValue').textContent, '—');
-  assert.equal(element('ingredientBar').style.width, '0%');
-  c.showProduct(scored.id);
-  flushTimers();
-  assert.equal(element('scoreValue').textContent, scored.score);
-  assert.equal(element('scoreScaleLabel').style.display, '');
-  assert.equal(element('scoreReviewNotice').style.display, 'none');
-});
-
-test('Search, category, and favourites show Not scored and keep products accessible', () => {
-  const {c, element} = setup();
-  const p = c.products.find(p => p.id === 580);
-  c.filteredProducts = c.currentCategoryProducts = [p];
-  c.favourites = [p.id];
-  c.renderPage(); c.renderCategoryPage(); c.renderFavourites();
-  for(const id of ['productList', 'categoryProductList', 'favList']) {
-    assert.match(element(id).innerHTML, /Not scored/);
-    assert.match(element(id).innerHTML, /showProduct\(580\)/);
-  }
-  element('soInput').value = p.name;
-  c.runOverlaySearch();
-  assert.match(element('soResults').innerHTML, /Not scored/);
-  assert.match(element('soResults').innerHTML, /showProduct\(580\)/);
-  element('searchInput').value = 'unmatched-keyword';
-  assert.doesNotThrow(() => c.applyFilters());
-});
-
-test('A placeholder cannot enter recommendations or top filters even with a high stored number', () => {
-  const {c, element} = setup();
-  const p = c.products.find(p => !c.hasScoreData(p));
-  p.score = 100;
-  c.products = [p];
-  c.getRecommendations();
-  assert.doesNotMatch(element('recResults').innerHTML, /class="rec-card"/);
-  c.currentFilter = 'top';
-  c.applyFilters();
-  assert.equal(c.filteredProducts.length, 0);
-  assert.match(c.getScoreBadge(p), /Not scored/);
-});
-
-test('Zero subscores remain zero and scored records sort before unscored records', () => {
-  const {c, element} = setup();
-  const p = c.products.find(c.hasScoreData);
-  p._ingredientScore = 0; p._credScore = 0;
-  c.showProduct(p.id);
-  assert.equal(element('ingredientScoreLabel').textContent, 'Ingredient Quality: 0/85');
-  assert.equal(element('credScoreLabel').textContent, 'Manufacturer Trust: 0/15');
-  const unscored = c.products.find(p => !c.hasScoreData(p));
-  assert.deepEqual([unscored, p].sort(c.compareProductScores), [p, unscored]);
   c.renderCategoryGrid();
   assert.equal(element('soInput').placeholder, 'Search 1080 products...');
   assert.equal(element('searchInput').placeholder, 'Search 1080 products...');
 });
 
+test('Injected scores, ingredient ratings and manufacturer flags cannot reactivate public judgements', () => {
+  const {c, element} = setup();
+  const p = c.products[0];
+  p.score = 100; p._ingredientScore = 85; p._credScore = 15;
+  p.ingredients = [{name: '<img src=x onerror=alert(1)> Chicken', rating: 'SECRET_RATING', desc: 'SECRET_HEALTH_CLAIM'}];
+  p.cred = [{name: 'SECRET_MANUFACTURER_FLAG', value: true, points: 15}];
+  assert.equal(c.hasScoreData(p), false);
+  assert.equal(c.getScoreBadge(p), '<span class="assessment-badge">Under review</span>');
+  c.showProduct(p.id);
+  const detail = element('ingredientList').innerHTML + element('credList').innerHTML;
+  assert.match(detail, /&lt;img/);
+  assert.doesNotMatch(detail, /<img|SECRET_|\/85|\/15|\/100/);
+  c.getRecommendations();
+  assert.match(element('recResults').innerHTML, /Recommendations are paused/);
+  assert.doesNotMatch(element('recResults').innerHTML, /rec-card|showProduct\(/);
+  c.currentFilter = 'top'; c.applyFilters();
+  assert.equal(c.filteredProducts.length, 0);
+  c.recalculateScore(p);
+  assert.equal(p.score, null); assert.equal(p._ingredientScore, null); assert.equal(p._credScore, null);
+});
+
+test('User entry preserves ingredient text without assigning heuristic scores or HTML', () => {
+  const {c, element} = setup();
+  const raw = 'Chicken, fish oil, salt\n<svg onload=alert(1)> & oats';
+  element('addName').value = '<b>Trial food</b>';
+  element('addBrand').value = 'A & B';
+  element('addType').value = 'dog';
+  element('addIngredients').value = raw;
+  c.scoreNewProduct();
+  const p = c.products[c.products.length - 1];
+  assert.equal(c.products.length, 1081);
+  assert.equal(p._userIngredientText, raw);
+  assert.equal(p.ingredients.length, 0);
+  assert.equal(p.score, null); assert.equal(p._ingredientScore, null); assert.equal(p._credScore, null);
+  assert.equal(p.foodType, '');
+  assert.equal(p.needsReview, true);
+  assert.match(element('addResult').innerHTML, /Added for this visit/);
+  assert.doesNotMatch(element('addResult').innerHTML, /<b>|\/100/);
+  c.showProduct(p.id);
+  assert.match(element('ingredientList').innerHTML, /You supplied this text/);
+  assert.match(element('ingredientList').innerHTML, /&lt;svg/);
+  assert.doesNotMatch(element('ingredientList').innerHTML, /<svg/);
+  const photoAction = element('detailProductImage').innerHTML.match(/onclick="(openMuckaCollector\([^\"]*\))"/);
+  assert.ok(photoAction, 'Missing-photo detail offers a working Collector handoff');
+  let collectorOpened = false;
+  c.openMuckaCollector = barcode => { collectorOpened = true; assert.equal(barcode, p.barcode); };
+  vm.runInContext(photoAction[1], c);
+  assert.equal(collectorOpened, true);
+  assert.doesNotMatch(html, /function simulatePhoto\s*\(|onclick="simulatePhoto\(/);
+});
+
 test('Inline scripts compile', () => {
-  for (const match of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)) {
-    new vm.Script(match[1]);
-  }
+  for (const match of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)) new vm.Script(match[1]);
 });

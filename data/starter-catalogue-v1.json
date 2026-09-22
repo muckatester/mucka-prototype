@@ -1,0 +1,1654 @@
+{
+  "schemaVersion": "1.0.0",
+  "checkedAt": "2026-09-22",
+  "assessmentRulesVersion": "1.0",
+  "description": "Selected product facts checked against Australian manufacturer sources. This is not a nutritional ranking or an independent assessment.",
+  "records": [
+    {
+      "appId": 727,
+      "checkedAt": "2026-09-14",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "My Dog",
+        "name": "Classic Loaf Beef & Veal",
+        "barcode": "9310022067006",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 400g"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_asset_identifier",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "The Australian manufacturer page links this recipe and pack variant to the catalogue barcode in its image identifiers. Printed barcode digits have not been read for this record."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.mydog.com.au/our-products/classic-loaf/classic-loaf-with-tender-beef-and-veal",
+          "label": "Product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-14",
+          "observation": "The Australian manufacturer page links this recipe and pack variant to the catalogue barcode in its image identifiers. Printed barcode digits have not been read for this record."
+        },
+        {
+          "id": "pack",
+          "url": "https://www.mydog.com.au/cdn-cgi/image/width%3D472%2Cheight%3D472%2Cf%3Dauto%2Cquality%3D90/sites/g/files/fnmzdf8796/files/2026-04/large_9310022067006_Transition.png",
+          "label": "Pack image",
+          "kind": "manufacturer_pack_image",
+          "checkedAt": "2026-09-14",
+          "observation": "The transition artwork shows a Beef & Veal 400 g can; the printed barcode is not readable."
+        },
+        {
+          "id": "claim",
+          "url": "https://www.mydog.com.au/cdn-cgi/image/width%3D472%2Cheight%3D472%2Cf%3Dauto%2Cquality%3D90/sites/g/files/fnmzdf8796/files/2026-04/large_9310022067006_claims.png",
+          "label": "Manufacturer claim image",
+          "kind": "manufacturer_claim_image",
+          "checkedAt": "2026-09-14",
+          "observation": "The product-linked image contains a legible complete-and-balanced claim."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Wet",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "400 g can",
+          "sourceIds": [
+            "page",
+            "pack"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "source_checked",
+          "value": "9310022067006 — manufacturer website association; individual/outer package level not confirmed",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "lifeStage": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No explicit life-stage designation located in the inspected source."
+        },
+        "feedingPurpose": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Feeding use has not been separately classified. An adequacy claim is recorded independently."
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "Lovingly created to be 100% complete and balanced.",
+          "sourceIds": [
+            "claim"
+          ],
+          "note": "Manufacturer claim; life stage and substantiation protocol not stated in this image."
+        },
+        "adequacyMethod": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific substantiation method located in the inspected sources."
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "Calculated metabolisable energy: 68 kcal/100 g. As-fed/dry-matter basis not stated.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Source-reported value only; no conversion or comparison."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning has not been checked; no suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Meats (including Chicken &/or Beef &/or Veal &/or Sheep &/or Pork &/or Turkey &/or Kangaroo); Gelling Agents; Vegetable Fibre; Minerals & Vitamins; Colouring Agents.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer webpage transcription; not a physical-pack inspection."
+        }
+      },
+      "limitations": [
+        "Check your current pack for recipe changes.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Catalogue photos have not been verified and may show another pack configuration."
+      ]
+    },
+    {
+      "appId": 728,
+      "checkedAt": "2026-09-14",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "My Dog",
+        "name": "Classic Loaf Gourmet Beef",
+        "barcode": "9334214054964",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 24 x 100g"
+      },
+      "identityEvidence": {
+        "kind": "printed_barcode_in_manufacturer_image",
+        "sourceIds": [
+          "page",
+          "label"
+        ],
+        "note": "Barcode 9334214054964 is readable in the label image linked from the manufacturer 24 x 100 g Gourmet Beef page. Do not reuse it as an individually verified 100 g-tray barcode."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.mydog.com.au/our-menu/classic-loaf/classic-loaf-with-gourmet-beef-24x100g",
+          "label": "Product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-14",
+          "observation": "The Australian manufacturer page links this recipe and pack variant to the catalogue barcode in its image identifiers. Printed barcode digits have not been read for this record."
+        },
+        {
+          "id": "label",
+          "url": "https://www.mydog.com.au/cdn-cgi/image/width%3D472%2Cheight%3D472%2Cf%3Dauto%2Cquality%3D90/sites/g/files/fnmzdf8796/files/2026-04/large_9334214054964_c7n1_1642090010574_0.png",
+          "label": "Published label image",
+          "kind": "manufacturer_pack_image",
+          "checkedAt": "2026-09-14",
+          "observation": "The label image shows barcode 9334214054964, Gourmet Beef wording, a complete-and-balanced claim, an AAFCO adult-maintenance statement and energy of 80 kcal/100 g. The linked page reports 68 kcal/100 g."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Wet",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "24 x 100 g trays",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "source_checked",
+          "value": "9334214054964 — printed on the label linked to the 24 x 100 g page; individual-tray barcode not verified",
+          "sourceIds": [
+            "label",
+            "page"
+          ],
+          "note": ""
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Adult maintenance (manufacturer label statement)",
+          "sourceIds": [
+            "label"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Feeding use has not been separately classified. An adequacy claim is recorded independently."
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "MY DOG wet dog food is formulated to meet the nutritional levels established by AAFCO for Adult Dog Maintenance.",
+          "sourceIds": [
+            "label"
+          ],
+          "note": "Trademark symbol omitted; manufacturer claim, not independent certification."
+        },
+        "adequacyMethod": {
+          "status": "source_checked",
+          "value": "Formulation statement referring to AAFCO adult dog maintenance; no feeding-test claim verified.",
+          "sourceIds": [
+            "label"
+          ],
+          "note": ""
+        },
+        "energy": {
+          "status": "conflict",
+          "value": null,
+          "sourceIds": [
+            "page",
+            "label"
+          ],
+          "note": "The linked label and webpage report different energy values. Withheld until the applicable recipe/version is resolved."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning has not been checked; no suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Meats (including Chicken &/or Beef &/or Pork &/or Sheep &/or Turkey); Gelling Agents; Vegetable Oil; Colouring Agents; Minerals & Vitamins.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer webpage transcription; not a physical-pack inspection."
+        }
+      },
+      "limitations": [
+        "Check your current pack for recipe changes.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "The webpage and linked label differ on nutrient values; nutrient comparisons are withheld. Ingredient wording agrees in the inspected sources.",
+        "Catalogue photos have not been verified and may show another pack configuration."
+      ]
+    },
+    {
+      "appId": 764,
+      "checkedAt": "2026-09-14",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Pedigree",
+        "name": "Adult Beef Pasta & Vegies Homestyle",
+        "barcode": "9310022034404",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 700g"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_asset_identifier",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Name, species, wet form, 700 g-can section and catalogue barcode as website image identifier agree. This is narrower than printed-barcode or formulation verification."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.pedigree.com.au/our-products/wet/pedigree-adult-wet-dog-food-beef-pasta-vegies-homestyle",
+          "label": "Product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-14",
+          "observation": "Name, species, wet form, 700 g-can section and catalogue barcode as website image identifier agree. This is narrower than printed-barcode or formulation verification."
+        },
+        {
+          "id": "ingredients",
+          "url": "https://www.pedigree.com.au/sites/g/files/fnmzdf8421/files/2025-10/9310022034404_8_PEDIGREE_Adult_Wet_Dog_Food_with_Beef__Pasta_Vegies_Homestyle_700g_Can.png",
+          "label": "Ingredient image",
+          "kind": "manufacturer_ingredient_image",
+          "checkedAt": "2026-09-14",
+          "observation": "The full ingredient list and qualifiers are legible in the 4800 x 4800 manufacturer image and agree with the recorded transcription. This is online image evidence, not a physical-pack inspection."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Wet",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "700 g can",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "source_checked",
+          "value": "9310022034404 — manufacturer 700 g-can image association; printed digits and outer code not verified",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Adult dogs",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Feeding use has not been separately classified. An adequacy claim is recorded independently."
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "100% complete and balanced food for adult dogs",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer statement; no AAFCO protocol located."
+        },
+        "adequacyMethod": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific substantiation method located in the inspected sources."
+        },
+        "energy": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Energy has not been checked against an unambiguous source for this pack."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning has not been checked; no suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Meat (including Chicken &/or Beef &/or Sheep &/or Pork), Vegetables, Binders (including Cereal Protein &/or Pork &/or Beef &/or Sheep), Pasta, Plant Fibre, Gelling Agents, Vegetable Oil, Vitamins & Minerals, Colouring Agents.",
+          "sourceIds": [
+            "ingredients"
+          ],
+          "note": "Transcribed from the full manufacturer ingredient graphic; not a physical-pack inspection."
+        }
+      },
+      "limitations": [
+        "Check your current pack for recipe changes.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Catalogue photos have not been verified and may show another pack configuration."
+      ]
+    },
+    {
+      "appId": 768,
+      "checkedAt": "2026-09-14",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Pedigree",
+        "name": "Puppy Minced Chicken & Rice",
+        "barcode": "9310022037207",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 700g"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_asset_identifier",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Species, puppy designation, wet form, 700 g pack and barcode as website image identifier agree. Printed barcode and exact formulation were not independently checked."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.pedigree.com.au/our-products/wet/pedigree-core-puppy-mince-chicken-rice",
+          "label": "Product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-14",
+          "observation": "Species, puppy designation, wet form, 700 g pack and barcode as website image identifier agree. Printed barcode and exact formulation were not independently checked."
+        },
+        {
+          "id": "ingredients",
+          "url": "https://www.pedigree.com.au/sites/g/files/fnmzdf8421/files/2025-10/9310022037207_8_PEDIGREE_Puppy_Wet_Dog_Food_with_Chicken___Rice_Mince_700g_Can.png",
+          "label": "Ingredient image",
+          "kind": "manufacturer_ingredient_image",
+          "checkedAt": "2026-09-14",
+          "observation": "The full ingredient list and qualifiers are legible in the 4800 x 4800 manufacturer image and agree with the recorded transcription. This is online image evidence, not a physical-pack inspection."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Wet",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "700 g can",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "source_checked",
+          "value": "9310022037207 — manufacturer 700 g-can image association; printed digits and outer code not verified",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Puppy",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Feeding use has not been separately classified. An adequacy claim is recorded independently."
+        },
+        "adequacyStatement": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No explicit adequacy statement located in the inspected sources."
+        },
+        "adequacyMethod": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific substantiation method located in the inspected sources."
+        },
+        "energy": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Energy has not been checked against an unambiguous source for this pack."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning has not been checked; no suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Meat (including Chicken &/or Beef &/or Sheep &/or Pork), Wholegrain Cereal, Plant Fibre, Gelling Agents, Vegetable Oil, Vitamins & Minerals, Colouring Agent.",
+          "sourceIds": [
+            "ingredients"
+          ],
+          "note": "Transcribed from the full manufacturer ingredient graphic; not a physical-pack inspection."
+        }
+      },
+      "limitations": [
+        "Check your current pack for recipe changes.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Catalogue photos have not been verified and may show another pack configuration."
+      ]
+    },
+    {
+      "appId": 960,
+      "checkedAt": "2026-09-14",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Whiskas",
+        "name": "Adult Beef Mince Can",
+        "barcode": "9310022360800",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 400g"
+      },
+      "identityEvidence": {
+        "kind": "printed_barcode_in_manufacturer_image",
+        "sourceIds": [
+          "page",
+          "pack"
+        ],
+        "note": "Barcode 9310022360800 and 400 g are legible on the manufacturer back-of-pack image; recipe, adult-cat identity and wet form agree with the Australian page."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.whiskas.com.au/our-products/wet/whiskas-1-years-adult-wet-cat-food-beef-mince-400g-can",
+          "label": "Product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-14",
+          "observation": "Barcode 9310022360800 and 400 g are legible on the manufacturer back-of-pack image; recipe, adult-cat identity and wet form agree with the Australian page."
+        },
+        {
+          "id": "pack",
+          "url": "https://www.whiskas.com.au/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf8856/files/2026-04/9310022360800_BOP.png",
+          "label": "Pack image",
+          "kind": "manufacturer_pack_image",
+          "checkedAt": "2026-09-14",
+          "observation": "Rendered 600 px image in browser; visible barcode 9310022360800, 400 g, Beef Mince, 1+ Years, Complete & Balanced. This is an online pack image, not the user's packet."
+        },
+        {
+          "id": "energy",
+          "url": "https://www.whiskas.com.au/sites/g/files/fnmzdf8856/files/2026-04/beef_mince_nutrition.jpg",
+          "label": "Nutrient image",
+          "kind": "manufacturer_nutrient_image",
+          "checkedAt": "2026-09-14",
+          "observation": "Rendered 600 px nutrient image linked directly from this product page"
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Cat",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Wet",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "400 g can",
+          "sourceIds": [
+            "page",
+            "pack"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "source_checked",
+          "value": "9310022360800 — printed on the individual 400 g can",
+          "sourceIds": [
+            "pack"
+          ],
+          "note": ""
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Adult cats (1+ years); adult maintenance statement",
+          "sourceIds": [
+            "page",
+            "pack"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Feeding use has not been separately classified. An adequacy claim is recorded independently."
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "This product is formulated to meet the nutritional levels established by the AAFCO Cat Food Nutrient Profiles for Adult Maintenance.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer formulation claim; not independent certification."
+        },
+        "adequacyMethod": {
+          "status": "source_checked",
+          "value": "Formulated to AAFCO Cat Food Nutrient Profiles for adult maintenance; no feeding-test claim.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "Predicted metabolisable energy: 70 kcal/100 g. As-fed/dry-matter basis not stated.",
+          "sourceIds": [
+            "energy"
+          ],
+          "note": "Source-reported value only; no conversion or comparison."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning has not been checked; no suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Meats (including Chicken &/or Beef &/or Sheep &/or Pork); Binders (including Beef &/or Sheep &/or Pork &/or Cereal); Gelling Agents; Thickener; Flavours; Vitamins & Minerals; Colouring Agents; Taurine.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full webpage transcription; not transcribed from the curved pack photograph."
+        }
+      },
+      "limitations": [
+        "Check your current pack for recipe changes.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Catalogue photos have not been verified and may show another pack configuration."
+      ]
+    },
+    {
+      "appId": 129,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Black Hawk",
+        "name": "Grain Free Adult Chicken Wet",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 100g tray"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.blackhawkpetcare.com/en/products/dog/grain-free-wet-dog-food-tray-chicken/",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Wet",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "100 g tray",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No barcode is recorded in this catalogue entry. A replacement has not been inferred."
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Adult dogs",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Main food, as described by the manufacturer.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "Black Hawk Grain Free wet food provides a complete diet for adult dogs. It is formulated to meet the nutritional levels established by the Association of American Food Control Officials (AAFCO) Dog Food Nutrient Profile for the maintenance of adult dogs.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer claim; not independent certification. The source wording is retained."
+        },
+        "adequacyMethod": {
+          "status": "source_checked",
+          "value": "Formulated to meet the AAFCO Dog Food Nutrient Profile for maintenance of adult dogs.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "75 Kcal/100g",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Source labels this Energy. Method and as-fed/dry-matter basis are not stated. No conversion or comparison."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Chicken, Lamb, Natural Gums, Vitamins & Minerals, Probiotics, Emu Oil.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
+      ]
+    },
+    {
+      "appId": 130,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Black Hawk",
+        "name": "Grain Free Adult Lamb Wet",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 100g tray"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.blackhawkpetcare.com/en/products/dog/grain-free-wet-dog-food-tray-lamb/",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Wet",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "100 g tray",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No barcode is recorded in this catalogue entry. A replacement has not been inferred."
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Adult dogs",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Main food, as described by the manufacturer.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "Black Hawk Grain Free wet food provides a complete diet for adult dogs. It is formulated to meet the nutritional levels established by the Association of American Food Control Officials (AAFCO) Dog Food Nutrient Profile for the maintenance of adult dogs.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer claim; not independent certification. The source wording is retained."
+        },
+        "adequacyMethod": {
+          "status": "source_checked",
+          "value": "Formulated to meet the AAFCO Dog Food Nutrient Profile for maintenance of adult dogs.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "75 kcal/100g",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Source labels this Energy. Method and as-fed/dry-matter basis are not stated. No conversion or comparison."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Lamb, Chicken, Natural Gums, Vitamins & Minerals, Prebiotics, Emu Oil.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
+      ]
+    },
+    {
+      "appId": 245,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Vetalogica",
+        "name": "Naturals Grain Free Indoor Chicken",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9340621000975"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. The manufacturer page explicitly supplies the barcode for the 3kg variant. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-chicken-indoor-adult-cat",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. The manufacturer page explicitly supplies the barcode for the 3kg variant. Manufacturer claims remain attributed statements."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Cat",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Dry",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "3 kg",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "source_checked",
+          "value": "9340621000975 - manufacturer 3kg variant barcode",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer product-page variant metadata. No physical scan performed."
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Adult cats",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Main food, as described by the manufacturer.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "Vetalogica Naturals Grain Free Chicken Indoor Adult Cat Food is formulated to provide complete and balanced everyday nutrition for adult cats.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer statement, not independent certification."
+        },
+        "adequacyMethod": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "The inspected page makes a generic complete-and-balanced claim without a product-specific substantiation method."
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "Metabolizable Energy 3700 kcal/kg",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Source-reported values; calculation/measurement method and as-fed/dry-matter basis not stated."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Chicken Meal, Peas, Potato Starch, Chicken Fat (Naturally preserved with Mixed Tocopherols), Natural Flavour, Tapioca Starch, Ground Flaxseed, Fish Oil, Dried Blueberries, Dried Spinach, Tomato Pomace, Dried Plain Beet Pulp, Dried Egg Product, Chickpea Flour, Dried Pumpkin, Potassium Chloride, Choline Chloride, Sea Salt, Vitamins (Vitamin E Supplement, Niacin (Vitamin B3), Calcium Pantothenate (Vitamin B5), Riboflavin (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Thiamine Mononitrate (Vitamin B1), Folic Acid, Biotin, Vitamin A Supplement, Vitamin B12 Supplement, Vitamin D3 Supplement, Menadione (Vitamin K3)), Minerals (Zinc Sulfate, Ferrous Sulfate, Magnesium Oxide, Copper Sulfate, Manganese Oxide, Iodine, Sodium Selenite, Zinc Propionate), DL-Methionine, Taurine, Yucca Schidigera Extract, Mixed Tocopherols (a Natural preservative), Rosemary Extract.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
+      ]
+    },
+    {
+      "appId": 246,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Vetalogica",
+        "name": "Naturals Grain Free Kitten Chicken",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9340621000999"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. The manufacturer page explicitly supplies the barcode for the 3kg variant. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-chicken-kitten",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. The manufacturer page explicitly supplies the barcode for the 3kg variant. Manufacturer claims remain attributed statements."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Cat",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Dry",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "3 kg",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "source_checked",
+          "value": "9340621000999 - manufacturer 3kg variant barcode",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer product-page variant metadata. No physical scan performed."
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Growing kittens; manufacturer also states growth and gestation/lactation.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Main food, as described by the manufacturer.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "Vetalogica Naturals Grain Free Chicken For Kittens is formulated to meet the nutritional levels established by the AAFCO Cat Food Nutrient Profiles for growth and gestation/lactation.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer statement, not independent certification."
+        },
+        "adequacyMethod": {
+          "status": "source_checked",
+          "value": "Formulated to meet AAFCO Cat Food Nutrient Profiles for growth and gestation/lactation.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "Metabolizable Energy (ME) 3850 kcal/kg; calorie content also stated as 481 kcal/125g cup.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Source-reported values; calculation/measurement method and as-fed/dry-matter basis not stated."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Chicken Meal, Peas, Potato Starch, Chicken Fat (Naturally preserved with Mixed Tocopherols), Natural Flavour, Tapioca Starch, Ground Flaxseed, Fish Oil, Dried Blueberries, Dried Spinach, Tomato Pomace, Dried Plain Beet Pulp, Dried Egg Product, Chickpea Flour, Dried Pumpkin, Potassium Chloride, Choline Chloride, Sea Salt, Vitamins (Vitamin E Supplement, Niacin (Vitamin B3), Calcium Pantothenate (Vitamin B5), Riboflavin (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Thiamine Mononitrate (Vitamin B1), Folic Acid, Biotin, Vitamin A Supplement, Vitamin B12 Supplement, Vitamin D3 Supplement, Menadione (Vitamin K3)), Minerals (Zinc Sulfate, Ferrous Sulfate, Magnesium Oxide, Copper Sulfate, Manganese Oxide, Iodine, Sodium Selenite, Zinc Propionate), DL-Methionine, Taurine, Yucca Schidigera Extract, Mixed Tocopherols (a Natural preservative), Rosemary Extract.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
+      ]
+    },
+    {
+      "appId": 325,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Savourlife",
+        "name": "Australian Chicken Training Treats",
+        "barcode": "9347810000174",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat · 165g"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.savour-life.com.au/our-range/natural-treats/training-treats/australian-chicken/",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Treat",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "165 g",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Catalogue barcode has not been verified against a printed manufacturer barcode; matching is by named recipe and stated pack, not barcode."
+        },
+        "lifeStage": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No explicit life-stage designation verified in the inspected text."
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Treat; not a meal replacement.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific adequacy statement verified in the inspected text."
+        },
+        "adequacyMethod": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific substantiation method verified in the inspected text."
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "Metabolizable Energy 303kcal/100g",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Method and as-fed/dry-matter basis not stated."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Chicken, cereals, glycerin, natural flavours and colours, salt, potassium sorbate, essential vitamins and minerals, fish oil (source of omega 3)",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
+      ]
+    },
+    {
+      "appId": 326,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Savourlife",
+        "name": "Australian Kangaroo Training Treats",
+        "barcode": "9347810001669",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat · 165g"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.savour-life.com.au/our-range/natural-treats/training-treats/australian-kangaroo/",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Treat",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "165 g",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Catalogue barcode has not been verified against a printed manufacturer barcode; matching is by named recipe and stated pack, not barcode."
+        },
+        "lifeStage": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No explicit life-stage designation verified in the inspected text."
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Treat; not a meal replacement.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific adequacy statement verified in the inspected text."
+        },
+        "adequacyMethod": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific substantiation method verified in the inspected text."
+        },
+        "energy": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No energy value with units and denominator located in the inspected product text."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "kangaroo, cereals, glycerin, natural flavours and colours, salt, potassium sorbate, essential vitamins and minerals, fish oil (source of omega 3)",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
+      ]
+    },
+    {
+      "appId": 953,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Whimzees",
+        "name": "Brushzees Medium",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form and Medium size. Pack quantity is not established. Barcode identity is not established. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.whimzees.com.au/products/brushzees/",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form and Medium size. Pack quantity is not established. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Dental treat",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Catalogue has no pack quantity. This page covers several Brushzees sizes; ingredient and energy observations below are for Medium where specified."
+        },
+        "barcode": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No barcode is recorded in this catalogue entry. A replacement has not been inferred."
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Manufacturer excludes dogs under 9 months and under 2 kg.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Choose the correct treat size. These are source restrictions, not personalised feeding advice."
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Dental treat.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific adequacy statement verified in the inspected text."
+        },
+        "adequacyMethod": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific substantiation method verified in the inspected text."
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "Medium: 2,890 kcal/kg or 87 kcal/chew (30g) ME (metabolisable energy), as-fed.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Calculation/measurement method not stated. The page reports different values for Small and Large; those are not applied to this Medium listing."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Potato Starch, Glycerin, Powdered Cellulose, Lecithin, Dried Yeast, Malt Extract, Sweet Lupin Meal, Alfalfa Extract, Calcium Carbonate, Paprika Extract.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
+      ]
+    },
+    {
+      "appId": 1017,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Black Hawk",
+        "name": "Original Adult Chicken & Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9338362001054"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Retailers associate the barcode with this 3kg product; see the separate barcode source. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.blackhawkpetcare.com/en/products/dog/original-dog-food-chicken-and-rice/",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        },
+        {
+          "id": "barcode-retailer",
+          "url": "https://www.petcity.com.au/product/blackhawk-dog-adult-chicken-rice-3kg",
+          "label": "Pet City barcode and pack listing",
+          "kind": "retailer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Explicit Barcode # 9338362001054 for Original Adult Chicken & Rice 3kg; corroborated by Lucky Pet."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Dry",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "3 kg",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "source_checked",
+          "value": "9338362001054 - retailer association with 3kg bag",
+          "sourceIds": [
+            "barcode-retailer"
+          ],
+          "note": "Online retailer evidence, not a manufacturer barcode attestation or physical scan."
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Adult dogs, all breed sizes",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Main food, as described by the manufacturer.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "Black Hawk pet food is formulated to meet the nutritional levels established by the Association of American Feed Control Officials (AAFCO) Dog Food Nutrient Profile for the maintenance of adult dogs.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer claim; not independent certification."
+        },
+        "adequacyMethod": {
+          "status": "source_checked",
+          "value": "Formulated to meet the AAFCO Dog Food Nutrient Profile for maintenance of adult dogs.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "Metabolisable Energy 3590 kcal/kg",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Method and as-fed/dry-matter basis not stated."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Chicken Meal, Rice, Oats, Field Peas, Chicken Fat (preserved with Mixed Tocopherols [source of Vitamin E], Citric Acid, Rosemary Extract), Beet Pulp, Chicken Digest, Fish Meal, Canola Oil, Essential Vitamins & Minerals (see tables), Kelp Meal, Chicory Root, Salt, Brewer's Yeast, Natural Antioxidants,\nEmu Oil, Yucca Schidigera Extract, Glucosamine, Chondroitin, Tomato Powder, Carrots, Dried Blueberries, Dandelion, Peppermint, Rosemary, Cranberries.\n\nEssential Vitamins: Vitamin A, Thiamin, Riboflavin, Niacin, Pantothenic Acid, Vitamin B6, Biotin, Folic Acid, Vitamin B12, Vitamin C, Vitamin D, Vitamin E, Vitamin K\nEssential Minerals: Calcium, Phosphorus, Potassium, Zinc, Iron, Magnesium, Selenium and Iodine\nAmino and Fatty Acids: DL-Methionine, Tryptophan, Carnitine and EPA/DHA Omega-3 Fatty Acids",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes. The page refers to separate tables; their complete published lists are appended under their original labels."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
+      ]
+    }
+  ]
+}
