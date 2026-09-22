@@ -1,0 +1,363 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "appId": 119,
+      "identity": {
+        "brand": "Vetalogica",
+        "name": "Naturals Grain Free Chicken Adult",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9340621000869"
+      },
+      "status": "manufacturer_pack",
+      "barcode": "9340621000869",
+      "pack": "3kg",
+      "sourcePage": "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-chicken-adult-dogs",
+      "sourceKind": "manufacturer",
+      "checkedAt": "2026-09-22",
+      "sourceSha256": "81452b9ecf5f96499615db78a2ff82287ee8db867d6744ec34025cdf7c0eaee9",
+      "observation": "Manufacturer product-page variant explicitly supplies barcode for the exact named species, recipe and catalogue pack. Online source check only; no physical scan performed.",
+      "physicalScanPerformed": false
+    },
+    {
+      "appId": 120,
+      "identity": {
+        "brand": "Vetalogica",
+        "name": "Naturals Grain Free Kangaroo Adult",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9340621000937"
+      },
+      "status": "manufacturer_pack",
+      "barcode": "9340621000937",
+      "pack": "3kg",
+      "sourcePage": "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-kangaroo-adult-dogs",
+      "sourceKind": "manufacturer",
+      "checkedAt": "2026-09-22",
+      "sourceSha256": "53163b9e8ceccb6b82e30cbdc7a1ae757e7c7c70317f4c761fee2a1090ab7144",
+      "observation": "Manufacturer product-page variant explicitly supplies barcode for the exact named species, recipe and catalogue pack. Online source check only; no physical scan performed.",
+      "physicalScanPerformed": false
+    },
+    {
+      "appId": 121,
+      "identity": {
+        "brand": "Vetalogica",
+        "name": "Naturals Grain Free Lamb Adult",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9340621000944"
+      },
+      "status": "manufacturer_pack",
+      "barcode": "9340621000944",
+      "pack": "3kg",
+      "sourcePage": "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-lamb-adult-dogs",
+      "sourceKind": "manufacturer",
+      "checkedAt": "2026-09-22",
+      "sourceSha256": "0d4b307a66ff3fc059c7009fe0d76c252d9454b5c570e836bc3211d86deab73f",
+      "observation": "Manufacturer product-page variant explicitly supplies barcode for the exact named species, recipe and catalogue pack. Online source check only; no physical scan performed.",
+      "physicalScanPerformed": false
+    },
+    {
+      "appId": 122,
+      "identity": {
+        "brand": "Vetalogica",
+        "name": "Naturals Grain Free Chicken Puppy",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9340621000883"
+      },
+      "status": "manufacturer_pack",
+      "barcode": "9340621000883",
+      "pack": "3kg",
+      "sourcePage": "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-chicken-puppy",
+      "sourceKind": "manufacturer",
+      "checkedAt": "2026-09-22",
+      "sourceSha256": "0150449c42cb6a65d1e90eb72d3264d05b64b68dd8b8284351a6121443826927",
+      "observation": "Manufacturer product-page variant explicitly supplies barcode for the exact named species, recipe and catalogue pack. Online source check only; no physical scan performed.",
+      "physicalScanPerformed": false
+    },
+    {
+      "appId": 245,
+      "identity": {
+        "brand": "Vetalogica",
+        "name": "Naturals Grain Free Indoor Chicken",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9340621000975"
+      },
+      "status": "manufacturer_pack",
+      "barcode": "9340621000975",
+      "pack": "3kg",
+      "sourcePage": "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-chicken-indoor-adult-cat",
+      "sourceKind": "manufacturer",
+      "checkedAt": "2026-09-22",
+      "sourceSha256": "ace7f5d440121cf8d6bc8088cccbace9cf83490f9364aa4ed80df79b38f83cbd",
+      "observation": "Manufacturer product-page variant explicitly supplies barcode for the exact named species, recipe and catalogue pack. Online source check only; no physical scan performed.",
+      "physicalScanPerformed": false
+    },
+    {
+      "appId": 246,
+      "identity": {
+        "brand": "Vetalogica",
+        "name": "Naturals Grain Free Kitten Chicken",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9340621000999"
+      },
+      "status": "manufacturer_pack",
+      "barcode": "9340621000999",
+      "pack": "3kg",
+      "sourcePage": "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-chicken-kitten",
+      "sourceKind": "manufacturer",
+      "checkedAt": "2026-09-22",
+      "sourceSha256": "8e5c4f8db45623338c4578d69631abfc1d5c2ad29c7b125995253afde469a74d",
+      "observation": "Manufacturer product-page variant explicitly supplies barcode for the exact named species, recipe and catalogue pack. Online source check only; no physical scan performed.",
+      "physicalScanPerformed": false
+    },
+    {
+      "appId": 248,
+      "identity": {
+        "brand": "Vetalogica",
+        "name": "Fisherman's Feast Mackerel & Tuna",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9340621001392"
+      },
+      "status": "manufacturer_pack",
+      "barcode": "9340621001392",
+      "pack": "3kg",
+      "sourcePage": "https://www.vetalogica.com.au/products/vetalogica-biologically-appropriate-fishermans-feast-cat-food",
+      "sourceKind": "manufacturer",
+      "checkedAt": "2026-09-22",
+      "sourceSha256": "1fab54dc7896c3082c0eb4076fb2b1cc7aa9fda57259a2c10808c90e5511b556",
+      "observation": "Manufacturer product-page variant explicitly supplies barcode for the exact named species, recipe and catalogue pack. Online source check only; no physical scan performed.",
+      "physicalScanPerformed": false
+    },
+    {
+      "appId": 345,
+      "identity": {
+        "brand": "Vetalogica",
+        "name": "Naturals Healthy Treats Chicken",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat · 210g",
+        "barcode": "9340621000616"
+      },
+      "status": "manufacturer_pack",
+      "barcode": "9340621000616",
+      "pack": "210g",
+      "sourcePage": "https://www.vetalogica.com.au/products/australian-naturals-chicken-with-peas-treats-for-dogs",
+      "sourceKind": "manufacturer",
+      "checkedAt": "2026-09-22",
+      "sourceSha256": "432315d43bd50078136779f3761618dfda546846dfb1aa7993bad518f06f4ea2",
+      "observation": "Manufacturer product-page variant explicitly supplies barcode for the exact named species, recipe and catalogue pack. Online source check only; no physical scan performed.",
+      "physicalScanPerformed": false
+    },
+    {
+      "appId": 346,
+      "identity": {
+        "brand": "Vetalogica",
+        "name": "Naturals Healthy Treats Kangaroo",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat · 210g",
+        "barcode": "9340621000647"
+      },
+      "status": "manufacturer_pack",
+      "barcode": "9340621000647",
+      "pack": "210g",
+      "sourcePage": "https://www.vetalogica.com.au/products/australian-naturals-kangaroo-with-garden-vehetables-treats-for-dogs",
+      "sourceKind": "manufacturer",
+      "checkedAt": "2026-09-22",
+      "sourceSha256": "d9932ef0a3c999fd61f2a716cc7b2b2fe36d1f85be8905b5aeb23bc34b13b97a",
+      "observation": "Manufacturer product-page variant explicitly supplies barcode for the exact named species, recipe and catalogue pack. Online source check only; no physical scan performed.",
+      "physicalScanPerformed": false
+    },
+    {
+      "appId": 247,
+      "identity": {
+        "brand": "Vetalogica",
+        "name": "Naturals Grain Free Chicken Adult",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9310023144003"
+      },
+      "status": "conflict",
+      "barcode": "9310023144003",
+      "sourcePage": "https://www.gffoodservice.com.au/product/helgas-gluten-free-mixed-grain-500g/",
+      "sourceKind": "manufacturer",
+      "checkedAt": "2026-09-22",
+      "observation": "Manufacturer explicitly associates this EAN with Helgas Mixed Grain Gluten Free Bread 500g.",
+      "physicalScanPerformed": false
+    },
+    {
+      "appId": 596,
+      "identity": {
+        "brand": "Hill's Science Diet",
+        "name": "Puppy Large Breed Lamb Meal & Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": "9339687362929"
+      },
+      "status": "conflict",
+      "barcode": "9339687362929",
+      "sourcePage": "https://cuugo.com/product/woolworths/507642/woolworths-indian-lamb-rogan-josh-with-basmati-rice",
+      "sourceKind": "secondary",
+      "checkedAt": "2026-09-22",
+      "observation": "Secondary product listing associates the code with a Woolworths human ready meal; hold pending authoritative reconciliation.",
+      "physicalScanPerformed": false
+    },
+    {
+      "appId": 170,
+      "identity": {
+        "brand": "Lyka",
+        "name": "Grass-Fed Beef Bowl",
+        "petType": "dog",
+        "foodType": "fresh",
+        "type": "Fresh · Portion pouches (subscription)",
+        "barcode": "9339687340439"
+      },
+      "status": "conflict",
+      "barcode": "9339687340439",
+      "sourcePage": "https://cuugo.com/product/woolworths/285093/macro-grass-fed-beef-rump-steak",
+      "sourceKind": "secondary",
+      "checkedAt": "2026-09-22",
+      "observation": "Secondary listing associates the code with Macro beef rump steak, not Lyka. Hold for manufacturer reconciliation.",
+      "physicalScanPerformed": false
+    },
+    {
+      "appId": 114,
+      "identity": {
+        "brand": "Wellness",
+        "name": "CORE Grain Free Reduced Fat",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 1.81kg",
+        "barcode": "9339687386277"
+      },
+      "status": "conflict",
+      "barcode": "9339687386277",
+      "sourcePage": "https://www.ebay.com.au/itm/267522221823",
+      "sourceKind": "retailer",
+      "checkedAt": "2026-09-22",
+      "observation": "Retail listing associates the code with Free From Gluten Spirals 500g, not Wellness. Hold for manufacturer reconciliation.",
+      "physicalScanPerformed": false
+    },
+    {
+      "appId": 30,
+      "identity": {
+        "brand": "Scratch",
+        "name": "Free Range Chicken Adult",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9339687207176"
+      },
+      "status": "conflict",
+      "barcode": "9339687207176",
+      "sourcePage": "https://cuugo.com/product/woolworths/700228/macro-chicken-breast-fillets-free-range",
+      "sourceKind": "secondary",
+      "checkedAt": "2026-09-22",
+      "observation": "Secondary listing associates the code with Macro chicken breast, not Scratch. Hold for manufacturer reconciliation.",
+      "physicalScanPerformed": false
+    },
+    {
+      "appId": 327,
+      "identity": {
+        "brand": "Savourlife",
+        "name": "Australian Lamb Training Treats",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat · 165g",
+        "barcode": "9339687341351"
+      },
+      "status": "conflict",
+      "barcode": "9339687341351",
+      "sourcePage": "https://cuugo.com/product/woolworths/286300/macro-grass-fed-australian-lamb-mince",
+      "sourceKind": "secondary",
+      "checkedAt": "2026-09-22",
+      "observation": "Secondary listing associates the code with Macro lamb mince, not SavourLife. Hold for manufacturer reconciliation.",
+      "physicalScanPerformed": false
+    },
+    {
+      "appId": 1017,
+      "identity": {
+        "brand": "Black Hawk",
+        "name": "Original Adult Chicken & Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9338362001054"
+      },
+      "status": "retailer_pack",
+      "barcode": "9338362001054",
+      "pack": "3kg",
+      "sourcePage": "https://www.petcity.com.au/product/blackhawk-dog-adult-chicken-rice-3kg",
+      "additionalSources": [
+        "https://www.luckypet.com.au/black-hawk-holistic-chicken-rice-for-adult-dogs-3kg.html"
+      ],
+      "sourceKind": "retailer",
+      "checkedAt": "2026-09-22",
+      "observation": "Retailer explicitly lists the named adult dog recipe, 3kg pack and Barcode # 9338362001054. Online association only; physical pack and scan not tested.",
+      "physicalScanPerformed": false,
+      "sourceSha256": "cb4de9630f23f7b92eb604aa93814ba53782f59ff769f3f1ef27c140e4a6a9d7",
+      "sourceCaptureKind": "structured_web_observation"
+    },
+    {
+      "appId": 1022,
+      "identity": {
+        "brand": "Black Hawk",
+        "name": "Original Adult Lamb & Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9338362000941"
+      },
+      "status": "retailer_pack",
+      "barcode": "9338362000941",
+      "pack": "3kg",
+      "sourcePage": "https://www.petzoo.com.au/black-hawk-lamb-rice-adult-dog-food-3kg/",
+      "additionalSources": [
+        "https://www.thevetshed.com.au/buy/blackhawk-adult-chicken-rice-10kg/2228381"
+      ],
+      "sourceKind": "retailer",
+      "checkedAt": "2026-09-22",
+      "observation": "Retailer explicitly lists the named adult dog recipe, 3kg pack and Barcode # 9338362000941. Online association only; physical pack and scan not tested.",
+      "physicalScanPerformed": false,
+      "sourceSha256": "abf9099aaa0e864afd42c01a7857e0b6ac1225642f1e5b8d0d3c106aed8eb395",
+      "sourceCaptureKind": "structured_web_observation"
+    },
+    {
+      "appId": 1025,
+      "identity": {
+        "brand": "Black Hawk",
+        "name": "Small Breed Adult Lamb & Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9312239044092"
+      },
+      "status": "retailer_pack",
+      "barcode": "9312239044092",
+      "pack": "3kg",
+      "sourcePage": "https://www.petcity.com.au/product/blackhawk-dog-small-breed-lamb-rice-3kg",
+      "additionalSources": [],
+      "sourceKind": "retailer",
+      "checkedAt": "2026-09-22",
+      "observation": "Retailer explicitly lists the named adult dog recipe, 3kg pack and Barcode # 9312239044092. Online association only; physical pack and scan not tested. Previous code 9312239049585 identifies Puppy Small Breed Lamb & Rice 10kg on the same retailer site.",
+      "physicalScanPerformed": false,
+      "sourceSha256": "76c314f5ba7a94feb43d81e9ec6a3bada7066d1a895bcaca9b7043d7f48c3ffe",
+      "sourceCaptureKind": "structured_web_observation"
+    }
+  ]
+}

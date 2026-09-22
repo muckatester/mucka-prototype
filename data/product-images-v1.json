@@ -737,7 +737,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": "9340621001002"
+        "barcode": "9340621000883"
       },
       "localPath": "assets/product-images/batch250r2-122.png",
       "sourcePage": "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-chicken-puppy",
@@ -1661,7 +1661,7 @@
         "petType": "cat",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": null
+        "barcode": "9340621000975"
       },
       "localPath": "assets/product-images/batch250r2-245.jpg",
       "sourcePage": "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-chicken-indoor-adult-cat",
@@ -1683,7 +1683,7 @@
         "petType": "cat",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": null
+        "barcode": "9340621000999"
       },
       "localPath": "assets/product-images/batch250r2-246.png",
       "sourcePage": "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-chicken-kitten",
@@ -1705,7 +1705,7 @@
         "petType": "cat",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": null
+        "barcode": "9340621001392"
       },
       "localPath": "Cat Kibble/Vetalogica - Fisherman's Feast Mackerel & Tuna.webp",
       "sourcePage": "https://www.vetalogica.com.au/products/vetalogica-biologically-appropriate-fishermans-feast-cat-food",
@@ -2497,7 +2497,7 @@
         "petType": "dog",
         "foodType": "treat",
         "type": "Treat · 210g",
-        "barcode": null
+        "barcode": "9340621000616"
       },
       "localPath": "assets/product-images/batch250r2-345.jpg",
       "sourcePage": "https://www.vetalogica.com.au/products/australian-naturals-chicken-with-peas-treats-for-dogs",
@@ -2519,7 +2519,7 @@
         "petType": "dog",
         "foodType": "treat",
         "type": "Treat · 210g",
-        "barcode": null
+        "barcode": "9340621000647"
       },
       "localPath": "assets/product-images/346-vetalogica-kangaroo-treats.jpg",
       "sourcePage": "https://www.vetalogica.com.au/products/australian-naturals-kangaroo-with-garden-vehetables-treats-for-dogs",
@@ -6281,7 +6281,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": null
+        "barcode": "9338362001054"
       },
       "localPath": "assets/product-images/batch250-1017-australian_premium.png",
       "sourcePage": "https://www.blackhawkpetcare.com/en/products/dog/original-dog-food-chicken-and-rice/",
@@ -6369,7 +6369,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": "9312239049585"
+        "barcode": "9312239044092"
       },
       "localPath": "assets/product-images/batch250-1025-australian_premium.jpg",
       "sourcePage": "https://www.blackhawkpetcare.com/en/products/dog/original-dog-food-for-small-breeds-lamb-and-rice/",

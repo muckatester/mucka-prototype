@@ -3225,7 +3225,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": "133014000030"
+        "barcode": "9340621000869"
       },
       "status": "visual_match",
       "shownPack": "3kg",
@@ -3259,7 +3259,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": null
+        "barcode": "9340621000937"
       },
       "status": "visual_match",
       "shownPack": "3kg",
@@ -3293,7 +3293,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": null
+        "barcode": "9340621000944"
       },
       "status": "visual_match",
       "shownPack": "3kg",
@@ -3327,7 +3327,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": "9340621001002"
+        "barcode": "9340621000883"
       },
       "status": "confirmed_mismatch",
       "shownPack": null,
@@ -6062,7 +6062,7 @@
         "petType": "cat",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": null
+        "barcode": "9340621000975"
       },
       "status": "confirmed_mismatch",
       "shownPack": "3kg",
@@ -6096,7 +6096,7 @@
         "petType": "cat",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": null
+        "barcode": "9340621000999"
       },
       "status": "confirmed_mismatch",
       "shownPack": "3kg",
@@ -8408,7 +8408,7 @@
         "petType": "dog",
         "foodType": "treat",
         "type": "Treat · 210g",
-        "barcode": null
+        "barcode": "9340621000616"
       },
       "status": "confirmed_mismatch",
       "shownPack": "3kg",
@@ -25944,7 +25944,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": null
+        "barcode": "9338362001054"
       },
       "status": "confirmed_mismatch",
       "shownPack": "20kg",
@@ -26152,7 +26152,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": "9312239049585"
+        "barcode": "9312239044092"
       },
       "status": "confirmed_mismatch",
       "shownPack": "10kg",

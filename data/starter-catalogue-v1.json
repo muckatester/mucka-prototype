@@ -926,14 +926,15 @@
         "name": "Naturals Grain Free Indoor Chicken",
         "petType": "cat",
         "foodType": "dry",
-        "type": "Dry · 3kg"
+        "type": "Dry · 3kg",
+        "barcode": "9340621000975"
       },
       "identityEvidence": {
         "kind": "manufacturer_page_recipe_and_pack",
         "sourceIds": [
           "page"
         ],
-        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. The manufacturer page explicitly supplies the barcode for the 3kg variant. Manufacturer claims remain attributed statements."
       },
       "sources": [
         {
@@ -942,7 +943,7 @@
           "label": "Manufacturer product page",
           "kind": "manufacturer_page",
           "checkedAt": "2026-09-22",
-          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. The manufacturer page explicitly supplies the barcode for the 3kg variant. Manufacturer claims remain attributed statements."
         }
       ],
       "fields": {
@@ -971,10 +972,12 @@
           "note": ""
         },
         "barcode": {
-          "status": "unknown",
-          "value": null,
-          "sourceIds": [],
-          "note": "No barcode is recorded in this catalogue entry. A replacement has not been inferred."
+          "status": "source_checked",
+          "value": "9340621000975 - manufacturer 3kg variant barcode",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer product-page variant metadata. No physical scan performed."
         },
         "lifeStage": {
           "status": "source_checked",
@@ -1047,14 +1050,15 @@
         "name": "Naturals Grain Free Kitten Chicken",
         "petType": "cat",
         "foodType": "dry",
-        "type": "Dry · 3kg"
+        "type": "Dry · 3kg",
+        "barcode": "9340621000999"
       },
       "identityEvidence": {
         "kind": "manufacturer_page_recipe_and_pack",
         "sourceIds": [
           "page"
         ],
-        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. The manufacturer page explicitly supplies the barcode for the 3kg variant. Manufacturer claims remain attributed statements."
       },
       "sources": [
         {
@@ -1063,7 +1067,7 @@
           "label": "Manufacturer product page",
           "kind": "manufacturer_page",
           "checkedAt": "2026-09-22",
-          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. The manufacturer page explicitly supplies the barcode for the 3kg variant. Manufacturer claims remain attributed statements."
         }
       ],
       "fields": {
@@ -1092,10 +1096,12 @@
           "note": ""
         },
         "barcode": {
-          "status": "unknown",
-          "value": null,
-          "sourceIds": [],
-          "note": "No barcode is recorded in this catalogue entry. A replacement has not been inferred."
+          "status": "source_checked",
+          "value": "9340621000999 - manufacturer 3kg variant barcode",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer product-page variant metadata. No physical scan performed."
         },
         "lifeStage": {
           "status": "source_checked",
@@ -1521,14 +1527,15 @@
         "name": "Original Adult Chicken & Rice",
         "petType": "dog",
         "foodType": "dry",
-        "type": "Dry · 3kg"
+        "type": "Dry · 3kg",
+        "barcode": "9338362001054"
       },
       "identityEvidence": {
         "kind": "manufacturer_page_recipe_and_pack",
         "sourceIds": [
           "page"
         ],
-        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Retailers associate the barcode with this 3kg product; see the separate barcode source. Manufacturer claims remain attributed statements."
       },
       "sources": [
         {
@@ -1538,6 +1545,14 @@
           "kind": "manufacturer_page",
           "checkedAt": "2026-09-22",
           "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        },
+        {
+          "id": "barcode-retailer",
+          "url": "https://www.petcity.com.au/product/blackhawk-dog-adult-chicken-rice-3kg",
+          "label": "Pet City barcode and pack listing",
+          "kind": "retailer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Explicit Barcode # 9338362001054 for Original Adult Chicken & Rice 3kg; corroborated by Lucky Pet."
         }
       ],
       "fields": {
@@ -1566,10 +1581,12 @@
           "note": ""
         },
         "barcode": {
-          "status": "unknown",
-          "value": null,
-          "sourceIds": [],
-          "note": "No barcode is recorded in this catalogue entry. A replacement has not been inferred."
+          "status": "source_checked",
+          "value": "9338362001054 - retailer association with 3kg bag",
+          "sourceIds": [
+            "barcode-retailer"
+          ],
+          "note": "Online retailer evidence, not a manufacturer barcode attestation or physical scan."
         },
         "lifeStage": {
           "status": "source_checked",

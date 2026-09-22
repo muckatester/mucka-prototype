@@ -8076,6 +8076,158 @@
         "https://www.temptationstreats.ca/en-ca/products/care-treats/temptations-creamy-purrrr-ee-cat-treats-chicken"
       ],
       "checkedDate": "2026-09-22"
+    },
+    {
+      "appId": 119,
+      "before": {
+        "barcode": "133014000030"
+      },
+      "after": {
+        "barcode": "9340621000869"
+      },
+      "reason": "Manufacturer exact pack barcode; checked 22 September 2026.",
+      "sources": [
+        "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-chicken-adult-dogs"
+      ]
+    },
+    {
+      "appId": 120,
+      "before": {},
+      "after": {
+        "barcode": "9340621000937"
+      },
+      "reason": "Manufacturer exact pack barcode; checked 22 September 2026.",
+      "sources": [
+        "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-kangaroo-adult-dogs"
+      ],
+      "absentBeforeFields": [
+        "barcode"
+      ]
+    },
+    {
+      "appId": 121,
+      "before": {},
+      "after": {
+        "barcode": "9340621000944"
+      },
+      "reason": "Manufacturer exact pack barcode; checked 22 September 2026.",
+      "sources": [
+        "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-lamb-adult-dogs"
+      ],
+      "absentBeforeFields": [
+        "barcode"
+      ]
+    },
+    {
+      "appId": 122,
+      "before": {
+        "barcode": "9340621001002"
+      },
+      "after": {
+        "barcode": "9340621000883"
+      },
+      "reason": "Manufacturer exact pack barcode; checked 22 September 2026.",
+      "sources": [
+        "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-chicken-puppy"
+      ]
+    },
+    {
+      "appId": 245,
+      "before": {},
+      "after": {
+        "barcode": "9340621000975"
+      },
+      "reason": "Manufacturer exact pack barcode; checked 22 September 2026.",
+      "sources": [
+        "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-chicken-indoor-adult-cat"
+      ],
+      "absentBeforeFields": [
+        "barcode"
+      ]
+    },
+    {
+      "appId": 246,
+      "before": {},
+      "after": {
+        "barcode": "9340621000999"
+      },
+      "reason": "Manufacturer exact pack barcode; checked 22 September 2026.",
+      "sources": [
+        "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-chicken-kitten"
+      ],
+      "absentBeforeFields": [
+        "barcode"
+      ]
+    },
+    {
+      "appId": 248,
+      "before": {},
+      "after": {
+        "barcode": "9340621001392"
+      },
+      "reason": "Manufacturer exact pack barcode; checked 22 September 2026.",
+      "sources": [
+        "https://www.vetalogica.com.au/products/vetalogica-biologically-appropriate-fishermans-feast-cat-food"
+      ],
+      "absentBeforeFields": [
+        "barcode"
+      ]
+    },
+    {
+      "appId": 345,
+      "before": {},
+      "after": {
+        "barcode": "9340621000616"
+      },
+      "reason": "Manufacturer exact pack barcode; checked 22 September 2026.",
+      "sources": [
+        "https://www.vetalogica.com.au/products/australian-naturals-chicken-with-peas-treats-for-dogs"
+      ],
+      "absentBeforeFields": [
+        "barcode"
+      ]
+    },
+    {
+      "appId": 346,
+      "before": {},
+      "after": {
+        "barcode": "9340621000647"
+      },
+      "reason": "Manufacturer exact pack barcode; checked 22 September 2026.",
+      "sources": [
+        "https://www.vetalogica.com.au/products/australian-naturals-kangaroo-with-garden-vehetables-treats-for-dogs"
+      ],
+      "absentBeforeFields": [
+        "barcode"
+      ]
+    },
+    {
+      "appId": 1017,
+      "before": {},
+      "after": {
+        "barcode": "9338362001054"
+      },
+      "reason": "Retailer exact pack barcode; Retailer explicitly lists the named adult dog recipe, 3kg pack and Barcode # 9338362001054. Online association only; physical pack and scan not tested.",
+      "sources": [
+        "https://www.petcity.com.au/product/blackhawk-dog-adult-chicken-rice-3kg",
+        "https://www.luckypet.com.au/black-hawk-holistic-chicken-rice-for-adult-dogs-3kg.html"
+      ],
+      "absentBeforeFields": [
+        "barcode"
+      ]
+    },
+    {
+      "appId": 1025,
+      "before": {
+        "barcode": "9312239049585"
+      },
+      "after": {
+        "barcode": "9312239044092"
+      },
+      "reason": "Retailer exact pack barcode; Retailer explicitly lists the named adult dog recipe, 3kg pack and Barcode # 9312239044092. Online association only; physical pack and scan not tested. Previous code 9312239049585 identifies Puppy Small Breed Lamb & Rice 10kg on the same retailer site.",
+      "sources": [
+        "https://www.petcity.com.au/product/blackhawk-dog-small-breed-lamb-rice-3kg"
+      ]
     }
   ],
   "collectorBarcodeRemovals": [
@@ -8273,6 +8425,21 @@
       "barcode": "9334214063768",
       "appId": 1174,
       "reason": "Catalogue barcode 9334214063768 identifies mixed Chicken & Salmon Creamy Spoons 4 × 10g at multiple retailers, not chicken-only puree. Remove wrong barcode, fill cat/treat fields from manufacturer chicken puree identity. Canadian chicken page now404; exact original photo remains missing."
+    },
+    {
+      "appId": 119,
+      "barcode": "133014000030",
+      "reason": "Manufacturer exact pack barcode; checked 22 September 2026."
+    },
+    {
+      "appId": 122,
+      "barcode": "9340621001002",
+      "reason": "Manufacturer exact pack barcode; checked 22 September 2026."
+    },
+    {
+      "appId": 1025,
+      "barcode": "9312239049585",
+      "reason": "Retailer exact pack barcode; Retailer explicitly lists the named adult dog recipe, 3kg pack and Barcode # 9312239044092. Online association only; physical pack and scan not tested. Previous code 9312239049585 identifies Puppy Small Breed Lamb & Rice 10kg on the same retailer site."
     }
   ]
 }

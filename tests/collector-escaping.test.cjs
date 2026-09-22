@@ -5,7 +5,7 @@ function extract(name){const start=html.indexOf('function '+name+'('),end=html.i
 test('Collector renders hostile manual/query barcode input as text in results and queue',()=>{
  const elements={};const document={getElementById:id=>elements[id]||(elements[id]={classList:{add(){}},value:''})};
  const c=vm.createContext({document,navigator:{},flashGreen(){},KNOWN_BARCODES:new Set(),queue:[],Date});
- vm.runInContext(['collectorEscapeHtml','barcodeScanned','renderQueueList'].map(extract).join('\n'),c);
+ vm.runInContext(['normalizeGtin','isKnownBarcode','collectorEscapeHtml','barcodeScanned','renderQueueList'].map(extract).join('\n'),c);
  const value='<img src=x onerror="alert(1)">&\'test';
  for(const known of [false,true]){
   if(known)c.KNOWN_BARCODES.add(value);
