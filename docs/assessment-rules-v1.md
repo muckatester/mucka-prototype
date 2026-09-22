@@ -74,3 +74,7 @@ WSAVA's food-selection questions cover nutritional adequacy and manufacturer evi
 AAFCO explains the meaning of nutritional-adequacy statements and different substantiation approaches. Store the actual statement for the intended product and market. [AAFCO reading labels](https://www.aafco.org/consumers/understanding-pet-food/reading-labels/).
 
 WSAVA does not approve or endorse individual pet foods. [WSAVA Global Nutrition Committee](https://wsava.org/committees/global-nutrition-committee/).
+
+### Starter expansion - 22 September 2026
+
+The original five-record pilot has expanded to 13 identity-bound records. Eight additional Australian manufacturer pages supply attributed ingredient and product details; this does not change the assessment rules or reactivate health scores. See `launch-readiness-2026-09-22.md` for validation and outstanding launch work.

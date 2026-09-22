@@ -6736,6 +6736,28 @@
       "rightsStatus": "Source recorded; no licence grant asserted."
     },
     {
+      "appId": 1080,
+      "identity": {
+        "brand": "Blackdog",
+        "name": "Carob Drops",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": "9319993801138"
+      },
+      "localPath": "assets/product-images/completion-1080.jpg",
+      "sourcePage": "https://www.habitatpets.com.au/collections/dog/products/blackdog-carob-buttons-1kg",
+      "imageUrl": "https://www.habitatpets.com.au/cdn/shop/files/Blackdog-Carob-Drops-Dog-Treats-1kg_800x.jpg?v=1743627460",
+      "sourceKind": "retailer",
+      "shownPack": "1kg",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Viewed original front explicitly reads Blackdog Carob Drops 1kg. Retailer URL uses Buttons, but pictured Drops recipe agrees with catalogue. Catalogue pack size and barcode remain unverified.",
+      "visualChecked": true,
+      "checkedDate": "2026-09-22",
+      "sha256": "53b2c5dc56c51e284ac4cf02d0c4b254880570212ff2fd17ada396d5c771d3c8",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
       "appId": 1089,
       "identity": {
         "brand": "Canine Country",

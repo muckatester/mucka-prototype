@@ -17828,6 +17828,29 @@
       ]
     },
     {
+      "sourcePath": "assets/product-images/completion-1080.jpg",
+      "sourceSha256": "53b2c5dc56c51e284ac4cf02d0c4b254880570212ff2fd17ada396d5c771d3c8",
+      "sourceBytes": 53681,
+      "variants": [
+        {
+          "path": "assets/product-images/display/53b2c5dc56c51e284ac4cf02-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "5c83ddf65597a56c2b1cc2ae833ae79dfc15bb94517f040b3f215470a3f7be1b",
+          "bytes": 2830,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/53b2c5dc56c51e284ac4cf02-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "847a54db74129a35675239678d64e44ff54fc4c0ebbd44768782c7639d86893a",
+          "bytes": 13786,
+          "bound": 480
+        }
+      ]
+    },
+    {
       "sourcePath": "assets/product-images/kit-cat-chicken-salmon-80g.jpg",
       "sourceSha256": "454f272e24b0e8729c127ddb6faf4ae3663d4a520509ff092255551bd0808b8c",
       "sourceBytes": 61553,

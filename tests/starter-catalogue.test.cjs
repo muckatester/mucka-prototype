@@ -10,7 +10,7 @@ test('The published starter data is source-backed, identity-bound and exactly ma
   const {c} = setup();
   assert.deepEqual(JSON.parse(JSON.stringify(c.starterCatalogue)), data);
   assert.equal(data.schemaVersion, '1.0.0');
-  assert.deepEqual(data.records.map(r => r.appId), [727, 728, 764, 768, 960]);
+  assert.deepEqual(data.records.map(r => r.appId), [727, 728, 764, 768, 960, 129, 130, 245, 246, 325, 326, 953, 1017]);
   for (const record of data.records) {
     assert.equal(record.physicalScanPerformed, false);
     assert.equal(record.clinicallyValidated, false);
@@ -45,8 +45,8 @@ test('The published starter data is source-backed, identity-bound and exactly ma
 test('Starter browse opens only the selected records and shows sources without activating ratings', () => {
   const {c, element} = setup();
   c.handleCategoryClick('starter-catalogue');
-  assert.deepEqual(Array.from(c.currentCategoryProducts, p => p.id).sort((a,b)=>a-b), [727,728,764,768,960]);
-  assert.equal(element('categoryProductCount').textContent, 'Showing 5 products');
+  assert.deepEqual(Array.from(c.currentCategoryProducts, p => p.id).sort((a,b)=>a-b), [129,130,245,246,325,326,727,728,764,768,953,960,1017]);
+  assert.equal(element('categoryProductCount').textContent, 'Showing 13 products');
   for (const p of c.currentCategoryProducts) {
     c.showProduct(p.id);
     assert.equal(element('assessmentStatus').textContent, 'Assessment under review');

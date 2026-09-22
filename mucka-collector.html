@@ -350,6 +350,12 @@ function updateScanCounter() {
 // ============================================================
 // BARCODE RESULT
 // ============================================================
+function collectorEscapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, function(ch) {
+    return {'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[ch];
+  });
+}
+
 function barcodeScanned(barcode) {
   if (navigator.vibrate) navigator.vibrate(50);
   flashGreen();
@@ -366,7 +372,7 @@ function barcodeScanned(barcode) {
         '<span class="result-icon">✅</span>' +
         '<div class="result-info">' +
           '<div class="result-title" style="color:#276749;">Already in Mucka!</div>' +
-          '<div class="result-bc">' + barcode + '</div>' +
+          '<div class="result-bc">' + collectorEscapeHtml(barcode) + '</div>' +
           '<div style="font-size:12px;color:#276749;">This one\'s in the database already.</div>' +
         '</div>' +
       '</div>' +
@@ -379,7 +385,7 @@ function barcodeScanned(barcode) {
         '<span class="result-icon">🆕</span>' +
         '<div class="result-info">' +
           '<div class="result-title" style="color:#744210;">Not in Mucka yet!</div>' +
-          '<div class="result-bc">' + barcode + '</div>' +
+          '<div class="result-bc">' + collectorEscapeHtml(barcode) + '</div>' +
           '<div style="font-size:12px;color:#744210;">Photo the front of the pack then save it.</div>' +
         '</div>' +
       '</div>' +
@@ -468,7 +474,7 @@ function renderQueueList() {
     return '<div class="queue-item">' +
       '<div class="queue-num">' + (queue.length - i) + '</div>' +
       '<div class="queue-info">' +
-        '<div class="queue-barcode">' + p.barcode + '</div>' +
+        '<div class="queue-barcode">' + collectorEscapeHtml(p.barcode) + '</div>' +
         '<div class="queue-meta">' + time + ' · ' + (p.photo ? '📸 Photo' : 'No photo') + '</div>' +
       '</div>' +
       thumb +

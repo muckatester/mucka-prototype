@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "checkedAt": "2026-09-14",
+  "checkedAt": "2026-09-22",
   "assessmentRulesVersion": "1.0",
   "description": "Selected product facts checked against Australian manufacturer sources. This is not a nutritional ranking or an independent assessment.",
   "records": [
@@ -667,6 +667,970 @@
         "Check your current pack for recipe changes.",
         "Manufacturer expertise, quality controls and recall history have not been checked.",
         "Catalogue photos have not been verified and may show another pack configuration."
+      ]
+    },
+    {
+      "appId": 129,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Black Hawk",
+        "name": "Grain Free Adult Chicken Wet",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 100g tray"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.blackhawkpetcare.com/en/products/dog/grain-free-wet-dog-food-tray-chicken/",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Wet",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "100 g tray",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No barcode is recorded in this catalogue entry. A replacement has not been inferred."
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Adult dogs",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Main food, as described by the manufacturer.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "Black Hawk Grain Free wet food provides a complete diet for adult dogs. It is formulated to meet the nutritional levels established by the Association of American Food Control Officials (AAFCO) Dog Food Nutrient Profile for the maintenance of adult dogs.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer claim; not independent certification. The source wording is retained."
+        },
+        "adequacyMethod": {
+          "status": "source_checked",
+          "value": "Formulated to meet the AAFCO Dog Food Nutrient Profile for maintenance of adult dogs.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "75 Kcal/100g",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Source labels this Energy. Method and as-fed/dry-matter basis are not stated. No conversion or comparison."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Chicken, Lamb, Natural Gums, Vitamins & Minerals, Probiotics, Emu Oil.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
+      ]
+    },
+    {
+      "appId": 130,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Black Hawk",
+        "name": "Grain Free Adult Lamb Wet",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 100g tray"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.blackhawkpetcare.com/en/products/dog/grain-free-wet-dog-food-tray-lamb/",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Wet",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "100 g tray",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No barcode is recorded in this catalogue entry. A replacement has not been inferred."
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Adult dogs",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Main food, as described by the manufacturer.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "Black Hawk Grain Free wet food provides a complete diet for adult dogs. It is formulated to meet the nutritional levels established by the Association of American Food Control Officials (AAFCO) Dog Food Nutrient Profile for the maintenance of adult dogs.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer claim; not independent certification. The source wording is retained."
+        },
+        "adequacyMethod": {
+          "status": "source_checked",
+          "value": "Formulated to meet the AAFCO Dog Food Nutrient Profile for maintenance of adult dogs.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "75 kcal/100g",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Source labels this Energy. Method and as-fed/dry-matter basis are not stated. No conversion or comparison."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Lamb, Chicken, Natural Gums, Vitamins & Minerals, Prebiotics, Emu Oil.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
+      ]
+    },
+    {
+      "appId": 245,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Vetalogica",
+        "name": "Naturals Grain Free Indoor Chicken",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 3kg"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-chicken-indoor-adult-cat",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Cat",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Dry",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "3 kg",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No barcode is recorded in this catalogue entry. A replacement has not been inferred."
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Adult cats",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Main food, as described by the manufacturer.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "Vetalogica Naturals Grain Free Chicken Indoor Adult Cat Food is formulated to provide complete and balanced everyday nutrition for adult cats.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer statement, not independent certification."
+        },
+        "adequacyMethod": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "The inspected page makes a generic complete-and-balanced claim without a product-specific substantiation method."
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "Metabolizable Energy 3700 kcal/kg",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Source-reported values; calculation/measurement method and as-fed/dry-matter basis not stated."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Chicken Meal, Peas, Potato Starch, Chicken Fat (Naturally preserved with Mixed Tocopherols), Natural Flavour, Tapioca Starch, Ground Flaxseed, Fish Oil, Dried Blueberries, Dried Spinach, Tomato Pomace, Dried Plain Beet Pulp, Dried Egg Product, Chickpea Flour, Dried Pumpkin, Potassium Chloride, Choline Chloride, Sea Salt, Vitamins (Vitamin E Supplement, Niacin (Vitamin B3), Calcium Pantothenate (Vitamin B5), Riboflavin (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Thiamine Mononitrate (Vitamin B1), Folic Acid, Biotin, Vitamin A Supplement, Vitamin B12 Supplement, Vitamin D3 Supplement, Menadione (Vitamin K3)), Minerals (Zinc Sulfate, Ferrous Sulfate, Magnesium Oxide, Copper Sulfate, Manganese Oxide, Iodine, Sodium Selenite, Zinc Propionate), DL-Methionine, Taurine, Yucca Schidigera Extract, Mixed Tocopherols (a Natural preservative), Rosemary Extract.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
+      ]
+    },
+    {
+      "appId": 246,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Vetalogica",
+        "name": "Naturals Grain Free Kitten Chicken",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 3kg"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.vetalogica.com.au/products/vetalogica-naturals-grain-free-chicken-kitten",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Cat",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Dry",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "3 kg",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No barcode is recorded in this catalogue entry. A replacement has not been inferred."
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Growing kittens; manufacturer also states growth and gestation/lactation.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Main food, as described by the manufacturer.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "Vetalogica Naturals Grain Free Chicken For Kittens is formulated to meet the nutritional levels established by the AAFCO Cat Food Nutrient Profiles for growth and gestation/lactation.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer statement, not independent certification."
+        },
+        "adequacyMethod": {
+          "status": "source_checked",
+          "value": "Formulated to meet AAFCO Cat Food Nutrient Profiles for growth and gestation/lactation.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "Metabolizable Energy (ME) 3850 kcal/kg; calorie content also stated as 481 kcal/125g cup.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Source-reported values; calculation/measurement method and as-fed/dry-matter basis not stated."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Chicken Meal, Peas, Potato Starch, Chicken Fat (Naturally preserved with Mixed Tocopherols), Natural Flavour, Tapioca Starch, Ground Flaxseed, Fish Oil, Dried Blueberries, Dried Spinach, Tomato Pomace, Dried Plain Beet Pulp, Dried Egg Product, Chickpea Flour, Dried Pumpkin, Potassium Chloride, Choline Chloride, Sea Salt, Vitamins (Vitamin E Supplement, Niacin (Vitamin B3), Calcium Pantothenate (Vitamin B5), Riboflavin (Vitamin B2), Pyridoxine Hydrochloride (Vitamin B6), Thiamine Mononitrate (Vitamin B1), Folic Acid, Biotin, Vitamin A Supplement, Vitamin B12 Supplement, Vitamin D3 Supplement, Menadione (Vitamin K3)), Minerals (Zinc Sulfate, Ferrous Sulfate, Magnesium Oxide, Copper Sulfate, Manganese Oxide, Iodine, Sodium Selenite, Zinc Propionate), DL-Methionine, Taurine, Yucca Schidigera Extract, Mixed Tocopherols (a Natural preservative), Rosemary Extract.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
+      ]
+    },
+    {
+      "appId": 325,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Savourlife",
+        "name": "Australian Chicken Training Treats",
+        "barcode": "9347810000174",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat · 165g"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.savour-life.com.au/our-range/natural-treats/training-treats/australian-chicken/",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Treat",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "165 g",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Catalogue barcode has not been verified against a printed manufacturer barcode; matching is by named recipe and stated pack, not barcode."
+        },
+        "lifeStage": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No explicit life-stage designation verified in the inspected text."
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Treat; not a meal replacement.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific adequacy statement verified in the inspected text."
+        },
+        "adequacyMethod": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific substantiation method verified in the inspected text."
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "Metabolizable Energy 303kcal/100g",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Method and as-fed/dry-matter basis not stated."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Chicken, cereals, glycerin, natural flavours and colours, salt, potassium sorbate, essential vitamins and minerals, fish oil (source of omega 3)",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
+      ]
+    },
+    {
+      "appId": 326,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Savourlife",
+        "name": "Australian Kangaroo Training Treats",
+        "barcode": "9347810001669",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat · 165g"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.savour-life.com.au/our-range/natural-treats/training-treats/australian-kangaroo/",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Treat",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "165 g",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Catalogue barcode has not been verified against a printed manufacturer barcode; matching is by named recipe and stated pack, not barcode."
+        },
+        "lifeStage": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No explicit life-stage designation verified in the inspected text."
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Treat; not a meal replacement.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific adequacy statement verified in the inspected text."
+        },
+        "adequacyMethod": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific substantiation method verified in the inspected text."
+        },
+        "energy": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No energy value with units and denominator located in the inspected product text."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "kangaroo, cereals, glycerin, natural flavours and colours, salt, potassium sorbate, essential vitamins and minerals, fish oil (source of omega 3)",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
+      ]
+    },
+    {
+      "appId": 953,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Whimzees",
+        "name": "Brushzees Medium",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form and Medium size. Pack quantity is not established. Barcode identity is not established. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.whimzees.com.au/products/brushzees/",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form and Medium size. Pack quantity is not established. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Dental treat",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Catalogue has no pack quantity. This page covers several Brushzees sizes; ingredient and energy observations below are for Medium where specified."
+        },
+        "barcode": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No barcode is recorded in this catalogue entry. A replacement has not been inferred."
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Manufacturer excludes dogs under 9 months and under 2 kg.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Choose the correct treat size. These are source restrictions, not personalised feeding advice."
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Dental treat.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific adequacy statement verified in the inspected text."
+        },
+        "adequacyMethod": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No product-specific substantiation method verified in the inspected text."
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "Medium: 2,890 kcal/kg or 87 kcal/chew (30g) ME (metabolisable energy), as-fed.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Calculation/measurement method not stated. The page reports different values for Small and Large; those are not applied to this Medium listing."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Potato Starch, Glycerin, Powdered Cellulose, Lecithin, Dried Yeast, Malt Extract, Sweet Lupin Meal, Alfalfa Extract, Calcium Carbonate, Paprika Extract.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
+      ]
+    },
+    {
+      "appId": 1017,
+      "checkedAt": "2026-09-22",
+      "sourceMarket": "Australia",
+      "physicalScanPerformed": false,
+      "clinicallyValidated": false,
+      "catalogueIdentity": {
+        "brand": "Black Hawk",
+        "name": "Original Adult Chicken & Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg"
+      },
+      "identityEvidence": {
+        "kind": "manufacturer_page_recipe_and_pack",
+        "sourceIds": [
+          "page"
+        ],
+        "note": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+      },
+      "sources": [
+        {
+          "id": "page",
+          "url": "https://www.blackhawkpetcare.com/en/products/dog/original-dog-food-chicken-and-rice/",
+          "label": "Manufacturer product page",
+          "kind": "manufacturer_page",
+          "checkedAt": "2026-09-22",
+          "observation": "Australian manufacturer page matches the named recipe, species and food form; catalogue pack size is explicitly available on the page. Barcode identity is not established. Manufacturer claims remain attributed statements."
+        }
+      ],
+      "fields": {
+        "species": {
+          "status": "source_checked",
+          "value": "Dog",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "foodForm": {
+          "status": "source_checked",
+          "value": "Dry",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "packSize": {
+          "status": "source_checked",
+          "value": "3 kg",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "barcode": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "No barcode is recorded in this catalogue entry. A replacement has not been inferred."
+        },
+        "lifeStage": {
+          "status": "source_checked",
+          "value": "Adult dogs, all breed sizes",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "feedingPurpose": {
+          "status": "source_checked",
+          "value": "Main food, as described by the manufacturer.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "adequacyStatement": {
+          "status": "source_checked",
+          "value": "Black Hawk pet food is formulated to meet the nutritional levels established by the Association of American Feed Control Officials (AAFCO) Dog Food Nutrient Profile for the maintenance of adult dogs.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Manufacturer claim; not independent certification."
+        },
+        "adequacyMethod": {
+          "status": "source_checked",
+          "value": "Formulated to meet the AAFCO Dog Food Nutrient Profile for maintenance of adult dogs.",
+          "sourceIds": [
+            "page"
+          ],
+          "note": ""
+        },
+        "energy": {
+          "status": "source_checked",
+          "value": "Metabolisable Energy 3590 kcal/kg",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Method and as-fed/dry-matter basis not stated."
+        },
+        "therapeuticUse": {
+          "status": "unknown",
+          "value": null,
+          "sourceIds": [],
+          "note": "Therapeutic positioning was not assessed. No individual suitability conclusion is made."
+        },
+        "ingredients": {
+          "status": "source_checked",
+          "value": "Chicken Meal, Rice, Oats, Field Peas, Chicken Fat (preserved with Mixed Tocopherols [source of Vitamin E], Citric Acid, Rosemary Extract), Beet Pulp, Chicken Digest, Fish Meal, Canola Oil, Essential Vitamins & Minerals (see tables), Kelp Meal, Chicory Root, Salt, Brewer's Yeast, Natural Antioxidants,\nEmu Oil, Yucca Schidigera Extract, Glucosamine, Chondroitin, Tomato Powder, Carrots, Dried Blueberries, Dandelion, Peppermint, Rosemary, Cranberries.\n\nEssential Vitamins: Vitamin A, Thiamin, Riboflavin, Niacin, Pantothenic Acid, Vitamin B6, Biotin, Folic Acid, Vitamin B12, Vitamin C, Vitamin D, Vitamin E, Vitamin K\nEssential Minerals: Calcium, Phosphorus, Potassium, Zinc, Iron, Magnesium, Selenium and Iodine\nAmino and Fatty Acids: DL-Methionine, Tryptophan, Carnitine and EPA/DHA Omega-3 Fatty Acids",
+          "sourceIds": [
+            "page"
+          ],
+          "note": "Full manufacturer webpage ingredient text as published, not a physical-pack transcription. Check your current pack for changes. The page refers to separate tables; their complete published lists are appended under their original labels."
+        }
+      },
+      "limitations": [
+        "Manufacturer webpage text may change; compare it with your current pack.",
+        "No physical barcode scan or clinical assessment was performed.",
+        "Manufacturer expertise, quality controls and recall history have not been checked.",
+        "Photo source and matching scope are shown beside the product image."
       ]
     }
   ]
