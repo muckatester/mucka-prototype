@@ -2137,7 +2137,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 1.5kg",
-        "barcode": "3182550777674"
+        "barcode": null
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -5450,7 +5450,7 @@
         "petType": "cat",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": "9348601003510"
+        "barcode": null
       },
       "status": "visual_match",
       "shownPack": "2 kg bag",
@@ -5518,7 +5518,7 @@
         "petType": "cat",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": "9348601004746"
+        "barcode": null
       },
       "status": "confirmed_mismatch",
       "shownPack": null,
@@ -6334,7 +6334,7 @@
         "petType": "cat",
         "foodType": "wet",
         "type": "Wet · 85g pouch",
-        "barcode": "9334214054780"
+        "barcode": null
       },
       "status": "confirmed_mismatch",
       "shownPack": "12 × 85 g pouches",
@@ -6606,7 +6606,7 @@
         "petType": "cat",
         "foodType": "wet",
         "type": "Wet · 85g tray",
-        "barcode": "9334214018447"
+        "barcode": null
       },
       "status": "visual_match",
       "shownPack": "85 g tray",
@@ -6708,7 +6708,7 @@
         "petType": "cat",
         "foodType": "wet",
         "type": "Wet · 85g tray",
-        "barcode": "9334214017273"
+        "barcode": null
       },
       "status": "confirmed_mismatch",
       "shownPack": null,
@@ -8068,7 +8068,7 @@
         "petType": "dog",
         "foodType": "treat (dental)",
         "type": "Treat (Dental) · 7pk",
-        "barcode": null
+        "barcode": "5010394984577"
       },
       "status": "confirmed_mismatch",
       "shownPack": "28-stick box",
@@ -8136,7 +8136,7 @@
         "petType": "dog",
         "foodType": "treat (dental)",
         "type": "Treat (Dental) · 7pk",
-        "barcode": null
+        "barcode": "5998749109113"
       },
       "status": "confirmed_mismatch",
       "shownPack": "56-stick box",
@@ -8340,7 +8340,7 @@
         "petType": "dog",
         "foodType": "treat",
         "type": "Treat · 200g",
-        "barcode": "9319993801510"
+        "barcode": null
       },
       "status": "confirmed_mismatch",
       "shownPack": "150g",
@@ -8514,7 +8514,7 @@
         "petType": "dog",
         "foodType": "treat",
         "type": "Treat · 70g",
-        "barcode": "9357667050055"
+        "barcode": "9353793000063"
       },
       "status": "visual_match",
       "shownPack": "70g",
@@ -16711,7 +16711,7 @@
         "petType": "dog",
         "foodType": "wet",
         "type": "Wet",
-        "barcode": "9310022161100"
+        "barcode": null
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "700 g can",
@@ -25800,7 +25800,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2.5kg",
-        "barcode": "9338362001870"
+        "barcode": null
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -27912,7 +27912,7 @@
         "petType": null,
         "foodType": null,
         "type": "Wet",
-        "barcode": "9334214044231"
+        "barcode": null
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,

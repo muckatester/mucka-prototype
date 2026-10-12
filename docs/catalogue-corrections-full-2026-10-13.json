@@ -1,0 +1,224 @@
+{
+  "checkedAt": "2026-10-13",
+  "description": "Full 624-entry barcode sweep. No physical scans claimed.",
+  "updates": [
+    {
+      "appId": 11,
+      "before": {
+        "barcode": "5010394984584"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code belongs to Pedigree DentaStix Medium 7 chews, a different brand and product.",
+      "sourcePage": "https://vetslovepets.com.au/products/dentastix-medium-180g"
+    },
+    {
+      "appId": 74,
+      "before": {
+        "barcode": "3182550777674"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code belongs to Royal Canin French Bulldog Puppy 10kg, not Cavalier King Charles 1.5kg.",
+      "sourcePage": "https://www.kupony.royalcanin.pl/pdf/regulamin_typ_2024.pdf"
+    },
+    {
+      "appId": 219,
+      "before": {
+        "barcode": "9348601003510"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code identifies Ivory Coat wet cat chicken-and-kangaroo gravy, not dry cat food 2kg.",
+      "sourcePage": "https://www.habitatpets.com.au/collections/ivory-coat/products/ivory-coat-cat-grain-free-chicken-and-kangaroo-in-gravy-wet-food-85g"
+    },
+    {
+      "appId": 221,
+      "before": {
+        "barcode": "9348601004746"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code identifies Ivory Coat indoor cat food 4kg, not SavourLife chicken 2kg.",
+      "sourcePage": "https://petsdomain.com.au/products/ivory-coat-grain-free-indoor-adult-dry-cat-food-chicken-kangaroo-4kg"
+    },
+    {
+      "appId": 239,
+      "before": {
+        "barcode": "0074198612468"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code identifies Taste of the Wild Pacific Stream puppy 6kg, not Rocky Mountain feline 2kg.",
+      "sourcePage": "https://www.kuantokusta.pt/p/4688398/taste-of-the-wild-pacific-stream-puppy-smoked-salmon-6kg"
+    },
+    {
+      "appId": 264,
+      "before": {
+        "barcode": "9334214054780"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code identifies Whiskas kitten chicken and tuna dry food 800g, not a mixed wet pouch.",
+      "sourcePage": "https://www.thewarehouse.co.nz/p/whiskas-kitten-dry-cat-food-chicken-tuna-bag-800g/R2935240.html"
+    },
+    {
+      "appId": 272,
+      "before": {
+        "barcode": "9334214018447"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code identifies Dine Saucy Morsels Ocean Fish seven-tray pack, not the single 85g tray shown in the app photo.",
+      "sourcePage": "https://www.petbarn.com.au/p/dine-saucy-morsels-with-ocean-fish-7-pack"
+    },
+    {
+      "appId": 275,
+      "before": {
+        "barcode": "9334214017273"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code identifies Dine Desire tuna-and-prawn six-can pack; catalogue says tuna fillets single tray, and its photo is also mismatched.",
+      "sourcePage": "https://www.petbarn.com.au/p/dine-desire-tuna-fill-prawn-in-sf-sce-cat-can-85g-6-pack"
+    },
+    {
+      "appId": 341,
+      "before": {
+        "barcode": "9319993801510"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code identifies Blackdog fish-and-chicken sushi 1kg, not the listed 200g pack.",
+      "sourcePage": "https://www.petso.com.au/products/blackdog-fish-chicken-sushi-1kg"
+    },
+    {
+      "appId": 436,
+      "before": {
+        "barcode": "8853301016872"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code identifies Temptations Mixups cat treats 180g, not Snappy Tom wet food 85g.",
+      "sourcePage": "https://www.petbarn.com.au/p/temptations-mixups-tuna-salmon-shrimp-cat-treat-180g"
+    },
+    {
+      "appId": 695,
+      "before": {
+        "barcode": "9310022161100"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code identifies Pedigree Puppy Chicken & Rice dry dog food 2.5kg, not a Leaps & Bounds can.",
+      "sourcePage": "https://drakes.com.au/wp-content/uploads/2025/08/Drakes-Gold-Card-2025-TCs-new.pdf"
+    },
+    {
+      "appId": 1013,
+      "before": {
+        "barcode": "9338362001870"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code identifies Black Hawk wet lamb dog food 400g, not SavourLife dry chicken 2.5kg.",
+      "sourcePage": "https://www.justforpets.com.au/products/black-hawk-grain-free-adult-lamb-wet-dog-food"
+    },
+    {
+      "appId": 1099,
+      "before": {
+        "barcode": "9334214044231"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code identifies Advance chicken-in-jelly wet cat food, not Whiskas adult chicken.",
+      "sourcePage": "https://vetslovepets.com.au/products/advance-adult-chicken-in-jelly-12-x-85g"
+    },
+    {
+      "appId": 332,
+      "before": {},
+      "after": {
+        "barcode": "5010394984577"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Pedigree DentaStix Small, 7 chews/110g. Exact variant barcode in retailer product JSON; confirmed by an Australian retailer barcode list. Online only; packet not scanned.",
+      "sourcePage": "https://vetslovepets.com.au/products/dentastix-small-110g"
+    },
+    {
+      "appId": 333,
+      "before": {},
+      "after": {
+        "barcode": "5010394984584"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Pedigree DentaStix Medium, 7 chews/180g. Exact variant barcode in retailer product JSON; confirmed by an Australian retailer barcode list. Online only; packet not scanned.",
+      "sourcePage": "https://vetslovepets.com.au/products/dentastix-medium-180g"
+    },
+    {
+      "appId": 334,
+      "before": {},
+      "after": {
+        "barcode": "5998749109113"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Pedigree Australia identifies Large/Giant Dog 7pk 270g and SKU 5998749109113. Online only; packet not scanned.",
+      "sourcePage": "https://www.pedigree.com.au/node/23221"
+    },
+    {
+      "appId": 350,
+      "before": {
+        "barcode": "9357667050055"
+      },
+      "after": {
+        "barcode": "9353793000063"
+      },
+      "absentBeforeFields": [],
+      "reason": "FurFresh freeze-dried chicken breast dog-and-cat treats 70g; exact Petbarn structured-data GTIN. Replaces a number independently associated with The Paw Grocer chicken necks 90g. Online only; packet not scanned.",
+      "sourcePage": "https://www.petbarn.com.au/p/furfresh-freeze-dried-chicken-breast-dog-treat-70g"
+    },
+    {
+      "appId": 567,
+      "before": {
+        "name": "t/d Dental Care",
+        "type": "dry"
+      },
+      "after": {
+        "name": "t/d Dental Care Small Bites",
+        "type": "Dry · 2.25kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Hill’s Prescription Diet t/d Small Bites Dental Care dry dog food 2.25kg; exact Petbarn structured-data UPC (leading-zero EAN equivalent). Generic catalogue identity is narrowed to the evidenced SKU. Online only; packet not scanned.",
+      "sourcePage": "https://www.petbarn.com.au/p/hill-s-prescription-diet-t-d-dent-care-sm-bt-adult-dog-food-2-25kg"
+    }
+  ]
+}

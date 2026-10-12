@@ -26,6 +26,26 @@ test('GTIN normalization validates digits and preserves package indicators',()=>
  for(const v of ['9310022360801','<img src=x>','9310 022360800','76344884132','',null,9310022360800])assert.equal(c.normalizeGtin(v),null);
  assert.equal(c.normalizeGtin('036000291452'),c.normalizeGtin('0036000291452'));
 });
+test('Full unresolved-catalogue sweep enables only six sourced packs and removes proven wrong numbers',()=>{
+ const {c}=context(),collector=fs.readFileSync(root+'/mucka-collector.html','utf8');
+ const observed=JSON.parse(fs.readFileSync(root+'/docs/barcode-source-observations-full-2026-10-13.json'));
+ const corrections=JSON.parse(fs.readFileSync(root+'/docs/catalogue-corrections-full-2026-10-13.json'));
+ assert.equal(observed.records.length,6);
+ for(const row of observed.records){
+  const p=c.findProductByBarcode(row.barcode),e=c.getBarcodeEvidence(p);
+  assert.equal(p?.id,row.appId);assert.equal(e.pack,row.pack);
+  assert.equal(e.sourceSha256,row.sourceSha256);assert.equal(e.physicalScanPerformed,false);
+  assert(collector.includes(row.barcode));
+ }
+ const removed=corrections.updates.filter(x=>x.after.barcode===null);
+ assert.equal(removed.length,13);
+ for(const row of removed){
+  const p=c.products.find(x=>x.id===row.appId);
+  assert.equal(p.barcode,null);assert.notEqual(c.findProductByBarcode(row.before.barcode)?.id,row.appId);
+ }
+ assert.equal(c.findProductByBarcode('5010394984584')?.id,333,'Pedigree medium may use a code removed from the wrong brand');
+ assert.equal(c.findProductByBarcode('9357667050055'),null,'Wrong FurFresh number must stay blocked');
+});
 test('Every current usable barcode resolves consistently in app and Collector, including zero-padded scans',()=>{
  const {c}=context();const collector=fs.readFileSync(root+'/mucka-collector.html','utf8');
  const cc=vm.createContext({});vm.runInContext(collector.match(/var KNOWN_BARCODES = new Set\(\[[\s\S]*?\]\);/)[0]+collector.match(/^function normalizeGtin\([\s\S]*?^}/m)[0]+collector.match(/^function isKnownBarcode\([\s\S]*?^}/m)[0],cc);
