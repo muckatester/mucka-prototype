@@ -9,43 +9,44 @@ function renderedIds(element) {
     .map(match => Number(match[1]));
 }
 
-test('Home offers All products and its actual handler opens all 1,080 records', () => {
+test('Home offers All products and its actual handler opens all catalogue records', () => {
   const {c, products, element, screen} = setup();
   c.renderCategoryGrid();
   const button = element('categoryGrid').innerHTML.match(/<button\b[^>]*onclick="([^"]*all-products[^\"]*)"[^>]*>[\s\S]*?<\/button>/);
   assert.ok(button, 'The home grid exposes the All products action');
   assert.match(button[0], />All products</);
-  assert.match(button[0], />1080 products</);
+  assert.match(button[0], />1082 products</);
   vm.runInContext(button[1], c);
   assert.equal(screen(), 'category');
   assert.equal(c.currentCategoryId, 'all-products');
   assert.equal(element('categoryTitle').textContent, 'All products');
-  assert.equal(element('categoryProductCount').textContent, 'Showing 1080 products');
+  assert.equal(element('categoryProductCount').textContent, 'Showing 1082 products');
   assert.equal(c.currentCategoryProducts.length, products.length);
   assert.equal(c.perPage, 20);
   assert.equal(renderedIds(element).length, 20);
 });
 
-test('Next traverses exactly 54 pages, covering every ID once in brand/name/ID order', () => {
+test('Next traverses every catalogue page, covering every ID once in brand/name/ID order', () => {
   const {c, products, element} = setup();
   c.handleCategoryClick('all-products');
   const visited = [];
-  for (let page = 1; page <= 54; page++) {
+  const pageCount = Math.ceil(products.length / c.perPage);
+  for (let page = 1; page <= pageCount; page++) {
     assert.equal(c.currentCategoryPage, page);
     const ids = renderedIds(element);
-    assert.equal(ids.length, 20, 'Twenty cards on page ' + page);
+    assert.equal(ids.length, page === pageCount ? products.length - (pageCount - 1) * c.perPage : c.perPage, 'Cards on page ' + page);
     visited.push(...ids);
     const pagination = element('categoryPagination').innerHTML;
-    assert.ok(pagination.includes('Page ' + page + ' of 54'));
+    assert.ok(pagination.includes('Page ' + page + ' of ' + pageCount));
     assert.equal(pagination.includes('&laquo; Prev'), page > 1);
     const next = pagination.match(/onclick="([^"]+)"[^>]*>Next &raquo;<\/button>/);
-    if (page < 54) {
+    if (page < pageCount) {
       assert.ok(next, 'Next is available on page ' + page);
       vm.runInContext(next[1], c);
     } else assert.equal(next, null, 'The final page has no Next action');
   }
-  assert.equal(visited.length, 1080);
-  assert.equal(new Set(visited).size, 1080, 'No record occurs twice');
+  assert.equal(visited.length, 1082);
+  assert.equal(new Set(visited).size, 1082, 'No record occurs twice');
   assert.deepEqual([...visited].sort((a, b) => a - b), Array.from(products, p => p.id).sort((a, b) => a - b));
   const expected = Array.from(products).sort((a, b) =>
     (a.brand || '').localeCompare(b.brand || '', 'en-AU', {sensitivity: 'base'}) ||
@@ -57,8 +58,8 @@ test('Next traverses exactly 54 pages, covering every ID once in brand/name/ID o
   const previous = element('categoryPagination').innerHTML.match(/onclick="([^"]+)"[^>]*>&laquo; Prev<\/button>/);
   assert.ok(previous);
   vm.runInContext(previous[1], c);
-  assert.equal(c.currentCategoryPage, 53);
-  assert.deepEqual(renderedIds(element), visited.slice(1040, 1060));
+  assert.equal(c.currentCategoryPage, pageCount - 1);
+  assert.deepEqual(renderedIds(element), visited.slice((pageCount - 2) * 20, (pageCount - 1) * 20));
 });
 
 test('Previously omitted products are reachable as cards and open the correct detail', () => {

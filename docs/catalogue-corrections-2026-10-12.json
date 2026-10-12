@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-12",
+  "updates": [
+    {
+      "appId": 1035,
+      "before": {
+        "type": "dry",
+        "barcode": "9334214061627"
+      },
+      "after": {
+        "type": "Dry · 20kg",
+        "barcode": "9334214150352"
+      }
+    },
+    {
+      "appId": 976,
+      "before": {
+        "type": "dry",
+        "barcode": "9392596027556"
+      },
+      "after": {
+        "type": "Dry · 20kg",
+        "barcode": null
+      }
+    }
+  ],
+  "additions": [
+    {
+      "id": 1186,
+      "barcode": "9338362000910",
+      "name": "Original Adult Lamb & Rice",
+      "brand": "Black Hawk",
+      "score": 50,
+      "credScore": 20,
+      "imgBg": "#2d5016",
+      "imgText": "BLACK HAWK",
+      "imgAccent": "#8bc34a",
+      "type": "Dry · 20kg",
+      "petType": "dog",
+      "foodType": "dry",
+      "keyProtein": "Lamb",
+      "vetNutritionist": false,
+      "feedingTrials": false,
+      "wsava": false,
+      "recalls": "",
+      "ingredients": []
+    },
+    {
+      "id": 1187,
+      "barcode": "9343053001237",
+      "name": "Adult Grain Free Chicken & Duck",
+      "brand": "Hypro Premium",
+      "score": 50,
+      "credScore": 20,
+      "imgBg": "#2f7d32",
+      "imgText": "HYPRO PREMIUM",
+      "imgAccent": "#9bd36b",
+      "type": "Dry · 20kg",
+      "petType": "dog",
+      "foodType": "dry",
+      "keyProtein": "Chicken",
+      "vetNutritionist": false,
+      "feedingTrials": false,
+      "wsava": false,
+      "recalls": "",
+      "ingredients": []
+    }
+  ]
+}

@@ -12,6 +12,11 @@ for (const r of records) {
   ids.add(r.appId);
   if (!['pack_match', 'recipe_match_pack_unverified'].includes(r.matchStatus)) throw new Error('Unresolved image: ' + r.appId);
   if (!r.visualChecked || !r.shownPack || !r.identityEvidence || !/^https:\/\//.test(r.sourcePage)) throw new Error('Missing evidence: ' + r.appId);
+  if (r.remoteImageUrl) {
+    if (r.localPath || !/^https:\/\//.test(r.remoteImageUrl) || r.remoteImageUrl.includes(' ')) throw new Error('Invalid remote image: ' + r.appId);
+    continue;
+  }
+  if (!r.localPath || !r.sha256) throw new Error('Missing local image evidence: ' + r.appId);
   let current = root;
   for (const segment of r.localPath.split('/')) {
     if (!segment || ['.', '..'].includes(segment) || !fs.readdirSync(current).includes(segment)) throw new Error('Invalid or incorrectly cased image: ' + r.localPath);
@@ -20,7 +25,7 @@ for (const r of records) {
   if (crypto.createHash('sha256').update(fs.readFileSync(current)).digest('hex') !== r.sha256) throw new Error('Image changed since review: ' + r.appId);
 }
 const minimal = Object.fromEntries(records.map(r => [r.appId, {
-  identity: r.identity, localPath: r.localPath, shownPack: r.shownPack,
+  identity: r.identity, localPath: r.localPath || null, remoteImageUrl: r.remoteImageUrl || null, shownPack: r.shownPack,
   sourcePage: r.sourcePage, sourceKind: r.sourceKind,
   matchStatus: r.matchStatus, checkedDate: r.checkedDate,
 }]));

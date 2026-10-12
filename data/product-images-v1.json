@@ -7196,6 +7196,89 @@
       "checkedDate": "2026-09-22",
       "sha256": "eafe9a316ecca85c33b5e7be7acf947a2c5ce1145effde7065d99f174d552aed",
       "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 1035,
+      "identity": {
+        "brand": "Advance",
+        "name": "Adult All Breed Lamb with Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 20kg",
+        "barcode": "9334214150352"
+      },
+      "localPath": "Dog Kibble/Advance - Adult All Breed Lamb with Rice.webp",
+      "shownPack": "20kg",
+      "sourcePage": "https://www.habitatpets.com.au/products/advance-all-breed-lamb-and-rice-adult-dog-dry-food-20kg",
+      "sourceKind": "retailer",
+      "matchStatus": "pack_match",
+      "identityEvidence": "The package image shows the Advance all-breeds adult Lamb with Rice recipe and 20kg pack; the retailer page independently identifies the same exact 20kg product.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-12",
+      "sha256": "87e7e839760a8eb1a26f8c90c04ecb14f30511e941cbece8a179d5c9e89c35fe",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 976,
+      "identity": {
+        "brand": "Billie's Bowl",
+        "name": "Adult with Aussie Beef",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 20kg",
+        "barcode": null
+      },
+      "localPath": "Dog Kibble/Billie's Bowl - Adult with Aussie Beef.webp",
+      "shownPack": "20kg",
+      "sourcePage": "https://www.petstock.com.au/products/billies-bowl-adult-with-real-aussie-beef-dry-dog-food",
+      "sourceKind": "retailer",
+      "matchStatus": "pack_match",
+      "identityEvidence": "The package image visibly identifies Adult Dogs, Aussie Beef and 20kg; the retailer product page confirms the exact recipe and its 20kg size option.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-12",
+      "sha256": "5910a403f28c5afe75749231b34141d5ac6e3cc81fdf734c18cdd4e9a86b6110",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 1186,
+      "identity": {
+        "brand": "Black Hawk",
+        "name": "Original Adult Lamb & Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 20kg",
+        "barcode": "9338362000910"
+      },
+      "localPath": "Dog Kibble/Black Hawk - Original Adult Lamb & Rice.webp",
+      "shownPack": "20kg",
+      "sourcePage": "https://www.petcity.com.au/product/blackhawk-dog-adult-lamb-rice-20kg",
+      "sourceKind": "retailer",
+      "matchStatus": "pack_match",
+      "identityEvidence": "The package image visibly identifies Original Adult Lamb & Rice and 20kg; the retailer page confirms the exact recipe and pack.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-12",
+      "sha256": "66b5f59212a6e185b0912761395f76dd8b7b6cc0c02ac91cd3384ddda66e391b",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 1187,
+      "identity": {
+        "brand": "Hypro Premium",
+        "name": "Adult Grain Free Chicken & Duck",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 20kg",
+        "barcode": "9343053001237"
+      },
+      "remoteImageUrl": "https://assets.kmart.com.au/transform/b9be2779-4e94-47db-acd7-dbb3a0779088/110020320-1?io=transform%3Aextend%2Cwidth%3A1100%2Cheight%3A1375&quality=90",
+      "shownPack": "20kg",
+      "sourcePage": "https://www.kmart.com.au/product/hypro-premium-adult-all-breeds-dry-dog-food-real-chicken-and-duck-20kg-110020320/",
+      "sourceKind": "retailer",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Retailer product photo shows the Hypro Premium Adult All Breeds Chicken & Duck bag; the page names the exact 20kg pack. Product image is served from the retailer CDN.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-12",
+      "rightsStatus": "Public product image; no licence grant asserted."
     }
   ]
 }

@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parent.parent
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 sources=json.loads((ROOT/'data/product-images-v1.json').read_text())['records']
 legacy=json.loads((ROOT/'data/legacy-image-review-v1.json').read_text())['records']
-paths={r['localPath']:r['sha256'] for r in sources}
+paths={r['localPath']:r['sha256'] for r in sources if r.get('localPath')}
 for r in legacy:
  if r['status'] in ('visual_match','recipe_match_pack_unverified'):
   paths.setdefault(r['imagePath'],r['imageSha256'])

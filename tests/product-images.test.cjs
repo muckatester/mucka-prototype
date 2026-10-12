@@ -12,9 +12,9 @@ test('sourced image assignments retain reviewed asset hashes and embedded data',
   for (const record of manifest.records) {
     const product = c.products.find(p => p.id === record.appId);
     assert.ok(product, 'Catalogue ID ' + record.appId);
-    assert.equal(c.getSourcedProductImage(product)?.localPath, record.localPath);
+    assert.equal(c.getSourcedProductImage(product)?.localPath || c.getSourcedProductImage(product)?.remoteImageUrl, record.localPath || record.remoteImageUrl);
     assert.equal(c.productHasImage(product), true);
-    assert.ok(c.getProductImage(product).includes(c.escapeHtml(record.localPath)));
+    assert.ok(c.getProductImage(product).includes(c.escapeHtml(record.localPath || record.remoteImageUrl)));
   }
 });
 

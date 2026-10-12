@@ -1,5 +1,15 @@
 # Mucka launch review - 22 September 2026
 
+## Current field-test update — 12 October 2026
+
+The preview catalogue now has 1,082 products and the testing build is 2026.10.12.2. There are 311 source-supported barcode lookups, 337 products with no recorded barcode, 388 recorded codes withheld from lookup, and 46 malformed or incomplete values. Eight of the withheld codes have known conflicts. Barcode coverage is still partial.
+
+The user has physically scanned the Leaps & Bounds Beef and Chicken bags and reports that each opened the correct product. Advance Adult Lamb & Rice 20kg, Black Hawk Original Lamb & Rice 20kg and Hypro Chicken & Duck 20kg now have exact-pack retailer evidence and matching app product images; those physical scans still need a short retest. Billie's Bowl Aussie Beef 20kg has its pack size and photo corrected, but its unsupported barcode has been removed. Its printed code must be checked from the bag already on hand before lookup can be enabled.
+
+All 42 automated checks pass, including scanner lookup, catalogue/image identity binding and both user-reported successful scans. A live phone-camera test has not been performed for the three newly corrected codes. Local browser policy blocked opening the local preview page, so hosted visual/browser verification remains pending. Public production is unchanged; PR 2 remains a draft.
+
+The focused source notes and field retest instructions are in [barcode-field-fix-2026-10-12.md](barcode-field-fix-2026-10-12.md). The September worklist remains the record for the rest of the catalogue.
+
 Decision: continue the information-only preview. Do not merge the draft PR or represent this as a validated scanner or health-rating launch.
 
 ## Implemented and checked

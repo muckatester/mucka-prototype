@@ -12,6 +12,10 @@ test('display copies preserve verified originals and cannot bypass identity or w
    assert.match(markup,/<source type="image\/webp"/,'Display copy for '+p.id);
    assert.ok(markup.includes(c.escapeHtml(original)),'Original fallback for '+p.id);
    assert.match(markup,/loading="lazy" decoding="async"/);
+  }else if(source?.remoteImageUrl){
+   assert.match(markup,/<img /,'Remote source image for '+p.id);
+   assert.ok(markup.includes(c.escapeHtml(source.remoteImageUrl)),'Remote product image for '+p.id);
+   assert.doesNotMatch(markup,/<source type="image\/webp"/,'No local derivative claimed for '+p.id);
   }else assert.doesNotMatch(markup,/<source |<img /,'Withheld '+p.id);
   assert.doesNotMatch(c.getProductImage({...p,name:'Different recipe'},52),/<source /,'Changed identity '+p.id);
  }

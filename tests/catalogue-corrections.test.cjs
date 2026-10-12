@@ -31,3 +31,16 @@ test('corrected raw cat foods and feline supplements remain available by categor
   assert.equal(category.match({petType:'dog',foodType:'raw'}),false);
   assert.equal(category.match({petType:'cat',foodType:'dry'}),false);
 });
+
+test('October barcode fixes are explicit, identity-bound catalogue updates', () => {
+  const {c} = setup();
+  assert.equal(c.products.length, 1082);
+  const advance = c.products.find(p => p.id === 1035);
+  assert.equal(advance.type, 'Dry · 20kg');
+  assert.equal(advance.barcode, '9334214150352');
+  const billies = c.products.find(p => p.id === 976);
+  assert.equal(billies.type, 'Dry · 20kg');
+  assert.equal(billies.barcode, null, 'The failed, unverified candidate is not presented as a working code');
+  assert(c.products.some(p => p.id === 1186 && p.brand === 'Black Hawk' && p.type === 'Dry · 20kg' && p.barcode === '9338362000910'));
+  assert(c.products.some(p => p.id === 1187 && p.brand === 'Hypro Premium' && p.type === 'Dry · 20kg' && p.barcode === '9343053001237'));
+});

@@ -521,11 +521,11 @@
       "pack": "18kg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-beef-adult-dog-food-18kg",
       "sourceKind": "retailer",
-      "checkedAt": "2026-09-22",
+      "checkedAt": "2026-10-12",
       "sourceSha256": "d1ce86696bd25c6719aeb8eb90f77c54fd1afe646a41b1153f009a2016228ba5",
       "sourceTitle": "Leaps & Bounds Beef Adult Dog Food 18kg",
-      "observation": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
-      "physicalScanPerformed": false
+      "observation": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. User tested the physical bag in the Mucka app and confirmed the scan opened the correct recipe (user-reported 2026-10-12).",
+      "physicalScanPerformed": true
     },
     {
       "appId": 643,
@@ -773,11 +773,11 @@
       "pack": "18kg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-chicken-lg-brd-adult-dog-food-18kg",
       "sourceKind": "retailer",
-      "checkedAt": "2026-09-22",
+      "checkedAt": "2026-10-12",
       "sourceSha256": "f1eb2946fa45e0b1bf8b5a9a822cb9c7316e5ee1602cda6be29a849fc55364a2",
       "sourceTitle": "Leaps & Bounds Chicken Large Breed Adult Dog Food 18kg",
-      "observation": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. No physical scan performed.",
-      "physicalScanPerformed": false
+      "observation": "Retailer exact product page explicitly identifies this recipe and pack with the recorded GTIN. Previously unspecified catalogue pack is now explicit. Multipack codes identify the stated multipack, not individual units. User tested the physical bag in the Mucka app and confirmed the scan opened the correct recipe (user-reported 2026-10-12).",
+      "physicalScanPerformed": true
     },
     {
       "appId": 665,
@@ -6513,6 +6513,75 @@
       "sourceTitle": "Advance Sensitive Skin & Digestion Chicken with Rice 700g",
       "observation": "Saved pack photograph visibly identifies Advance Adult All Breed Sensitive Skin & Digestion Chicken with Rice 700g and printed EAN 9334214029719. Apple Vision decoded the same EAN. Retailer exact 700g listing corroborates via SKU, not its zero barcode field. Photo SHA256 628ef8e90e14d71828cec1d2e4d913c9ca5583230f5d28e519ae6cb6ab7b6677. Previously unspecified pack now explicit. Saved image decoding only, no physical scan performed.",
       "physicalScanPerformed": false
+    },
+    {
+      "appId": 1035,
+      "identity": {
+        "brand": "Advance",
+        "name": "Adult All Breed Lamb with Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 20kg",
+        "barcode": "9334214150352"
+      },
+      "status": "retailer_pack",
+      "barcode": "9334214150352",
+      "pack": "20kg",
+      "sourcePage": "https://www.habitatpets.com.au/products/advance-all-breed-lamb-and-rice-adult-dog-dry-food-20kg",
+      "sourceKind": "retailer",
+      "checkedAt": "2026-10-12",
+      "sourceTitle": "Advance All Breed Lamb and Rice Adult Dog Dry Food 20kg",
+      "sourceCaptureKind": "local_observation_record",
+      "captureSha256": "fdffc5aa01def94a63853f411ec273b6a27f979e6bfd8db52bcda6a58570a968",
+      "observation": "Retailer listing names the adult all-breeds lamb and rice dry-food recipe and the 20kg pack; its SKU is 9334214150352. The previously stored code identifies a different Advance product. Online observation only; physical scan is pending.",
+      "physicalScanPerformed": false,
+      "captureFile": "docs/barcode-field-fix-2026-10-12.md"
+    },
+    {
+      "appId": 1186,
+      "identity": {
+        "brand": "Black Hawk",
+        "name": "Original Adult Lamb & Rice",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 20kg",
+        "barcode": "9338362000910"
+      },
+      "status": "retailer_pack",
+      "barcode": "9338362000910",
+      "pack": "20kg",
+      "sourcePage": "https://www.petcity.com.au/product/blackhawk-dog-adult-lamb-rice-20kg",
+      "sourceKind": "retailer",
+      "checkedAt": "2026-10-12",
+      "sourceTitle": "Black Hawk Original Adult Lamb & Rice Dog Food 20kg",
+      "sourceCaptureKind": "local_observation_record",
+      "captureSha256": "fdffc5aa01def94a63853f411ec273b6a27f979e6bfd8db52bcda6a58570a968",
+      "observation": "Retailer listing names the exact adult lamb and rice recipe and 20kg pack, and displays Barcode # 9338362000910. Online observation only; physical scan is pending.",
+      "physicalScanPerformed": false,
+      "captureFile": "docs/barcode-field-fix-2026-10-12.md"
+    },
+    {
+      "appId": 1187,
+      "identity": {
+        "brand": "Hypro Premium",
+        "name": "Adult Grain Free Chicken & Duck",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 20kg",
+        "barcode": "9343053001237"
+      },
+      "status": "retailer_pack",
+      "barcode": "9343053001237",
+      "pack": "20kg",
+      "sourcePage": "https://www.petzoo.com.au/hypro-premium-adult-grain-free-dog-food-chicken-du~970134",
+      "sourceKind": "retailer",
+      "checkedAt": "2026-10-12",
+      "sourceTitle": "Hypro Premium Adult Grain Free Dog Food Chicken & Duck 20kg",
+      "sourceCaptureKind": "local_observation_record",
+      "captureSha256": "fdffc5aa01def94a63853f411ec273b6a27f979e6bfd8db52bcda6a58570a968",
+      "observation": "Retailer listing names the adult grain-free Chicken & Duck recipe and 20kg pack, and displays Barcode # 9343053001237. Online observation only; physical scan is pending.",
+      "physicalScanPerformed": false,
+      "captureFile": "docs/barcode-field-fix-2026-10-12.md"
     }
   ]
 }

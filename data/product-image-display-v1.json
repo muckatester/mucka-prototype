@@ -4695,6 +4695,29 @@
       ]
     },
     {
+      "sourcePath": "Dog Kibble/Black Hawk - Original Adult Lamb & Rice.webp",
+      "sourceSha256": "66b5f59212a6e185b0912761395f76dd8b7b6cc0c02ac91cd3384ddda66e391b",
+      "sourceBytes": 82804,
+      "variants": [
+        {
+          "path": "assets/product-images/display/66b5f59212a6e185b0912761-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "876ace7dff59f2d5062b6a9c07956cd002280bf112c9ef57ace2854e8e48a0ab",
+          "bytes": 5444,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/66b5f59212a6e185b0912761-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "2a786558fed7013e69c49e2aee9b20c2b9f5fe1023e7867addb601e894837edf",
+          "bytes": 25718,
+          "bound": 480
+        }
+      ]
+    },
+    {
       "sourcePath": "Dog Kibble/Black Hawk - Puppy Chicken & Rice Small Breed.webp",
       "sourceSha256": "a6d88e5f2823e0ebeecbf86cabaf198b457666af24ae8e395a8211e223b3801c",
       "sourceBytes": 45276,

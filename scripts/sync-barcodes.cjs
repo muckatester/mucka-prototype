@@ -1,4 +1,4 @@
-const fs=require('fs'),path=require('path'),vm=require('vm');
+const fs=require('fs'),path=require('path'),vm=require('vm'),crypto=require('crypto');
 const root=path.resolve(__dirname,'..'),file=path.join(root,'index.html');let html=fs.readFileSync(file,'utf8');
 const products=vm.runInNewContext(html.match(/const products = (\[[\s\S]*?\n\]);/)[1]);
 const evidence=JSON.parse(fs.readFileSync(path.join(root,'data/barcode-evidence-v1.json')));
@@ -7,7 +7,8 @@ const ids=new Set();for(const r of evidence.records){
  if(ids.has(r.appId))throw Error('Duplicate barcode evidence ID');ids.add(r.appId);
  const p=products.find(p=>p.id===r.appId);if(!p||!['brand','name','petType','foodType','type','barcode'].every(k=>(p[k]??null)===r.identity[k]))throw Error('Stale barcode evidence '+r.appId);
  if(!['manufacturer_pack','retailer_pack','conflict'].includes(r.status)||!r.sourcePage.startsWith('https://')||!r.observation)throw Error('Missing evidence');
- if(r.status!=='conflict'&&(!c.normalizeGtin(r.barcode)||!r.pack||!r.sourceSha256))throw Error('Invalid verified barcode');
+ if(r.status!=='conflict'&&(!c.normalizeGtin(r.barcode)||!r.pack||!(r.sourceSha256||r.captureSha256)))throw Error('Invalid verified barcode');
+ if(r.captureSha256){if(!r.captureFile||path.isAbsolute(r.captureFile)||r.captureFile.split(/[\\/]/).includes('..'))throw Error('Invalid capture file '+r.appId);const capture=path.join(root,r.captureFile);if(crypto.createHash('sha256').update(fs.readFileSync(capture)).digest('hex')!==r.captureSha256)throw Error('Barcode evidence capture changed '+r.appId)}
 }
 const conflicts=new Set(evidence.records.filter(r=>r.status==='conflict').map(r=>c.normalizeGtin(r.barcode)).filter(Boolean));
 const byGtin=new Map();for(const p of products){const g=c.normalizeGtin(p.barcode);if(g&&!conflicts.has(g)){const v=byGtin.get(g)||[];v.push(p);byGtin.set(g,v)}}

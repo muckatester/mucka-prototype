@@ -7,7 +7,7 @@ const {test} = require('node:test');
 const {root, html, productsLiteral, fn, setup} = require('./assessment-test-helpers.cjs');
 const baseline = execFileSync('git', ['show', 'fa5b689:index.html'], {cwd: root, encoding: 'utf8', maxBuffer: 10e6});
 
-test('Raw catalogue preserves all 1,080 records and only the documented metadata corrections', () => {
+test('Raw catalogue preserves documented metadata corrections and October barcode updates', () => {
   const expected = JSON.parse(JSON.stringify(vm.runInNewContext(productsLiteral(baseline))));
   const corrections = JSON.parse(fs.readFileSync(path.join(root, 'docs/catalogue-corrections-2026-09-14.json'), 'utf8'));
   for (const change of corrections.changes) {
@@ -17,8 +17,15 @@ test('Raw catalogue preserves all 1,080 records and only the documented metadata
     Object.assign(product, change.after);
     for (const field of change.removeFields || []) delete product[field];
   }
+  const fixes = JSON.parse(fs.readFileSync(path.join(root, 'docs/catalogue-corrections-2026-10-12.json'), 'utf8'));
+  for (const change of fixes.updates) {
+    const product = expected.find(p => p.id === change.appId);
+    for (const [field, value] of Object.entries(change.before)) assert.deepEqual(product[field], value);
+    Object.assign(product, change.after);
+  }
+  expected.push(...fixes.additions);
   const actual = JSON.parse(JSON.stringify(vm.runInNewContext(productsLiteral(html))));
-  assert.equal(actual.length, 1080);
+  assert.equal(actual.length, 1082);
   assert.deepEqual(actual, expected);
 });
 
@@ -33,7 +40,7 @@ test('Every runtime score and subscore is withheld, including records with ingre
   }
 });
 
-test('All 1,080 detail views show neutral assessment and facts without ratings or health flags', () => {
+test('All catalogue detail views show neutral assessment and facts without ratings or health flags', () => {
   const {c, element, timers} = setup();
   for (const p of c.products) {
     c.showProduct(p.id);
@@ -90,8 +97,8 @@ test('Search, browse and favourites retain product access and neutral badges', (
     assert.ok(element('soResults').innerHTML.includes('showProduct(' + id + ')'));
   }
   c.renderCategoryGrid();
-  assert.equal(element('soInput').placeholder, 'Search 1080 products...');
-  assert.equal(element('searchInput').placeholder, 'Search 1080 products...');
+  assert.equal(element('soInput').placeholder, 'Search 1082 products...');
+  assert.equal(element('searchInput').placeholder, 'Search 1082 products...');
 });
 
 test('Injected scores, ingredient ratings and manufacturer flags cannot reactivate public judgements', () => {
@@ -124,7 +131,7 @@ test('User entry preserves ingredient text without assigning heuristic scores or
   element('addIngredients').value = raw;
   c.scoreNewProduct();
   const p = c.products[c.products.length - 1];
-  assert.equal(c.products.length, 1081);
+  assert.equal(c.products.length, 1083);
   assert.equal(p._userIngredientText, raw);
   assert.equal(p.ingredients.length, 0);
   assert.equal(p.score, null); assert.equal(p._ingredientScore, null); assert.equal(p._credScore, null);

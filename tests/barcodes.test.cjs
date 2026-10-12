@@ -41,9 +41,21 @@ test('Every source-checked retailer association resolves only its current identi
  for(const r of c.barcodeEvidence.records.filter(r=>r.status==='retailer_pack')){
   const p=c.products.find(p=>p.id===r.appId);assert(p);assert.equal(c.getBarcodeEvidence(p),r);
   assert.equal(c.findProductByBarcode(r.barcode)?.id,p.id,'Retailer product '+p.id);
-  assert.match(c.getBarcodeStatusText(p),/Printed pack and physical scan not checked/);
+  if(r.physicalScanPerformed) assert.match(c.getBarcodeStatusText(p),/scan checked successfully/);
+  else assert.match(c.getBarcodeStatusText(p),/Printed pack and physical scan not checked/);
   const old=p.type;p.type='changed pack';assert.equal(c.getBarcodeEvidence(p),null);p.type=old;
  }
+});
+
+test('The four reported failed scans now resolve safely or remain withheld pending the printed code',()=>{
+ const {c}=context();
+ assert.equal(c.findProductByBarcode('9334214150352')?.id,1035);
+ assert.equal(c.findProductByBarcode('9334214061627'),null);
+ assert.equal(c.findProductByBarcode('9338362000910')?.id,1186);
+ assert.equal(c.findProductByBarcode('9343053001237')?.id,1187);
+ assert.equal(c.findProductByBarcode('9392596027556'),null);
+ assert.equal(c.getBarcodeStatusText(c.products.find(p=>p.id===976)), 'No barcode recorded - exact pack code needed.');
+ for(const id of [637,662]) assert.match(c.getBarcodeStatusText(c.products.find(p=>p.id===id)),/scan checked successfully/);
 });
 
 test('A format-valid old code cannot open a listing without current product evidence',()=>{
