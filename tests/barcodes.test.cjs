@@ -59,6 +59,21 @@ test('Pet City follow-up enables seven exact retail packs with identity-bound ev
  }
  for(const id of [1059,1106,1108])assert.match(c.products.find(p=>p.id===id).type,/kg/);
 });
+test('Truncated retailer numbers stay blocked while three full GTINs reach their exact packs',()=>{
+ const {c}=context();
+ const raw=fs.readFileSync(root+'/docs/barcode-source-observations-followup-2026-10-13.json');
+ const observed=JSON.parse(raw),sha=crypto.createHash('sha256').update(raw).digest('hex');
+ assert.equal(observed.records.length,3);
+ for(const row of observed.records){
+  const p=c.findProductByBarcode(row.barcode),e=c.getBarcodeEvidence(p);
+  assert.equal(p?.id,row.appId);assert.equal(e.pack,row.pack);
+  assert.equal(e.captureSha256,sha);assert.equal(e.sourceSha256,row.sourceSha256);
+  assert.equal(e.physicalScanPerformed,false);
+ }
+ assert.equal(c.findProductByBarcode('933794007655'),null);
+ assert.equal(c.findProductByBarcode('933794006016'),null);
+ assert.equal(c.products.find(p=>p.id===1010).name,'Grain Free Adult Chicken');
+});
 test('Every current usable barcode resolves consistently in app and Collector, including zero-padded scans',()=>{
  const {c}=context();const collector=fs.readFileSync(root+'/mucka-collector.html','utf8');
  const cc=vm.createContext({});vm.runInContext(collector.match(/var KNOWN_BARCODES = new Set\(\[[\s\S]*?\]\);/)[0]+collector.match(/^function normalizeGtin\([\s\S]*?^}/m)[0]+collector.match(/^function isKnownBarcode\([\s\S]*?^}/m)[0],cc);

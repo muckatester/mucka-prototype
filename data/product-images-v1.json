@@ -6211,11 +6211,11 @@
       "appId": 1010,
       "identity": {
         "brand": "Black Hawk",
-        "name": "Adult Chicken",
+        "name": "Grain Free Adult Chicken",
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2.5kg",
-        "barcode": null
+        "barcode": "9312239041640"
       },
       "localPath": "assets/product-images/batch250-1010-australian_premium.jpg",
       "sourcePage": "https://www.blackhawkpetcare.com/en/products/dog/grain-free-dog-food-chicken/",
@@ -6588,8 +6588,8 @@
         "name": "Chicken Raw Bulk Roll",
         "petType": "dog",
         "foodType": "raw",
-        "type": "raw",
-        "barcode": null
+        "type": "Raw · 2kg roll",
+        "barcode": "9337940007655"
       },
       "localPath": "assets/product-images/1058-big-dog-chickenroll.png",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog/chicken-raw-dog-food-bulk-roll",
@@ -6676,8 +6676,8 @@
         "name": "Sensitive Skin Raw Bulk Roll",
         "petType": "dog",
         "foodType": "raw",
-        "type": "raw",
-        "barcode": null
+        "type": "Raw · 2kg roll",
+        "barcode": "9337940006016"
       },
       "localPath": "Dog Roll/Big Dog - Sensitive Skin Raw Bulk Roll.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog/raw-dog-food-for-sensitive-skin-bulk-roll",

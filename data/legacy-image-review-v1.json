@@ -25694,11 +25694,11 @@
       "imagePath": "Dog Kibble/Black Hawk - Grain Free Adult Lamb.webp",
       "identitySnapshot": {
         "brand": "Black Hawk",
-        "name": "Adult Chicken",
+        "name": "Grain Free Adult Chicken",
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2.5kg",
-        "barcode": null
+        "barcode": "9312239041640"
       },
       "status": "confirmed_mismatch",
       "shownPack": "15kg",

@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-10-13",
+  "updates": [
+    {
+      "appId": 1010,
+      "before": {
+        "brand": "Black Hawk",
+        "name": "Adult Chicken",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 2.5kg",
+        "barcode": null
+      },
+      "after": {
+        "brand": "Black Hawk",
+        "name": "Grain Free Adult Chicken",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 2.5kg",
+        "barcode": "9312239041640"
+      },
+      "changedFields": {
+        "name": "Grain Free Adult Chicken",
+        "barcode": "9312239041640"
+      },
+      "sourcePage": "https://www.petcity.com.au/product/blackhawk-dog-adult-grain-free-chicken-2.5kg",
+      "reason": "Exact retailer product title, species, recipe and retail pack match the catalogue and reviewed pack photograph. Online barcode evidence only; printed packet and physical scan still untested."
+    },
+    {
+      "appId": 1058,
+      "before": {
+        "brand": "Big Dog",
+        "name": "Chicken Raw Bulk Roll",
+        "petType": "dog",
+        "foodType": "raw",
+        "type": "raw",
+        "barcode": null
+      },
+      "after": {
+        "brand": "Big Dog",
+        "name": "Chicken Raw Bulk Roll",
+        "petType": "dog",
+        "foodType": "raw",
+        "type": "Raw · 2kg roll",
+        "barcode": "9337940007655"
+      },
+      "changedFields": {
+        "type": "Raw · 2kg roll",
+        "barcode": "9337940007655"
+      },
+      "sourcePage": "https://petsdomain.com.au/products/big-dog-chicken-for-dogs-2kg",
+      "reason": "Exact retailer product title, species, recipe and retail pack match the catalogue and reviewed pack photograph. Online barcode evidence only; printed packet and physical scan still untested."
+    },
+    {
+      "appId": 1062,
+      "before": {
+        "brand": "Big Dog",
+        "name": "Sensitive Skin Raw Bulk Roll",
+        "petType": "dog",
+        "foodType": "raw",
+        "type": "raw",
+        "barcode": null
+      },
+      "after": {
+        "brand": "Big Dog",
+        "name": "Sensitive Skin Raw Bulk Roll",
+        "petType": "dog",
+        "foodType": "raw",
+        "type": "Raw · 2kg roll",
+        "barcode": "9337940006016"
+      },
+      "changedFields": {
+        "type": "Raw · 2kg roll",
+        "barcode": "9337940006016"
+      },
+      "sourcePage": "https://www.habitatpets.com.au/products/big-dog-barf-sensitive-raw-dog-food-roll-2kg",
+      "reason": "Exact retailer product title, species, recipe and retail pack match the catalogue and reviewed pack photograph. Online barcode evidence only; printed packet and physical scan still untested."
+    }
+  ]
+}
