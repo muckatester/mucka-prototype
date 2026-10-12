@@ -47,7 +47,7 @@ test('Every source-checked retailer association resolves only its current identi
  }
 });
 
-test('Owner-confirmed bag scans and the photo-read Billie code resolve to their exact pack identities',()=>{
+test('Owner-confirmed bag scans resolve to exact pack identities, including Billie’s Bowl',()=>{
  const {c}=context();
  assert.equal(c.findProductByBarcode('9334214150352')?.id,1035);
  assert.equal(c.findProductByBarcode('9334214061627'),null);
@@ -55,8 +55,8 @@ test('Owner-confirmed bag scans and the photo-read Billie code resolve to their 
  assert.equal(c.findProductByBarcode('9343053001237')?.id,1187);
  assert.equal(c.findProductByBarcode('9392596027556')?.id,976);
  for(const id of [1035,1186,1187]) assert.match(c.getBarcodeStatusText(c.products.find(p=>p.id===id)),/scan checked successfully/);
- assert.match(c.getBarcodeStatusText(c.products.find(p=>p.id===976)),/owner-provided photo/);
- assert.match(c.getBarcodeStatusText(c.products.find(p=>p.id===976)),/not yet confirmed/);
+ assert.match(c.getBarcodeStatusText(c.products.find(p=>p.id===976)),/Owner reports successful in-app scan/);
+ assert.match(c.getBarcodeStatusText(c.products.find(p=>p.id===976)),/matches the owner-provided pack photo/);
 });
 
 test('A format-valid old code cannot open a listing without current product evidence',()=>{

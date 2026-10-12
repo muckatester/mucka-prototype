@@ -2,11 +2,11 @@
 
 ## Current field-test update — 12 October 2026
 
-The preview catalogue now has 1,082 products and the testing build is 2026.10.12.3. There are 312 source-supported barcode lookups, 336 products with no recorded barcode, 388 recorded codes withheld from lookup (including eight known conflicts), and 46 malformed or incomplete values. Barcode coverage is still partial.
+The preview catalogue has 1,082 products. The homepage Starter catalogue contains 13 products with individually sourced facts; it is a small evidence-checked sample, not full-catalogue verification. There are 312 source-supported barcode lookups, 336 products with no recorded barcode, 388 recorded codes withheld from lookup (including eight known conflicts), and 46 malformed or incomplete values. Barcode coverage is still partial.
 
-The user reports successful in-app scans for both Leaps & Bounds bags, Advance Adult Lamb & Rice 20kg, Black Hawk Original Lamb & Rice 20kg, and Hypro Chicken & Duck 20kg. Billie's Bowl Aussie Beef 20kg now has barcode 9392596027556 linked from the printed digits in the owner-provided back-label photo. Its in-app camera scan remains pending.
+The user reports successful in-app scans for both Leaps & Bounds bags, Advance Adult Lamb & Rice 20kg, Black Hawk Original Lamb & Rice 20kg, Hypro Chicken & Duck 20kg, and Billie's Bowl Aussie Beef 20kg. The Billie’s Bowl photo-sourced EAN-13 `9392596027556` opened the matching product and pack in the user's app.
 
-All 42 automated checks pass, including scanner lookup, catalogue/image identity binding, legacy score display isolation and the five user-reported successful physical scans. Netlify deployed commit `7037bb234b7c862389dcf5df585a876233a4c55b` successfully to Preview 2. The hosted preview shows version 2026.10.12.3 and 1,082 listings. Billie’s Bowl Aussie Beef 20kg displays the printed code from the owner-provided pack photo; its in-app camera scan is still pending. Use [the version-pinned testing link](https://deploy-preview-2--mucka-prototype.netlify.app/?v=2026.10.12.3) to avoid an old phone-cached copy. Public production is unchanged; PR 2 remains a draft.
+Six user-reported physical scans now resolve to the correct product and pack, including Billie’s Bowl Aussie Beef 20kg. Version 2026.10.13.1 records that result and updates the product’s verification note. The preview link is [version-pinned here](https://deploy-preview-2--mucka-prototype.netlify.app/?v=2026.10.13.1). Barcode coverage remains partial; public production is unchanged and PR 2 remains a draft.
 
 Current counts: 312 source-supported barcode lookups; 336 products with no recorded barcode; 388 recorded codes withheld from lookup (including eight known conflicts); and 46 malformed or incomplete values. Photos display for 831 products (331 sourced and 500 reviewed older assignments); 251 need an accepted photo. These figures are coverage counts, not a claim that all barcodes work.
 
