@@ -1,6 +1,12 @@
 # Mucka launch review
 
-## Current update 13 October 2026
+## Current update 13 October 2026 round two
+
+Testing version **2026.10.13.3** enables **458** exact-pack barcode associations. This round adds **43** across **20 brands**. **624** listings remain unresolved (291 missing and 333 withheld). All **44 automated tests** and four synchronization checks pass. Existing source conflicts remain withheld. No new physical scans were performed.
+
+[Round-two research and sources](barcode-research-round2-2026-10-13.md). Continue the information preview and targeted pack tests. Full coverage and broader launch readiness remain incomplete.
+
+## Earlier update 13 October 2026
 
 Testing version 2026.10.13.2 has 1,082 products and 415 source-supported barcode matches. This round adds 103 exact-pack online associations across 24 brands and removes six wrong associations. 306 barcodes are missing; 361 recorded codes remain withheld (316 unverified, eight conflicts and 37 malformed/incomplete). No normalized duplicates remain.
 

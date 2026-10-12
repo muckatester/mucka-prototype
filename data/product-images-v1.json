@@ -209,7 +209,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2.5kg",
-        "barcode": "9300657014537"
+        "barcode": "735850548722"
       },
       "localPath": "assets/product-images/batch250r2-27.jpg",
       "sourcePage": "https://woononapetfoods.com.au/products/meals-for-mutts-single-protein-grain-free-kangaroo-2-5kg",
@@ -824,15 +824,15 @@
         "name": "Grain Free Adult Lamb Wet",
         "petType": "dog",
         "foodType": "wet",
-        "type": "Wet · 100g tray",
-        "barcode": null
+        "type": "Wet · 100g",
+        "barcode": "9338362001832"
       },
       "localPath": "assets/product-images/batch250-130-australian_premium.png",
       "sourcePage": "https://www.blackhawkpetcare.com/en/products/dog/grain-free-wet-dog-food-tray-lamb/",
       "imageUrl": "https://www.blackhawkpetcare.com/media/1wej2m0f/bhc102-black-hawk-grain-free-dog-wet-lamb-100g-front-hr-1926x1926-ce407a0.png?rmode=max&width=1926&v=1d981644a5a87e0",
       "sourceKind": "manufacturer",
       "shownPack": "100g",
-      "matchStatus": "pack_match",
+      "matchStatus": "recipe_match_pack_unverified",
       "identityEvidence": "Current manufacturer product page identifies recipe, species, form and exact pack; downloaded original photo visually checked. Black Hawk grain free Lamb, dog tray,100g.",
       "visualChecked": true,
       "checkedDate": "2026-09-15",
@@ -891,7 +891,7 @@
         "petType": "dog",
         "foodType": "wet",
         "type": "Wet · 170g",
-        "barcode": "9310768112527"
+        "barcode": "9421016596744"
       },
       "localPath": "assets/product-images/batch250-133-australian_premium.png",
       "sourcePage": "https://ziwipets.com/products/wet-chicken-for-dogs",
@@ -2321,7 +2321,7 @@
         "petType": "dog",
         "foodType": "treat (dental)",
         "type": "Treat (Dental) · 170g",
-        "barcode": "642863101397"
+        "barcode": "642863102929"
       },
       "localPath": "assets/product-images/batch250r2-329.png",
       "sourcePage": "https://www.greenies.com.au/products/greenies-original-petite-dental-dog-treats-170g-10-treats",
@@ -2343,7 +2343,7 @@
         "petType": "dog",
         "foodType": "treat (dental)",
         "type": "Treat (Dental) · 170g",
-        "barcode": "4008429112584"
+        "barcode": "642863102943"
       },
       "localPath": "assets/product-images/batch250r2-331.jpg",
       "sourcePage": "https://www.greenies.com.au/products/greenies-original-large-dental-dog-treats-170g-4-treats",
@@ -3003,7 +3003,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 1.8kg",
-        "barcode": null
+        "barcode": "810339022457"
       },
       "localPath": "assets/product-images/batch250-412-australian_premium.png",
       "sourcePage": "https://www.billyandmargot.com.au/products/puppy-salmon-superfood-blend-dry-dog-food",
@@ -3728,8 +3728,8 @@
         "name": "a/d Urgent Care Recovery",
         "petType": "both",
         "foodType": "wet",
-        "type": "Wet",
-        "barcode": "0052742548302"
+        "type": "Wet · 24 x 156g",
+        "barcode": "052742567013"
       },
       "localPath": "assets/product-images/batch250-550-clinical_major.png",
       "sourcePage": "https://www.hillspet.com.au/dog-food/prescription-diet-ad-urgent-care-canned",
@@ -4080,8 +4080,8 @@
         "name": "Adult Chicken & Rosemary Dry Cat Food",
         "petType": "cat",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 7kg",
+        "barcode": "9345740076481"
       },
       "localPath": "assets/product-images/batch250r2-622.jpg",
       "sourcePage": "https://www.animates.co.nz/leaps-bounds-chicken-and-rosemary-cat-food-32kg.html",
@@ -4300,8 +4300,8 @@
         "name": "Puppy Chicken & Rice Dry",
         "petType": "dog",
         "foodType": "dry",
-        "type": "Dry",
-        "barcode": "9334214063324"
+        "type": "Dry · 15kg",
+        "barcode": "9345740051976"
       },
       "localPath": "assets/product-images/batch250r2-647.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-chicken-with-rice-puppy-food",
@@ -4366,8 +4366,8 @@
         "name": "Chicken, Salmon & Sweet Potato Dog Roll",
         "petType": "dog",
         "foodType": "roll",
-        "type": "roll",
-        "barcode": null
+        "type": "Roll · 2kg",
+        "barcode": "9345740078409"
       },
       "localPath": "assets/product-images/batch250r2-670.jpg",
       "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-chicken-salmon-sweet-potato-dog-roll-2kg",
@@ -5114,8 +5114,8 @@
         "name": "Dental Sticks — Fang Rollin' for Roo",
         "petType": "dog",
         "foodType": "treat",
-        "type": "Treat",
-        "barcode": null
+        "type": "Treat · 200g (5 sticks)",
+        "barcode": "9349592339411"
       },
       "localPath": "assets/product-images/batch250-772-australian_premium.png",
       "sourcePage": "https://petzyo.com.au/products/fang-rollin-for-roo-dental-sticks",

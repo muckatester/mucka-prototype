@@ -804,7 +804,8 @@
         "name": "Grain Free Adult Lamb Wet",
         "petType": "dog",
         "foodType": "wet",
-        "type": "Wet · 100g tray"
+        "type": "Wet · 100g",
+        "barcode": "9338362001832"
       },
       "identityEvidence": {
         "kind": "manufacturer_page_recipe_and_pack",
@@ -852,7 +853,7 @@
           "status": "unknown",
           "value": null,
           "sourceIds": [],
-          "note": "No barcode is recorded in this catalogue entry. A replacement has not been inferred."
+          "note": "Online retailer barcode association recorded separately in barcode-evidence-v1.json on 2026-10-13; manufacturer recipe evidence and its original check date are retained. Printed barcode not checked."
         },
         "lifeStage": {
           "status": "source_checked",

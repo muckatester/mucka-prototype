@@ -539,7 +539,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 13kg",
-        "barcode": "122711000015"
+        "barcode": "9334214064659"
       },
       "status": "visual_match",
       "shownPack": "13kg",
@@ -5586,7 +5586,7 @@
         "petType": "cat",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": "100000019326"
+        "barcode": "9348601004708"
       },
       "status": "visual_match",
       "shownPack": "2 kg bag",
@@ -9568,7 +9568,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 1.8kg",
-        "barcode": null
+        "barcode": "810339020965"
       },
       "status": "visual_match",
       "shownPack": "4lb (1.8kg)",
@@ -10587,8 +10587,8 @@
         "name": "Kitten Chicken",
         "petType": "cat",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 3.5kg",
+        "barcode": "9300605132474"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -14950,8 +14950,8 @@
         "name": "Kitten Chicken Dry Cat Food",
         "petType": "cat",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": "9300681224551"
+        "type": "Dry · 3.2kg",
+        "barcode": "9345740080235"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "3.2 kg bag",
@@ -17200,8 +17200,8 @@
         "name": "Sensitive Skin & Stomach Ocean Fish Dog Food",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": "9339687428342"
+        "type": "Dry · 3.2kg",
+        "barcode": "9345740102265"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "12kg",
@@ -18312,8 +18312,8 @@
         "name": "Kibble That Counts — Chicken & Turkey with Superfood Extras",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 2.5kg",
+        "barcode": "9361300000086"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "8kg",
@@ -20196,8 +20196,8 @@
         "name": "SPD Puppy Fresh Roll Chicken & Brown Rice",
         "petType": "dog",
         "foodType": "fresh",
-        "type": "fresh",
-        "barcode": "9300633948962"
+        "type": "Fresh · 1kg",
+        "barcode": "9340710003030"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "2kg",
@@ -20761,8 +20761,8 @@
         "name": "Adult Healthy Weight Chicken",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 2.6kg",
+        "barcode": "9300605147348"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "6.7kg",
@@ -21033,8 +21033,8 @@
         "name": "FortiFlora Canine Probiotic",
         "petType": "dog",
         "foodType": "supplement",
-        "type": "Supplement",
-        "barcode": "0038100119315"
+        "type": "Supplement · 30 x 1g",
+        "barcode": "038100119315"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "30 sachets; 30g",
@@ -21193,8 +21193,8 @@
         "name": "Kitten Salmon in Gravy",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet",
-        "barcode": null
+        "type": "Wet · 12 x 85g",
+        "barcode": "9300605131552"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "85 g pouch with box",
@@ -21371,8 +21371,8 @@
         "name": "Appetite Control Adult",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet",
-        "barcode": "9335607000872"
+        "type": "Wet · 12 x 85g",
+        "barcode": "9003579014899"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "85 g pouch",
@@ -22428,8 +22428,8 @@
         "name": "Southwest Canyon with Wild Boar",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": "74198611379"
+        "type": "Dry · 2kg",
+        "barcode": "074198612499"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -22722,7 +22722,7 @@
         "name": "Tantalising Turkey Flavour",
         "petType": "cat",
         "foodType": "treat",
-        "type": "Treat",
+        "type": "Treat · 85g",
         "barcode": "8853301001120"
       },
       "status": "recipe_match_pack_unverified",
@@ -23187,7 +23187,7 @@
         "name": "Jerhigh Chicken Tenders",
         "petType": "dog",
         "foodType": "treat",
-        "type": "Treat",
+        "type": "Treat · 200g",
         "barcode": "9312239029143"
       },
       "status": "recipe_match_pack_unverified",
@@ -23271,7 +23271,7 @@
         "name": "Jerhigh Milky Sticks",
         "petType": "dog",
         "foodType": "treat",
-        "type": "Treat",
+        "type": "Treat · 400g",
         "barcode": "9312239029860"
       },
       "status": "recipe_match_pack_unverified",
@@ -25867,8 +25867,8 @@
         "name": "Adult Casserole with Chicken Trays",
         "petType": "dog",
         "foodType": "wet",
-        "type": "Wet",
-        "barcode": null
+        "type": "Wet · 12 x 100g",
+        "barcode": "9334214061535"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "12 x 100g trays",
@@ -26389,8 +26389,8 @@
         "name": "Adult Casserole with Chicken",
         "petType": "dog",
         "foodType": "wet",
-        "type": "Wet",
-        "barcode": "9339687362998"
+        "type": "Wet · 12 x 400g",
+        "barcode": "9334214029672"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "12 x 100g trays",
@@ -26567,8 +26567,8 @@
         "name": "Healthy Weight Adult Chicken",
         "petType": "cat",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 2kg",
+        "barcode": "9334214045689"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "1.5 kg bag",
@@ -26819,7 +26819,7 @@
         "name": "Adult all breeds Healthy Benefits Dental",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
+        "type": "Dry · 2kg",
         "barcode": "9312239047802"
       },
       "status": "recipe_match_pack_unverified",
@@ -26853,7 +26853,7 @@
         "name": "Adult Healthy Benefits Hairball Chicken Cat",
         "petType": "cat",
         "foodType": "dry",
-        "type": "dry",
+        "type": "Dry · 4kg",
         "barcode": "9312239052271"
       },
       "status": "recipe_match_pack_unverified",
@@ -27057,8 +27057,8 @@
         "name": "Beef Jerky Sticks",
         "petType": "dog",
         "foodType": "treat",
-        "type": "treat",
-        "barcode": "9349107001451"
+        "type": "Treat · 100g",
+        "barcode": "9312239048755"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "100g",
@@ -27193,7 +27193,7 @@
         "name": "Original Kitten Chicken",
         "petType": "cat",
         "foodType": "dry",
-        "type": "dry",
+        "type": "Dry · 4kg",
         "barcode": "9312239052219"
       },
       "status": "recipe_match_pack_unverified",
@@ -27868,8 +27868,8 @@
         "name": "Adult Chicken & Salmon with Rice",
         "petType": "dog",
         "foodType": "wet",
-        "type": "Wet",
-        "barcode": "9334214045740"
+        "type": "Wet · 12 x 410g",
+        "barcode": "9334214029702"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "410 g can",
@@ -28999,10 +28999,10 @@
       "identitySnapshot": {
         "brand": "Leaps & Bounds",
         "name": "Grain Free Puppy Lamb & Vegetable",
-        "petType": null,
-        "foodType": null,
-        "type": "Dry",
-        "barcode": null
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 12kg",
+        "barcode": "9345740052072"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "3.2kg",
@@ -29033,10 +29033,10 @@
       "identitySnapshot": {
         "brand": "Leaps & Bounds",
         "name": "Kitten Chicken Dry Cat Food",
-        "petType": null,
-        "foodType": null,
-        "type": "Dry",
-        "barcode": "9334214066479"
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 7kg",
+        "barcode": "9345740125165"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "3.2 kg bag",
@@ -29409,8 +29409,8 @@
         "name": "Large Breed Puppy Chicken",
         "petType": "dog",
         "foodType": "dry",
-        "type": "Dry",
-        "barcode": null
+        "type": "Dry · 18kg",
+        "barcode": "9300605147591"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "18kg",

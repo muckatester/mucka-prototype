@@ -31,6 +31,13 @@ test('Raw catalogue preserves documented metadata corrections and October barcod
     for (const field of change.absentBeforeFields || []) assert.equal(Object.hasOwn(product, field), false);
     Object.assign(product, change.after);
   }
+  const round2 = JSON.parse(fs.readFileSync(path.join(root, 'docs/catalogue-corrections-round2-2026-10-13.json'), 'utf8'));
+  for (const change of round2.updates) {
+    const product = expected.find(p => p.id === change.appId);
+    for (const [field, value] of Object.entries(change.before)) assert.deepEqual(product[field], value);
+    for (const field of change.absentBeforeFields || []) assert.equal(Object.hasOwn(product, field), false);
+    Object.assign(product, change.after);
+  }
   const actual = JSON.parse(JSON.stringify(vm.runInNewContext(productsLiteral(html))));
   assert.equal(actual.length, 1082);
   assert.deepEqual(actual, expected);
@@ -92,7 +99,7 @@ test('Wrong Dine barcode stays removed and four corrected wet products resolve t
     assert.equal(p.foodType, 'wet');
   }
   c.showProduct(488);
-  assert.match(element('assessmentNotice').textContent, /barcode mismatch/);
+  assert.match(element('assessmentNotice').textContent, /3.5kg pack barcode checked/);
   c.showProduct(1094);
   assert.match(element('assessmentNotice').textContent, /Health ratings are paused/);
   assert.doesNotMatch(element('assessmentNotice').textContent, /barcode mismatch|Placeholder score/);

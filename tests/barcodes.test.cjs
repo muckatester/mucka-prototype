@@ -15,7 +15,7 @@ test('October research observations bind each new barcode to its sourced pack an
   assert.equal(e.physicalScanPerformed,false);
  }
  for(const r of observations.records.filter(r=>r.action==='remove_incorrect_association')){
-  assert.equal(c.products.find(p=>p.id===r.appId).barcode,null);
+  assert.notEqual(c.products.find(p=>p.id===r.appId).barcode,r.oldBarcode);
   assert.notEqual(c.findProductByBarcode(r.oldBarcode)?.id,r.appId);
  }
  assert.equal(c.findProductByBarcode('29334214046833')?.id,362);
@@ -84,4 +84,14 @@ test('A format-valid old code cannot open a listing without current product evid
  assert(p);assert.equal(c.findProductByBarcode(p.barcode),null);
  const verified=c.barcodeEvidence.records.find(r=>r.status==='retailer_pack');const product=c.products.find(p=>p.id===verified.appId);
  assert.equal(c.findProductByBarcode(product.barcode).id,product.id);product.type+=' changed';assert.equal(c.findProductByBarcode(product.barcode),null);
+});
+
+ test('Second research batch binds 43 exact packs without overriding unresolved conflicts',()=>{
+ const {c}=context();const raw=fs.readFileSync(root+'/docs/barcode-source-observations-round2-2026-10-13.json');
+ const records=JSON.parse(raw).records,sha=crypto.createHash('sha256').update(raw).digest('hex');assert.equal(records.length,43);
+ for(const r of records){const p=c.findProductByBarcode(r.barcode),e=c.getBarcodeEvidence(p);assert.equal(p?.id,r.appId);assert.equal(e.pack,r.pack);assert.equal(e.captureSha256,sha);assert.equal(e.sourceSha256,r.sourceSha256);assert.equal(e.physicalScanPerformed,false);}
+ assert.equal(c.findProductByBarcode('9300605131590'),null,'Prior single-pouch/carton conflict remains withheld');
+ assert.equal(c.findProductByBarcode('9349595439415'),null,'Manufacturer repeats one code for two Fang flavours');
+ assert.equal(c.findProductByBarcode('9772903232529'),null,'Manufacturer repeats one code for 4kg and 8kg packs');
+ assert.equal(c.findProductByBarcode('9310022567308')?.type,'Dry · 3kg');
 });
