@@ -473,7 +473,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": null
+        "barcode": "9310022161308"
       },
       "localPath": "assets/product-images/batch250-82-mars_purina.png",
       "sourcePage": "https://www.pedigree.com.au/our-products/dry/pedigree-adult-dry-dog-food-real-beef",
@@ -495,7 +495,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": null
+        "barcode": "9310022160905"
       },
       "localPath": "assets/product-images/batch25-83-pedigree.png",
       "sourcePage": "https://www.pedigree.com.au/our-products/dry/pedigree-adult-dry-dog-food-real-beef-vegies",
@@ -803,7 +803,7 @@
         "petType": "dog",
         "foodType": "wet",
         "type": "Wet · 100g tray",
-        "barcode": null
+        "barcode": "9338362001818"
       },
       "localPath": "assets/product-images/batch250-129-australian_premium.png",
       "sourcePage": "https://www.blackhawkpetcare.com/en/products/dog/grain-free-wet-dog-food-tray-chicken/",
@@ -869,7 +869,7 @@
         "petType": "dog",
         "foodType": "wet",
         "type": "Wet · 170g",
-        "barcode": "9310768115337"
+        "barcode": "9421016596669"
       },
       "localPath": "assets/product-images/batch250-132-australian_premium.png",
       "sourcePage": "https://ziwipets.com/products/canned-beef-dog-food",
@@ -913,7 +913,7 @@
         "petType": "dog",
         "foodType": "wet",
         "type": "Wet · 170g",
-        "barcode": "9310768115344"
+        "barcode": "9421016596720"
       },
       "localPath": "assets/product-images/batch250-135-australian_premium.png",
       "sourcePage": "https://ziwipets.com/products/mackerel-lamb-dog-food",
@@ -935,7 +935,7 @@
         "petType": "dog",
         "foodType": "wet",
         "type": "Wet · 170g",
-        "barcode": null
+        "barcode": "9421016596683"
       },
       "localPath": "assets/product-images/batch250-136-australian_premium.png",
       "sourcePage": "https://ziwipets.com/products/canned-venison-dog-food",
@@ -1990,15 +1990,15 @@
         "name": "Instinctive Adult Gravy Pouch",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet · 85g pouch",
-        "barcode": "9339687419951"
+        "type": "Wet · 85g",
+        "barcode": "9003579308936"
       },
       "localPath": "assets/product-images/batch250-285-clinical_major.jpg",
       "sourcePage": "https://www.royalcanin.com/ae/cats/products/retail-products/instinctive-gravy-4059",
       "imageUrl": "https://marspetcareaprimocdn.petcare.global/c0ad113e-9e4a-487a-b3f4-b1ef00126b04/c0ad113e-9e4a-487a-b3f4-b1ef00126b04_DownloadAsJpg.jpg",
       "sourceKind": "manufacturer",
       "shownPack": "85g pouch",
-      "matchStatus": "pack_match",
+      "matchStatus": "recipe_match_pack_unverified",
       "identityEvidence": "Viewed original manufacturer photo: Royal Canin Instinctive Gravy; single85g cat pouch with gravy stated.",
       "visualChecked": true,
       "checkedDate": "2026-09-15",
@@ -2012,15 +2012,15 @@
         "name": "Kitten in Gravy Pouch",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet · 85g pouch",
-        "barcode": "100000141396"
+        "type": "Wet · 85g",
+        "barcode": "9003579308943"
       },
       "localPath": "assets/product-images/batch250-286-clinical_major.jpg",
       "sourcePage": "https://www.royalcanin.com/au/cats/products/retail-products/kitten-gravy-4058",
       "imageUrl": "https://marspetcareaprimocdn.petcare.global/4b6e2331-f04f-4dce-b952-b2490009a7b0/4b6e2331-f04f-4dce-b952-b2490009a7b0_DownloadAsJpg.jpg",
       "sourceKind": "manufacturer",
       "shownPack": "85g pouch",
-      "matchStatus": "pack_match",
+      "matchStatus": "recipe_match_pack_unverified",
       "identityEvidence": "Viewed original manufacturer photo: Royal Canin Kitten Chunks in gravy; single85g cat pouch with gravy stated.",
       "visualChecked": true,
       "checkedDate": "2026-09-15",
@@ -2299,7 +2299,7 @@
         "petType": "dog",
         "foodType": "treat",
         "type": "Treat · 165g",
-        "barcode": "9347810001669"
+        "barcode": "9347810000167"
       },
       "localPath": "assets/product-images/326-savourlife-training-kangaroo.png",
       "sourcePage": "https://www.savour-life.com.au/our-range/natural-treats/training-treats/australian-kangaroo/",
@@ -2430,7 +2430,7 @@
         "name": "Strapz Beef",
         "petType": "dog",
         "foodType": "treat",
-        "type": "Treat · 500g",
+        "type": "Treat · 1kg",
         "barcode": "9310022195402"
       },
       "localPath": "assets/product-images/batch250r2-335.png",
@@ -2438,7 +2438,7 @@
       "imageUrl": "https://www.schmackos.com.au/sites/g/files/fnmzdf4436/files/2025-08/9310022129001_A1N1_EN.png",
       "sourceKind": "manufacturer",
       "shownPack": "500g",
-      "matchStatus": "pack_match",
+      "matchStatus": "recipe_match_pack_unverified",
       "identityEvidence": "Manufacturer page and inspected front agree on named flavour, species and 500g. ",
       "visualChecked": true,
       "checkedDate": "2026-09-22",
@@ -2694,15 +2694,15 @@
         "name": "Creamy Treats Chicken",
         "petType": "cat",
         "foodType": "treat",
-        "type": "Treat · 4x12g",
-        "barcode": "9334214049496"
+        "type": "Treat · 4 x 12g",
+        "barcode": "9334214038810"
       },
       "localPath": "assets/product-images/batch250-361-mars_purina.png",
       "sourcePage": "https://www.dine.com.au/cat-treats/creamy-chicken-cat-treats",
       "imageUrl": "https://www.dine.com.au/sites/g/files/fnmzdf2756/files/2023-04/DINE%C2%AE%20Creamy%20Treats%20Chicken-min.png",
       "sourceKind": "manufacturer",
       "shownPack": "4 x 12g",
-      "matchStatus": "pack_match",
+      "matchStatus": "recipe_match_pack_unverified",
       "identityEvidence": "Manufacturer page and viewed original pack identify Dine Chicken Flavour creamy cat treats, 4 x 12g.",
       "visualChecked": true,
       "checkedDate": "2026-09-15",
@@ -2716,15 +2716,15 @@
         "name": "Creamy Treats Mixed Seafood",
         "petType": "cat",
         "foodType": "treat",
-        "type": "Treat · 32x12g",
-        "barcode": "9334214046846"
+        "type": "Treat · 8 x 4 x 12g",
+        "barcode": "29334214046833"
       },
       "localPath": "assets/product-images/batch250-362-mars_purina.png",
       "sourcePage": "https://www.dine.com.au/our-products/treats/dine-creamy-treats/mixed-seafood-flavour",
       "imageUrl": "https://www.dine.com.au/sites/g/files/fnmzdf2756/files/2025-10/9334214063676_A1N1_EN-removebg-preview.png",
       "sourceKind": "manufacturer",
       "shownPack": "32x12g",
-      "matchStatus": "pack_match",
+      "matchStatus": "recipe_match_pack_unverified",
       "identityEvidence": "Manufacturer recipe title and original viewed packaging agree on Dine Creamy Treats Mixed Seafood, cat food/treat, and pictured quantity.",
       "visualChecked": true,
       "checkedDate": "2026-09-15",
@@ -3574,8 +3574,8 @@
         "name": "Gravy Lovers Poultry & Beef",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet",
-        "barcode": "8850127003918"
+        "type": "Wet · 24 x 85g",
+        "barcode": "050000580064"
       },
       "localPath": "assets/product-images/batch250-504-mars_purina.jpg",
       "sourcePage": "https://www.target.com/p/-/A-14766221",
@@ -7048,10 +7048,10 @@
       "identity": {
         "brand": "My Dog",
         "name": "Classic Loaf Chicken & Turkey",
-        "petType": null,
-        "foodType": null,
-        "type": "Wet",
-        "barcode": "9310022067709"
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 400g",
+        "barcode": "9310022067105"
       },
       "localPath": "assets/product-images/1145-my-dog-chicken-turkey-680g.png",
       "sourcePage": "https://www.mydog.com.au/our-products/classic-loaf/classic-loaf-with-wholesome-chicken-and-turkey-680g",
@@ -7070,10 +7070,10 @@
       "identity": {
         "brand": "My Dog",
         "name": "Classic Loaf Tender Chicken",
-        "petType": null,
-        "foodType": null,
-        "type": "Wet",
-        "barcode": null
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 6 x 100g",
+        "barcode": "9334214006550"
       },
       "localPath": "assets/product-images/148-my-dog-chicken-100g.png",
       "sourcePage": "https://www.mydog.com.au/our-products/classic-loaf/classic-loaf-with-tender-chicken",
@@ -7278,6 +7278,26 @@
       "identityEvidence": "Retailer product photo shows the Hypro Premium Adult All Breeds Chicken & Duck bag; the page names the exact 20kg pack. Product image is served from the retailer CDN.",
       "visualChecked": true,
       "checkedDate": "2026-10-12",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 1116,
+      "identity": {
+        "brand": "Dine",
+        "name": "Creamy Treats Tuna & Prawn",
+        "petType": "cat",
+        "foodType": "treat",
+        "type": "Treat · 4 x 12g",
+        "barcode": "9334214046815"
+      },
+      "remoteImageUrl": "https://cdn.shopify.com/s/files/1/0232/9912/9424/products/dine-creamy-treats-tuna-prawn-4x12g-275596.jpg?v=1752134306&width=600",
+      "shownPack": "4 x 12g",
+      "sourcePage": "https://woononapetfoods.com.au/products/dine-creamy-treats-tuna-prawn-4x12g",
+      "sourceKind": "retailer",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Visually checked retailer photo reads Dine Creamy Treats Tuna & Prawn Flavour, 4 x 12g. Correct recipe photograph replaces the older tuna-only image for the source-supported barcode association.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-13",
       "rightsStatus": "Public product image; no licence grant asserted."
     }
   ]

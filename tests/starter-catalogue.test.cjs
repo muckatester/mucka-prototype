@@ -90,13 +90,22 @@ test('Unknown and conflicting claims stay withheld and untrusted source text sta
   assert.equal(c.getEvidenceLinks(r, [r.sources[0].id]), '');
 });
 
-test('Confirmed conflicting barcodes cannot match in either scanner or Collector', () => {
+test('Removed wrong associations stay blocked unless explicitly reassigned to the correct sourced pack', () => {
   const {c} = setup();
   vm.runInContext(html.match(/var BARCODE_MAP = \{[\s\S]*?\n};/)[0] + fn('findProductByBarcode'), c);
   const collector = fs.readFileSync(path.join(root, 'mucka-collector.html'), 'utf8');
   vm.runInContext(collector.match(/var KNOWN_BARCODES = new Set\(\[[\s\S]*?\]\);/)[0], c);
   const corrections = JSON.parse(fs.readFileSync(path.join(root, 'docs/catalogue-corrections-2026-09-14.json')));
   for (const {barcode: code} of corrections.collectorBarcodeRemovals) {
+    if (code === '9300605149519') {
+      // Removed from wet food #157 in September; independently sourced as dry 2.5kg #79 in October.
+      const matched = c.findProductByBarcode(code);
+      assert.equal(matched.id, 79);
+      assert.equal(matched.foodType, 'dry');
+      assert.equal(matched.type, 'Dry · 2.5kg');
+      assert.equal(c.KNOWN_BARCODES.has(code), true);
+      continue;
+    }
     assert.equal(c.findProductByBarcode(code), null);
     assert.equal(c.KNOWN_BARCODES.has(code), false);
   }

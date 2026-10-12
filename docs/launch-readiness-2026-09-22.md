@@ -1,18 +1,16 @@
-# Mucka launch review - 22 September 2026
+# Mucka launch review
 
-## Current field-test update — 12 October 2026
+## Current update 13 October 2026
 
-The preview catalogue has 1,082 products. The homepage Starter catalogue contains 13 products with individually sourced facts; it is a small evidence-checked sample, not full-catalogue verification. There are 312 source-supported barcode lookups, 336 products with no recorded barcode, 388 recorded codes withheld from lookup (including eight known conflicts), and 46 malformed or incomplete values. Barcode coverage is still partial.
+Testing version 2026.10.13.2 has 1,082 products and 415 source-supported barcode matches. This round adds 103 exact-pack online associations across 24 brands and removes six wrong associations. 306 barcodes are missing; 361 recorded codes remain withheld (316 unverified, eight conflicts and 37 malformed/incomplete). No normalized duplicates remain.
 
-The user reports successful in-app scans for both Leaps & Bounds bags, Advance Adult Lamb & Rice 20kg, Black Hawk Original Lamb & Rice 20kg, Hypro Chicken & Duck 20kg, and Billie's Bowl Aussie Beef 20kg. The Billie’s Bowl photo-sourced EAN-13 `9392596027556` opened the matching product and pack in the user's app.
+The owner reports six successful physical scans: both Leaps & Bounds bags, Advance Lamb & Rice 20kg, Black Hawk Lamb & Rice 20kg, Hypro Chicken & Duck 20kg, and Billie’s Bowl Aussie Beef 20kg. New online matches are not physical scan confirmations.
 
-Six user-reported physical scans now resolve to the correct product and pack, including Billie’s Bowl Aussie Beef 20kg. Version 2026.10.13.1 records that result and updates the product’s verification note. The preview link is [version-pinned here](https://deploy-preview-2--mucka-prototype.netlify.app/?v=2026.10.13.1). Barcode coverage remains partial; public production is unchanged and PR 2 remains a draft.
+All 43 automated checks pass. Photos display for 831 products (332 sourced, 499 reviewed older assignments); 251 gaps remain. Starter catalogue evidence still covers 13 selected records. The old scores appear only as unvalidated detail-page history; health rankings and recommendations remain paused.
 
-Current counts: 312 source-supported barcode lookups; 336 products with no recorded barcode; 388 recorded codes withheld from lookup (including eight known conflicts); and 46 malformed or incomplete values. Photos display for 831 products (331 sourced and 500 reviewed older assignments); 251 need an accepted photo. These figures are coverage counts, not a claim that all barcodes work.
+[Current research and sources](barcode-research-2026-10-13.md) and [testing preview](https://deploy-preview-2--mucka-prototype.netlify.app/?v=2026.10.13.2).
 
-The focused source notes and field retest instructions are in [barcode-field-fix-2026-10-12.md](barcode-field-fix-2026-10-12.md). The September worklist remains the record for the rest of the catalogue.
-
-Decision: continue the information-only preview. Do not merge the draft PR or represent this as a validated scanner or health-rating launch.
+Decision: continue the information preview and targeted pack tests. Full barcode coverage and broader launch readiness are not complete. Production remains unchanged and PR 2 remains a draft.
 
 ## Implemented and checked
 

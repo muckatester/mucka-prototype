@@ -680,7 +680,8 @@
         "name": "Grain Free Adult Chicken Wet",
         "petType": "dog",
         "foodType": "wet",
-        "type": "Wet · 100g tray"
+        "type": "Wet · 100g tray",
+        "barcode": "9338362001818"
       },
       "identityEvidence": {
         "kind": "manufacturer_page_recipe_and_pack",
@@ -728,7 +729,7 @@
           "status": "unknown",
           "value": null,
           "sourceIds": [],
-          "note": "No barcode is recorded in this catalogue entry. A replacement has not been inferred."
+          "note": "Online retailer barcode association recorded separately in barcode-evidence-v1.json on 2026-10-13; manufacturer recipe evidence and its original check date are retained. Printed barcode not checked."
         },
         "lifeStage": {
           "status": "source_checked",
@@ -1174,10 +1175,10 @@
       "catalogueIdentity": {
         "brand": "Savourlife",
         "name": "Australian Chicken Training Treats",
-        "barcode": "9347810000174",
         "petType": "dog",
         "foodType": "treat",
-        "type": "Treat · 165g"
+        "type": "Treat · 165g",
+        "barcode": "9347810000174"
       },
       "identityEvidence": {
         "kind": "manufacturer_page_recipe_and_pack",
@@ -1225,7 +1226,7 @@
           "status": "unknown",
           "value": null,
           "sourceIds": [],
-          "note": "Catalogue barcode has not been verified against a printed manufacturer barcode; matching is by named recipe and stated pack, not barcode."
+          "note": "Online retailer barcode association recorded separately in barcode-evidence-v1.json on 2026-10-13; manufacturer recipe evidence and its original check date are retained. Printed barcode not checked."
         },
         "lifeStage": {
           "status": "unknown",
@@ -1292,10 +1293,10 @@
       "catalogueIdentity": {
         "brand": "Savourlife",
         "name": "Australian Kangaroo Training Treats",
-        "barcode": "9347810001669",
         "petType": "dog",
         "foodType": "treat",
-        "type": "Treat · 165g"
+        "type": "Treat · 165g",
+        "barcode": "9347810000167"
       },
       "identityEvidence": {
         "kind": "manufacturer_page_recipe_and_pack",
@@ -1343,7 +1344,7 @@
           "status": "unknown",
           "value": null,
           "sourceIds": [],
-          "note": "Catalogue barcode has not been verified against a printed manufacturer barcode; matching is by named recipe and stated pack, not barcode."
+          "note": "Online retailer barcode association recorded separately in barcode-evidence-v1.json on 2026-10-13; manufacturer recipe evidence and its original check date are retained. Printed barcode not checked."
         },
         "lifeStage": {
           "status": "unknown",

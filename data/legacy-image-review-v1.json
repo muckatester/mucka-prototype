@@ -434,10 +434,10 @@
       "identitySnapshot": {
         "brand": "Absolute Holistic",
         "name": "Raw Stew — Chicken & Shellfish",
-        "petType": "dog",
-        "foodType": "raw",
-        "type": "raw",
-        "barcode": null
+        "petType": "both",
+        "foodType": "wet",
+        "type": "Wet · 80g",
+        "barcode": "671875797311"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -468,10 +468,10 @@
       "identitySnapshot": {
         "brand": "Absolute Holistic",
         "name": "Raw Stew — Chicken & Fish Roe",
-        "petType": "dog",
-        "foodType": "raw",
-        "type": "raw",
-        "barcode": "780348001227"
+        "petType": "both",
+        "foodType": "wet",
+        "type": "Wet · 80g",
+        "barcode": "671875797328"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -879,7 +879,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2.5kg",
-        "barcode": "100000019342"
+        "barcode": "9347810000501"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -981,7 +981,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": "0064992090685"
+        "barcode": "064992108458"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -1015,7 +1015,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": "0064992281182"
+        "barcode": "064992106454"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -1049,7 +1049,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": null
+        "barcode": "064992101459"
       },
       "status": "visual_match",
       "shownPack": "2kg",
@@ -1083,7 +1083,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": null
+        "barcode": "064992104450"
       },
       "status": "visual_match",
       "shownPack": "2kg",
@@ -1389,7 +1389,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": "74198615070"
+        "barcode": "074198612277"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -1423,7 +1423,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": "74198609581"
+        "barcode": "074198612239"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -1491,7 +1491,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": "74198611010"
+        "barcode": "074198612345"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -1831,7 +1831,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 1.81kg",
-        "barcode": "0052742296609"
+        "barcode": "052742297200"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -1933,7 +1933,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 4kg",
-        "barcode": "3182550401937"
+        "barcode": "3182550402224"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -1967,7 +1967,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": "9003579008201"
+        "barcode": "3182550793001"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -2273,7 +2273,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2.5kg",
-        "barcode": null
+        "barcode": "9300605149519"
       },
       "status": "visual_match",
       "shownPack": "2.5kg",
@@ -2443,7 +2443,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 20kg",
-        "barcode": "9310022161308"
+        "barcode": null
       },
       "status": "visual_match",
       "shownPack": "20kg",
@@ -2749,7 +2749,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": null
+        "barcode": "9334214019482"
       },
       "status": "visual_match",
       "shownPack": "3kg",
@@ -2783,7 +2783,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 15kg",
-        "barcode": null
+        "barcode": "9334214027319"
       },
       "status": "visual_match",
       "shownPack": "15kg",
@@ -2885,7 +2885,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": null
+        "barcode": "9334214060729"
       },
       "status": "visual_match",
       "shownPack": "3kg",
@@ -3599,7 +3599,7 @@
         "petType": "dog",
         "foodType": "wet",
         "type": "Wet · 170g",
-        "barcode": null
+        "barcode": "9421016596645"
       },
       "status": "visual_match",
       "shownPack": "170 g can",
@@ -3979,10 +3979,10 @@
         "name": "Adult Chicken & Barley Entrée",
         "petType": "dog",
         "foodType": "wet",
-        "type": "Wet · 370g can",
-        "barcode": null
+        "type": "Wet · 370g",
+        "barcode": "052742703701"
       },
-      "status": "visual_match",
+      "status": "recipe_match_pack_unverified",
       "shownPack": "370 g can",
       "observedText": "Hill's Science Diet Adult 1-6 with Chicken & Barley; dog; 370g",
       "reason": "Visible adult chicken/barley dog wet recipe and 370 g can agree.",
@@ -4013,8 +4013,8 @@
         "name": "Puppy Chicken & Barley Entrée",
         "petType": "dog",
         "foodType": "wet",
-        "type": "Wet · 370g can",
-        "barcode": null
+        "type": "Wet · 370g",
+        "barcode": "052742703602"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -4047,10 +4047,10 @@
         "name": "Mini Adult Wet Pouch",
         "petType": "dog",
         "foodType": "wet",
-        "type": "Wet · 85g pouch",
-        "barcode": "5060333431792"
+        "type": "Wet · 85g",
+        "barcode": "9003579008256"
       },
-      "status": "visual_match",
+      "status": "recipe_match_pack_unverified",
       "shownPack": "85g pouch",
       "observedText": "Royal Canin Mini Adult; dogs up to 10kg; morsels in gravy; 85g pouch",
       "reason": "Visible mini adult dog wet pouch and 85g pack agree with the catalogue.",
@@ -4081,10 +4081,10 @@
         "name": "Medium Adult Wet Pouch",
         "petType": "dog",
         "foodType": "wet",
-        "type": "Wet · 140g pouch",
-        "barcode": "3182550402271"
+        "type": "Wet · 140g",
+        "barcode": "9003579008379"
       },
-      "status": "visual_match",
+      "status": "recipe_match_pack_unverified",
       "shownPack": "140g pouch",
       "observedText": "Royal Canin Medium Adult; dogs 11-25kg; chunks in gravy; 140g pouch",
       "reason": "Visible medium adult dog wet pouch and 140g pack agree with the catalogue.",
@@ -5654,7 +5654,7 @@
         "petType": "cat",
         "foodType": "dry",
         "type": "Dry · 1.5kg",
-        "barcode": null
+        "barcode": "9300605133099"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -6435,10 +6435,10 @@
         "name": "Classic Paté Beef & Chicken Feast",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet · 85g can",
-        "barcode": "050000429844"
+        "type": "Wet · 85g",
+        "barcode": "8850124099228"
       },
-      "status": "visual_match",
+      "status": "recipe_match_pack_unverified",
       "shownPack": "85 g can",
       "observedText": "Fancy Feast Beef & Chicken Feast Classic Paté; 85g; cat",
       "reason": "Visible brand, recipe, cat species, can form and weight agree.",
@@ -6469,10 +6469,10 @@
         "name": "Grilled in Gravy Tuna Feast",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet · 85g can",
+        "type": "Wet · 85g",
         "barcode": "050000836123"
       },
-      "status": "visual_match",
+      "status": "recipe_match_pack_unverified",
       "shownPack": "85 g can",
       "observedText": "Fancy Feast Tuna Feast in Gravy Grilled; 85g; cat",
       "reason": "Visible brand, recipe, cat species, can form and weight agree.",
@@ -6775,10 +6775,10 @@
         "name": "Tuna Fillet with Prawn in Broth",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet · 70g can",
-        "barcode": "5060122490511"
+        "type": "Wet · 70g",
+        "barcode": "5060122497879"
       },
-      "status": "visual_match",
+      "status": "recipe_match_pack_unverified",
       "shownPack": "70 g can",
       "observedText": "Applaws natural cat food; Tuna Fillet with Prawn in broth; 70g",
       "reason": "Visible brand, recipe, cat species, can form and weight agree.",
@@ -7558,7 +7558,7 @@
         "petType": "cat",
         "foodType": "air-dried",
         "type": "Air-Dried · 400g",
-        "barcode": "9421016595815"
+        "barcode": "9421016594849"
       },
       "status": "visual_match",
       "shownPack": "400 g pouch",
@@ -8238,7 +8238,7 @@
         "petType": "dog",
         "foodType": "treat",
         "type": "Treat · 500g",
-        "barcode": null
+        "barcode": "9334214041889"
       },
       "status": "visual_match",
       "shownPack": "500g variety pouch",
@@ -8271,7 +8271,7 @@
         "name": "Duck Jerky",
         "petType": "dog",
         "foodType": "treat",
-        "type": "Treat · 200g",
+        "type": "Treat · 1kg",
         "barcode": "9319993801299"
       },
       "status": "recipe_match_pack_unverified",
@@ -8305,7 +8305,7 @@
         "name": "Beef Liver",
         "petType": "dog",
         "foodType": "treat",
-        "type": "Treat · 200g",
+        "type": "Treat · 150g",
         "barcode": "9319993800575"
       },
       "status": "recipe_match_pack_unverified",
@@ -8751,10 +8751,10 @@
         "name": "Creamy Treats Tuna & Salmon",
         "petType": "cat",
         "foodType": "treat",
-        "type": "Treat · 4x12g",
+        "type": "Treat · 4 x 12g",
         "barcode": "9334214038759"
       },
-      "status": "visual_match",
+      "status": "recipe_match_pack_unverified",
       "shownPack": "4 × 12 g",
       "observedText": "Dine Creamy Treats Tuna & Salmon Flavour; cat; 4 x 12g",
       "reason": "Visible recipe, cat treat form and pack agree.",
@@ -10621,8 +10621,8 @@
         "name": "Adult Dry Beef, Salmon & Cheese",
         "petType": "cat",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": "9300605122666"
+        "type": "Dry · 450g",
+        "barcode": "9300605025523"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "1.4 kg bag",
@@ -11421,7 +11421,7 @@
         "name": "Doubly Delicious Fish Selection",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet",
+        "type": "Wet · 12 x 85g",
         "barcode": "9300605145634"
       },
       "status": "recipe_match_pack_unverified",
@@ -12530,7 +12530,7 @@
         "name": "Dog Dental Treats Original Large",
         "petType": "dog",
         "foodType": "treat",
-        "type": "treat",
+        "type": "Treat · 340g",
         "barcode": "642863041105"
       },
       "status": "recipe_match_pack_unverified",
@@ -12564,7 +12564,7 @@
         "name": "Dog Dental Treats Original Teenie",
         "petType": "dog",
         "foodType": "treat",
-        "type": "treat",
+        "type": "Treat · 170g",
         "barcode": "642863102912"
       },
       "status": "recipe_match_pack_unverified",
@@ -12871,7 +12871,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "dry",
-        "barcode": "9334214054483"
+        "barcode": null
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -13455,8 +13455,8 @@
         "name": "Perfect Weight",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": "9330171023098"
+        "type": "Dry · 11.34kg",
+        "barcode": "052742060545"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -13711,8 +13711,8 @@
         "name": "Grain Free Kitten Chicken & Ocean Fish in Jelly",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet",
-        "barcode": "9348601004715"
+        "type": "Wet · 85g",
+        "barcode": "9348601003497"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "12 × 85 g pouches",
@@ -17235,7 +17235,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "dry",
-        "barcode": "9300605147409"
+        "barcode": null
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "18kg",
@@ -17879,8 +17879,8 @@
         "name": "Kitten Salmon in Jelly Pouch",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet",
-        "barcode": null
+        "type": "Wet · 85g",
+        "barcode": "9334214053400"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "85 g pouch",
@@ -17921,8 +17921,8 @@
         "name": "Mature Salmon in Jelly Pouch",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet",
-        "barcode": null
+        "type": "Wet · 85g",
+        "barcode": "9334214053462"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "85 g pouch",
@@ -17964,8 +17964,8 @@
         "name": "Fit & Trim",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": "0064992284183"
+        "type": "Dry · 2kg",
+        "barcode": "064992107451"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "2kg",
@@ -17998,8 +17998,8 @@
         "name": "Puppy Large Breed",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 10.6kg",
+        "barcode": "064992102258"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -19210,8 +19210,8 @@
         "name": "SPD Air Dried Beef & Carrot",
         "petType": "dog",
         "foodType": "air-dried",
-        "type": "air-dried",
-        "barcode": "9332613004207"
+        "type": "Air-Dried · 600g",
+        "barcode": "9340710002736"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "120g",
@@ -19380,8 +19380,8 @@
         "name": "SPD Air Dried Turkey & Flaxseed",
         "petType": "dog",
         "foodType": "air-dried",
-        "type": "air-dried",
-        "barcode": "100000150109"
+        "type": "Air-Dried · 600g",
+        "barcode": "9340710002804"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "400g",
@@ -19448,8 +19448,8 @@
         "name": "SPD Air Dried Wild Boar & Pumpkin",
         "petType": "dog",
         "foodType": "air-dried",
-        "type": "air-dried",
-        "barcode": "9332613006560"
+        "type": "Air-Dried · 600g",
+        "barcode": "9340710002842"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "400g",
@@ -19822,8 +19822,8 @@
         "name": "SPD Fresh Roll Venison & Sweet Potato",
         "petType": "dog",
         "foodType": "fresh",
-        "type": "fresh",
-        "barcode": "265681000002"
+        "type": "Fresh · 2kg",
+        "barcode": "9340710002880"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "2kg",
@@ -19890,8 +19890,8 @@
         "name": "SPD Prime Cut Beef Treats",
         "petType": "dog",
         "foodType": "treat",
-        "type": "treat",
-        "barcode": null
+        "type": "Treat · 100g",
+        "barcode": "9340710002712"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "100g pouch",
@@ -20128,8 +20128,8 @@
         "name": "SPD Prime Cut Wild Boar Treats",
         "petType": "dog",
         "foodType": "treat",
-        "type": "treat",
-        "barcode": null
+        "type": "Treat · 100g",
+        "barcode": "9340710002873"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "100g pouch",
@@ -20264,8 +20264,8 @@
         "name": "SPD Slow Cooked Beef & Carrot",
         "petType": "dog",
         "foodType": "wet",
-        "type": "Wet",
-        "barcode": "9339687316236"
+        "type": "Wet · 354g",
+        "barcode": "9340710002644"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "354g carton",
@@ -20634,8 +20634,8 @@
         "name": "SPD Slow Cooked Venison & Sweet Potato",
         "petType": "dog",
         "foodType": "wet",
-        "type": "Wet",
-        "barcode": null
+        "type": "Wet · 354g",
+        "barcode": "9340710002934"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "354g carton",
@@ -21117,8 +21117,8 @@
         "name": "Kitten Chicken & Liver Entrée",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet",
-        "barcode": "9300605140875"
+        "type": "Wet · 85g",
+        "barcode": "038100026903"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "85 g can",
@@ -21303,8 +21303,8 @@
         "name": "Medium Puppy Chicken",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 3kg",
+        "barcode": "9300605149687"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "3kg",
@@ -21414,8 +21414,8 @@
         "name": "Breed Health - Chihuahua Adult",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": null
+        "type": "Dry · 1.5kg",
+        "barcode": "3182550728102"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -21777,8 +21777,8 @@
         "name": "Persian Kitten",
         "petType": "cat",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": "129510721202"
+        "type": "Dry · 2kg",
+        "barcode": "3182550721219"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -22302,7 +22302,7 @@
         "name": "Chomp n Chew Beef",
         "petType": "dog",
         "foodType": "treat",
-        "type": "Treat",
+        "type": "Treat · 1 large chew",
         "barcode": "9334214025506"
       },
       "status": "recipe_match_pack_unverified",
@@ -22344,8 +22344,8 @@
         "name": "Stix Beef",
         "petType": "dog",
         "foodType": "treat",
-        "type": "Treat",
-        "barcode": null
+        "type": "Treat · 500g",
+        "barcode": "9334214020518"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "500g pouch",
@@ -22386,7 +22386,7 @@
         "name": "Strapz Liver",
         "petType": "dog",
         "foodType": "treat",
-        "type": "Treat",
+        "type": "Treat · 200g",
         "barcode": "9334214054506"
       },
       "status": "recipe_match_pack_unverified",
@@ -24408,7 +24408,7 @@
         "name": "Kitten Mixed Favourites in Jelly",
         "petType": "cat",
         "foodType": "wet",
-        "type": "Wet",
+        "type": "Wet · 12 x 85g",
         "barcode": "9334214053486"
       },
       "status": "recipe_match_pack_unverified",
@@ -25162,7 +25162,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": "122711000084"
+        "barcode": "9334214002743"
       },
       "status": "visual_match",
       "shownPack": "3kg",
@@ -25196,7 +25196,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": "9310015205200"
+        "barcode": "9334214150710"
       },
       "status": "visual_match",
       "shownPack": "3kg",
@@ -25229,8 +25229,8 @@
         "name": "Active Adult Chicken with Rice",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": "9334214023281"
+        "type": "Dry · 13kg",
+        "barcode": "9334214046068"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "13 kg bag",
@@ -25332,7 +25332,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 3kg",
-        "barcode": "9334214019529"
+        "barcode": "9310022566004"
       },
       "status": "visual_match",
       "shownPack": "3 kg bag",
@@ -25366,7 +25366,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 15kg",
-        "barcode": "9334214002781"
+        "barcode": "9334214150796"
       },
       "status": "visual_match",
       "shownPack": "15kg",
@@ -25433,7 +25433,7 @@
         "name": "Adult Medium Breed Chicken With Rice",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
+        "type": "Dry · 15kg",
         "barcode": "9310022528507"
       },
       "status": "recipe_match_pack_unverified",
@@ -25765,8 +25765,8 @@
         "name": "Healthy Weight Small Breed Adult",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
-        "barcode": "9334214021201"
+        "type": "Dry · 2.5kg",
+        "barcode": "9334214024356"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "2.5kg",
@@ -25868,7 +25868,7 @@
         "petType": "dog",
         "foodType": "wet",
         "type": "Wet",
-        "barcode": "9300605147386"
+        "barcode": null
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "12 x 100g trays",
@@ -25910,7 +25910,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": null
+        "barcode": "9348601001578"
       },
       "status": "visual_match",
       "shownPack": "2kg",
@@ -26465,7 +26465,7 @@
         "name": "Adult Large Breed Chicken With Rice",
         "petType": "dog",
         "foodType": "dry",
-        "type": "dry",
+        "type": "Dry · 15kg",
         "barcode": "9334214008219"
       },
       "status": "recipe_match_pack_unverified",
@@ -26887,7 +26887,7 @@
         "name": "Healthy Benefits Indoor Cat",
         "petType": "cat",
         "foodType": "dry",
-        "type": "dry",
+        "type": "Dry · 2kg",
         "barcode": "9312239052233"
       },
       "status": "recipe_match_pack_unverified",
@@ -27943,10 +27943,10 @@
       "identitySnapshot": {
         "brand": "Advance",
         "name": "Adult Ocean Fish",
-        "petType": null,
-        "foodType": null,
-        "type": "Dry",
-        "barcode": "100000141388"
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 4kg",
+        "barcode": "9334214065069"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "2 kg bag",
@@ -27977,10 +27977,10 @@
       "identitySnapshot": {
         "brand": "Optimum",
         "name": "Adult Small Breed Chicken",
-        "petType": null,
-        "foodType": null,
-        "type": "Dry",
-        "barcode": "9334214002743"
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 15kg",
+        "barcode": "9334214027333"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "3kg",
@@ -28011,10 +28011,10 @@
       "identitySnapshot": {
         "brand": "Advance",
         "name": "Adult Small Breed Chicken With Rice",
-        "petType": null,
-        "foodType": null,
-        "type": "Dry",
-        "barcode": "9334214019482"
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9334214045931"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "8 kg bag",
@@ -28047,8 +28047,8 @@
         "name": "Healthy Weight Adult Medium Breed Chicken With Rice",
         "petType": "dog",
         "foodType": "dry",
-        "type": "Dry",
-        "barcode": "9334214045856"
+        "type": "Dry · 2.5kg",
+        "barcode": "9310022566509"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "2.5 kg bag",
@@ -28122,10 +28122,10 @@
       "identitySnapshot": {
         "brand": "Advance",
         "name": "Mature Medium Breed Chicken & Rice",
-        "petType": null,
-        "foodType": null,
-        "type": "Dry",
-        "barcode": null
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 15kg",
+        "barcode": "9334214046112"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "15 kg bag",
@@ -28190,9 +28190,9 @@
       "identitySnapshot": {
         "brand": "Black Hawk",
         "name": "Original Adult Ocean Fish",
-        "petType": null,
-        "foodType": null,
-        "type": "Dry",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 2kg",
         "barcode": "9312239052141"
       },
       "status": "recipe_match_pack_unverified",
@@ -28326,10 +28326,10 @@
       "identitySnapshot": {
         "brand": "Felix",
         "name": "Doubly Delicious Meat Selection in Jelly",
-        "petType": null,
-        "foodType": null,
-        "type": "Wet",
-        "barcode": "9300605098640"
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 12 x 85g",
+        "barcode": "9300605118218"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "12 × 85 g",
@@ -28462,10 +28462,10 @@
       "identitySnapshot": {
         "brand": "Greenies",
         "name": "Feline Dental Treats Oven Roasted Chicken",
-        "petType": null,
-        "foodType": null,
-        "type": "Treat",
-        "barcode": null
+        "petType": "cat",
+        "foodType": "treat",
+        "type": "Treat · 130g",
+        "barcode": "642863111310"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "277 g tub",
@@ -29517,10 +29517,10 @@
       "identitySnapshot": {
         "brand": "Purina Pro Plan",
         "name": "Medium Puppy Chicken",
-        "petType": null,
-        "foodType": null,
-        "type": "Dry",
-        "barcode": null
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 15kg",
+        "barcode": "9300605149649"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "3kg",
@@ -29653,9 +29653,9 @@
       "identitySnapshot": {
         "brand": "Purina Pro Plan",
         "name": "Small & Mini Puppy Chicken",
-        "petType": null,
-        "foodType": null,
-        "type": "Dry",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 2.5kg",
         "barcode": "9300605149229"
       },
       "status": "recipe_match_pack_unverified",
@@ -29687,10 +29687,10 @@
       "identitySnapshot": {
         "brand": "Purina Pro Plan",
         "name": "Small & Mini Adult Chicken",
-        "petType": null,
-        "foodType": null,
-        "type": "Dry",
-        "barcode": null
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 7kg",
+        "barcode": "9300605149557"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": "2.5kg",
@@ -29721,10 +29721,10 @@
       "identitySnapshot": {
         "brand": "Royal Canin",
         "name": "Breed Health - Poodle Adult",
-        "petType": null,
-        "foodType": null,
-        "type": "Dry",
-        "barcode": null
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 1.5kg",
+        "barcode": "3182550743174"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -29859,8 +29859,8 @@
         "name": "High Prairie Puppy Grain-Free",
         "petType": "dog",
         "foodType": "dry",
-        "type": "Dry",
-        "barcode": "74198611089"
+        "type": "Dry · 2kg",
+        "barcode": "074198612413"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -29901,8 +29901,8 @@
         "name": "Pacific Stream Puppy Grain-Free",
         "petType": "dog",
         "foodType": "dry",
-        "type": "Dry",
-        "barcode": null
+        "type": "Dry · 2kg",
+        "barcode": "074198612451"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,

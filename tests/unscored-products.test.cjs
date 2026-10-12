@@ -24,6 +24,13 @@ test('Raw catalogue preserves documented metadata corrections and October barcod
     Object.assign(product, change.after);
   }
   expected.push(...fixes.additions);
+  const researched = JSON.parse(fs.readFileSync(path.join(root, 'docs/catalogue-corrections-2026-10-13.json'), 'utf8'));
+  for (const change of researched.updates) {
+    const product = expected.find(p => p.id === change.appId);
+    for (const [field, value] of Object.entries(change.before)) assert.deepEqual(product[field], value);
+    for (const field of change.absentBeforeFields || []) assert.equal(Object.hasOwn(product, field), false);
+    Object.assign(product, change.after);
+  }
   const actual = JSON.parse(JSON.stringify(vm.runInNewContext(productsLiteral(html))));
   assert.equal(actual.length, 1082);
   assert.deepEqual(actual, expected);

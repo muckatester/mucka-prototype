@@ -1,6 +1,26 @@
 const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');const {test}=require('node:test');
 const {setup,html,fn,root}=require('./assessment-test-helpers.cjs');
+const crypto=require('node:crypto');
 function context(){const {c,...rest}=setup();vm.runInContext(fn('findProductByBarcode'),c);return {c,...rest}}
+test('October research observations bind each new barcode to its sourced pack and preserve case identifiers',()=>{
+ const {c}=context();
+ const raw=fs.readFileSync(root+'/docs/barcode-source-observations-2026-10-13.json');
+ const observations=JSON.parse(raw),sha=crypto.createHash('sha256').update(raw).digest('hex');
+ const added=observations.records.filter(r=>r.action==='associate_exact_pack');
+ assert.equal(added.length,103);
+ for(const r of added){
+  const p=c.findProductByBarcode(r.barcode),e=c.getBarcodeEvidence(p);
+  assert.equal(p?.id,r.appId);assert.equal(e.pack,r.pack);assert.equal(e.captureSha256,sha);
+  assert.equal(e.sourceSha256,r.sourceSha256);assert.equal(e.sourcePage,r.sourcePage);
+  assert.equal(e.physicalScanPerformed,false);
+ }
+ for(const r of observations.records.filter(r=>r.action==='remove_incorrect_association')){
+  assert.equal(c.products.find(p=>p.id===r.appId).barcode,null);
+  assert.notEqual(c.findProductByBarcode(r.oldBarcode)?.id,r.appId);
+ }
+ assert.equal(c.findProductByBarcode('29334214046833')?.id,362);
+ assert.equal(c.findProductByBarcode('9334214046846'),null,'A carton identifier must not enable its old individual pack code');
+});
 test('GTIN normalization validates digits and preserves package indicators',()=>{
  const {c}=context();for(const v of ['9310022360800','09310022360800',' 9310022360800 '])assert.equal(c.normalizeGtin(v),'09310022360800');
  for(const v of ['9310022360801','<img src=x>','9310 022360800','76344884132','',null,9310022360800])assert.equal(c.normalizeGtin(v),null);
