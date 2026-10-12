@@ -46,6 +46,19 @@ test('Full unresolved-catalogue sweep enables only six sourced packs and removes
  assert.equal(c.findProductByBarcode('5010394984584')?.id,333,'Pedigree medium may use a code removed from the wrong brand');
  assert.equal(c.findProductByBarcode('9357667050055'),null,'Wrong FurFresh number must stay blocked');
 });
+test('Pet City follow-up enables seven exact retail packs with identity-bound evidence',()=>{
+ const {c}=context();
+ const raw=fs.readFileSync(root+'/docs/barcode-source-observations-petcity-2026-10-13.json');
+ const observed=JSON.parse(raw),sha=crypto.createHash('sha256').update(raw).digest('hex');
+ assert.equal(observed.records.length,7);
+ for(const row of observed.records){
+  const p=c.findProductByBarcode(row.barcode),e=c.getBarcodeEvidence(p);
+  assert.equal(p?.id,row.appId);assert.equal(e.pack,row.pack);
+  assert.equal(e.captureSha256,sha);assert.equal(e.sourceSha256,row.sourceSha256);
+  assert.equal(e.physicalScanPerformed,false);
+ }
+ for(const id of [1059,1106,1108])assert.match(c.products.find(p=>p.id===id).type,/kg/);
+});
 test('Every current usable barcode resolves consistently in app and Collector, including zero-padded scans',()=>{
  const {c}=context();const collector=fs.readFileSync(root+'/mucka-collector.html','utf8');
  const cc=vm.createContext({});vm.runInContext(collector.match(/var KNOWN_BARCODES = new Set\(\[[\s\S]*?\]\);/)[0]+collector.match(/^function normalizeGtin\([\s\S]*?^}/m)[0]+collector.match(/^function isKnownBarcode\([\s\S]*?^}/m)[0],cc);

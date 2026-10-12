@@ -1529,7 +1529,7 @@
         "petType": "cat",
         "foodType": "dry",
         "type": "Dry · 2.5kg",
-        "barcode": "680569859822"
+        "barcode": "610696080585"
       },
       "localPath": "assets/product-images/234-meals-for-meows.jpg",
       "sourcePage": "https://www.habitatpets.com.au/products/mfm-cat-roo-turkey-2-5kg",
@@ -6610,8 +6610,8 @@
         "name": "Combo Raw Bulk Roll",
         "petType": "dog",
         "foodType": "raw",
-        "type": "raw",
-        "barcode": null
+        "type": "Raw · 2kg roll",
+        "barcode": "9337940003169"
       },
       "localPath": "Dog Roll/Big Dog - Combo Raw Bulk Roll.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog/combo-raw-dog-food-bulk-roll",
@@ -6828,10 +6828,10 @@
       "identity": {
         "brand": "Big Dog",
         "name": "BARF Raw Beef for Cats",
-        "petType": null,
-        "foodType": null,
-        "type": "Raw/Freeze-Dried",
-        "barcode": null
+        "petType": "cat",
+        "foodType": "raw",
+        "type": "Raw · 1.38kg",
+        "barcode": "9337940007983"
       },
       "localPath": "Dog Specialty/Big Dog - BARF Raw Beef for Cats.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog-for-cats/beef-raw-cat-food",
@@ -6872,10 +6872,10 @@
       "identity": {
         "brand": "Big Dog",
         "name": "BARF Raw Combo for Cats",
-        "petType": null,
-        "foodType": null,
-        "type": "Raw/Freeze-Dried",
-        "barcode": null
+        "petType": "cat",
+        "foodType": "raw",
+        "type": "Raw · 1.38kg",
+        "barcode": "9337940007990"
       },
       "localPath": "Dog Specialty/Big Dog - BARF Raw Combo for Cats.webp",
       "sourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog-for-cats/combo-raw-cat-food",

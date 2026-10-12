@@ -1457,7 +1457,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 2kg",
-        "barcode": "74198610716"
+        "barcode": "074198612192"
       },
       "status": "recipe_match_pack_unverified",
       "shownPack": null,
@@ -3769,7 +3769,7 @@
         "petType": "dog",
         "foodType": "wet",
         "type": "Wet · 400g can",
-        "barcode": "9300645041385"
+        "barcode": "9348601004432"
       },
       "status": "visual_match",
       "shownPack": "400 g can",
@@ -26288,7 +26288,7 @@
         "petType": "dog",
         "foodType": "dry",
         "type": "Dry · 10kg",
-        "barcode": "9300605038400"
+        "barcode": "9312239049660"
       },
       "status": "visual_match",
       "shownPack": "10kg",
