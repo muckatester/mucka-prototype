@@ -40,7 +40,7 @@ function setup(options = {}) {
   });
   vm.runInContext('var products = ' + productsLiteral(html) + ';' +
     html.match(/var barcodeEvidence = .*;\n/)[0] + html.match(/var starterCatalogue = [\s\S]*?;\n/)[0] + html.match(/var sourcedProductImages = .*;\n/)[0] + html.match(/var responsiveProductImages = .*;\n/)[0] + html.match(/var legacyImageReviews = .*;\n/)[0] + html.match(/var homeCategories = \[[\s\S]*?\n];/)[0] + html.match(/var perPage = \d+;/)[0], c);
-  for (const name of ['recalculateScore', 'hasScoreData', 'getScoreBadge', 'compareProductScores',
+  for (const name of ['recalculateScore', 'hasScoreData', 'getLegacyScoreHtml', 'getScoreBadge', 'compareProductScores',
     'normalizeGtin', 'getBarcodeEvidence', 'getBarcodeStatusText', 'getBarcodeStatusHtml', 'escapeHtml', 'getProductEvidence', 'getEvidenceLinks', 'getEvidenceFieldHtml', 'getProductFactsHtml', 'getEvidenceSummaryHtml', 'getIngredientListHtml', 'getFoodSVGIcon', 'adjustColor', 'getProductPlaceholder',
     'handleProductImageError', 'getSourcedProductImage', 'getLegacyImageReview', 'getLegacyProductImage', 'getProductImage', 'productHasImage', 'showProduct', 'renderPage', 'renderCategoryPage',
     'renderFavourites', 'runOverlaySearch', 'applyFilters', 'getRecommendations', 'renderCategoryGrid',

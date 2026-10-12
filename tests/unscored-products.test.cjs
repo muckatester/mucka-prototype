@@ -29,14 +29,25 @@ test('Raw catalogue preserves documented metadata corrections and October barcod
   assert.deepEqual(actual, expected);
 });
 
-test('Every runtime score and subscore is withheld, including records with ingredient data', () => {
-  const {c} = setup();
+test('Legacy numeric scores are visible only as unvalidated detail-page history, not as active ratings', () => {
+  const {c, element} = setup();
+  const raw = JSON.parse(JSON.stringify(vm.runInNewContext(productsLiteral(html))));
   assert.equal(c.products.filter(p => p.ingredients?.length).length, 444);
   for (const p of c.products) {
-    assert.equal(p.score, null, 'Score withheld for ' + p.id);
+    assert.equal(p.score, null, 'Active score withheld for ' + p.id);
+    assert.equal(p._legacyPrototypeScore, raw.find(x => x.id === p.id).score, 'Legacy score retained for review only: ' + p.id);
     assert.equal(p._ingredientScore, null);
     assert.equal(p._credScore, null);
     assert.equal(c.hasScoreData(p), false);
+    c.showProduct(p.id);
+    const legacy = raw.find(x => x.id === p.id).score;
+    if (Number.isFinite(legacy)) {
+      assert.equal(element('legacyScorePanel').hidden, false);
+      assert.match(element('legacyScorePanel').innerHTML, /Legacy prototype score — unvalidated/);
+      assert.match(element('legacyScorePanel').innerHTML, new RegExp(legacy + ' \/ 100'));
+      assert.match(element('legacyScorePanel').innerHTML, /not a health rating, vet advice or a product recommendation/);
+    } else assert.equal(element('legacyScorePanel').hidden, true);
+    assert.equal(element('assessmentStatus').textContent, 'Assessment under review');
   }
 });
 
@@ -104,12 +115,14 @@ test('Search, browse and favourites retain product access and neutral badges', (
 test('Injected scores, ingredient ratings and manufacturer flags cannot reactivate public judgements', () => {
   const {c, element} = setup();
   const p = c.products[0];
+  const originalLegacy = p._legacyPrototypeScore;
   p.score = 100; p._ingredientScore = 85; p._credScore = 15;
   p.ingredients = [{name: '<img src=x onerror=alert(1)> Chicken', rating: 'SECRET_RATING', desc: 'SECRET_HEALTH_CLAIM'}];
   p.cred = [{name: 'SECRET_MANUFACTURER_FLAG', value: true, points: 15}];
   assert.equal(c.hasScoreData(p), false);
   assert.equal(c.getScoreBadge(p), '<span class="assessment-badge">Under review</span>');
   c.showProduct(p.id);
+  assert.ok(!element('legacyScorePanel').innerHTML.includes('100 / 100') || originalLegacy === 100);
   const detail = element('ingredientList').innerHTML + element('credList').innerHTML;
   assert.match(detail, /&lt;img/);
   assert.doesNotMatch(detail, /<img|SECRET_|\/85|\/15|\/100/);

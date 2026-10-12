@@ -40,7 +40,7 @@ test('October barcode fixes are explicit, identity-bound catalogue updates', () 
   assert.equal(advance.barcode, '9334214150352');
   const billies = c.products.find(p => p.id === 976);
   assert.equal(billies.type, 'Dry · 20kg');
-  assert.equal(billies.barcode, null, 'The failed, unverified candidate is not presented as a working code');
+  assert.equal(billies.barcode, '9392596027556', 'Printed code read from the owner-provided 20kg bag photo');
   assert(c.products.some(p => p.id === 1186 && p.brand === 'Black Hawk' && p.type === 'Dry · 20kg' && p.barcode === '9338362000910'));
   assert(c.products.some(p => p.id === 1187 && p.brand === 'Hypro Premium' && p.type === 'Dry · 20kg' && p.barcode === '9343053001237'));
 });

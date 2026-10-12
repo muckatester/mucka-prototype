@@ -15,7 +15,7 @@ test('Every current usable barcode resolves consistently in app and Collector, i
   if(result){matched++;assert.equal(result.id,p.id);assert.equal(c.findProductByBarcode(c.normalizeGtin(p.barcode)).id,p.id);assert.equal(cc.isKnownBarcode(c.normalizeGtin(p.barcode)),true)}else blocked++;
  }
  const conflicts=new Set(c.barcodeEvidence.records.filter(r=>r.status==='conflict').map(r=>c.normalizeGtin(r.barcode)));
- const expected=c.products.filter(p=>c.normalizeGtin(p.barcode)&&!conflicts.has(c.normalizeGtin(p.barcode))&&( ['manufacturer_pack','retailer_pack'].includes(c.getBarcodeEvidence(p)?.status)||c.getProductEvidence(p)?.fields.barcode.status==='source_checked'));
+ const expected=c.products.filter(p=>c.normalizeGtin(p.barcode)&&!conflicts.has(c.normalizeGtin(p.barcode))&&( ['manufacturer_pack','retailer_pack','physical_pack'].includes(c.getBarcodeEvidence(p)?.status)||c.getProductEvidence(p)?.fields.barcode.status==='source_checked'));
  assert.equal(matched,expected.length);assert.equal(blocked,c.products.filter(p=>p.barcode).length-expected.length);
  for(const p of expected)assert.equal(c.findProductByBarcode(p.barcode)?.id,p.id,'Usable product '+p.id);
 });
@@ -47,15 +47,16 @@ test('Every source-checked retailer association resolves only its current identi
  }
 });
 
-test('The four reported failed scans now resolve safely or remain withheld pending the printed code',()=>{
+test('Owner-confirmed bag scans and the photo-read Billie code resolve to their exact pack identities',()=>{
  const {c}=context();
  assert.equal(c.findProductByBarcode('9334214150352')?.id,1035);
  assert.equal(c.findProductByBarcode('9334214061627'),null);
  assert.equal(c.findProductByBarcode('9338362000910')?.id,1186);
  assert.equal(c.findProductByBarcode('9343053001237')?.id,1187);
- assert.equal(c.findProductByBarcode('9392596027556'),null);
- assert.equal(c.getBarcodeStatusText(c.products.find(p=>p.id===976)), 'No barcode recorded - exact pack code needed.');
- for(const id of [637,662]) assert.match(c.getBarcodeStatusText(c.products.find(p=>p.id===id)),/scan checked successfully/);
+ assert.equal(c.findProductByBarcode('9392596027556')?.id,976);
+ for(const id of [1035,1186,1187]) assert.match(c.getBarcodeStatusText(c.products.find(p=>p.id===id)),/scan checked successfully/);
+ assert.match(c.getBarcodeStatusText(c.products.find(p=>p.id===976)),/owner-provided photo/);
+ assert.match(c.getBarcodeStatusText(c.products.find(p=>p.id===976)),/not yet confirmed/);
 });
 
 test('A format-valid old code cannot open a listing without current product evidence',()=>{

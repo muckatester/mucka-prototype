@@ -6532,9 +6532,9 @@
       "checkedAt": "2026-10-12",
       "sourceTitle": "Advance All Breed Lamb and Rice Adult Dog Dry Food 20kg",
       "sourceCaptureKind": "local_observation_record",
-      "captureSha256": "fdffc5aa01def94a63853f411ec273b6a27f979e6bfd8db52bcda6a58570a968",
-      "observation": "Retailer listing names the adult all-breeds lamb and rice dry-food recipe and the 20kg pack; its SKU is 9334214150352. The previously stored code identifies a different Advance product. Online observation only; physical scan is pending.",
-      "physicalScanPerformed": false,
+      "captureSha256": "a8a123013bd646bf063f2f392cc8bb7a84ad5b14423895f955f9a05257ad4796",
+      "observation": "Retailer listing names the adult all-breeds lamb and rice dry-food recipe and the 20kg pack; its SKU is 9334214150352. The previously stored code identifies a different Advance product. Owner separately reports a successful in-app scan of the physical bag on 2026-10-12; the app opened the correct recipe and 20kg pack.",
+      "physicalScanPerformed": true,
       "captureFile": "docs/barcode-field-fix-2026-10-12.md"
     },
     {
@@ -6555,9 +6555,9 @@
       "checkedAt": "2026-10-12",
       "sourceTitle": "Black Hawk Original Adult Lamb & Rice Dog Food 20kg",
       "sourceCaptureKind": "local_observation_record",
-      "captureSha256": "fdffc5aa01def94a63853f411ec273b6a27f979e6bfd8db52bcda6a58570a968",
-      "observation": "Retailer listing names the exact adult lamb and rice recipe and 20kg pack, and displays Barcode # 9338362000910. Online observation only; physical scan is pending.",
-      "physicalScanPerformed": false,
+      "captureSha256": "a8a123013bd646bf063f2f392cc8bb7a84ad5b14423895f955f9a05257ad4796",
+      "observation": "Retailer listing names the exact adult lamb and rice recipe and 20kg pack, and displays Barcode # 9338362000910. Owner separately reports a successful in-app scan of the physical bag on 2026-10-12; the app opened the correct recipe and 20kg pack.",
+      "physicalScanPerformed": true,
       "captureFile": "docs/barcode-field-fix-2026-10-12.md"
     },
     {
@@ -6578,10 +6578,31 @@
       "checkedAt": "2026-10-12",
       "sourceTitle": "Hypro Premium Adult Grain Free Dog Food Chicken & Duck 20kg",
       "sourceCaptureKind": "local_observation_record",
-      "captureSha256": "fdffc5aa01def94a63853f411ec273b6a27f979e6bfd8db52bcda6a58570a968",
-      "observation": "Retailer listing names the adult grain-free Chicken & Duck recipe and 20kg pack, and displays Barcode # 9343053001237. Online observation only; physical scan is pending.",
-      "physicalScanPerformed": false,
+      "captureSha256": "a8a123013bd646bf063f2f392cc8bb7a84ad5b14423895f955f9a05257ad4796",
+      "observation": "Retailer listing names the adult grain-free Chicken & Duck recipe and 20kg pack, and displays Barcode # 9343053001237. Owner separately reports a successful in-app scan of the physical bag on 2026-10-12; the app opened the correct recipe and 20kg pack.",
+      "physicalScanPerformed": true,
       "captureFile": "docs/barcode-field-fix-2026-10-12.md"
+    },
+    {
+      "appId": 976,
+      "identity": {
+        "brand": "Billie's Bowl",
+        "name": "Adult with Aussie Beef",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 20kg",
+        "barcode": "9392596027556"
+      },
+      "status": "physical_pack",
+      "barcode": "9392596027556",
+      "pack": "20kg",
+      "sourcePage": "https://www.petstock.com.au/products/billies-bowl-adult-with-real-aussie-beef-dry-dog-food",
+      "sourceKind": "owner_provided_pack_photo",
+      "sourceCaptureKind": "owner_provided_label_photo",
+      "captureSha256": "7ed4ffce8bd7b10ba9f6bf605ff75adb1d5f963030c4a063710956a347e32400",
+      "checkedAt": "2026-10-12",
+      "observation": "Owner-provided photograph of the physical 20kg bag shows the Aussie Beef product identity and printed EAN-13 9392596027556. The check digit is valid. The code is now linked to this exact catalogue product; an in-app camera scan has not yet been confirmed.",
+      "physicalScanPerformed": false
     }
   ]
 }
