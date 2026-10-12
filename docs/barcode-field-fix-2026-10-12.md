@@ -15,6 +15,8 @@ The barcode evidence records for the three newly sourced associations use `captu
 
 ## Retest needed
 
-After the testing preview is updated, scan the Advance, Black Hawk 20kg and Hypro bags once each. Confirm that the app shows the matching recipe and pack size. For Billie's Bowl, photograph the barcode and its digits on the existing 20kg bag; no shop visit is needed. The app currently withholds that unverified code instead of risking a wrong product match.
+The updated preview was verified at commit `6205fe6cbb05b8c811367b22f9683b28a8640730`, version 2026.10.12.2. Use [this version-pinned testing link](https://deploy-preview-2--mucka-prototype.netlify.app/?v=2026.10.12.2); the query string helps avoid an older phone-cached copy. Hosted product pages for all three corrected records display the expected pack, image, barcode and source note.
+
+Scan the Advance, Black Hawk 20kg and Hypro bags once each. Confirm that the app shows the matching recipe and pack size. For Billie's Bowl, photograph the barcode and its digits on the existing 20kg bag; no shop visit is needed. The app currently withholds that unverified code instead of risking a wrong product match.
 
 These fixes target the reported bags. The rest of the catalogue still needs a source-by-source barcode audit and is not certified by these field tests.
