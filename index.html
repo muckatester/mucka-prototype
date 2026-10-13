@@ -647,7 +647,7 @@ body::before {
 <!-- HOME SCREEN -->
 <div class="screen active" id="screen-home">
   <!-- Bump the testing version here, in Profile, and in Collector for every preview release. -->
-  <p style="font-size:12px;color:#4a5568;text-align:center;margin:8px 0;">Testing version <strong>2026.10.13.9</strong></p>
+  <p style="font-size:12px;color:#4a5568;text-align:center;margin:8px 0;">Testing version <strong>2026.10.13.10</strong></p>
   <div class="assessment-intro">
     <strong>Product information, with room to learn.</strong>
     <p>Health ratings are paused while we review our assessment method. Browse by brand and name, and check catalogue details against your pack.</p>
@@ -756,15 +756,15 @@ body::before {
   <div class="detail-header">
     <button class="back-btn" onclick="showScreen('home')">&#8592;</button>
     <div style="flex:1;">
-      <h1 style="font-size:20px; font-weight:800; text-align:left;">Barcode needs review</h1>
+      <h1 style="font-size:20px; font-weight:800; text-align:left;">Help us identify this product</h1>
     </div>
   </div>
 
   <div class="section-card" style="margin-top:16px; text-align:center;">
-    <div style="font-size:64px; margin-bottom:16px;">🐾</div>
+    <div style="width:64px;height:64px;display:grid;place-items:center;border-radius:18px;background:#e8edfb;color:#202C94;font-size:34px;margin:0 auto 18px;" aria-hidden="true">＋</div>
     <div style="font-size:20px; font-weight:800; color:#2d3748; margin-bottom:8px;" id="notFoundTitle">No usable barcode match</div>
     <div style="font-size:14px; color:#718096; line-height:1.6; margin-bottom:20px;">
-      This code is missing, invalid or awaiting verification. Search by product name, or capture the pack in Mucka Collector for review.
+      We couldn’t confirm a product for this barcode. Add photos of the packet so we can check the right recipe and size. Your barcode will carry across automatically.
     </div>
 
     <div style="background:#f7fafc; padding:12px; border-radius:8px; margin-bottom:20px; border-left:4px solid #75CFE7;">
@@ -773,12 +773,14 @@ body::before {
     </div>
 
     <button onclick="openMuckaCollector(document.getElementById('notFoundBarcode').textContent)" style="width:100%; padding:16px 20px; background:linear-gradient(135deg, #EF973F, #f5a84a); color:white; border:none; border-radius:14px; font-size:16px; font-weight:700; font-family:'Poppins',sans-serif; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:10px; box-shadow:0 4px 15px rgba(239,151,63,0.35); margin-bottom:12px;">
-      <span style="font-size:22px;">📷</span> Add to Mucka Collector
+      Add photos of this product →
     </button>
 
-    <button onclick="showScreen('home')" style="width:100%; padding:13px 20px; background:white; color:#4a5568; border:2px solid #e2e8f0; border-radius:14px; font-size:14px; font-weight:600; font-family:'Poppins',sans-serif; cursor:pointer;">
-      ← Back to Mucka
+    <button onclick="showScreen('home');openSearchOverlay()" style="width:100%; padding:13px 20px; background:white; color:#4a5568; border:2px solid #e2e8f0; border-radius:14px; font-size:14px; font-weight:600; font-family:'Poppins',sans-serif; cursor:pointer;">
+      Search by product name
     </button>
+    <p style="font-size:12px;color:#5c697b;line-height:1.6;margin:16px 0 4px;">Your capture saves in this browser. Add the front of the pack and printed barcode, then export it for review.</p>
+    <a href="mucka-collector.html" style="display:inline-block;padding:12px;color:#202C94;font-weight:600;font-size:13px;">View my saved captures</a>
   </div>
 </div>
 
@@ -811,12 +813,12 @@ body::before {
   </div>
   <div class="section-card">
     <h2>About Mucka</h2>
-    <div class="cred-row"><span class="cred-label">Testing version</span><span class="cred-value">2026.10.13.9</span></div>
-    <p class="evidence-note">Released 12 October 2026. Quote this version when reporting a test result. If it differs from the version we give you, reopen the latest testing link and refresh the page.</p>
+    <div class="cred-row"><span class="cred-label">Testing version</span><span class="cred-value">2026.10.13.10</span></div>
+    <p class="evidence-note">Released 13 October 2026. Quote this version when reporting a test result. If it differs from the version we give you, reopen the latest testing link and refresh the page.</p>
     <div class="cred-row"><span class="cred-label">Catalogue listings</span><span class="cred-value" id="profileProductCount">1,082</span></div>
     <div class="cred-row"><span class="cred-label">Region</span><span class="cred-value">Australia</span></div>
     <p class="evidence-note">Pet profiles, accounts and memberships are not available yet.</p>
-    <button class="photo-btn" onclick="window.location.href='mucka-collector.html'">Open Collector Queue</button>
+    <button class="photo-btn" onclick="window.location.href='mucka-collector.html'">My captures</button>
   </div>
 </div>
 
@@ -849,8 +851,8 @@ body::before {
 
   <div class="add-section">
     <h2>&#129385; Ingredients</h2>
-    <p style="font-size:13px; color:#718096; margin-bottom:12px;">Copy the ingredient list exactly as printed. To photograph a pack, open Mucka Collector.</p>
-    <button class="photo-btn" id="photoIngBtn" onclick="openMuckaCollector('')">&#128247; Open Collector for photos</button>
+    <p style="font-size:13px; color:#718096; margin-bottom:12px;">Copy the ingredient list exactly as printed. Use My captures to save packet photos for review.</p>
+    <button class="photo-btn" id="photoIngBtn" onclick="openMuckaCollector('')">&#128247; Add packet photos</button>
     <div class="or-divider">&mdash; or type them in &mdash;</div>
     <textarea class="add-textarea" id="addIngredients" placeholder="Paste or type ingredients here, separated by commas."></textarea>
     <div class="add-helper">Tip: Copy them exactly as they appear on the packet</div>
@@ -4600,7 +4602,7 @@ function showProduct(id) {
     productImageHtml += '<p class="evidence-note">The older photo is withheld while its match to this listing is resolved.</p>';
   }
   if (!productHasImage(currentProduct)) {
-    productImageHtml += '<div style="text-align:center;"><button class="add-photo-btn" onclick="openMuckaCollector(currentProduct.barcode)"><span>&#128247;</span> Open Collector for photos</button></div>';
+    productImageHtml += '<div style="text-align:center;"><button class="add-photo-btn" onclick="openMuckaCollector(currentProduct.barcode)"><span>&#128247;</span> Add packet photos</button></div>';
   }
   document.getElementById('detailProductImage').innerHTML = productImageHtml;
   // Wire up lightbox on product image tap
@@ -5186,7 +5188,7 @@ function showNotFoundScreen(barcode) {
 function openMuckaCollector(barcode) {
   var base = 'mucka-collector.html';
   var bc = (barcode && barcode.trim() && barcode.trim() !== '-') ? barcode.trim() : '';
-  var url = bc ? (base + '?barcode=' + encodeURIComponent(bc)) : base;
+  var url = bc ? (base + '?barcode=' + encodeURIComponent(bc)) : (base + '?new=1');
   window.location.href = url;
 }
 // ── Lightbox ────────────────────────────────────────────

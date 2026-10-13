@@ -2,11 +2,13 @@
 
 ## Current testing position — 13 October 2026
 
-[Testing build 2026.10.13.9](https://deploy-preview-2--mucka-prototype.netlify.app/?v=2026.10.13.9) contains 1,082 catalogue products, 474 source-supported barcode lookups and 846 displayed product photographs. The [current image gap list](image-gaps-2026-10-13.csv) has 236 missing or withheld photos. GS1 has received the provisional candidate-GTIN CSV; its reply is still needed to validate those associations and decide on licensed data access. The remaining 608 barcode cases and 236 image cases are separate worklists. Online image review does not prove that a barcode scans to the pictured pack.
+[Testing build 2026.10.13.10](https://deploy-preview-2--mucka-prototype.netlify.app/?v=2026.10.13.10) contains 1,082 catalogue products, 474 source-supported barcode lookups and 846 displayed product photographs. The [current image gap list](image-gaps-2026-10-13.csv) has 236 missing or withheld photos. GS1 has received the provisional candidate-GTIN CSV; its reply is still needed to validate those associations and decide on licensed data access. The remaining 608 barcode cases and 236 image cases are separate worklists. Online image review does not prove that a barcode scans to the pictured pack.
 
-The app remains an information/testing preview. The product assessment method and ingredients are still under review, so prior numerical scores remain labelled as unvalidated history. A broad consumer launch should wait for source-backed product identities, image rights where needed, and field scan checks of representative current packs. All 47 automated checks pass for this build; PR 2 remains draft and the public main branch has not changed.
+The app remains an information/testing preview. The product assessment method and ingredients are still under review, so prior numerical scores remain labelled as unvalidated history. A broad consumer launch should wait for source-backed product identities, image rights where needed, and field scan checks of representative current packs. All 50 automated checks and 16 isolated browser capture scenarios pass for this build; PR 2 remains draft and the public main branch has not changed.
 
-## Current update 13 October 2026 round two
+My captures now provides saved drafts, separate packet/barcode/ingredient photos, duplicate-scan recovery and ZIP export/restoration. Storage is local to this browser/device, with visible failure handling. See [capture behaviour, privacy and validation](collector-captures-2026-10-13.md). Real iPhone photo capture and native sharing remain to be checked.
+
+## Earlier update 13 October 2026 round two
 
 Testing version **2026.10.13.3** enables **458** exact-pack barcode associations. This round adds **43** across **20 brands**. **624** listings remain unresolved (291 missing and 333 withheld). All **44 automated tests** and four synchronization checks pass. Existing source conflicts remain withheld. No new physical scans were performed.
 
@@ -40,7 +42,7 @@ Decision: continue the information preview and targeted pack tests. Full barcode
 2. Expand manufacturer evidence beyond the 13 checked records. The other 1,067 entries must continue showing that ingredients have not been added. Recheck evidence when recipes or product identities change.
 3. Resume physical iPhone/Android camera and actual packet matching tests when the owner is ready. Cover known/unknown codes, denied camera permission, repeated scans and conflicting packs. These tests remain deliberately deferred.
 4. Confirm permission to use product photography for the intended release. The manifest records public source URLs but does not assert a licence grant.
-5. Document privacy and data retention for the intended release. Favourites are local; Collector queue data is in memory and can be lost on reload. Provide a clear persistence/export experience before relying on Collector for field work.
+5. Review privacy and data retention for the intended release. Favourites and captures are local. The previous in-memory Collector queue has been replaced with saved drafts and ZIP backup/restore in 2026.10.13.10; cloud sync and guaranteed storage retention are not provided. See the current capture documentation above.
 6. Complete manual accessibility and device checks across primary flows. Current automated tests and a browser spot check are not comprehensive accessibility, security or cross-device certification.
 
 ## Matching research outcome
