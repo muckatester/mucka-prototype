@@ -7409,6 +7409,72 @@
       "checkedDate": "2026-10-13",
       "sha256": "369f4ced370b099bb805150595cad23da15d3a2c32858a7e059d5e4b10fc85dd",
       "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 61,
+      "identity": {
+        "brand": "Hill's Science Diet",
+        "name": "Puppy Small Bites",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 2kg",
+        "barcode": "052742713908"
+      },
+      "localPath": "assets/product-images/hills-science-diet-puppy-small-bites-2kg.jpg",
+      "imageUrl": "https://www.habitatpets.com.au/cdn/shop/files/Hills-Science-Diet-Puppy-Small-Bites-Dry-Dog-Food-2kg_800x.jpg?v=1744648033",
+      "sourcePage": "https://www.habitatpets.com.au/collections/hills-science-diet/products/hills-science-diet-puppy-small-bites-dry-dog-food-2kg",
+      "sourceKind": "retailer",
+      "shownPack": "2kg listed on page; size not legible on front image",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Australian retailer identifies Hill's Science Diet Puppy Small Bites dry dog food 2kg. The inspected image reads Puppy Small Bites and Chicken Meal & Barley Recipe, but no pack weight is legible; photo does not establish the catalogue barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-13",
+      "sha256": "94e32c9071527a0becf547ca6380c98f2c2cbf6bf68a37c49bd68915e6cc6f13",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 211,
+      "identity": {
+        "brand": "Advance",
+        "name": "Adult Ocean Fish",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 3kg",
+        "barcode": "9310022567308"
+      },
+      "localPath": "assets/product-images/advance-adult-ocean-fish-cat-3kg.jpg",
+      "imageUrl": "https://cdn11.bigcommerce.com/s-ucjiusw7rc/images/stencil/original/products/1014/7764/ADVANCE_Adult_Dry_Cat_Food_Ocean_Fish_with_Rice_3kg_Bag-1__51882.1623473698.jpg?c=2",
+      "sourcePage": "https://peto.com.au/advance-adult-catdry-catfood-ocean-fish-3kg/",
+      "sourceKind": "retailer",
+      "shownPack": "3kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Australian retailer lists Advance Adult dry cat food Ocean Fish with Rice 3kg. Inspected pack front reads Ocean Fish with Rice, Adult 1–8 years, 3kg. This historic pack photograph does not verify the current barcode or availability.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-13",
+      "sha256": "adb4f770e5ac53a93e4d1eb65fb2b5321b320ba9a4d4cd7e26ee0e3098e40895",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 260,
+      "identity": {
+        "brand": "Purina ONE",
+        "name": "Kitten Chicken Cat",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 1.5kg",
+        "barcode": "5051220851465"
+      },
+      "localPath": "assets/product-images/purina-one-kitten-chicken-cat-1.5kg.jpg",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0331/4922/3045/products/5f9b7caee08a06.50659570.jpg?v=1631668134",
+      "sourcePage": "https://brindabellastockfeed.com.au/products/purina-one-kitten-chicken-dry-food-1-5kg",
+      "sourceKind": "retailer",
+      "shownPack": "1.5kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Australian retailer lists Purina ONE Kitten Chicken dry cat food 1.5kg. Inspected pack front reads Kitten with Chicken and 1.5kg. The photograph does not establish the catalogue barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-13",
+      "sha256": "be15ce3edf703a75f271fbb95758ec21f10d13a6e7fc52c4ed9dcedc34d221d7",
+      "rightsStatus": "Public product image; no licence grant asserted."
     }
   ]
 }

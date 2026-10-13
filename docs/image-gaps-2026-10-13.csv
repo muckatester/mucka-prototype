@@ -1,0 +1,245 @@
+id,brand,name,type,species,foodForm,barcode,reason,legacyImage,legacyReviewReason
+99,Optimum,Sensitive Skin & Coat Salmon,Dry · 7kg,dog,dry,,legacy_confirmed_mismatch,Dog Kibble/Optimum - Sensitive Skin & Coat Salmon.webp,Visible3kg differs from catalogue7kg.
+87,Supercoat,Adult Chicken,Dry · 7.5kg,dog,dry,9300605111110,legacy_confirmed_mismatch,Dog Kibble/Supercoat - Adult Chicken.webp,Photographed 7kg differs from catalogue 7.5kg.
+242,Supercoat,Adult Chicken,Dry · 800g,cat,dry,122013000172,legacy_confirmed_mismatch,Dog Kibble/Supercoat - Adult Chicken.webp,Photograph is dog food 7kg; catalogue is cat food 800g.
+185,Optimum,Adult All Breed Chicken Dry,Roll · 700g,dog,roll,100000060282,legacy_confirmed_mismatch,Dog Kibble/Optimum - Adult All Breed Chicken Veg & Rice.webp,One assignment says Roll700g and another Dry3kg; photo is dry7kg.
+22,Advance,Healthy Weight Medium Breed Chicken,Dry · 8kg,dog,dry,9334214066424,legacy_confirmed_mismatch,Dog Kibble/Advance - Healthy Weight Medium Breed.webp,2.5 kg dry bag conflicts with catalogue 8 kg or Treat type.
+80,Purina Pro Plan,Large Breed Adult Chicken,Dry · 12kg,dog,dry,,legacy_identity_changed,Dog Kibble/Purina Pro Plan - Large Breed Adult Chicken.webp,The pictured 15kg pack differs from catalogue 12kg.
+364,Fancy Feast,Savoury Centres Chicken & Paté,Treat · 4x10g,cat,treat,885210169040,legacy_confirmed_mismatch,Cat Can/Fancy Feast - Savoury Centres Chicken & Pate.webp,"Photo is wet cat food in a can, not the catalogue treat 4 × 10 g."
+23,Advance,All Breeds Lamb with Rice,Dry · 8kg,dog,dry,9334214028880,legacy_confirmed_mismatch,Dog Kibble/Advance - Adult All Breed Lamb with Rice.webp,Visible 20 kg conflicts with catalogue 8 kg.
+241,Optimum,Adult Oral Care Chicken,Dry · 800g,cat,dry,9334214044828,legacy_confirmed_mismatch,Dog Kibble/Optimum - Oral Care Chicken.webp,Cat800g assignment conflicts with dog3kg photo; dog Oral Care assignment separately matches recipe/form/size.
+994,Advance,Oodles Puppy Turkey & Rice,Dry · 3kg,dog,dry,122711000101,legacy_confirmed_mismatch,Dog Kibble/Advance - Oodles Puppy Turkey & Rice.webp,The pictured 2.5kg bag differs from the catalogue 3kg pack.
+76,Supercoat,Adult Chicken,Dry · 2.5kg,dog,dry,9300605141223,legacy_confirmed_mismatch,Dog Kibble/Supercoat - Adult Chicken.webp,Photographed 7kg differs from catalogue 2.5kg.
+186,Pedigree,Meaty Loaf Beef Roll,Roll · 700g,dog,roll,9321855003093,no_review_record,,
+81,Purina Pro Plan,Performance All Life Stages,Dry · 12kg,dog,dry,,legacy_identity_changed,Dog Kibble/Purina Pro Plan - Performance All Life Stages.webp,The pictured 20kg pack differs from catalogue 12kg.
+202,Hill's Science Diet,Adult Hairball Control Light,Dry · 1.58kg,cat,dry,,legacy_unreadable,Cat Kibble/Hill's Science Diet - Adult Hairball Control Light.webp,Original front is readable but does not identify the catalogue Light variant or show 1.58 kg weight; identity cannot be fully verified from the image.
+192,Whiskas,Adult Seafood Selections,Dry · 800g,cat,dry,,legacy_confirmed_mismatch,Cat Treats/Whiskas - Adult Seafood Selections.webp,Wet multipack conflicts with catalogue 800 g dry food.
+89,Supercoat,Adult Sensitive Skin Fish,Dry · 7.5kg,dog,dry,9300605147355,legacy_confirmed_mismatch,Dog Kibble/Supercoat - Adult Sensitive Skin Fish.webp,Photographed 15kg differs from catalogue 7.5kg.
+259,Purina ONE,Healthy Weight Chicken Cat,Dry · 1.5kg,cat,dry,100000023533,legacy_confirmed_mismatch,Cat Kibble/Purina Pro Plan - Healthy Weight Cat.webp,Salmon & Tuna photo conflicts with Chicken recipe assignment.
+258,Purina ONE,Indoor Advantage Adult Cat,Dry · 1.5kg,cat,dry,6090410573540,no_review_record,,
+244,Optimum,Indoor Chicken,Dry · 1.5kg,cat,dry,9334214066516,no_review_record,,
+78,Purina Pro Plan,Sensitive Skin & Stomach,Dry · 2.5kg,dog,dry,,legacy_identity_changed,Dog Kibble/Purina Pro Plan - Sensitive Skin & Stomach.webp,The pictured 12kg pack differs from catalogue 2.5kg.
+213,Advance,Healthy Ageing Adult Chicken ,Dry · 1.5kg,cat,dry,,legacy_confirmed_mismatch,Cat Kibble/Advance - Healthy Ageing Chicken.webp,Visible 2 kg conflicts with catalogue 1.5 kg.
+190,Whiskas,Kitten Mixed Favourites in Jelly,Dry · 800g,cat,dry,,legacy_identity_changed,Cat Treats/Whiskas - Kitten Mixed Favourites in Jelly.webp,"Wet 12-pack conflicts with dry 800 g, single wet 85 g pouch, or dry food assignments."
+91,Supercoat,Puppy Chicken,Dry · 7.5kg,dog,dry,9300605147423,legacy_confirmed_mismatch,Dog Kibble/Supercoat - Puppy Chicken.webp,Photographed 6.7kg differs from catalogue 7.5kg.
+97,Optimum,Senior 7+ Formula,Dry · 7kg,dog,dry,,legacy_confirmed_mismatch,Dog Kibble/Optimum - Senior 7+ Formula.webp,Visible2.7kg differs from catalogue7kg.
+193,Whiskas,Senior Cat Chicken & Fish,Dry · 800g,cat,dry,,no_review_record,,
+144,Pedigree,Chopped Ground Dinner Beef,Wet · 700g can,dog,wet,0023100010045,no_review_record,,
+206,Hill's Science Diet,Adult Oral Care,Dry · 1.58kg,cat,dry,,legacy_confirmed_mismatch,Dog Kibble/Hill's Science Diet - Adult Oral Care.webp,Catalogue species is cat; image is dog Oral Care.
+64,Hill's Science Diet,Adult Sensitive Stomach & Skin,Dry · 1.81kg,dog,dry,052742057545,legacy_identity_changed,Cat Kibble/Hill's Science Diet - Adult Sensitive Stomach & Skin.webp,Photo is cat food; catalogue says dog.
+275,Dine,Desire Tuna Fillets,Wet · 85g tray,cat,wet,,legacy_confirmed_mismatch,Cat Can/Dine - Desire Tuna Fillets.webp,Catalogue says 85 g tray; photo is a cylindrical can and names Pure Tuna Whitemeat rather than Tuna Fillets.
+264,Whiskas,Kitten Mixed Favourites in Jelly,Wet · 85g pouch,cat,wet,,legacy_confirmed_mismatch,Cat Treats/Whiskas - Kitten Mixed Favourites in Jelly.webp,"Wet 12-pack conflicts with dry 800 g, single wet 85 g pouch, or dry food assignments."
+295,Purina Pro Plan,Urinary Care Chicken,Wet · 12 x 85g,cat,wet,9300605131576,legacy_identity_changed,Cat Can/Purina Pro Plan - Urinary Care Chicken Cat Wet.webp,Single 85 g can conflicts with catalogue 12-pack of 85 g pouches.
+141,Advance,Adult Chicken Salmon & Rice Wet,Wet · 100g tray,dog,wet,9334214029788,legacy_confirmed_mismatch,Dog Can/Advance - Adult Chicken Salmon & Rice Wet.webp,410 g can conflicts with 100 g tray or Dry catalogue type.
+157,Purina Pro Plan,Adult Chicken in Gravy,Wet · 100g pouch (12pk),dog,wet,,legacy_identity_changed,Cat Treats/Purina Pro Plan - Small & Mini Adult Chicken in Gravy.webp,Photo is adult cat food 85 g; dog 100 g assignment conflicts in species/size and Small & Mini name describes a different intended product.
+291,Advance,Kitten Lamb in Gravy,Wet · 85g,cat,wet,9334214044415,legacy_identity_changed,Cat Treats/Advance - Kitten Lamb in Gravy Pouch.webp,"Catalogue specifies one 85 g pouch, while photo is a carton containing multiple pouches."
+299,Felix,Doubly Delicious Mixed Selection in Jelly,Wet · 85g pouch (12pk,cat,wet,,legacy_identity_changed,Cat Treats/Felix - As Good As It Looks Mixed Selection.webp,Photo 36-pack conflicts with catalogue 12-pack.
+271,Dine,Fresh & Fine Chicken & Tuna Multipack,Wet · 85g tray (7pk,cat,wet,,legacy_confirmed_mismatch,Cat Treats/Dine - Daily Selection Chicken & Turkey.webp,Photo Fresh & Fine 6 × 50 g pouches conflicts with Daily Selection 7 × 85 g trays.
+293,Purina Pro Plan,Kitten Chicken Dry,Wet · 85g pouch (12pk),cat,wet,,legacy_identity_changed,Cat Kibble/Purina Pro Plan - Kitten Chicken Cat.webp,Image is dry kibble bag; catalogue specifies wet 85 g pouch 12-pack.
+301,Felix,Kitten Menus in Jelly,Wet · 85g pouch,cat,wet,7427067528989,legacy_confirmed_mismatch,Cat Treats/Felix - Kitten Menus in Jelly.webp,Photo 12-pack conflicts with catalogue single 85 g pouch.
+147,My Dog,Slow Cooked Lamb,Wet · 100g tray,dog,wet,,no_review_record,,
+290,Advance,Adult Chicken in Gravy Pouch,Wet · 85g pouch,cat,wet,,legacy_confirmed_mismatch,Cat Treats/Advance - Adult Chicken in Gravy Pouch.webp,"Catalogue specifies one 85 g pouch, while photo is a carton containing multiple pouches."
+145,Pedigree,Adult with Real Beef Dry,Wet · 100g pouch (12pk),dog,wet,,legacy_confirmed_mismatch,Dog Can/Pedigree - Adult Pouch Beef in Jelly.webp,The pictured 3kg dry dog food agrees with the name Adult with Real Beef Dry but conflicts with the catalogue wet form and 12 x 100g pouch pack.
+146,My Dog,Gourmet Beef Adult,Wet · 100g tray (12pk),dog,wet,,no_review_record,,
+289,Whiskas,Kitten with Chicken Favourites in Gravy,Wet · 85g pouch,cat,wet,9334214030616,legacy_confirmed_mismatch,Cat Treats/Whiskas - Kitten Chicken in Gravy Pouch.webp,Photo 12-pack conflicts with catalogue one 85 g pouch.
+288,Hill's Science Diet,Kitten Chicken Entrée,Wet · 156g can,cat,wet,,legacy_confirmed_mismatch,Cat Treats/Hill's Science Diet - Kitten Chicken Entrée.webp,85 g wet pouch conflicts with 156 g can or dry assignments.
+142,Advance,Puppy Chicken & Rice Can,Wet · 100g tray,dog,wet,9310022193002,legacy_confirmed_mismatch,Dog Can/Advance - Puppy Chicken with Rice.webp,410 g can conflicts with catalogue 100 g tray.
+216,Black Hawk,Adult ocean Fish,Dry · 1.2kg,cat,dry,5060708565626,legacy_confirmed_mismatch,Cat Kibble/Black Hawk - Grain Free Duck & Fish Cat.webp,The pictured 8kg Adult Ocean Fish bag differs from the catalogue 1.2kg pack.
+217,Black Hawk,Grain Free Chicken & Salmon,Dry · 1.2kg,cat,dry,,legacy_confirmed_mismatch,Dog Kibble/Black Hawk - Grain Free Adult Chicken.webp,"The pictured dog chicken dry bag conflicts with the assigned cat species, different recipes, or wet forms and pack sizes."
+214,Black Hawk,Adult Lamb,Dry · 1.2kg,cat,dry,9312239052196,legacy_confirmed_mismatch,Dog Kibble/Black Hawk - Grain Free Adult Chicken.webp,"The pictured dog chicken dry bag conflicts with the assigned cat species, different recipes, or wet forms and pack sizes."
+218,Black Hawk,Chicken Indoor,Dry · 1.2kg,cat,dry,,legacy_confirmed_mismatch,Cat Kibble/Black Hawk - Grain Free Chicken & Lamb Indoor.webp,The pictured 8kg Chicken Indoor bag differs from the catalogue 1.2kg pack.
+304,Wellness,"CORE Original Turkey, Chicken & Herring",Wet · 156g can,cat,wet,,legacy_identity_changed,"Dog Kibble/Wellness - CORE Original Turkey, Chicken & Herring.webp","Photograph is dry adult dog food, not the 156g wet cat recipe."
+251,Wellness,CORE Grain Free Indoor Cat,Dry · 1.8kg,cat,dry,,legacy_identity_changed,Dog Kibble/Wellness - CORE Grain Free Ocean Formula.webp,"Photograph is Ocean dog food, not Indoor Cat."
+229,Orijen,Tundra Cat,Dry · 340g,cat,dry,4434567349658,legacy_confirmed_mismatch,Cat Kibble/Orijen - Tundra Cat.webp,Visible 4 lb bag conflicts with catalogue 340 g.
+184,Black Hawk,Dog Roll Chicken,Roll · 700g,dog,roll,,no_review_record,,
+292,Black Hawk,Grain Free Chicken & Tuna Wet,Wet · 85g pouch,cat,wet,9312239051984,legacy_confirmed_mismatch,Dog Kibble/Black Hawk - Grain Free Adult Chicken.webp,"The pictured dog chicken dry bag conflicts with the assigned cat species, different recipes, or wet forms and pack sizes."
+377,Ziwi Peak,Good Cat Venison Treat,Treat · 85g,cat,treat,,no_review_record,,
+31,Scratch,Kangaroo & Lamb Adult,Dry · 3kg,dog,dry,,legacy_confirmed_mismatch,Dog Kibble/Meals for Mutts - Kangaroo & Lamb Adult.webp,"Both assignments list3kg or2.5kg, differing from photographed20kg."
+252,Wellness,Complete Health Chicken & Fish,Dry · 1.8kg,cat,dry,,no_review_record,,
+183,Black Hawk,Dog Roll Beef,Roll · 700g,dog,roll,,legacy_confirmed_mismatch,Dog Kibble/Black Hawk - Working Dog Beef & Lamb.webp,The pictured lamb and beef dry food bag is not a 700g beef dog roll.
+376,Ziwi Peak,Good Cat Lamb Treat,Treat · 85g,cat,treat,,no_review_record,,
+32,Scratch,Turkey & Duck Puppy,Dry · 3kg,dog,dry,,no_review_record,,
+43,Acana,Wholesome Grains Red Meat,Dry · 2kg,dog,dry,9360770000121,no_review_record,,
+309,Ivory Coat,Chicken & Kangaroo Stew Cat,Wet · 85g pouch,cat,wet,,legacy_confirmed_mismatch,Cat Kibble/Ivory Coat - Grain Free Adult Chicken & Kangaroo Cat.webp,Adult dry cat bag conflicts with Indoor or wet stew assignment.
+321,Orijen,Freeze-Dried Cat Treats/Toppers,Freeze-Dried · 50g,cat,freeze-dried,9300633553869,no_review_record,,
+30,Scratch,Free Range Chicken Adult,Dry · 3kg,dog,dry,9339687207176,no_review_record,,
+324,Ziwi Peak,Venison Wet Dog Food Can,Treat · 85g,dog,treat,9421016594641,legacy_confirmed_mismatch,Dog Can/Ziwi Peak - Venison Wet Dog Food.webp,390 g wet can conflicts with 170 g wet or 85 g treat assignments.
+221,SavourLife,Grain Free Adult Chicken,Dry · 2kg,cat,dry,,legacy_confirmed_mismatch,Dog Kibble/Savourlife - Grain Free Adult Chicken.webp,"The photo explicitly shows dog food, whereas this record assigns cat species. The named recipe alone does not establish that the catalogue species should be changed."
+1027,Ivory Coat,Grain Free Reduced Fat Turkey,Dry · 2kg,dog,dry,,legacy_confirmed_mismatch,Dog Kibble/Ivory Coat - Grain Free Adult Chicken.webp,Catalogue names Reduced Fat Turkey2kg; photo is Chicken13kg.
+322,Ziwi Peak,Beef Wet Dog Food Can,Treat · 85g,dog,treat,9421016594702,legacy_confirmed_mismatch,Dog Can/Ziwi Peak - Dog Beef Wet.webp,390 g wet can conflicts with 170 g wet or 85 g treat assignments.
+161,Wellness,CORE Grain Free Ocean Formula,Wet · 354g can,dog,wet,,legacy_identity_changed,Dog Kibble/Wellness - CORE Grain Free Ocean Formula.webp,"Photograph is a dry dog food bag, not the 354g wet can."
+375,Ziwi Peak,Good Cat Beef Treat,Treat · 85g,cat,treat,8853301001083,no_review_record,,
+323,Ziwi Peak,Lamb Wet Dog Food Can,Treat · 85g,dog,treat,9421016594672,legacy_confirmed_mismatch,Dog Can/Ziwi Peak - Dog Lamb Wet.webp,Wet 170 g can conflicts with 85 g treat assignment.
+380,Orijen,Freeze-Dried Cat Topper Original,Topper · 50g,cat,topper,,legacy_confirmed_mismatch,Cat Kibble/Orijen - Original Cat.webp,Dry bag conflicts with catalogue 50 g topper.
+237,Meals for Meows,Single Protein Chicken,Dry · 2.5kg,cat,dry,,no_review_record,,
+124,Leaps & Bounds,Grain Free Kangaroo & Vegetables,Dry · 3kg,dog,dry,,legacy_confirmed_mismatch,Dog Kibble/Leaps & Bounds - Grain Free Adult Lamb & Veg.webp,Recipe matches but visible3.2kg differs from listed3kg.
+374,Vetalogica,Naturals Healthy Cat Treats,Treat · 100g,cat,treat,,no_review_record,,
+126,Merrick,Grain Free Real Texas Beef,Dry · 1.81kg,dog,dry,,no_review_record,,
+257,Merrick,Purrfect Bistro Grain Free Chicken Cat,Dry · 1.81kg,cat,dry,,no_review_record,,
+247,Vetalogica,Naturals Grain Free Chicken Adult,Dry · 3kg,cat,dry,9310023144003,legacy_confirmed_mismatch,Dog Kibble/Vetalogica - Naturals Grain Free Chicken Adult.webp,"Photograph is dog food, not cat food."
+341,Blackdog,Fish & Chicken Sushi,Treat · 200g,dog,treat,,legacy_confirmed_mismatch,Dog Treats/Blackdog - Fish & Chicken Sushi.webp,The pictured 150g pack differs from catalogue 200g.
+278,Applaws,Tuna With Mackerel in Jelly,Wet · 70g,cat,wet,5060333430283,legacy_identity_changed,Cat Treats/Applaws - Mackerel with Sardine.webp,"Catalogue snapshot recipe agrees, but specifies a can while photo is a pouch."
+296,Leaps & Bounds,Chicken & Rosemary Wet,Wet · 85g pouch (12pk),cat,wet,,legacy_confirmed_mismatch,Cat Kibble/Leaps & Bounds - Adult Chicken & Rosemary.webp,Dry bag conflicts with catalogue wet 12-pack of 85 g pouches.
+160,Leaps & Bounds,Adult Beef Casserole Can,Wet · 400g can (12pk),dog,wet,,legacy_confirmed_mismatch,Dog Can/Leaps & Bounds - Grain Free Lamb & Veg Wet.webp,"Beef Casserole recipe agrees, but the single pictured 700g can differs from the catalogue 12 x 400g pack."
+249,Canidae,PURE Elements Chicken Cat,Dry · 1.8kg,cat,dry,,no_review_record,,
+298,Leaps & Bounds,Kitten Chicken Wet,Wet · 85g pouch (12pk),cat,wet,,legacy_confirmed_mismatch,Cat Kibble/Leaps & Bounds - Kitten Chicken Dry Cat Food.webp,Dry kitten chicken bag conflicts with wet pouch or topper assignments.
+355,Earthz Pet,Beef Health Gravy Topper,Topper · 250ml,dog,topper,,no_review_record,,
+370,Inaba,Chicken Fillet Grilled,Treat · Pack of 4,cat,treat,,legacy_identity_changed,Cat Treats/Inaba - CIAO Lickable Treats Chicken.webp,"Photo is a grilled fillet single pouch, not CIAO lick treats pack of four."
+379,Feline Natural,Freeze-Dried Chicken Topper,Topper · 100g,cat,topper,100000041670,legacy_confirmed_mismatch,Cat Treats/Feline Natural - Freeze-Dried Chicken Topper.webp,"Photo is 50 g treat, while catalogue specifies 100 g topper."
+343,Love Em,Liver Treats,Treat · 200g,dog,treat,9325242000535,no_review_record,,
+303,Open Farm,Rustic Blend Beef Cat,Wet · 156g can,cat,wet,9332613006409,no_review_record,,
+310,Savourlife,Wet Cat Food Chicken,Wet · 85g pouch,cat,wet,,no_review_record,,
+279,Applaws,Chicken with Salmon Pumpkin Carrots and Peas in Broth,Wet · 70g can,cat,wet,5060122492515,legacy_confirmed_mismatch,Dog Can/Applaws - Chicken with Pumpkin & Peas.webp,The pictured dog food in a 156g can conflicts with the catalogue cat species and 70g can; the named recipe otherwise agrees.
+327,Savourlife,Australian Lamb Training Treats,Treat · 165g,dog,treat,9339687341351,no_review_record,,
+320,Open Farm,Freeze-Dried Raw Morsels Cat,Freeze-Dried · 100g,cat,freeze-dried,,no_review_record,,
+306,Kit Cat,Tuna Wet,Wet · 80g can,cat,wet,,no_review_record,,
+378,Earthz Pet,Beef Health Cat Gravy Topper,Topper · 250ml,cat,topper,,no_review_record,,
+261,Heart to Tail (ALDI),Cat Food Chicken & Salmon,Dry · 1.5kg,cat,dry,9334214018256,no_review_record,,
+354,K9 Natural,Chicken Feast Freeze-Dried Topper,Topper · 142g,dog,topper,,legacy_confirmed_mismatch,Dog Specialty/K9 Natural - Chicken Feast Freeze-Dried.webp,The pictured dog food 500g pack conflicts with cat 320g or dog topper 142g assignments.
+189,SavourLife,Gently Air-Dried Chicken,Dehydrated · 900g,dog,dehydrated,,legacy_confirmed_mismatch,Dog Specialty/Savourlife - Gently Air-Dried Chicken.webp,The pictured 1kg pack differs from both catalogue 900g records.
+340,Blackdog,Kangaroo Tails,Treat · Pack of 6,dog,treat,122921000025,no_review_record,,
+307,Merrick,Purrfect Bistro Chicken Pâté,Wet · 156g can,cat,wet,022808382546,no_review_record,,
+302,Open Farm,Rustic Blend Chicken Cat,Wet · 156g can,cat,wet,628451123934,legacy_confirmed_mismatch,Dog Specialty/Open Farm - Rustic Stew Harvest Chicken.webp,The dog 354g carton conflicts with cat 156g can; the dog record also specifies a can rather than the pictured carton.
+188,Savourlife,Gently Air-Dried Chicken,Dehydrated · 900g,dog,dehydrated,,legacy_confirmed_mismatch,Dog Specialty/Savourlife - Gently Air-Dried Chicken.webp,The pictured 1kg pack differs from both catalogue 900g records.
+256,Blue Buffalo,Life Protection Adult Chicken Cat,Dry · 2.27kg,cat,dry,,no_review_record,,
+34,Savourlife,Ancient Grains Lamb & Rice,Dry · 2.5kg,dog,dry,,legacy_confirmed_mismatch,Dog Kibble/Savourlife - Essentials Lamb with Veg & Rice.webp,"The pictured Essentials dry 3kg bag conflicts with the wet 400g can assignment, and with the Ancient Grains 2.5kg range and pack assignment."
+250,Canidae,PURE Sea Fish Cat,Dry · 1.8kg,cat,dry,9349673003071,no_review_record,,
+255,Blue Buffalo,Wilderness Indoor Chicken Cat,Dry · 2.27kg,cat,dry,,no_review_record,,
+106,Open Farm,"Puppy Turkey, Salmon & Ancient Grains",Dry · 1.81kg,dog,dry,9356335003768,legacy_confirmed_mismatch,Dog Kibble/Open Farm - Harvest Chicken Ancient Grains.webp,"Catalogue says Puppy Turkey, Salmon & Ancient Grains; photo says Chicken, Salmon."
+57,Canidae,Pure Limited Ingredient Salmon,Dry · 1.8kg,dog,dry,9311503141208,legacy_confirmed_mismatch,Dog Kibble/Canidae - Pure Limited Ingredient Salmon.webp,The pictured All Life Stages Ancient Grains product is a different range from Pure Limited Ingredient Salmon.
+105,Heart to Tail (ALDI),Dog Food Chicken Veg & Rice,Dry · 3kg,dog,dry,9300633553982,no_review_record,,
+58,Canidae,Pure Limited Ingredient Lamb,Dry · 1.8kg,dog,dry,,legacy_confirmed_mismatch,Dog Kibble/Canidae - Pure Limited Ingredient Lamb.webp,The pictured All Life Stages Ancient Grains product is a different range from Pure Limited Ingredient Lamb.
+103,Julius (ALDI),Adult Dry Dog Food Chicken,Dry · 7.5kg,dog,dry,9310022020407,no_review_record,,
+104,Julius (ALDI),Adult Dry Dog Food Beef,Dry · 7.5kg,dog,dry,,no_review_record,,
+381,Eukanuba,Puppy Small Breed Chicken,Dry · 3kg,dog,dry,122717000010,legacy_confirmed_mismatch,Dog Kibble/Eukanuba - Puppy Small Breed Chicken.webp,Photo says Medium Breed; catalogue says Small Breed.
+394,Eukanuba,Daily Care Sensitive Digestion,Dry · 2.5kg,dog,dry,9300607563412,no_review_record,,
+395,Eukanuba,Daily Care Sensitive Skin,Dry · 2.5kg,dog,dry,9310320003829,no_review_record,,
+400,Nature's Gift,Casserole Chicken & Rice,Wet · 1.2kg,dog,wet,,legacy_confirmed_mismatch,Dog Can/Nature's Gift - Casserole Chicken & Rice.webp,"Photo is Loaf, not Casserole; 700 g also conflicts with 1.2 kg row and wet can conflicts with dry row."
+414,Billy & Margot,Beef,Wet · 395g,dog,wet,,legacy_confirmed_mismatch,Dog Specialty/Billy & Margot - Wet Grass-Fed Beef with Superfoods.webp,Visible 100g pack differs from catalogue 395g.
+415,Billy & Margot,Puppy With Salmon,Wet · 395g,dog,wet,,legacy_confirmed_mismatch,Dog Specialty/Billy & Margot - Wet Wild Salmon with Superfoods.webp,Visible 100g pack differs from catalogue 395g.
+417,Billy & Margot,Wild Kangaroo,Wet · 395g,dog,wet,,legacy_confirmed_mismatch,Dog Specialty/Billy & Margot - Wet Kangaroo with Superfoods.webp,Visible 100g pack differs from catalogue 395g.
+420,Baxters (Woolworths),Dry Dog Food Lamb & Vegetables,Dry · 8kg,dog,dry,9300633554118,no_review_record,,
+421,Baxters (Woolworths),Wet Dog Food Chicken & Liver,Wet · 700g,dog,wet,,no_review_record,,
+422,Baxters (Woolworths),Wet Dog Food Beef Casserole,Wet · 700g,dog,wet,,no_review_record,,
+428,Cesar,Beef Selections in Sauce,Wet · 100g,dog,wet,,no_review_record,,
+429,Cesar,Chicken Selections in Sauce,Wet · 100g,dog,wet,,no_review_record,,
+430,Cesar,Lamb Selections in Sauce,Wet · 100g,dog,wet,,no_review_record,,
+431,Cesar,Turkey Selections in Sauce,Wet · 100g,dog,wet,5060708562762,no_review_record,,
+432,Cesar,Country Kitchen Chicken & Liver,Wet · 100g,dog,wet,9300633683542,no_review_record,,
+433,Cesar,Country Kitchen Beef & Vegetables,Wet · 100g,dog,wet,9300644123563,no_review_record,,
+434,Cesar,Country Kitchen Lamb & Rice,Wet · 100g,dog,wet,,no_review_record,,
+435,Cesar,Gourmet Turkey & Bacon,Wet · 100g,dog,wet,9310768115498,no_review_record,,
+436,Snappy Tom,Naturals Tuna Temptations with Salmon,Wet · 85g,cat,wet,,no_review_record,,
+437,Snappy Tom,Naturals Tuna with Mackerel,Wet · 85g,cat,wet,,no_review_record,,
+438,Snappy Tom,Naturals Ocean Fish with Salmon,Wet · 85g,cat,wet,9300605146709,no_review_record,,
+439,Snappy Tom,Naturals Sardine Cutlet with Salmon,Wet · 85g,cat,wet,,no_review_record,,
+440,Snappy Tom,Naturals Chicken with Ocean Fish,Wet · 85g,cat,wet,9421907880129,no_review_record,,
+441,Snappy Tom,Ocean Fish,Wet · 400g,cat,wet,,no_review_record,,
+442,Snappy Tom,Tuna with Whitebait,Wet · 400g,cat,wet,,no_review_record,,
+443,Snappy Tom,Gourmet Seafood,Wet · 400g,cat,wet,277746000001,no_review_record,,
+445,Snappy Tom,Mackerel,Wet · 400g,cat,wet,60992990024,no_review_record,,
+446,Snappy Tom,Tuna with Prawn,Wet · 400g,cat,wet,,no_review_record,,
+447,Snappy Tom,Whole Tuna,Wet · 400g,cat,wet,,no_review_record,,
+451,Fussy Cat,Grain Free+ Kitten Chicken,Dry · 500g,cat,dry,,legacy_confirmed_mismatch,Cat Kibble/Fussy Cat - Grain Free+ Kitten Chicken.webp,Visible 450 g conflicts with catalogue 500 g.
+452,Fussy Cat,Grain Free+ Indoor Chicken & Turkey,Dry · 500g,cat,dry,,legacy_unreadable,Cat Kibble/Fussy Cat - Grain Free+ Indoor Chicken & Turkey.webp,"Recipe, cat dry form and size agree, but photo does not identify the catalogue Indoor formulation; that identity distinction cannot be verified from this front alone."
+453,Fussy Cat,Classic Chilled Roll Chicken,Roll · 1.25kg,cat,roll,9319185550202,no_review_record,,
+454,Fussy Cat,Classic Chilled Roll Salmon,Roll · 1.25kg,cat,roll,,no_review_record,,
+456,Fussy Cat,Chicken & Turkey with Cranberry Can,Wet · 85g,cat,wet,9310085001399,legacy_confirmed_mismatch,Cat Can/Fussy Cat - Grain Free Pouch Chicken with Liver.webp,Both catalogue records specify 85 g; visible can is 400 g.
+457,Fussy Cat,Chicken & Turkey with Cranberry Can,Wet · 85g,cat,wet,9310085001412,legacy_confirmed_mismatch,Cat Can/Fussy Cat - Grain Free Pouch Chicken with Liver.webp,Both catalogue records specify 85 g; visible can is 400 g.
+458,Sheba,Domes Tuna,Wet · 75g,cat,wet,,no_review_record,,
+459,Sheba,Domes Salmon,Wet · 75g,cat,wet,,no_review_record,,
+460,Sheba,Domes Chicken,Wet · 75g,cat,wet,,no_review_record,,
+461,Sheba,Cuisine Chicken & Liver Pouch,Wet · 85g,cat,wet,9356335003744,no_review_record,,
+462,Sheba,Cuisine Tuna in Gravy Pouch,Wet · 85g,cat,wet,,no_review_record,,
+464,Sheba,Fine Flakes Tuna & Prawn,Wet · 85g,cat,wet,9334214034652,no_review_record,,
+465,Sheba,Fine Flakes Ocean Fish,Wet · 85g,cat,wet,9300633092627,no_review_record,,
+466,Friskies,Adult 7,Dry · 1kg,cat,dry,,no_review_record,,
+472,Friskies,Senior 7+ Gravy Sensations,Dry · 2.5kg,cat,dry,,no_review_record,,
+474,Smitten (Woolworths),Adult Dry Cat Food Tuna & Salmon,Dry · 1kg,cat,dry,,no_review_record,,
+475,Smitten (Woolworths),Adult Dry Dog Food with Chicken,Dry · 1kg,cat,dry,,legacy_confirmed_mismatch,Dog Kibble/Coles - Adult Dry Dog Food with Chicken.webp,"The photo is Coles dog food 3kg, whereas this assignment is Smitten (Woolworths), cat, 1kg."
+476,Smitten (Woolworths),Wet Cat Food Ocean Fish Pouch,Wet · 85g,cat,wet,9339687419920,no_review_record,,
+478,Coles,Adult Dry Cat Food Tuna,Dry · 1kg,cat,dry,,no_review_record,,
+479,Coles,Wet Cat Food Tuna in Jelly Pouch,Wet · 85g,cat,wet,9300605153899,no_review_record,,
+8,Absolute Holistic,Raw Stew — Chicken & King Salmon,dry,dog,dry,122719000007,legacy_confirmed_mismatch,Cat Can/Absolute Holistic - Complete Diet — Chicken & Salmon.webp,Can photo conflicts with dry food type; other assigned recipes also differ.
+1005,Optimum,Urinary Care Adult Cat,dry,dog,dry,,legacy_identity_changed,Cat Treats/Optimum - Adult Ocean Fish in Jelly Pouch.webp,Wet cat urinary-care pouch conflicts with catalogue dog/dry.
+1039,Advance,Adult Cat Kibble,dry,cat,dry,9339687022403,legacy_identity_changed,Cat Treats/Advance - Indoor Adult Chicken & Turkey in Jelly Pouch.webp,Wet cat pouches conflict with catalogue dog/dry.
+1041,Balanced Life,Dog Roll — Pastures Blend,roll,dog,roll,,no_review_record,,
+1032,Balanced Life,Dog Roll — Poultry Blend,roll,dog,roll,9300633948955,no_review_record,,
+1047,Balanced Life,Dog Roll — Turkey & Rice (LID),roll,dog,roll,,no_review_record,,
+1049,Balanced Life,Enhanced Grain Free — Kangaroo,dry,dog,dry,,legacy_confirmed_mismatch,Dog Kibble/Balanced Life - Enhanced Grain Free Chicken.webp,"The pictured chicken recipe differs from the named kangaroo, lamb or salmon recipe."
+1050,Balanced Life,Enhanced Grain Free — Lamb,dry,dog,dry,,legacy_confirmed_mismatch,Dog Kibble/Balanced Life - Enhanced Grain Free Chicken.webp,"The pictured chicken recipe differs from the named kangaroo, lamb or salmon recipe."
+1056,Big Dog,BARF Raw Rabbit for Cats,raw,cat,raw,,no_review_record,,
+1066,Black Hawk,Dog Roll Chicken (Discontinued),roll,dog,roll,9334214063379,no_review_record,,
+1093,Canine Country,Venison & Wild Boar BARF,Raw,dog,raw,,legacy_identity_changed,Dog Specialty/Canine Country - Venison & Wild Boar BARF.webp,"Single-protein Venison label conflicts with named Venison & Wild Boar recipe, and raw food conflicts with dry type."
+483,DentaLife,Daily Oral Care Large Breed Mega Pack,Treat,dog,treat,0021006599381,no_review_record,,
+487,Dine,Classic Collection Chicken Slices in Jelly,Wet,cat,wet,9334214059037,legacy_identity_changed,Cat Treats/Dine - Classic Collection Chicken Slices in Jelly.webp,Wet cat multipack conflicts with dog/dry; specific chicken slices recipe is not readable.
+499,Fancy Feast,Creamy Broths Salmon & Vegetables,dry,dog,dry,131811000051,no_review_record,,
+500,Fancy Feast,Creamy Broths Tuna,Topper,cat,topper,,legacy_identity_changed,"Cat Treats/Fancy Feast - Royale Broths Tuna, Surimi & Prawns.webp",Wet cat broth conflicts with dog/dry or dog/raw assignments; chicken/vegetable and Creamy Broths names also differ.
+513,Fancy Feast,"Royale Broths Chicken, Surimi & Vegetables",dry,dog,dry,,legacy_confirmed_mismatch,"Cat Treats/Fancy Feast - Royale Broths Tuna, Surimi & Prawns.webp",Wet cat broth conflicts with dog/dry or dog/raw assignments; chicken/vegetable and Creamy Broths names also differ.
+518,Felix,Doubly Delicious Mixed Selection,Wet,cat,wet,,legacy_identity_changed,Cat Treats/Felix - Doubly Delicious Mixed Selection.webp,"Photo is standard As Good As It Looks Mixed Selection, not Doubly Delicious; wet cat species/form also conflict with dog/dry."
+521,Felix,Sensations Jellies Fish & Prawn,Wet,cat,wet,,legacy_identity_changed,Cat Treats/Felix - Sensations Jellies Fish & Prawn.webp,Wet cat fish variety pack conflicts with single Fish & Prawn name and dog/raw.
+523,Felix,Sensations Sauces Fish Selection,Wet,cat,wet,9300605139916,legacy_identity_changed,Cat Treats/Felix - Sensations Sauces Fish Selection.webp,"Photo is Meat Selection, not Fish Selection; wet cat food also conflicts with dog/dry."
+539,Glow,Adult Mackerel & Lamb Dry Dog Food,dry,dog,dry,,legacy_confirmed_mismatch,Dog Kibble/Glow - Adult Mackerel & Lamb Dry Dog Food.webp,Image names Australian Mackerel; catalogue names Mackerel & Lamb. Lamb is not identified on front; exact recipe identity unestablished.
+557,Hill's Prescription Diet,i/d Digestive Care Stew,Wet,dog,wet,123011000079,legacy_identity_changed,Dog Can/Hill's Prescription Diet - i-d Digestive Care Stew.webp,"Wet can conflicts with catalogue dry, and Low Fat variant is not specified by generic i/d name."
+564,Hill's Prescription Diet,Metabolic Weight Management,Dry · 3.5kg,dog,dry,052742022369,legacy_identity_changed,Cat Kibble/Hill's Prescription Diet - Metabolic Weight Management.webp,Photo is cat food; catalogue says dog.
+567,Hill's Prescription Diet,t/d Dental Care Small Bites,Dry · 2.25kg,dog,dry,0052742400501,legacy_identity_changed,Dog Specialty/Hill's Prescription Diet - t-d Dental Care.webp,"Visible named range, dog species and dry form agree; pack size is unverified."
+573,Hill's Science Diet,Adult 7+ Youthful Vitality Chicken & Rice,dry,dog,dry,,legacy_confirmed_mismatch,Dog Kibble/Hill's Science Diet - Adult 7+ Youthful Vitality Chicken & Rice.webp,Photo product line says Senior Vitality; catalogue says Youthful Vitality. Local photo alone does not establish equivalence.
+592,Hill's Science Diet,Kitten Chicken Entrée,dry,cat,dry,052742176901,legacy_confirmed_mismatch,Cat Treats/Hill's Science Diet - Kitten Chicken Entrée.webp,85 g wet pouch conflicts with 156 g can or dry assignments.
+596,Hill's Science Diet,Puppy Large Breed Lamb Meal & Rice,dry,dog,dry,9339687362929,legacy_confirmed_mismatch,Dog Kibble/Hill's Science Diet - Puppy Large Breed Lamb Meal & Rice.webp,Image says Adult1–5; catalogue says Puppy Large Breed.
+601,Hill's Science Diet,Youthful Vitality 7+ Chicken & Rice,dry,dog,dry,,legacy_confirmed_mismatch,Cat Kibble/Hill's Science Diet - Youthful Vitality 7+ Chicken & Rice.webp,Photo is cat food; catalogue says dog.
+608,Ivory Coat,Holistic Nutrition Puppy Chicken & Brown Rice,dry,dog,dry,,legacy_confirmed_mismatch,Dog Kibble/Ivory Coat - Holistic Nutrition Puppy Chicken & Brown Rice.webp,Catalogue Holistic Nutrition Chicken & Brown Rice differs from grain-free Chicken photo.
+623,Leaps & Bounds,Adult Ocean Fish & Thyme Dry Cat Food,Dry · 3.2kg,cat,dry,9345740080211,legacy_identity_changed,Cat Kibble/Leaps & Bounds - Adult Ocean Fish & Thyme Dry Cat Food.webp,"Dry adult ocean-fish cat product is visible, but Thyme in catalogue recipe is not identifiable from the front; cannot establish exact variant."
+629,Leaps & Bounds,Adult Casserole with Vegetables Can,dry,dog,dry,,legacy_confirmed_mismatch,Dog Can/Leaps & Bounds - Chicken Casserole Dog Food.webp,Wet can conflicts with dry type for every assigned record; Chicken Casserole assignment also has different protein.
+632,Leaps & Bounds,Adult Beef & Vegetable Roll,dry,dog,dry,9321855002232,legacy_confirmed_mismatch,"Dog Kibble/Leaps & Bounds - Roo, Beef & Vegetable Adult Dog Roll.webp","Assigned product identifies patties or roll, but photograph shows dry kibble bag."
+643,Leaps & Bounds,Chicken & Rice Small Breed Puppy Dog Food,Dry · 3.2kg,dog,dry,9345740102241,legacy_identity_changed,Dog Can/Leaps & Bounds - Chicken & Rice Puppy Dog Food.webp,Wet can conflicts with all assigned dry/roll records; Small Breed designation is also absent from this puppy can.
+650,Leaps & Bounds,Chicken Cat Food Topper,Topper · 40g x 3,cat,topper,19345740168169,legacy_identity_changed,Cat Kibble/Leaps & Bounds - Kitten Chicken Dry Cat Food.webp,Dry kitten chicken bag conflicts with wet pouch or topper assignments.
+653,Leaps & Bounds,Adult Casserole Can,dry,dog,dry,9319185009502,legacy_confirmed_mismatch,Dog Can/Leaps & Bounds - Chicken Casserole Dog Food.webp,Wet can conflicts with dry type for every assigned record; Chicken Casserole assignment also has different protein.
+664,Leaps & Bounds,Chicken Mousse Cat Food,dry,cat,dry,,legacy_confirmed_mismatch,Cat Can/Leaps & Bounds - Indoor Chicken Mousse Cat Food.webp,Photo shows wet cat food in a can; catalogue food type is dry.
+677,Leaps & Bounds,Grain Free Chicken & Rosemary Dog Food,dry,dog,dry,5060333439880,legacy_confirmed_mismatch,Dog Treats/Leaps & Bounds - Grain Free Chicken Dog Food.webp,Raw Adult Chicken box does not establish the named dry Chicken & Rosemary product.
+684,Leaps & Bounds,Indoor Chicken & Thyme Dry Cat Food,Dry · 1.5kg,cat,dry,9345740125196,legacy_identity_changed,Cat Kibble/Leaps & Bounds - Indoor Chicken & Thyme Dry Cat Food.webp,"Indoor chicken cat product is visible, but Thyme in the catalogue recipe is not identifiable from front; cannot establish exact variant."
+713,Leaps & Bounds,Tuna Cat Food Topper,Topper · 40g x 3,cat,topper,19345740168206,legacy_identity_changed,Cat Can/Leaps & Bounds - Tuna Mousse Kitten Cat Food.webp,Kitten mousse can conflicts with the assigned topper or dry food type.
+722,Lyka,Dingo Bones Dental Chew,dry,dog,dry,,no_review_record,,
+724,Lyka,Puppy Fresh Bowl,fresh,dog,fresh,,no_review_record,,
+725,Lyka,Roo Bites Training Treats,treat,dog,treat,,no_review_record,,
+731,My Dog,Home Delights Braised Beef,dry,dog,dry,,no_review_record,,
+732,My Dog,Home Delights Slow Cooked Lamb,dry,dog,dry,,no_review_record,,
+735,My Dog,Naturally Crafted Beef Capsicum & Green Beans,Wet,dog,wet,,no_review_record,,
+736,My Dog,Naturally Crafted Chicken Sweet Potato & Broccoli,dry,dog,dry,9340156029465,no_review_record,,
+739,Nature's Gift,Casserole Chicken & Rice,dry,dog,dry,9314364337568,legacy_confirmed_mismatch,Dog Can/Nature's Gift - Casserole Chicken & Rice.webp,"Photo is Loaf, not Casserole; 700 g also conflicts with 1.2 kg row and wet can conflicts with dry row."
+743,Nature's Gift,Fresh Dog Roll Lamb & Vegetables,fresh,dog,fresh,9314364335724,legacy_confirmed_mismatch,"Dog Roll/Nature's Gift - Fresh Dog Roll Chicken, Brown Rice & Vegetables.webp","Photo shows a chicken roll, conflicting with the lamb recipe or dry loaf assignment."
+745,Nature's Gift,Grain Free Chicken & Duck,dry,dog,dry,9319185009632,legacy_confirmed_mismatch,Dog Kibble/Nature's Gift - Grain Free Beef.webp,"Photo names Natural Ingredients Beef, not named Grain Free line; Chicken & Duck and Wild Game assignments are different recipes."
+748,Nature's Gift,"Loaf Beef, Liver & Vegetables",dry,dog,dry,9314364336202,no_review_record,,
+753,Nature's Goodness,"Grain Free Adult Chicken, Lamb & Garden Vegetables",dry,dog,dry,,no_review_record,,
+756,Nature's Goodness,Grain Free Puppy Chicken with Garden Vegetables,dry,dog,dry,,no_review_record,,
+765,Pedigree,Adult Lamb & Gravy Casserole,Wet,dog,wet,,legacy_identity_changed,Dog Can/Pedigree - Adult Lamb & Gravy Casserole.webp,Homestyle Lamb/Pasta/Veggies differs from Lamb & Gravy Casserole and wet can conflicts with dry.
+766,Pedigree,Dentastix Chewy Chunx Small/Medium Dog,Treat,dog,treat,122914000152,legacy_identity_changed,Dog Treats/Pedigree - Dentastix Chewy Chunx Small-Medium Dog.webp,Visible MAXI 15kg+ size is inconsistent with the Small/Medium listing; catalogue also says dry food.
+844,Purina Pro Plan,Adult Salmon & Rice,dry,dog,dry,,legacy_identity_changed,Cat Kibble/Purina Pro Plan - Adult Salmon.webp,Photo is cat food; both catalogue records have dog species.
+850,Purina Pro Plan,Delicate Care Sensitive Stomach,dry,cat,dry,,legacy_identity_changed,Cat Kibble/Purina Pro Plan - Delicate Care Sensitive Stomach.webp,Photo specifies Sensitive Skin & Stomach Salmon & Tuna; catalogue's Delicate Care Sensitive Stomach name does not establish whether it is this formulation.
+873,Royal Canin Veterinary,Calm,Dry · 4kg,dog,dry,3182550765398,legacy_identity_changed,Cat Kibble/Royal Canin Veterinary - Calm.webp,Photo depicts cat food; catalogue says dog.
+875,Royal Canin Veterinary,Derma Comfort,dry,dog,dry,,no_review_record,,
+882,Royal Canin Veterinary,Hydrolyzed Protein,dry,dog,dry,,no_review_record,,
+902,Stay Loyal,Grain-Free Large Breed Puppy,dry,dog,dry,,no_review_record,,
+907,Supercoat,Healthy Dental Sticks,dry,dog,dry,,no_review_record,,
+915,Temptations,Meaty Bites Chicken,Treat,cat,treat,8853301016889,no_review_record,,
+918,Temptations,Tasty Chicken Flavour (Large),dry,cat,dry,8853301000987,legacy_identity_changed,Cat Treats/Temptations - Tasty Chicken Flavour (Large).webp,Cat treat photo conflicts with dog/dry. Large pack descriptor is not supported by this 85 g image.
+919,Vets All Natural,Complete Cat Mix,dry,cat,dry,,legacy_confirmed_mismatch,Dog Specialty/Vets All Natural - Complete Mix Adult & Senior.webp,Adult/Senior Dog premix conflicts with cat or puppy assignments; the matching Adult/Senior row is categorised dry rather than a mix requiring added fresh meat.
+926,Vets All Natural,Skin & Coat Formula,dry,dog,dry,,legacy_confirmed_mismatch,Dog Specialty/Vets All Natural - Skin & Coat Health Chew.webp,"The photo is Skin Support HealthChews, conflicting with dry food type; generic Skin & Coat Formula does not establish that this is the intended formulation."
+928,VitaPet,Cookies & Cream Sticks with Chicken,Treat,dog,treat,9347042003264,no_review_record,,
+933,VitaPet,Natural Chicken & Fish Bites,Treat,cat,treat,9415022021017,legacy_identity_changed,Dog Treats/VitaPet - Natural Chicken Bites.webp,"Photo is Soft Chicken Tenders, not Chicken & Fish Bites."
+934,VitaPet,Natural Chicken Bites,Treat,cat,treat,9339687327263,legacy_identity_changed,Dog Treats/VitaPet - Natural Chicken Bites.webp,"Photo is Soft Chicken Tenders, not the named Chicken Bites."
+940,Wellness,"CORE Kitten Turkey, Chicken & Herring",dry,cat,dry,,legacy_confirmed_mismatch,"Dog Kibble/Wellness - CORE Original Turkey, Chicken & Herring.webp","Photograph is dry adult dog food, not kitten food."
+955,Whimzees,Hedgehog Medium,Treat,dog,treat,815436013179,legacy_identity_changed,Dog Treats/Whimzees - Hedgehog Medium.webp,"Photo is Toothbrush Medium, not the named Hedgehog Medium shape."
+966,Whiskas,Adult So Fishy Ocean Delights in Loaf,Wet,cat,wet,,legacy_identity_changed,Cat Treats/Whiskas - Adult So Fishy Ocean Delights in Loaf.webp,Photo Ocean Platter in Jelly differs from Ocean Delights in Loaf; wet cat form also conflicts with dog/dry.
+972,Woofin' Good (Coles),Adult Dry Dog Food Lamb,dry,dog,dry,9312239048403,no_review_record,,
+1096,Acana,Wholesome Grains Senior Recipe,Dry,,,,no_review_record,,
+1115,Dine,Classic Collection Lamb in Gravy,Wet,cat,wet,8853301007757,legacy_identity_changed,Cat Treats/Dine - Classic Collection Beef & Liver in Gravy.webp,Original photo shows generic 28-pack Classic Collection; Lamb in Gravy cannot be established from readable label text.
+1131,Ivory Coat,Grain Free Adult Lamb & Kangaroo,Wet · 400g x 12,dog,wet,19348601002954,legacy_identity_changed,Dog Kibble/Ivory Coat - Grain Free Adult Lamb & Kangaroo.webp,Recipe matches but catalogue type is Wet; image is dry dog kibble bag.
+1137,K9 Natural,Lamb & Venison Feast Freeze-Dried,Freeze-Dried · 500g,dog,freeze-dried,9421036372489,legacy_identity_changed,Dog Specialty/K9 Natural - Lamb & Venison Feast Freeze-Dried.webp,"The photo shows Lamb Feast without venison and freeze-dried form, whereas catalogue names Lamb & Venison and type Wet."
+1154,Purina Pro Plan,Adult Beef in Gravy,Wet,,,,legacy_confirmed_mismatch,Cat Treats/Purina Pro Plan - Adult 11+ Chicken in Gravy.webp,"Adult 7+ chicken cat food conflicts with Adult Beef, Adult Lamb, and Puppy Chicken assignments."
+1155,Purina Pro Plan,Adult Dental Care Chicken,Treat,,,9309001273446,legacy_confirmed_mismatch,Dog Kibble/Purina Pro Plan - Adult Chicken.webp,The pictured Adult Essential Health Medium dry food differs from the catalogue Adult Dental Care Chicken treat assignment.
+1156,Purina Pro Plan,Adult Lamb in Gravy,Wet,,,,legacy_confirmed_mismatch,Cat Treats/Purina Pro Plan - Adult 11+ Chicken in Gravy.webp,"Adult 7+ chicken cat food conflicts with Adult Beef, Adult Lamb, and Puppy Chicken assignments."
+1162,Purina Pro Plan,Puppy Chicken in Gravy,Wet,,,,legacy_confirmed_mismatch,Cat Treats/Purina Pro Plan - Adult 11+ Chicken in Gravy.webp,"Adult 7+ chicken cat food conflicts with Adult Beef, Adult Lamb, and Puppy Chicken assignments."
+1164,Purina Pro Plan,Small & Mini Adult Chicken in Gravy,Wet,,,,legacy_confirmed_mismatch,Cat Treats/Purina Pro Plan - Small & Mini Adult Chicken in Gravy.webp,Photo is adult cat food 85 g; dog 100 g assignment conflicts in species/size and Small & Mini name describes a different intended product.
+1171,Schmackos,Stix Chicken,Treat,,,,no_review_record,,
+1174,Temptations,Creamy Purée Lickable Chicken,Treat,cat,treat,,no_review_record,,
+1176,Wellness,CORE Grain Free Original,Dry,,,,legacy_confirmed_mismatch,Dog Kibble/Wellness - CORE Large Breed Adult Chicken.webp,Photograph explicitly shows Large Breed; catalogue Original does not establish that variant.

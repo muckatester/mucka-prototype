@@ -12239,6 +12239,29 @@
       ]
     },
     {
+      "sourcePath": "assets/product-images/advance-adult-ocean-fish-cat-3kg.jpg",
+      "sourceSha256": "adb4f770e5ac53a93e4d1eb65fb2b5321b320ba9a4d4cd7e26ee0e3098e40895",
+      "sourceBytes": 1941057,
+      "variants": [
+        {
+          "path": "assets/product-images/display/adb4f770e5ac53a93e4d1eb6-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "3072b6107230d1f7b897c46694bdc2dce0ca47054012c68894b0579afafb27a9",
+          "bytes": 3854,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/adb4f770e5ac53a93e4d1eb6-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "cb382d19f4a01e7d867338bfa8879d892e6eb0a547723217dc686d7083bd036e",
+          "bytes": 18190,
+          "bound": 480
+        }
+      ]
+    },
+    {
       "sourcePath": "assets/product-images/advance-multi-cat-chicken-ocean-fish-4kg.jpg",
       "sourceSha256": "90b1dbf0d64b9fdf3c60553c7fc9950a9233fd027078769d166ffcf276fa0628",
       "sourceBytes": 159821,
@@ -17966,6 +17989,29 @@
       ]
     },
     {
+      "sourcePath": "assets/product-images/hills-science-diet-puppy-small-bites-2kg.jpg",
+      "sourceSha256": "94e32c9071527a0becf547ca6380c98f2c2cbf6bf68a37c49bd68915e6cc6f13",
+      "sourceBytes": 72959,
+      "variants": [
+        {
+          "path": "assets/product-images/display/94e32c9071527a0becf547ca-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "751ec44051d90f78803812207812d2eab2bcd3f83881bc5d8d35876ec7979cb1",
+          "bytes": 3366,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/94e32c9071527a0becf547ca-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "d084d291857512e022a07d4a29fc8a16f6fe890565882597547f9b9147504349",
+          "bytes": 18396,
+          "bound": 480
+        }
+      ]
+    },
+    {
       "sourcePath": "assets/product-images/kit-cat-chicken-salmon-80g.jpg",
       "sourceSha256": "454f272e24b0e8729c127ddb6faf4ae3663d4a520509ff092255551bd0808b8c",
       "sourceBytes": 61553,
@@ -17984,6 +18030,29 @@
           "height": 480,
           "sha256": "2d64ba4bfb202f9b810c3419b9e1e222b4acc2ca20cacf62be542cf078af10fd",
           "bytes": 10246,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/purina-one-kitten-chicken-cat-1.5kg.jpg",
+      "sourceSha256": "be15ce3edf703a75f271fbb95758ec21f10d13a6e7fc52c4ed9dcedc34d221d7",
+      "sourceBytes": 33130,
+      "variants": [
+        {
+          "path": "assets/product-images/display/be15ce3edf703a75f271fbb9-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "7e94e1b054aeff9314d4c75e57fff225bbb42374753e8271557c6c2b049d3afd",
+          "bytes": 5270,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/be15ce3edf703a75f271fbb9-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "eb8e65e52da136eea44ec106d3796c447143942cab8c3ebab4278e6f1aede138",
+          "bytes": 27926,
           "bound": 480
         }
       ]
