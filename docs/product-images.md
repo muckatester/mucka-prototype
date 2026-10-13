@@ -11,6 +11,14 @@ Two matching scopes are supported:
 
 Photos do not establish nutritional adequacy, suitability, clinical approval or ingredient accuracy. Manufacturer and retailer materials can change. A source record does not assert a licence grant. Photos from other markets identify the pictured pack; they do not establish Australian availability or an Australian barcode.
 
+## Current audit — 13 October 2026
+
+The 1,082-product catalogue now has **835 displayed photographs**: 337 sourced, identity-bound assignments and 498 approved older assignments. **247 products have no displayed photograph**. The complete dated gap list is `Mucka_Review_2026-09-14/Image_Gaps_2026-10-13.csv` beside this repository; it records every remaining product and why its earlier image is withheld: 95 confirmed mismatches, 46 changed catalogue identities, 2 unreadable images, and 104 without a review record.
+
+Five reviewed photos were added for Advance Multi Cat Chicken & Ocean Fish 4kg, Black Hawk Grain Free Chicken & Turkey cat 1.2kg, Greenies Original Regular 170g, Greenies Original Teenie 170g, and Royal Canin Sterilised Adult cat 2kg. The Royal Canin page lists 2kg, but its photographed weight is not readable, so it is labelled as a recipe match with pack unverified. The Greenies Teenie photograph shows a Canadian-market pack; Australian sellers corroborate the 170g, 22-treat product, but the photo does not corroborate the Australian barcode.
+
+Several tempting online images are for a different pack or recipe. Examples checked and withheld: Supercoat Adult Chicken 2.8kg against catalogue listings of 800g and 7.5kg, Advance Oodles Puppy Turkey & Rice 2.5kg or 13kg against 3kg, and My Dog Classic Loaf with Gourmet Beef 12 × 100g against the catalogue's less specific “Gourmet Beef Adult” identity. Snappy Tom Naturals product names also require an Australian-market identity check. These need catalogue/source reconciliation before a photo can be safely attached. No image assignment is evidence that its barcode scans to the product.
+
 ## Updating the app
 
 Add a reviewed record to the manifest, then run `node scripts/sync-product-images.cjs`. This embeds the runtime subset in the single-file app, retaining GitHub Pages compatibility. Use `--check` to verify that the embedded data is current. The script rejects duplicate IDs, missing evidence, unsupported match states, incorrect path case and changed asset hashes.

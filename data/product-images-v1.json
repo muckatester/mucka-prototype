@@ -7299,6 +7299,116 @@
       "visualChecked": true,
       "checkedDate": "2026-10-13",
       "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 207,
+      "identity": {
+        "brand": "Advance",
+        "name": "Multi Cat Chicken & Ocean Fish",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 4kg",
+        "barcode": "9334214065229"
+      },
+      "localPath": "assets/product-images/advance-multi-cat-chicken-ocean-fish-4kg.jpg",
+      "imageUrl": "https://advancepet.com.au/medialib/shopify_images/9334214065229_1.webp?VersionId=KkU3ndei31JO8._.B8ovbnFJuadEVI_j",
+      "sourcePage": "https://advancepet.com.au/products/advance%E2%84%A2-multi-cat-chicken-ocean-fish",
+      "sourceKind": "manufacturer",
+      "shownPack": "4kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Manufacturer page's 4kg variant displays this image; inspected front reads Advance Multi Cat Chicken and Ocean Fish, 4kg. The image URL contains the catalogue GTIN, but the photo alone does not validate the barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-13",
+      "sha256": "90b1dbf0d64b9fdf3c60553c7fc9950a9233fd027078769d166ffcf276fa0628",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 199,
+      "identity": {
+        "brand": "Royal Canin",
+        "name": "Sterilised Adult",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 2kg",
+        "barcode": "3182550737593"
+      },
+      "localPath": "assets/product-images/royal-canin-sterilised-adult-cat-2kg.webp",
+      "imageUrl": "https://marspetcareaprimocdn.petcare.global/cd9a054c-ee77-4adb-8c2a-b24900071afb/cd9a054c-ee77-4adb-8c2a-b24900071afb_DownloadAsJpg.jpg?w=640&width=640&auto=webp&format=jpg&optimize=medium",
+      "sourcePage": "https://www.royalcanin.com/au/cats/products/retail-products/sterilised--2537",
+      "sourceKind": "manufacturer",
+      "shownPack": "2kg listed on page; size not legible on front image",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Australian manufacturer page names Sterilised Adult dry cat food and lists 2kg as its available size. The inspected front image reads Sterilised 37 but does not show a legible pack weight. It must not be treated as barcode verification.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-13",
+      "sha256": "e063ca2b3beedab6cfde98b22efda2037559a1368cb7936034d517f44385b818",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 215,
+      "identity": {
+        "brand": "Black Hawk",
+        "name": "Grain Free Chicken & Turkey",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 1.2kg",
+        "barcode": "122713000028"
+      },
+      "localPath": "assets/product-images/black-hawk-grain-free-chicken-turkey-cat-1.2kg.jpg",
+      "imageUrl": "https://www.uncletomspps.com.au/cdn/shop/products/9312239042814_1_1024x1024.jpg?v=1597828401",
+      "sourcePage": "https://www.uncletomspps.com.au/products/bh-cat-grainfree-1-2kg",
+      "sourceKind": "retailer",
+      "shownPack": "1.2kg",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Australian retailer page identifies Black Hawk grain-free chicken and turkey cat food; inspected pack front reads adult chicken and turkey, 1.2kg. The photo does not verify the catalogue barcode, which remains separately unresolved.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-13",
+      "sha256": "e7ddf857564d18989bfb9331ebcc797c20d4620d498a1b8bf5ee8b4062745538",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 330,
+      "identity": {
+        "brand": "Greenies",
+        "name": "Original Regular",
+        "petType": "dog",
+        "foodType": "treat (dental)",
+        "type": "Treat (Dental) · 170g",
+        "barcode": "642863102936"
+      },
+      "localPath": "assets/product-images/greenies-original-regular-170g.jpg",
+      "imageUrl": "https://www.vetsupply.com.au/images/ProductImagesNew/Greenies-Dog-Treat-Original-Regular-170g_12102024_012344.jpg",
+      "sourcePage": "https://www.vetsupply.com.au/greenies-dental-treats-regular-for-dogs-11-22-kg-pack.aspx",
+      "sourceKind": "retailer",
+      "shownPack": "170g",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Australian retailer page identifies Greenies Original Regular 170g dental treats. Inspected pack front reads Original, Regular, for dogs 11–22kg, net weight 170g. The pictured pack does not establish the catalogue barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-13",
+      "sha256": "5a8557303ef21914af3218c83085ce31db5ce5aa6e093c238e23e3892d333922",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 328,
+      "identity": {
+        "brand": "Greenies",
+        "name": "Original Teenie",
+        "petType": "dog",
+        "foodType": "treat (dental)",
+        "type": "Treat (Dental) · 170g",
+        "barcode": "642863101380"
+      },
+      "localPath": "assets/product-images/greenies-original-teenie-170g.jpg",
+      "imageUrl": "https://cdn-tp2.mozu.com/28945-m4/cms/files/L0451622.jpg",
+      "sourcePage": "https://www.londondrugs.com/products/greenies-teenie-dog-dental-treats-regular-6oz/p/L0451622",
+      "sourceKind": "retailer",
+      "shownPack": "170g, 22 treats; Canadian pack",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Inspected pack front reads Greenies Original Teenie, for dogs 2–7kg, 170g and 22 treats. The same product/size is listed by Australian retailers including Coles and Petbarn, but this photograph is a Canadian-market pack and does not establish an Australian barcode.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-13",
+      "sha256": "369f4ced370b099bb805150595cad23da15d3a2c32858a7e059d5e4b10fc85dd",
+      "rightsStatus": "Public product image; no licence grant asserted."
     }
   ]
 }

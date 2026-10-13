@@ -12239,6 +12239,29 @@
       ]
     },
     {
+      "sourcePath": "assets/product-images/advance-multi-cat-chicken-ocean-fish-4kg.jpg",
+      "sourceSha256": "90b1dbf0d64b9fdf3c60553c7fc9950a9233fd027078769d166ffcf276fa0628",
+      "sourceBytes": 159821,
+      "variants": [
+        {
+          "path": "assets/product-images/display/90b1dbf0d64b9fdf3c60553c-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "7b94e7958c8d3801632bca3c8807692cce509edd30c6597f2258fd48703b660b",
+          "bytes": 3930,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/90b1dbf0d64b9fdf3c60553c-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "8de263b85b7cfd2a7c7f3dac73dffa769bfef15ed418c11121c92936cd8f32ae",
+          "bytes": 20850,
+          "bound": 480
+        }
+      ]
+    },
+    {
       "sourcePath": "assets/product-images/batch25-143-pedigree.jpg",
       "sourceSha256": "d397a2cc590ffae88cfc162ec4f4259a06b32923cdf44c89fe729ced60f53803",
       "sourceBytes": 75448,
@@ -17851,6 +17874,29 @@
       ]
     },
     {
+      "sourcePath": "assets/product-images/black-hawk-grain-free-chicken-turkey-cat-1.2kg.jpg",
+      "sourceSha256": "e7ddf857564d18989bfb9331ebcc797c20d4620d498a1b8bf5ee8b4062745538",
+      "sourceBytes": 125764,
+      "variants": [
+        {
+          "path": "assets/product-images/display/e7ddf857564d18989bfb9331-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "a51e8c5d180d07575759113f155e384b5c8c36c9d8bf8a67ccc1e5f5fe5e7897",
+          "bytes": 4052,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/e7ddf857564d18989bfb9331-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "9de2753addf3b1d56b70fd0f813c8a5fed2388e8450112dfbb67b40600f78ae9",
+          "bytes": 24108,
+          "bound": 480
+        }
+      ]
+    },
+    {
       "sourcePath": "assets/product-images/completion-1080.jpg",
       "sourceSha256": "53b2c5dc56c51e284ac4cf02d0c4b254880570212ff2fd17ada396d5c771d3c8",
       "sourceBytes": 53681,
@@ -17869,6 +17915,52 @@
           "height": 480,
           "sha256": "847a54db74129a35675239678d64e44ff54fc4c0ebbd44768782c7639d86893a",
           "bytes": 13786,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/greenies-original-regular-170g.jpg",
+      "sourceSha256": "5a8557303ef21914af3218c83085ce31db5ce5aa6e093c238e23e3892d333922",
+      "sourceBytes": 417649,
+      "variants": [
+        {
+          "path": "assets/product-images/display/5a8557303ef21914af3218c8-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "485bbcf4e1e12c5770dbb89e0dd14b991fa91acdbe98051979c6a917ac2a3480",
+          "bytes": 5774,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/5a8557303ef21914af3218c8-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "47166a582923abddbbb69836be17847522b20b9d793899a515aa76adbc70b769",
+          "bytes": 32180,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/greenies-original-teenie-170g.jpg",
+      "sourceSha256": "369f4ced370b099bb805150595cad23da15d3a2c32858a7e059d5e4b10fc85dd",
+      "sourceBytes": 444608,
+      "variants": [
+        {
+          "path": "assets/product-images/display/369f4ced370b099bb8051505-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "47f64c01546b7f678c4ea197508533f5b45751d75a1f66a9f04202323303a3ad",
+          "bytes": 5742,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/369f4ced370b099bb8051505-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "d74010b095bb2ce9532da75b9ef971cc089b6fb7fa5d866eaecf61bc32e228db",
+          "bytes": 34868,
           "bound": 480
         }
       ]
@@ -18007,6 +18099,29 @@
           "height": 480,
           "sha256": "8dc032e1de28dafb4ed62f0fb8211a8520a2e30cce0c25b57a5a33a90e20ec72",
           "bytes": 29764,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/royal-canin-sterilised-adult-cat-2kg.webp",
+      "sourceSha256": "e063ca2b3beedab6cfde98b22efda2037559a1368cb7936034d517f44385b818",
+      "sourceBytes": 21872,
+      "variants": [
+        {
+          "path": "assets/product-images/display/e063ca2b3beedab6cfde98b2-160.webp",
+          "width": 113,
+          "height": 160,
+          "sha256": "3331647d8f6c0d990ceb389e489fafb054887ab5afc76985354b5b99234d8eee",
+          "bytes": 2548,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/e063ca2b3beedab6cfde98b2-480.webp",
+          "width": 339,
+          "height": 480,
+          "sha256": "5e173ad41d253ba1707801cb4cdd5c2b0feb08342f88951d743c962d585044d7",
+          "bytes": 12546,
           "bound": 480
         }
       ]
