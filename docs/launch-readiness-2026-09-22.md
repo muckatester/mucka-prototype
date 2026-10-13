@@ -2,7 +2,7 @@
 
 ## Current testing position — 13 October 2026
 
-[Testing build 2026.10.13.8](https://deploy-preview-2--mucka-prototype.netlify.app/?v=2026.10.13.8) contains 1,082 catalogue products, 474 source-supported barcode lookups and 838 displayed product photographs. The [current image gap list](image-gaps-2026-10-13.csv) has 244 missing or withheld photos. GS1 has received the provisional candidate-GTIN CSV; its reply is still needed to validate those associations and decide on licensed data access. The remaining 608 barcode cases and 244 image cases are separate worklists. Online image review does not prove that a barcode scans to the pictured pack.
+[Testing build 2026.10.13.9](https://deploy-preview-2--mucka-prototype.netlify.app/?v=2026.10.13.9) contains 1,082 catalogue products, 474 source-supported barcode lookups and 846 displayed product photographs. The [current image gap list](image-gaps-2026-10-13.csv) has 236 missing or withheld photos. GS1 has received the provisional candidate-GTIN CSV; its reply is still needed to validate those associations and decide on licensed data access. The remaining 608 barcode cases and 236 image cases are separate worklists. Online image review does not prove that a barcode scans to the pictured pack.
 
 The app remains an information/testing preview. The product assessment method and ingredients are still under review, so prior numerical scores remain labelled as unvalidated history. A broad consumer launch should wait for source-backed product identities, image rights where needed, and field scan checks of representative current packs. All 47 automated checks pass for this build; PR 2 remains draft and the public main branch has not changed.
 

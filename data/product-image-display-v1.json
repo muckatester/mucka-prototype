@@ -12262,6 +12262,29 @@
       ]
     },
     {
+      "sourcePath": "assets/product-images/advance-kitten-lamb-gravy-85g.jpg",
+      "sourceSha256": "7b8a2d01ed7a89a0dcf25a48f435e5782953cd44028c883912c5a03e644f4b8b",
+      "sourceBytes": 313637,
+      "variants": [
+        {
+          "path": "assets/product-images/display/7b8a2d01ed7a89a0dcf25a48-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "381c82dba69bcd44b584547bedc22f119b111e557482722e86c98646d2b73abd",
+          "bytes": 5074,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/7b8a2d01ed7a89a0dcf25a48-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "c8e35ec57553f90ff1d75cf144a2f3a67b0b1af3b6d097d0ca4505c49e120d7e",
+          "bytes": 26690,
+          "bound": 480
+        }
+      ]
+    },
+    {
       "sourcePath": "assets/product-images/advance-multi-cat-chicken-ocean-fish-4kg.jpg",
       "sourceSha256": "90b1dbf0d64b9fdf3c60553c7fc9950a9233fd027078769d166ffcf276fa0628",
       "sourceBytes": 159821,
@@ -17943,6 +17966,52 @@
       ]
     },
     {
+      "sourcePath": "assets/product-images/dine-classic-collection-lamb-gravy-85g.png",
+      "sourceSha256": "a36c38de6438e9f83f2072b15f52197a5be2672618097d325f52ab59590dba8c",
+      "sourceBytes": 1261283,
+      "variants": [
+        {
+          "path": "assets/product-images/display/a36c38de6438e9f83f2072b1-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "a4dc470975f972a91518102183a28ed7dc34c455049bb5f8fc9d90ca45ba31f7",
+          "bytes": 8156,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/a36c38de6438e9f83f2072b1-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "34805bfaa9c9f4ea178ee7405f90efb541bc8e4dab68ed525fa72979e637f4df",
+          "bytes": 37460,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/eukanuba-puppy-small-breed-chicken-3kg.webp",
+      "sourceSha256": "7058142cf8473ca237712dadb44f7f4b2d3793c525b6b127782cf51cc03c5963",
+      "sourceBytes": 111284,
+      "variants": [
+        {
+          "path": "assets/product-images/display/7058142cf8473ca237712dad-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "3aa4b3df62721495b00dde756f698005a39b1ad787112a4f9f13f3c0a6153cb5",
+          "bytes": 4638,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/7058142cf8473ca237712dad-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "653795356625afe3833dcf472e7f03a105084b3fb27c414aa1d08b4ad6b5549a",
+          "bytes": 23756,
+          "bound": 480
+        }
+      ]
+    },
+    {
       "sourcePath": "assets/product-images/greenies-original-regular-170g.jpg",
       "sourceSha256": "5a8557303ef21914af3218c83085ce31db5ce5aa6e093c238e23e3892d333922",
       "sourceBytes": 417649,
@@ -17989,6 +18058,29 @@
       ]
     },
     {
+      "sourcePath": "assets/product-images/hills-prescription-td-small-bites-dog.png",
+      "sourceSha256": "0aafb58c8f78c5b5df4829c272ad2cdf0c44b7227376e4c7eb95dd788a5d823b",
+      "sourceBytes": 179954,
+      "variants": [
+        {
+          "path": "assets/product-images/display/0aafb58c8f78c5b5df4829c2-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "5cefad32c460a0c3d40a77166e8c00b47fd0a2eade1ee78d47fc944f6de94d1c",
+          "bytes": 3290,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/0aafb58c8f78c5b5df4829c2-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "1bb538e21e25c12926a239cd702761c65a00da2da9d831949b6608986327236d",
+          "bytes": 13736,
+          "bound": 480
+        }
+      ]
+    },
+    {
       "sourcePath": "assets/product-images/hills-science-diet-puppy-small-bites-2kg.jpg",
       "sourceSha256": "94e32c9071527a0becf547ca6380c98f2c2cbf6bf68a37c49bd68915e6cc6f13",
       "sourceBytes": 72959,
@@ -18012,6 +18104,52 @@
       ]
     },
     {
+      "sourcePath": "assets/product-images/hills-science-diet-sensitive-stomach-skin-dog.jpg",
+      "sourceSha256": "da1d172f8884fc1f1fefd2e7d9980cdf982b21392ef33c362d66a3190e134c89",
+      "sourceBytes": 232708,
+      "variants": [
+        {
+          "path": "assets/product-images/display/da1d172f8884fc1f1fefd2e7-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "d3022547b87b6cd146cd44b84cf8e740c44885773345e3f1282ab155bd4f3297",
+          "bytes": 4266,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/da1d172f8884fc1f1fefd2e7-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "69cbb00702dd5cc074fcd8aedb0a790069a6409133f615a4622032b25858db46",
+          "bytes": 25696,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/k9-natural-lamb-venison-feast-freeze-dried-500g.png",
+      "sourceSha256": "56088a9c3ce2d42a9a280ad75a743dc1f8028817e18dd7f0e77f28f942cef775",
+      "sourceBytes": 723755,
+      "variants": [
+        {
+          "path": "assets/product-images/display/56088a9c3ce2d42a9a280ad7-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "11a53d6926c14e26660f652c27756461b9b3f532d06bd0098cc3238fb9493de3",
+          "bytes": 5854,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/56088a9c3ce2d42a9a280ad7-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "db285ebe0e601f56a0c860db6809388b7548ec859ff9f9ef6b275d32c68dec20",
+          "bytes": 29872,
+          "bound": 480
+        }
+      ]
+    },
+    {
       "sourcePath": "assets/product-images/kit-cat-chicken-salmon-80g.jpg",
       "sourceSha256": "454f272e24b0e8729c127ddb6faf4ae3663d4a520509ff092255551bd0808b8c",
       "sourceBytes": 61553,
@@ -18030,6 +18168,52 @@
           "height": 480,
           "sha256": "2d64ba4bfb202f9b810c3419b9e1e222b4acc2ca20cacf62be542cf078af10fd",
           "bytes": 10246,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/leaps-bounds-chicken-rice-small-breed-puppy-3.2kg.jpg",
+      "sourceSha256": "ca3f4ab25f39ed92334dd4de4dce1d90a9f44e5a6b91b11c474fca7a4faf6937",
+      "sourceBytes": 69128,
+      "variants": [
+        {
+          "path": "assets/product-images/display/ca3f4ab25f39ed92334dd4de-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "e8150f8a484b618ba386aeaa35c4b8f3e21478b3f5d1802d7598f667a187e9db",
+          "bytes": 4378,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/ca3f4ab25f39ed92334dd4de-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "f8a26492783c78a4bda0d241b6614e1edd32583da0eddc7c632f7b157a353480",
+          "bytes": 23140,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/purina-one-healthy-weight-chicken-cat-1.5kg.jpg",
+      "sourceSha256": "40259bdc460c9248550a9468303b3cc6893d8c13aa2640aa92bfac9a42d4bbf1",
+      "sourceBytes": 114383,
+      "variants": [
+        {
+          "path": "assets/product-images/display/40259bdc460c9248550a9468-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "72e3b6cca19236c9e4e3570882197be70f091ccc438bf927696af4c7c6f1545b",
+          "bytes": 5338,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/40259bdc460c9248550a9468-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "59e4f672821b0d598dd486346bb8b6ff306ace90f16c65c5ed842f9f9a272e2b",
+          "bytes": 27578,
           "bound": 480
         }
       ]
