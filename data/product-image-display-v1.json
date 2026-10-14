@@ -18127,6 +18127,1386 @@
       ]
     },
     {
+      "sourcePath": "assets/product-images/hunt185-20261014-1005.jpg",
+      "sourceSha256": "27829971f5c64c9173dc9957edf06d353a6bc0d6d5901772fe314058c2700085",
+      "sourceBytes": 30013,
+      "variants": [
+        {
+          "path": "assets/product-images/display/27829971f5c64c9173dc9957-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "6306338fbdf5590457fabda2455dc5223763eb03a257349490495c2e1e5e954a",
+          "bytes": 3620,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/27829971f5c64c9173dc9957-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "dcdf6981d6de84b782a59d2e305030ff46ebd789f0521d96ecda371896e22a7f",
+          "bytes": 16728,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-104.jpg",
+      "sourceSha256": "8f169712dcecfe54f3cbcd538a16f4dea08e394f3daeeb1888c402fa17509969",
+      "sourceBytes": 43881,
+      "variants": [
+        {
+          "path": "assets/product-images/display/8f169712dcecfe54f3cbcd53-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "fcc2978cbe4a8e3959855f2f1438361e2e27cdb776bf5e4e063bad38bd7646b6",
+          "bytes": 6428,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/8f169712dcecfe54f3cbcd53-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "34783489dceb3dc3e75bf2651c30d75c29f2c79c5b1a793b14accac23875bda2",
+          "bytes": 35362,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-1041.jpg",
+      "sourceSha256": "725014684bf87511e800eaf5f0bb8bd1d11da011d2001b5e2fec3fec0f806147",
+      "sourceBytes": 63488,
+      "variants": [
+        {
+          "path": "assets/product-images/display/725014684bf87511e800eaf5-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "1ee489dac8d41ec20b0ebe05ab3a7ee97c677a562c79cb5a2e614a7eead88cb6",
+          "bytes": 2004,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/725014684bf87511e800eaf5-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "5f217e3b9abc097e1d459d160dee0edcfc4bad7c89b268dad2fc86e397190f3c",
+          "bytes": 10954,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-1047.jpg",
+      "sourceSha256": "5383328e529e0a4cf569f96268a0a89021851efd6e9a248169e5cd6db9326247",
+      "sourceBytes": 84672,
+      "variants": [
+        {
+          "path": "assets/product-images/display/5383328e529e0a4cf569f962-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "b693449bc97cb337c070bb689f039a56c2b17e6ab014c2cf33c4c3f2970907fb",
+          "bytes": 2614,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/5383328e529e0a4cf569f962-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "013919e300351523bff755b83f91ee7318ae70ab92eca3f0e2878852696d4c2a",
+          "bytes": 14774,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-1049.jpg",
+      "sourceSha256": "57f741fcdb61aac05548d1163d1c062a473fc5ca9e33fde86faea413de90fc39",
+      "sourceBytes": 148146,
+      "variants": [
+        {
+          "path": "assets/product-images/display/57f741fcdb61aac05548d116-160.webp",
+          "width": 99,
+          "height": 160,
+          "sha256": "55005ed63564a28a0fd7f8674c8f7bde213da7788c548d6cdd824f3fcb7b1a62",
+          "bytes": 4460,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/57f741fcdb61aac05548d116-480.webp",
+          "width": 296,
+          "height": 480,
+          "sha256": "6330cc870c3f603d4a4ba7b0193ae7c1bba3a79014c0e4d3249738ab790041b6",
+          "bytes": 32468,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-1162.jpg",
+      "sourceSha256": "a56fb42c7a812e977bcdc9822622dc5cd7dd25aec44ee4b1f0afdba960c465c5",
+      "sourceBytes": 102096,
+      "variants": [
+        {
+          "path": "assets/product-images/display/a56fb42c7a812e977bcdc982-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "f431831b36105b1d1b0a16a23b883b55b29d3113ee8862371b53a1770a9d97b3",
+          "bytes": 4332,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/a56fb42c7a812e977bcdc982-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "a7a3a3aeb385bf673ec2d63bd55be3c6d9112a863d483df95636656d5d196383",
+          "bytes": 21944,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-1164.png",
+      "sourceSha256": "4d0f8ace03964a8bb368a8b3c942d622af2c2d649acecceb009385fc845b1008",
+      "sourceBytes": 1546659,
+      "variants": [
+        {
+          "path": "assets/product-images/display/4d0f8ace03964a8bb368a8b3-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "3812117d86089e70c0ddc3af70f8d6fb6fa7bf83be53a9ba67e9a31daa949a60",
+          "bytes": 4396,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/4d0f8ace03964a8bb368a8b3-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "f7186edb9061cddff2a77378b7a8df26eed5c2cdb628a534b0bc9096999666cb",
+          "bytes": 19662,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-1176.png",
+      "sourceSha256": "f075daf07412ac5f8182020d29baa3c1ff5f959b13e88e3d7599d403ea4162da",
+      "sourceBytes": 502914,
+      "variants": [
+        {
+          "path": "assets/product-images/display/f075daf07412ac5f8182020d-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "85a00c5740053eeefd2b9ebfe8ee6591098fbfc11b2fcfc354a568ba253e1b3a",
+          "bytes": 4608,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/f075daf07412ac5f8182020d-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "eb3d486683872ce448955c712fc1c36ee4bb693b8896c3909c58159a2b5b384b",
+          "bytes": 21114,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-142.jpg",
+      "sourceSha256": "15b464dc94bf4a361884f37a5d558b8bc1b6a6ff0b3f487ef0221bd630cd77a0",
+      "sourceBytes": 264277,
+      "variants": [
+        {
+          "path": "assets/product-images/display/15b464dc94bf4a361884f37a-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "4096d60ce1cd068ea7c17f278066743d3e1510b3f7fb193e282b9bd70233d773",
+          "bytes": 6774,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/15b464dc94bf4a361884f37a-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "9b3dfce7aa8c338de7931b2a5c3145d8fd403083257d1db8c28e04649c7eaba2",
+          "bytes": 33376,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-146.jpg",
+      "sourceSha256": "13329dc08b787ca47572d51875cedda8bd7afc5de9ee95fcf3bc62c10affdef4",
+      "sourceBytes": 101944,
+      "variants": [
+        {
+          "path": "assets/product-images/display/13329dc08b787ca47572d518-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "a4f2751964649826c315dadb961104ec2c4a41145426f06c23b5056ef8b7f4ed",
+          "bytes": 5548,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/13329dc08b787ca47572d518-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "d6064c1dce6c0dfc2a7a471c05f76b7b9202f6133a2d16db6b8ff24d3e590c93",
+          "bytes": 27922,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-157.webp",
+      "sourceSha256": "e4e6bc3cfd71944e15e784d1d62185bcd38112203420a0370c9aaa92758f539d",
+      "sourceBytes": 57714,
+      "variants": [
+        {
+          "path": "assets/product-images/display/e4e6bc3cfd71944e15e784d1-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "98c1d63b071548cb90127d28b5c41aa54eb307a1b411716b36b98a779cea4f11",
+          "bytes": 4120,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/e4e6bc3cfd71944e15e784d1-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "f7aae9f2815efaaa2ebc83c5c0658acd284c3403d44450b60fa36dff8be6bfe9",
+          "bytes": 20068,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-192.png",
+      "sourceSha256": "317d6f7d9fb18a169c11319bc9156329054c09a18708c6cbfa54387cbe968633",
+      "sourceBytes": 1049552,
+      "variants": [
+        {
+          "path": "assets/product-images/display/317d6f7d9fb18a169c11319b-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "7c991c0d4a4903516090adb8e36404dadcf3cadb7f830f223fd319c6d960cca3",
+          "bytes": 4312,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/317d6f7d9fb18a169c11319b-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "1108405e1d7d3487a71735cff98c43ac2d7e5335761b17d3b8c5e7abdec9bcb7",
+          "bytes": 21116,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-213.jpg",
+      "sourceSha256": "c85fee3777b7295eaaf6d685842bd67827cb92d912c185a61b398887ac1b25cb",
+      "sourceBytes": 430364,
+      "variants": [
+        {
+          "path": "assets/product-images/display/c85fee3777b7295eaaf6d685-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "c0f8cfd547a59dfaa1cc779c019a974fb6cfb877a97c66241775834478a57780",
+          "bytes": 3316,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/c85fee3777b7295eaaf6d685-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "2656efdf6f9b812c9afbc3849fb722da281c5843f4a08eb2ba32309dd252947d",
+          "bytes": 16752,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-216.jpg",
+      "sourceSha256": "253874232389f02c9acd444fb6be7d1371d0a4a3117fa086fc2be32a275944a2",
+      "sourceBytes": 275111,
+      "variants": [
+        {
+          "path": "assets/product-images/display/253874232389f02c9acd444f-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "c4696a430bef9e2a19062d1d395b0d060edb49c29cf655b94aaf1c3bc61255eb",
+          "bytes": 3724,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/253874232389f02c9acd444f-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "88b916a061d810fe64e663f9103205d6e5b90ca955cf7822e846369516bbaae2",
+          "bytes": 20458,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-218.png",
+      "sourceSha256": "909fc8e83372316201c19b1aa92f5227fb4147b6db35c18b542a56b7e1726cee",
+      "sourceBytes": 4564165,
+      "variants": [
+        {
+          "path": "assets/product-images/display/909fc8e83372316201c19b1a-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "7f295973970e5a7f12f442400951982f26039a3ce07f697d608f926128771bd8",
+          "bytes": 6190,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/909fc8e83372316201c19b1a-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "033e677d1fdbe13363b2db2377707f6280fa7b1a8f62d34f42cc0f34041763f1",
+          "bytes": 28758,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-22.jpg",
+      "sourceSha256": "dc259b45575c4a11aff91391f2be5a7311d1d9067b2a226c903b288f32335709",
+      "sourceBytes": 76353,
+      "variants": [
+        {
+          "path": "assets/product-images/display/dc259b45575c4a11aff91391-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "e82a9bf3921f57a22ad5e71942b24d29328325b4ca1e69a2743d580fd57669c5",
+          "bytes": 5012,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/dc259b45575c4a11aff91391-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "ea5179d38184f6272b44a7df627a37a90d44cff62dd238e4d004bf0d2741e402",
+          "bytes": 27624,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-221.png",
+      "sourceSha256": "14ed8a738399704b12b437a1f83d86c08779e5516d751edd7f48368b315579bc",
+      "sourceBytes": 556653,
+      "variants": [
+        {
+          "path": "assets/product-images/display/14ed8a738399704b12b437a1-160.webp",
+          "width": 160,
+          "height": 157,
+          "sha256": "9a16aac9b6e05271c2b2e3f24cb0b7a65f2e646c6820a0239bef7762b6bc6b19",
+          "bytes": 5308,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/14ed8a738399704b12b437a1-480.webp",
+          "width": 480,
+          "height": 470,
+          "sha256": "f22f727deae9663ade56073f6497129ef32188a27557054c1740a29821189e4f",
+          "bytes": 25836,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-23.jpg",
+      "sourceSha256": "560e3818343ce0d205f689c4330153b3b3358c7d5d8f1603790188e6db04c499",
+      "sourceBytes": 257809,
+      "variants": [
+        {
+          "path": "assets/product-images/display/560e3818343ce0d205f689c4-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "53c1f414c34b04c5b9f2f199142131f62ae00cb22f94f16d0a37f6699b6705b6",
+          "bytes": 5388,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/560e3818343ce0d205f689c4-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "d18ad364367efaceb257cb07af6c412499657565102243259e9ed8e6ab8f76a0",
+          "bytes": 25530,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-241.jpg",
+      "sourceSha256": "6edcbf6db1b4874b28c3cebd909fede35ef4dbef5b0ed2e16b9c299df88e444e",
+      "sourceBytes": 337475,
+      "variants": [
+        {
+          "path": "assets/product-images/display/6edcbf6db1b4874b28c3cebd-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "38783f85c6ae48395573f024b4be3928c61890b9ac247365d92980077a53670f",
+          "bytes": 4624,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/6edcbf6db1b4874b28c3cebd-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "ef4983fdf03f5f494339074e916a73aeefa61d2d259d020492d74ee8ec5a1416",
+          "bytes": 24330,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-247.jpg",
+      "sourceSha256": "40eefd7836495201861d3484e55d54736f5e9ea35360738c863c0a8ef2be9857",
+      "sourceBytes": 79774,
+      "variants": [
+        {
+          "path": "assets/product-images/display/40eefd7836495201861d3484-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "92336b04d98a18cf77df2bb5cab960b17c6cad1cb24bc0b21fd9d3b55829a838",
+          "bytes": 3186,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/40eefd7836495201861d3484-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "0e5b6696919a526c34ebd22b5ec1e805a90ae2cc82c945a97d68c1ec89b87c7e",
+          "bytes": 18926,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-250.jpg",
+      "sourceSha256": "9be73da64954630c545f3d0002b9138bfd95b149bf08f2aa3fe72d126fca8810",
+      "sourceBytes": 63220,
+      "variants": [
+        {
+          "path": "assets/product-images/display/9be73da64954630c545f3d00-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "65b8c0286bba7a179319cf1956f9f4092b318edc954c1a9486cf78c95a630960",
+          "bytes": 4326,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/9be73da64954630c545f3d00-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "0d47656460c29a67248ea842c99efb2d6713613568d2129dad227f209ceb8ea8",
+          "bytes": 24596,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-255.jpg",
+      "sourceSha256": "9153160704c4c44c00e0aeb454bbccd70f9f14fd2830f83d1add3690d2ab7638",
+      "sourceBytes": 545436,
+      "variants": [
+        {
+          "path": "assets/product-images/display/9153160704c4c44c00e0aeb4-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "7c632a4a79289d86bc1b7f341905a38ffa8266ef07a89cb7e86e64ff6c0e2630",
+          "bytes": 4686,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/9153160704c4c44c00e0aeb4-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "0d9d6badd59d8db9c2580ce7c9dbf12b0b6db8efee5becea68371527511aa3ad",
+          "bytes": 26608,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-301.jpg",
+      "sourceSha256": "46ea23794ba1e36e40a710584a6c2fca967206d74b9153e1498cd29160b7ab1a",
+      "sourceBytes": 129088,
+      "variants": [
+        {
+          "path": "assets/product-images/display/46ea23794ba1e36e40a71058-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "7f1e08f346bd60d86ad544246c3395c34b48a8ab08a462884f3643e23bb00e2e",
+          "bytes": 7600,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/46ea23794ba1e36e40a71058-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "81a18cfda25cbf294537e8aff6fc8277e2ece6403faffe227a195f0b7bc044f1",
+          "bytes": 39030,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-303.jpg",
+      "sourceSha256": "c15a47a11a13a8ddb95b0da7e6922be08e7829fe564df9d8d48ace7cac96ed4c",
+      "sourceBytes": 247257,
+      "variants": [
+        {
+          "path": "assets/product-images/display/c15a47a11a13a8ddb95b0da7-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "0ad111afdfaaa6c201270cbc4bd267a8a9401031f126b3c585b9641746234982",
+          "bytes": 5442,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/c15a47a11a13a8ddb95b0da7-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "a8313806bc1f16311ed1463b07ddbee484a8ae55d0bb5724ae57f3158237de24",
+          "bytes": 28500,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-307.jpg",
+      "sourceSha256": "820a7d1a4189c04ae3b870fc9be575d5bf91976326196210d8bc683fa2eb1b07",
+      "sourceBytes": 95880,
+      "variants": [
+        {
+          "path": "assets/product-images/display/820a7d1a4189c04ae3b870fc-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "4e4e891fbca96b771952ada34b46b09085cddf67b40d4edadbac4840f36c86f4",
+          "bytes": 4790,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/820a7d1a4189c04ae3b870fc-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "b6487b20891a673f1bf53e46655771b42eb73309ed1b6109746c9653eafaab45",
+          "bytes": 25796,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-309.jpg",
+      "sourceSha256": "4df3f8d539fc153cfb7dbe1c3158f9f32a1c18b971707375abda840ba1cb23de",
+      "sourceBytes": 81918,
+      "variants": [
+        {
+          "path": "assets/product-images/display/4df3f8d539fc153cfb7dbe1c-160.webp",
+          "width": 160,
+          "height": 128,
+          "sha256": "b870b5c4c35463f678b5df598b1882c4d41f0f5c7aca6c018f4a9e6b8ba88a55",
+          "bytes": 6834,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/4df3f8d539fc153cfb7dbe1c-480.webp",
+          "width": 480,
+          "height": 384,
+          "sha256": "db8613c406472276b4396a83d0f84e424e76ae8fbc9ea53f8a8151dce088e309",
+          "bytes": 62164,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-322.jpg",
+      "sourceSha256": "1b37ecadb1b9ca5033e68b136df4c9976f86cb08ada5f483b5d3ff0ee95283a3",
+      "sourceBytes": 78970,
+      "variants": [
+        {
+          "path": "assets/product-images/display/1b37ecadb1b9ca5033e68b13-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "10edefa60245082e3d5eaf7250d3f0d1aad12a229da68de856ae35ecc89eac95",
+          "bytes": 2306,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/1b37ecadb1b9ca5033e68b13-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "66d4af0d0cc52f0dfd9161c3ddc04e3bd10c136ad03697a91fda7bb5ee89fddf",
+          "bytes": 12390,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-323.png",
+      "sourceSha256": "14357bebb1a8a8cfbda79c9180f53f4c7cb8bcd7d4071123cd4446f6c402907e",
+      "sourceBytes": 3044508,
+      "variants": [
+        {
+          "path": "assets/product-images/display/14357bebb1a8a8cfbda79c91-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "ecf68807d9cb417d1ec9f1240f60e1b165d5c6bfaf656f5fc00ce3fcd0f74c88",
+          "bytes": 5118,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/14357bebb1a8a8cfbda79c91-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "f23c8282b49b8bb15ab6b69b58d90085aefae00711b9dbb5d3e5129ef32b4051",
+          "bytes": 27464,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-34.png",
+      "sourceSha256": "bebc4287c8c874f21aabc6b1257fbae4241223bca8ee0dbae17acb0c090f746f",
+      "sourceBytes": 523587,
+      "variants": [
+        {
+          "path": "assets/product-images/display/bebc4287c8c874f21aabc6b1-160.webp",
+          "width": 160,
+          "height": 157,
+          "sha256": "f03ace60f8b7d724819a50161f3e84618ef32ff87bb57f9eaee1d1d5b8317d19",
+          "bytes": 3646,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/bebc4287c8c874f21aabc6b1-480.webp",
+          "width": 480,
+          "height": 470,
+          "sha256": "942523c171b111e58fd801f6e9aa277af39408cf50bcbde5e41ae96ca0073cc7",
+          "bytes": 19552,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-340.jpg",
+      "sourceSha256": "8d0c5ac05cfbbdddfbac2cd8b7a56852ad278e84a8b891137e4567a2bb1643c5",
+      "sourceBytes": 206002,
+      "variants": [
+        {
+          "path": "assets/product-images/display/8d0c5ac05cfbbdddfbac2cd8-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "5bf96c6e4c8b61454e18a423fee5a38bc188edacbf5bae740fb0086987082695",
+          "bytes": 2734,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/8d0c5ac05cfbbdddfbac2cd8-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "1eb7a409026bf01cbf6bcda957d2e4528df74e1d21321fa839ec4b9c6e65e78d",
+          "bytes": 15990,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-341.jpg",
+      "sourceSha256": "e3f1717c66e69eff36b0fc20ea3b60860b4533f01ba91e7095c32d2994c60559",
+      "sourceBytes": 44932,
+      "variants": [
+        {
+          "path": "assets/product-images/display/e3f1717c66e69eff36b0fc20-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "7936681cdfd08ba4940a02dd7c3d8d0415ff6899d19ee1684bdcb54484d51916",
+          "bytes": 5486,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/e3f1717c66e69eff36b0fc20-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "9388d195e0b6db6a634cff71bfa30b87e80a24ef980e68a40ebe79aee9f59bbe",
+          "bytes": 26446,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-354.webp",
+      "sourceSha256": "5dcf1b3290b470eed4bfa75f7e107241771f4bc9892a6630dc5a2d57dd1d3f76",
+      "sourceBytes": 99468,
+      "variants": [
+        {
+          "path": "assets/product-images/display/5dcf1b3290b470eed4bfa75f-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "3795b08d3b72f155862241fb6fa146c8759dccb8e911e289bb2acbf3cc87345e",
+          "bytes": 3886,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/5dcf1b3290b470eed4bfa75f-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "7eb787c2a6300aad4bc53b016b5ad6b4dcdb68cdf46680b1ad85e1febc2a3cdd",
+          "bytes": 16334,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-378.png",
+      "sourceSha256": "be3a0847dee57e0166ae7191cba73213ab1fa832b57964f8c1bd048d01a7632c",
+      "sourceBytes": 668848,
+      "variants": [
+        {
+          "path": "assets/product-images/display/be3a0847dee57e0166ae7191-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "5f8dc634d8f2440b071a53bf11e24ab0a4f943d7193592a9e7b44b09b58751c6",
+          "bytes": 4062,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/be3a0847dee57e0166ae7191-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "db36882940f31f0bc25c7305257e1e2053a4ce188d711b238400bb3d6e38be8f",
+          "bytes": 19988,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-380.png",
+      "sourceSha256": "0a876c307f919ada790f933dad5c7a6f77f5148cc8343ef68f5d263079bdc96e",
+      "sourceBytes": 936852,
+      "variants": [
+        {
+          "path": "assets/product-images/display/0a876c307f919ada790f933d-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "d523d4d7335838ae6139aa3d7f3af29a328d041bfe600cf1da205c1d3e6bd5bb",
+          "bytes": 5528,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/0a876c307f919ada790f933d-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "8f533a466b0130f388405a858df6679e19896ad483664ee820391f58252653bf",
+          "bytes": 30668,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-394.jpg",
+      "sourceSha256": "739214bf7c303c6f6d1caa3c862698111ca4e458c03216bc97ec48396e769f69",
+      "sourceBytes": 70184,
+      "variants": [
+        {
+          "path": "assets/product-images/display/739214bf7c303c6f6d1caa3c-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "9cbc517919915a55ac956715b1adf6f190c916f845acd58ffe214042eb4b64cc",
+          "bytes": 4592,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/739214bf7c303c6f6d1caa3c-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "607210f36e335274074768c1ad20d838259b1fc79de4601c952e323d3099d035",
+          "bytes": 23090,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-415.png",
+      "sourceSha256": "9f8da2110cf549995bd3faa4c5bac93745dc7ff8ce4e047964a56db518340a3d",
+      "sourceBytes": 529781,
+      "variants": [
+        {
+          "path": "assets/product-images/display/9f8da2110cf549995bd3faa4-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "b44e6eac8962c9772c437dfac24e0bfe4ea7c7e22de8af97114a1cd9bf0a1ff6",
+          "bytes": 5984,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/9f8da2110cf549995bd3faa4-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "05f187e5d3b0eb178fbbb76e85124c1ab96e5337b340f6f58f5ad1fe95b4155c",
+          "bytes": 40596,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-417.jpg",
+      "sourceSha256": "b5fd68481d270bb253f5cc5a2a9923cc879f96766f9bfd1293a53065ab3b8789",
+      "sourceBytes": 748044,
+      "variants": [
+        {
+          "path": "assets/product-images/display/b5fd68481d270bb253f5cc5a-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "79a5ce93c5f4f70a6c974c60a50acf654a60c599059362abf36a053150ba4305",
+          "bytes": 6706,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/b5fd68481d270bb253f5cc5a-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "9136603ee50a96604e115c6f48b09fa9367ed537e42b24433054621638e0b242",
+          "bytes": 40098,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-422.jpg",
+      "sourceSha256": "dbbe500999befcbe9a1390177de4dfb102caf05ee7b65cbee26f21d8a228eec2",
+      "sourceBytes": 107201,
+      "variants": [
+        {
+          "path": "assets/product-images/display/dbbe500999befcbe9a139017-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "1bdb49201aaf3ab771c39d4729b68193637c6039e49b0c05def0f0b634799b9e",
+          "bytes": 5148,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/dbbe500999befcbe9a139017-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "4f82557634bbf3a15b0dbfe7086535c39ca1824ec45c12b87b4bb5ceb341bb50",
+          "bytes": 25682,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-436.png",
+      "sourceSha256": "5d320ccab466dfa6d70ff209f4503be998e69c7f6f1706e0351fff98ca8742c4",
+      "sourceBytes": 758095,
+      "variants": [
+        {
+          "path": "assets/product-images/display/5d320ccab466dfa6d70ff209-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "634a1e4580a89094b3607840d50a1012d5bf568be4e67bd6ba3d2d53d05192da",
+          "bytes": 4216,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/5d320ccab466dfa6d70ff209-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "25eb9a53392acf4d9888573e346adafffc929b1d5e6290ff7a2c22d1bd7a24c1",
+          "bytes": 26966,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-437.png",
+      "sourceSha256": "e4aba0cf7f93fde5d965f79746b04b974ac671d862f56893ffbec2c10f13deee",
+      "sourceBytes": 280501,
+      "variants": [
+        {
+          "path": "assets/product-images/display/e4aba0cf7f93fde5d965f797-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "e303f1e09976a02b5c748c9488b1213786ca669e090d46daaadde58cff501a3a",
+          "bytes": 5670,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/e4aba0cf7f93fde5d965f797-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "58835d10195e7302503db2896c65b4f203a0f97568f7786249938c19618babd8",
+          "bytes": 35554,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-451.png",
+      "sourceSha256": "61d509873bc6e9b79f2686318cc79a28670d8bae374db75684bb7e0d3aefd332",
+      "sourceBytes": 631163,
+      "variants": [
+        {
+          "path": "assets/product-images/display/61d509873bc6e9b79f268631-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "742132e94f111f2c0a058bde55866cf233100adb99e252a02f0c4b25ec7c8e11",
+          "bytes": 6626,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/61d509873bc6e9b79f268631-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "4fdb68f8987cd4b9f9a097f848c2ca65033dcbbb3411d9114979f7ae75f4b866",
+          "bytes": 26902,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-456.jpg",
+      "sourceSha256": "8ebbae6be98a1c1e9db04aebe1dbb6751dfc72658b34265f4bc1464948024c03",
+      "sourceBytes": 146968,
+      "variants": [
+        {
+          "path": "assets/product-images/display/8ebbae6be98a1c1e9db04aeb-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "10f433bf2efaed3df10da68e6646c6482837ea4e30bd45409d561b9f2b58e815",
+          "bytes": 6308,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/8ebbae6be98a1c1e9db04aeb-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "87cd65da00e26be9e254511fbff574f4d025bb4c4d0bc51a6888983a0d14d1af",
+          "bytes": 36886,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-457.jpg",
+      "sourceSha256": "8ebbae6be98a1c1e9db04aebe1dbb6751dfc72658b34265f4bc1464948024c03",
+      "sourceBytes": 146968,
+      "variants": [
+        {
+          "path": "assets/product-images/display/8ebbae6be98a1c1e9db04aeb-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "10f433bf2efaed3df10da68e6646c6482837ea4e30bd45409d561b9f2b58e815",
+          "bytes": 6308,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/8ebbae6be98a1c1e9db04aeb-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "87cd65da00e26be9e254511fbff574f4d025bb4c4d0bc51a6888983a0d14d1af",
+          "bytes": 36886,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-483.jpg",
+      "sourceSha256": "3159814a26820a86e16f75f30627bbe50751c812eafd41a4f0ff17e581d49a25",
+      "sourceBytes": 151876,
+      "variants": [
+        {
+          "path": "assets/product-images/display/3159814a26820a86e16f75f3-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "230ede021e69bb51a445f7311e1ae9e212d5c567b3b9606f7826e3c9053de5ec",
+          "bytes": 8336,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/3159814a26820a86e16f75f3-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "90480c2b6f54d83dc94b407ab2f214058b79e8c3baf9c22201e513d9639722f8",
+          "bytes": 42528,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-513.jpg",
+      "sourceSha256": "458dc77392f0e9d71da86ea5e6976b25d48586b1709fbac3f6a4c1110cf599f7",
+      "sourceBytes": 59261,
+      "variants": [
+        {
+          "path": "assets/product-images/display/458dc77392f0e9d71da86ea5-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "76fbd0814c7ec089e91f04b696821d8f3aec5d0883b3c5d9c2deb1da69ef7ac4",
+          "bytes": 5392,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/458dc77392f0e9d71da86ea5-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "d40e646c660d52458186e05a5432097dead98e9c5e7864e4f66459026e7923a1",
+          "bytes": 27104,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-573.png",
+      "sourceSha256": "ac54605c657db34ae5f7fd2a5dde449287112aa64b750fdd5cf0bf0d5603807c",
+      "sourceBytes": 539163,
+      "variants": [
+        {
+          "path": "assets/product-images/display/ac54605c657db34ae5f7fd2a-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "7047554cb4f79d7285e255b4f9d189312b16f379a0963af10ee04b844ab97d63",
+          "bytes": 5600,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/ac54605c657db34ae5f7fd2a-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "b370459e977dc3db6c64ac6496c26ca9fe9f31a15bfe50bd81e62ded13b0f1a4",
+          "bytes": 25368,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-58.jpg",
+      "sourceSha256": "68668496c30cc29e850a0e7cf2faa78b1c946ec5b789e6e7fdb8a4ce85f7c72c",
+      "sourceBytes": 220890,
+      "variants": [
+        {
+          "path": "assets/product-images/display/68668496c30cc29e850a0e7c-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "9c4270696b86222325e9387ef64dc9e8de85810ba84228e9a3b6dcbb313d1c6d",
+          "bytes": 5456,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/68668496c30cc29e850a0e7c-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "3e9fe43ec7f9510b582a86f17ae8c1ed75b5eacdc41c2f128d3e3a32427c7cc3",
+          "bytes": 31884,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-601.png",
+      "sourceSha256": "ac54605c657db34ae5f7fd2a5dde449287112aa64b750fdd5cf0bf0d5603807c",
+      "sourceBytes": 539163,
+      "variants": [
+        {
+          "path": "assets/product-images/display/ac54605c657db34ae5f7fd2a-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "7047554cb4f79d7285e255b4f9d189312b16f379a0963af10ee04b844ab97d63",
+          "bytes": 5600,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/ac54605c657db34ae5f7fd2a-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "b370459e977dc3db6c64ac6496c26ca9fe9f31a15bfe50bd81e62ded13b0f1a4",
+          "bytes": 25368,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-608.jpg",
+      "sourceSha256": "de5585f775a2d530875cde5095bef09c0a9d8dce03e186f36cd8ae2e3fe65501",
+      "sourceBytes": 97085,
+      "variants": [
+        {
+          "path": "assets/product-images/display/de5585f775a2d530875cde50-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "1910b2d914cf8995b702edd9ea911852acc202949e9bfb4d1a84cd8353643c11",
+          "bytes": 4452,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/de5585f775a2d530875cde50-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "7e33d1c292a218ced5d9fc1bb43b0f31d80ac90cddf925107339e9128c48ebe1",
+          "bytes": 25380,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-623.png",
+      "sourceSha256": "37860b723d5b2a580b035e0347bf2717fdb1eb31e928ec15e4cd3a22a3ce5cdf",
+      "sourceBytes": 117061,
+      "variants": [
+        {
+          "path": "assets/product-images/display/37860b723d5b2a580b035e03-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "10fc5d0b89a03088847895dadcd6e1fdfe2b51bfed5918201a1d19289dbea3f1",
+          "bytes": 5990,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/37860b723d5b2a580b035e03-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "6ee91b3a252bbb1cdc1e65cd988c0fb20b4a3ef06019bae1f1bf2157e8374a33",
+          "bytes": 32822,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-684.jpg",
+      "sourceSha256": "3cc43e7a02f943500af0eeb583362b810b23429f95702f6d18bff67b54650b03",
+      "sourceBytes": 82833,
+      "variants": [
+        {
+          "path": "assets/product-images/display/3cc43e7a02f943500af0eeb5-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "935f43a644c577a72a1eb58c18e5f382d3a4b0847d450d885af4fa09bde62585",
+          "bytes": 4696,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/3cc43e7a02f943500af0eeb5-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "3ff23c87ce144242bf83db5e6f5be2de214573e6b234a120429e986ff57b83f7",
+          "bytes": 28444,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-76.jpg",
+      "sourceSha256": "3d05679a0fa662aec82aae7587aa71d60cb8dc3f11ed6fd5063f937546280935",
+      "sourceBytes": 112874,
+      "variants": [
+        {
+          "path": "assets/product-images/display/3d05679a0fa662aec82aae75-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "74906fad663ce4d262dfce31c8886c552579e687a06e956b6ff59accb77ade8b",
+          "bytes": 5778,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/3d05679a0fa662aec82aae75-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "311450fe10d6f9ee58dddefc21ed81b57e599e155f0d37f506769c8c952b9842",
+          "bytes": 28566,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-8.jpg",
+      "sourceSha256": "902ad808a57fe73a04ec05ddbb96f543f0ac87463a5454d02e203d33b4803fae",
+      "sourceBytes": 300023,
+      "variants": [
+        {
+          "path": "assets/product-images/display/902ad808a57fe73a04ec05dd-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "3926919391bba076ba33f464ca780805badb888c5e313ce8f87f0b317467c972",
+          "bytes": 6300,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/902ad808a57fe73a04ec05dd-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "820417be4e97979b6aee8664f668d70ba4d52dd2a59b4b14b5039c342bb5f305",
+          "bytes": 36236,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-80.jpg",
+      "sourceSha256": "252ede927273b384d494772dfe3c2fe4a366792f34f2772971ce9d142b54fc23",
+      "sourceBytes": 134100,
+      "variants": [
+        {
+          "path": "assets/product-images/display/252ede927273b384d494772d-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "79ac700600d2e4c7244dfb09a4fb112912d590e39d2aa4d54941f67a088a9aeb",
+          "bytes": 4368,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/252ede927273b384d494772d-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "eb1c4cb43575163b3982dcb09b245c83c2de92490a56315e536584fd8b7035f8",
+          "bytes": 23834,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-81.png",
+      "sourceSha256": "825ac0bf585d2df3c32f65e829da3926e5c14aa25d0593b2c761ed851f79781e",
+      "sourceBytes": 4240197,
+      "variants": [
+        {
+          "path": "assets/product-images/display/825ac0bf585d2df3c32f65e8-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "23e26e6327b9d70e65aed0b7d583fd16a8e3a3722e0775c5b35fd442125584a3",
+          "bytes": 5642,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/825ac0bf585d2df3c32f65e8-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "27f77442eaf3aef1c984f01b66c164df2ecb256d48bb78fc2bbd6f55e8ea466a",
+          "bytes": 25218,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-87.jpg",
+      "sourceSha256": "3d05679a0fa662aec82aae7587aa71d60cb8dc3f11ed6fd5063f937546280935",
+      "sourceBytes": 112874,
+      "variants": [
+        {
+          "path": "assets/product-images/display/3d05679a0fa662aec82aae75-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "74906fad663ce4d262dfce31c8886c552579e687a06e956b6ff59accb77ade8b",
+          "bytes": 5778,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/3d05679a0fa662aec82aae75-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "311450fe10d6f9ee58dddefc21ed81b57e599e155f0d37f506769c8c952b9842",
+          "bytes": 28566,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-882.png",
+      "sourceSha256": "37c6ebfbf04c7622409da1c01391a94467a3f9ef6ed22264b62a06c4451e8101",
+      "sourceBytes": 401153,
+      "variants": [
+        {
+          "path": "assets/product-images/display/37c6ebfbf04c7622409da1c0-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "6e56d65de467b502e97a05cfc89bd74c5bf92b4db5a75c592004b6bf22f593d0",
+          "bytes": 3310,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/37c6ebfbf04c7622409da1c0-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "d0244c8670ce5284a933408f97e5855a1df1fe5a8a4b96d363a1d2bfe05310fc",
+          "bytes": 15208,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-89.jpg",
+      "sourceSha256": "162bff0bbf4626239f9f2ed5d7a6f85a3ef509a3c5339a10d5d6633115023fea",
+      "sourceBytes": 156635,
+      "variants": [
+        {
+          "path": "assets/product-images/display/162bff0bbf4626239f9f2ed5-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "af66d6f4f5dbd89582b3842582d96f71d664d7c36308ac9d61f1312791f0cb03",
+          "bytes": 4978,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/162bff0bbf4626239f9f2ed5-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "215208b2367df2b83966ffb12638493b73664f57b86b9ea13ec34e2f137fd20f",
+          "bytes": 25896,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-918.jpg",
+      "sourceSha256": "ae0bc5df849a5a86551f377b9e9c6ed22286d46b7ca8200f504dc0be36b49165",
+      "sourceBytes": 396758,
+      "variants": [
+        {
+          "path": "assets/product-images/display/ae0bc5df849a5a86551f377b-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "c33a5aa54060d19d2821d8b5a96f0c7870613c2d8a686171f262a9bf6c1ec4eb",
+          "bytes": 7312,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/ae0bc5df849a5a86551f377b-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "55c65e9e92da918f5fd8686100e1717a335687c07e9da27d25028edb9518e420",
+          "bytes": 33974,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/hunt185-20261014-994.jpg",
+      "sourceSha256": "309189ade810cdfa849cf7c6873789a18ba20d854186e66d12fa0bf27eb84dc4",
+      "sourceBytes": 306617,
+      "variants": [
+        {
+          "path": "assets/product-images/display/309189ade810cdfa849cf7c6-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "e31cd1dbcb752ca61a7b24503898484424a8a4c27f1be3c5fa12cc5190f88d66",
+          "bytes": 4978,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/309189ade810cdfa849cf7c6-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "bf5ee845fe11be30b3c7c675cb110327bbcbe645035eb5a3a1a144f1429a2624",
+          "bytes": 27156,
+          "bound": 480
+        }
+      ]
+    },
+    {
       "sourcePath": "assets/product-images/k9-natural-lamb-venison-feast-freeze-dried-500g.png",
       "sourceSha256": "56088a9c3ce2d42a9a280ad75a743dc1f8028817e18dd7f0e77f28f942cef775",
       "sourceBytes": 723755,

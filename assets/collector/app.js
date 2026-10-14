@@ -182,7 +182,7 @@
         manifest.push(metadata); zip.file(folder + '/details.json', JSON.stringify(metadata, null, 2));
         zip.file(folder + '/details.txt', 'MUCKA PRODUCT CAPTURE\nBarcode: ' + record.barcode + '\nBrand: ' + record.brand + '\nProduct: ' + record.name + '\nPack: ' + record.pack + '\nNotes: ' + record.notes + '\nStatus: ' + record.status + '\nCaptured: ' + record.createdAt + '\nUpdated: ' + record.updatedAt + '\nPhotos: ' + Object.keys(metadata.photos).join(', ') + '\nUnverified owner capture for review.');
       });
-      zip.file('mucka-captures.json', JSON.stringify({schemaVersion: 1, appVersion: '2026.10.14.1', exportedAt: exportedAt, captures: manifest}, null, 2));
+      zip.file('mucka-captures.json', JSON.stringify({schemaVersion: 1, appVersion: '2026.10.14.2', exportedAt: exportedAt, captures: manifest}, null, 2));
       zip.file('READ-ME.txt', 'Mucka captures\nShare this ZIP with the Mucka reviewer. Each folder contains the product details and labelled packet photos. These are unverified captures, not approved catalogue records. Keep a copy outside the browser as a backup.');
       var blob = await zip.generateAsync({type: 'blob', compression: 'STORE'}), name = 'Mucka-captures-' + exportedAt.slice(0, 10) + '.zip';
       if (exportUrl) URL.revokeObjectURL(exportUrl); exportUrl = URL.createObjectURL(blob); exportFile = new File([blob], name, {type: 'application/zip'});

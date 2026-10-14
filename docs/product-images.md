@@ -11,7 +11,11 @@ Two matching scopes are supported:
 
 Photos do not establish nutritional adequacy, suitability, clinical approval or ingredient accuracy. Manufacturer and retailer materials can change. A source record does not assert a licence grant. Photos from other markets identify the pictured pack; they do not establish Australian availability or an Australian barcode.
 
-## Current audit — 14 October 2026
+## Current audit — 14 October 2026, after the full 185-listing search
+
+The follow-up search added another **60 photos**, bringing coverage to **957 of 1,082 products: 459 sourced and 498 older assignments**. **125 listings remain without a photo**: 12 need an exact packet photo, 112 need product identity confirmation, and one is a duplicate-review case. Five new photos match the stated catalogue pack; 55 are recipe-only matches with pictured pack/market limitations shown. Thirteen contradictory metadata records were corrected; barcode and ingredient evidence were not inferred. See [the complete search audit](image-hunt-2026-10-14.md) and [remaining worklist](image-gaps-after-hunt-2026-10-14.json).
+
+## Returned review milestone — 14 October 2026
 
 The returned owner review added 51 photos. **897 of 1,082 products display photos: 399 sourced and 498 older assignments; 185 still need a photo.** Nine catalogue records were corrected. [Review outcomes](photo-review-returned-2026-10-14.md) and [current gap list](image-gaps-2026-10-14.json) supersede the older counts below. Different pack sizes and overseas packs retain recipe-only captions; no barcode or ingredient evidence was inferred.
 
