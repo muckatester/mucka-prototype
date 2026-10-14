@@ -1,0 +1,145 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');const {test}=require('node:test');
+const {setup,html,fn,root}=require('./assessment-test-helpers.cjs');
+const crypto=require('node:crypto');
+function context(){const {c,...rest}=setup();vm.runInContext(fn('findProductByBarcode'),c);return {c,...rest}}
+test('October research observations bind each new barcode to its sourced pack and preserve case identifiers',()=>{
+ const {c}=context();
+ const raw=fs.readFileSync(root+'/docs/barcode-source-observations-2026-10-13.json');
+ const observations=JSON.parse(raw),sha=crypto.createHash('sha256').update(raw).digest('hex');
+ const added=observations.records.filter(r=>r.action==='associate_exact_pack');
+ assert.equal(added.length,103);
+ for(const r of added){
+  const p=c.findProductByBarcode(r.barcode),e=c.getBarcodeEvidence(p);
+  assert.equal(p?.id,r.appId);assert.equal(e.pack,r.pack);assert.equal(e.captureSha256,sha);
+  assert.equal(e.sourceSha256,r.sourceSha256);assert.equal(e.sourcePage,r.sourcePage);
+  assert.equal(e.physicalScanPerformed,false);
+ }
+ for(const r of observations.records.filter(r=>r.action==='remove_incorrect_association')){
+  assert.notEqual(c.products.find(p=>p.id===r.appId).barcode,r.oldBarcode);
+  assert.notEqual(c.findProductByBarcode(r.oldBarcode)?.id,r.appId);
+ }
+ assert.equal(c.findProductByBarcode('29334214046833')?.id,362);
+ assert.equal(c.findProductByBarcode('9334214046846'),null,'A carton identifier must not enable its old individual pack code');
+});
+test('GTIN normalization validates digits and preserves package indicators',()=>{
+ const {c}=context();for(const v of ['9310022360800','09310022360800',' 9310022360800 '])assert.equal(c.normalizeGtin(v),'09310022360800');
+ for(const v of ['9310022360801','<img src=x>','9310 022360800','76344884132','',null,9310022360800])assert.equal(c.normalizeGtin(v),null);
+ assert.equal(c.normalizeGtin('036000291452'),c.normalizeGtin('0036000291452'));
+});
+test('Full unresolved-catalogue sweep enables only six sourced packs and removes proven wrong numbers',()=>{
+ const {c}=context(),collector=fs.readFileSync(root+'/mucka-collector.html','utf8');
+ const observed=JSON.parse(fs.readFileSync(root+'/docs/barcode-source-observations-full-2026-10-13.json'));
+ const corrections=JSON.parse(fs.readFileSync(root+'/docs/catalogue-corrections-full-2026-10-13.json'));
+ assert.equal(observed.records.length,6);
+ for(const row of observed.records){
+  const p=c.findProductByBarcode(row.barcode),e=c.getBarcodeEvidence(p);
+  assert.equal(p?.id,row.appId);assert.equal(e.pack,row.pack);
+  assert.equal(e.sourceSha256,row.sourceSha256);assert.equal(e.physicalScanPerformed,false);
+  assert(collector.includes(row.barcode));
+ }
+ const removed=corrections.updates.filter(x=>x.after.barcode===null);
+ assert.equal(removed.length,13);
+ for(const row of removed){
+  const p=c.products.find(x=>x.id===row.appId);
+  assert.equal(p.barcode,null);assert.notEqual(c.findProductByBarcode(row.before.barcode)?.id,row.appId);
+ }
+ assert.equal(c.findProductByBarcode('5010394984584')?.id,333,'Pedigree medium may use a code removed from the wrong brand');
+ assert.equal(c.findProductByBarcode('9357667050055'),null,'Wrong FurFresh number must stay blocked');
+});
+test('Pet City follow-up enables seven exact retail packs with identity-bound evidence',()=>{
+ const {c}=context();
+ const raw=fs.readFileSync(root+'/docs/barcode-source-observations-petcity-2026-10-13.json');
+ const observed=JSON.parse(raw),sha=crypto.createHash('sha256').update(raw).digest('hex');
+ assert.equal(observed.records.length,7);
+ for(const row of observed.records){
+  const p=c.findProductByBarcode(row.barcode),e=c.getBarcodeEvidence(p);
+  assert.equal(p?.id,row.appId);assert.equal(e.pack,row.pack);
+  assert.equal(e.captureSha256,sha);assert.equal(e.sourceSha256,row.sourceSha256);
+  assert.equal(e.physicalScanPerformed,false);
+ }
+ for(const id of [1059,1106,1108])assert.match(c.products.find(p=>p.id===id).type,/kg/);
+});
+test('Truncated retailer numbers stay blocked while three full GTINs reach their exact packs',()=>{
+ const {c}=context();
+ const raw=fs.readFileSync(root+'/docs/barcode-source-observations-followup-2026-10-13.json');
+ const observed=JSON.parse(raw),sha=crypto.createHash('sha256').update(raw).digest('hex');
+ assert.equal(observed.records.length,3);
+ for(const row of observed.records){
+  const p=c.findProductByBarcode(row.barcode),e=c.getBarcodeEvidence(p);
+  assert.equal(p?.id,row.appId);assert.equal(e.pack,row.pack);
+  assert.equal(e.captureSha256,sha);assert.equal(e.sourceSha256,row.sourceSha256);
+  assert.equal(e.physicalScanPerformed,false);
+ }
+ assert.equal(c.findProductByBarcode('933794007655'),null);
+ assert.equal(c.findProductByBarcode('933794006016'),null);
+ assert.equal(c.products.find(p=>p.id===1010).name,'Grain Free Adult Chicken');
+});
+test('Every current usable barcode resolves consistently in app and Collector, including zero-padded scans',()=>{
+ const {c}=context();const collector=fs.readFileSync(root+'/mucka-collector.html','utf8');
+ const cc=vm.createContext({});vm.runInContext(collector.match(/var KNOWN_BARCODES = new Set\(\[[\s\S]*?\]\);/)[0]+collector.match(/^function normalizeGtin\([\s\S]*?^}/m)[0]+collector.match(/^function isKnownBarcode\([\s\S]*?^}/m)[0],cc);
+ let matched=0,blocked=0;
+ for(const p of c.products){
+  if(!p.barcode)continue;const result=c.findProductByBarcode(p.barcode);assert.equal(cc.isKnownBarcode(p.barcode),!!result,'Collector '+p.id);
+  if(result){matched++;assert.equal(result.id,p.id);assert.equal(c.findProductByBarcode(c.normalizeGtin(p.barcode)).id,p.id);assert.equal(cc.isKnownBarcode(c.normalizeGtin(p.barcode)),true)}else blocked++;
+ }
+ const conflicts=new Set(c.barcodeEvidence.records.filter(r=>r.status==='conflict').map(r=>c.normalizeGtin(r.barcode)));
+ const expected=c.products.filter(p=>c.normalizeGtin(p.barcode)&&!conflicts.has(c.normalizeGtin(p.barcode))&&( ['manufacturer_pack','retailer_pack','physical_pack'].includes(c.getBarcodeEvidence(p)?.status)||c.getProductEvidence(p)?.fields.barcode.status==='source_checked'));
+ assert.equal(matched,expected.length);assert.equal(blocked,c.products.filter(p=>p.barcode).length-expected.length);
+ for(const p of expected)assert.equal(c.findProductByBarcode(p.barcode)?.id,p.id,'Usable product '+p.id);
+});
+test('Ambiguous normalized identifiers, invalid codes and disputed codes cannot open a product',()=>{
+ const {c}=context();const p=c.products.find(p=>p.id===960);c.products.push({...p,id:99999,barcode:'0'+p.barcode});assert.equal(c.findProductByBarcode(p.barcode),null);
+ for(const r of c.barcodeEvidence.records.filter(r=>r.status==='conflict')){assert.equal(c.findProductByBarcode(r.barcode),null);c.products.find(p=>p.id===r.appId).name='changed';assert.equal(c.findProductByBarcode(r.barcode),null)}
+ for(const v of ['122013000172','133014000030','9340621001002'])assert.equal(c.findProductByBarcode(v),null);
+});
+test('Manufacturer barcode evidence is identity-bound and never inferred from format validity',()=>{
+ const {c,element}=context();for(const r of c.barcodeEvidence.records.filter(r=>r.status==='manufacturer_pack')){const p=c.products.find(p=>p.id===r.appId);assert.equal(c.findProductByBarcode(r.barcode).id,p.id);assert.equal(c.getBarcodeEvidence(p),r);c.showProduct(p.id);assert.match(element('catalogueFacts').innerHTML,/Manufacturer pack barcode checked online/);assert.match(element('catalogueFacts').innerHTML,/Physical scan not tested/);const old=p.type;p.type='different pack';assert.equal(c.getBarcodeEvidence(p),null);p.type=old}
+ const unverified=c.products.find(p=>p.barcode&&c.normalizeGtin(p.barcode)&&!c.getBarcodeEvidence(p)&&!c.getProductEvidence(p));assert.match(c.getBarcodeStatusText(unverified),/association is not verified/);
+ const invalid=c.products.find(p=>p.barcode&&!c.normalizeGtin(p.barcode));assert.match(c.getBarcodeStatusText(invalid),/withheld/);
+});
+test('Camera UPC-E expansion uses format metadata and never guesses from an eight-digit string',()=>{
+ const {c}=context();vm.runInContext(fn('getScannedGtinText'),c);
+ const result={result:{format:{formatName:'UPC_E'}}};assert.equal(c.getScannedGtinText('04252614',result),'042100005264');
+ assert.equal(c.getScannedGtinText('04252614',{result:{format:{formatName:'EAN_8'}}}),'04252614');
+ assert.equal(c.getScannedGtinText('04252615',result),'');assert.equal(c.getScannedGtinText('24252614',result),'');
+});
+
+test('Every source-checked retailer association resolves only its current identity',()=>{
+ const {c}=context();
+ for(const r of c.barcodeEvidence.records.filter(r=>r.status==='retailer_pack')){
+  const p=c.products.find(p=>p.id===r.appId);assert(p);assert.equal(c.getBarcodeEvidence(p),r);
+  assert.equal(c.findProductByBarcode(r.barcode)?.id,p.id,'Retailer product '+p.id);
+  if(r.physicalScanPerformed) assert.match(c.getBarcodeStatusText(p),/scan checked successfully/);
+  else assert.match(c.getBarcodeStatusText(p),/Printed pack and physical scan not checked/);
+  const old=p.type;p.type='changed pack';assert.equal(c.getBarcodeEvidence(p),null);p.type=old;
+ }
+});
+
+test('Owner-confirmed bag scans resolve to exact pack identities, including Billie’s Bowl',()=>{
+ const {c}=context();
+ assert.equal(c.findProductByBarcode('9334214150352')?.id,1035);
+ assert.equal(c.findProductByBarcode('9334214061627'),null);
+ assert.equal(c.findProductByBarcode('9338362000910')?.id,1186);
+ assert.equal(c.findProductByBarcode('9343053001237')?.id,1187);
+ assert.equal(c.findProductByBarcode('9392596027556')?.id,976);
+ for(const id of [1035,1186,1187]) assert.match(c.getBarcodeStatusText(c.products.find(p=>p.id===id)),/scan checked successfully/);
+ assert.match(c.getBarcodeStatusText(c.products.find(p=>p.id===976)),/Owner reports successful in-app scan/);
+ assert.match(c.getBarcodeStatusText(c.products.find(p=>p.id===976)),/matches the owner-provided pack photo/);
+});
+
+test('A format-valid old code cannot open a listing without current product evidence',()=>{
+ const {c}=context();const p=c.products.find(p=>p.barcode&&c.normalizeGtin(p.barcode)&&!c.getBarcodeEvidence(p)&&!c.getProductEvidence(p));
+ assert(p);assert.equal(c.findProductByBarcode(p.barcode),null);
+ const verified=c.barcodeEvidence.records.find(r=>r.status==='retailer_pack');const product=c.products.find(p=>p.id===verified.appId);
+ assert.equal(c.findProductByBarcode(product.barcode).id,product.id);product.type+=' changed';assert.equal(c.findProductByBarcode(product.barcode),null);
+});
+
+ test('Second research batch binds 43 exact packs without overriding unresolved conflicts',()=>{
+ const {c}=context();const raw=fs.readFileSync(root+'/docs/barcode-source-observations-round2-2026-10-13.json');
+ const records=JSON.parse(raw).records,sha=crypto.createHash('sha256').update(raw).digest('hex');assert.equal(records.length,43);
+ for(const r of records){const p=c.findProductByBarcode(r.barcode),e=c.getBarcodeEvidence(p);assert.equal(p?.id,r.appId);assert.equal(e.pack,r.pack);assert.equal(e.captureSha256,sha);assert.equal(e.sourceSha256,r.sourceSha256);assert.equal(e.physicalScanPerformed,false);}
+ assert.equal(c.findProductByBarcode('9300605131590'),null,'Prior single-pouch/carton conflict remains withheld');
+ assert.equal(c.findProductByBarcode('9349595439415'),null,'Manufacturer repeats one code for two Fang flavours');
+ assert.equal(c.findProductByBarcode('9772903232529'),null,'Manufacturer repeats one code for 4kg and 8kg packs');
+ assert.equal(c.findProductByBarcode('9310022567308')?.type,'Dry · 3kg');
+});

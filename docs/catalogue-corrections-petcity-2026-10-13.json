@@ -1,0 +1,180 @@
+{
+  "checkedAt": "2026-10-13",
+  "updates": [
+    {
+      "appId": 234,
+      "before": {
+        "brand": "Meals for Meows",
+        "name": "Kangaroo & Turkey",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 2.5kg",
+        "barcode": "680569859822"
+      },
+      "after": {
+        "brand": "Meals for Meows",
+        "name": "Kangaroo & Turkey",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 2.5kg",
+        "barcode": "610696080585"
+      },
+      "changedFields": {
+        "barcode": "610696080585"
+      },
+      "sourcePage": "https://www.petcity.com.au/product/meals-for-meows-kangaroo-turkey-2.5kg",
+      "reason": "Exact retailer product title, species, recipe and retail pack match the catalogue. Online barcode evidence only; printed packet and physical scan still untested."
+    },
+    {
+      "appId": 139,
+      "before": {
+        "brand": "Ivory Coat",
+        "name": "Beef Stew",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 400g can",
+        "barcode": "9300645041385"
+      },
+      "after": {
+        "brand": "Ivory Coat",
+        "name": "Beef Stew",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 400g can",
+        "barcode": "9348601004432"
+      },
+      "changedFields": {
+        "barcode": "9348601004432"
+      },
+      "sourcePage": "https://www.petcity.com.au/product/ivory-coat-grain-free-adult-beef-stew-wet-dog-food",
+      "reason": "Exact retailer product title, species, recipe and retail pack match the catalogue. Online barcode evidence only; printed packet and physical scan still untested."
+    },
+    {
+      "appId": 1030,
+      "before": {
+        "brand": "Black Hawk",
+        "name": "Puppy Lamb & Rice Large Breed",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 10kg",
+        "barcode": "9300605038400"
+      },
+      "after": {
+        "brand": "Black Hawk",
+        "name": "Puppy Lamb & Rice Large Breed",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 10kg",
+        "barcode": "9312239049660"
+      },
+      "changedFields": {
+        "barcode": "9312239049660"
+      },
+      "sourcePage": "https://www.petcity.com.au/product/black-hawk-puppy-large-breed-lamb-rice-10kg",
+      "reason": "Exact retailer product title, species, recipe and retail pack match the catalogue. Online barcode evidence only; printed packet and physical scan still untested."
+    },
+    {
+      "appId": 53,
+      "before": {
+        "brand": "Taste of the Wild",
+        "name": "Wetlands with Fowl",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 2kg",
+        "barcode": "74198610716"
+      },
+      "after": {
+        "brand": "Taste of the Wild",
+        "name": "Wetlands with Fowl",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 2kg",
+        "barcode": "074198612192"
+      },
+      "changedFields": {
+        "barcode": "074198612192"
+      },
+      "sourcePage": "https://www.petcity.com.au/product/taste-of-the-wild-dog-wetlands-2kg",
+      "reason": "Exact retailer product title, species, recipe and retail pack match the catalogue. Online barcode evidence only; printed packet and physical scan still untested."
+    },
+    {
+      "appId": 1059,
+      "before": {
+        "brand": "Big Dog",
+        "name": "Combo Raw Bulk Roll",
+        "petType": "dog",
+        "foodType": "raw",
+        "type": "raw",
+        "barcode": null
+      },
+      "after": {
+        "brand": "Big Dog",
+        "name": "Combo Raw Bulk Roll",
+        "petType": "dog",
+        "foodType": "raw",
+        "type": "Raw · 2kg roll",
+        "barcode": "9337940003169"
+      },
+      "changedFields": {
+        "type": "Raw · 2kg roll",
+        "barcode": "9337940003169"
+      },
+      "sourcePage": "https://www.petcity.com.au/product/big-dog-combo-roll-2kg",
+      "reason": "Exact retailer product title, species, recipe and retail pack match the catalogue and reviewed pack photograph. Online barcode evidence only; printed packet and physical scan still untested."
+    },
+    {
+      "appId": 1106,
+      "before": {
+        "brand": "Big Dog",
+        "name": "BARF Raw Beef for Cats",
+        "petType": null,
+        "foodType": null,
+        "type": "Raw/Freeze-Dried",
+        "barcode": null
+      },
+      "after": {
+        "brand": "Big Dog",
+        "name": "BARF Raw Beef for Cats",
+        "petType": "cat",
+        "foodType": "raw",
+        "type": "Raw · 1.38kg",
+        "barcode": "9337940007983"
+      },
+      "changedFields": {
+        "petType": "cat",
+        "foodType": "raw",
+        "type": "Raw · 1.38kg",
+        "barcode": "9337940007983"
+      },
+      "sourcePage": "https://www.petcity.com.au/product/big-dog-beef-raw-food-for-cats-1.38kg",
+      "reason": "Exact retailer product title, species, recipe and retail pack match the catalogue and reviewed pack photograph. Online barcode evidence only; printed packet and physical scan still untested."
+    },
+    {
+      "appId": 1108,
+      "before": {
+        "brand": "Big Dog",
+        "name": "BARF Raw Combo for Cats",
+        "petType": null,
+        "foodType": null,
+        "type": "Raw/Freeze-Dried",
+        "barcode": null
+      },
+      "after": {
+        "brand": "Big Dog",
+        "name": "BARF Raw Combo for Cats",
+        "petType": "cat",
+        "foodType": "raw",
+        "type": "Raw · 1.38kg",
+        "barcode": "9337940007990"
+      },
+      "changedFields": {
+        "petType": "cat",
+        "foodType": "raw",
+        "type": "Raw · 1.38kg",
+        "barcode": "9337940007990"
+      },
+      "sourcePage": "https://www.petcity.com.au/product/big-dog-combo-raw-food-for-cats-1.38kg",
+      "reason": "Exact retailer product title, species, recipe and retail pack match the catalogue and reviewed pack photograph. Online barcode evidence only; printed packet and physical scan still untested."
+    }
+  ]
+}
