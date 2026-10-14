@@ -11,7 +11,11 @@ Two matching scopes are supported:
 
 Photos do not establish nutritional adequacy, suitability, clinical approval or ingredient accuracy. Manufacturer and retailer materials can change. A source record does not assert a licence grant. Photos from other markets identify the pictured pack; they do not establish Australian availability or an Australian barcode.
 
-## Current audit — 13 October 2026
+## Current audit — 14 October 2026
+
+The returned owner review added 51 photos. **897 of 1,082 products display photos: 399 sourced and 498 older assignments; 185 still need a photo.** Nine catalogue records were corrected. [Review outcomes](photo-review-returned-2026-10-14.md) and [current gap list](image-gaps-2026-10-14.json) supersede the older counts below. Different pack sizes and overseas packs retain recipe-only captions; no barcode or ingredient evidence was inferred.
+
+## Earlier audit — 13 October 2026
 
 The 1,082-product catalogue now has **846 displayed photographs**: 348 sourced, identity-bound assignments and 498 approved older assignments. **236 products have no displayed photograph**. The [complete dated gap list](image-gaps-2026-10-13.csv) records every remaining product and why its earlier image is withheld. A local copy is in `Mucka_Review_2026-09-14/Image_Gaps_2026-10-13.csv` beside this repository.
 

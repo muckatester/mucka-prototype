@@ -18196,6 +18196,1179 @@
       ]
     },
     {
+      "sourcePath": "assets/product-images/owner-review-20261014-1093.webp",
+      "sourceSha256": "fc0f279119bd3a0bde32b638404f8ae76d9c10547a67309900907e3b6690948e",
+      "sourceBytes": 135850,
+      "variants": [
+        {
+          "path": "assets/product-images/display/fc0f279119bd3a0bde32b638-160.webp",
+          "width": 160,
+          "height": 120,
+          "sha256": "f8af63d8022cd45489edb6da7b7093ad620832047d4eb7b8f4846eda8b5bc8a0",
+          "bytes": 4734,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/fc0f279119bd3a0bde32b638-480.webp",
+          "width": 480,
+          "height": 360,
+          "sha256": "445c27ea9d11944298c8f35f84e760b9550364eafdfe8d8400b691da40cf63f9",
+          "bytes": 32568,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-1131.webp",
+      "sourceSha256": "60983c1e6a3ab9971b524a7b4e496de4036885f759917ce436c20e2487783dbc",
+      "sourceBytes": 131148,
+      "variants": [
+        {
+          "path": "assets/product-images/display/60983c1e6a3ab9971b524a7b-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "3104c7cafc754cfd3fb8429de4af6f4fb6f4add143c156a00f91d8ca20a06eee",
+          "bytes": 5012,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/60983c1e6a3ab9971b524a7b-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "625cda9c0f5abd4620fc4ec5b6e6a8ee2c42b2128056b867f7ae1187e4e9832c",
+          "bytes": 31760,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-1156.webp",
+      "sourceSha256": "2aafc5cb4af016c3f9e5e0c0497e2191adbd6a7672af5967fe19923e85369f8a",
+      "sourceBytes": 51968,
+      "variants": [
+        {
+          "path": "assets/product-images/display/2aafc5cb4af016c3f9e5e0c0-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "917177019c96fa48009c23241be8b0738160c3a81b87a0f3f30f3059835fc182",
+          "bytes": 5140,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/2aafc5cb4af016c3f9e5e0c0-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "33523a97ec4b2360b7a371e0193841f79e0bab9a4c5a1f5ca60e490375ff96d0",
+          "bytes": 26476,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-1174.webp",
+      "sourceSha256": "cd7221e536bc10d1dee775c0faa1ab0bcd990ed7a17d264009ae12287a14125d",
+      "sourceBytes": 21866,
+      "variants": [
+        {
+          "path": "assets/product-images/display/cd7221e536bc10d1dee775c0-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "aa78aa6fb16f83467407a46038e859eba211beac90d60fe47e54685ffaa97d31",
+          "bytes": 7118,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/cd7221e536bc10d1dee775c0-480.webp",
+          "width": 400,
+          "height": 400,
+          "sha256": "41b484adf93b03cc3bfdf45fe758966160206f891c0ade4bb5a3dfd6e7eab4d0",
+          "bytes": 23874,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-124.webp",
+      "sourceSha256": "620f19f81c2668f365aa6f12f1d54f1741f6b3a07e22c217d9236cb8664d7b49",
+      "sourceBytes": 42236,
+      "variants": [
+        {
+          "path": "assets/product-images/display/620f19f81c2668f365aa6f12-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "7f41f2f2291a24066a76f86a6c00600dc4a931725a9364dc13e175bae66c0f13",
+          "bytes": 5368,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/620f19f81c2668f365aa6f12-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "b46725da70583ea3f2066a066b52ff6f4ea9417a17c40e8b94c96cc4e0cc8d45",
+          "bytes": 30516,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-126.jpg",
+      "sourceSha256": "4db89eaa2361fd21b6924b5ace518e9d2f2913bb6e274972fde3eb2be1f85431",
+      "sourceBytes": 646449,
+      "variants": [
+        {
+          "path": "assets/product-images/display/4db89eaa2361fd21b6924b5a-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "3643e634b2b4b2cfef105fe5817800020755ade96120593463ced41e9dc14321",
+          "bytes": 4790,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/4db89eaa2361fd21b6924b5a-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "6740807536cfd4a00dada1ea9050e837b5e4a7512b0fcf667461bb28885abd6d",
+          "bytes": 34100,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-144.avif",
+      "sourceSha256": "231908fb3e5ce5f190219d88e0656ab0b5be011ff2022efefb1a655b74a6fe3d",
+      "sourceBytes": 217238,
+      "variants": [
+        {
+          "path": "assets/product-images/display/231908fb3e5ce5f190219d88-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "5479b59306e8bedbfa3e9f1ccb1a9967da6bf88f5b6f5a8ae3cf9ea67cb45c48",
+          "bytes": 6694,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/231908fb3e5ce5f190219d88-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "ba9f214c1f761843e2aea2b2ced7586e92d112ac0ac007ef86b0b25a1c2b03a3",
+          "bytes": 38356,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-161.webp",
+      "sourceSha256": "f99cc532315bae8e231361bada2fa9959588c51212e166ea6bce79dda0615e1c",
+      "sourceBytes": 46182,
+      "variants": [
+        {
+          "path": "assets/product-images/display/f99cc532315bae8e231361ba-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "e2c8fcea5e00ec5416a6d26acdcc59cf8149c69c7e0eaf0e3ab0b46712a8c7d1",
+          "bytes": 4718,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/f99cc532315bae8e231361ba-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "82f4d1baf6f2f80de061a04746ca760cb0ad748f8bbecb58d1b3ec1118749417",
+          "bytes": 20536,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-188.webp",
+      "sourceSha256": "cbea7c524ff703757b08aa508976f5446dbe6bfcd5a31dad96ce7f03061c662c",
+      "sourceBytes": 108506,
+      "variants": [
+        {
+          "path": "assets/product-images/display/cbea7c524ff703757b08aa50-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "571c5c76123b6d4bb42a6980d2ebedc362a0c736219523a0f3ab2a415e82e9b0",
+          "bytes": 4144,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/cbea7c524ff703757b08aa50-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "83ca21b5a1bc5c5d75fa874eba4f7c7844459a4c4a47e1d5f770afae203e3cb6",
+          "bytes": 18460,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-202.avif",
+      "sourceSha256": "164a28e61f9c8fb63d4b31d28be8d4fb27228afd34cb67ffc3dce7efe00c88f8",
+      "sourceBytes": 134736,
+      "variants": [
+        {
+          "path": "assets/product-images/display/164a28e61f9c8fb63d4b31d2-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "13dcd981f1bf3343bdc2815db6628f78c832e2529e260b2643a3408f619526c3",
+          "bytes": 3886,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/164a28e61f9c8fb63d4b31d2-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "d590bd5ba000a55eee569275ee6aca4de3bb700644f6bddc06e3acc3e6bbb883",
+          "bytes": 21090,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-214.webp",
+      "sourceSha256": "91867adef6896ae0d9cf91467ca9d8e569b6f9b7467f4182cbb7d59a467491ad",
+      "sourceBytes": 37340,
+      "variants": [
+        {
+          "path": "assets/product-images/display/91867adef6896ae0d9cf9146-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "67ff441cd0d18a048070b2be05c6f61f67658240fa6aee8a170664329464e0b3",
+          "bytes": 3762,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/91867adef6896ae0d9cf9146-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "27e18303bbae26f30293f151dd96a55197b52ce1a27d0b1ed8d5db600eec24c2",
+          "bytes": 21452,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-229.jpg",
+      "sourceSha256": "9fc36a6a01b7f66a5e383e252dd095148ccdbb76820561383ca4b833ed5c5861",
+      "sourceBytes": 154287,
+      "variants": [
+        {
+          "path": "assets/product-images/display/9fc36a6a01b7f66a5e383e25-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "5a7f26adda1264269ac888e3e8eee3986ad6f720982b8248f0447246d95c958d",
+          "bytes": 5116,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/9fc36a6a01b7f66a5e383e25-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "2ed995e1ec1c575c54122f64bfb42314eaf3078d894a811ece8f17082bc58939",
+          "bytes": 34506,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-249.webp",
+      "sourceSha256": "140931e92a07bea27d336af9db1bff2999f111c0f71a2f49186d650b9169a715",
+      "sourceBytes": 65542,
+      "variants": [
+        {
+          "path": "assets/product-images/display/140931e92a07bea27d336af9-160.webp",
+          "width": 112,
+          "height": 160,
+          "sha256": "9b994a7ce790d9d72f3468c37d2a978bf1d9a9370b79617e3a5fc9f5348e2d38",
+          "bytes": 5662,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/140931e92a07bea27d336af9-480.webp",
+          "width": 336,
+          "height": 480,
+          "sha256": "f3b0cd829edfa0056973fce8e20517ca6e6e19c33bc640019f07821eee1b24a0",
+          "bytes": 30966,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-251.jpg",
+      "sourceSha256": "297d2314e91f316df15b6c990fc611c195a0faa74b492002084ccdb0526d441b",
+      "sourceBytes": 113981,
+      "variants": [
+        {
+          "path": "assets/product-images/display/297d2314e91f316df15b6c99-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "ed778710bf6eeef17cad0c0eefff69bba3fa457b598b300576e21e91b29d0e80",
+          "bytes": 3302,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/297d2314e91f316df15b6c99-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "d79d8dc40b8804017eae7868f0ae8ef5dbfb1ef4d3769b5379b3e0387e601eb5",
+          "bytes": 17636,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-257.png",
+      "sourceSha256": "5d45756e45269f607efcd7bd02453acddb834f41c892b376962eefd8a58e3987",
+      "sourceBytes": 237299,
+      "variants": [
+        {
+          "path": "assets/product-images/display/5d45756e45269f607efcd7bd-160.webp",
+          "width": 128,
+          "height": 160,
+          "sha256": "19e66928efb5f14833e9c2fd6060445bced85d9309bcf9bc44a1e42a85a0ab94",
+          "bytes": 7602,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/5d45756e45269f607efcd7bd-480.webp",
+          "width": 384,
+          "height": 480,
+          "sha256": "77f3310919c31de0ea547c5045d592d1fd2a232f4d9ed0f4253cbee6d330111d",
+          "bytes": 38110,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-258.webp",
+      "sourceSha256": "b0b88181b775ce718f077f093f3c48726a2ac56eb5d416baf9552966cdb05f50",
+      "sourceBytes": 149278,
+      "variants": [
+        {
+          "path": "assets/product-images/display/b0b88181b775ce718f077f09-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "a18734d9aa502922d8b1ad3ecbaa8d045828c88b0ede06fa87b623cc586bfebd",
+          "bytes": 4646,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/b0b88181b775ce718f077f09-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "347ad9d36b8724a5c7d6612b405426bdd8506bc58a69928b52ab1b580e89d3c3",
+          "bytes": 23234,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-264.png",
+      "sourceSha256": "0f9683c8815a4e1270b6aaacc98cbd053693d94e632c828ecf74c46c98699c3e",
+      "sourceBytes": 353407,
+      "variants": [
+        {
+          "path": "assets/product-images/display/0f9683c8815a4e1270b6aaac-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "c918f054838067e086aff9a34fdde58f9d97cc0ec1eff8b0be26a09daf1fcd69",
+          "bytes": 11226,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/0f9683c8815a4e1270b6aaac-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "309cfe6733962cfc6b560b01f1edf35b711abeea95e1054ff13ead70e59a12d3",
+          "bytes": 50440,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-278.jpg",
+      "sourceSha256": "620a37b6f7bea408d7f24dfb5655011fedd76c3d354c2467ec9831d35da5f253",
+      "sourceBytes": 80299,
+      "variants": [
+        {
+          "path": "assets/product-images/display/620a37b6f7bea408d7f24dfb-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "bc2326e275978c0b2b8532b24787d04d0a9e5ca9251e9610fe207be6a3bb0643",
+          "bytes": 4148,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/620a37b6f7bea408d7f24dfb-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "c79a4f762dbd6d37b87c09faacc9adad033318e3d4b7a961d4810933dabee7dc",
+          "bytes": 18306,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-288.avif",
+      "sourceSha256": "3de8b2eccb97ad3c8f8ff0b3a80ebdca8176ff176647a6afc19640a799a5100b",
+      "sourceBytes": 64140,
+      "variants": [
+        {
+          "path": "assets/product-images/display/3de8b2eccb97ad3c8f8ff0b3-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "0f357099d1eaa9833d1d6285bbf47bd6ce91c1be0b6deeee5d39bc216d70913e",
+          "bytes": 5522,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/3de8b2eccb97ad3c8f8ff0b3-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "079fa7a42b798aa2b43d6283cc36d79b73970ca6f66d930ff6b25e1de63047f6",
+          "bytes": 27462,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-289.jpg",
+      "sourceSha256": "f75358232567a59f47d75455238754a5de365ee6d0a4cf0a9e5dc78700c885c2",
+      "sourceBytes": 79478,
+      "variants": [
+        {
+          "path": "assets/product-images/display/f75358232567a59f47d75455-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "27064284c1f5caf6d16858ccd5e6e5059fd7e8771d70836395303c81193830e2",
+          "bytes": 4080,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/f75358232567a59f47d75455-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "7576f349a09d00b310577db66450148efcbe0a1ad8467db82301605a98dbc376",
+          "bytes": 20980,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-292.webp",
+      "sourceSha256": "55369de429bb5656650efb31ba63458fc1e5230d1535d90cdb30b0037332b4ca",
+      "sourceBytes": 105494,
+      "variants": [
+        {
+          "path": "assets/product-images/display/55369de429bb5656650efb31-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "4650296860c6ccd9b9fc06ab533f557d832862d28157c8b261a9a45d480a3f23",
+          "bytes": 6666,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/55369de429bb5656650efb31-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "e0025179dde27a3804d7251eeca8ed47d08020930e8002a97f9a3bcfb22ed882",
+          "bytes": 35604,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-293.webp",
+      "sourceSha256": "c55b67b29b96272c628890794d56a5b64cd3fc6a44897f18637da12dd441def9",
+      "sourceBytes": 138458,
+      "variants": [
+        {
+          "path": "assets/product-images/display/c55b67b29b96272c62889079-160.webp",
+          "width": 130,
+          "height": 160,
+          "sha256": "5a19ec54569ff87755a7dec81558db087752505c05a73d09f779bd5c9c4168f2",
+          "bytes": 6360,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/c55b67b29b96272c62889079-480.webp",
+          "width": 391,
+          "height": 480,
+          "sha256": "55e83e9c603d4156c492a6f53b907b0627466ebb61c04dc825a3851affae6469",
+          "bytes": 31988,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-302.png",
+      "sourceSha256": "10213948d5f7c82451040698f2e4f12a29f93c898ced2c38a3d6a61e76ff25fe",
+      "sourceBytes": 2618309,
+      "variants": [
+        {
+          "path": "assets/product-images/display/10213948d5f7c82451040698-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "a875b43be3e844b2416d9da09d7d7dab9baaf0402a0ef102418cfd8ce9f01f77",
+          "bytes": 7626,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/10213948d5f7c82451040698-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "9ec7edc219222b10b8c233ab9a69c69f9dffda0f6d6d582c3a056a13be49e371",
+          "bytes": 37336,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-310.webp",
+      "sourceSha256": "1225c27d741e85f30c973e1bacdc171de0401198119bac6a37be09af8a6c79df",
+      "sourceBytes": 79630,
+      "variants": [
+        {
+          "path": "assets/product-images/display/1225c27d741e85f30c973e1b-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "701dd9ac9d5c180bb83e5a5242bd81f94ae2d1a53ae2d327e9ea91dc325471cc",
+          "bytes": 5138,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/1225c27d741e85f30c973e1b-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "995932abaf2f2f974b70f66b29087145cdc5806d855c0b32c5a8fc03f178ba05",
+          "bytes": 25146,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-327.jpg",
+      "sourceSha256": "bbfcf29ed29d35324c49ef40ff13e58b530af70fc53cd95acacecd0727ff1a6c",
+      "sourceBytes": 85985,
+      "variants": [
+        {
+          "path": "assets/product-images/display/bbfcf29ed29d35324c49ef40-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "1bde76acd91ae75ab7bdeeb478dcbec7db4d49ac78269af927b98bbd792bd64f",
+          "bytes": 4176,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/bbfcf29ed29d35324c49ef40-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "7c5cb7477b71ebdb51281b4ac806c7e88e8f049178a34863cc029dcc4c4edd94",
+          "bytes": 21048,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-343.webp",
+      "sourceSha256": "eec258aedf963d47c029899766577f765e680cc0d86eae362f62e0219c0eed00",
+      "sourceBytes": 106972,
+      "variants": [
+        {
+          "path": "assets/product-images/display/eec258aedf963d47c0298997-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "f221b083e12c912e4724b766bb14437306f1620db55c3bd005fb6da86ae3d128",
+          "bytes": 5182,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/eec258aedf963d47c0298997-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "67b37ce668a9e6e9da7ec2ce1b064a05602887920c359ac89f259952e888ddc2",
+          "bytes": 24854,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-355.webp",
+      "sourceSha256": "f1778f7c8add2733fca7c8b08a522b7d66c4b5ff5ea728546ae992fd3a919f39",
+      "sourceBytes": 236288,
+      "variants": [
+        {
+          "path": "assets/product-images/display/f1778f7c8add2733fca7c8b0-160.webp",
+          "width": 117,
+          "height": 160,
+          "sha256": "412e353c5f4721fbcb353226edbf8e24361e132668b12e66726736d050c3a11d",
+          "bytes": 5234,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/f1778f7c8add2733fca7c8b0-480.webp",
+          "width": 352,
+          "height": 480,
+          "sha256": "4bfd45d4cc6d9c21db3068900bf8dd082d5e7ade4eacb118f66196183068187c",
+          "bytes": 32120,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-395.png",
+      "sourceSha256": "1c35a50ff75bab7b4dccee5a8c31e6799d945f462a3bba228f9d6c745c2f0ee9",
+      "sourceBytes": 394294,
+      "variants": [
+        {
+          "path": "assets/product-images/display/1c35a50ff75bab7b4dccee5a-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "da09f96363bc6f279400353f97dc5a95898317a26a1f58e21e6d09c07235b78c",
+          "bytes": 5654,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/1c35a50ff75bab7b4dccee5a-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "c79992553093e15da70c1b35a21a391a34942329a7ed01d36432f7c9613d6f88",
+          "bytes": 26240,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-43.avif",
+      "sourceSha256": "14214ae3a64529cee8fa616ffd797e8ee2b1f07c130682ce3e29be20a8493a67",
+      "sourceBytes": 82437,
+      "variants": [
+        {
+          "path": "assets/product-images/display/14214ae3a64529cee8fa616f-160.webp",
+          "width": 118,
+          "height": 160,
+          "sha256": "79f6deb3225294073d7e78a445322c35cd1df9902e31a403cb4e1399f58ea609",
+          "bytes": 5370,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/14214ae3a64529cee8fa616f-480.webp",
+          "width": 354,
+          "height": 480,
+          "sha256": "bd31deec50d4b22b826599e1c293ccc3a758d6628f7c1c952a640888628078b3",
+          "bytes": 31202,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-438.avif",
+      "sourceSha256": "b558e7dd231a88702d21fcf169e3d8fa4365f1741b779f068d433ac047a6e824",
+      "sourceBytes": 175952,
+      "variants": [
+        {
+          "path": "assets/product-images/display/b558e7dd231a88702d21fcf1-160.webp",
+          "width": 92,
+          "height": 160,
+          "sha256": "1516f8f53d24a994de9690dd5a51cd8d1fe81401f27a810713cedf37ddbc4045",
+          "bytes": 4930,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/b558e7dd231a88702d21fcf1-480.webp",
+          "width": 277,
+          "height": 480,
+          "sha256": "4fe726206d13efa225866ef28d5dfe36fa9bbc606cff24051585d0296fdfcc8c",
+          "bytes": 36378,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-439.avif",
+      "sourceSha256": "09412fb1d434ac540780b489f9bd0cd14b58b9c33988908d07c57da3021b6725",
+      "sourceBytes": 168435,
+      "variants": [
+        {
+          "path": "assets/product-images/display/09412fb1d434ac540780b489-160.webp",
+          "width": 96,
+          "height": 160,
+          "sha256": "5d534b9a2fcff50044cf812ba8969f806a9c2fe1113f9a1b9ced289f02b8b122",
+          "bytes": 5578,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/09412fb1d434ac540780b489-480.webp",
+          "width": 288,
+          "height": 480,
+          "sha256": "594d6208181028791caf69051b32d9f1b54d996c93fa2c2cfd051fd3ff3941af",
+          "bytes": 36194,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-466.webp",
+      "sourceSha256": "877e046eb0d045f157bf353b9c6f9a4cdd08999bd65e06ff7a402a849dd96881",
+      "sourceBytes": 119692,
+      "variants": [
+        {
+          "path": "assets/product-images/display/877e046eb0d045f157bf353b-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "9b648ec87ad27b54f16fc113cb24adaabbd5973e99e589e4eeab55729e6f8d0d",
+          "bytes": 5242,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/877e046eb0d045f157bf353b-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "95f567623415cc3cf70bbe624bb7127e6679e901cd8253e02f0fa2786c8f0ed6",
+          "bytes": 30040,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-487.png",
+      "sourceSha256": "8d7bd45362322d4870886b41c0d003267bbd34ef914988cbc61917908bb3c8af",
+      "sourceBytes": 1696190,
+      "variants": [
+        {
+          "path": "assets/product-images/display/8d7bd45362322d4870886b41-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "52e13afc44a7a00dbb11c9e749b8e1204f4de802361c14b1f787bdf2e619688b",
+          "bytes": 9590,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/8d7bd45362322d4870886b41-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "f7fccc1e5ee274b248248e929fe9a9c02d22a1ff3820a4d7402a5603f4e5bee7",
+          "bytes": 40940,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-521.webp",
+      "sourceSha256": "e23f31fb0e80a67e10e409adf11b968363029c74c94ad264ce5a7aa7214f1b0d",
+      "sourceBytes": 215964,
+      "variants": [
+        {
+          "path": "assets/product-images/display/e23f31fb0e80a67e10e409ad-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "6cad38b31906a39fcba9935dd4445b078179874c831b5b52901926ef1ede7ece",
+          "bytes": 5756,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/e23f31fb0e80a67e10e409ad-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "a3689cfd75d33872436b1f113f2ce9d020d3900424d9cb788123044561f8b3c3",
+          "bytes": 29556,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-557.jpg",
+      "sourceSha256": "556a9f18dfa0916145be17f3f34b244fc513375b270726db230fd574c5799e65",
+      "sourceBytes": 334340,
+      "variants": [
+        {
+          "path": "assets/product-images/display/556a9f18dfa0916145be17f3-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "73c30091a2807d34c74dec7428185dcf35b05d874cc48a2c2a52bf24f2506223",
+          "bytes": 4914,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/556a9f18dfa0916145be17f3-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "20ff87c4e0dedc95f43bd4b26802f4f728d6c73806070bb3e60c2e2261d42433",
+          "bytes": 23624,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-57.jpg",
+      "sourceSha256": "25958a214b9419d98c9692fc8156e3b94fd7ae94d42f3bc2e5e00b2cfcf2870e",
+      "sourceBytes": 149017,
+      "variants": [
+        {
+          "path": "assets/product-images/display/25958a214b9419d98c9692fc-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "565c922f9f654f1d2e1ac238cb51c6616d8dc68afe6a35fa350a96b0a3d4bbca",
+          "bytes": 4158,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/25958a214b9419d98c9692fc-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "d05edc5fc0b98197fa5ca0015b88de1d783974cc3b2a82636667380730f125d1",
+          "bytes": 21130,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-596.jpg",
+      "sourceSha256": "33050ffb8e6d6a4b10a0a40f4eb2bc7a8fc40167e02b9a56cf2861917283413e",
+      "sourceBytes": 97329,
+      "variants": [
+        {
+          "path": "assets/product-images/display/33050ffb8e6d6a4b10a0a40f-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "26e8092ddc614e230fee82d948b3f28b40237db25698e4d87885e2074d2ea4b4",
+          "bytes": 3646,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/33050ffb8e6d6a4b10a0a40f-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "d837e0f21b92969b853e735441655a3107550ebfc7c6896904687adc62e28743",
+          "bytes": 17860,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-650.webp",
+      "sourceSha256": "da72cb52b45e8b089cc8129e13f74453e966a54acf1faee3b2d8d32914258a34",
+      "sourceBytes": 24318,
+      "variants": [
+        {
+          "path": "assets/product-images/display/da72cb52b45e8b089cc8129e-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "41c66434a0fed08bec7e394ff53181fbd65f1010b11acdd7ea6afdb8540734fa",
+          "bytes": 3944,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/da72cb52b45e8b089cc8129e-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "df0f611dd0f9009f9f65a7a3b219537d816b6a8c47ec2fbfaa80f14a98e9f76c",
+          "bytes": 17676,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-731.jpg",
+      "sourceSha256": "45611197bf0730bea9fbf6d578b62a2015963c8ad518074686f6b1035ea09634",
+      "sourceBytes": 98441,
+      "variants": [
+        {
+          "path": "assets/product-images/display/45611197bf0730bea9fbf6d5-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "b74baff1d199987a1ad756d98492b75991ea6c14418fc20f6fb046437dd90e2b",
+          "bytes": 5650,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/45611197bf0730bea9fbf6d5-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "e2dd030158636860cc603f8422a107f1fa081353c052474e68be11083e6a64e2",
+          "bytes": 29460,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-735.png",
+      "sourceSha256": "767ef2324507b1cc779baffa931ea00fcd51f025a46ca6907e7d5306f8ba00fa",
+      "sourceBytes": 468518,
+      "variants": [
+        {
+          "path": "assets/product-images/display/767ef2324507b1cc779baffa-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "fd7a089eddfb9046056648a5df9926a79dbf2e85dbec1b0be6320f747cbfeac0",
+          "bytes": 7340,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/767ef2324507b1cc779baffa-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "15ef7c7384dfd520ab6d794a1a65183162b126b483ee3645340db705e3b83c52",
+          "bytes": 38324,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-753.avif",
+      "sourceSha256": "5a1c05107eaca3006ff5579069809e3e82ce33c4e548441b2ef2d324aede60d0",
+      "sourceBytes": 80469,
+      "variants": [
+        {
+          "path": "assets/product-images/display/5a1c05107eaca3006ff55790-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "8fd2e686b366bb706da00d38f4445da5c228de2e0a9c44b1dbb9c1828d4dec31",
+          "bytes": 5486,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/5a1c05107eaca3006ff55790-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "bf605d03854c553d57d41d00e8a54ef37da96dbba89129480e272d52e4d90e84",
+          "bytes": 30354,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-756.avif",
+      "sourceSha256": "0d3bf065f19274a556c38d10b9f413dcbff06586d5dc650c70dbb0001702c0b0",
+      "sourceBytes": 70106,
+      "variants": [
+        {
+          "path": "assets/product-images/display/0d3bf065f19274a556c38d10-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "265044129724178f60b675a8216822ad3d68562c4f5c38b8eb7a55d6f232d9fe",
+          "bytes": 5580,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/0d3bf065f19274a556c38d10-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "132855952121f397c7c6abc5deaf8a3cfd545ec6807a4d0af3ac157c359903b1",
+          "bytes": 27582,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-766.avif",
+      "sourceSha256": "59188906cf4bdd33e7197173c1ad0ec40b08b783391778a649bbaeefbedf6fcb",
+      "sourceBytes": 277348,
+      "variants": [
+        {
+          "path": "assets/product-images/display/59188906cf4bdd33e7197173-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "f41d522c37821aa89bc1aa027d2ac246e391d568cd7de3b19ac778dfb8a06469",
+          "bytes": 6990,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/59188906cf4bdd33e7197173-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "3c04b02af9e07d12ad3fa1659a8f79ee434224ab554839ad36c263ac0525ccd3",
+          "bytes": 32920,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-873.webp",
+      "sourceSha256": "61569a8f977034333f759d4175608fd3850a3ad65ff7aa24946c8cc5fd74ec66",
+      "sourceBytes": 79628,
+      "variants": [
+        {
+          "path": "assets/product-images/display/61569a8f977034333f759d41-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "5093fded5d7a2a0154443272773fe28d1a3f8cddc76b18b65f135502979f78ac",
+          "bytes": 4524,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/61569a8f977034333f759d41-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "1da197404fb0af5685519d1ab91744121c4079c54f6d3b03a43b5439a87448e8",
+          "bytes": 17536,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-902.webp",
+      "sourceSha256": "dbfa80b98c5e037834ca9ae3b194716bab4897e707a5863a261024f86ec36987",
+      "sourceBytes": 26442,
+      "variants": [
+        {
+          "path": "assets/product-images/display/dbfa80b98c5e037834ca9ae3-160.webp",
+          "width": 160,
+          "height": 84,
+          "sha256": "1100aea9895ae69c38980d3391b6e777b6f28260ead1ca0ee7aeaf87afed82e6",
+          "bytes": 1682,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/dbfa80b98c5e037834ca9ae3-480.webp",
+          "width": 480,
+          "height": 252,
+          "sha256": "8e84fb3bf80cfecd2d9cef2f4a3bfa5f96a1448f7380562feb52d779271daca8",
+          "bytes": 9338,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-91.webp",
+      "sourceSha256": "60c6097971920d67a010a738beef48c668e0c2f139cf06ea8ff83595f91c8b44",
+      "sourceBytes": 63046,
+      "variants": [
+        {
+          "path": "assets/product-images/display/60c6097971920d67a010a738-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "a6f3f7a6cd7c91dbeb7dce5b03207d6c741d9e2e04101ae593148beb3528e0f0",
+          "bytes": 4480,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/60c6097971920d67a010a738-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "0211aed38c384522646e4140f16d1e5e821389454107f52257e8b35f2792bdb0",
+          "bytes": 22322,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-915.webp",
+      "sourceSha256": "f02c72f8006c5b07f3c832c244fd770a94714b888a54f2e9d0118a3241a71a59",
+      "sourceBytes": 44488,
+      "variants": [
+        {
+          "path": "assets/product-images/display/f02c72f8006c5b07f3c832c2-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "b8cdcf80563a1aa4d46772f390ee0b50b1f329d9a3ec669d7801c1f8fc853e26",
+          "bytes": 5806,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/f02c72f8006c5b07f3c832c2-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "5a3e6cc553fc17923306d1213c4a6f351452232d2d3eeee1548f3342c90b98e3",
+          "bytes": 26548,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-919.webp",
+      "sourceSha256": "6451376609f84c67643e6fcf219bd5b03ff06c8afead47cbf3b476d6a3dab509",
+      "sourceBytes": 128628,
+      "variants": [
+        {
+          "path": "assets/product-images/display/6451376609f84c67643e6fcf-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "8ff5932cd410f4b65da6b24f1604a86f1f10dbdde9deb873d336e330e9a15f41",
+          "bytes": 5958,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/6451376609f84c67643e6fcf-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "3d88bb7bef17ba5ebfd4e34df5171a25ebb770c505dfbbf27b06518b0d410264",
+          "bytes": 47202,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-928.png",
+      "sourceSha256": "3f76e618d84b39757bfb1c2592ccd2c3134cbb5c04434e95bee059787baa74e2",
+      "sourceBytes": 1609646,
+      "variants": [
+        {
+          "path": "assets/product-images/display/3f76e618d84b39757bfb1c25-160.webp",
+          "width": 160,
+          "height": 148,
+          "sha256": "6666cb5d57795f0501cb7262f5dfb735a140340df1fedf58cc8ac837f8b707f9",
+          "bytes": 5244,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/3f76e618d84b39757bfb1c25-480.webp",
+          "width": 480,
+          "height": 444,
+          "sha256": "b20f8dff519c88c4df9be4dd3432f5895c273881b660bccd633e90140ee7a4ce",
+          "bytes": 22720,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-966.jpg",
+      "sourceSha256": "a220abd15fb7ac21dc5f5624eaa5a39ced163153f116b1f4ff7819a88fbe3514",
+      "sourceBytes": 152497,
+      "variants": [
+        {
+          "path": "assets/product-images/display/a220abd15fb7ac21dc5f5624-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "cb2e5c3ddd7ba99e53308e774e4a548313d1068a00adfc3cb47ba427ff5e225e",
+          "bytes": 7528,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/a220abd15fb7ac21dc5f5624-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "8cdba38677dd0064691efdd869c656801a8e19137695a347e33a185d087be127",
+          "bytes": 40678,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/owner-review-20261014-97.webp",
+      "sourceSha256": "b3f59287d7d077179cf1bf98488949f01143dfecda1ca574dca1d2712ffcc4a9",
+      "sourceBytes": 40052,
+      "variants": [
+        {
+          "path": "assets/product-images/display/b3f59287d7d077179cf1bf98-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "2a0f9d80578933396000bbc528b8b19e0ddd21fafbbdf8bfdcbf0b24e25e7ef0",
+          "bytes": 2748,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/b3f59287d7d077179cf1bf98-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "0abb22e380e47241403152e378a127d3746c8df7751aaf951fec708c3e59258b",
+          "bytes": 13464,
+          "bound": 480
+        }
+      ]
+    },
+    {
       "sourcePath": "assets/product-images/purina-one-healthy-weight-chicken-cat-1.5kg.jpg",
       "sourceSha256": "40259bdc460c9248550a9468303b3cc6893d8c13aa2640aa92bfac9a42d4bbf1",
       "sourceBytes": 114383,
