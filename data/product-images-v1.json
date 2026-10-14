@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedDate": "2026-10-14",
+  "checkedDate": "2026-10-15",
   "scope": "Sourced product photographs only. Image matching does not verify nutritional claims, suitability or all catalogue facts.",
   "records": [
     {
@@ -10092,6 +10092,226 @@
       "visualChecked": true,
       "checkedDate": "2026-10-14",
       "sha256": "f075daf07412ac5f8182020d29baa3c1ff5f959b13e88e3d7599d403ea4162da",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 713,
+      "identity": {
+        "brand": "Leaps & Bounds",
+        "name": "Tuna Cat Food Topper",
+        "petType": "cat",
+        "foodType": "topper",
+        "type": "Topper \u00b7 40g x 3",
+        "barcode": "19345740168206"
+      },
+      "localPath": "assets/product-images/review69-20261015-713.jpg",
+      "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-appetisers-wocean-fish-tuna-cat-pouch-40gx3",
+      "imageUrl": "https://www.petbarn.com.au/media/catalog/product/1/5/150286_LB-CF-TOP-wTNA-40gx3.jpg",
+      "sourceKind": "retailer",
+      "shownPack": "3 x 40g tuna toppers in broth",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Front label and Australian retailer agree on Leaps & Bounds tuna cat toppers, 3 x 40g. Photo review does not verify barcodes, nutrition, ingredients or suitability.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-15",
+      "sha256": "1716cd24b8cc0db7bb7227b2812cea50294212fb7c28959d2b54ea95c479c011",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 290,
+      "identity": {
+        "brand": "Advance",
+        "name": "Adult Chicken in Gravy Pouch",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet \u00b7 85g pouch",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/review69-20261015-290.jpg",
+      "sourcePage": "https://www.petbarn.com.au/p/advance-chicken-in-gravy-adult-cat-food-pouch-85gx12",
+      "imageUrl": "https://www.petbarn.com.au/media/catalog/product/1/4/148008_ADV_CF_CHCK_GRVY_85gx12_p1.jpg",
+      "sourceKind": "retailer",
+      "shownPack": "85g adult chicken-in-gravy cat pouches in a display carton",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Australian retailer front shows Advance Adult Chicken in Gravy cat pouches, each 85g. The outer carton is pictured; catalogue single/multipack configuration is unconfirmed. Photo review does not verify barcodes, nutrition, ingredients or suitability.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-15",
+      "sha256": "1d04ee5c483c365bb6caa7e8b6df2bc848a9348b0f63eb9385de6cfc3db86183",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 564,
+      "identity": {
+        "brand": "Hill's Prescription Diet",
+        "name": "Metabolic Weight Management",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry \u00b7 3.5kg",
+        "barcode": "052742022369"
+      },
+      "localPath": "assets/product-images/review69-20261015-564.jpg",
+      "sourcePage": "https://www.petpost.com.au/products/hills-prescription-diet-metabolic-weight-management-dry-dog-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0093/8059/3743/files/100000011617-hills-prescription-diet-metabolic-weight-management-dry-dog-food-1.jpg?v=1778714867",
+      "sourceKind": "retailer",
+      "shownPack": "Metabolic dry dog food bag; pictured weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Recovered a front-pack photograph from the Australian retailer product record. Metabolic Weight Loss & Maintenance dry dog food matches the named range; 3.5kg pack identity is not established. Photo review does not verify barcodes, nutrition, ingredients or suitability.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-15",
+      "sha256": "833707fe3837e61eda0c14b8e82bfa6d6b943b572b1e9454d3e4fa29d0d885f0",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 206,
+      "identity": {
+        "brand": "Hill's Science Diet",
+        "name": "Adult Oral Care",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry \u00b7 1.58kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/review69-20261015-206.png",
+      "sourcePage": "https://www.peekapaw.com.au/products/hills-science-diet-dry-cat-food-adult-oral-care",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0563/6676/0120/files/15597577240606.png?v=1785935578",
+      "sourceKind": "retailer",
+      "shownPack": "Adult Oral Care chicken & brown rice cat bag; pictured weight not legible, newer packaging",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Recovered front from Australian retailer Adult Oral Care cat-food product record. Named range matches; retailer flags a new formula, so the photo does not verify the listed 1.58kg pack or its formulation. Photo review does not verify barcodes, nutrition, ingredients or suitability.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-15",
+      "sha256": "429738290ce11cadef98ff0ab3e69a3b3eb0830553e880a55a619669ffb14f63",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 664,
+      "identity": {
+        "brand": "Leaps & Bounds",
+        "name": "Chicken Mousse Cat Food",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/review69-20261015-664.jpg",
+      "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-chicken-mousse-top-w-chicken-cat-can-85g-x-12",
+      "imageUrl": "https://www.petbarn.com.au/media/catalog/product/1/4/142549_142541_chicken_mousse.jpg",
+      "sourceKind": "retailer",
+      "shownPack": "85g chicken mousse topped with shreds can; multipack not confirmed",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Front and Australian retailer identify Leaps & Bounds Chicken Mousse cat food. Corrected the contradictory dry classification to wet; no barcode, ingredients, pack size or score was inferred. Photo review does not verify barcodes, nutrition, ingredients or suitability.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-15",
+      "sha256": "b473ba25ecd5722117ba9a5fa39efc76844be5384f2cce67da2bca70d80eede5",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 745,
+      "identity": {
+        "brand": "Nature's Gift",
+        "name": "Grain Free Chicken & Duck",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "dry",
+        "barcode": "9319185009632"
+      },
+      "localPath": "assets/product-images/review69-20261015-745.jpg",
+      "sourcePage": "https://realpetfoodco.co.nz/products/natures-gift-chicken-with-duck-adult-all-breeds-2-5kg",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0572/1410/7782/files/15707170078750.jpg?v=1784597875",
+      "sourceKind": "manufacturer",
+      "shownPack": "2.5kg grain-free adult chicken with duck dry dog food; New Zealand manufacturer page",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Replaced the incorrect wet variety-pack candidate with the manufacturer front for Grain Free Chicken with Duck adult dry dog food. New Zealand page and pictured size disclosed; no Australian barcode or formulation inference. Photo review does not verify barcodes, nutrition, ingredients or suitability.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-15",
+      "sha256": "54c8ce475b5aeb57e4fad9d62cbeca6ec37ce59bfaa179a58fdeadcc24e38cbb",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 765,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Adult Lamb & Gravy Casserole",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/review69-20261015-765.jpg",
+      "sourcePage": "https://www.doordash.com/products/pedigree-lamb-vegies-gravy-casserole-adult-wet-dog-food-can-700-g/urpc_1f17006c-f460-4627-b2be-181da1348e74",
+      "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/7ea9c1f2-88ce-477e-8f6b-3a0fecb59aa8-retina-large.png",
+      "sourceKind": "retailer",
+      "shownPack": "700g adult lamb, vegies & gravy casserole can; older packaging",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Front visibly identifies Pedigree Adult with Lamb, Vegies & Gravy Casserole. Catalogue has no pack size. Current packaging/availability is not established by the marketplace photograph. Photo review does not verify barcodes, nutrition, ingredients or suitability.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-15",
+      "sha256": "fe4a7baf49dc465bd11a3726a24a549bb71a73b1f8c6518a2eaf75be5a867e20",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 295,
+      "identity": {
+        "brand": "Purina Pro Plan",
+        "name": "Urinary Care Chicken",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet \u00b7 12 x 85g",
+        "barcode": "9300605131576"
+      },
+      "localPath": "assets/product-images/review69-20261015-295.webp",
+      "sourcePage": "https://www.purina-arabia.com/en/food/cat/purina-pro-plan-adult-urinary-care-chicken-gravy-wet-cat-food",
+      "imageUrl": "https://www.purina-arabia.com/sites/default/files/styles/product_zoom/public/2026-02/01_12.jpg.webp",
+      "sourceKind": "manufacturer",
+      "shownPack": "12 x 85g urinary-care chicken-in-gravy cat pouches; overseas manufacturer photo",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer photograph shows the named Pro Plan Urinary Care chicken-in-gravy wet cat recipe. Overseas packaging is disclosed; it does not verify the existing Australian barcode or formula. Photo review does not verify barcodes, nutrition, ingredients or suitability.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-15",
+      "sha256": "fcfe3f176abd4291539ed5da118257e591a195368b7bda85eda4769c329ce7a8",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 933,
+      "identity": {
+        "brand": "VitaPet",
+        "name": "Natural Chicken & Fish Bites",
+        "petType": "cat",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": "9415022021017"
+      },
+      "localPath": "assets/product-images/review69-20261015-933.jpg",
+      "sourcePage": "https://www.thegrocerygeek.com.au/portfolio-item/vitapet-natural-bites-range/",
+      "imageUrl": "https://www.thegrocerygeek.com.au/wp-content/uploads/2019/10/vitapet-natural-bites-chicken-fish.jpg",
+      "sourceKind": "product_reference",
+      "shownPack": "85g natural chicken & fish bites for cats and kittens; older packaging",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Front identifies VitaPet Natural Chicken & Fish Bites for cats and kittens; Australian historical product page agrees. Current packaging/availability is unconfirmed. Photo review does not verify barcodes, nutrition, ingredients or suitability.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-15",
+      "sha256": "151aa798f5f302409bc4ffd10278235a873eb39a7a5b20580fc7afda49c221ff",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 934,
+      "identity": {
+        "brand": "VitaPet",
+        "name": "Natural Chicken Bites",
+        "petType": "cat",
+        "foodType": "treat",
+        "type": "Treat",
+        "barcode": "9339687327263"
+      },
+      "localPath": "assets/product-images/review69-20261015-934.png",
+      "sourcePage": "https://www.blackboxreviews.co.nz/p/vitapet-natural-chicken-bites-85gm-coupon/",
+      "imageUrl": "https://www.blackboxreviews.co.nz/wp-content/uploads/2020/03/Vitapet-Natural-Chicken-Bites.png",
+      "sourceKind": "product_reference",
+      "shownPack": "85g natural chicken bites for cats and kittens; older New Zealand photo",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Front identifies VitaPet Natural Chicken Bites for cats and kittens. New Zealand source photograph; Australian pack and current availability remain unverified. Photo review does not verify barcodes, nutrition, ingredients or suitability.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-15",
+      "sha256": "60f3666221d3751f3cfdc1770bcfcb0ceb41bc5c41b44e2336acd571fc6508e9",
       "rightsStatus": "Public product image; no licence grant asserted."
     }
   ]

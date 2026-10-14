@@ -1,0 +1,703 @@
+{
+  "date": "2026-10-15",
+  "version": "2026.10.15.1",
+  "reviewedCandidates": 69,
+  "addedPhotos": 10,
+  "addedPhotoIds": [
+    206,
+    290,
+    295,
+    564,
+    664,
+    713,
+    745,
+    765,
+    933,
+    934
+  ],
+  "heldCandidates": 59,
+  "withoutCandidate": 56,
+  "displayedPhotos": 967,
+  "remainingPhotoGaps": 115,
+  "exactPackPhotos": 1,
+  "recipeOnlyPhotos": 9,
+  "sourceWorkbookSha256": "d94a5090d579fe258b5f5a944be3554f7438cdc6d333ac49a860faebac5f35b4",
+  "catalogueCorrections": [
+    {
+      "appId": 664,
+      "before": {
+        "type": "dry",
+        "foodType": "dry"
+      },
+      "after": {
+        "type": "Wet",
+        "foodType": "wet"
+      },
+      "source": "https://www.petbarn.com.au/p/leaps-bounds-chicken-mousse-top-w-chicken-cat-can-85g-x-12",
+      "reason": "Front pack and retailer identify chicken mousse for cats as wet canned food."
+    }
+  ],
+  "records": [
+    {
+      "appId": 275,
+      "product": "Dine - Desire Tuna Fillets",
+      "candidateSourcePage": "https://www.dine.com.au/our-products/luxury/dine-desire/with-tuna-fillet-and-prawn-in-a-seafood-sauce",
+      "candidateImageUrl": "https://www.dine.com.au/sites/g/files/fnmzdf2756/files/2023-04/DINE%20DESIRE%20Grain%20Free%20Tuna%20Fillets%20%26%20Prawn%20in%20Sauce%20Can%2085g-min.png",
+      "outcome": "held",
+      "reason": "Photo is Tuna & Prawn in Seafood Sauce in a can; listing specifies Tuna Fillets in a tray.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 499,
+      "product": "Fancy Feast - Creamy Broths Salmon & Vegetables",
+      "candidateSourcePage": "https://www.acmemarkets.com/shop/pd/purina-fancy-feast-salmon-and-vegetables-wet-cat-lickable-broth-topper-complement-1-4-oz/960112079",
+      "candidateImageUrl": "https://images.albertsons-media.com/is/image/ABS/960112079-C1N1?$ng-ecom-pdp-mobile$&defaultImage=Not_Available",
+      "outcome": "held",
+      "reason": "Photo is a Classic/silky broth cat product; listing has incompatible Creamy recipe and dog/dry identity.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 379,
+      "product": "Feline Natural - Freeze-Dried Chicken Topper",
+      "candidateSourcePage": "https://us.k9felinenatural.com/products/chicken-feast-freeze-dried-cat-food",
+      "candidateImageUrl": "http://us.k9felinenatural.com/cdn/shop/files/11ozfront_1d5d8a97-84d4-49cd-9dee-4c487f4f3d05.webp",
+      "outcome": "held",
+      "reason": "Chicken-only manufacturer photo found, but both US and Australian front images contain visible stretched/corrupt artwork. AU source offers 320g, not the listed 100g. Need a clean, confirmed pack photo.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 518,
+      "product": "Felix - Doubly Delicious Mixed Selection",
+      "candidateSourcePage": "https://www.petstation.com.au/felix-as-good-as-it-look-doubly-delicious-wet-cat~33710",
+      "candidateImageUrl": "https://www.petstation.com.au/assets/full/CFDDMES12X85.png",
+      "outcome": "held",
+      "reason": "Meat Selection photo does not establish the listed Mixed Selection assortment.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 523,
+      "product": "Felix - Sensations Sauces Fish Selection",
+      "candidateSourcePage": "https://www.zoolini.com/felix/sensations-sauces-variety-from-the-water-12x85g",
+      "candidateImageUrl": "https://zo.nice-cdn.com/upload/image/product/large/default/felix-sensations-sauces-variety-from-the-water-12x85g-221564-en.jpg",
+      "outcome": "held",
+      "reason": "European fish assortment has not been linked to the Australian listing/GTIN. Same range name is insufficient to confirm the assortment.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 452,
+      "product": "Fussy Cat - Grain Free+ Indoor Chicken & Turkey",
+      "candidateSourcePage": "https://www.igashop.com.au/product/vip-fussy-cat-grainfree-chicken-turkey-cranberry-331558",
+      "candidateImageUrl": "https://cdn.metcash.media/image/upload/w_1500,h_1500,c_pad,b_auto/igashop/images/331558.jpg",
+      "outcome": "held",
+      "reason": "Chicken & Turkey with Cranberry photo does not establish the named Indoor variant.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 370,
+      "product": "Inaba - Chicken Fillet Grilled",
+      "candidateSourcePage": "https://inabafoods.com/cats/chicken-fillet-grilled/",
+      "candidateImageUrl": "https://inabafoods.com/wp-content/uploads/USA551A.jpg",
+      "outcome": "held",
+      "reason": "Single grilled fillet in crab-flavoured broth does not establish the named four-pack; earlier owner pack rejection remains unresolved.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 1027,
+      "product": "Ivory Coat - Grain Free Reduced Fat Turkey",
+      "candidateSourcePage": "https://robbospetbarn.com.au/products/ivory-coat-sen-fat-red-turkey-2kg",
+      "candidateImageUrl": "https://robbospetbarn.com.au/cdn/shop/files/ivory-coat-dog-dry-food-ivory-coat-grain-free-senior-fat-reduced-turkey-2kg-33805242597536_5000x.png",
+      "outcome": "held",
+      "reason": "Recovered front says Mature Dog Turkey. Retailer associates it with Senior Fat Reduced, but manufacturer confirmation of the listing identity is still needed after the earlier Mature-versus-Reduced-Fat rejection.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 632,
+      "product": "Leaps & Bounds - Adult Beef & Vegetable Roll",
+      "candidateSourcePage": "https://leapsandboundspetfood.com/dogs/adult-beef-vegetable/",
+      "candidateImageUrl": "https://leapsandboundspetfood.com/app/uploads/2026/03/LB_3.2kg_Front_Beef_Vegetable_HR1.png",
+      "outcome": "held",
+      "reason": "Source shows dry beef-and-vegetable food; catalogue product is a roll. Original image URL also unavailable.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 160,
+      "product": "Leaps & Bounds - Adult Beef Casserole Can",
+      "candidateSourcePage": "https://www.petbarn.com.au/p/leaps-bounds-beef-and-vegetable-700gx12",
+      "candidateImageUrl": "https://petbarn.com.au/media/catalog/product/3/2/3217927_Leaps_and_Bounds_Adult_Beef_Casserole_700g_Can_7x7.jpg",
+      "outcome": "held",
+      "reason": "Photo shows 700g beef casserole, while the listing says 400g x12. Earlier owner rejection requires the correct pack or a supported catalogue correction.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 677,
+      "product": "Leaps & Bounds - Grain Free Chicken & Rosemary Dog Food",
+      "candidateSourcePage": "https://www.petbarn.com.au/p/leaps-bounds-grain-free-chicken-dog-food",
+      "candidateImageUrl": "https://www.petbarn.com.au/media/catalog/product/2/5/25140_leaps_b_gf_2_3kg_side_acv_2.jpg",
+      "outcome": "held",
+      "reason": "Chicken & Vegetable is not the named Chicken & Rosemary recipe.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 298,
+      "product": "Leaps & Bounds - Kitten Chicken Wet",
+      "candidateSourcePage": "https://www.petbarn.com.au/p/leaps-bounds-chicken-rosemary-kitten-food",
+      "candidateImageUrl": "https://www.petbarn.com.au/media/catalog/product/1/4/142622-1.jpg",
+      "outcome": "held",
+      "reason": "Photo is kitten chicken dry food, not wet chicken pouches.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 713,
+      "product": "Leaps & Bounds - Tuna Cat Food Topper",
+      "candidateSourcePage": "https://www.petbarn.com.au/p/leaps-bounds-appetisers-wocean-fish-tuna-cat-pouch-40gx3",
+      "candidateImageUrl": "https://www.petbarn.com.au/media/catalog/product/1/5/150286_LB-CF-TOP-wTNA-40gx3.jpg",
+      "outcome": "photo_added",
+      "localPath": "assets/product-images/review69-20261015-713.jpg",
+      "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-appetisers-wocean-fish-tuna-cat-pouch-40gx3",
+      "imageUrl": "https://www.petbarn.com.au/media/catalog/product/1/5/150286_LB-CF-TOP-wTNA-40gx3.jpg",
+      "shownPack": "3 x 40g tuna toppers in broth",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Front label and Australian retailer agree on Leaps & Bounds tuna cat toppers, 3 x 40g. Photo review does not verify barcodes, nutrition, ingredients or suitability."
+    },
+    {
+      "appId": 732,
+      "product": "My Dog - Home Delights Slow Cooked Lamb",
+      "candidateSourcePage": "https://www.coles.com.au/product/my-dog-classic-loaf-with-juicy-lamb-tray-adult-wet-dog-food-100g-6112801",
+      "candidateImageUrl": "https://shop.coles.com.au/wcsstore/Coles-CAS/images/6/1/1/6112801-zm.jpg",
+      "outcome": "held",
+      "reason": "Classic Loaf Juicy Lamb does not establish Home Delights Slow Cooked Lamb.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 748,
+      "product": "Nature's Gift - Loaf Beef, Liver & Vegetables",
+      "candidateSourcePage": "https://rpfco.com/products/natures-gift-beef-liver-meatloaf-recipe-wet-dog-food-700g",
+      "candidateImageUrl": "http://rpfco.com/cdn/shop/products/10794769481758_aa770d2b-6cd5-4d40-90f3-e5d75d19ab9b.jpg",
+      "outcome": "held",
+      "reason": "Beef & Liver Meatloaf is not confirmed as the named Beef, Liver & Vegetables recipe.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 106,
+      "product": "Open Farm - Puppy Turkey, Salmon & Ancient Grains",
+      "candidateSourcePage": "https://openfarmpet.com/products/salmon-puppy-food",
+      "candidateImageUrl": "https://openfarmpet.com/cdn/shop/files/OFP-Ancient-Grains-Puppy-Salmon-Kibble-Recipe-5-668x580.png",
+      "outcome": "held",
+      "reason": "Salmon ancient-grains puppy food does not establish the named Turkey & Salmon recipe.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 189,
+      "product": "SavourLife - Gently Air-Dried Chicken",
+      "candidateSourcePage": "https://www.savour-life.com.au/our-range/food-ranges/air-dried-range/air-dried-chicken-recipe/",
+      "candidateImageUrl": "https://www.savour-life.com.au/media/mhkjkayp/savourlife_chicken_1kg_air_dried_fop.png",
+      "outcome": "held",
+      "reason": "Possible duplicate of #188 remains unresolved. A 1kg photo does not resolve the 900g duplicate listing.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 940,
+      "product": "Wellness - CORE Kitten Turkey, Chicken & Herring",
+      "candidateSourcePage": "https://www.wellnesspetfood.com.sg/natural-cat-food/corer-kitten-kitten-deboned-turkey-turkey-meal-deboned-chicken/",
+      "candidateImageUrl": "https://www.wellnesspetfood.com.sg/wp-content/uploads/2020/12/CORE_CrossSell.jpg",
+      "outcome": "held",
+      "reason": "Generic range artwork and Turkey & Chicken do not establish the named Herring variant.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 304,
+      "product": "Wellness - CORE Original Turkey, Chicken & Herring",
+      "candidateSourcePage": "https://www.chewy.com/ca/wellness-core-grain-free-chicken/dp/1000091369",
+      "candidateImageUrl": "https://image.chewy.com/ca/is/image/catalog/1000092257_MAIN._AC_SS1800_V1724427233_.jpg",
+      "outcome": "held",
+      "reason": "Wet Chicken, Turkey & Chicken Liver is not the named Turkey, Chicken & Herring recipe.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 1039,
+      "product": "Advance - Adult Cat Kibble",
+      "candidateSourcePage": "https://www.petbarn.com.au/p/advance-chicken-adult-cat-food",
+      "candidateImageUrl": "https://www.petbarn.com.au/media/wysiwyg/11253_29303_25311_29087_9310022567308-13-_2__1_1_1_1_.png",
+      "outcome": "held",
+      "reason": "Listing has no recipe; image says Ocean Fish while linked page says Chicken. Do not choose a flavour by guesswork.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 290,
+      "product": "Advance - Adult Chicken in Gravy Pouch",
+      "candidateSourcePage": "https://advancepet.com.au/products/advance%E2%84%A2-adult-chicken-in-gravy-pouches",
+      "candidateImageUrl": "https://advancepet.com.au/medialib/shopify_images/8853301015639-0.webp",
+      "outcome": "photo_added",
+      "localPath": "assets/product-images/review69-20261015-290.jpg",
+      "sourcePage": "https://www.petbarn.com.au/p/advance-chicken-in-gravy-adult-cat-food-pouch-85gx12",
+      "imageUrl": "https://www.petbarn.com.au/media/catalog/product/1/4/148008_ADV_CF_CHCK_GRVY_85gx12_p1.jpg",
+      "shownPack": "85g adult chicken-in-gravy cat pouches in a display carton",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Australian retailer front shows Advance Adult Chicken in Gravy cat pouches, each 85g. The outer carton is pictured; catalogue single/multipack configuration is unconfirmed. Photo review does not verify barcodes, nutrition, ingredients or suitability."
+    },
+    {
+      "appId": 141,
+      "product": "Advance - Adult Chicken Salmon & Rice Wet",
+      "candidateSourcePage": "https://www.petbarn.com.au/p/advance-oodles-adult-dog-food-100gx12",
+      "candidateImageUrl": "https://www.petbarn.com.au/media/catalog/product/1/4/143165--Oodles_3.jpg",
+      "outcome": "held",
+      "reason": "Oodles with Salmon is a different named range from Chicken, Salmon & Rice.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 279,
+      "product": "Applaws - Chicken with Salmon Pumpkin Carrots and Peas in Broth",
+      "candidateSourcePage": "https://applaws.com.au/dog/products/chicken-breast-with-salmon-pumpkin-carrots-peas/",
+      "candidateImageUrl": "https://applaws.com.au/dog/wp-content/uploads/sites/6/2025/12/TT3001AU-AM_DOI_CAN_FOP_5000px.png",
+      "outcome": "held",
+      "reason": "Photo is dog chicken breast food, not the listed cat multi-ingredient recipe.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 1056,
+      "product": "Big Dog - BARF Raw Rabbit for Cats",
+      "candidateSourcePage": "https://www.bigdogpetfoods.com/our-range/big-dog-for-cats",
+      "candidateImageUrl": "https://cdn.prod.website-files.com/6976b4e420a29743ab6eee68/6976b4e520a29743ab6f05ba_DIAA31~1.webp",
+      "outcome": "held",
+      "reason": "Photo is Kanga raw cat food, not Rabbit.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 414,
+      "product": "Billy & Margot - Beef",
+      "candidateSourcePage": "https://www.petbarn.com.au/p/billy-margot-beef-superfood-adult-dog-food-tray-100gx9",
+      "candidateImageUrl": "https://www.petbarn.com.au/media/catalog/product/1/4/144969_B_M_DF_ADT_BF_SUPERFD_100gx9_6.png",
+      "outcome": "held",
+      "reason": "Beef Superfood trays do not establish the listed 395g beef can.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 478,
+      "product": "Coles - Adult Dry Cat Food Tuna",
+      "candidateSourcePage": "https://www.coles.com.au/product/coles-adult-dry-cat-food-with-ocean-fish-1kg-5095092",
+      "candidateImageUrl": "https://www.coles.com.au/_next/image?url=https%3A%2F%2Fcdn.productimages.coles.com.au%2Fproductimages%2F5%2F5095081.jpg&w=640&q=90",
+      "outcome": "held",
+      "reason": "Photo is Beef & Vegetables dry food; page and listing also disagree. No tuna dry-food match.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 479,
+      "product": "Coles - Wet Cat Food Tuna in Jelly Pouch",
+      "candidateSourcePage": "https://www.coles.com.au/product/coles-cat-food-tuna-kitten-85g-3987017",
+      "candidateImageUrl": "https://shop.coles.com.au/wcsstore/Coles-CAS/images/3/9/8/3987017-zm.jpg",
+      "outcome": "held",
+      "reason": "Kitten tuna flakes can is not the named tuna-in-jelly pouch.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 500,
+      "product": "Fancy Feast - Creamy Broths Tuna",
+      "candidateSourcePage": "https://www.walmart.com/ip/Purina-Fancy-Feast-Lickable-Wet-Cat-Food-Broth-Topper-Complement-Creamy-With-Tuna-Chicken-and-Whitefish/503496180",
+      "candidateImageUrl": "https://i5.walmartimages.com/seo/Purina-Fancy-Feast-Lickable-Wet-Cat-Food-Broth-Topper-Complement-Creamy-With-Tuna-Chicken-and-Whitefish_b183dde2-0aa6-43c0-a316-065e447632ab.ba66ff987b96d77ab44044d55da1057a.jpeg",
+      "outcome": "held",
+      "reason": "Tuna, Chicken & Whitefish broth does not establish the named Creamy Tuna recipe.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 539,
+      "product": "Glow - Adult Mackerel & Lamb Dry Dog Food",
+      "candidateSourcePage": "https://www.petstock.com.au/products/glow-adult-australian-mackerel-dry-dog-food",
+      "candidateImageUrl": "https://cdn.shopify.com/s/files/1/0376/6478/4520/files/100000150138-glow-adult-australian-mackerel-dry-dog-food-4.jpg",
+      "outcome": "held",
+      "reason": "Mackerel-only product does not establish the combined Mackerel & Lamb recipe.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 564,
+      "product": "Hill's Prescription Diet - Metabolic Weight Management",
+      "candidateSourcePage": "https://www.petpost.com.au/products/hills-prescription-diet-metabolic-weight-management-dry-dog-food",
+      "candidateImageUrl": "https://www.petpost.com.au/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0093%2F8059%2F3743%2Ffiles%2F100000011617-hills-prescription-diet-metabolic-weight-management-dry-dog-food-7.jpg%3Fv%3D1778714997&w=640&q=75",
+      "outcome": "photo_added",
+      "localPath": "assets/product-images/review69-20261015-564.jpg",
+      "sourcePage": "https://www.petpost.com.au/products/hills-prescription-diet-metabolic-weight-management-dry-dog-food",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0093/8059/3743/files/100000011617-hills-prescription-diet-metabolic-weight-management-dry-dog-food-1.jpg?v=1778714867",
+      "shownPack": "Metabolic dry dog food bag; pictured weight not legible",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Recovered a front-pack photograph from the Australian retailer product record. Metabolic Weight Loss & Maintenance dry dog food matches the named range; 3.5kg pack identity is not established. Photo review does not verify barcodes, nutrition, ingredients or suitability."
+    },
+    {
+      "appId": 206,
+      "product": "Hill's Science Diet - Adult Oral Care",
+      "candidateSourcePage": "https://www.amazon.sg/Hills-Science-Diet-Feline-1-58kg/dp/B0006345PW",
+      "candidateImageUrl": "https://m.media-amazon.com/images/I/816RpruAwlL._AC_UF894,1000_QL80_.jpg",
+      "outcome": "photo_added",
+      "localPath": "assets/product-images/review69-20261015-206.png",
+      "sourcePage": "https://www.peekapaw.com.au/products/hills-science-diet-dry-cat-food-adult-oral-care",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0563/6676/0120/files/15597577240606.png?v=1785935578",
+      "shownPack": "Adult Oral Care chicken & brown rice cat bag; pictured weight not legible, newer packaging",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Recovered front from Australian retailer Adult Oral Care cat-food product record. Named range matches; retailer flags a new formula, so the photo does not verify the listed 1.58kg pack or its formulation. Photo review does not verify barcodes, nutrition, ingredients or suitability."
+    },
+    {
+      "appId": 592,
+      "product": "Hill's Science Diet - Kitten Chicken Entr\u00e9e",
+      "candidateSourcePage": "https://www.habitatpets.com.au/products/hills-kitten-tender-chick-156g",
+      "candidateImageUrl": "https://www.habitatpets.com.au/cdn/shop/files/Hills-Science-Diet-Kitten-Tender-Dinners-Chicken-Canned-Cat-Food-156g_1400x.jpg",
+      "outcome": "held",
+      "reason": "Tender Chicken Dinner wet food does not resolve the Chicken Entree name and dry classification.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 306,
+      "product": "Kit Cat - Tuna Wet",
+      "candidateSourcePage": "https://petlandpetstore.com/shop/cat/kit-cat-tuna-classic-80g-box-of-24/",
+      "candidateImageUrl": "https://petlandpetstore.com/wp-content/uploads/2024/02/Kit-Cat-Tuna-Classic.jpg",
+      "outcome": "held",
+      "reason": "Tuna Classic in Aspic topper is a specific line; generic Tuna Wet identity is insufficient to confirm this overseas variant.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 653,
+      "product": "Leaps & Bounds - Adult Casserole Can",
+      "candidateSourcePage": "https://www.petbarn.com.au/p/leaps-bounds-casserole-variety-pack-dog-can-85g-12pk",
+      "candidateImageUrl": "https://www.petbarn.com.au/media/catalog/product/1/4/145137_Leaps-_-Bounds-Casserole-Variety-Pack-Dog-85g-12PK-image-1.jpg",
+      "outcome": "held",
+      "reason": "Four-flavour casserole variety pack cannot identify an unspecified single recipe; dry classification also conflicts.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 629,
+      "product": "Leaps & Bounds - Adult Casserole with Vegetables Can",
+      "candidateSourcePage": "https://www.petbarn.com.au/p/bundle-610",
+      "candidateImageUrl": "https://www.petbarn.com.au/media/catalog/product/2/8/28161_pbaac0033_lb_beef_casserole_adult_700g_vis_7x7_1_1_2.jpg",
+      "outcome": "held",
+      "reason": "Beef casserole does not establish the named vegetable recipe or resolve the dry classification.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 664,
+      "product": "Leaps & Bounds - Chicken Mousse Cat Food",
+      "candidateSourcePage": "https://www.petbarn.com.au/p/leaps-bounds-chicken-mousse-top-w-chicken-cat-can-85g-x-12",
+      "candidateImageUrl": "https://www.petbarn.com.au/media/catalog/product/1/4/142549_142541_chicken_mousse.jpg",
+      "outcome": "photo_added",
+      "localPath": "assets/product-images/review69-20261015-664.jpg",
+      "sourcePage": "https://www.petbarn.com.au/p/leaps-bounds-chicken-mousse-top-w-chicken-cat-can-85g-x-12",
+      "imageUrl": "https://www.petbarn.com.au/media/catalog/product/1/4/142549_142541_chicken_mousse.jpg",
+      "shownPack": "85g chicken mousse topped with shreds can; multipack not confirmed",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Front and Australian retailer identify Leaps & Bounds Chicken Mousse cat food. Corrected the contradictory dry classification to wet; no barcode, ingredients, pack size or score was inferred. Photo review does not verify barcodes, nutrition, ingredients or suitability."
+    },
+    {
+      "appId": 147,
+      "product": "My Dog - Slow Cooked Lamb",
+      "candidateSourcePage": "https://www.coles.com.au/product/my-dog-classic-loaf-with-juicy-lamb-tray-adult-wet-dog-food-100g-6112801",
+      "candidateImageUrl": "https://shop.coles.com.au/wcsstore/Coles-CAS/images/6/1/1/6112801-zm.jpg",
+      "outcome": "held",
+      "reason": "Classic Loaf Juicy Lamb does not establish Slow Cooked Lamb.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 400,
+      "product": "Nature's Gift - Casserole Chicken & Rice",
+      "candidateSourcePage": "https://www.coles.com.au/product/nature's-gift-adult-all-breeds-wet-dog-food-loaf-chicken-rice-and-vegetables-1.2kg-3589976",
+      "candidateImageUrl": "https://shop.coles.com.au/wcsstore/Coles-CAS/images/3/5/8/3589976_L-zm.jpg",
+      "outcome": "held",
+      "reason": "Chicken, Vegetables & Rice loaf is not confirmed as the named casserole; photo shows the back of the can.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 739,
+      "product": "Nature's Gift - Casserole Chicken & Rice",
+      "candidateSourcePage": "https://rpfco.com/collections/natures-gift-core",
+      "candidateImageUrl": "https://rpfco.com/cdn/shop/files/NG-can-700g-chicken-casserole_600x600.png",
+      "outcome": "held",
+      "reason": "Chicken & Vegetables casserole does not establish the Chicken & Rice recipe; dry classification also conflicts.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 743,
+      "product": "Nature's Gift - Fresh Dog Roll Lamb & Vegetables",
+      "candidateSourcePage": "https://www.woolworths.com.au/shop/productdetails/513371/nature-s-gift-lamb-carrots-peas-roll-chilled-roll-puppy-food",
+      "candidateImageUrl": "https://cdn0.woolworths.media/content/wowproductimages/large/513371.jpg",
+      "outcome": "held",
+      "reason": "Puppy Lamb, Carrot & Pea roll does not establish the listed life stage/recipe.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 745,
+      "product": "Nature's Gift - Grain Free Chicken & Duck",
+      "candidateSourcePage": "https://www.paknsave.co.nz/shop/product/5348166_ea_000pns?name=nature%27s-gift-grain-free-chicken-with-duck-adult-dry-dog-food",
+      "candidateImageUrl": "https://a.fsimg.co.nz/product/retail/fan/image/master/5348195.png",
+      "outcome": "photo_added",
+      "localPath": "assets/product-images/review69-20261015-745.jpg",
+      "sourcePage": "https://realpetfoodco.co.nz/products/natures-gift-chicken-with-duck-adult-all-breeds-2-5kg",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0572/1410/7782/files/15707170078750.jpg?v=1784597875",
+      "shownPack": "2.5kg grain-free adult chicken with duck dry dog food; New Zealand manufacturer page",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Replaced the incorrect wet variety-pack candidate with the manufacturer front for Grain Free Chicken with Duck adult dry dog food. New Zealand page and pictured size disclosed; no Australian barcode or formulation inference. Photo review does not verify barcodes, nutrition, ingredients or suitability."
+    },
+    {
+      "appId": 185,
+      "product": "Optimum - Adult All Breed Chicken Dry",
+      "candidateSourcePage": "https://optimumpet.com.au/product/optimumtm-adult-all-breed-chicken-vegetables-rice",
+      "candidateImageUrl": "https://optimumpet.com.au/medialib/2026-07/9334214019475_A1N1_EN%20%282%29%20%281%29.png",
+      "outcome": "held",
+      "reason": "Dry bag does not resolve the catalogue conflict between a dry chicken name and 700g roll type.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 765,
+      "product": "Pedigree - Adult Lamb & Gravy Casserole",
+      "candidateSourcePage": "https://www.doordash.com/products/pedigree-lamb-vegies-gravy-casserole-adult-wet-dog-food-can-700-g/urpc_1f17006c-f460-4627-b2be-181da1348e74",
+      "candidateImageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/7ea9c1f2-88ce-477e-8f6b-3a0fecb59aa8-retina-large.png",
+      "outcome": "photo_added",
+      "localPath": "assets/product-images/review69-20261015-765.jpg",
+      "sourcePage": "https://www.doordash.com/products/pedigree-lamb-vegies-gravy-casserole-adult-wet-dog-food-can-700-g/urpc_1f17006c-f460-4627-b2be-181da1348e74",
+      "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/7ea9c1f2-88ce-477e-8f6b-3a0fecb59aa8-retina-large.png",
+      "shownPack": "700g adult lamb, vegies & gravy casserole can; older packaging",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Front visibly identifies Pedigree Adult with Lamb, Vegies & Gravy Casserole. Catalogue has no pack size. Current packaging/availability is not established by the marketplace photograph. Photo review does not verify barcodes, nutrition, ingredients or suitability."
+    },
+    {
+      "appId": 1154,
+      "product": "Purina Pro Plan - Adult Beef in Gravy",
+      "candidateSourcePage": "https://www.chewy.com/purina-pro-plan-adult-beef-vegetables/dp/52473",
+      "candidateImageUrl": "https://image.chewy.com/catalog/general/images/moe/067630ad-3b3a-7df4-8000-de7795942e25._AC_SS300_V1_.jpg",
+      "outcome": "held",
+      "reason": "Photo is Large Breed Beef & Rice, while the page says Beef & Vegetables. Exact Beef in Gravy variant/species remains unresolved.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 1155,
+      "product": "Purina Pro Plan - Adult Dental Care Chicken",
+      "candidateSourcePage": "https://shop.vivapets.com/au/purina-pro-plan-dental-care-medium-dog-15-sticks",
+      "candidateImageUrl": "https://static-shop.vivapets.com/media/catalog/product/cache/e631e95e63d98a59aaf424538ef00557/0/7/07613287106421_c1n1_44379699.jpg",
+      "outcome": "held",
+      "reason": "Photo is Mini 21 dental sticks while linked page says Medium 15; named Chicken variant not established.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 844,
+      "product": "Purina Pro Plan - Adult Salmon & Rice",
+      "candidateSourcePage": "https://www.farmcraft.com.au/eshop/pro-plan-canine-adult-sensitive-skin-and-stomach-with-optirestore-2.5kg.html",
+      "candidateImageUrl": "https://www.farmcraft.com.au/eshop/images/D/new-PP147_3D_OptiRestore_AllSize_Adult_2.jpg",
+      "outcome": "held",
+      "reason": "Sensitive Skin & Stomach Optirestore all-size product is not established as the generic Adult Salmon & Rice listing.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 78,
+      "product": "Purina Pro Plan - Sensitive Skin & Stomach",
+      "candidateSourcePage": "https://www.petbarn.com.au/p/pro-plan-sensitive-skin-stomach-sm-brd-adult-dog-food-2-5kg",
+      "candidateImageUrl": "https://www.petbarn.com.au/media/catalog/product/1/4/145433_PPL-DF-ADT-SB-SEN-SKN_ST-7kg-1.jpg",
+      "outcome": "held",
+      "reason": "Small & Toy breed formula does not establish this unspecified-breed variant.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 295,
+      "product": "Purina Pro Plan - Urinary Care Chicken",
+      "candidateSourcePage": "https://www.purina-arabia.com/en/food/cat/purina-pro-plan-adult-urinary-care-chicken-gravy-wet-cat-food",
+      "candidateImageUrl": "https://www.purina-arabia.com/sites/default/files/styles/product_zoom/public/2026-02/01_12.jpg.webp",
+      "outcome": "photo_added",
+      "localPath": "assets/product-images/review69-20261015-295.webp",
+      "sourcePage": "https://www.purina-arabia.com/en/food/cat/purina-pro-plan-adult-urinary-care-chicken-gravy-wet-cat-food",
+      "imageUrl": "https://www.purina-arabia.com/sites/default/files/styles/product_zoom/public/2026-02/01_12.jpg.webp",
+      "shownPack": "12 x 85g urinary-care chicken-in-gravy cat pouches; overseas manufacturer photo",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer photograph shows the named Pro Plan Urinary Care chicken-in-gravy wet cat recipe. Overseas packaging is disclosed; it does not verify the existing Australian barcode or formula. Photo review does not verify barcodes, nutrition, ingredients or suitability."
+    },
+    {
+      "appId": 875,
+      "product": "Royal Canin Veterinary - Derma Comfort",
+      "candidateSourcePage": "https://www.royalcanin.com/au/dogs/products/retail-products/medium-dermacomfort-2442",
+      "candidateImageUrl": "https://marspetcareaprimocdn.petcare.global/02cbeafc-e022-4063-8236-b42400f31016/02cbeafc-e022-4063-8236-b42400f31016_DownloadAsJpg.jpg",
+      "outcome": "held",
+      "reason": "Retail Medium Dermacomfort is not the named Veterinary line.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 1171,
+      "product": "Schmackos - Stix Chicken",
+      "candidateSourcePage": "https://www.coles.com.au/product/schmackos-strapz-dog-treats-with-chicken-500g-9058270",
+      "candidateImageUrl": "https://shop.coles.com.au/wcsstore/Coles-CAS/images/9/0/5/9058270-zm.jpg",
+      "outcome": "held",
+      "reason": "Chicken Strapz are not Chicken Stix.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 31,
+      "product": "Scratch - Kangaroo & Lamb Adult",
+      "candidateSourcePage": "https://www.scratchpetfood.com.au/dog-kibble/single-protein-kangaroo/",
+      "candidateImageUrl": "https://www.scratchpetfood.com.au/wp-content/themes/scratch-raw/media/bag-kangaroo.webp",
+      "outcome": "held",
+      "reason": "Sensitive Kangaroo single-protein food is not the named Kangaroo & Lamb recipe.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 462,
+      "product": "Sheba - Cuisine Tuna in Gravy Pouch",
+      "candidateSourcePage": "https://www.sheba.com.my/en-my/products/sheba-wet-cat-food-range/sheba-tuna-white-meat-gravy",
+      "candidateImageUrl": "https://www.sheba.com.my/sites/g/files/fnmzdf8476/files/2026-04/Sheba-Label2k4-85g-SEA-3D-TunaGravy-Front-1.png",
+      "outcome": "held",
+      "reason": "Overseas tuna can does not establish the named Cuisine 85g pouch.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 474,
+      "product": "Smitten (Woolworths) - Adult Dry Cat Food Tuna & Salmon",
+      "candidateSourcePage": "https://www.woolworths.com.au/shop/productdetails/481087/smitten-cat-food-chicken-salmon-tuna",
+      "candidateImageUrl": "https://cdn0.woolworths.media/content/wowproductimages/large/481087.jpg",
+      "outcome": "held",
+      "reason": "Chicken & Salmon with tuna flavour is not the named Tuna & Salmon recipe.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 475,
+      "product": "Smitten (Woolworths) - Adult Dry Dog Food with Chicken",
+      "candidateSourcePage": "https://www.woolworths.com.au/shop/productdetails/481087/smitten-cat-food-chicken-salmon-tuna",
+      "candidateImageUrl": "https://cdn0.woolworths.media/content/wowproductimages/large/481087.jpg",
+      "outcome": "held",
+      "reason": "Listing says dog food but species is cat; candidate is cat food with a different named recipe.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 476,
+      "product": "Smitten (Woolworths) - Wet Cat Food Ocean Fish Pouch",
+      "candidateSourcePage": "https://www.woolworths.com.au/shop/productdetails/6017437/smitten-fish-selection-wet-cat-food-pouches",
+      "candidateImageUrl": "https://cdn0.woolworths.media/content/wowproductimages/large/6017437.jpg",
+      "outcome": "held",
+      "reason": "Fish Selection assortment is not a photo of the Ocean Fish pouch itself.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 443,
+      "product": "Snappy Tom - Gourmet Seafood",
+      "candidateSourcePage": "https://www.snappytom.com.au/cat-food",
+      "candidateImageUrl": "https://www.snappytom.com.au/content/uploads/2026/04/Seafood-Platter.png",
+      "outcome": "held",
+      "reason": "Seafood Platter has not been confirmed as the named Gourmet Seafood recipe.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 445,
+      "product": "Snappy Tom - Mackerel",
+      "candidateSourcePage": "https://www.snappytom.com.au/cat-food",
+      "candidateImageUrl": "https://www.snappytom.com.au/content/uploads/2026/04/Fishermans-Basket.png",
+      "outcome": "held",
+      "reason": "Fishermans Basket is not the named Mackerel recipe.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 441,
+      "product": "Snappy Tom - Ocean Fish",
+      "candidateSourcePage": "https://www.snappytom.com.au/cat-food",
+      "candidateImageUrl": "https://www.snappytom.com.au/content/uploads/2023/12/Whole-Fish.png",
+      "outcome": "held",
+      "reason": "Whole Fish has not been confirmed as the named Ocean Fish recipe.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 442,
+      "product": "Snappy Tom - Tuna with Whitebait",
+      "candidateSourcePage": "https://www.snappytom.com.au/cat-food",
+      "candidateImageUrl": "https://www.snappytom.com.au/content/uploads/2023/12/Whole-Fish.png",
+      "outcome": "held",
+      "reason": "Whole Fish is not Tuna & Whitebait.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 447,
+      "product": "Snappy Tom - Whole Tuna",
+      "candidateSourcePage": "https://www.snappytom.com.au/cat-food",
+      "candidateImageUrl": "https://www.snappytom.com.au/content/uploads/2023/12/Whole-Fish.png",
+      "outcome": "held",
+      "reason": "Whole Fish/sardine product is not Whole Tuna.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 926,
+      "product": "Vets All Natural - Skin & Coat Formula",
+      "candidateSourcePage": "https://buynatural.com.au/products/vets-all-natural-complete-mix-dry-dog-food-puppy",
+      "candidateImageUrl": "https://buynatural.com.au/cdn/shop/files/Vets_All_Natural_Complete_Mix_Dry_Dog_Food_Sensitive_Skin_1kg_512x512.png",
+      "outcome": "held",
+      "reason": "Complete Mix Sensitive Skin does not establish Skin & Coat Formula; page and pictured life stages also disagree.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 933,
+      "product": "VitaPet - Natural Chicken & Fish Bites",
+      "candidateSourcePage": "https://www.thegrocerygeek.com.au/portfolio-item/vitapet-natural-bites-range/",
+      "candidateImageUrl": "https://www.thegrocerygeek.com.au/wp-content/uploads/2019/10/vitapet-natural-bites-chicken-fish.jpg",
+      "outcome": "photo_added",
+      "localPath": "assets/product-images/review69-20261015-933.jpg",
+      "sourcePage": "https://www.thegrocerygeek.com.au/portfolio-item/vitapet-natural-bites-range/",
+      "imageUrl": "https://www.thegrocerygeek.com.au/wp-content/uploads/2019/10/vitapet-natural-bites-chicken-fish.jpg",
+      "shownPack": "85g natural chicken & fish bites for cats and kittens; older packaging",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Front identifies VitaPet Natural Chicken & Fish Bites for cats and kittens; Australian historical product page agrees. Current packaging/availability is unconfirmed. Photo review does not verify barcodes, nutrition, ingredients or suitability."
+    },
+    {
+      "appId": 934,
+      "product": "VitaPet - Natural Chicken Bites",
+      "candidateSourcePage": "https://www.blackboxreviews.co.nz/p/vitapet-natural-chicken-bites-85gm-coupon/",
+      "candidateImageUrl": "https://www.blackboxreviews.co.nz/wp-content/uploads/2020/03/Vitapet-Natural-Chicken-Bites.png",
+      "outcome": "photo_added",
+      "localPath": "assets/product-images/review69-20261015-934.png",
+      "sourcePage": "https://www.blackboxreviews.co.nz/p/vitapet-natural-chicken-bites-85gm-coupon/",
+      "imageUrl": "https://www.blackboxreviews.co.nz/wp-content/uploads/2020/03/Vitapet-Natural-Chicken-Bites.png",
+      "shownPack": "85g natural chicken bites for cats and kittens; older New Zealand photo",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Front identifies VitaPet Natural Chicken Bites for cats and kittens. New Zealand source photograph; Australian pack and current availability remain unverified. Photo review does not verify barcodes, nutrition, ingredients or suitability."
+    },
+    {
+      "appId": 955,
+      "product": "Whimzees - Hedgehog Medium",
+      "candidateSourcePage": "https://www.whimzees.com.au/products/hedgehog/",
+      "candidateImageUrl": "https://marvel-b1-cdn.bc0a.com/f00000000236215/www.whimzees.com.au/wp-content/uploads/2020/09/WHZ315_Front-Image-AU.jpg",
+      "outcome": "held",
+      "reason": "Large six-pack hedgehogs are not Medium hedgehogs. Chew size cannot be treated as a cosmetic pack difference.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 190,
+      "product": "Whiskas - Kitten Mixed Favourites in Jelly",
+      "candidateSourcePage": "https://www.whiskas.com.au/our-products/wet/whiskas-7-years-adult-wet-cat-food-mixed-favourites-jelly-12x85g-pouch",
+      "candidateImageUrl": "https://www.whiskas.com.au/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf8856/files/2026-04/bhfs8mj0qgkj708nuryk-Photoroom%20%281%29.png",
+      "outcome": "held",
+      "reason": "Adult 7+ wet multipack is not Kitten Mixed Favourites; catalogue dry 800g type also conflicts.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 193,
+      "product": "Whiskas - Senior Cat Chicken & Fish",
+      "candidateSourcePage": "https://www.woolworths.com.au/shop/productdetails/757674/whiskas-7-plus-dry-cat-food-tuna-sardine",
+      "candidateImageUrl": "https://assets.woolworths.com.au/images/1005/141055.jpg",
+      "outcome": "held",
+      "reason": "Source is Tuna & Sardine rather than Senior Chicken & Fish; original image could not be retrieved.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 972,
+      "product": "Woofin' Good (Coles) - Adult Dry Dog Food Lamb",
+      "candidateSourcePage": "https://www.coles.com.au/product/woofin-good-dog-food-chnks-in-grv-lmb-pst-and-vg-720g-6417660",
+      "candidateImageUrl": "https://shop.coles.com.au/wcsstore/Coles-CAS/images/6/4/1/6417660-zm.jpg",
+      "outcome": "held",
+      "reason": "Wet Lamb, Pasta & Vegetables can is not the listed dry lamb food.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 377,
+      "product": "Ziwi Peak - Good Cat Venison Treat",
+      "candidateSourcePage": "https://www.chewy.com/ziwi-peak-good-cat-venison-fish-jerky/product-reviews/30275",
+      "candidateImageUrl": "https://image.chewy.com/is/catalog/49388._V1460478784_.jpg",
+      "outcome": "held",
+      "reason": "Venison & Fish jerky is not confirmed as the named venison-only Good Cat treat.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    },
+    {
+      "appId": 324,
+      "product": "Ziwi Peak - Venison Wet Dog Food Can",
+      "candidateSourcePage": "https://www.vetnpetdirect.com.au/products/ziwi-peak-daily-dog-pouch-beef",
+      "candidateImageUrl": "https://www.vetnpetdirect.com.au/cdn/shop/products/ZP-AD-dog-beef-back.jpg",
+      "outcome": "held",
+      "reason": "Photo is the back of a Beef air-dried pouch, not Venison wet dog food; listing is also classified as a treat.",
+      "nextAction": "Confirm the exact product and obtain a readable matching front-pack photo; do not rename the record to fit this candidate."
+    }
+  ]
+}
