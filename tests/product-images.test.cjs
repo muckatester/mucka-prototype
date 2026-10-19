@@ -49,7 +49,10 @@ test('all original image assignments have a complete visual review and unchanged
   const records = JSON.parse(fs.readFileSync(path.join(root, 'data/legacy-image-review-v1.json'))).records;
   for (const record of records) {
     const p = c.products.find(p => p.id === record.appId);
-    assert.ok(p);
+    if (!p) {
+      assert.ok(c.archivedProducts.some(p => p.id === record.appId), "Retired assignment is preserved in the duplicate archive");
+      continue;
+    }
     c.showProduct(p.id);
     const available = ['visual_match', 'recipe_match_pack_unverified'].includes(record.status) &&
       Object.entries(record.identitySnapshot).every(([key,value]) => (p[key] || null) === (value || null));

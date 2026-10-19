@@ -5730,6 +5730,29 @@
       ]
     },
     {
+      "sourcePath": "Dog Kibble/Optimum - Adult All Breed Chicken Veg & Rice.webp",
+      "sourceSha256": "5c7534a0392103f42dc09f8f52a9befc7b1615d0f4617cb211757cd0d6b02bb9",
+      "sourceBytes": 157788,
+      "variants": [
+        {
+          "path": "assets/product-images/display/5c7534a0392103f42dc09f8f-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "c003dfaf2e7be1523f6ba2faf5854becae86e886e686b0b25a206de83c8c6824",
+          "bytes": 6820,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/5c7534a0392103f42dc09f8f-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "d9916c4590f38cca940f0c9adb1ace79863093a2a1ca74357932d034844f9574",
+          "bytes": 29122,
+          "bound": 480
+        }
+      ]
+    },
+    {
       "sourcePath": "Dog Kibble/Optimum - Adult Large Breed Chicken.webp",
       "sourceSha256": "8d3b9df3c8e925ba4ad8fe215e494434798bc240df23ae79dc8007c0aa50d5ed",
       "sourceBytes": 74082,
@@ -20790,6 +20813,144 @@
           "height": 480,
           "sha256": "eb8e65e52da136eea44ec106d3796c447143942cab8c3ebab4278e6f1aede138",
           "bytes": 27926,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/resolved-20261020-141.png",
+      "sourceSha256": "a7a7cfc75956067300d319611a2b7cfcb397833d227d024db02510e06bd2af01",
+      "sourceBytes": 381344,
+      "variants": [
+        {
+          "path": "assets/product-images/display/a7a7cfc75956067300d31961-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "6fd6815faa358ee9e3575250b5faa825848bc35b330ba6c5941a17ceb1359c39",
+          "bytes": 8766,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/a7a7cfc75956067300d31961-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "cfca3a92f4ee654c656b1640a1410b64e543e7a94db8e9b29b882d90fb15037b",
+          "bytes": 45818,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/resolved-20261020-145.png",
+      "sourceSha256": "17dabe19971ed26d5f2f70a9d97931de25830c29b2f8055891359c1e1ed7f9f2",
+      "sourceBytes": 3700396,
+      "variants": [
+        {
+          "path": "assets/product-images/display/17dabe19971ed26d5f2f70a9-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "29889c84b133c96a5ff6a5da9666e8253d3b2ca87bd49f6c7c97244ee15c123b",
+          "bytes": 5398,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/17dabe19971ed26d5f2f70a9-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "0cecce6233d00718b50b9b83cdbf9d715d356473ad207a2b4fb1d99459a8e866",
+          "bytes": 24654,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/resolved-20261020-190.png",
+      "sourceSha256": "80132e31a276b5e7292f5ea51741c80cc43e51eb268509f00035c4ca9e042a8e",
+      "sourceBytes": 550275,
+      "variants": [
+        {
+          "path": "assets/product-images/display/80132e31a276b5e7292f5ea5-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "a06bcad59540fb63c45689a7a080a4d99aebfe3112a854c28bb6f4cef4d2dbfe",
+          "bytes": 9740,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/80132e31a276b5e7292f5ea5-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "75277f3ed120e2cc03072cda0ca443e922184354a0bec36b78dba43091e94e41",
+          "bytes": 46642,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/resolved-20261020-324.png",
+      "sourceSha256": "07ae3efc5439864d5cd6e975d7859e8ed81c594d5467ca8693d813d6b0550b99",
+      "sourceBytes": 3087349,
+      "variants": [
+        {
+          "path": "assets/product-images/display/07ae3efc5439864d5cd6e975-160.webp",
+          "width": 115,
+          "height": 160,
+          "sha256": "dcb078c60865fdefce6bdf0ad74717daac6446f5a72d434f41f99d8160841686",
+          "bytes": 2486,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/07ae3efc5439864d5cd6e975-480.webp",
+          "width": 345,
+          "height": 480,
+          "sha256": "927336c7114bcc3fca20519f487f1e66fa42e6b4b175285e0272ef0a94c4c8f9",
+          "bytes": 13836,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/resolved-20261020-379.png",
+      "sourceSha256": "a598492bf606198fe106e228406b20927949d5131fc4273a749afa8ae81d3b9c",
+      "sourceBytes": 470752,
+      "variants": [
+        {
+          "path": "assets/product-images/display/a598492bf606198fe106e228-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "a9c0f034c27f4742d734fe89cb87b354c93dff63da6b7fdb81028a5fd5bd3542",
+          "bytes": 4866,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/a598492bf606198fe106e228-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "ade106578b93d8ef75a23a749d23efb4485432fcf803aed99112b5036ae5e168",
+          "bytes": 24098,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/resolved-20261020-926.jpeg",
+      "sourceSha256": "f94be6ad175e838e2537462f8a41c9a4955994f761ab54d815333c510a60939d",
+      "sourceBytes": 294608,
+      "variants": [
+        {
+          "path": "assets/product-images/display/f94be6ad175e838e2537462f-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "8f0e9cfcdddb9997162026294ac174f930e08302e0c90439ab535eb029f76613",
+          "bytes": 3566,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/f94be6ad175e838e2537462f-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "98e64ee1ce2e6f2f4c4090371cbc9045967550c663a5c1e5c1d029d74d9144ff",
+          "bytes": 22498,
           "bound": 480
         }
       ]

@@ -4488,16 +4488,16 @@
         "brand": "Optimum",
         "name": "Adult All Breed Chicken Dry",
         "petType": "dog",
-        "foodType": "roll",
-        "type": "Roll · 700g",
+        "foodType": "dry",
+        "type": "Dry · pack size unverified",
         "barcode": "100000060282"
       },
-      "status": "confirmed_mismatch",
-      "shownPack": "7kg",
+      "status": "recipe_match_pack_unverified",
+      "shownPack": "7kg adult chicken, vegetables and rice dry dog-food bag",
       "observedText": "Optimum Adult All Breeds with Chicken Vegetables & Rice dry dog bag,7kg",
-      "reason": "One assignment says Roll700g and another Dry3kg; photo is dry7kg.",
+      "reason": "Manufacturer confirms this named adult chicken recipe is dry dog food. Corrected contradictory roll classification; readable archived 7kg front now matches recipe and form. Exact catalogue pack, barcode and original photo source remain unverified. Original audit retained.",
       "imageSha256": "5c7534a0392103f42dc09f8f52a9befc7b1615d0f4617cb211757cd0d6b02bb9",
-      "checkedDate": "2026-09-14",
+      "checkedDate": "2026-10-20",
       "visualChecked": true,
       "manufacturerVerified": false,
       "imageIndex": 62,
@@ -4513,7 +4513,13 @@
         "barcode": "100000060282"
       },
       "originalReason": "One assignment says Roll700g and another Dry3kg; photo is dry7kg.",
-      "appliedCatalogueCorrectionCount": 0
+      "appliedCatalogueCorrectionCount": 0,
+      "reEvaluation": {
+        "kind": "manufacturer_supported_food_form_correction",
+        "checkedDate": "2026-10-20",
+        "source": "https://optimumpet.com.au/product/optimumtm-adult-all-breed-chicken-vegetables-rice",
+        "originalAuditRetained": true
+      }
     },
     {
       "appId": 187,

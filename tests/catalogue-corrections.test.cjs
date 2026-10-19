@@ -34,7 +34,7 @@ test('corrected raw cat foods and feline supplements remain available by categor
 
 test('October barcode fixes are explicit, identity-bound catalogue updates', () => {
   const {c} = setup();
-  assert.equal(c.products.length, 1082);
+  assert.equal(c.products.length, 1080);
   const advance = c.products.find(p => p.id === 1035);
   assert.equal(advance.type, 'Dry · 20kg');
   assert.equal(advance.barcode, '9334214150352');

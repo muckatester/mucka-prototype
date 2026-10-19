@@ -80,6 +80,12 @@ test('Raw catalogue preserves documented metadata corrections and October barcod
     for (const [field, value] of Object.entries(change.before)) assert.deepEqual(product[field] ?? null, value);
     Object.assign(product, change.after);
   }
+  const resolution = JSON.parse(fs.readFileSync(path.join(root, 'data/catalogue-resolution-2026-10-20.json'), 'utf8'));
+  for (const change of resolution.catalogueCorrections) {
+    const product = expected.find(p => p.id === change.appId);
+    for (const [field, value] of Object.entries(change.before)) assert.deepEqual(product[field] ?? null, value);
+    Object.assign(product, change.after);
+  }
   const actual = JSON.parse(JSON.stringify(vm.runInNewContext(productsLiteral(html))));
   assert.equal(actual.length, 1082);
   assert.deepEqual(actual, expected);
@@ -88,7 +94,7 @@ test('Raw catalogue preserves documented metadata corrections and October barcod
 test('Legacy numeric scores are visible only as unvalidated detail-page history, not as active ratings', () => {
   const {c, element} = setup();
   const raw = JSON.parse(JSON.stringify(vm.runInNewContext(productsLiteral(html))));
-  assert.equal(c.products.filter(p => p.ingredients?.length).length, 444);
+  assert.equal(c.products.concat(c.archivedProducts).filter(p => p.ingredients?.length).length, 444);
   for (const p of c.products) {
     assert.equal(p.score, null, 'Active score withheld for ' + p.id);
     assert.equal(p._legacyPrototypeScore, raw.find(x => x.id === p.id).score, 'Legacy score retained for review only: ' + p.id);
@@ -164,8 +170,8 @@ test('Search, browse and favourites retain product access and neutral badges', (
     assert.ok(element('soResults').innerHTML.includes('showProduct(' + id + ')'));
   }
   c.renderCategoryGrid();
-  assert.equal(element('soInput').placeholder, 'Search 1082 products...');
-  assert.equal(element('searchInput').placeholder, 'Search 1082 products...');
+  assert.equal(element('soInput').placeholder, 'Search 1080 products...');
+  assert.equal(element('searchInput').placeholder, 'Search 1080 products...');
 });
 
 test('Injected scores, ingredient ratings and manufacturer flags cannot reactivate public judgements', () => {
@@ -200,7 +206,7 @@ test('User entry preserves ingredient text without assigning heuristic scores or
   element('addIngredients').value = raw;
   c.scoreNewProduct();
   const p = c.products[c.products.length - 1];
-  assert.equal(c.products.length, 1083);
+  assert.equal(c.products.length, 1081);
   assert.equal(p._userIngredientText, raw);
   assert.equal(p.ingredients.length, 0);
   assert.equal(p.score, null); assert.equal(p._ingredientScore, null); assert.equal(p._credScore, null);

@@ -40,12 +40,13 @@ function setup(options = {}) {
   });
   vm.runInContext('var products = ' + productsLiteral(html) + ';' +
     html.match(/var barcodeEvidence = .*;\n/)[0] + html.match(/var starterCatalogue = [\s\S]*?;\n/)[0] + html.match(/var sourcedProductImages = .*;\n/)[0] + html.match(/var responsiveProductImages = .*;\n/)[0] + html.match(/var legacyImageReviews = .*;\n/)[0] + html.match(/var homeCategories = \[[\s\S]*?\n];/)[0] + html.match(/var perPage = \d+;/)[0], c);
-  for (const name of ['recalculateScore', 'hasScoreData', 'getLegacyScoreHtml', 'getScoreBadge', 'compareProductScores',
+  vm.runInContext(html.match(/var mergedProductIds = .*;\n/)[0] + 'var archivedProducts = [];', c);
+  for (const name of ['resolveCatalogueId', 'applyCatalogueMerges', 'recalculateScore', 'hasScoreData', 'getLegacyScoreHtml', 'getScoreBadge', 'compareProductScores',
     'normalizeGtin', 'getBarcodeEvidence', 'getBarcodeStatusText', 'getBarcodeStatusHtml', 'escapeHtml', 'getProductEvidence', 'getEvidenceLinks', 'getEvidenceFieldHtml', 'getProductFactsHtml', 'getEvidenceSummaryHtml', 'getIngredientListHtml', 'getFoodSVGIcon', 'adjustColor', 'getProductPlaceholder',
     'handleProductImageError', 'getSourcedProductImage', 'getLegacyImageReview', 'getLegacyProductImage', 'getProductImage', 'productHasImage', 'showProduct', 'renderPage', 'renderCategoryPage',
     'renderFavourites', 'runOverlaySearch', 'applyFilters', 'getRecommendations', 'renderCategoryGrid',
     'handleCategoryClick', 'gotoCategoryPage', 'scoreNewProduct', 'isSaveableFavourite', 'loadFavourites', 'saveFavourites', 'getFavouriteStorageMessage', 'updateFavouriteButton', 'handleFavouriteStorageChange', 'toggleFav', 'updateProfile']) vm.runInContext(fn(name), c);
-  vm.runInContext('products.forEach(recalculateScore); var filteredProducts = products.slice(); var currentCategoryProducts = products.slice();', c);
+  vm.runInContext('products.forEach(recalculateScore); applyCatalogueMerges(); var filteredProducts = products.slice(); var currentCategoryProducts = products.slice();', c);
   c.favourites = c.loadFavourites();
   return {c, element, elements, timers, alerts, storage, screen: () => activeScreen};
 }

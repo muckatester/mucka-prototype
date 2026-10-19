@@ -1,5 +1,7 @@
 # Product photo review — 15 October 2026
 
+**Superseded checkpoint, 20 October:** version 2026.10.20.2 displays 973 photos across 1,080 active products; **107 gaps remain**. A fresh search covered all 115 earlier gaps, adding/restoring seven recipe photos and merging one gap into its existing duplicate. A second photographed duplicate was merged. See [current gaps](image-gaps-2026-10-20.json) and [catalogue decisions](../data/catalogue-resolution-2026-10-20.json). The 15 October results below remain dated history.
+
 All 69 candidates from the returned workbook were checked against current catalogue identities. Ten photos were added; 59 candidates remain held. The other 56 gaps had no candidate in the workbook. **967 of 1,082 products now have photos; 115 remain missing.**
 
 One addition matches the stated pack. Nine match the named recipe/range with pictured size, market or packaging differences disclosed. These images do not verify nutrition, ingredients, barcode associations or permission to reuse an image. The Leaps & Bounds chicken mousse entry #664 was corrected from dry to wet food; no barcode or scoring changes were made.

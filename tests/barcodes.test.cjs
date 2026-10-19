@@ -40,7 +40,7 @@ test('Full unresolved-catalogue sweep enables only six sourced packs and removes
  const removed=corrections.updates.filter(x=>x.after.barcode===null);
  assert.equal(removed.length,13);
  for(const row of removed){
-  const p=c.products.find(x=>x.id===row.appId);
+  const p=c.products.concat(c.archivedProducts).find(x=>x.id===row.appId);
   assert.equal(p.barcode,null);assert.notEqual(c.findProductByBarcode(row.before.barcode)?.id,row.appId);
  }
  assert.equal(c.findProductByBarcode('5010394984584')?.id,333,'Pedigree medium may use a code removed from the wrong brand');

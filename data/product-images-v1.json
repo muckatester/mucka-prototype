@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedDate": "2026-10-15",
+  "checkedDate": "2026-10-20",
   "scope": "Sourced product photographs only. Image matching does not verify nutritional claims, suitability or all catalogue facts.",
   "records": [
     {
@@ -10312,6 +10312,138 @@
       "visualChecked": true,
       "checkedDate": "2026-10-15",
       "sha256": "60f3666221d3751f3cfdc1770bcfcb0ceb41bc5c41b44e2336acd571fc6508e9",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 141,
+      "identity": {
+        "brand": "Advance",
+        "name": "Adult Chicken Salmon & Rice Wet",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet \u00b7 100g tray",
+        "barcode": "9334214029788"
+      },
+      "localPath": "assets/product-images/resolved-20261020-141.png",
+      "sourcePage": "https://www.petzoo.com.au/advance-adult-dog-chicken-and-salmon-wet-700g",
+      "imageUrl": "https://www.petzoo.com.au/assets/full/9334214029733A.png?20230712134817",
+      "sourceKind": "retailer",
+      "shownPack": "700g adult Chicken & Salmon with Rice dog-food can; older packaging",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Front and Australian retailer agree on Advance adult chicken, salmon and rice wet dog food. The photographed 700g can differs from the unverified 100g tray description; it does not verify that pack. Photograph review does not verify barcode, nutrition, ingredients or image-use rights.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-20",
+      "sha256": "a7a7cfc75956067300d319611a2b7cfcb397833d227d024db02510e06bd2af01",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 145,
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Adult with Real Beef Dry",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry \u00b7 pack size unverified",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/resolved-20261020-145.png",
+      "sourcePage": "https://www.pedigree.com.au/our-products/dry/pedigree-adult-dry-dog-food-real-beef",
+      "imageUrl": "https://www.pedigree.com.au/sites/g/files/fnmzdf8421/files/2026-02/9310022161308_1_PEDIGREE_Adult_Dry_Dog_Food_with_Real_Beef_3kg.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "3kg Adult with Real Beef dry dog-food bag",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer page and front confirm the named adult beef dry dog food. Corrected contradictory wet food form; the catalogue pack remains unknown rather than adopting the pictured 3kg. Photograph review does not verify barcode, nutrition, ingredients or image-use rights.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-20",
+      "sha256": "17dabe19971ed26d5f2f70a9d97931de25830c29b2f8055891359c1e1ed7f9f2",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 190,
+      "identity": {
+        "brand": "Whiskas",
+        "name": "Kitten Mixed Favourites in Jelly",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet \u00b7 pack size unverified",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/resolved-20261020-190.png",
+      "sourcePage": "https://www.whiskas.com.au/our-products/wet/whiskas-2-12-months-kitten-wet-cat-food-mixed-favourites-jelly-12x85g-pouch",
+      "imageUrl": "https://www.whiskas.com.au/sites/g/files/fnmzdf8856/files/2026-04/Untitled%20design%20%2838%29.png",
+      "sourceKind": "manufacturer",
+      "shownPack": "12 x 85g Kitten Mixed Favourites in Jelly wet-food pouches",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer and front identify the same kitten jelly recipe. Corrected dry-food classification; exact pack remains unresolved, so no merge with the known multipack or barcode transfer. Photograph review does not verify barcode, nutrition, ingredients or image-use rights.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-20",
+      "sha256": "80132e31a276b5e7292f5ea51741c80cc43e51eb268509f00035c4ca9e042a8e",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 324,
+      "identity": {
+        "brand": "Ziwi Peak",
+        "name": "Venison Wet Dog Food Can",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet \u00b7 pack size unverified",
+        "barcode": "9421016594641"
+      },
+      "localPath": "assets/product-images/resolved-20261020-324.png",
+      "sourcePage": "https://ziwipets.com/en-au/collections/wet-canned-dog-food",
+      "imageUrl": "https://ziwipets.com/cdn/shop/files/Shopify_ZIWI-Peak-Originals-Dog-Venison-Can-170g-PFNZ-FOP.png?v=1768593874",
+      "sourceKind": "manufacturer",
+      "shownPack": "170g Venison Recipe canned dog food",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Manufacturer collection and front confirm venison canned dog food. Corrected treat classification; the pictured 170g is not adopted as the catalogue pack. Barcode remains unverified. Photograph review does not verify barcode, nutrition, ingredients or image-use rights.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-20",
+      "sha256": "07ae3efc5439864d5cd6e975d7859e8ed81c594d5467ca8693d813d6b0550b99",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 379,
+      "identity": {
+        "brand": "Feline Natural",
+        "name": "Freeze-Dried Chicken Topper",
+        "petType": "cat",
+        "foodType": "topper",
+        "type": "Topper \u00b7 100g",
+        "barcode": "100000041670"
+      },
+      "localPath": "assets/product-images/resolved-20261020-379.png",
+      "sourcePage": "https://petgrocer.ca/products/feline-natural-freeze-dried-cat-food-chicken-feast",
+      "imageUrl": "https://petgrocer.ca/cdn/shop/files/FelineNaturalFreezeDriedCatFoodChickenFeastavailableatPetGrocer1.png?v=1763566065",
+      "sourceKind": "retailer",
+      "shownPack": "320g Chicken Feast freeze-dried cat food; Canadian retailer image",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "New alternative image has readable, undistorted Chicken Feast front and Feed or Top wording. Manufacturer Australian page independently confirms chicken freeze-dried food can be fed or used as a topper. Pictured 320g differs from unverified 100g listing; overseas image and pack difference disclosed. Photograph review does not verify barcode, nutrition, ingredients or image-use rights.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-20",
+      "sha256": "a598492bf606198fe106e228406b20927949d5131fc4273a749afa8ae81d3b9c",
+      "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 926,
+      "identity": {
+        "brand": "Vets All Natural",
+        "name": "Skin & Coat Formula",
+        "petType": "both",
+        "foodType": "supplement",
+        "type": "Supplement \u00b7 pack size unverified",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/resolved-20261020-926.jpeg",
+      "sourcePage": "https://www.vetsupply.com.au/vet-s-all-natural-skin-coat-formula-pack.aspx",
+      "imageUrl": "https://www.vetsupply.com.au/images/ProductImagesNew/vets-all-natural-skin-and-coat-formula-1kg.jpg?width=600&height=600",
+      "sourceKind": "retailer",
+      "shownPack": "250g Skin & Coat Formula powder supplement jar",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Readable label explicitly says Skin & Coat Formula, Nutritional Supplement, For Dogs and Cats, Net 250g. Exact-name retailer description agrees; do not trust its image filename saying 1kg. The historical HealthChews photo remains withheld. Photograph review does not verify barcode, nutrition, ingredients or image-use rights.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-20",
+      "sha256": "f94be6ad175e838e2537462f8a41c9a4955994f761ab54d815333c510a60939d",
       "rightsStatus": "Public product image; no licence grant asserted."
     }
   ]

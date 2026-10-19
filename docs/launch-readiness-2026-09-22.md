@@ -1,6 +1,18 @@
 # Mucka launch review
 
-## Current checkpoint — 20 October 2026
+## Current catalogue checkpoint — 20 October 2026
+
+Testing version **2026.10.20.2** contains **1,080 active products, 973 displayed photos, 107 photo gaps, 474 supported barcode lookups and 606 unresolved barcode cases**. All 115 prior photo gaps received fresh searches. Seven now have reviewed recipe photographs; one missing-photo entry merged into its existing duplicate. A second merge removed an already photographed duplicate. These changes explain the net six additional displayed photos and two fewer active catalogue entries.
+
+Only two confirmed duplicates were merged: SavourLife IDs 189 → 188 and 1013 → 33. Old detail links and saved favourites resolve to the retained products. Original rows remain archived in source and the master workbook. The 34 remaining groups with similar names have pack, species or unresolved-code differences and remain separate. Six catalogue records were corrected, including removal of an Indoor Chicken barcode that belongs to Furball. No new barcode association was enabled.
+
+Seven recipe photographs (IDs 141, 145, 185, 190, 324, 379 and 926) have explicit pictured-pack qualifications. Six are newly sourced originals; one archived photo was restored after correcting food form. Photo matching does not establish the saleable pack, barcode, nutrition or image-use rights. [Current 107 gaps](image-gaps-2026-10-20.json), [dated decisions](../data/catalogue-resolution-2026-10-20.json) and [remaining duplicate review](../data/duplicate-review-2026-10-20.json) retain the evidence limits.
+
+Validation: **54 Node tests** pass, the responsive-image cache regression passes, and all seven photo views load without overflow at 320, 390 and 768 pixels. Existing verified image bytes are reused for identical originals. Both Home and My captures show this version. The earlier scanner/capture browser checks below remain relevant; the owner is testing the physical scanner.
+
+The master Word document and catalogue workbook have been rebuilt with current counts, photos, scanner eligibility, sources and duplicate markers. Older originals are archived. Remaining launch work: resolve the 107 photo/identity cases with better evidence, complete accessibility/device checks, expand sourced label facts, define the supported release catalogue and finish privacy/image-use review. Ratings still require a defensible method.
+
+## Earlier scanner checkpoint — 20 October 2026
 
 Testing version **2026.10.20.1** fixes the main scanner's camera-start cancellation race and adds manual barcode lookup with check-digit validation. Missing camera code, denied permission, absent cameras and busy cameras give recoverable messages. A close/reopen waits for the previous camera to settle; stale callbacks cannot open a product. Escape closes the overlay, keyboard focus stays inside it and returns to Scan, and leaving/hiding the page releases the camera. The same packet can be scanned again immediately. Manual and camera input share the existing exact-product evidence lookup; the unused historical barcode alias map has been removed. Main app and My captures display the same release number.
 

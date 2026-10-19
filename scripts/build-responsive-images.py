@@ -13,13 +13,19 @@ for r in legacy:
 dest=ROOT/'assets/product-images/display';dest.mkdir(exist_ok=True)
 manifest_path=ROOT/'data/product-image-display-v1.json'
 cached={r['sourcePath']:r for r in json.loads(manifest_path.read_text())['records']} if manifest_path.exists() else {}
+# Different product paths may contain identical originals. Reuse a verified display
+# binding by original hash rather than overwriting another path's shared files.
+def valid(r):
+ return r and all((ROOT/v['path']).exists() and sha(ROOT/v['path'])==v['sha256'] for v in r['variants'])
+cached_by_hash={r['sourceSha256']:r for r in cached.values() if valid(r)}
 records=[]
 for name,expected in sorted(paths.items()):
  source=ROOT/name;source_hash=sha(source)
  assert source_hash==expected,name+' source changed'
  previous=cached.get(name)
- if previous and previous['sourceSha256']==source_hash and all((ROOT/v['path']).exists() and sha(ROOT/v['path'])==v['sha256'] for v in previous['variants']):
-  records.append(previous)
+ if not valid(previous):previous=cached_by_hash.get(source_hash)
+ if previous and previous['sourceSha256']==source_hash and valid(previous):
+  records.append(dict(previous,sourcePath=name,sourceBytes=source.stat().st_size))
   continue
  with Image.open(source) as original:
   oriented=ImageOps.exif_transpose(original);variants=[]
@@ -31,7 +37,9 @@ for name,expected in sorted(paths.items()):
    image.save(temporary,'WEBP',quality=86,method=4)
    temporary.replace(target)
    variants.append(dict(path=str(target.relative_to(ROOT)),width=image.width,height=image.height,sha256=sha(target),bytes=target.stat().st_size,bound=bound))
-  records.append(dict(sourcePath=name,sourceSha256=source_hash,sourceBytes=source.stat().st_size,variants=variants))
+  record=dict(sourcePath=name,sourceSha256=source_hash,sourceBytes=source.stat().st_size,variants=variants)
+  records.append(record)
+  cached_by_hash[source_hash]=record
  assert sha(source)==source_hash
 manifest=dict(version=1,scope='Display derivatives only. Originals and product identity checks are retained.',records=records)
 manifest_path.write_text(json.dumps(manifest,indent=2)+'\n')

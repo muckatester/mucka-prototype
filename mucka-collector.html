@@ -6,14 +6,14 @@
 <meta name="theme-color" content="#202c94">
 <title>My captures · Mucka</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/collector/collector.css?v=2026.10.20.1">
+<link rel="stylesheet" href="assets/collector/collector.css?v=2026.10.20.2">
 <script defer src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
 <script defer src="assets/vendor/jszip-3.10.1.min.js"></script>
 </head>
 <body>
 <header class="app-header"><a href="index.html" class="brand" aria-label="Mucka home">MUCKA<span>Know what's really in the bowl</span></a><a href="index.html" class="home-link">Back to app <span aria-hidden="true">↗</span></a></header>
 <main>
-<div class="page-top"><span class="eyebrow">YOUR CONTRIBUTIONS</span><span class="version">Testing 2026.10.20.1</span></div>
+<div class="page-top"><span class="eyebrow">YOUR CONTRIBUTIONS</span><span class="version">Testing 2026.10.20.2</span></div>
 <div id="storageError" class="notice error" role="alert" hidden><strong>We couldn't save on this device.</strong><p id="storageErrorText"></p><button id="retrySave" class="text-button">Try saving again</button> <button id="backupUnsaved" class="text-button">Prepare a backup</button></div>
 <section id="collectionView" aria-labelledby="collectionTitle">
 <div class="title-row"><div><h1 id="collectionTitle" tabindex="-1">My captures</h1><p class="intro">Help fill the gaps, one packet at a time.</p></div><span id="captureCount" class="count">0</span></div>
@@ -78,8 +78,8 @@ function isKnownBarcode(barcode) {
   return !!gtin && Array.from(KNOWN_BARCODES).some(function(code) { return normalizeGtin(code) === gtin; });
 }
 </script>
-<script src="assets/collector/store.js?v=2026.10.20.1"></script>
-<script src="assets/collector/backup.js?v=2026.10.20.1"></script>
-<script src="assets/collector/app.js?v=2026.10.20.1"></script>
+<script src="assets/collector/store.js?v=2026.10.20.2"></script>
+<script src="assets/collector/backup.js?v=2026.10.20.2"></script>
+<script src="assets/collector/app.js?v=2026.10.20.2"></script>
 </body>
 </html>

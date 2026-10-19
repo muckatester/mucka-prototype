@@ -15,12 +15,12 @@ test('Home offers All products and its actual handler opens all catalogue record
   const button = element('categoryGrid').innerHTML.match(/<button\b[^>]*onclick="([^"]*all-products[^\"]*)"[^>]*>[\s\S]*?<\/button>/);
   assert.ok(button, 'The home grid exposes the All products action');
   assert.match(button[0], />All products</);
-  assert.match(button[0], />1082 products</);
+  assert.match(button[0], />1080 products</);
   vm.runInContext(button[1], c);
   assert.equal(screen(), 'category');
   assert.equal(c.currentCategoryId, 'all-products');
   assert.equal(element('categoryTitle').textContent, 'All products');
-  assert.equal(element('categoryProductCount').textContent, 'Showing 1082 products');
+  assert.equal(element('categoryProductCount').textContent, 'Showing 1080 products');
   assert.equal(c.currentCategoryProducts.length, products.length);
   assert.equal(c.perPage, 20);
   assert.equal(renderedIds(element).length, 20);
@@ -45,8 +45,8 @@ test('Next traverses every catalogue page, covering every ID once in brand/name/
       vm.runInContext(next[1], c);
     } else assert.equal(next, null, 'The final page has no Next action');
   }
-  assert.equal(visited.length, 1082);
-  assert.equal(new Set(visited).size, 1082, 'No record occurs twice');
+  assert.equal(visited.length, 1080);
+  assert.equal(new Set(visited).size, 1080, 'No record occurs twice');
   assert.deepEqual([...visited].sort((a, b) => a - b), Array.from(products, p => p.id).sort((a, b) => a - b));
   const expected = Array.from(products).sort((a, b) =>
     (a.brand || '').localeCompare(b.brand || '', 'en-AU', {sensitivity: 'base'}) ||
