@@ -84,7 +84,9 @@ test('Profile describes actual browser state instead of demonstration account de
   const profile = html.split('<!-- PROFILE SCREEN -->')[1].split('<!-- EXPLORE SCREEN -->')[0];
   assert.doesNotMatch(profile, /Tex|Dog #|Membership Tiers|4\.99|9\.99|statScanned/);
   assert.match(profile, /Viewed this visit/);
-  assert.match(profile, /Pet profiles, accounts and memberships are not available yet/);
+  assert.match(profile, /Accounts and memberships are not active/);
+  assert.match(profile, /href="mucka-plus.html"/);
+  assert.match(profile, /concept with sample pet profiles/);
   const {c, element} = setup();
   c.showProduct(727);
   c.showProduct(960);

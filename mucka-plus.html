@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#202c94">
+  <meta name="robots" content="noindex">
+  <title>Mucka Plus · Your pet's little world</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/premium-preview/plus.css">
+  <script src="assets/premium-preview/plus.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" aria-label="Mucka home">MUCKA<span>PLUS</span></a>
+      <div class="top-actions"><span class="preview-pill">Concept preview</span><a class="back-link" href="index.html">← Food scanner</a></div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="intro"><div><p class="eyebrow">A little less life admin. A lot more tail wags.</p><h1>Your pet's little world.</h1><p>Care, memories and a little imagination. All in Mucka.</p></div><button class="button quiet" id="planButton">Explore Plus <span aria-hidden="true">↗</span></button></div>
+    <div class="demo-note"><span class="demo-dot" aria-hidden="true"></span><p><strong>Try the preview.</strong> Fictional pets and records. Changes stay in this browser. Phone alerts, cloud backup, payments and live AI generation are not connected.</p></div>
+    <p id="storageWarning" class="warning" role="alert" hidden></p>
+    <div class="tabs" role="tablist" aria-label="Mucka Plus">
+      <button id="tab-pets" role="tab" aria-selected="true" aria-controls="panel-pets" class="tab active"><span data-icon="paw"></span>My pets</button>
+      <button id="tab-care" role="tab" aria-selected="false" aria-controls="panel-care" class="tab" tabindex="-1"><span data-icon="calendar"></span>Care & reminders</button>
+      <button id="tab-studio" role="tab" aria-selected="false" aria-controls="panel-studio" class="tab" tabindex="-1"><span data-icon="sparkles"></span>Photo studio</button>
+    </div>
+
+    <section id="panel-pets" role="tabpanel" aria-labelledby="tab-pets">
+      <div class="section-heading"><div><p class="eyebrow">Your family</p><h2>Small paws. Big personalities.</h2></div><button class="button quiet" id="addPetButton">+ Add pet</button></div>
+      <div id="petSelector" class="pet-selector" aria-label="Choose a pet"></div>
+      <article class="pet-hero">
+        <div class="pet-hero-copy"><span class="light-pill">Sample pet profile</span><h2 id="petName"></h2><p id="petDescription"></p><div id="petTags" class="pet-tags"></div><button class="button light" id="editPetButton">Edit profile <span aria-hidden="true">↗</span></button></div>
+        <div id="petHeroArt" class="hero-art art-watercolour" role="img" aria-label="Illustrated sample border collie"></div>
+      </article>
+      <div class="content-grid">
+        <section class="card"><div class="card-heading"><h3><span data-icon="shield"></span>The important details</h3><span class="small-pill">Sample records</span></div><dl id="petDetails" class="details-list"></dl><p class="fine-print">A place to keep details you enter. This does not register or update a microchip or council record.</p></section>
+        <section class="card"><div class="card-heading"><h3><span data-icon="clock"></span>Care timeline</h3><button class="text-button" id="addVisitButton">+ Add visit</button></div><div id="careTimeline" class="timeline"></div><p class="fine-print">Owner-entered notes, separate from a vet's clinical record.</p></section>
+      </div>
+      <div class="next-card"><div class="calendar-block" aria-hidden="true"><span id="nextMonth"></span><strong id="nextDay"></strong></div><div class="next-copy"><p class="eyebrow">Next on the calendar</p><h3 id="nextTitle"></h3><p id="nextSubtitle"></p></div><button class="round-button" id="seeReminders" aria-label="View reminders">→</button></div>
+      <button class="studio-invite" id="studioInvite"><div><p class="eyebrow">A little Mucka magic</p><h3>Good dog. Great astronaut.</h3><p>Explore your pet's creative side <span aria-hidden="true">→</span></p></div><span class="invite-art art-astronaut" role="img" aria-label="Sample astronaut dog portrait"></span></button>
+    </section>
+
+    <section id="panel-care" role="tabpanel" aria-labelledby="tab-care" hidden>
+      <div class="section-heading"><div><p class="eyebrow">One less thing to remember</p><h2>Little reminders. Better routines.</h2></div><button class="button primary" id="addReminderButton">+ Add reminder</button></div>
+      <p class="section-description">Vet visits, vaccinations and council renewals, in one place.</p>
+      <div class="reminder-toolbar"><label for="carePet">Show reminders for<select id="carePet"></select></label><button class="button quiet" id="calendarButton"><span data-icon="calendar"></span>Export calendar</button></div>
+      <p class="inline-note"><span data-icon="bell"></span>Preview reminders appear here only. Calendar export creates a file you can add to your calendar; Mucka is not sending notifications.</p>
+      <div id="reminderList" class="reminder-list"></div>
+      <details class="completed-wrap"><summary id="completedSummary">Completed reminders</summary><div id="completedList" class="reminder-list"></div></details>
+    </section>
+
+    <section id="panel-studio" role="tabpanel" aria-labelledby="tab-studio" hidden>
+      <div class="section-heading"><div><p class="eyebrow">Mucka Studio</p><h2>Same best friend. Whole new world.</h2></div><span class="small-pill orange">Sample artwork</span></div>
+      <p class="section-description">A family-friendly portrait corner, inside the parent's account.</p>
+      <div class="studio-grid">
+        <div class="studio-controls">
+          <section class="card"><h3><span class="step-number">1</span>Choose a pet photo</h3><label class="upload-area" for="studioPhoto"><span id="uploadIcon" data-icon="camera"></span><img id="uploadedPhoto" alt="Your selected pet photo" hidden><strong id="uploadTitle">Add your pet's photo</strong><span id="uploadHelp">JPG, PNG or WebP · up to 8 MB</span><input id="studioPhoto" type="file" accept="image/jpeg,image/png,image/webp"></label><button class="text-button" id="removePhoto" hidden>Remove photo</button><p class="fine-print">Your photo stays in this tab and is not uploaded. Use a photo of your pet without people.</p><p id="photoError" class="field-error" role="alert"></p></section>
+          <section class="card"><h3><span class="step-number">2</span>Pick a little adventure</h3><div id="stylePicker" class="style-picker" aria-label="Portrait style"></div><button id="previewStyleButton" class="button primary full">Preview Astronaut style <span aria-hidden="true">✦</span></button><p class="fine-print">This button shows prepared sample artwork. It does not transform your uploaded photo or use paid credits.</p></section>
+        </div>
+        <section class="portrait-card"><div class="portrait-heading"><span class="eyebrow">A little inspiration</span><span class="small-pill">AI-created sample</span></div><div id="portraitArt" class="portrait-art art-astronaut" role="img" aria-label="Sample astronaut border collie portrait"></div><div class="portrait-caption"><h3 id="portraitTitle">One small step for dog.</h3><p id="portraitDescription">Astronaut · sample border collie</p><button id="downloadPortrait" class="button quiet full"><span data-icon="download"></span>Download sample portrait</button><p class="fine-print">Illustrative example, not a portrait of your pet. Live generation would be a separate paid feature.</p></div></section>
+      </div>
+    </section>
+    <div class="preview-tools"><span>Preview 2026.10.20.3</span><button id="exportButton" class="text-button">Export demo records</button><button id="resetButton" class="text-button">Reset demo</button></div>
+    <p class="bottom-note">Your pets' care and your food information belong together. Paid plans would never influence product assessments.</p>
+  </main>
+  <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
+
+  <dialog id="petDialog"><form id="petForm"><div class="dialog-heading"><div><p class="eyebrow">My pets</p><h2 id="petDialogTitle">Edit pet profile</h2></div><button type="button" class="round-button dialog-close" aria-label="Close pet profile">×</button></div><p class="fine-print">Preview only. Please use fictional details while testing.</p><div class="form-grid"><label>Name<input name="name" required maxlength="50" autocomplete="off"></label><label>Species<select name="species"><option>Dog</option><option>Cat</option><option>Other</option></select></label><label>Breed<input name="breed" maxlength="70"></label><label>Date of birth<input name="birthday" type="date"></label><label>Weight (kg)<input name="weight" type="number" min="0.1" max="300" step="0.1"></label><label>Sex<select name="sex"><option>Male</option><option>Female</option><option>Not recorded</option></select></label><label>Microchip number<input name="chip" maxlength="30" inputmode="numeric"></label><label>Council registration<input name="registration" maxlength="50"></label><label>Usual vet<input name="vet" maxlength="90"></label><label>Emergency contact<input name="contact" maxlength="90"></label><label class="span-all">Care notes<textarea name="notes" maxlength="500" rows="3"></textarea></label></div><div class="dialog-actions"><button type="button" class="button quiet dialog-close">Cancel</button><button class="button primary" type="submit">Save profile</button></div></form></dialog>
+  <dialog id="reminderDialog"><form id="reminderForm"><div class="dialog-heading"><div><p class="eyebrow">Care & reminders</p><h2>Add a reminder</h2></div><button type="button" class="round-button dialog-close" aria-label="Close reminder form">×</button></div><label>Pet<select name="petId" required></select></label><label>What needs remembering?<input name="title" required maxlength="80" placeholder="e.g. Council registration renewal"></label><div class="form-grid"><label>Due date<input name="date" type="date" required></label><label>Category<select name="category"><option>Vet visit</option><option>Vaccination</option><option>Registration</option><option>Routine care</option><option>Other</option></select></label></div><label>Notes<textarea name="notes" maxlength="400" rows="3" placeholder="Anything useful to remember"></textarea></label><p class="fine-print">This saves an in-app reminder in this browser. No phone alert is scheduled.</p><div class="dialog-actions"><button type="button" class="button quiet dialog-close">Cancel</button><button class="button primary" type="submit">Save reminder</button></div></form></dialog>
+  <dialog id="visitDialog"><form id="visitForm"><div class="dialog-heading"><div><p class="eyebrow">Care timeline</p><h2>Add a vet visit</h2></div><button type="button" class="round-button dialog-close" aria-label="Close vet visit form">×</button></div><label>Visit date<input name="date" type="date" required></label><label>Visit title<input name="title" required maxlength="80" placeholder="e.g. Annual check-up"></label><label>Your notes<textarea name="notes" maxlength="500" rows="4" placeholder="What would you like to remember?"></textarea></label><p class="fine-print">An owner-entered note. No veterinary record is requested or uploaded.</p><div class="dialog-actions"><button type="button" class="button quiet dialog-close">Cancel</button><button class="button primary" type="submit">Save visit</button></div></form></dialog>
+  <dialog id="planDialog"><div class="dialog-heading"><div><p class="eyebrow">The idea behind Mucka Plus</p><h2>More care. Less chasing paperwork.</h2></div><button class="round-button dialog-close" aria-label="Close plan preview">×</button></div><div class="plan-price"><strong>A$39<span>/year</span></strong><p>or A$4.99/month · proposed test pricing</p></div><ul class="plan-features"><li>Profiles for every pet in the family</li><li>Vet history, documents and useful reminders</li><li>Planned family sharing and cloud backup</li><li>Records remain readable and exportable after cancellation</li></ul><div class="plan-studio"><strong>Studio would use separate image credits.</strong><p>Try a portrait, then buy a small pack when you want more. No unlimited-generation promise.</p></div><p class="fine-print">This is a design preview. There is no subscription, checkout, cloud backup or automatic reminder service to buy yet.</p><button class="button primary full dialog-close">Keep exploring the preview</button></dialog>
+  <dialog id="resetDialog"><div class="dialog-heading"><h2>Reset this preview?</h2><button class="round-button dialog-close" aria-label="Close reset confirmation">×</button></div><p>Your demo edits, reminders and visit notes will be replaced with the original sample records. Export them first if you want to keep them.</p><div class="dialog-actions"><button class="button quiet dialog-close">Keep my changes</button><button id="confirmReset" class="button primary">Reset demo records</button></div></dialog>
+</body>
+</html>

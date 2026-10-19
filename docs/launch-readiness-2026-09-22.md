@@ -1,6 +1,16 @@
 # Mucka launch review
 
-## Current catalogue checkpoint — 20 October 2026
+## Current premium concept checkpoint — 20 October 2026
+
+Testing version **2026.10.20.3** adds [Mucka Plus](../mucka-plus.html), linked from Home and Profile. The responsive preview includes editable sample pet profiles (microchip, registration, usual vet and care notes), a vet-visit timeline, reminders with completion/undo and calendar-file export, demo JSON export/reset, local photo selection and four prepared portrait styles. Proposed A$4.99/month or A$39/year pricing is a customer-testing hypothesis. Studio credits would be separate; no credit price is set.
+
+This is a concept, not a paid care service. Records are fictional and stored under a separate browser key. Storage failures remain visible, preserve session edits and offer export; corrupt saved records are left untouched until reset. Uploaded photos stay in the tab, are not persisted or uploaded, and are not transformed by this preview. Artwork is labelled as a fictional sample border collie; users can explore astronaut, royal, watercolour and cartoon styles and download a selected sample. Accounts, cloud backup, family sharing, phone notifications, payments and live AI generation are not connected. Calendar export creates all-day events without pretending Mucka delivered alerts.
+
+All **54 Node checks and 13 premium browser scenarios passed**. Browser coverage includes saved edits and visit notes, reminders/completion/undo, escaped calendar output, exports, invalid/local photo handling, style selection/sample downloads, keyboard tabs/dialog closure, reset confirmation, blocked storage and corrupt saved data. Layouts were checked at 320, 390, 768 and 1,100 pixels. The 338 KB display artwork is 88.8% smaller than its generated PNG original. No paid image API is called by the prototype.
+
+Catalogue coverage remains **1,080 active products, 973 displayed product photos, 107 photo gaps, 474 supported barcode lookups and 606 unresolved barcode cases**. The pet portrait examples are not catalogue photos. Before building a paid service, test repeat use and willingness to pay, then implement dependable account/storage/reminder services. Payment or sponsorship must not influence food assessments.
+
+## Earlier catalogue checkpoint — 20 October 2026
 
 Testing version **2026.10.20.2** contains **1,080 active products, 973 displayed photos, 107 photo gaps, 474 supported barcode lookups and 606 unresolved barcode cases**. All 115 prior photo gaps received fresh searches. Seven now have reviewed recipe photographs; one missing-photo entry merged into its existing duplicate. A second merge removed an already photographed duplicate. These changes explain the net six additional displayed photos and two fewer active catalogue entries.
 
