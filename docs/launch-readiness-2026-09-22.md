@@ -1,5 +1,34 @@
 # Mucka launch review
 
+## Current checkpoint — 20 October 2026
+
+Testing version **2026.10.20.1** fixes the main scanner's camera-start cancellation race and adds manual barcode lookup with check-digit validation. Missing camera code, denied permission, absent cameras and busy cameras give recoverable messages. A close/reopen waits for the previous camera to settle; stale callbacks cannot open a product. Escape closes the overlay, keyboard focus stays inside it and returns to Scan, and leaving/hiding the page releases the camera. The same packet can be scanned again immediately. Manual and camera input share the existing exact-product evidence lookup; the unused historical barcode alias map has been removed. Main app and My captures display the same release number.
+
+Validation: 50 automated Node tests, eight main-scanner browser scenarios and 16 saved-capture browser scenarios passed. Browser camera events are simulated; real iPhone permission, camera, native sharing and storage behaviour still need a physical device check. The scanner fallback was visually reviewed at phone width and checked at 320, 390 and 768 pixels. Script: `scripts/test-main-scanner-browser.cjs` (Playwright via NODE_PATH). Prepared for the existing draft PR's testing deployment, not a consumer health-rating launch.
+
+Recounted from the current app: **1,082 products; 967 displayed photos; 115 photo gaps; 474 supported barcode matches; 608 unresolved barcode cases; 13 products with identity-bound starter evidence.** No barcode, photo or scoring coverage was added by the scanner fix.
+
+### Work we can complete without supplier replies
+
+1. Resolve the 115 remaining image/identity cases against the dated worklist, prioritising duplicates, nonexistent pack descriptions and recipe/species conflicts. Do not force a photograph or barcode onto an uncertain listing.
+2. Complete accessibility and device checks for search, product details, favourites and captures, including keyboard/screen-reader navigation, small screens, failed images and network interruptions. The scanner checks are one part of this work, not full certification.
+3. Expand source-backed label facts from current manufacturer information while keeping company claims separate from exact-recipe evidence. Do not turn a missing supplier answer into a low nutrition score.
+4. Define a release catalogue of sufficiently supported products and clearly label remaining research entries. Launch readiness should be measured by reliable behaviour and evidence, not a promise that all 1,082 provisional listings will become verified.
+5. Finalise public-facing data/privacy information and confirm image-use rights before broader release. Captures currently save only in the same browser/site, with ZIP backup rather than cloud sync.
+
+### Short owner phone check once the release is live
+
+- Confirm version **2026.10.20.1** on Home and My captures.
+- Scan one known bag; cancel and immediately reopen Scan, then scan the same bag again. Confirm the recipe and pack size.
+- Type **9392596027556** into the scanner form: it should open Billie's Bowl Adult with Aussie Beef, 20kg. This checks lookup separately from camera reading.
+- For an unmatched packet, save its front and barcode photographs, reopen the same browser, then export a ZIP to Files. Send any failure with the displayed version and a screenshot; there is no request to buy or scan a shopful of products.
+
+### Supplier position
+
+SavourLife case 25614 is with quality control; Mars case 10605377 is under review. Neither has supplied the requested nutrition evidence. GS1 confirms the trial has no payment obligation or automatic paid conversion, but requires known GTINs and therefore does not discover unknown barcodes by name. Post-trial rights and query counting remain incomplete. No signup or payment. See the outreach queue for exact message IDs and dates.
+
+The sections below are historical checkpoints and retain their original counts.
+
 ## Current testing position — 13 October 2026
 
 [Testing build 2026.10.13.10](https://deploy-preview-2--mucka-prototype.netlify.app/?v=2026.10.13.10) contains 1,082 catalogue products, 474 source-supported barcode lookups and 846 displayed product photographs. The [current image gap list](image-gaps-2026-10-13.csv) has 236 missing or withheld photos. GS1 has received the provisional candidate-GTIN CSV; its reply is still needed to validate those associations and decide on licensed data access. The remaining 608 barcode cases and 236 image cases are separate worklists. Online image review does not prove that a barcode scans to the pictured pack.

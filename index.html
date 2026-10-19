@@ -647,7 +647,7 @@ body::before {
 <!-- HOME SCREEN -->
 <div class="screen active" id="screen-home">
   <!-- Bump the testing version here, in Profile, and in Collector for every preview release. -->
-  <p style="font-size:12px;color:#4a5568;text-align:center;margin:8px 0;">Testing version <strong>2026.10.15.1</strong></p>
+  <p style="font-size:12px;color:#4a5568;text-align:center;margin:8px 0;">Testing version <strong>2026.10.20.1</strong></p>
   <div class="assessment-intro">
     <strong>Product information, with room to learn.</strong>
     <p>Health ratings are paused while we review our assessment method. Browse by brand and name, and check catalogue details against your pack.</p>
@@ -813,8 +813,8 @@ body::before {
   </div>
   <div class="section-card">
     <h2>About Mucka</h2>
-    <div class="cred-row"><span class="cred-label">Testing version</span><span class="cred-value">2026.10.15.1</span></div>
-    <p class="evidence-note">Released 13 October 2026. Quote this version when reporting a test result. If it differs from the version we give you, reopen the latest testing link and refresh the page.</p>
+    <div class="cred-row"><span class="cred-label">Testing version</span><span class="cred-value">2026.10.20.1</span></div>
+    <p class="evidence-note">Released 20 October 2026. Quote this version when reporting a test result. If it differs from the version we give you, reopen the latest testing link and refresh the page.</p>
     <div class="cred-row"><span class="cred-label">Catalogue listings</span><span class="cred-value" id="profileProductCount">1,082</span></div>
     <div class="cred-row"><span class="cred-label">Region</span><span class="cred-value">Australia</span></div>
     <p class="evidence-note">Pet profiles, accounts and memberships are not available yet.</p>
@@ -883,13 +883,20 @@ body::before {
 </div>
 
 <!-- SCANNER OVERLAY -->
-<div class="scanner-overlay" id="scanner">
+<div class="scanner-overlay" id="scanner" role="dialog" aria-modal="true" aria-label="Find a product by barcode" style="overflow-y:auto;padding:24px 0;background:#101827;">
   <div style="width:90%; max-width:400px;">
     <div style="background:#202C94; color:white; text-align:center; padding:10px; border-radius:16px 16px 0 0; font-size:14px; font-weight:600;">Barcode Scanner</div>
     <div id="barcode-reader" style="width:100%; background:#000; border-radius:0 0 16px 16px; overflow:hidden;"></div>
-    <div id="scanner-status-text" style="color:#75CFE7; margin-top:16px; font-size:14px; font-weight:600; text-align:center;">Starting camera...</div>
+    <div id="scanner-status-text" role="status" aria-live="polite" style="color:#75CFE7; margin-top:16px; font-size:14px; font-weight:600; text-align:center;">Starting camera...</div>
   </div>
-  <button class="scanner-cancel" onclick="closeScanner()">Cancel</button>
+  <form onsubmit="submitScannerBarcode(event)" style="width:90%;max-width:400px;margin-top:16px;color:white;">
+    <label for="scannerBarcode" style="display:block;margin-bottom:8px;">Or type the barcode number</label>
+    <input id="scannerBarcode" inputmode="numeric" autocomplete="off" maxlength="40" aria-describedby="scannerManualStatus" placeholder="Digits printed below the bars" style="width:100%;padding:12px;border:2px solid #75CFE7;border-radius:8px;font-size:16px;">
+    <p id="scannerManualStatus" role="status" style="font-size:13px;margin:8px 0;"></p>
+    <button type="submit" class="scanner-cancel" style="width:100%;margin-top:4px;">Find product</button>
+    <button type="button" id="scannerRetry" class="scanner-cancel" onclick="openScanner()" hidden style="width:100%;margin-top:8px;">Try camera again</button>
+  </form>
+  <button class="scanner-cancel" id="scannerCancel" onclick="closeScanner()">Cancel</button>
 </div>
 
 <script>
@@ -4746,44 +4753,10 @@ function updateProfile() {
 // === BARCODE SCANNER (real camera) ===
 var html5QrCode = null;
 var scannerRunning = false;
-var lastScannedBarcode = '';
-var lastScanTime = 0;
-
-// Barcode-to-product-ID mapping (add real barcodes here as you verify them)
-var barcodeMap = {
-  // Ziwi Peak
-  "9421016593965": "Air-Dried Lamb",
-  "9421016593187": "Air-Dried Beef",
-  "9421016596416": "Air-Dried Mackerel & Lamb",
-  "9421016596811": "Air-Dried Chicken",
-  // Royal Canin
-  "3182550401937": "Maxi Adult",
-  "3182550402271": "Medium Adult",
-  "3182550708192": "Mini Adult",
-  "3182550716253": "Indoor Cat",
-  "3182550702225": "Kitten",
-  // Hill's Science Diet
-  "0052742000220": "Digestive Care",
-  "0052742204208": "Adult 7+",
-  "0052742296609": "Perfect Weight",
-  "0052742024516": "Indoor Cat",
-  // Pedigree
-  "9310022020308": "Adult Dry Dog Food Beef",
-  "9310022020407": "Adult Dry Dog Food Chicken",
-  "9310022020506": "Puppy Dry Dog Food",
-  // Black Hawk
-  "9300605038202": "Grain Free Lamb",
-  "9300605038103": "Chicken & Rice",
-  "9300605038400": "Puppy Lamb & Rice",
-  // Ivory Coat
-  "9320174003013": "Chicken Grain Free",
-  "9320174003112": "Lamb & Sardine",
-  "9320174003211": "Kitten Chicken",
-  // Advance
-  "9310015205101": "All Breed Chicken",
-  "9310015205200": "Puppy Growth",
-  "9310015205309": "Small Breed Turkey"
-};
+var scannerWanted = false;
+var scannerEpoch = 0;
+var scannerTask = null;
+var scannerReturnFocus = null;
 
 function findProductByBarcode(barcode) {
   var gtin = normalizeGtin(barcode);
@@ -4798,110 +4771,139 @@ function findProductByBarcode(barcode) {
   return earlier && earlier.fields.barcode.status === 'source_checked' ? product : null;
 }
 
-function openScanner() {
-  document.getElementById('scanner').classList.add('active');
-  var statusEl = document.getElementById('scanner-status-text');
-  statusEl.textContent = 'Starting camera...';
-  statusEl.style.color = '#75CFE7';
+function handleScannerBarcode(decodedText) {
+  var matched = findProductByBarcode(decodedText);
+  var wasFieldCapture = window._fcScanning;
+  closeScanner();
 
-  if (!html5QrCode) {
-    html5QrCode = new Html5Qrcode("barcode-reader");
+  // If Field Capture mode is active, route the barcode there instead
+  if (wasFieldCapture) {
+    // Check 1: already in the live database?
+    if (matched) {
+      fcShowAlreadyInDb(decodedText, matched);
+      showScreen('fieldcapture');
+      return;
+    }
+    // Check 2: already captured in this session's queue?
+    var existingInQueue = fcGetQueue().find(function(item) { return item.barcode === decodedText; });
+    if (existingInQueue) {
+      fcShowAlreadyInQueue(decodedText);
+      showScreen('fieldcapture');
+      return;
+    }
+    // All clear — capture as new
+    fcHandleScannedBarcode(decodedText);
+    showScreen('fieldcapture');
+    scannedCount++;
+    updateProfile();
+    return;
   }
 
-  if (scannerRunning) return;
+  if (matched) {
+    showProduct(matched.id);
+  } else {
+    // Show a nice alert with the scanned barcode
+    showNotFoundScreen(decodedText);
+  }
+  scannedCount++;
+  updateProfile();
+}
 
-  var config = {
-    fps: 10,
-    qrbox: function(vw, vh) {
-      var s = Math.floor(Math.min(vw, vh) * 0.75);
-      return { width: Math.min(s, 300), height: Math.min(Math.floor(s * 0.5), 150) };
-    },
-    formatsToSupport: [
-      Html5QrcodeSupportedFormats.EAN_13,
-      Html5QrcodeSupportedFormats.EAN_8,
-      Html5QrcodeSupportedFormats.UPC_A,
-      Html5QrcodeSupportedFormats.UPC_E,
-      Html5QrcodeSupportedFormats.CODE_128,
-      Html5QrcodeSupportedFormats.CODE_39
-    ]
-  };
+function submitScannerBarcode(event) {
+  event.preventDefault();
+  var code = document.getElementById('scannerBarcode').value.replace(/[\s-]/g, '');
+  var status = document.getElementById('scannerManualStatus');
+  if (!normalizeGtin(code)) {
+    status.textContent = 'Check all the printed digits. Enter an 8, 12, 13 or 14 digit product barcode.';
+    document.getElementById('scannerBarcode').focus();
+    return;
+  }
+  status.textContent = '';
+  handleScannerBarcode(code);
+}
 
-  html5QrCode.start(
-    { facingMode: "environment" },
-    config,
-    function onScanSuccess(decodedText, decodedResult) {
-      decodedText = getScannedGtinText(decodedText, decodedResult);
-      if (!decodedText) return;
-      var now = Date.now();
-      if (decodedText === lastScannedBarcode && (now - lastScanTime) < 3000) return;
-      lastScannedBarcode = decodedText;
-      lastScanTime = now;
+function scannerCameraError(error) {
+  var name = error && error.name || '';
+  var message = 'Camera could not start. You can type the barcode below or try again.';
+  if (typeof Html5Qrcode === 'undefined') message = 'Camera scanner could not load. You can still type the barcode below.';
+  else if (name === 'NotAllowedError' || /permission|denied/i.test(String(error))) message = 'Camera access was not allowed. Type the barcode below, or allow camera access in your browser and try again.';
+  else if (name === 'NotFoundError') message = 'No camera was found. Type the barcode below.';
+  else if (name === 'NotReadableError') message = 'Camera is busy or unavailable. Close other camera apps, or type the barcode below.';
+  document.getElementById('scanner-status-text').textContent = message;
+  document.getElementById('scanner-status-text').style.color = '#FFD09B';
+  document.getElementById('scannerRetry').hidden = false;
+}
 
-      // Haptic feedback
-      try { if (navigator.vibrate) navigator.vibrate(100); } catch(e) {}
-
-      // Visual feedback - flash scanner border green and pulse
-      var scanContainer = document.getElementById('scannerContainer');
-      var readerEl = document.getElementById('barcode-reader');
-      if (readerEl) {
-        readerEl.style.transition = 'box-shadow 0.3s';
-        readerEl.style.boxShadow = '0 0 20px #38a169';
-        setTimeout(function() { readerEl.style.boxShadow = 'none'; }, 300);
-      }
-      if (scanContainer) {
-        scanContainer.classList.add('scan-success-pulse');
-        setTimeout(function() { scanContainer.classList.remove('scan-success-pulse'); }, 300);
-      }
-
-      var matched = findProductByBarcode(decodedText);
-      var wasFieldCapture = window._fcScanning;
-      closeScanner();
-
-      // If Field Capture mode is active, route the barcode there instead
-      if (wasFieldCapture) {
-        // Check 1: already in the live database?
-        if (matched) {
-          fcShowAlreadyInDb(decodedText, matched);
-          showScreen('fieldcapture');
-          return;
-        }
-        // Check 2: already captured in this session's queue?
-        var existingInQueue = fcGetQueue().find(function(item) { return item.barcode === decodedText; });
-        if (existingInQueue) {
-          fcShowAlreadyInQueue(decodedText);
-          showScreen('fieldcapture');
-          return;
-        }
-        // All clear — capture as new
-        fcHandleScannedBarcode(decodedText);
-        showScreen('fieldcapture');
-        scannedCount++;
-        updateProfile();
-        return;
-      }
-
-      if (matched) {
-        showProduct(matched.id);
-      } else {
-        // Show a nice alert with the scanned barcode
-        showNotFoundScreen(decodedText);
-      }
-      scannedCount++;
-      updateProfile();
-    }
-  ).then(function() {
-    scannerRunning = true;
-    statusEl.textContent = 'Point camera at a barcode';
-    statusEl.style.color = '#2ECC71';
-  }).catch(function(err) {
-    console.warn('Camera start failed:', err);
-    var isHTTP = window.location.protocol === 'http:' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
-    if (isHTTP) {
-      statusEl.innerHTML = '<span style="color:#EF973F;">Camera blocked!</span><br><span style="font-size:12px; color:#ccc;">Phone browsers require HTTPS for camera access.<br>You are on plain HTTP (' + window.location.hostname + ').<br>Ask your developer to set up HTTPS.</span>';
-    } else {
-      statusEl.innerHTML = '<span style="color:#EF973F;">Camera access denied</span><br><span style="font-size:12px; color:#ccc;">Please allow camera permission and try again.</span>';
-    }
+function releaseScannerCamera(instance) {
+  scannerRunning = false;
+  return Promise.resolve().then(function() { return instance.stop(); }).catch(function() {
+    // If the scanner rejects stop, release any browser video tracks directly.
+    document.querySelectorAll('#barcode-reader video').forEach(function(video) {
+      if (video.srcObject) video.srcObject.getTracks().forEach(function(track) { track.stop(); });
+    });
   });
+}
+
+function finishScannerTask(epoch) {
+  scannerTask = null;
+  // A close/reopen waits for the previous camera to settle before starting another.
+  if (scannerWanted && epoch !== scannerEpoch) startScannerCamera();
+}
+
+function startScannerCamera() {
+  if (scannerTask || scannerRunning || !scannerWanted) return;
+  var epoch = scannerEpoch, instance;
+  try {
+    if (!html5QrCode) html5QrCode = new Html5Qrcode('barcode-reader');
+    instance = html5QrCode;
+  } catch (error) {
+    scannerCameraError(error);
+    return;
+  }
+  scannerTask = Promise.resolve().then(function() {
+    return instance.start({facingMode: 'environment'}, {
+      fps: 10,
+      qrbox: function(vw, vh) {
+        var s = Math.floor(Math.min(vw, vh) * 0.75);
+        return {width: Math.min(s, 300), height: Math.min(Math.floor(s * 0.5), 150)};
+      },
+      formatsToSupport: [Html5QrcodeSupportedFormats.EAN_13, Html5QrcodeSupportedFormats.EAN_8,
+        Html5QrcodeSupportedFormats.UPC_A, Html5QrcodeSupportedFormats.UPC_E,
+        Html5QrcodeSupportedFormats.CODE_128, Html5QrcodeSupportedFormats.CODE_39]
+    }, function(text, result) {
+      if (!scannerWanted || epoch !== scannerEpoch) return;
+      var code = getScannedGtinText(text, result);
+      if (!code) return;
+      try { if (navigator.vibrate) navigator.vibrate(100); } catch (error) {}
+      handleScannerBarcode(code);
+    });
+  }).then(function() {
+    if (!scannerWanted || epoch !== scannerEpoch) return releaseScannerCamera(instance);
+    scannerRunning = true;
+    document.getElementById('scanner-status-text').textContent = 'Point camera at a barcode';
+    document.getElementById('scanner-status-text').style.color = '#2ECC71';
+  }).catch(function(error) {
+    if (scannerWanted && epoch === scannerEpoch) scannerCameraError(error);
+  }).finally(function() { finishScannerTask(epoch); });
+}
+
+function openScanner() {
+  var overlay = document.getElementById('scanner');
+  if (!overlay.classList.contains('active')) {
+    scannerReturnFocus = document.activeElement;
+    document.getElementById('scannerBarcode').value = '';
+    document.getElementById('scannerManualStatus').textContent = '';
+    document.getElementById('scannerRetry').hidden = true;
+    overlay.classList.add('active');
+    document.getElementById('scannerCancel').focus();
+  }
+  if (scannerWanted && (scannerTask || scannerRunning)) return;
+  scannerWanted = true;
+  scannerEpoch++;
+  document.getElementById('scanner-status-text').textContent = 'Starting camera…';
+  document.getElementById('scanner-status-text').style.color = '#75CFE7';
+  document.getElementById('scannerRetry').hidden = true;
+  startScannerCamera();
 }
 
 var torchOn = false;
@@ -4923,20 +4925,32 @@ function toggleTorch() {
 }
 
 function closeScanner() {
-  if (html5QrCode && scannerRunning) {
-    html5QrCode.stop().then(function() {
-      scannerRunning = false;
-    }).catch(function() {
-      scannerRunning = false;
-    });
+  scannerWanted = false;
+  scannerEpoch++;
+  if (html5QrCode && scannerRunning && !scannerTask) {
+    var epoch = scannerEpoch;
+    scannerTask = releaseScannerCamera(html5QrCode).finally(function() { finishScannerTask(epoch); });
   }
-  // Clear field-capture flag if user backed out without scanning
   window._fcScanning = false;
   torchOn = false;
   var btn = document.getElementById('torchBtn');
   if (btn) btn.style.background = 'rgba(255,255,255,0.2)';
   document.getElementById('scanner').classList.remove('active');
+  if (scannerReturnFocus && scannerReturnFocus.isConnected) scannerReturnFocus.focus();
 }
+
+window.addEventListener('pagehide', closeScanner);
+document.addEventListener('visibilitychange', function() {
+  if (document.hidden && scannerWanted) closeScanner();
+});
+document.getElementById('scanner').addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') { event.preventDefault(); closeScanner(); }
+  if (event.key !== 'Tab') return;
+  var controls = Array.from(this.querySelectorAll('input, button')).filter(function(el) { return !el.hidden && !el.disabled; });
+  var first = controls[0], last = controls[controls.length - 1];
+  if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+  else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+});
 
 // === ADD NEW PRODUCT ===
 var goodKeywords = ['chicken','beef','lamb','salmon','turkey','duck','kangaroo','venison','fish oil','flaxseed','sweet potato','pumpkin','blueberries','cranberries','coconut oil','turmeric','kelp','beet pulp','brown rice','oats','barley','chia','quinoa','probiotics','glucosamine','chondroitin','taurine','zinc','iron','omega'];
