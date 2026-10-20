@@ -1,5 +1,17 @@
 # Mucka launch review
 
+## Commercial validation recommendation — 20 October 2026
+
+The owner has requested explicit critical judgement throughout the project. Persistent project guidance is saved in AGENTS.md. The recommendation is to test monetisation while finishing reliability and product evidence; a polished interface does not yet establish willingness to pay.
+
+The proposed A$4.99 monthly / A$39 annual plan remains an unvalidated price hypothesis. Pet profiles and registration details may be entered infrequently. PetDesk advertises a free owner app with appointments, records and reminders ([official owner app](https://petdesk.com/download-app-for-pet-health)); PetCloud describes an overlapping pet passport with microchip, council and vaccination details and reminders ([official description](https://www.petcloud.com.au/d/blog/how-to-manage-your-pets-life-easily/)). Their overlap challenges differentiation; it does not prove Mucka has no opportunity. No claim that every competitor feature is available to every Australian owner is made.
+
+A future paid organiser needs continuing benefits such as dependable reminders, backup and family access. Those services are not currently connected and have operating/support costs. The owner's decision to keep storage local until release still applies. AI portraits remain a separate optional credit-based hypothesis, with actual cost measured per acceptable result including retries and support. Neither pet art nor a subscription should influence food assessments.
+
+Recommended next work while the owner tests two pets: complete a usability/accessibility pass and resolve observed failures; define the first-release catalogue using supported product identities rather than total catalogue size; progress the evidence and specialist review needed for a defensible nutrition method. Avoid expanding the feature list before these tests and decisions.
+
+Before implementing billing, run an exploratory two-week trial with 10–20 prospective owners beyond friends/family. Observe setup completion, return use, missing-data problems, which features are used and objections to an explicit proposed price. Compliments and stated interest are weak purchase evidence. Once the promised paid service works, a transparent small paid pilot can test actual purchase and support costs. Do not create fake checkout demand, solicit participants externally or charge anyone without the owner's specific authorisation. The trial size and duration are proposed research choices, not a statistically validated success threshold.
+
 ## Current local pet records checkpoint — 20 October 2026
 
 Testing version **2026.10.20.4** adds [My pets](../mucka-pets.html) to the main five-item navigation (replacing the Explore shortcut; category browsing and the Explore screen remain available). It starts empty and keeps the [original Plus concept](../mucka-plus.html) separate. Owners can add and edit their own profiles and photos, microchip/registration details, vet notes and reminders. Pet photos are resized to local JPEGs; no pet record or photo upload is performed. No Supabase account or paid backend was created: the owner chose local storage until release.
