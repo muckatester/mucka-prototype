@@ -43,7 +43,7 @@ function setup(options = {}) {
   vm.runInContext(html.match(/var mergedProductIds = .*;\n/)[0] + 'var archivedProducts = [];', c);
   for (const name of ['resolveCatalogueId', 'applyCatalogueMerges', 'recalculateScore', 'hasScoreData', 'getLegacyScoreHtml', 'getScoreBadge', 'compareProductScores',
     'normalizeGtin', 'getBarcodeEvidence', 'getBarcodeStatusText', 'getBarcodeStatusHtml', 'escapeHtml', 'getProductEvidence', 'getEvidenceLinks', 'getEvidenceFieldHtml', 'getProductFactsHtml', 'getEvidenceSummaryHtml', 'getIngredientListHtml', 'getFoodSVGIcon', 'adjustColor', 'getProductPlaceholder',
-    'handleProductImageError', 'getSourcedProductImage', 'getLegacyImageReview', 'getLegacyProductImage', 'getProductImage', 'productHasImage', 'showProduct', 'renderPage', 'renderCategoryPage',
+    'handleProductImageError', 'getSourcedProductImage', 'getLegacyImageReview', 'getLegacyProductImage', 'getProductImage', 'productHasImage', 'showProduct', 'renderProductCard', 'renderPage', 'renderCategoryPage',
     'renderFavourites', 'runOverlaySearch', 'applyFilters', 'getRecommendations', 'renderCategoryGrid',
     'handleCategoryClick', 'gotoCategoryPage', 'scoreNewProduct', 'isSaveableFavourite', 'loadFavourites', 'saveFavourites', 'getFavouriteStorageMessage', 'updateFavouriteButton', 'handleFavouriteStorageChange', 'toggleFav', 'updateProfile']) vm.runInContext(fn(name), c);
   vm.runInContext('products.forEach(recalculateScore); applyCatalogueMerges(); var filteredProducts = products.slice(); var currentCategoryProducts = products.slice();', c);

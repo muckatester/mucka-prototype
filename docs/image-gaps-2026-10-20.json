@@ -1,9 +1,9 @@
 {
   "date": "2026-10-20",
-  "version": "2026.10.20.2",
+  "version": "2026.10.20.6",
   "catalogueProducts": 1080,
-  "displayedPhotos": 973,
-  "missingPhotos": 107,
+  "displayedPhotos": 975,
+  "missingPhotos": 105,
   "supportedBarcodes": 474,
   "unresolvedBarcodes": 606,
   "archivedDuplicates": 2,
@@ -15,7 +15,9 @@
     324,
     379,
     926,
-    185
+    185,
+    244,
+    1027
   ],
   "resolvedByMerge": [
     189
@@ -74,20 +76,6 @@
       "reason": "Search shows canned loaf, not the named beef roll.",
       "nextAction": "Confirm the exact product with the manufacturer or an actual packet before choosing a photo.",
       "workType": "identity_confirmation",
-      "lastSearchDate": "2026-10-20",
-      "searchOutcome": "No sufficiently supported usable photo established in this search; absence from search is not proof of nonexistence."
-    },
-    {
-      "id": 244,
-      "brand": "Optimum",
-      "name": "Indoor Chicken",
-      "type": "Dry · pack size unverified",
-      "petType": "cat",
-      "foodType": "dry",
-      "barcode": null,
-      "reason": "Recorded barcode removed because it belongs to Furball 2.8kg; older Indoor Chicken recipe documented, but usable exact front photo still missing.",
-      "nextAction": "Photograph the exact pack front, barcode and back label if already available.",
-      "workType": "exact_pack_photo",
       "lastSearchDate": "2026-10-20",
       "searchOutcome": "No sufficiently supported usable photo established in this search; absence from search is not proof of nonexistence."
     },
@@ -333,21 +321,6 @@
       "reason": "Search returned Glow chicken food, not Scratch.",
       "nextAction": "Confirm the exact product with the manufacturer or an actual packet before choosing a photo.",
       "workType": "identity_confirmation",
-      "lastSearchDate": "2026-10-20",
-      "searchOutcome": "No sufficiently supported usable photo established in this search; absence from search is not proof of nonexistence."
-    },
-    {
-      "id": 1027,
-      "brand": "Ivory Coat",
-      "name": "Grain Free Reduced Fat Turkey",
-      "type": "Dry · 2kg",
-      "petType": "dog",
-      "foodType": "dry",
-      "barcode": null,
-      "reason": "Downloaded retailer image shows Adult All Breeds Turkey, not explicitly Mature/Reduced Fat; photo remains withheld.",
-      "nextAction": "Confirm the exact product with the manufacturer or an actual packet before choosing a photo.",
-      "workType": "identity_confirmation",
-      "lastChecked": "2026-10-15",
       "lastSearchDate": "2026-10-20",
       "searchOutcome": "No sufficiently supported usable photo established in this search; absence from search is not proof of nonexistence."
     },
@@ -1571,5 +1544,6 @@
       "lastSearchDate": "2026-10-20",
       "searchOutcome": "No sufficiently supported usable photo established in this search; absence from search is not proof of nonexistence."
     }
-  ]
+  ],
+  "reliabilityReview": "107-case triage reread; focused new searches found two original labelled pack photographs. Remaining cases retain their earlier source dates and uncertainties."
 }

@@ -21301,6 +21301,52 @@
       ]
     },
     {
+      "sourcePath": "assets/product-images/reviewed-20261020-1027.jpg",
+      "sourceSha256": "b5dec34b50d3e132bbf36b83e391398f3d722a8e83af9b1210888ae50ff539c4",
+      "sourceBytes": 408670,
+      "variants": [
+        {
+          "path": "assets/product-images/display/b5dec34b50d3e132bbf36b83-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "cbbeda2b6f1c7278e4e1df090d09dd0ce7056e35f0f671189c5e2ab32f5a5ac1",
+          "bytes": 5996,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/b5dec34b50d3e132bbf36b83-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "5b3162c0285d7b11177ecf671a972691a45e637f134f405d0052ed23d2cb727a",
+          "bytes": 52210,
+          "bound": 480
+        }
+      ]
+    },
+    {
+      "sourcePath": "assets/product-images/reviewed-20261020-244.jpg",
+      "sourceSha256": "b639ee8b25be4c822b13caaf0e38603b9bde96f1e5c3a83a38e705bb76f83749",
+      "sourceBytes": 122814,
+      "variants": [
+        {
+          "path": "assets/product-images/display/b639ee8b25be4c822b13caaf-160.webp",
+          "width": 160,
+          "height": 160,
+          "sha256": "32467354d46d0430d45ccc87e9c4c84c3e90db0107187d7d21374dcd865e6b63",
+          "bytes": 3630,
+          "bound": 160
+        },
+        {
+          "path": "assets/product-images/display/b639ee8b25be4c822b13caaf-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "41011aee9c8e3cd2b1e77465ffcd3f64489d0f136d6b0d2c38300279334b82bb",
+          "bytes": 18372,
+          "bound": 480
+        }
+      ]
+    },
+    {
       "sourcePath": "assets/product-images/royal-canin-sterilised-adult-cat-2kg.webp",
       "sourceSha256": "e063ca2b3beedab6cfde98b22efda2037559a1368cb7936034d517f44385b818",
       "sourceBytes": 21872,

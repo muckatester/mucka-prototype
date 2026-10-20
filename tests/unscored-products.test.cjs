@@ -167,7 +167,7 @@ test('Search, browse and favourites retain product access and neutral badges', (
     element('soInput').value = p.name;
     c.runOverlaySearch();
     assert.match(element('soResults').innerHTML, /Under review/);
-    assert.ok(element('soResults').innerHTML.includes('showProduct(' + id + ')'));
+    assert.ok(element('soResults').innerHTML.includes('openSearchProduct(' + id + ')'));
   }
   c.renderCategoryGrid();
   assert.equal(element('soInput').placeholder, 'Search 1080 products...');

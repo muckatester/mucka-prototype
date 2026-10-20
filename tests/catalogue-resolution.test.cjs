@@ -21,6 +21,6 @@ test('All initial photo gaps reconcile to new photos, one merged row or an expli
  const {c}=setup(),work=JSON.parse(fs.readFileSync(root+'/docs/image-gaps-2026-10-20.json'));
  const missing=c.products.filter(p=>!c.productHasImage(p)).map(p=>p.id).sort((a,b)=>a-b);
  assert.deepEqual(work.products.map(p=>p.id).sort((a,b)=>a-b),Array.from(missing));
- assert.equal(work.missingPhotos,107);assert.equal(work.displayedPhotos,973);
- assert.equal(work.initialPhotoGaps,115);assert.equal(work.resolvedByPhoto.length,7);assert.deepEqual(work.resolvedByMerge,[189]);
+ assert.equal(work.missingPhotos,105);assert.equal(work.displayedPhotos,975);
+ assert.equal(work.initialPhotoGaps,115);assert.equal(work.resolvedByPhoto.length,9);assert.deepEqual(work.resolvedByMerge,[189]);
 });

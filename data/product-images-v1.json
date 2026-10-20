@@ -10445,6 +10445,50 @@
       "checkedDate": "2026-10-20",
       "sha256": "f94be6ad175e838e2537462f8a41c9a4955994f761ab54d815333c510a60939d",
       "rightsStatus": "Public product image; no licence grant asserted."
+    },
+    {
+      "appId": 244,
+      "identity": {
+        "brand": "Optimum",
+        "name": "Indoor Chicken",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry \u00b7 pack size unverified",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/reviewed-20261020-244.jpg",
+      "sourcePage": "https://www.rejectshop.com.au/p/optimum-dry-cat-2kg",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0447/0957/6866/files/30154001.jpg?v=1751246967",
+      "sourceKind": "retailer",
+      "shownPack": "2kg Indoor Adult 1+ with Chicken dry cat-food bag; older packaging",
+      "matchStatus": "recipe_match_pack_unverified",
+      "identityEvidence": "Readable front says Optimum Indoor Adult 1+ Years with Chicken, 2kg. Independently consistent with the earlier manufacturer relaunch sheet identifying Indoor Chicken 2kg as a deleted line. Pictured 2kg is not adopted as this pack-unverified catalogue entry. Older pack is not proof of present availability; the incorrect Furball barcode remains removed. Retailer page was readable through web retrieval but direct request returned 404; original photo fetched directly from its linked CDN. Stale Swaggle URL redirects to Purina ONE and is excluded.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-20",
+      "sha256": "b639ee8b25be4c822b13caaf0e38603b9bde96f1e5c3a83a38e705bb76f83749",
+      "rightsStatus": "Public product photograph; no licence grant asserted."
+    },
+    {
+      "appId": 1027,
+      "identity": {
+        "brand": "Ivory Coat",
+        "name": "Grain Free Reduced Fat Turkey",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry \u00b7 2kg",
+        "barcode": null
+      },
+      "localPath": "assets/product-images/reviewed-20261020-1027.jpg",
+      "sourcePage": "https://www.mooeys.com.au/ivory-coat-dog-turkey-2kg/",
+      "imageUrl": "https://cdn11.bigcommerce.com/s-j1t7etwxav/images/stencil/1280x1280/products/905/395/ivory-coat_turkey-reduced-fat-2kg_senior-dog-food.png_ext___51861.1573706210.jpg?c=2",
+      "sourceKind": "retailer",
+      "shownPack": "2kg Grain Free Senior Reduced Fat Turkey dry dog-food bag; older packaging",
+      "matchStatus": "pack_match",
+      "identityEvidence": "Front explicitly says Senior Reduced Fat, Reduced Fat Formula, Grain Free for Adult Dogs, Turkey and Net Wt 2kg. Retailer page names Reduced Fat Senior Turkey 2Kg and includes this photo. Earlier candidate without explicit reduced-fat label remains held. Older photo does not establish current formulation, barcode or image-use rights.",
+      "visualChecked": true,
+      "checkedDate": "2026-10-20",
+      "sha256": "b5dec34b50d3e132bbf36b83e391398f3d722a8e83af9b1210888ae50ff539c4",
+      "rightsStatus": "Public product photograph; no licence grant asserted."
     }
   ]
 }
