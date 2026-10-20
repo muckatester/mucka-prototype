@@ -20,6 +20,8 @@ Explain the important trade-offs in plain language. Separate verified facts, wor
 
 On 20 October 2026 the owner chose local pet-record storage until release. Keep accounts, automatic cloud backup and paid backend services deferred unless the owner changes this decision. Do not repeatedly request Supabase setup. No paid signup, purchase or licence acceptance is authorised by the general instruction to continue work.
 
+The owner prefers exploring a 12-month membership over monthly billing. The 100,000-download ambition is not a forecast or a count of paying customers. Keep acquisition, paid conversion, renewal and contribution margin explicit. Annual prices and a limited portrait allowance remain hypotheses. The owner raised family/children's pet art as an idea; no child-directed launch or claim of being safe for children has been validated or authorised by building a prototype.
+
 Respect existing authorisations for development, testing and the established testing preview. Obtain specific authorisation for new outgoing messages. Keep the distinction between app behaviour, simulated browser tests and physical iPhone tests explicit.
 
 ## Evidence and project records
