@@ -1,6 +1,20 @@
 # Mucka launch review
 
-## Current premium concept checkpoint — 20 October 2026
+## Current local pet records checkpoint — 20 October 2026
+
+Testing version **2026.10.20.4** adds [My pets](../mucka-pets.html) to the main five-item navigation (replacing the Explore shortcut; category browsing and the Explore screen remain available). It starts empty and keeps the [original Plus concept](../mucka-plus.html) separate. Owners can add and edit their own profiles and photos, microchip/registration details, vet notes and reminders. Pet photos are resized to local JPEGs; no pet record or photo upload is performed. No Supabase account or paid backend was created: the owner chose local storage until release.
+
+Profiles, photos, visits and reminders save together in a separate IndexedDB database. Saves are acknowledged after transaction completion; aborted writes retain session edits and allow backup. Revision checks prevent a stale tab from overwriting newer records. Healthy tabs refresh from local changes; unreadable stored records are not silently overwritten. Add/edit/delete flows have validation and destructive confirmations. Deleting a pet removes its associated local records, but not exported backups or calendar events.
+
+A JSON backup contains profiles, photos, visits and reminders. Restoration validates the whole file and photo decodes, shows record counts and asks before atomically replacing current data. Demo and capture backup formats are rejected. Transfer into a clean separate browser context passed. Keep downloaded files private because they contain the entered identifiers, contacts and photos. [Pet storage and privacy explanation](../pet-care-privacy.html).
+
+Monthly/yearly reminders create a next pending occurrence when marked complete; month-end clamping preserves the original day and undo protects an already edited successor. Calendar export includes only the next pending events, converted from the device's local time to UTC, with a one-hour display alarm. The owner must import the file and check calendar alert settings on iPhone. It is not a live calendar feed or Mucka push service. Account sync, automatic cloud backup, push delivery, payments and live AI portraits remain deferred. Prepared Studio examples remain labelled.
+
+Validation: **63 Node checks**, **14 real-pet browser scenarios**, **eight scanner scenarios** and the **13 retained premium-demo scenarios** pass. Pet browser coverage includes photos/reopen, visit/reminder editing, repeating dates/undo, calendar alerts, backup restoration/cancellation, a separate browser transfer, phone layouts/dialogs, aborted writes, stale tabs and navigation back to favourites/manual lookup. Layouts checked at 320/390/768/1100 pixels. Real iPhone photo picking, backup Files handling and calendar import/alert delivery still need the owner's device test.
+
+Catalogue coverage remains 1,080 active products, 973 displayed photos, 107 photo gaps, 474 supported barcode lookups and 606 unresolved barcode cases. The product spreadsheet remains current; the project document and trackers have been updated. Next: field-test one actual pet and a test calendar reminder, then complete remaining app usability/data evidence and launch-scope work. Numerical health assessments remain unvalidated.
+
+## Earlier premium concept checkpoint — 20 October 2026
 
 Testing version **2026.10.20.3** adds [Mucka Plus](../mucka-plus.html), linked from Home and Profile. The responsive preview includes editable sample pet profiles (microchip, registration, usual vet and care notes), a vet-visit timeline, reminders with completion/undo and calendar-file export, demo JSON export/reset, local photo selection and four prepared portrait styles. Proposed A$4.99/month or A$39/year pricing is a customer-testing hypothesis. Studio credits would be separate; no credit price is set.
 

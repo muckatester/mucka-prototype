@@ -86,7 +86,8 @@ test('Profile describes actual browser state instead of demonstration account de
   assert.match(profile, /Viewed this visit/);
   assert.match(profile, /Accounts and memberships are not active/);
   assert.match(profile, /href="mucka-plus.html"/);
-  assert.match(profile, /concept with sample pet profiles/);
+  assert.match(profile, /Pet profiles, photos and care reminders save on this device/);
+  assert.match(profile, /href="mucka-pets.html"/);
   const {c, element} = setup();
   c.showProduct(727);
   c.showProduct(960);
