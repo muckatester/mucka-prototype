@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-20",
+  "version": "2026.10.20.2",
+  "reviewedPhotoGaps": 115,
+  "merges": [
+    {
+      "fromId": 189,
+      "toId": 188,
+      "reason": "Same normalized SavourLife brand, exact named air-dried chicken recipe, species, form and 900g provisional pack; neither row has a barcode. #189 also incorrectly has lamb as its hidden protein. Keep the existing #188 recipe photo and pack qualification; do not infer that 900g is source-verified."
+    },
+    {
+      "fromId": 1013,
+      "toId": 33,
+      "reason": "Same SavourLife grain-free adult chicken dog recipe and 2.5kg catalogue pack, differing only in brand spacing/case and unverified legacy fields. #33 has supported barcode 9347810000501; do not transfer #1013\u2019s unsupported manufacturer or rating claims."
+    }
+  ],
+  "catalogueCorrections": [
+    {
+      "appId": 145,
+      "before": {
+        "type": "Wet \u00b7 100g pouch (12pk)",
+        "foodType": "wet",
+        "identityNotice": null
+      },
+      "after": {
+        "type": "Dry \u00b7 pack size unverified",
+        "foodType": "dry",
+        "identityNotice": "The named beef dry food is confirmed. The earlier wet-pouch description conflicted with it; the exact pack size remains unverified."
+      },
+      "source": "https://www.pedigree.com.au/our-products/dry/pedigree-adult-dry-dog-food-real-beef",
+      "reason": "Manufacturer identifies Adult with Real Beef as dry dog food in several bag sizes. Do not retain the contradictory 12 x 100g wet-pouch pack.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "appId": 185,
+      "before": {
+        "type": "Roll \u00b7 700g",
+        "foodType": "roll",
+        "identityNotice": null
+      },
+      "after": {
+        "type": "Dry \u00b7 pack size unverified",
+        "foodType": "dry",
+        "identityNotice": "The named adult chicken dry food is confirmed. The earlier 700g roll description conflicted with it; the exact pack size remains unverified."
+      },
+      "source": "https://optimumpet.com.au/product/optimumtm-adult-all-breed-chicken-vegetables-rice",
+      "reason": "Manufacturer confirms adult all-breed chicken, vegetables and rice as dry dog food; the photographed 7kg bag supports recipe/form, not the old roll pack.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "appId": 190,
+      "before": {
+        "type": "Dry \u00b7 800g",
+        "foodType": "dry",
+        "identityNotice": "Catalogue identity needs review. A conflicting barcode has been removed; the exact product variant and pack barcode still need verification."
+      },
+      "after": {
+        "type": "Wet \u00b7 pack size unverified",
+        "foodType": "wet",
+        "identityNotice": "Mixed Favourites in Jelly is kitten wet food. The earlier dry 800g description was incorrect. This listing\u2019s single-pouch or multipack identity still needs confirmation."
+      },
+      "source": "https://www.whiskas.com.au/our-products/wet/whiskas-2-12-months-kitten-wet-cat-food-mixed-favourites-jelly-12x85g-pouch",
+      "reason": "Manufacturer confirms kitten jelly wet food; no basis to convert this pack-unclear row into a specific multipack or merge it with #970.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "appId": 324,
+      "before": {
+        "type": "Treat \u00b7 85g",
+        "foodType": "treat",
+        "identityNotice": null
+      },
+      "after": {
+        "type": "Wet \u00b7 pack size unverified",
+        "foodType": "wet",
+        "identityNotice": "The named venison canned dog food is confirmed as wet food. The earlier 85g treat description conflicted with it; this listing\u2019s exact pack and barcode remain unverified."
+      },
+      "source": "https://ziwipets.com/en-au/collections/wet-canned-dog-food",
+      "reason": "Manufacturer identifies Venison dog recipe as canned wet food, not 85g treats. Do not replace its barcode with one inferred from a photo filename.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "appId": 926,
+      "before": {
+        "type": "dry",
+        "foodType": "dry",
+        "petType": "dog",
+        "identityNotice": null
+      },
+      "after": {
+        "type": "Supplement \u00b7 pack size unverified",
+        "foodType": "supplement",
+        "petType": "both",
+        "identityNotice": "Skin & Coat Formula is a powdered nutritional supplement for dogs and cats. It is not a complete dry food; its exact pack size remains unverified."
+      },
+      "source": "https://www.vetsupply.com.au/vet-s-all-natural-skin-coat-formula-pack.aspx",
+      "reason": "Exact named Skin & Coat Formula is a powder supplement for dogs and cats; the old HealthChews photo is a different product.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "appId": 244,
+      "before": {
+        "barcode": "9334214066516",
+        "type": "Dry \u00b7 1.5kg",
+        "identityNotice": null
+      },
+      "after": {
+        "barcode": null,
+        "type": "Dry \u00b7 pack size unverified",
+        "identityNotice": "Indoor Chicken is documented as an older 2kg cat-food product. This listing\u2019s earlier 1.5kg pack is unsupported, and its recorded barcode belonged to Furball 2.8kg, so it has been removed."
+      },
+      "source": "https://d347awuzx0kdse.cloudfront.net/westernpet/content-file/Optimum%20Dry%20Cat%20Relaunch%202025.pdf?v=6ab9aa0f0d4f5819785eddce020828404f8d3bc2",
+      "reason": "Brand relaunch sheet identifies 9334214066516 as Furball 2.8kg; Indoor Chicken 2kg is a deleted line. Coles also records the older 2kg Indoor product. No barcode replacement or current-availability claim.",
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "newSourcedPhotoIds": [
+    141,
+    145,
+    190,
+    324,
+    379,
+    926
+  ],
+  "restoredReviewedPhotoIds": [
+    185
+  ],
+  "heldCandidateDecisions": [
+    {
+      "appId": 1027,
+      "reason": "Downloaded retailer image is Adult All Breeds Turkey, not an explicitly Mature/Reduced Fat front; remains withheld despite retailer page title."
+    },
+    {
+      "appId": 299,
+      "reason": "Only 120px historical mixed-selection image recovered; larger file 404. Too small to validate all recipe/pack text. No Fish/Meat Selection substitution."
+    },
+    {
+      "appId": 244,
+      "reason": "Removed demonstrably wrong Furball barcode and unsupported pack; exact Indoor photo still unavailable."
+    }
+  ],
+  "scope": "No new barcode associations or nutrition ratings. Original product rows and legacy image audit retained; duplicates are redirected and excluded from active catalogue."
+}

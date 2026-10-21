@@ -1,0 +1,957 @@
+{
+  "date": "2026-10-20",
+  "merged": [
+    {
+      "fromId": 189,
+      "toId": 188,
+      "reason": "Same normalized SavourLife brand, exact named air-dried chicken recipe, species, form and 900g provisional pack; neither row has a barcode. #189 also incorrectly has lamb as its hidden protein. Keep the existing #188 recipe photo and pack qualification; do not infer that 900g is source-verified."
+    },
+    {
+      "fromId": 1013,
+      "toId": 33,
+      "reason": "Same SavourLife grain-free adult chicken dog recipe and 2.5kg catalogue pack, differing only in brand spacing/case and unverified legacy fields. #33 has supported barcode 9347810000501; do not transfer #1013’s unsupported manufacturer or rating claims."
+    }
+  ],
+  "remainingGroups": [
+    {
+      "ids": [
+        87,
+        242,
+        76
+      ],
+      "brand": "Supercoat",
+      "name": "Adult Chicken",
+      "decision": "retain_separate",
+      "reason": "Species differ or are unresolved; do not merge.",
+      "products": [
+        {
+          "id": 87,
+          "type": "Dry · 7.5kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9300605111110"
+        },
+        {
+          "id": 242,
+          "type": "Dry · 800g",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": "122013000172"
+        },
+        {
+          "id": 76,
+          "type": "Dry · 2.5kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9300605141223"
+        }
+      ]
+    },
+    {
+      "ids": [
+        85,
+        91
+      ],
+      "brand": "Supercoat",
+      "name": "Puppy Chicken",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 85,
+          "type": "Dry · 3kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9310022020506"
+        },
+        {
+          "id": 91,
+          "type": "Dry · 7.5kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9300605147423"
+        }
+      ]
+    },
+    {
+      "ids": [
+        227,
+        243,
+        204,
+        488
+      ],
+      "brand": "Purina Pro Plan",
+      "name": "Kitten Chicken",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 227,
+          "type": "Dry · 1.5kg",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": "9300605132955"
+        },
+        {
+          "id": 243,
+          "type": "Dry · 800g",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": "9334214044842"
+        },
+        {
+          "id": 204,
+          "type": "Dry · 1.58kg",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": null
+        },
+        {
+          "id": 488,
+          "type": "Dry · 3.5kg",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": "9300605132474"
+        }
+      ]
+    },
+    {
+      "ids": [
+        211,
+        1100
+      ],
+      "brand": "Advance",
+      "name": "Adult Ocean Fish",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 211,
+          "type": "Dry · 3kg",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": "9310022567308"
+        },
+        {
+          "id": 1100,
+          "type": "Dry · 4kg",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": "9334214065069"
+        }
+      ]
+    },
+    {
+      "ids": [
+        79,
+        1166
+      ],
+      "brand": "Purina Pro Plan",
+      "name": "Small & Mini Adult Chicken",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 79,
+          "type": "Dry · 2.5kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9300605149519"
+        },
+        {
+          "id": 1166,
+          "type": "Dry · 7kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9300605149557"
+        }
+      ]
+    },
+    {
+      "ids": [
+        90,
+        843
+      ],
+      "brand": "Supercoat",
+      "name": "Adult Healthy Weight Chicken",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 90,
+          "type": "Dry · 18kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9300605110878"
+        },
+        {
+          "id": 843,
+          "type": "Dry · 2.6kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9300605147348"
+        }
+      ]
+    },
+    {
+      "ids": [
+        94,
+        1101
+      ],
+      "brand": "Optimum",
+      "name": "Adult Small Breed Chicken",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 94,
+          "type": "Dry · 3kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9334214019482"
+        },
+        {
+          "id": 1101,
+          "type": "Dry · 15kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9334214027333"
+        }
+      ]
+    },
+    {
+      "ids": [
+        210,
+        1043
+      ],
+      "brand": "Advance",
+      "name": "Healthy Weight Adult Chicken",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 210,
+          "type": "Dry · 1.5kg",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": "9334214065175"
+        },
+        {
+          "id": 1043,
+          "type": "Dry · 2kg",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": "9334214045689"
+        }
+      ]
+    },
+    {
+      "ids": [
+        190,
+        264,
+        970
+      ],
+      "brand": "Whiskas",
+      "name": "Kitten Mixed Favourites in Jelly",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 190,
+          "type": "Wet · pack size unverified",
+          "petType": "cat",
+          "foodType": "wet",
+          "barcode": null
+        },
+        {
+          "id": 264,
+          "type": "Wet · 85g pouch",
+          "petType": "cat",
+          "foodType": "wet",
+          "barcode": null
+        },
+        {
+          "id": 970,
+          "type": "Wet · 12 x 85g",
+          "petType": "cat",
+          "foodType": "wet",
+          "barcode": "9334214053486"
+        }
+      ]
+    },
+    {
+      "ids": [
+        65,
+        593
+      ],
+      "brand": "Hill's Science Diet",
+      "name": "Perfect Weight",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 65,
+          "type": "Dry · 1.81kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "052742297200"
+        },
+        {
+          "id": 593,
+          "type": "Dry · 11.34kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "052742060545"
+        }
+      ]
+    },
+    {
+      "ids": [
+        267,
+        509
+      ],
+      "brand": "Fancy Feast",
+      "name": "Classic Paté Beef & Chicken Feast",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 267,
+          "type": "Wet · 85g",
+          "petType": "cat",
+          "foodType": "wet",
+          "barcode": "8850124099228"
+        },
+        {
+          "id": 509,
+          "type": "Wet · 85g x 24",
+          "petType": "cat",
+          "foodType": "wet",
+          "barcode": "8850127003383"
+        }
+      ]
+    },
+    {
+      "ids": [
+        1022,
+        1186
+      ],
+      "brand": "Black Hawk",
+      "name": "Original Adult Lamb & Rice",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 1022,
+          "type": "Dry · 3kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9338362000941"
+        },
+        {
+          "id": 1186,
+          "type": "Dry · 20kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9338362000910"
+        }
+      ]
+    },
+    {
+      "ids": [
+        221,
+        33
+      ],
+      "brand": "SavourLife",
+      "name": "Grain Free Adult Chicken",
+      "decision": "retain_separate",
+      "reason": "Species differ or are unresolved; do not merge.",
+      "products": [
+        {
+          "id": 221,
+          "type": "Dry · 2kg",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": null
+        },
+        {
+          "id": 33,
+          "type": "Dry · 2.5kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9347810000501"
+        }
+      ]
+    },
+    {
+      "ids": [
+        161,
+        1178
+      ],
+      "brand": "Wellness",
+      "name": "CORE Grain Free Ocean Formula",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 161,
+          "type": "Wet · 354g can",
+          "petType": "dog",
+          "foodType": "wet",
+          "barcode": null
+        },
+        {
+          "id": 1178,
+          "type": "Dry",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "76344884132"
+        }
+      ]
+    },
+    {
+      "ids": [
+        119,
+        247
+      ],
+      "brand": "Vetalogica",
+      "name": "Naturals Grain Free Chicken Adult",
+      "decision": "retain_separate",
+      "reason": "Species differ or are unresolved; do not merge.",
+      "products": [
+        {
+          "id": 119,
+          "type": "Dry · 3kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9340621000869"
+        },
+        {
+          "id": 247,
+          "type": "Dry · 3kg",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": "9310023144003"
+        }
+      ]
+    },
+    {
+      "ids": [
+        400,
+        739
+      ],
+      "brand": "Nature's Gift",
+      "name": "Casserole Chicken & Rice",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 400,
+          "type": "Wet · 1.2kg",
+          "petType": "dog",
+          "foodType": "wet",
+          "barcode": null
+        },
+        {
+          "id": 739,
+          "type": "dry",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9314364337568"
+        }
+      ]
+    },
+    {
+      "ids": [
+        456,
+        457
+      ],
+      "brand": "Fussy Cat",
+      "name": "Chicken & Turkey with Cranberry Tray",
+      "decision": "retain_separate",
+      "reason": "Different unverified barcodes or incomplete identities require further evidence before merging.",
+      "products": [
+        {
+          "id": 456,
+          "type": "Wet · 85g",
+          "petType": "cat",
+          "foodType": "wet",
+          "barcode": "9310085001399"
+        },
+        {
+          "id": 457,
+          "type": "Wet · 85g",
+          "petType": "cat",
+          "foodType": "wet",
+          "barcode": "9310085001412"
+        }
+      ]
+    },
+    {
+      "ids": [
+        4,
+        13,
+        14
+      ],
+      "brand": "Absolute Holistic",
+      "name": "Air Dried Dog Food — Beef & Venison",
+      "decision": "retain_separate",
+      "reason": "Different unverified barcodes or incomplete identities require further evidence before merging.",
+      "products": [
+        {
+          "id": 4,
+          "type": "air-dried",
+          "petType": "dog",
+          "foodType": "air-dried",
+          "barcode": "763163284082"
+        },
+        {
+          "id": 13,
+          "type": "Air-Dried",
+          "petType": "dog",
+          "foodType": "air-dried",
+          "barcode": "9344154021445"
+        },
+        {
+          "id": 14,
+          "type": "Air-Dried",
+          "petType": "dog",
+          "foodType": "air-dried",
+          "barcode": "780348002774"
+        }
+      ]
+    },
+    {
+      "ids": [
+        1008,
+        1044
+      ],
+      "brand": "Advance",
+      "name": "Sensitive Skin & Digestion Adult Cat",
+      "decision": "retain_separate",
+      "reason": "Different unverified barcodes or incomplete identities require further evidence before merging.",
+      "products": [
+        {
+          "id": 1008,
+          "type": "dry",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": "100000102504"
+        },
+        {
+          "id": 1044,
+          "type": "dry",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": "9318191901015"
+        }
+      ]
+    },
+    {
+      "ids": [
+        631,
+        638
+      ],
+      "brand": "Leaps & Bounds",
+      "name": "Adult Lamb Casserole Can",
+      "decision": "retain_separate",
+      "reason": "Different unverified barcodes or incomplete identities require further evidence before merging.",
+      "products": [
+        {
+          "id": 631,
+          "type": "Wet",
+          "petType": "dog",
+          "foodType": "wet",
+          "barcode": "9319185007034"
+        },
+        {
+          "id": 638,
+          "type": "Wet",
+          "petType": "dog",
+          "foodType": "wet",
+          "barcode": "9339687428335"
+        }
+      ]
+    },
+    {
+      "ids": [
+        635,
+        639
+      ],
+      "brand": "Leaps & Bounds",
+      "name": "Essentials Adult with Beef",
+      "decision": "retain_separate",
+      "reason": "Different unverified barcodes or incomplete identities require further evidence before merging.",
+      "products": [
+        {
+          "id": 635,
+          "type": "dry",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9332613005341"
+        },
+        {
+          "id": 639,
+          "type": "dry",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9319185009472"
+        }
+      ]
+    },
+    {
+      "ids": [
+        641,
+        716
+      ],
+      "brand": "Leaps & Bounds",
+      "name": "Variety Baked Dog Treat",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 641,
+          "type": "treat",
+          "petType": "dog",
+          "foodType": "treat",
+          "barcode": "9300605162204"
+        },
+        {
+          "id": 716,
+          "type": "Treat · 700g",
+          "petType": "dog",
+          "foodType": "treat",
+          "barcode": "9345740100582"
+        }
+      ]
+    },
+    {
+      "ids": [
+        644,
+        645,
+        1143
+      ],
+      "brand": "Leaps & Bounds",
+      "name": "Kitten Chicken Dry Cat Food",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 644,
+          "type": "Dry · 1.5kg",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": "9345740125158"
+        },
+        {
+          "id": 645,
+          "type": "Dry · 3.2kg",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": "9345740080235"
+        },
+        {
+          "id": 1143,
+          "type": "Dry · 7kg",
+          "petType": "cat",
+          "foodType": "dry",
+          "barcode": "9345740125165"
+        }
+      ]
+    },
+    {
+      "ids": [
+        647,
+        718
+      ],
+      "brand": "Leaps & Bounds",
+      "name": "Puppy Chicken & Rice Dry",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 647,
+          "type": "Dry · 15kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9345740051976"
+        },
+        {
+          "id": 718,
+          "type": "Dry · 3.2kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9345740051952"
+        }
+      ]
+    },
+    {
+      "ids": [
+        675,
+        676
+      ],
+      "brand": "Leaps & Bounds",
+      "name": "Grain Free Chicken with Vegetables Can",
+      "decision": "retain_separate",
+      "reason": "Different unverified barcodes or incomplete identities require further evidence before merging.",
+      "products": [
+        {
+          "id": 675,
+          "type": "Wet",
+          "petType": "dog",
+          "foodType": "wet",
+          "barcode": null
+        },
+        {
+          "id": 676,
+          "type": "Wet",
+          "petType": "dog",
+          "foodType": "wet",
+          "barcode": "9319185009663"
+        }
+      ]
+    },
+    {
+      "ids": [
+        687,
+        690
+      ],
+      "brand": "Leaps & Bounds",
+      "name": "Adult Kangaroo & Vegetable Dry",
+      "decision": "retain_separate",
+      "reason": "Different unverified barcodes or incomplete identities require further evidence before merging.",
+      "products": [
+        {
+          "id": 687,
+          "type": "Dry",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9334214063270"
+        },
+        {
+          "id": 690,
+          "type": "dry",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9334214007380"
+        }
+      ]
+    },
+    {
+      "ids": [
+        858,
+        1161
+      ],
+      "brand": "Purina Pro Plan",
+      "name": "Medium Puppy Chicken",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 858,
+          "type": "Dry · 3kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9300605149687"
+        },
+        {
+          "id": 1161,
+          "type": "Dry · 15kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "9300605149649"
+        }
+      ]
+    },
+    {
+      "ids": [
+        861,
+        866
+      ],
+      "brand": "Royal Canin",
+      "name": "Breed Health - Chihuahua Adult",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 861,
+          "type": "Dry · 1.5kg",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": "3182550728102"
+        },
+        {
+          "id": 866,
+          "type": "dry",
+          "petType": "dog",
+          "foodType": "dry",
+          "barcode": null
+        }
+      ]
+    },
+    {
+      "ids": [
+        909,
+        912
+      ],
+      "brand": "Temptations",
+      "name": "Cat Treats Tempting Tuna",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 909,
+          "type": "treat",
+          "petType": "cat",
+          "foodType": "treat",
+          "barcode": "058496723026"
+        },
+        {
+          "id": 912,
+          "type": "Treat · 85g",
+          "petType": "cat",
+          "foodType": "treat",
+          "barcode": "8853301001786"
+        }
+      ]
+    },
+    {
+      "ids": [
+        927,
+        929
+      ],
+      "brand": "VitaPet",
+      "name": "Chewz Chicken Wrapped Rawhide",
+      "decision": "retain_separate",
+      "reason": "Different unverified barcodes or incomplete identities require further evidence before merging.",
+      "products": [
+        {
+          "id": 927,
+          "type": "Treat",
+          "petType": "dog",
+          "foodType": "treat",
+          "barcode": "9312239045853"
+        },
+        {
+          "id": 929,
+          "type": "Treat",
+          "petType": "dog",
+          "foodType": "treat",
+          "barcode": "9400539190974"
+        }
+      ]
+    },
+    {
+      "ids": [
+        930,
+        931
+      ],
+      "brand": "VitaPet",
+      "name": "Jerhigh Chicken Tenders",
+      "decision": "retain_separate",
+      "reason": "Stated packs/forms differ or are unknown; possible related recipes are not duplicate saleable packs.",
+      "products": [
+        {
+          "id": 930,
+          "type": "Treat · 200g",
+          "petType": "dog",
+          "foodType": "treat",
+          "barcode": "9312239029143"
+        },
+        {
+          "id": 931,
+          "type": "Treat",
+          "petType": "dog",
+          "foodType": "treat",
+          "barcode": "122914000022"
+        }
+      ]
+    },
+    {
+      "ids": [
+        945,
+        1177
+      ],
+      "brand": "Wellness",
+      "name": "CORE Signature Selects Kitten Chicken & Turkey Pâté",
+      "decision": "retain_separate",
+      "reason": "Different unverified barcodes or incomplete identities require further evidence before merging.",
+      "products": [
+        {
+          "id": 945,
+          "type": "Wet",
+          "petType": "cat",
+          "foodType": "wet",
+          "barcode": null
+        },
+        {
+          "id": 1177,
+          "type": "Wet",
+          "petType": "cat",
+          "foodType": "wet",
+          "barcode": "300650481182"
+        }
+      ]
+    },
+    {
+      "ids": [
+        1118,
+        1119,
+        1120
+      ],
+      "brand": "Felix",
+      "name": "Doubly Delicious Meat Selection in Jelly",
+      "decision": "retain_separate",
+      "reason": "Species differ or are unresolved; do not merge.",
+      "products": [
+        {
+          "id": 1118,
+          "type": "Wet · 12 x 85g",
+          "petType": "cat",
+          "foodType": "wet",
+          "barcode": "9300605118218"
+        },
+        {
+          "id": 1119,
+          "type": "Wet",
+          "petType": null,
+          "foodType": null,
+          "barcode": "5000161029778"
+        },
+        {
+          "id": 1120,
+          "type": "Wet",
+          "petType": null,
+          "foodType": null,
+          "barcode": "5000161029785"
+        }
+      ]
+    },
+    {
+      "ids": [
+        1152,
+        1153
+      ],
+      "brand": "Purina Pro Plan",
+      "name": "Adult 7+ Chicken in Gravy",
+      "decision": "retain_separate",
+      "reason": "Different unverified barcodes or incomplete identities require further evidence before merging.",
+      "products": [
+        {
+          "id": 1152,
+          "type": "Wet",
+          "petType": null,
+          "foodType": null,
+          "barcode": "9300605127982"
+        },
+        {
+          "id": 1153,
+          "type": "Wet",
+          "petType": null,
+          "foodType": null,
+          "barcode": "9300605153905"
+        }
+      ]
+    }
+  ]
+}

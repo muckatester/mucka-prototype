@@ -1,0 +1,120 @@
+{
+  "checkedAt": "2026-10-13",
+  "description": "Single full sweep of all 624 previously unresolved records. Six exact product-and-pack associations were promoted; thirteen clearly wrong recorded codes were removed. Online sources do not constitute physical pack scans. Full worklist and captured source files remain in the local Barcode_Full_624_2026-10-13 folder.",
+  "records": [
+    {
+      "appId": 332,
+      "action": "associate_exact_pack",
+      "barcode": "5010394984577",
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Dentastix Small Dog",
+        "petType": "dog",
+        "foodType": "treat (dental)",
+        "type": "Treat (Dental) · 7pk",
+        "barcode": "5010394984577"
+      },
+      "pack": "7 chews (110g)",
+      "sourcePage": "https://vetslovepets.com.au/products/dentastix-small-110g",
+      "sourceTitle": "Pedigree DentaStix Small",
+      "sourceSha256": "ab38b97e33ddb47947de885d955855459259339b98bc7ac502c1891101be881c",
+      "sourceFile": "/Users/stuart-minion/Documents/GitHub/Mucka_Review_2026-09-14/Barcode_Search_2026-10-13/sources/vetslovepets-53908fd58a1d1a52.json",
+      "observation": "Pedigree DentaStix Small, 7 chews/110g. Exact variant barcode in retailer product JSON; confirmed by an Australian retailer barcode list. Online only; packet not scanned."
+    },
+    {
+      "appId": 333,
+      "action": "associate_exact_pack",
+      "barcode": "5010394984584",
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Dentastix Medium Dog",
+        "petType": "dog",
+        "foodType": "treat (dental)",
+        "type": "Treat (Dental) · 7pk",
+        "barcode": "5010394984584"
+      },
+      "pack": "7 chews (180g)",
+      "sourcePage": "https://vetslovepets.com.au/products/dentastix-medium-180g",
+      "sourceTitle": "Pedigree DentaStix Medium",
+      "sourceSha256": "98ab22c24071cf0773c8a8c81867efd235a8119f3093d24c27c1daff2e15aa10",
+      "sourceFile": "/Users/stuart-minion/Documents/GitHub/Mucka_Review_2026-09-14/Barcode_Search_2026-10-13/sources/vetslovepets-605e28874b96c18b.json",
+      "observation": "Pedigree DentaStix Medium, 7 chews/180g. Exact variant barcode in retailer product JSON; confirmed by an Australian retailer barcode list. Online only; packet not scanned."
+    },
+    {
+      "appId": 334,
+      "action": "associate_exact_pack",
+      "barcode": "5998749109113",
+      "identity": {
+        "brand": "Pedigree",
+        "name": "Dentastix Large Dog",
+        "petType": "dog",
+        "foodType": "treat (dental)",
+        "type": "Treat (Dental) · 7pk",
+        "barcode": "5998749109113"
+      },
+      "pack": "7 chews (270g)",
+      "sourcePage": "https://www.pedigree.com.au/node/23221",
+      "sourceTitle": "PEDIGREE DentaStix Large/Giant Dog 7pk 270g",
+      "sourceSha256": "dab294d16e201b66911edf73a83f1e870e2f7e86e7df6a6b2123a9d3f3705b27",
+      "sourceFile": "/Users/stuart-minion/Documents/GitHub/Mucka_Review_2026-09-14/Barcode_Full_624_2026-10-13/sources/pedigree-large7.html",
+      "observation": "Pedigree Australia identifies Large/Giant Dog 7pk 270g and SKU 5998749109113. Online only; packet not scanned."
+    },
+    {
+      "appId": 350,
+      "action": "associate_exact_pack",
+      "barcode": "9353793000063",
+      "identity": {
+        "brand": "FurFresh",
+        "name": "Freeze-Dried Chicken Breast",
+        "petType": "dog",
+        "foodType": "treat",
+        "type": "Treat · 70g",
+        "barcode": "9353793000063"
+      },
+      "pack": "70g",
+      "sourcePage": "https://www.petbarn.com.au/p/furfresh-freeze-dried-chicken-breast-dog-treat-70g",
+      "sourceTitle": "Furfresh Freeze Dried Chicken Breast Dog & Cat Treat 70g",
+      "sourceSha256": "0a7f3eee6c299b8e508162014147e7f7544ee1652d41e4ac9c0765e1bcb98d8f",
+      "sourceFile": "/Users/stuart-minion/Documents/GitHub/Mucka_Review_2026-09-14/Barcode_Search_Round2_2026-10-13/sources/petbarn-6299dac0473f26ea.html",
+      "observation": "FurFresh freeze-dried chicken breast dog-and-cat treats 70g; exact Petbarn structured-data GTIN. Replaces a number independently associated with The Paw Grocer chicken necks 90g. Online only; packet not scanned."
+    },
+    {
+      "appId": 235,
+      "action": "associate_exact_pack",
+      "barcode": "793618002978",
+      "identity": {
+        "brand": "Meals for Meows",
+        "name": "Duck",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 2.5kg",
+        "barcode": "793618002978"
+      },
+      "pack": "2.5kg",
+      "sourcePage": "https://www.vetnpetdirect.com.au/products/mfm-meals-for-mutts-duck-super-premium-grain-gluten-free-cat-food-2-5kg",
+      "sourceTitle": "MfM Duck Single Protein Grain & Gluten Free Cat Food 2.5kg",
+      "sourceSha256": "85b43185ebcb26e5225d6d5358b9dd0f2972887809a5d2d4512d92e7476c4173",
+      "sourceFile": "/Users/stuart-minion/Documents/GitHub/Mucka_Review_2026-09-14/Barcode_Search_Round2_2026-10-13/sources/vetnpet-8c71b58a10f102e1.json",
+      "observation": "Meals for Meows single-protein duck dry cat food 2.5kg; exact retailer variant barcode. A misleading URL slug says Mutts, but the product title, variant and another retailer identify Meows cat food. Online only; packet not scanned."
+    },
+    {
+      "appId": 567,
+      "action": "associate_exact_pack",
+      "barcode": "0052742400501",
+      "identity": {
+        "brand": "Hill's Prescription Diet",
+        "name": "t/d Dental Care Small Bites",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 2.25kg",
+        "barcode": "0052742400501"
+      },
+      "pack": "2.25kg",
+      "sourcePage": "https://www.petbarn.com.au/p/hill-s-prescription-diet-t-d-dent-care-sm-bt-adult-dog-food-2-25kg",
+      "sourceTitle": "Hill's Prescription Diet t/d Small Bites Dental Care Dry Dog Food 2.25kg",
+      "sourceSha256": "1fc87690bde1e5da0c0f7becedce75905822e55efbddadc37059bca276305935",
+      "sourceFile": "/Users/stuart-minion/Documents/GitHub/Mucka_Review_2026-09-14/Barcode_Search_Round2_2026-10-13/sources/petbarn-e506dfa173bdfa0e.html",
+      "observation": "Hill’s Prescription Diet t/d Small Bites Dental Care dry dog food 2.25kg; exact Petbarn structured-data UPC (leading-zero EAN equivalent). Generic catalogue identity is narrowed to the evidenced SKU. Online only; packet not scanned."
+    }
+  ]
+}

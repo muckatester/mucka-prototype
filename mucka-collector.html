@@ -1,692 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="assets/beta-config.js"></script>
+<script src="assets/beta-location.js"></script>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Mucka Collector</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#202c94">
+<title>My captures · Mucka</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-<style>
-  :root {
-    --navy: #202C94; --sky: #75CFE7; --orange: #EF973F;
-    --bg: #f0f4f8; --white: #ffffff; --text: #2d3748;
-    --muted: #718096; --border: #e2e8f0; --green: #38a169; --red: #e53e3e;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
-  body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); max-width: 480px; margin: 0 auto; min-height: 100vh; }
-
-  /* HEADER */
-  .header {
-    background: linear-gradient(135deg, var(--navy), var(--sky));
-    padding: 14px 20px 12px; color: white; position: sticky; top: 0; z-index: 100;
-    box-shadow: 0 2px 12px rgba(32,44,148,0.3); display: flex; align-items: center; justify-content: space-between;
-  }
-  .app-title { font-size: 20px; font-weight: 800; }
-  .app-title span { color: var(--orange); }
-  .app-sub { font-size: 10px; opacity: 0.8; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 1px; }
-  .counter-pill { background: rgba(255,255,255,0.2); border: 2px solid rgba(255,255,255,0.35); border-radius: 20px; padding: 5px 14px; display: flex; align-items: center; gap: 6px; cursor: pointer; }
-  .counter-num { font-size: 22px; font-weight: 800; color: var(--orange); line-height: 1; }
-  .counter-label { font-size: 10px; font-weight: 600; line-height: 1.2; opacity: 0.9; }
-
-  /* CONTENT */
-  .content { padding: 16px 16px 90px; }
-  .screen { display: none; }
-  .screen.active { display: block; }
-
-  /* CARDS */
-  .card { background: white; border-radius: 14px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-
-  /* BUTTONS */
-  .btn { width: 100%; padding: 15px 20px; border: none; border-radius: 12px; font-size: 15px; font-weight: 700; font-family: 'Poppins', sans-serif; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: transform 0.15s; margin-bottom: 10px; }
-  .btn:active { transform: scale(0.97); }
-  .btn:last-child { margin-bottom: 0; }
-  .btn-orange { background: linear-gradient(135deg, var(--orange), #f5a84a); color: white; box-shadow: 0 4px 14px rgba(239,151,63,0.35); }
-  .btn-green { background: linear-gradient(135deg, var(--green), #48bb78); color: white; box-shadow: 0 4px 14px rgba(56,161,105,0.3); }
-  .btn-ghost { background: white; color: var(--muted); border: 2px solid var(--border); box-shadow: none; }
-  .btn-red { background: white; color: var(--red); border: 2px solid var(--red); box-shadow: none; }
-  .btn-navy { background: linear-gradient(135deg, var(--navy), #2d3db5); color: white; box-shadow: 0 4px 14px rgba(32,44,148,0.3); }
-
-  /* SCANNER OVERLAY */
-  .scanner-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 200; display: none; flex-direction: column; align-items: center; justify-content: center; padding: 20px; }
-  .scanner-overlay.active { display: flex; }
-  .scan-header { text-align: center; margin-bottom: 20px; }
-  .scan-header .sh-count { font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 4px; }
-  .scan-header .sh-title { font-size: 18px; font-weight: 700; color: white; }
-  #qr-reader { width: 270px; height: 270px; border-radius: 16px; overflow: hidden; position: relative; border: 3px solid var(--sky); }
-  .scan-line { position: absolute; width: 100%; height: 3px; background: var(--sky); box-shadow: 0 0 10px var(--sky); animation: scanMove 1.5s ease-in-out infinite; z-index: 10; pointer-events: none; }
-  @keyframes scanMove { 0%{top:0} 50%{top:calc(100% - 3px)} 100%{top:0} }
-  .scan-tip { color: rgba(255,255,255,0.5); font-size: 12px; margin-top: 14px; text-align: center; }
-  .scanner-or { color: rgba(255,255,255,0.35); font-size: 11px; margin: 14px 0 10px; text-transform: uppercase; letter-spacing: 1px; }
-  .manual-input { width: 100%; max-width: 270px; padding: 11px 16px; border: 2px solid rgba(255,255,255,0.2); border-radius: 10px; font-size: 15px; font-family: 'Poppins', sans-serif; background: rgba(255,255,255,0.1); color: white; text-align: center; outline: none; margin-bottom: 8px; }
-  .manual-input::placeholder { color: rgba(255,255,255,0.3); }
-  .manual-input:focus { border-color: var(--sky); }
-  .btn-manual-go { width: 100%; max-width: 270px; padding: 11px; background: var(--sky); color: var(--navy); border: none; border-radius: 10px; font-size: 14px; font-weight: 700; font-family: 'Poppins', sans-serif; cursor: pointer; margin-bottom: 14px; }
-  .btn-cancel-scan { color: rgba(255,255,255,0.45); font-size: 13px; background: none; border: 1px solid rgba(255,255,255,0.15); padding: 9px 28px; border-radius: 10px; cursor: pointer; font-family: 'Poppins', sans-serif; }
-
-  /* RESULT OVERLAY — shown over scanner screen after scan */
-  .result-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 150; display: none; align-items: flex-end; justify-content: center; padding: 0 16px 100px; }
-  .result-overlay.active { display: flex; }
-  .result-sheet { background: white; border-radius: 20px 20px 16px 16px; padding: 20px; width: 100%; max-width: 448px; box-shadow: 0 -8px 40px rgba(0,0,0,0.3); animation: slideUp 0.25s ease-out; }
-  @keyframes slideUp { from{transform:translateY(40px);opacity:0} to{transform:translateY(0);opacity:1} }
-
-  .result-found { border-top: 5px solid var(--green); }
-  .result-notfound { border-top: 5px solid var(--orange); }
-
-  .result-top { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
-  .result-icon { font-size: 36px; flex-shrink: 0; }
-  .result-info { flex: 1; }
-  .result-title { font-size: 16px; font-weight: 800; }
-  .result-bc { font-size: 11px; color: var(--muted); font-family: monospace; margin-top: 2px; }
-
-  /* PHOTO */
-  .photo-preview { width: 100%; border-radius: 10px; overflow: hidden; margin-bottom: 10px; background: var(--bg); min-height: 120px; display: flex; align-items: center; justify-content: center; position: relative; border: 2px dashed var(--border); }
-  .photo-preview img { width: 100%; display: block; border-radius: 10px; }
-  .photo-preview.has-photo { border: none; min-height: auto; }
-  .retake-btn { position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.55); color: white; border: none; border-radius: 6px; padding: 5px 10px; font-size: 11px; font-weight: 600; font-family: 'Poppins', sans-serif; cursor: pointer; }
-  .file-input { display: none; }
-
-  /* QUEUE SCREEN */
-  .queue-hero { background: linear-gradient(135deg, var(--navy), #2d3db5); border-radius: 16px; padding: 16px 18px; color: white; margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; }
-  .qh-left .qh-count { font-size: 32px; font-weight: 800; color: var(--orange); line-height: 1; }
-  .qh-left .qh-label { font-size: 12px; opacity: 0.8; font-weight: 500; }
-  .qh-right { display: flex; flex-direction: column; gap: 8px; }
-
-  .queue-item { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); }
-  .queue-item:last-child { border-bottom: none; }
-  .queue-num { width: 28px; height: 28px; background: linear-gradient(135deg, var(--navy), var(--sky)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: white; flex-shrink: 0; }
-  .queue-info { flex: 1; min-width: 0; }
-  .queue-barcode { font-size: 13px; font-weight: 700; font-family: monospace; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .queue-meta { font-size: 11px; color: var(--muted); margin-top: 2px; }
-  .queue-photo-thumb { width: 36px; height: 36px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
-
-  .empty { text-align: center; padding: 28px 16px; color: var(--muted); }
-  .empty .e-icon { font-size: 44px; display: block; margin-bottom: 10px; opacity: 0.4; }
-  .empty .e-text { font-size: 14px; }
-
-  /* BOTTOM NAV */
-  .bottom-nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; background: white; display: flex; align-items: flex-end; border-top: 3px solid var(--orange); z-index: 100; padding: 6px 0 max(8px, env(safe-area-inset-bottom)); }
-  .nav-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 6px 0; cursor: pointer; color: var(--muted); border: none; background: none; font-family: 'Poppins', sans-serif; transition: color 0.2s; }
-  .nav-item.active { color: var(--navy); }
-  .nav-item .ni { font-size: 22px; }
-  .nav-item .nl { font-size: 10px; font-weight: 700; }
-  .nav-scan-btn { flex: 1.2; display: flex; flex-direction: column; align-items: center; cursor: pointer; border: none; background: none; font-family: 'Poppins', sans-serif; padding: 0; }
-  .nav-scan-circle { width: 58px; height: 58px; border-radius: 50%; background: linear-gradient(135deg, var(--orange), var(--navy)); display: flex; align-items: center; justify-content: center; border: 3px solid white; box-shadow: 0 4px 16px rgba(239,151,63,0.5); transform: translateY(-20px); margin-bottom: -12px; font-size: 24px; transition: transform 0.15s; }
-  .nav-scan-btn:active .nav-scan-circle { transform: translateY(-18px) scale(0.95); }
-  .nav-scan-btn .nl { font-size: 10px; font-weight: 700; color: var(--muted); }
-
-  /* FLASH & TOAST */
-  .flash { position: fixed; inset: 0; background: rgba(56,161,105,0.2); z-index: 300; pointer-events: none; opacity: 0; transition: opacity 0.1s; }
-  .flash.show { opacity: 1; }
-  .toast { position: fixed; bottom: 88px; left: 50%; transform: translateX(-50%) translateY(16px); background: #2d3748; color: white; padding: 10px 18px; border-radius: 10px; font-size: 13px; font-weight: 600; opacity: 0; transition: all 0.3s; z-index: 500; white-space: nowrap; pointer-events: none; }
-  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
-</style>
+<link rel="stylesheet" href="assets/collector/collector.css?v=2026.10.22.1">
+<script defer src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+<script defer src="assets/vendor/jszip-3.10.1.min.js"></script>
 </head>
 <body>
-
-<div class="flash" id="flash"></div>
-<div class="toast" id="toast"></div>
-
-<!-- SCANNER OVERLAY -->
-<div class="scanner-overlay" id="scannerOverlay">
-  <div class="scan-header">
-    <div class="sh-count" id="scanQueueCount">0 in queue</div>
-    <div class="sh-title">Scan a barcode</div>
-  </div>
-  <div id="qr-reader"><div class="scan-line"></div></div>
-  <div class="scan-tip">Hold steady — point at the barcode on the back of the pack</div>
-  <div class="scanner-or">or enter manually</div>
-  <input type="text" class="manual-input" id="manualBarcode" placeholder="Type barcode number" inputmode="numeric">
-  <button class="btn-manual-go" onclick="submitManual()">Use This Barcode →</button>
-  <button class="btn-cancel-scan" onclick="closeScanner()">Done — View Queue</button>
-</div>
-
-<!-- RESULT SHEET — slides up after scan -->
-<div class="result-overlay" id="resultOverlay">
-  <!-- Permanent photo input - must be static in DOM for iOS to allow programmatic click -->
-  <input type="file" accept="image/*" capture="environment" id="photoInput" 
-         style="display:none; position:absolute;" onchange="handlePhoto(this)">
-  <div class="result-sheet" id="resultSheet">
-    <!-- filled dynamically -->
-  </div>
-</div>
-
-<!-- HEADER -->
-<div class="header">
-  <div>
-    <div class="app-title">Mucka <span>Collector</span></div>
-    <div class="app-sub">Field Data Tool</div>
-  </div>
-  <div class="counter-pill" onclick="showScreen('screenQueue');setNav('navQueue')">
-    <div class="counter-num" id="headerCount">0</div>
-    <div class="counter-label">in<br>queue</div>
-  </div>
-</div>
-
-<div class="content">
-
-  <!-- SCAN SCREEN (default) -->
-  <div class="screen active" id="screenScan">
-    <div style="text-align:center; padding: 40px 20px 20px;">
-      <div style="font-size:72px; margin-bottom:16px;">📷</div>
-      <div style="font-size:22px; font-weight:800; color:var(--navy); margin-bottom:8px;">Ready to scan</div>
-      <div style="font-size:14px; color:var(--muted); line-height:1.6; margin-bottom:32px;">
-        Tap the scan button below.<br>Already in Mucka? You'll see a green tick.<br>New product? Photo it and queue it.
-      </div>
-      <button class="btn btn-orange" onclick="openScanner()" style="font-size:17px; padding:18px;">
-        <span style="font-size:24px;">📷</span> Scan a Product
-      </button>
-    </div>
-  </div>
-
-  <!-- QUEUE SCREEN -->
-  <div class="screen" id="screenQueue">
-
-    <div class="queue-hero">
-      <div class="qh-left">
-        <div class="qh-count" id="queueHeroCount">0</div>
-        <div class="qh-label">products in queue</div>
-      </div>
-      <div class="qh-right">
-        <button class="btn btn-orange" onclick="downloadZip()" id="downloadZipBtn" style="margin:0; padding:10px 16px; font-size:13px; border-radius:10px; min-width:160px;">
-          📦 Download & Share
-        </button>
-        <button class="btn btn-ghost" onclick="openScanner()" style="margin:0; padding:10px 16px; font-size:13px; border-radius:10px; min-width:160px; background:rgba(255,255,255,0.15); color:white; border-color:rgba(255,255,255,0.3);">
-          📷 Scan Another
-        </button>
-      </div>
-    </div>
-
-    <div class="card">
-      <div id="queueList">
-        <div class="empty"><span class="e-icon">📦</span><div class="e-text">No products yet.<br>Tap Scan to get started!</div></div>
-      </div>
-    </div>
-
-    <button class="btn btn-red" onclick="clearQueue()" style="margin-top:4px;">🗑 Clear Queue</button>
-
-  </div>
-
-</div>
-
-<!-- BOTTOM NAV -->
-<div class="bottom-nav">
-  <button class="nav-item active" id="navScan" onclick="showScreen('screenScan');setNav('navScan')">
-    <span class="ni">🔍</span><span class="nl">Scan</span>
-  </button>
-  <button class="nav-scan-btn" onclick="openScanner()">
-    <div class="nav-scan-circle">📷</div>
-    <span class="nl">Go</span>
-  </button>
-  <button class="nav-item" id="navQueue" onclick="showScreen('screenQueue');setNav('navQueue');renderQueueList()">
-    <span class="ni">📋</span><span class="nl">Queue</span>
-  </button>
-</div>
-
+<header class="app-header"><a href="index.html" class="brand" aria-label="Mucka home">MUCKA<span>Know what's really in the bowl</span></a><a href="index.html" class="home-link">Back to app <span aria-hidden="true">↗</span></a></header>
+<main>
+<div class="page-top"><span class="eyebrow">YOUR CONTRIBUTIONS</span><span class="version">Testing 2026.10.22.1</span></div>
+<div id="storageError" class="notice error" role="alert" hidden><strong>We couldn't save on this device.</strong><p id="storageErrorText"></p><button id="retrySave" class="text-button">Try saving again</button> <button id="backupUnsaved" class="text-button">Prepare a backup</button></div>
+<section id="collectionView" aria-labelledby="collectionTitle">
+<div class="title-row"><div><h1 id="collectionTitle" tabindex="-1">My captures</h1><p class="intro">Help fill the gaps, one packet at a time.</p></div><span id="captureCount" class="count">0</span></div>
+<div class="actions"><button id="newCapture" class="button primary">＋ Add a product</button><button id="scanNew" class="button secondary">Scan a barcode</button></div>
+<div class="notice"><strong>Your photos can help fix the catalogue.</strong><p>Drafts stay on this device. Open a capture and choose Send for review to share its packet photos and details with Mucka. Keep a backup before changing phones or clearing browsing data.</p></div>
+<div class="section-heading"><h2>Your collection</h2><button id="exportAll" class="text-button" disabled>Export captures</button></div>
+<p id="collectionLoading" role="status">Opening your saved captures…</p>
+<div id="captureList"></div>
+<div class="import-row"><label for="importBackup" class="text-button">Restore from a Mucka ZIP backup</label><input type="file" id="importBackup" accept=".zip,application/zip" class="photo-input"><p id="importStatus" role="status" class="field-hint"></p></div>
+<div id="emptyCollection" class="empty-state" hidden><div class="empty-symbol" aria-hidden="true">＋</div><h2>Your first capture starts here</h2><p>Add the front of the pack and its barcode. You can add details now or come back later.</p></div>
+</section>
+<section id="editorView" aria-labelledby="editorTitle" hidden>
+<button id="backToCollection" class="text-button back">← My captures</button>
+<div class="title-row"><div><h1 id="editorTitle" tabindex="-1">Add a product</h1><p class="intro">A couple of clear photos will help us find the right match.</p></div></div>
+<div class="save-strip"><span id="saveStatus" role="status" aria-live="polite">Add something to start your draft</span><span id="draftBadge" class="badge">Draft</span></div>
+<form id="captureForm">
+<div class="card"><label for="reportType">What needs checking?</label><select id="reportType"><option value="missing">Barcode has no confirmed match</option><option value="wrong">Barcode opens the wrong product</option><option value="details">Product photo or details need correcting</option></select><p id="reportedProduct" class="field-hint" hidden></p></div>
+<div class="card"><div class="step-heading"><span class="step">1</span><div><h2>Check the barcode</h2><p>We bring the number across from your scan.</p></div></div>
+<label for="captureBarcode">Barcode number</label><div class="barcode-row"><input id="captureBarcode" name="barcode" inputmode="numeric" autocomplete="off" maxlength="80" placeholder="Digits printed below the barcode"><button type="button" id="scanEditor" class="button secondary">Scan</button></div><p id="barcodeHint" class="field-hint"></p></div>
+<div class="card"><div class="step-heading"><span class="step">2</span><div><h2>Photograph the pack</h2><p>Keep the writing clear and fill the frame.</p></div></div>
+<div class="photo-grid">
+<div class="photo-slot" data-role="front"><div class="photo-preview" id="frontPreview"><span aria-hidden="true">▤</span></div><h3>Front of pack</h3><p>Brand, recipe and pack size</p><label class="button secondary photo-label" for="frontInput">Add photo</label><input type="file" accept="image/*" id="frontInput" class="photo-input" aria-label="Add front of pack photo"><button type="button" class="text-button remove-photo" data-remove="front" hidden>Remove photo</button></div>
+<div class="photo-slot" data-role="barcode"><div class="photo-preview" id="barcodePreview"><span aria-hidden="true">▥</span></div><h3>Printed barcode</h3><p>Include all the digits below it</p><label class="button secondary photo-label" for="barcodeInput">Add photo</label><input type="file" accept="image/*" id="barcodeInput" class="photo-input" aria-label="Add printed barcode photo"><button type="button" class="text-button remove-photo" data-remove="barcode" hidden>Remove photo</button></div>
+<div class="photo-slot wide" data-role="ingredients"><div class="photo-preview" id="ingredientsPreview"><span aria-hidden="true">≡</span></div><div><h3>Ingredients & nutrition <span class="optional">Optional</span></h3><p>The full ingredient list and nutrition panel</p><label class="button secondary photo-label" for="ingredientsInput">Add photo</label><input type="file" accept="image/*" id="ingredientsInput" class="photo-input" aria-label="Add ingredients and nutrition photo"><button type="button" class="text-button remove-photo" data-remove="ingredients" hidden>Remove photo</button></div></div>
+</div><p id="photoStatus" role="status" class="field-hint"></p></div>
+<div class="card"><div class="step-heading"><span class="step">3</span><div><h2>Add any details <span class="optional">Optional</span></h2><p>Anything you know helps. You can finish later.</p></div></div>
+<div class="field-grid"><div><label for="captureBrand">Brand</label><input id="captureBrand" name="brand" maxlength="120" placeholder="e.g. Billie’s Bowl"></div><div><label for="capturePack">Pack size</label><input id="capturePack" name="pack" maxlength="80" placeholder="e.g. 20 kg"></div></div>
+<label for="captureName">Product or recipe</label><input id="captureName" name="name" maxlength="180" placeholder="As written on the packet">
+<label for="captureNotes">Notes</label><textarea id="captureNotes" name="notes" rows="3" maxlength="2000" placeholder="Wrong match, older packaging, where you found it…"></textarea></div>
+<section class="card" aria-labelledby="sendHeading"><h2 id="sendHeading">Send this packet for review</h2><p>Share the front of the pack, its printed barcode and these product details with Mucka. The ingredient photo is optional. Photograph the packet only—keep people, addresses, receipts and pet records out of the frame.</p><label class="consent-row"><input id="sendConsent" type="checkbox"> I agree to share these packet photos and details with Mucka for catalogue review.</label><button class="button primary" id="sendReview" type="button">Send for review</button><p id="submissionStatus" role="status" aria-live="polite"></p><p class="field-hint">Uploads are handled by Netlify for Mucka. Reports are reviewed by the owner; they are not posted to the public app or automatically approved. Keep the reference if you need to ask about a report.</p></section>
+<div class="editor-footer"><p>Keep a draft here or export a backup. Sending a report does not change the catalogue automatically.</p><button class="button secondary" id="saveCapture" type="submit">Save capture</button><button class="button secondary" id="exportCurrent" type="button">Export this capture</button><button type="button" id="deleteCapture" class="text-button danger">Delete capture</button></div>
+</form></section>
+<footer>MUCKA · Product information, with room to learn.</footer>
+</main>
+<dialog id="scannerDialog" aria-labelledby="scannerTitle"><div class="dialog-heading"><h2 id="scannerTitle">Scan the packet barcode</h2><button class="icon-button" id="closeScanner" aria-label="Close scanner">×</button></div><p>Hold the barcode steady in the frame.</p><div id="qr-reader"></div><p id="cameraStatus" role="status">Starting camera…</p><button class="button secondary" id="useManual">Enter the digits instead</button></dialog>
+<dialog id="exportDialog" aria-labelledby="exportTitle"><div class="dialog-heading"><h2 id="exportTitle">Export your captures</h2><button class="icon-button" id="closeExport" aria-label="Close export">×</button></div><p id="exportStatus" role="status">Preparing your photos and product details…</p><div id="exportReady" hidden><p>Save the ZIP file to Files as a backup. To send a packet to Mucka, open its capture and choose Send for review. Your collection stays here.</p><button id="shareExport" class="button primary" hidden>Share file</button><a id="downloadExport" class="button secondary" download>Download backup</a></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
 <script>
-// ============================================================
-// KNOWN BARCODES
-// ============================================================
-var KNOWN_BARCODES = new Set([
-  '0017800182829','0017800185707','0017800185868','0021006599381','0038100119315',
-  '0038100119339','0052742024516','0052742284200','0064992501112','0064992541606',
-  '0076344884170','0076344884828','022808382546','050000040803','050000172986',
-  '050000429844','050000503896','050000836123','052742176901','058496723026',
-  '058496723040','064992714437','076344089322','1014171872761','129510721202',
-  '186011000052','186011000076','265681000002','277746000001','2820181299974',
-  '300650481182','3182550401937','3182550702225','3182550707688','3182550708180',
-  '3182550708203','3182550716253','3182550721400','3182550756419','3182550771269',
-  '3182550793582','3182550805254','3182550842938','3182551055658','4008429037894',
-  '4008429037962','4008429037979','4008429037986','4008429105173','4008429110788',
-  '4008429112584','4057166006847','4434567349658','5000161029662','5010394984584',
-  '5051220846515','5051220851465','5060122490511','5060122492515','5060122497886',
-  '5060333431792','5060333433628','5060333434540','5060333438012','5060333439880',
-  '5060481893138','5060481899550','5060708560799','5060708562762','5060708565626',
-  '5300647109964','5900951259050','5900951305504','6090410573540','60992990024',
-  '628451123934','642863041105','642863101380','642863101397','642863102912',
-  '642863107030','642863107047','642863107610','64992530112','64992570125',
-  '64992613105','680196604635','680569859822','6977085247726','717226208805',
-  '721866456052','726481421362','74198609581','74198610716','74198611010',
-  '74198611379','74198614035','74198614455','74198615070','7427067528989',
-  '7613035379831','7613036667463','763163284082','763163284341','76344079187',
-  '76344088530','76344179962','76344884156','780348001227','780348002774',
-  '780348006963','793618002978','799439797444','815436011595','815436013056',
-  '815436013087','815436013094','815436013179','815436018464','855958006570',
-  '859610007646','8850011072693','8850011072716','8850011076028','8850124047748',
-  '8850124048226','8850124086846','8850124097750','8850125071360','8850127000658',
-  '8850127003918','8850127006827','8850127009538','8852084172874','885210169040',
-  '8853301000949','8853301000987','8853301001083','8853301001106','8853301001120',
-  '8853301001786','8853301001809','8853301008112','8853301016872','8853301016889',
-  '8858772602296','886817002143','8888056777778','9003579008201','9003579008454',
-  '9003579015902','9300462340418','9300603224898','9300605025530','9300605038103',
-  '9300605038202','9300605038400','9300605056497','9300605080546','9300605080553',
-  '9300605104495','9300605108189','9300605108196','9300605109605','9300605109773',
-  '9300605110878','9300605111110','9300605116177','9300605122666','9300605122970',
-  '9300605128446','9300605132443','9300605133037','9300605136069','9300605139886',
-  '9300605139893','9300605139916','9300605140875','9300605140899','9300605141223',
-  '9300605141445','9300605141681','9300605141704','9300605141728','9300605143944',
-  '9300605145634','9300605146709','9300605147331','9300605147355','9300605147379',
-  '9300605147386','9300605147393','9300605147409','9300605147423','9300605147430',
-  '9300605147454','9300605147461','9300605147478','9300605147485','9300605147492',
-  '9300605153899','9300605153912','9300605153929','9300605153943','9300605153950',
-  '9300605156456','9300605156463','9300605157231','9300605157248','9300605157255',
-  '9300605157262','9300605157279','9300605162204','9300605162211','9300607563412',
-  '9300633092627','9300633553821','9300633553852','9300633553869','9300633553982',
-  '9300633554040','9300633554057','9300633554071','9300633554118','9300633554125',
-  '9300633554163','9300633588441','9300633683542','9300633948955','9300633948962',
-  '9300644123563','9300645041385','9300657014537','9300681169586','9300681224551',
-  '9300683504460','9300745511054','9309001273194','9309001273545','9309001273552',
-  '9310015205200','9310022018206','9310022018305','9310022020308','9310022020506',
-  '9310022034305','9310022034404','9310022034800','9310022037207','9310022061806',
-  '9310022062308','9310022062407','9310022067006','9310022161100','9310022161308',
-  '9310022161902','9310022193002','9310022193101','9310022193309','9310022195402',
-  '9310022360800','9310022379703','9310022392603','9310022396809','9310022528507',
-  '9310022567308','9310022867798','9310022867804','9310022867811','9310023144003',
-  '9310085001399','9310085001412','9310320003829','9310768112527','9310768112558',
-  '9310768115337','9310768115344','9310768115498','9311503141208','9312141000636',
-  '9312239029143','9312239029860','9312239041695','9312239045853','9312239047680',
-  '9312239047710','9312239047772','9312239047802','9312239048397','9312239048403',
-  '9312239049585','9312239049707','9312239051984','9312239052196','9312239052219',
-  '9312239052233','9312239052271','9313010001211','9313107123079','9314364111243',
-  '9314364335724','9314364335748','9314364335762','9314364335779','9314364336196',
-  '9314364336202','9314364337476','9314364337568','9314364337575','9314364404741',
-  '9315822022088','9316203000114','9316401201412','9318191901015','9319185002817',
-  '9319185002923','9319185004064','9319185004088','9319185007010','9319185007027',
-  '9319185007034','9319185009472','9319185009502','9319185009557','9319185009564',
-  '9319185009571','9319185009588','9319185009632','9319185009649','9319185009663',
-  '9319185009700','9319185009755','9319185254995','9319185255008','9319185550202',
-  '9319185724580','9319185728960','9319185743307','9319993800575','9319993801138',
-  '9319993801299','9319993801404','9319993801510','9321855000504','9321855002232',
-  '9321855003093','9323961006623','9323961007415','9323961008160','9325242000764',
-  '9325242000771','9328174001724','9330171023098','9330471024221','9332596024063',
-  '9332613004207','9332613004214','9332613004245','9332613005341','9332613006409',
-  '9332613006416','9332613006546','9332613006560','9334214002781','9334214007380',
-  '9334214008219','9334214009599','9334214010922','9334214010939','9334214017273',
-  '9334214018232','9334214018256','9334214018362','9334214018409','9334214018447',
-  '9334214018805','9334214019086','9334214019499','9334214019529','9334214021201',
-  '9334214021744','9334214022871','9334214023281','9334214025506','9334214028880',
-  '9334214029788','9334214030616','9334214030722','9334214030739','9334214034652',
-  '9334214035055','9334214035789','9334214035864','9334214038759','9334214038780',
-  '9334214038810','9334214040424','9334214040851','9334214041889','9334214042107',
-  '9334214044217','9334214044804','9334214044828','9334214044842','9334214045511',
-  '9334214045580','9334214046846','9334214049496','9334214049526','9334214053486',
-  '9334214053509','9334214054483','9334214054506','9334214054704','9334214054728',
-  '9334214054780','9334214054827','9334214054964','9334214058764','9334214059037',
-  '9334214060330','9334214061313','9334214061627','9334214063270','9334214063324',
-  '9334214063379','9334214064482','9334214065175','9334214065229','9334214066424',
-  '9334214066486','9334214066493','9334214066516','9334864004821','9334864005804',
-  '9334864005811','9334864005965','9334864007334','9335355000315','9335355000346',
-  '9335355000384','9335355060012','9335607000872','9338362000941','9338362001405',
-  '9338362001870','9339687022403','9339687056446','9339687207176','9339687316236',
-  '9339687327263','9339687340439','9339687341351','9339687341368','9339687362042',
-  '9339687362219','9339687362929','9339687362998','9339687384709','9339687386277',
-  '9339687404582','9339687419456','9339687419494','9339687419548','9339687419920',
-  '9339687419944','9339687419951','9339687419968','9339687419975','9339687420315',
-  '9339687428311','9339687428335','9339687428342','9340156029465','9340621001002',
-  '9340710005034','9340710005041','9340710005294','9343005006099','9343723007224',
-  '9344154021445','9344378005009','9347042003264','9347810000174','9347810001669',
-  '9348509000017','9348509000031','9348601002964','9348601003510','9348601004692',
-  '9348601004715','9348601004746','9349107001451','9349673003071','9350327001107',
-  '9353767306214','9353767306221','9353767306504','9356335003744','9356335003768',
-  '9356335003904','9356391000114','9357667050031','9357667050055','9360747000369',
-  '9360747000390','9360747000598','9360747000741','9360770000022','9360770000121',
-  '9361410000020','9392596008234','9392596008241','9392596008258','9392596008319',
-  '9392596027440','9392596027457','9392596027471','9392596027495','9392596027556',
-  '9400539190974','9400539191414','9400539207429','9415022021017','9417986935690',
-  '9421016593187','9421016593965','9421016594641','9421016594672','9421016594702',
-  '9421016595761','9421016595792','9421016595815','9421016596416','9421900779512',
-  '9421900779871','9421904897540','9421904897588','9421907880129','0064992501457',
-  '9360770000015','9334214031767','9334214045740','9334214044231','9334214002743',
-  '9334214019482','9334214045856','9334214066448','9312239052141','8853301007467',
-  '8853301007757','9334214046815','9300605098640','5000161029778','642863111372',
-  '642863111396','9360747000710','9319185005221','9348601004005','9348601000069',
-  '9309001273569','9334214066479','9325242000535','9310022067709','9339687084432',
-  '9300605127982','9300605153905','9309001273446','9300605136106','9300605149229',
-  '3182550710664','7322540549034','74198611089','9334214063768','76344884132',
-  '9310022389702'
-]);
-
-// ============================================================
-// STATE
-// ============================================================
-var queue = [];
-var currentBarcode = null;
-var currentPhotoData = null;
-var html5QrCode = null;
-
-// ============================================================
-// NAV
-// ============================================================
-function showScreen(id) {
-  document.querySelectorAll('.screen').forEach(function(s){ s.classList.remove('active'); });
-  document.getElementById(id).classList.add('active');
-  window.scrollTo(0,0);
+var KNOWN_BARCODES = new Set(["0052742400501","038100026903","038100119315","050000500895","050000580064","050000836123","052742001746","052742002156","052742005188","052742022116","052742022369","052742040141","052742057545","052742060545","052742117003","052742146201","052742149707","052742186108","052742297200","052742567013","052742693804","052742703602","052742703701","052742713908","052742790107","052742859903","052742862002","052742867106","064992101459","064992102258","064992103453","064992104450","064992106454","064992107451","064992108458","074198612192","074198612239","074198612277","074198612345","074198612413","074198612451","074198612499","0768114990623","09421904559929","09421904897571","19345740100695","19345740100701","19345740100718","19345740100800","19345740100817","19345740100831","19345740100848","19345740100862","19345740100879","19345740100893","19345740101388","19345740136847","19345740136854","19345740136861","19345740136885","19345740136892","19345740138995","19345740168169","19345740168206","19348601002954","19348601003890","29334214046833","3182550402149","3182550402170","3182550402224","3182550702379","3182550704618","3182550708180","3182550708197","3182550710640","3182550710992","3182550711036","3182550715614","3182550717335","3182550721219","3182550721400","3182550728102","3182550737593","3182550743174","3182550743440","3182550756402","3182550765398","3182550771719","3182550793001","3182550793575","3182550799775","3182550803113","3182550811637","3182550821421","3182550825955","3182550831086","3182550831383","3182550842938","3182550892759","3182550939959","3182550940849","5010394984577","5010394984584","5060122497879","5060317692348","5060333430283","5998749109113","609728290580","610696080585","610696080608","642863041105","642863102912","642863102929","642863102936","642863102943","642863111303","642863111310","642863111334","642863111365","642863111396","671875797311","671875797328","735850548722","735850548739","793618002978","799439109568","799439129764","810339020965","810339020972","810339022457","810339022495","8710255202020","8809845906445","8850124070845","8850124071446","8850124090454","8850124098894","8850124099228","8850125069367","8850125073012","8850127002287","8850127003383","8850127004946","8853301000925","8853301000963","8853301001069","8853301001120","8853301001786","8853301001809","8858772602166","9003579008256","9003579008379","9003579014899","9003579308936","9003579308943","9300605025523","9300605098596","9300605108189","9300605116177","9300605118218","9300605131552","9300605131576","9300605132474","9300605132955","9300605132979","9300605133044","9300605133099","9300605136052","9300605136083","9300605136113","9300605145634","9300605147348","9300605147591","9300605149229","9300605149519","9300605149557","9300605149649","9300605149687","9310022034404","9310022037207","9310022067006","9310022067105","9310022160905","9310022161308","9310022195402","9310022360800","9310022389702","9310022392603","9310022396809","9310022413704","9310022528507","9310022566004","9310022566509","9310022567308","9312239029143","9312239029860","9312239041640","9312239042777","9312239044092","9312239047680","9312239047710","9312239047772","9312239047802","9312239048755","9312239049660","9312239049707","9312239052141","9312239052219","9312239052233","9312239052271","9314364111243","9314364336820","9314364337575","9319993800575","9319993801299","9325242000535","9325242000740","9325242000757","9325242000764","9325242000771","9334214002743","9334214006550","9334214008219","9334214018409","9334214019482","9334214020518","9334214024356","9334214025506","9334214027319","9334214027333","9334214029672","9334214029702","9334214029719","9334214031668","9334214031682","9334214031705","9334214031729","9334214031767","9334214038308","9334214038759","9334214038810","9334214041889","9334214044415","9334214045689","9334214045931","9334214046068","9334214046112","9334214046815","9334214053400","9334214053462","9334214053486","9334214054506","9334214054964","9334214060729","9334214061535","9334214064659","9334214065069","9334214065076","9334214065106","9334214065144","9334214065175","9334214065229","9334214150352","9334214150710","9334214150796","9337940003169","9337940004043","9337940004050","9337940004067","9337940004098","9337940004104","9337940004111","9337940004135","9337940004142","9337940004241","9337940004272","9337940005828","9337940006016","9337940007235","9337940007259","9337940007655","9337940007839","9337940007884","9337940007983","9337940007990","9338362000910","9338362000941","9338362001054","9338362001405","9338362001818","9338362001825","9338362001832","9340621000616","9340621000647","9340621000869","9340621000883","9340621000937","9340621000944","9340621000975","9340621000999","9340621001392","9340710000091","9340710000237","9340710000473","9340710001111","9340710001135","9340710001241","9340710001258","9340710001265","9340710001272","9340710001364","9340710001388","9340710001524","9340710001647","9340710001739","9340710001753","9340710001876","9340710001883","9340710001890","9340710001906","9340710001913","9340710002132","9340710002149","9340710002156","9340710002163","9340710002170","9340710002187","9340710002323","9340710002330","9340710002347","9340710002354","9340710002361","9340710002378","9340710002392","9340710002408","9340710002620","9340710002644","9340710002712","9340710002736","9340710002767","9340710002774","9340710002781","9340710002804","9340710002842","9340710002873","9340710002880","9340710002903","9340710002934","9340710002941","9340710003030","9340710005034","9340710005041","9340710005140","9342134374697","9342737874655","9343053001237","9345740051952","9345740051976","9345740052010","9345740052065","9345740052072","9345740052089","9345740065591","9345740065614","9345740076481","9345740076559","9345740078324","9345740078409","9345740080211","9345740080235","9345740084721","9345740095215","9345740100537","9345740100544","9345740100575","9345740100582","9345740102241","9345740102265","9345740107222","9345740107581","9345740114732","9345740125158","9345740125165","9345740125196","9345740126209","9345740126216","9345740126247","9345740126278","9345740127190","9345740131333","9345740131340","9345740131395","9345740131425","9345740131449","9345740143091","9345740143107","9345740163303","9345740163310","9345740163341","9345740170509","9345740170516","9347810000167","9347810000174","9347810000501","9348509000000","9348509000031","9348509000093","9348601000052","9348601000069","9348601001578","9348601002643","9348601002957","9348601002964","9348601003497","9348601004432","9348601004685","9348601004692","9348601004708","9348601005200","9349592339411","9353793000063","9353793000087","9353793001534","9360589000145","9360589000176","9360589000206","9360589000251","9360589000312","9360589000343","9360589000367","9360589000510","9360589000893","9360589001319","9361300000086","9392596027556","9421016590537","9421016590551","9421016593064","9421016593071","9421016593187","9421016593309","9421016594047","9421016594153","9421016594177","9421016594450","9421016594511","9421016594573","9421016594825","9421016594849","9421016594917","9421016595969","9421016596645","9421016596669","9421016596683","9421016596720","9421016596744","9421036372120","9421036372489","9421036373059","9421036373073","9421900779055","9421900779154","9421900779185","9421900779468","9421900779512","9421904014848","9421904518766","9421904518780","9421904559912","9421904897403","9421904897427","9421904897540","9421904897588","9762901272627"]);
+function getScannedGtinText(text, result) {
+  var format = result && result.result && result.result.format;
+  if (!format || format.formatName !== 'UPC_E') return text;
+  // UPC-E has a different meaning from EAN-8: expand only with scanner format metadata.
+  if (!/^[01][0-9]{7}$/.test(text)) return '';
+  var d = text.slice(1, 7), last = d[5], body;
+  if (last <= '2') body = d.slice(0, 2) + last + '0000' + d.slice(2, 5);
+  else if (last === '3') body = d.slice(0, 3) + '00000' + d.slice(3, 5);
+  else if (last === '4') body = d.slice(0, 4) + '00000' + d[4];
+  else body = d.slice(0, 5) + '0000' + last;
+  var expanded = text[0] + body + text[7];
+  return normalizeGtin(expanded) ? expanded : '';
 }
-
-function setNav(id) {
-  document.querySelectorAll('.nav-item').forEach(function(n){ n.classList.remove('active'); });
-  if (id) { var el = document.getElementById(id); if(el) el.classList.add('active'); }
+function normalizeGtin(value) {
+  if (typeof value !== 'string') return null;
+  var code = value.trim();
+  if (!/^(?:[0-9]{8}|[0-9]{12}|[0-9]{13}|[0-9]{14})$/.test(code)) return null;
+  var sum = 0;
+  for (var i = code.length - 2, weight = 3; i >= 0; i--, weight = 4 - weight) sum += Number(code[i]) * weight;
+  if ((10 - sum % 10) % 10 !== Number(code[code.length - 1])) return null;
+  return code.padStart(14, '0');
 }
-
-// ============================================================
-// SCANNER
-// ============================================================
-function openScanner() {
-  currentBarcode = null;
-  currentPhotoData = null;
-  document.getElementById('resultOverlay').classList.remove('active');
-  document.getElementById('manualBarcode').value = '';
-  updateScanCounter();
-  document.getElementById('scannerOverlay').classList.add('active');
-  stopQr(function() {
-    setTimeout(function() { startQr(); }, 400);
-  });
-}
-
-function closeScanner() {
-  document.getElementById('scannerOverlay').classList.remove('active');
-  stopQr();
-  showScreen('screenQueue');
-  setNav('navQueue');
-  renderQueueList();
-}
-
-// Forcibly release any leftover camera stream (phones sometimes
-// keep the camera locked, causing a black screen on the next scan)
-function killVideoTracks() {
-  try {
-    var vids = document.querySelectorAll('#qr-reader video');
-    for (var i = 0; i < vids.length; i++) {
-      var v = vids[i];
-      try {
-        if (v.srcObject) {
-          v.srcObject.getTracks().forEach(function(t){ t.stop(); });
-          v.srcObject = null;
-        }
-      } catch(e) {}
-    }
-  } catch(e) {}
-}
-
-function startQr(isRetry) {
-  // Make sure no zombie camera stream is holding the camera
-  killVideoTracks();
-  // Reset the reader div but keep the scan line
-  var reader = document.getElementById('qr-reader');
-  if (reader) reader.innerHTML = '<div class="scan-line"></div>';
-  if (html5QrCode) { html5QrCode = null; }
-  html5QrCode = new Html5Qrcode('qr-reader');
-  html5QrCode.start(
-    { facingMode: 'environment' },
-    { fps: 10, qrbox: { width: 210, height: 210 } },
-    function(decoded) {
-      // Defer the stop so we're not stopping from inside the scan callback
-      setTimeout(function() { stopQr(function() { barcodeScanned(decoded); }); }, 0);
-    },
-    function() {}
-  ).catch(function(e){
-    console.warn('Camera:', e);
-    // Camera refused to start (usually still locked) - retry once
-    if (!isRetry) {
-      stopQr(function() {
-        setTimeout(function() { startQr(true); }, 700);
-      });
-    }
-  });
-}
-
-function stopQr(callback) {
-  if (html5QrCode) {
-    var qr = html5QrCode;
-    html5QrCode = null;
-    qr.stop().then(function() {
-      qr.clear();
-      killVideoTracks();
-      if (callback) callback();
-    }).catch(function() {
-      try { qr.clear(); } catch(e) {}
-      killVideoTracks();
-      if (callback) callback();
-    });
-  } else {
-    killVideoTracks();
-    if (callback) callback();
-  }
-}
-
-function submitManual() {
-  var val = document.getElementById('manualBarcode').value.trim();
-  if (val.length < 4) { showToast('Enter a valid barcode'); return; }
-  stopQr(function() { barcodeScanned(val); });
-}
-
-function updateScanCounter() {
-  document.getElementById('scanQueueCount').textContent = queue.length + ' in queue';
-}
-
-// ============================================================
-// BARCODE RESULT
-// ============================================================
-function barcodeScanned(barcode) {
-  if (navigator.vibrate) navigator.vibrate(50);
-  flashGreen();
-  currentBarcode = barcode;
-  currentPhotoData = null;
-
-  var inDatabase = KNOWN_BARCODES.has(barcode);
-  var sheet = document.getElementById('resultSheet');
-
-  if (inDatabase) {
-    sheet.className = 'result-sheet result-found';
-    sheet.innerHTML =
-      '<div class="result-top">' +
-        '<span class="result-icon">✅</span>' +
-        '<div class="result-info">' +
-          '<div class="result-title" style="color:#276749;">Already in Mucka!</div>' +
-          '<div class="result-bc">' + barcode + '</div>' +
-          '<div style="font-size:12px;color:#276749;">This one\'s in the database already.</div>' +
-        '</div>' +
-      '</div>' +
-      '<button class="btn btn-green" onclick="scanNext()" style="margin-bottom:8px;">📷 Scan Next Product</button>' +
-      '<button class="btn btn-ghost" onclick="closeResultAndGoQueue()">📋 View Queue</button>';
-  } else {
-    sheet.className = 'result-sheet result-notfound';
-    sheet.innerHTML =
-      '<div class="result-top">' +
-        '<span class="result-icon">🆕</span>' +
-        '<div class="result-info">' +
-          '<div class="result-title" style="color:#744210;">Not in Mucka yet!</div>' +
-          '<div class="result-bc">' + barcode + '</div>' +
-          '<div style="font-size:12px;color:#744210;">Photo the front of the pack then save it.</div>' +
-        '</div>' +
-      '</div>' +
-      '<div class="photo-preview" id="photoPreview"><span style="font-size:24px;color:var(--muted);">📷</span></div>' +
-      '<button class="btn btn-orange" onclick="document.getElementById(\'photoInput\').click()" style="margin-bottom:8px;">📷 Take Photo</button>' +
-      '<button class="btn btn-green" id="saveBtn" onclick="saveProduct()" style="display:none;margin-bottom:8px;">✅ Save to Queue</button>' +
-      '<button class="btn btn-ghost" onclick="scanNext()">Skip — Scan Next</button>';
-    // Reset photo input so same file can be selected again
-    document.getElementById('photoInput').value = '';
-  }
-
-  document.getElementById('resultOverlay').classList.add('active');
-}
-
-function closeResultSheet() {
-  document.getElementById('resultOverlay').classList.remove('active');
-}
-
-function scanNext() {
-  currentBarcode = null;
-  currentPhotoData = null;
-  // Hide result overlay first
-  document.getElementById('resultOverlay').classList.remove('active');
-  document.getElementById('manualBarcode').value = '';
-  updateScanCounter();
-  document.getElementById('scannerOverlay').classList.add('active');
-  // Stop any existing camera stream then restart cleanly
-  stopQr(function() {
-    setTimeout(function() { startQr(); }, 400);
-  });
-}
-
-function closeResultAndGoQueue() {
-  document.getElementById('resultOverlay').classList.remove('active');
-  document.getElementById('scannerOverlay').classList.remove('active');
-  stopQr();
-  showScreen('screenQueue');
-  setNav('navQueue');
-  renderQueueList();
-}
-
-// ============================================================
-// PHOTO
-// ============================================================
-function handlePhoto(input) {
-  var file = input.files[0];
-  if (!file) return;
-  var reader = new FileReader();
-  reader.onload = function(e) {
-    currentPhotoData = e.target.result;
-    var preview = document.getElementById('photoPreview');
-    preview.className = 'photo-preview has-photo';
-    preview.innerHTML = '<img src="' + currentPhotoData + '"><button class="retake-btn" onclick="document.getElementById(\'photoInput\').click()">Retake</button>';
-    document.getElementById('saveBtn').style.display = 'flex';
-  };
-  reader.readAsDataURL(file);
-}
-
-// ============================================================
-// SAVE
-// ============================================================
-function saveProduct() {
-  queue.push({ barcode: currentBarcode, timestamp: new Date().toISOString(), photo: currentPhotoData || null });
-  updateCounts();
-  if (navigator.vibrate) navigator.vibrate([50,50,100]);
-  showToast('✅ Saved! ' + queue.length + ' in queue');
-  flashGreen();
-  setTimeout(function(){ scanNext(); }, 600);
-}
-
-// ============================================================
-// QUEUE
-// ============================================================
-function renderQueueList() {
-  var list = document.getElementById('queueList');
-  document.getElementById('queueHeroCount').textContent = queue.length;
-
-  if (queue.length === 0) {
-    list.innerHTML = '<div class="empty"><span class="e-icon">📦</span><div class="e-text">No products yet.<br>Tap Scan to get started!</div></div>';
-    return;
-  }
-
-  list.innerHTML = queue.slice().reverse().map(function(p, i) {
-    var time = new Date(p.timestamp).toLocaleTimeString('en-AU', {hour:'2-digit',minute:'2-digit'});
-    var thumb = p.photo ? '<img class="queue-photo-thumb" src="' + p.photo + '">' : '<span style="font-size:22px;width:36px;text-align:center;">—</span>';
-    return '<div class="queue-item">' +
-      '<div class="queue-num">' + (queue.length - i) + '</div>' +
-      '<div class="queue-info">' +
-        '<div class="queue-barcode">' + p.barcode + '</div>' +
-        '<div class="queue-meta">' + time + ' · ' + (p.photo ? '📸 Photo' : 'No photo') + '</div>' +
-      '</div>' +
-      thumb +
-    '</div>';
-  }).join('');
-}
-
-function clearQueue() {
-  if (queue.length === 0) return;
-  if (confirm('Clear all ' + queue.length + ' products? Cannot be undone.')) {
-    queue = [];
-    updateCounts();
-    renderQueueList();
-    showToast('Queue cleared');
-  }
-}
-
-function updateCounts() {
-  document.getElementById('headerCount').textContent = queue.length;
-  document.getElementById('queueHeroCount').textContent = queue.length;
-}
-
-// ============================================================
-// DOWNLOAD
-// ============================================================
-function downloadZip() {
-  if (queue.length === 0) { showToast('Nothing in the queue yet!'); return; }
-  var btn = document.getElementById('downloadZipBtn');
-  btn.textContent = '⏳ Building zip...';
-  btn.disabled = true;
-
-  var zip = new JSZip();
-  var date = new Date().toLocaleDateString('en-AU').replace(/\//g,'-');
-  var folder = 'Mucka-Collector-' + date;
-
-  var summary = queue.map(function(p,i) {
-    return 'Product ' + (i+1) + '\nBarcode: ' + p.barcode + '\nPhoto: ' + (p.photo?'Yes':'No') + '\nCaptured: ' + new Date(p.timestamp).toLocaleString('en-AU');
-  }).join('\n\n---\n\n');
-
-  zip.file(folder + '/SUMMARY.txt', 'Mucka Collector Export\nDate: ' + new Date().toLocaleString('en-AU') + '\nProducts: ' + queue.length + '\n\n---\n\n' + summary);
-
-  queue.forEach(function(p,i) {
-    var pf = folder + '/product-' + String(i+1).padStart(2,'0') + '-' + p.barcode;
-    zip.file(pf + '/info.txt', 'Barcode: ' + p.barcode + '\nCaptured: ' + new Date(p.timestamp).toLocaleString('en-AU'));
-    if (p.photo) { zip.file(pf + '/photo.jpg', p.photo.split(',')[1], {base64:true}); }
-  });
-
-  zip.generateAsync({type:'blob'}).then(function(content) {
-    var url = URL.createObjectURL(content);
-    var a = document.createElement('a');
-    a.href = url; a.download = folder + '.zip';
-    document.body.appendChild(a); a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-    btn.innerHTML = '📦 Download & Share';
-    btn.disabled = false;
-    showToast('✅ Downloaded!');
-  }).catch(function(e) {
-    console.error(e);
-    btn.innerHTML = '📦 Download & Share';
-    btn.disabled = false;
-    showToast('Something went wrong — try again');
-  });
-}
-
-// ============================================================
-// UTILS
-// ============================================================
-function flashGreen() { var f=document.getElementById('flash'); f.classList.add('show'); setTimeout(function(){f.classList.remove('show');},180); }
-function showToast(msg) { var t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(function(){t.classList.remove('show');},2500); }
-
-// ── Wait for Html5Qrcode library then initialise ─────────
-function initCollector() {
-  if (typeof Html5Qrcode === 'undefined') {
-    // Library not loaded yet - retry in 100ms
-    setTimeout(initCollector, 100);
-    return;
-  }
-
-  document.getElementById('manualBarcode').addEventListener('keydown', function(e){
-    if (e.key === 'Enter') submitManual();
-  });
-
-  var params = new URLSearchParams(window.location.search);
-  var bc = params.get('barcode');
-  if (bc && bc.trim()) {
-    // Coming from main app with a barcode - go straight to result, don't start camera
-    document.getElementById('scannerOverlay').classList.remove('active');
-    setTimeout(function() { barcodeScanned(bc.trim()); }, 300);
-  } else {
-    // Normal launch - start the scanner
-    setTimeout(function() { startQr(); }, 300);
-  }
-}
-
-// Kick off as soon as DOM is ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initCollector);
-} else {
-  initCollector();
+function isKnownBarcode(barcode) {
+  var gtin = normalizeGtin(barcode);
+  return !!gtin && Array.from(KNOWN_BARCODES).some(function(code) { return normalizeGtin(code) === gtin; });
 }
 </script>
+<script src="assets/collector/store.js?v=2026.10.22.1"></script>
+<script src="assets/collector/backup.js?v=2026.10.22.1"></script>
+<script src="assets/collector/submission.js?v=2026.10.22.1"></script>
+<script src="assets/collector/app.js?v=2026.10.22.1"></script>
 </body>
 </html>

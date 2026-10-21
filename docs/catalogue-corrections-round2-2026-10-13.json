@@ -1,0 +1,679 @@
+{
+  "checkedAt": "2026-10-13",
+  "description": "Second round of exact-pack online barcode research. No physical scans claimed. Existing source conflicts retained.",
+  "updates": [
+    {
+      "appId": 329,
+      "before": {
+        "barcode": "642863101397"
+      },
+      "after": {
+        "barcode": "642863102929"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: GREENIES Canine Dental Dog Treats Original Petite 170g; variant 170g. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/greenies-original-dog-treat-petite"
+      ]
+    },
+    {
+      "appId": 331,
+      "before": {
+        "barcode": "4008429112584"
+      },
+      "after": {
+        "barcode": "642863102943"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: GREENIES Canine Dental Dog Treats Original Large 170g; variant 170g. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/greenies-original-dog-treat-l"
+      ]
+    },
+    {
+      "appId": 330,
+      "before": {
+        "barcode": "642863107610"
+      },
+      "after": {
+        "barcode": "642863102936"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: GREENIES Canine Dental Dog Treats Original Regular 170g; variant 170g. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/greenies-original-dog-treat-regular"
+      ]
+    },
+    {
+      "appId": 21,
+      "before": {
+        "barcode": "122711000015"
+      },
+      "after": {
+        "barcode": "9334214064659"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Advance Retriever Chicken Adult Dog Food 13kg; variant Advance Retriever Chicken Adult Dog Food 13kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/advance-retriever-chicken-adult-dog-food-13kg"
+      ]
+    },
+    {
+      "appId": 343,
+      "before": {},
+      "after": {
+        "barcode": "9325242000535"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact product and pack reviewed against the public source: Love Em Air Dried Beef Liver Dog Treat 200g; variant 200g. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/love-em-air-dried-beef-liver-dog-treat"
+      ]
+    },
+    {
+      "appId": 408,
+      "before": {},
+      "after": {
+        "barcode": "810339020965"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact product and pack reviewed against the public source: Billy & Margot Salmon Superfood Adult Dog Food 1.8kg; variant 1.8kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/billy-margot-salmon-superfood-adult-dog-food"
+      ]
+    },
+    {
+      "appId": 412,
+      "before": {},
+      "after": {
+        "barcode": "810339022457"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact product and pack reviewed against the public source: Billy & Margot Salmon Superfood Puppy Food 1.8kg; variant 1.8kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/billy-margot-salmon-superfood-puppy-food"
+      ]
+    },
+    {
+      "appId": 1036,
+      "before": {
+        "barcode": "9339687362998",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9334214029672",
+        "type": "Wet \u00b7 12 x 400g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: ADVANCE Adult All Breed Wet Dog Food Casserole with Chicken 12x400g Cans; variant ADVANCE Adult All Breed Wet Dog Food Casserole with Chicken 12x400g Cans. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/advance-adult-dog-all-breed-casserole-with-chicken-12x400g"
+      ]
+    },
+    {
+      "appId": 1015,
+      "before": {
+        "barcode": null,
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9334214061535",
+        "type": "Wet \u00b7 12 x 100g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: ADVANCE Adult All Breed Wet Dog Food Casserole with Chicken 12x100g Trays; variant ADVANCE Adult All Breed Wet Dog Food Casserole with Chicken 12x100g Trays. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/advance-chicken-casserole-adult-dog-food-100gx12"
+      ]
+    },
+    {
+      "appId": 1067,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "type": "Dry \u00b7 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Black Hawk Healthy Benefits Dental Adult Dog Food 2kg; variant 2kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/black-hawk-healthy-benefits-dental-adt-dog-food"
+      ]
+    },
+    {
+      "appId": 1068,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "type": "Dry \u00b7 4kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Black Hawk Healthy Benefits Hairball Chicken Adult Cat Food 4kg; variant 4kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/black-hawk-healthy-benefits-hairball-chck-adult-cat-food"
+      ]
+    },
+    {
+      "appId": 1074,
+      "before": {
+        "barcode": "9349107001451",
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9312239048755",
+        "type": "Treat \u00b7 100g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Black Hawk Dog Treats - Beef Jerky Sticks 100g; variant Black Hawk Dog Treats - Beef Jerky Sticks 100g. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/black-hawk-dog-treats-beef-jerky-sticks-100g"
+      ]
+    },
+    {
+      "appId": 1078,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "type": "Dry \u00b7 4kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Black Hawk Original Chicken Kitten Food 4kg; variant 4kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/black-hawk-original-chicken-kitten-food"
+      ]
+    },
+    {
+      "appId": 488,
+      "before": {
+        "type": "dry",
+        "identityNotice": "Product details are being checked after a barcode mismatch."
+      },
+      "after": {
+        "barcode": "9300605132474",
+        "type": "Dry \u00b7 3.5kg",
+        "identityNotice": "Recipe and 3.5kg pack barcode checked against an online retailer; physical pack scan not yet tested."
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact product and pack reviewed against the public source: Pro Plan Chicken Kitten Food 3.5kg; variant 3.5kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/pro-plan-chicken-kitten-food"
+      ]
+    },
+    {
+      "appId": 550,
+      "before": {
+        "barcode": "0052742548302",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "052742567013",
+        "type": "Wet \u00b7 24 x 156g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Hills Prescription Diet A/D Urgent Care Adult Dog & Cat Wet Food 156gx24; variant Hills Prescription Diet A/D Urgent Care Adult Dog & Cat Wet Food 156gx24. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/hills-prescription-diet-a-d-urgent-care-adult-dog-cat-wet-food-156gx24"
+      ]
+    },
+    {
+      "appId": 622,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740076481",
+        "type": "Dry \u00b7 7kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact product and pack reviewed against the public source: Leaps & Bounds Chicken & Rosemary Cat Food 7kg; variant 7kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-rosemary-cat-food"
+      ]
+    },
+    {
+      "appId": 623,
+      "before": {
+        "barcode": "9334214066486",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740080211",
+        "type": "Dry \u00b7 3.2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Leaps & Bounds Ocean Fish & Thyme Cat Food 3.2kg; variant 3.2kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-ocean-fish-thyme-cat-food"
+      ]
+    },
+    {
+      "appId": 645,
+      "before": {
+        "barcode": "9300681224551",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740080235",
+        "type": "Dry \u00b7 3.2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Leaps & Bounds Chicken Kitten Food 3.2kg; variant 3.2kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-rosemary-kitten-food"
+      ]
+    },
+    {
+      "appId": 647,
+      "before": {
+        "barcode": "9334214063324",
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "9345740051976",
+        "type": "Dry \u00b7 15kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Leaps & Bounds Chicken & Rice Puppy Food 15kg; variant 15kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-with-rice-puppy-food"
+      ]
+    },
+    {
+      "appId": 670,
+      "before": {
+        "type": "roll"
+      },
+      "after": {
+        "barcode": "9345740078409",
+        "type": "Roll \u00b7 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact product and pack reviewed against the public source: Leaps & Bounds Chicken & Salmon Dog Roll 2kg; variant Leaps & Bounds Chicken & Salmon Dog Roll 2kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-salmon-sweet-potato-dog-roll-2kg"
+      ]
+    },
+    {
+      "appId": 710,
+      "before": {
+        "barcode": "9339687428342",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9345740102265",
+        "type": "Dry \u00b7 3.2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Leaps & Bounds Sensitive Skin Ocean Fish Dog Food 3.2kg; variant 3.2kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-sensitive-skin-ocean-fish-dog-food"
+      ]
+    },
+    {
+      "appId": 829,
+      "before": {
+        "barcode": "9300633948962",
+        "type": "fresh"
+      },
+      "after": {
+        "barcode": "9340710003030",
+        "type": "Fresh \u00b7 1kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Prime100 Roll Chicken & Brown Rice Puppy Food 1kg; variant 1kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/prime100-roll-chicken-brown-rice-puppy-food"
+      ]
+    },
+    {
+      "appId": 843,
+      "before": {
+        "barcode": null,
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9300605147348",
+        "type": "Dry \u00b7 2.6kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Supercoat Smartblend Healthy Weight Chicken Adult Dog Food 2.6kg; variant 2.6kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/supercoat-smartblend-hlthy-wght-chicken-adult-dog-food"
+      ]
+    },
+    {
+      "appId": 851,
+      "before": {
+        "barcode": "0038100119315",
+        "type": "Supplement"
+      },
+      "after": {
+        "barcode": "038100119315",
+        "type": "Supplement \u00b7 30 x 1g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Pro Plan Fortiflora Dog Probiotic Supplement 1g-30PK; variant Pro Plan Fortiflora Dog Probiotic Supplement 1g-30PK. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/pro-plan-fortiflora-dog-probiotic-supplement-1g-30pk"
+      ]
+    },
+    {
+      "appId": 855,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9300605131552",
+        "type": "Wet \u00b7 12 x 85g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact product and pack reviewed against the public source: Pro Plan Salmon Kitten Pouch 85gx12; variant Pro Plan Salmon Kitten Pouch 85gx12. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/pro-plan-salmon-kitten-pouch-85gx12"
+      ]
+    },
+    {
+      "appId": 860,
+      "before": {
+        "barcode": "9335607000872",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9003579014899",
+        "type": "Wet \u00b7 12 x 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Royal Canin Appetite Control Gravy Wet Cat Food Pouch 85gx12; variant Royal Canin Appetite Control Gravy Wet Cat Food Pouch 85gx12. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/royal-canin-appetite-control-gravy-adult-cat-food-pch-85gx12"
+      ]
+    },
+    {
+      "appId": 908,
+      "before": {
+        "barcode": "74198611379",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "074198612499",
+        "type": "Dry \u00b7 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Taste Of The Wild Southwest Canyon Adult Dog Food 2kg; variant 2kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/taste-of-the-wild-southwest-canyon-adult-dog-food"
+      ]
+    },
+    {
+      "appId": 917,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "type": "Treat \u00b7 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Temptations Tantalising Turkey Cat Treat 85g; variant Temptations Tantalising Turkey Cat Treat 85g. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/temptations-tantalising-turkey-cat-treat-85g"
+      ]
+    },
+    {
+      "appId": 930,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "type": "Treat \u00b7 200g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Vitapet Jerhigh Chicken Tenders Dog Treat 200g; variant Vitapet Jerhigh Chicken Tenders Dog Treat 200g. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/vitapet-jerhigh-chicken-tenders-dog-treat-200g"
+      ]
+    },
+    {
+      "appId": 932,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "type": "Treat \u00b7 400g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Vitapet Jer High Milky Sticks Dog Treat 400g; variant Vitapet Jer High Milky Sticks Dog Treat 400g. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/vitapet-jer-high-milky-sticks-for-puppies-dogs-400g"
+      ]
+    },
+    {
+      "appId": 1098,
+      "before": {
+        "barcode": "9334214045740",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9334214029702",
+        "type": "Wet \u00b7 12 x 410g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: ADVANCE Adult All Breed Wet Dog Food Chicken & Salmon with Rice 12x410g Cans; variant ADVANCE Adult All Breed Wet Dog Food Chicken & Salmon with Rice 12x410g Cans. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/advance-adult-chicken-salmon-and-rice-dog-food-410gx12"
+      ]
+    },
+    {
+      "appId": 1142,
+      "before": {
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "9345740052072",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry \u00b7 12kg"
+      },
+      "absentBeforeFields": [
+        "barcode",
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact product and pack reviewed against the public source: Leaps & Bounds Grain Free Lamb Puppy Food 12kg; variant 12kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-grain-free-lamb-puppy-food"
+      ]
+    },
+    {
+      "appId": 1143,
+      "before": {
+        "barcode": "9334214066479",
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "9345740125165",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry \u00b7 7kg"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact product and pack reviewed against the public source: Leaps & Bounds Chicken Kitten Food 7kg; variant 7kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/leaps-bounds-chicken-rosemary-kitten-food"
+      ]
+    },
+    {
+      "appId": 1158,
+      "before": {
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "9300605147591",
+        "type": "Dry \u00b7 18kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact product and pack reviewed against the public source: Supercoat Smartblend Chicken Large Breed Puppy Food 18kg; variant Supercoat Smartblend Chicken Large Breed Puppy Food 18kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.petbarn.com.au/p/supercoat-chicken-large-puppy-food-18kg"
+      ]
+    },
+    {
+      "appId": 61,
+      "before": {
+        "barcode": "0052742005447"
+      },
+      "after": {
+        "barcode": "052742713908"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Hill's Science Diet Puppy Small Bites Dry Dog Food; variant 2kg. Barcode copied from the explicit variant barcode field. No physical scan performed.",
+      "sources": [
+        "https://www.justforpets.com.au/products/hills-science-diet-puppy-small-bites-dry-dog-food"
+      ]
+    },
+    {
+      "appId": 211,
+      "before": {
+        "type": "Dry \u00b7 1.5kg"
+      },
+      "after": {
+        "type": "Dry \u00b7 3kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: ADVANCE Adult Dry Cat Food Ocean Fish with Rice; variant 3kg. Barcode copied from the explicit variant barcode field. No physical scan performed. Existing code explicitly identifies 3kg, correcting the unsupported 1.5kg catalogue label.",
+      "sources": [
+        "https://www.justforpets.com.au/products/advance-adult-dry-cat-food-ocean-fish-with-rice"
+      ]
+    },
+    {
+      "appId": 130,
+      "before": {
+        "type": "Wet \u00b7 100g tray"
+      },
+      "after": {
+        "barcode": "9338362001832",
+        "type": "Wet \u00b7 100g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact product and pack reviewed against the public source: Black Hawk Grain Free Adult Lamb Wet Dog Food; variant 100g. Barcode copied from the explicit variant barcode field. No physical scan performed.",
+      "sources": [
+        "https://www.justforpets.com.au/products/black-hawk-grain-free-adult-lamb-wet-dog-food"
+      ]
+    },
+    {
+      "appId": 1043,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9334214045689",
+        "type": "Dry \u00b7 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact product and pack reviewed against the public source: ADVANCE Healthy Weight Adult Dry Cat Food Chicken with Rice 2kg Bag; variant Default Title. Barcode copied from the explicit variant barcode field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://www.justforpets.com.au/products/advance-healthy-weight-adult-dry-cat-food-chicken-with-rice-2kg-bag"
+      ]
+    },
+    {
+      "appId": 774,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9361300000086",
+        "type": "Dry \u00b7 2.5kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact product and pack reviewed against the public source: 2.5kg of Kibble that Counts - Chicken & Turkey with Superfood Extras; variant Default Title. Barcode copied from the explicit variant barcode field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://petzyo.com.au/products/2-5kg-of-kibble-that-counts-chicken-turkey-with-superfood-extras"
+      ]
+    },
+    {
+      "appId": 772,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "9349592339411",
+        "type": "Treat \u00b7 200g (5 sticks)"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact product and pack reviewed against the public source: Fang Rollin' for Roo Dental Sticks - 5 Sticks 200g; variant Default Title. Barcode copied from the explicit variant barcode field. No physical scan performed. Previously unspecified pack is now explicitly described.",
+      "sources": [
+        "https://petzyo.com.au/products/fang-rollin-for-roo-dental-sticks"
+      ]
+    },
+    {
+      "appId": 133,
+      "before": {
+        "barcode": "9310768112527"
+      },
+      "after": {
+        "barcode": "9421016596744"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Ziwi Peak Chicken Wet Dog Food; variant 170g Single Can. Barcode copied from the explicit variant barcode field. No physical scan performed.",
+      "sources": [
+        "https://www.vetnpetdirect.com.au/products/ziwi-peak-free-range-chicken"
+      ]
+    },
+    {
+      "appId": 27,
+      "before": {
+        "barcode": "9300657014537"
+      },
+      "after": {
+        "barcode": "735850548722"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: MfM (Meals For Mutts) Kangaroo Single Protein Grain & Gluten Free Dry Dog Food; variant 2.5kg. Barcode copied from the explicit variant barcode field. No physical scan performed.",
+      "sources": [
+        "https://www.vetnpetdirect.com.au/products/mfm-single-protein-kangaroo"
+      ]
+    },
+    {
+      "appId": 223,
+      "before": {
+        "barcode": "100000019326"
+      },
+      "after": {
+        "barcode": "9348601004708"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact product and pack reviewed against the public source: Ivory Coat Chicken Kitten Food 2kg; variant Ivory Coat Chicken Kitten Food 2kg. Barcode copied from the explicit Product structured-data GTIN field. No physical scan performed.",
+      "sources": [
+        "https://www.petbarn.com.au/p/ivory-coat-chicken-kitten-food-2kg"
+      ]
+    }
+  ]
+}

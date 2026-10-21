@@ -1,0 +1,1718 @@
+{
+  "checkedAt": "2026-10-13",
+  "description": "Exact-pack online barcode research; no physical scans claimed. Wrong cross-product associations removed.",
+  "updates": [
+    {
+      "appId": 84,
+      "before": {
+        "barcode": "9310022161308"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code 9310022161308 belongs to Pedigree Dry Dog Food Adult with Real Beef, variant 3kg, not this catalogue identity. Removed incorrect association; no replacement inferred.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/pedigree-beef-3kg"
+      ]
+    },
+    {
+      "appId": 370,
+      "before": {
+        "barcode": "855958006570"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code 855958006570 belongs to INABA Churu Chicken Recipe Cat Treats, variant 14gx4-EXP-03or04/2027, not this catalogue identity. Removed incorrect association; no replacement inferred.",
+      "sources": [
+        "https://www.petso.com.au/products/inaba-churu-chicken-recipe-cat-treats"
+      ]
+    },
+    {
+      "appId": 1005,
+      "before": {
+        "barcode": "9334214044217"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code 9334214044217 belongs to Advance Ocean Fish in Jelly Adult Cat Wet Food 85g Pouches, variant 12 Pouches, not this catalogue identity. Removed incorrect association; no replacement inferred.",
+      "sources": [
+        "https://vetslovepets.com.au/products/advance-adult-cat-ocean-fish-in-jelly-85g-x-12-pack"
+      ]
+    },
+    {
+      "appId": 1015,
+      "before": {
+        "barcode": "9300605147386"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code 9300605147386 belongs to Supercoat Adult Chicken Purina, variant 2.8kg, not this catalogue identity. Removed incorrect association; no replacement inferred.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/supercoat-adult-chicken-3kg-purina"
+      ]
+    },
+    {
+      "appId": 562,
+      "before": {
+        "barcode": "9334214054483"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code 9334214054483 belongs to Schmackos Strapz 200g Chicken, variant Default Title, not this catalogue identity. Removed incorrect association; no replacement inferred.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/schmackos-strapz-200g-chicken"
+      ]
+    },
+    {
+      "appId": 711,
+      "before": {
+        "barcode": "9300605147409"
+      },
+      "after": {
+        "barcode": null
+      },
+      "absentBeforeFields": [],
+      "reason": "Recorded code 9300605147409 belongs to Supercoat Adult Small Breed Chicken 2.8kg Purina, variant Default Title, not this catalogue identity. Removed incorrect association; no replacement inferred.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/supercoat-adult-small-breed-beef-3kg-purina"
+      ]
+    },
+    {
+      "appId": 207,
+      "before": {
+        "type": "Dry · 1.5kg"
+      },
+      "after": {
+        "type": "Dry · 4kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 4kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Advance Dry Cat Food Adult Multi Cat Chicken and Ocean Fish; variant: 4kg. Catalogue pack description corrected to the sourced pack; no barcode digits inferred.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/advance-dry-cat-food-multi-cat-chicken-salmon-500g"
+      ]
+    },
+    {
+      "appId": 362,
+      "before": {
+        "barcode": "9334214046846",
+        "type": "Treat · 32x12g"
+      },
+      "after": {
+        "barcode": "29334214046833",
+        "type": "Treat · 8 x 4 x 12g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 8 x 4 x 12g pack reviewed against retailer product title and explicit variant barcode field. Source title: Dine Creamy Treats Mixed Seafood 8 x (4 x 12g); variant: Default Title. Catalogue pack description corrected to the sourced pack; no barcode digits inferred.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/dine-creamy-treats-mixed-seafood8-x-4-x-12g"
+      ]
+    },
+    {
+      "appId": 360,
+      "before": {
+        "type": "Treat · 4x12g"
+      },
+      "after": {
+        "type": "Treat · 4 x 12g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 4 x 12g pack reviewed against retailer product title and explicit variant barcode field. Source title: Dine Creamy Treats Tuna Salmon 4 x12g; variant: Default Title.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/dine-creamy-treats-tuna-salmon-4x12g"
+      ]
+    },
+    {
+      "appId": 361,
+      "before": {
+        "barcode": "9334214049496",
+        "type": "Treat · 4x12g"
+      },
+      "after": {
+        "barcode": "9334214038810",
+        "type": "Treat · 4 x 12g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 4 x 12g pack reviewed against retailer product title and explicit variant barcode field. Source title: Dine Creamy Treats Chicken 4 x 12g; variant: Default Title.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/dine-creamy-treats-chick-12g-x-4"
+      ]
+    },
+    {
+      "appId": 95,
+      "before": {},
+      "after": {
+        "barcode": "9334214027319"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 15kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Optimum Dry Dog Food Adult Large Breed Chicken Rice and Vegetables 15kg; variant: Default Title.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/optimum-adult-large-breed-15kg-chick-rice-veg"
+      ]
+    },
+    {
+      "appId": 79,
+      "before": {},
+      "after": {
+        "barcode": "9300605149519"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 2.5kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Purina Pro Plan Small & Mini Breed Chicken Formula Adult Dog Dry Food; variant: 2.5kg.",
+      "sources": [
+        "https://vetslovepets.com.au/products/purina-pro-plan-adult-small-mini-chicken-formula-dry-dog-food"
+      ]
+    },
+    {
+      "appId": 83,
+      "before": {},
+      "after": {
+        "barcode": "9310022160905"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 3kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Pedigree Dry Dog Food Adult Beef and Vegetables; variant: 3kg.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/pedigree-mince-veg-3kg"
+      ]
+    },
+    {
+      "appId": 82,
+      "before": {},
+      "after": {
+        "barcode": "9310022161308"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 3kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Pedigree Dry Dog Food Adult with Real Beef; variant: 3kg.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/pedigree-beef-3kg"
+      ]
+    },
+    {
+      "appId": 94,
+      "before": {},
+      "after": {
+        "barcode": "9334214019482"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 3kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Optimum Dry Dog Food Adult Toy and Small Breed Chicken Rice and Vegetables; variant: 3kg.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/optimum-adult-small-breed-3kg"
+      ]
+    },
+    {
+      "appId": 69,
+      "before": {
+        "barcode": "9003579008201"
+      },
+      "after": {
+        "barcode": "3182550793001"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Royal Canin Dry Dog Food Mini Breed Puppy; variant: 2kg.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/royal-canin-dry-dog-food-mini-puppy-800g"
+      ]
+    },
+    {
+      "appId": 98,
+      "before": {},
+      "after": {
+        "barcode": "9334214060729"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 3kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Optimum Dry Dog Food Adult Dental Care with Chicken 3kg; variant: Default Title.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/optimum-dry-dog-food-adult-dental-care-with-chicken-3kg"
+      ]
+    },
+    {
+      "appId": 337,
+      "before": {},
+      "after": {
+        "barcode": "9334214041889"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 500g pack reviewed against retailer product title and explicit variant barcode field. Source title: Schmackos Strapz 500g Variety Pack; variant: Default Title.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/schmackos-strapz-500g-variety-pack"
+      ]
+    },
+    {
+      "appId": 1000,
+      "before": {
+        "barcode": "9334214019529"
+      },
+      "after": {
+        "barcode": "9310022566004"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 3kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Advance Total Wellbeing Medium Breed Chicken with Rice Adult Dog Dry Food; variant: 3kg.",
+      "sources": [
+        "https://vetslovepets.com.au/products/advance-adult-dog-total-wellbeing-chicken"
+      ]
+    },
+    {
+      "appId": 65,
+      "before": {
+        "barcode": "0052742296609"
+      },
+      "after": {
+        "barcode": "052742297200"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 1.81kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Hill's Science Diet Perfect Weight Adult Dry Dog Food; variant: 1.81kg.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/hills-science-diet-canine-perfect-weight-1-8kg"
+      ]
+    },
+    {
+      "appId": 295,
+      "before": {
+        "type": "Wet · 85g pouch (12pk)"
+      },
+      "after": {
+        "barcode": "9300605131576",
+        "type": "Wet · 12 x 85g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 12 x 85g pack reviewed against retailer product title and explicit variant barcode field. Source title: PRO PLAN Urinary Care Tender Pieces With Chicken In Gravy Adult Wet Cat Food; variant: 85g×12. Catalogue pack description corrected to the sourced pack; no barcode digits inferred.",
+      "sources": [
+        "https://www.petso.com.au/products/pro-plan-urinary-care-tender-pieces-with-chicken-in-gravy-adult-wet-cat-food-85g-x-12"
+      ]
+    },
+    {
+      "appId": 291,
+      "before": {
+        "barcode": null,
+        "type": "Wet · 85g pouch"
+      },
+      "after": {
+        "barcode": "9334214044415",
+        "type": "Wet · 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 85g pack reviewed against retailer product title and explicit variant barcode field. Source title: Advance Wet Kitten Food Lamb & Gravy; variant: 85g.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/advance-wet-kitten-food-lamb-gravy-85g"
+      ]
+    },
+    {
+      "appId": 268,
+      "before": {
+        "type": "Wet · 85g can"
+      },
+      "after": {
+        "type": "Wet · 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 85g pack reviewed against retailer product title and explicit variant barcode field. Source title: Fancy Feast Grilled Tuna Feast in Gravy; variant: 85g.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/fancy-feast-grilled-tuna-in-gravy-85g"
+      ]
+    },
+    {
+      "appId": 267,
+      "before": {
+        "barcode": "050000429844",
+        "type": "Wet · 85g can"
+      },
+      "after": {
+        "barcode": "8850124099228",
+        "type": "Wet · 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 85g pack reviewed against retailer product title and explicit variant barcode field. Source title: Fancy Feast Classic Pate Beef and Chicken Feast; variant: 85g.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/fancy-feast-classic-pate-beef-and-chicken-feast-85g"
+      ]
+    },
+    {
+      "appId": 153,
+      "before": {
+        "type": "Wet · 370g can"
+      },
+      "after": {
+        "barcode": "052742703701",
+        "type": "Wet · 370g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 370g pack reviewed against retailer product title and explicit variant barcode field. Source title: Hill's Science Diet Adult Chicken & Barley Entrée Canned Dog Food; variant: 370g.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/hills-science-diet-canine-adult-cans-chickbarl-370g"
+      ]
+    },
+    {
+      "appId": 154,
+      "before": {
+        "type": "Wet · 370g can"
+      },
+      "after": {
+        "barcode": "052742703602",
+        "type": "Wet · 370g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 370g pack reviewed against retailer product title and explicit variant barcode field. Source title: Hill's Science Diet Puppy Chicken & Barley Entrée Canned Dog Food; variant: 370g.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/hills-science-diet-canine-puppy-can-370g-x-1-chick-barley"
+      ]
+    },
+    {
+      "appId": 38,
+      "before": {},
+      "after": {
+        "barcode": "064992101459"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: ORIJEN Puppy Biologically Appropriate Dry Dog Food; variant: 2kg.",
+      "sources": [
+        "https://www.petso.com.au/products/orijen-puppy-biologically-appropriate-dry-dog-food"
+      ]
+    },
+    {
+      "appId": 39,
+      "before": {},
+      "after": {
+        "barcode": "064992104450"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: ORIJEN Senior Biologically Appropriate Dry Dog Food; variant: 2kg.",
+      "sources": [
+        "https://www.petso.com.au/products/orijen-senior-biologically-appropriate-dry-dog-food"
+      ]
+    },
+    {
+      "appId": 37,
+      "before": {
+        "barcode": "0064992281182"
+      },
+      "after": {
+        "barcode": "064992106454"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: ORIJEN Six Fish Biologically Appropriate Dry Dog Food; variant: 2kg.",
+      "sources": [
+        "https://www.petso.com.au/products/orijen-six-fish-biologically-appropriate-dry-dog-food"
+      ]
+    },
+    {
+      "appId": 129,
+      "before": {},
+      "after": {
+        "barcode": "9338362001818"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 100g pack reviewed against retailer product title and explicit variant barcode field. Source title: Black Hawk Grain Free Wet Dog Food 100g Chicken; variant: Default Title.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/black-hawk-dog-grain-free-100g-chicken"
+      ]
+    },
+    {
+      "appId": 33,
+      "before": {
+        "barcode": "100000019342"
+      },
+      "after": {
+        "barcode": "9347810000501"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 2.5kg pack reviewed against retailer product title and explicit variant barcode field. Source title: SavourLife Grain Free Adult Chicken; variant: 2.5kg.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/savour-life-grain-free-adult-chicken-2-5kg"
+      ]
+    },
+    {
+      "appId": 326,
+      "before": {
+        "barcode": "9347810001669"
+      },
+      "after": {
+        "barcode": "9347810000167"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 165g pack reviewed against retailer product title and explicit variant barcode field. Source title: Savourlife Australian Kangaroo Training Treats; variant: 165g.",
+      "sources": [
+        "https://vetslovepets.com.au/products/savourlife-australian-kangaroo-training-treats-165g"
+      ]
+    },
+    {
+      "appId": 17,
+      "before": {
+        "petType": "dog",
+        "foodType": "raw",
+        "type": "raw"
+      },
+      "after": {
+        "barcode": "671875797311",
+        "petType": "both",
+        "foodType": "wet",
+        "type": "Wet · 80g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 80g pack reviewed against retailer product title and explicit variant barcode field. Source title: ABSOLUTE HOLISTIC Raw Stew Chicken & Shell Fish Wet Canned Cat & Dog Food; variant: 80g. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://www.petso.com.au/products/absolute-holistic-raw-stew-chicken-shell-fish-wet-canned-cat-dog-food"
+      ]
+    },
+    {
+      "appId": 18,
+      "before": {
+        "barcode": "780348001227",
+        "petType": "dog",
+        "foodType": "raw",
+        "type": "raw"
+      },
+      "after": {
+        "barcode": "671875797328",
+        "petType": "both",
+        "foodType": "wet",
+        "type": "Wet · 80g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 80g pack reviewed against retailer product title and explicit variant barcode field. Source title: ABSOLUTE HOLISTIC Raw Stew Chicken & Fish Roe Wet Canned Cat & Dog Food; variant: 80g. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://www.petso.com.au/products/absolute-holistic-raw-stew-chicken-fish-roe-wet-canned-cat-dog-food"
+      ]
+    },
+    {
+      "appId": 997,
+      "before": {
+        "barcode": "9334214023281",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9334214046068",
+        "type": "Dry · 13kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 13kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Advance Active Chicken with Rice Adult Dog Dry Food; variant: 13kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://vetslovepets.com.au/products/advance-active-adult-dry-dog-food-chicken-with-rice"
+      ]
+    },
+    {
+      "appId": 1003,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "type": "Dry · 15kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 15kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Advance Total Wellbeing Medium Breed Chicken with Rice Adult Dog Dry Food; variant: 15kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://vetslovepets.com.au/products/advance-adult-dog-total-wellbeing-chicken"
+      ]
+    },
+    {
+      "appId": 1038,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "type": "Dry · 15kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 15kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Advance Dry Dog Food Adult Large Breed Chicken 15kg; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/advance-adult-large-breed-15kg-chicken"
+      ]
+    },
+    {
+      "appId": 1012,
+      "before": {
+        "barcode": "9334214021201",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9334214024356",
+        "type": "Dry · 2.5kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 2.5kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Advance Dry Dog Food Adult Weight Control Small And Toy Breed 2.5kg; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/advance-weight-control-2-5kg-small-and-toy-breed"
+      ]
+    },
+    {
+      "appId": 1069,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "type": "Dry · 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Black Hawk Healthy Benefits Dry Cat Food Indoor Chicken; variant: 2kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/black-hawk-healthy-benefits-dry-cat-food-indoor-chicken-2kg"
+      ]
+    },
+    {
+      "appId": 495,
+      "before": {
+        "barcode": "9300605122666",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9300605025523",
+        "type": "Dry · 450g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 450g pack reviewed against retailer product title and explicit variant barcode field. Source title: Fancy Feast Dry Beef, Salmon & Cheese; variant: 450g. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/fancy-feast-dry-beef-salmn-cheese"
+      ]
+    },
+    {
+      "appId": 504,
+      "before": {
+        "barcode": "8850127003918",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "050000580064",
+        "type": "Wet · 24 x 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 24 x 85g pack reviewed against retailer product title and explicit variant barcode field. Source title: Fancy Feast Gravy Lovers Poultry & Beef Variety 24x85g; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/fancy-feast-gravy-lovers-poultry-beef-variety-24x85g"
+      ]
+    },
+    {
+      "appId": 517,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "type": "Wet · 12 x 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 12 x 85g pack reviewed against retailer product title and explicit variant barcode field. Source title: Felix Double Delicious Fish Selection in Jelly 12x85g; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/felix-double-delicious-fish-selection-in-jelly12x85g"
+      ]
+    },
+    {
+      "appId": 548,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "type": "Treat · 340g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 340g pack reviewed against retailer product title and explicit variant barcode field. Source title: Greenies Original Large 340g; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant. Pack contains 8 treats.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/greenies-large-340g-8-pack"
+      ]
+    },
+    {
+      "appId": 549,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "type": "Treat · 170g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 170g pack reviewed against retailer product title and explicit variant barcode field. Source title: Greenies Original Treat Pack Teenie 170g; variant: 22 Treats. Previously unspecified pack now explicitly set to this sourced variant. Pack contains 22 treats.",
+      "sources": [
+        "https://vetslovepets.com.au/products/greenies-original-treat-pack-teenie-170g"
+      ]
+    },
+    {
+      "appId": 593,
+      "before": {
+        "barcode": "9330171023098",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "052742060545",
+        "type": "Dry · 11.34kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 11.34kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Hill's Science Diet Perfect Weight Adult Dry Dog Food; variant: 11.34kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/hills-science-diet-canine-perfect-weight-1-8kg"
+      ]
+    },
+    {
+      "appId": 605,
+      "before": {
+        "barcode": "9348601004715",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9348601003497",
+        "type": "Wet · 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 85g pack reviewed against retailer product title and explicit variant barcode field. Source title: Ivory Coat Kitten Wet Food Chicken & Ocean Fish in Jelly 85g; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/ivory-coat-kitten-chicken-ocean-fish-in-jelly-85g"
+      ]
+    },
+    {
+      "appId": 760,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9334214053400",
+        "type": "Wet · 85g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 85g pack reviewed against retailer product title and explicit variant barcode field. Source title: Optimum Wet Kitten Food Healthy Development Salmon Chunks in Jelly 85g; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/optimum-cat-kitten-healthy-development-chucks-in-jelly-salmon-85g"
+      ]
+    },
+    {
+      "appId": 761,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9334214053462",
+        "type": "Wet · 85g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 85g pack reviewed against retailer product title and explicit variant barcode field. Source title: Optimum Wet Cat Food Mature Salmon Chunks in Jelly 85g; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/optimum-cat-mature-chunks-in-jelly-salmon-85g"
+      ]
+    },
+    {
+      "appId": 762,
+      "before": {
+        "barcode": "0064992284183",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "064992107451",
+        "type": "Dry · 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: ORIJEN Fit & Trim Biologically Appropriate Dry Dog Food; variant: 2kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://www.petso.com.au/products/orijen-fit-trim-biologically-appropriate-dry-dog-food"
+      ]
+    },
+    {
+      "appId": 800,
+      "before": {
+        "barcode": "9332613004207",
+        "type": "air-dried"
+      },
+      "after": {
+        "barcode": "9340710002736",
+        "type": "Air-Dried · 600g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 600g pack reviewed against retailer product title and explicit variant barcode field. Source title: Prime100 SPD Air Dried Beef and Carrot; variant: 600g. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/prime-100-air-dried-beef-and-carrot"
+      ]
+    },
+    {
+      "appId": 805,
+      "before": {
+        "barcode": "100000150109",
+        "type": "air-dried"
+      },
+      "after": {
+        "barcode": "9340710002804",
+        "type": "Air-Dried · 600g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 600g pack reviewed against retailer product title and explicit variant barcode field. Source title: PRIME100 SPD Air Dried Turkey & Flaxseed Dog Food; variant: 600g. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://www.petso.com.au/products/prime100-spd-air-dried-turkey-flaxseed-dog-food"
+      ]
+    },
+    {
+      "appId": 807,
+      "before": {
+        "barcode": "9332613006560",
+        "type": "air-dried"
+      },
+      "after": {
+        "barcode": "9340710002842",
+        "type": "Air-Dried · 600g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 600g pack reviewed against retailer product title and explicit variant barcode field. Source title: PRIME100 SPD Air Dried Wild Boar & Pumpkin Dog Food; variant: 600g. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://www.petso.com.au/products/prime100-spd-air-dried-wild-boar-pumpkin-dog-food"
+      ]
+    },
+    {
+      "appId": 818,
+      "before": {
+        "barcode": "265681000002",
+        "type": "fresh"
+      },
+      "after": {
+        "barcode": "9340710002880",
+        "type": "Fresh · 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: PRIME100 SPD Venison & Sweet Potato Fresh Roll Dog Food 2kg; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://www.petso.com.au/products/prime100-spd-venison-sweet-potato-fresh-roll-dog-food-2kg"
+      ]
+    },
+    {
+      "appId": 820,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9340710002712",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 100g pack reviewed against retailer product title and explicit variant barcode field. Source title: Prime100 Beef Cut Treats 100g; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/prime-100-beef-cut-treats-100g"
+      ]
+    },
+    {
+      "appId": 827,
+      "before": {
+        "type": "treat"
+      },
+      "after": {
+        "barcode": "9340710002873",
+        "type": "Treat · 100g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 100g pack reviewed against retailer product title and explicit variant barcode field. Source title: Prime100 SPD Prime Cut Wild Boar Dog Treats; variant: 100g. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://vetslovepets.com.au/products/prime100-spd-prime-cut-wild-boar-dog-treats"
+      ]
+    },
+    {
+      "appId": 831,
+      "before": {
+        "barcode": "9339687316236",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9340710002644",
+        "type": "Wet · 354g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 354g pack reviewed against retailer product title and explicit variant barcode field. Source title: Prime100 SPD Slow Cooked Beef and Carrot; variant: 354g. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/prime-100-spd-slow-cooked-beef-and-carrot-354g"
+      ]
+    },
+    {
+      "appId": 840,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9340710002934",
+        "type": "Wet · 354g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 354g pack reviewed against retailer product title and explicit variant barcode field. Source title: PRIME100 SPD Slow Cooked Venison & Sweet Potato Wet Dog Food; variant: 354g. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://www.petso.com.au/products/prime100-spd-slow-cooked-venison-sweet-potato-dog-food"
+      ]
+    },
+    {
+      "appId": 858,
+      "before": {
+        "barcode": null,
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "9300605149687",
+        "type": "Dry · 3kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 3kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Purina Pro Plan Chicken Formula Puppy Medium Breed Dry Food; variant: 3kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://vetslovepets.com.au/products/purina-pro-plan-puppy-medium-formula-with-colostrum-dry-dog-food"
+      ]
+    },
+    {
+      "appId": 861,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550728102",
+        "type": "Dry · 1.5kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 1.5kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Royal Canin Chihuahua Breed Adult Dog Dry Food; variant: 1.5kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://vetslovepets.com.au/products/royal-canin-chihuahua-adult-1-5kg"
+      ]
+    },
+    {
+      "appId": 871,
+      "before": {
+        "barcode": "129510721202",
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550721219",
+        "type": "Dry · 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: ROYAL CANIN Persian Kitten Dry Cat Food 2kg; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://www.petso.com.au/products/royal-canin-persian-kitten-dry-cat-food-2kg"
+      ]
+    },
+    {
+      "appId": 873,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "3182550765398",
+        "type": "Dry · 4kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 4kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Royal Canin Expert Diet Calm Dog Dry Food; variant: 4kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://vetslovepets.com.au/products/royal-canin-vet-diet-canine-calm-4kg"
+      ]
+    },
+    {
+      "appId": 898,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "type": "Treat · 1 large chew"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 1 large chew pack reviewed against retailer product title and explicit variant barcode field. Source title: Schmackos Chomp N Chew Large X 1; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/schmackos-chomp-n-chew-large-x-1"
+      ]
+    },
+    {
+      "appId": 899,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "9334214020518",
+        "type": "Treat · 500g"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 500g pack reviewed against retailer product title and explicit variant barcode field. Source title: Schmackos Stix 500g Beef; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/schmackos-stix-500g-beef"
+      ]
+    },
+    {
+      "appId": 900,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "type": "Treat · 200g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 200g pack reviewed against retailer product title and explicit variant barcode field. Source title: Schmackos Strapz 200g Liver; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/schmackos-strapz-200g-liver"
+      ]
+    },
+    {
+      "appId": 970,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "type": "Wet · 12 x 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 12 x 85g pack reviewed against retailer product title and explicit variant barcode field. Source title: Whiskas Wet Kitten Food 12x85g Mixed Favourites in Jelly; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/whiskas-kitten-mixed-favourtites-in-jelly-85g"
+      ]
+    },
+    {
+      "appId": 1100,
+      "before": {
+        "barcode": "100000141388",
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "9334214065069",
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 4kg"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact recipe and 4kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Advance Dry Cat Food Adult Ocean Fish; variant: 4kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/advance-dry-cat-food-adult-ocean-fish-2kg"
+      ]
+    },
+    {
+      "appId": 1101,
+      "before": {
+        "barcode": "9334214002743",
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "9334214027333",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 15kg"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact recipe and 15kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Optimum Dry Dog Food Adult Toy and Small Breed Chicken Rice and Vegetables; variant: 15kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/optimum-adult-small-breed-3kg"
+      ]
+    },
+    {
+      "appId": 1102,
+      "before": {
+        "barcode": "9334214019482",
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "9334214045931",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 3kg"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact recipe and 3kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Advance Toy/Small Breed Chicken with Rice Adult Dog Dry Food; variant: 3kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://vetslovepets.com.au/products/advance-adult-dog-toy-small-breed-chicken-dry-dog-food"
+      ]
+    },
+    {
+      "appId": 1103,
+      "before": {
+        "barcode": "9334214045856",
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "9310022566509",
+        "type": "Dry · 2.5kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 2.5kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Advance Weight Control Medium Breed Chicken with Rice Adult Dog Dry Food; variant: 2.5kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://vetslovepets.com.au/products/advance-weight-control-all-breed-chicken"
+      ]
+    },
+    {
+      "appId": 1105,
+      "before": {
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "9334214046112",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 15kg"
+      },
+      "absentBeforeFields": [
+        "barcode",
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact recipe and 15kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Advance Dry Dog Food Healthy Age Medium Breed Chicken 15kg; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/advance-mature-15kg"
+      ]
+    },
+    {
+      "appId": 1112,
+      "before": {
+        "type": "Dry"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "dry",
+        "type": "Dry · 2kg"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Black Hawk Dry Cat Food Adult Ocean Fish; variant: 2kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/black-hawk-dry-food-cat-adult-ocean-fish-2kg"
+      ]
+    },
+    {
+      "appId": 1116,
+      "before": {
+        "type": "Treat",
+        "name": "Creamy Treats Tuna"
+      },
+      "after": {
+        "petType": "cat",
+        "foodType": "treat",
+        "type": "Treat · 4 x 12g",
+        "name": "Creamy Treats Tuna & Prawn"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact recipe and 4 x 12g pack reviewed against retailer product title and explicit variant barcode field. Source title: Dine Creamy Treats Tuna & Prawn 4x12g; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/dine-creamy-treats-tuna-prawn-4x12g"
+      ]
+    },
+    {
+      "appId": 1118,
+      "before": {
+        "barcode": "9300605098640",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9300605118218",
+        "petType": "cat",
+        "foodType": "wet",
+        "type": "Wet · 12 x 85g"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact recipe and 12 x 85g pack reviewed against retailer product title and explicit variant barcode field. Source title: Felix Double Delicious Meat Selection in Jelly 12x85g; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/felix-double-deliciousmeat-selection-in-jelly12x85g"
+      ]
+    },
+    {
+      "appId": 1125,
+      "before": {
+        "type": "Treat"
+      },
+      "after": {
+        "barcode": "642863111310",
+        "petType": "cat",
+        "foodType": "treat",
+        "type": "Treat · 130g"
+      },
+      "absentBeforeFields": [
+        "barcode",
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact recipe and 130g pack reviewed against retailer product title and explicit variant barcode field. Source title: Greenies Feline Dental Treat Oven Roasted Chicken; variant: 130g. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://vetslovepets.com.au/products/greenies-feline-dental-cat-treat-oven-roasted-chicken-flavour-60g"
+      ]
+    },
+    {
+      "appId": 1145,
+      "before": {
+        "barcode": "9310022067709",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9310022067105",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 400g"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact recipe and 400g pack reviewed against retailer product title and explicit variant barcode field. Source title: My Dog Wet Dog Food 400g Classic Loaf Chicken and Turkey; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/my-dog-400g-chick-turkey"
+      ]
+    },
+    {
+      "appId": 1146,
+      "before": {
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "9334214006550",
+        "petType": "dog",
+        "foodType": "wet",
+        "type": "Wet · 6 x 100g"
+      },
+      "absentBeforeFields": [
+        "barcode",
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact recipe and 6 x 100g pack reviewed against retailer product title and explicit variant barcode field. Source title: My Dog Classic Loaf with Tender Chicken 6x100g; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/my-dog-6-x-100g-chic-supreme"
+      ]
+    },
+    {
+      "appId": 1161,
+      "before": {
+        "barcode": null,
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "9300605149649",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 15kg"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact recipe and 15kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Purina Pro Plan Chicken Formula Puppy Medium Breed Dry Food; variant: 15kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://vetslovepets.com.au/products/purina-pro-plan-puppy-medium-formula-with-colostrum-dry-dog-food"
+      ]
+    },
+    {
+      "appId": 1166,
+      "before": {
+        "barcode": null,
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "9300605149557",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 7kg"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact recipe and 7kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Purina Pro Plan Small & Mini Breed Chicken Formula Adult Dog Dry Food; variant: 7kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://vetslovepets.com.au/products/purina-pro-plan-adult-small-mini-chicken-formula-dry-dog-food"
+      ]
+    },
+    {
+      "appId": 335,
+      "before": {
+        "type": "Treat · 500g"
+      },
+      "after": {
+        "type": "Treat · 1kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 1kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Schmackos Strapz 1kg Beef; variant: Default Title. Catalogue pack description corrected to the sourced pack; no barcode digits inferred.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/schmackos-strapz-1kg-beef"
+      ]
+    },
+    {
+      "appId": 312,
+      "before": {
+        "barcode": "9421016595815"
+      },
+      "after": {
+        "barcode": "9421016594849"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 400g pack reviewed against retailer product title and explicit variant barcode field. Source title: ZIWI Peak Free Range Chicken Recipe Air-Dried Cat Food; variant: 400g.",
+      "sources": [
+        "https://www.petso.com.au/products/ziwi-peak-free-range-chicken-recipe-air-dried-cat-food"
+      ]
+    },
+    {
+      "appId": 339,
+      "before": {
+        "type": "Treat · 200g"
+      },
+      "after": {
+        "type": "Treat · 150g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 150g pack reviewed against retailer product title and explicit variant barcode field. Source title: Blackdog Beef Liver; variant: 150g. Catalogue pack description corrected to the sourced pack; no barcode digits inferred.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/beef-liver-150g-blackdog"
+      ]
+    },
+    {
+      "appId": 338,
+      "before": {
+        "type": "Treat · 200g"
+      },
+      "after": {
+        "type": "Treat · 1kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 1kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Blackdog Duck Jerky; variant: 1kg. Catalogue pack description corrected to the sourced pack; no barcode digits inferred.",
+      "sources": [
+        "https://woononapetfoods.com.au/products/duck-jerky-120g"
+      ]
+    },
+    {
+      "appId": 68,
+      "before": {
+        "barcode": "3182550401937"
+      },
+      "after": {
+        "barcode": "3182550402224"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 4kg pack reviewed against retailer product title and explicit variant barcode field. Source title: ROYAL CANIN Maxi Adult Dry Dog Food 4kg; variant: Default Title.",
+      "sources": [
+        "https://www.petso.com.au/products/royal-canin-maxi-adult-dry-dog-food-4kg"
+      ]
+    },
+    {
+      "appId": 226,
+      "before": {},
+      "after": {
+        "barcode": "9300605133099"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 1.5kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Purina Pro Plan Adult 7+ Salmon & Tuna Formula Dry Cat Food; variant: 1.5kg.",
+      "sources": [
+        "https://vetslovepets.com.au/products/purina-pro-plan-adult-7-salmon-tuna-formula-dry-cat-food"
+      ]
+    },
+    {
+      "appId": 155,
+      "before": {
+        "barcode": "5060333431792",
+        "type": "Wet · 85g pouch"
+      },
+      "after": {
+        "barcode": "9003579008256",
+        "type": "Wet · 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 85g pack reviewed against retailer product title and explicit variant barcode field. Source title: ROYAL CANIN Mini Adult Wet Dog Food; variant: 85g.",
+      "sources": [
+        "https://www.petso.com.au/products/royal-canin-mini-adult-wet-dog-food-85g-x-12"
+      ]
+    },
+    {
+      "appId": 286,
+      "before": {
+        "barcode": "100000141396",
+        "type": "Wet · 85g pouch"
+      },
+      "after": {
+        "barcode": "9003579308943",
+        "type": "Wet · 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 85g pack reviewed against retailer product title and explicit variant barcode field. Source title: ROYAL CANIN Kitten Gravy Wet Cat Food 85g; variant: 85g.",
+      "sources": [
+        "https://www.petso.com.au/products/royal-canin-kitten-gravy-wet-cat-food-85g-x-12"
+      ]
+    },
+    {
+      "appId": 285,
+      "before": {
+        "barcode": "9339687419951",
+        "type": "Wet · 85g pouch"
+      },
+      "after": {
+        "barcode": "9003579308936",
+        "type": "Wet · 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 85g pack reviewed against retailer product title and explicit variant barcode field. Source title: ROYAL CANIN Instinctive Gravy Adult Wet Cat Food 85g; variant: 85g.",
+      "sources": [
+        "https://www.petso.com.au/products/royal-canin-instinctive-gravy-adult-wet-cat-food-85g-x-12"
+      ]
+    },
+    {
+      "appId": 156,
+      "before": {
+        "barcode": "3182550402271",
+        "type": "Wet · 140g pouch"
+      },
+      "after": {
+        "barcode": "9003579008379",
+        "type": "Wet · 140g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 140g pack reviewed against retailer product title and explicit variant barcode field. Source title: ROYAL CANIN Medium Adult Wet Dog Food; variant: 140g.",
+      "sources": [
+        "https://www.petso.com.au/products/royal-canin-medium-adult-wet-dog-food-140g-x-10"
+      ]
+    },
+    {
+      "appId": 135,
+      "before": {
+        "barcode": "9310768115344"
+      },
+      "after": {
+        "barcode": "9421016596720"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 170g pack reviewed against retailer product title and explicit variant barcode field. Source title: ZIWI Peak Mackerel & Lamb Recipe Grain Free Dog Food; variant: 170g.",
+      "sources": [
+        "https://www.petso.com.au/products/ziwi-peak-mackerel-lamb-recipe-grain-free-dog-food"
+      ]
+    },
+    {
+      "appId": 1016,
+      "before": {},
+      "after": {
+        "barcode": "9348601001578"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: IVORY COAT Grain Free Lamb Puppy Large Breed Dog Food 2kg; variant: Default Title.",
+      "sources": [
+        "https://www.petso.com.au/products/ivory-coat-grain-free-lamb-puppy-large-breed-dog-food-2kg"
+      ]
+    },
+    {
+      "appId": 36,
+      "before": {
+        "barcode": "0064992090685"
+      },
+      "after": {
+        "barcode": "064992108458"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: ORIJEN Tundra Biologically Appropriate Dry Dog Food; variant: 2kg.",
+      "sources": [
+        "https://www.petso.com.au/products/orijen-tundra-biologically-appropriate-dry-dog-food"
+      ]
+    },
+    {
+      "appId": 134,
+      "before": {},
+      "after": {
+        "barcode": "9421016596645"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 170g pack reviewed against retailer product title and explicit variant barcode field. Source title: ZIWI Peak Lamb Recipe Dog Food; variant: 170g.",
+      "sources": [
+        "https://www.petso.com.au/products/ziwi-peak-lamb-recipe-dog-food"
+      ]
+    },
+    {
+      "appId": 132,
+      "before": {
+        "barcode": "9310768115337"
+      },
+      "after": {
+        "barcode": "9421016596669"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 170g pack reviewed against retailer product title and explicit variant barcode field. Source title: ZIWI Peak Beef Recipe Grain Free Dog Food; variant: 170g.",
+      "sources": [
+        "https://www.petso.com.au/products/ziwi-peak-beef-recipe-grain-free-dog-food"
+      ]
+    },
+    {
+      "appId": 136,
+      "before": {},
+      "after": {
+        "barcode": "9421016596683"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 170g pack reviewed against retailer product title and explicit variant barcode field. Source title: ZIWI Peak Venison Recipe Grain Free Dog Food; variant: 170g.",
+      "sources": [
+        "https://www.petso.com.au/products/ziwi-peak-venison-recipe-grain-free-dog-food"
+      ]
+    },
+    {
+      "appId": 51,
+      "before": {
+        "barcode": "74198615070"
+      },
+      "after": {
+        "barcode": "074198612277"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: TASTE OF THE WILD High Prairie Bison Canine Formula Grain Free Dog Food; variant: 2kg.",
+      "sources": [
+        "https://www.petso.com.au/products/taste-of-the-wild-high-prairie-bison-canine-formula-grain-free-dog-food"
+      ]
+    },
+    {
+      "appId": 277,
+      "before": {
+        "barcode": "5060122490511",
+        "type": "Wet · 70g can"
+      },
+      "after": {
+        "barcode": "5060122497879",
+        "type": "Wet · 70g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 70g pack reviewed against retailer product title and explicit variant barcode field. Source title: APPLAWS Tuna Fillet with Prawn Adult Canned Wet Cat Food; variant: 70g.",
+      "sources": [
+        "https://www.petso.com.au/products/applaws-tuna-fillet-with-prawn-adult-canned-wet-cat-food-70g"
+      ]
+    },
+    {
+      "appId": 52,
+      "before": {
+        "barcode": "74198609581"
+      },
+      "after": {
+        "barcode": "074198612239"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: TASTE OF THE WILD Pacific Stream Canine; variant: 2kg.",
+      "sources": [
+        "https://www.petso.com.au/products/taste-of-the-wild-pacific-stream-canine"
+      ]
+    },
+    {
+      "appId": 278,
+      "before": {
+        "barcode": "5060333433628",
+        "type": "Wet · 70g can"
+      },
+      "after": {
+        "barcode": "5060333430283",
+        "type": "Wet · 70g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 70g pack reviewed against retailer product title and explicit variant barcode field. Source title: APPLAWS Tuna with Mackerel Jelly Wet Cat Food for Adult Cat; variant: 70g.",
+      "sources": [
+        "https://www.petso.com.au/products/applaws-tuna-and-mackerel-70g"
+      ]
+    },
+    {
+      "appId": 54,
+      "before": {
+        "barcode": "74198611010"
+      },
+      "after": {
+        "barcode": "074198612345"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: TASTE OF THE WILD Sierra Mountain Canine; variant: 2kg.",
+      "sources": [
+        "https://www.petso.com.au/products/taste-of-the-wild-sierra-mountain-canine"
+      ]
+    },
+    {
+      "appId": 763,
+      "before": {
+        "type": "dry"
+      },
+      "after": {
+        "barcode": "064992102258",
+        "type": "Dry · 10.6kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 10.6kg pack reviewed against retailer product title and explicit variant barcode field. Source title: ORIJEN Puppy Large Breed Biologically Appropriate Dry Dog Food 10.6kg; variant: Default Title. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://www.petso.com.au/products/orijen-puppy-large-breed-biologically-appropriate-dry-dog-food-10-6kg"
+      ]
+    },
+    {
+      "appId": 853,
+      "before": {
+        "barcode": "9300605140875",
+        "type": "Wet"
+      },
+      "after": {
+        "barcode": "038100026903",
+        "type": "Wet · 85g"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 85g pack reviewed against retailer product title and explicit variant barcode field. Source title: PRO PLAN Chicken Liver Entree Kitten Wet Cat Food; variant: 85g. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://www.petso.com.au/products/pro-plan-chicken-liver-entree-kitten-wet-cat-food"
+      ]
+    },
+    {
+      "appId": 1165,
+      "before": {
+        "type": "Dry"
+      },
+      "after": {
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 2.5kg"
+      },
+      "absentBeforeFields": [
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact recipe and 2.5kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Purina Pro Plan Small & Toy Breed Chicken Formula Puppy Dry Food; variant: 2.5kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://vetslovepets.com.au/products/purina-pro-plan-puppy-small-toy-breed-chicken-dry-dog-food-7kg"
+      ]
+    },
+    {
+      "appId": 1167,
+      "before": {
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "3182550743174",
+        "petType": "dog",
+        "foodType": "dry",
+        "type": "Dry · 1.5kg"
+      },
+      "absentBeforeFields": [
+        "barcode",
+        "petType",
+        "foodType"
+      ],
+      "reason": "Exact recipe and 1.5kg pack reviewed against retailer product title and explicit variant barcode field. Source title: Royal Canin Poodle Breed Adult Dog Dry Food; variant: 1.5kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://vetslovepets.com.au/products/royal-canin-poodle-adult"
+      ]
+    },
+    {
+      "appId": 1172,
+      "before": {
+        "barcode": "74198611089",
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "074198612413",
+        "type": "Dry · 2kg"
+      },
+      "absentBeforeFields": [],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: TASTE OF THE WILD High Prairie Grain Free Dog Food for Puppy; variant: 2kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://www.petso.com.au/products/taste-of-the-wild-high-prairie-grain-free-dog-food-for-puppy"
+      ]
+    },
+    {
+      "appId": 1173,
+      "before": {
+        "type": "Dry"
+      },
+      "after": {
+        "barcode": "074198612451",
+        "type": "Dry · 2kg"
+      },
+      "absentBeforeFields": [
+        "barcode"
+      ],
+      "reason": "Exact recipe and 2kg pack reviewed against retailer product title and explicit variant barcode field. Source title: TASTE OF THE WILD Pacific Stream Grain Free Dog Food for Puppy; variant: 2kg. Previously unspecified pack now explicitly set to this sourced variant.",
+      "sources": [
+        "https://www.petso.com.au/products/taste-of-the-wild-pacific-stream-grain-free-dog-food-for-puppy"
+      ]
+    },
+    {
+      "appId": 995,
+      "before": {
+        "barcode": "122711000084"
+      },
+      "after": {
+        "barcode": "9334214002743"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer-branded 2026 transition chart page 9, visually checked APN (Barcode) column against exact puppy recipe and 3kg pack. New lamb puppy codes are distinct from the retired turkey recipe. No physical scan claimed.",
+      "sources": [
+        "https://d347awuzx0kdse.cloudfront.net/westernpet/content-file/ADV%20Dry%20Dog%20Reno%20TP%20Codes.pdf?v=7464fab65b16fbbd1989480cdf15ddd96f8f9b08"
+      ]
+    },
+    {
+      "appId": 996,
+      "before": {
+        "barcode": "9310015205200"
+      },
+      "after": {
+        "barcode": "9334214150710"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer-branded 2026 transition chart page 9, visually checked APN (Barcode) column against exact puppy recipe and 3kg pack. New lamb puppy codes are distinct from the retired turkey recipe. No physical scan claimed.",
+      "sources": [
+        "https://d347awuzx0kdse.cloudfront.net/westernpet/content-file/ADV%20Dry%20Dog%20Reno%20TP%20Codes.pdf?v=7464fab65b16fbbd1989480cdf15ddd96f8f9b08"
+      ]
+    },
+    {
+      "appId": 1001,
+      "before": {
+        "barcode": "9334214002781"
+      },
+      "after": {
+        "barcode": "9334214150796"
+      },
+      "absentBeforeFields": [],
+      "reason": "Manufacturer-branded 2026 transition chart page 9, visually checked APN (Barcode) column against exact puppy recipe and 15kg pack. New lamb puppy codes are distinct from the retired turkey recipe. No physical scan claimed.",
+      "sources": [
+        "https://d347awuzx0kdse.cloudfront.net/westernpet/content-file/ADV%20Dry%20Dog%20Reno%20TP%20Codes.pdf?v=7464fab65b16fbbd1989480cdf15ddd96f8f9b08"
+      ]
+    }
+  ]
+}
