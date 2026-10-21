@@ -1,0 +1,14 @@
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+/mucka-collector*
+  Cache-Control: public, max-age=0, must-revalidate
+/mucka-pets*
+  Cache-Control: public, max-age=0, must-revalidate
+/mucka-plus*
+  Cache-Control: public, max-age=0, must-revalidate
+/mucka-specials*
+  Cache-Control: public, max-age=0, must-revalidate
+/assets/beta-config.js
+  Cache-Control: public, max-age=0, must-revalidate

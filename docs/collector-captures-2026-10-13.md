@@ -1,5 +1,19 @@
 # Mucka saved captures
 
+## Current beta on 22 October 2026
+
+The single beta is https://mucka-beta.netlify.app/, version 2026.10.22.1. Captures now have an explicit, consented **Send for review** action. It requires printed digits and separate front/barcode JPEG photos, accepts an optional ingredient panel, enforces a 7 MiB photo total below the provider request limit, and carries the app version and a stable content-based reference. A wrong-product button on product details records the scanned barcode and the product the app opened separately from the actual packet details. No report automatically changes the catalogue.
+
+HTTP failures, offline state and unexpected success pages are not treated as receipts. Identical retry payloads reuse their reference; repeated taps after a confirmed send do not resend. Edits require renewed consent. Drafts, photos and pending references survive on this device; storage conflicts prevent an old tab overwriting newer data. A device receipt does not establish catalogue approval. Importing a backup does not trust an imported claim that a report was received.
+
+The owner review inbox is Netlify's mucka-beta project, Forms, mucka-packet-review, including both Verified and Spam views. Notifications are configured for muckatester@gmail.com. Spam moderation can delay notification; the dashboard may need a refresh. Verified in Netlify means passed spam moderation, not a validated product match. The first live synthetic report, reference MU-1458B4BD-40D64E8BE7B4, was recovered from Spam; all fields and both uploaded JPEGs were inspected, and its email was verified in Gmail. It is delivery-test material, not product evidence.
+
+Netlify receives packet photos and product details only after consent. The UI asks contributors to exclude people, addresses, receipts and personal pet records; canvas conversion strips copied image metadata. Reports are not posted to the public app or committed to GitHub. Uploaded-file links should be treated as private review links and never shared publicly. Netlify also processes normal request metadata such as IP addresses. The original local ZIP export/restore remains available for backups.
+
+There is one public beta address. Older app links first offer backup recovery if they hold local pets, captures or favourites; clean older browsers continue to the current beta automatically. The recovery exporter never deletes or uploads old personal records. Restore uses the existing validated pet/capture formats; favourites merge after validation.
+
+The following dated section is the original local-only release history, not current sending behaviour.
+
 Testing version 2026.10.13.10 replaces the temporary Collector queue with My captures. A missing barcode opens a prefilled draft directly. The owner can add separate front-of-pack, barcode and ingredient/nutrition photos, plus optional brand, recipe, pack size and notes. A repeated valid barcode, including its zero-padded representation, reopens the existing capture.
 
 Drafts save after edits and each photo. “Saved on this device” appears only after the IndexedDB transaction commits. Photos are stored as JPEG Blobs at up to 2,200 pixels on the longest edge, with no location metadata copied from the source. Saved captures and drafts can be reopened, edited, exported or individually deleted. Closing the editor waits for pending writes; leaving with uncommitted changes prompts the browser's unsaved-work warning where supported.

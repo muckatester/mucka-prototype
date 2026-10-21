@@ -41,7 +41,7 @@ function setup(options = {}) {
   vm.runInContext('var products = ' + productsLiteral(html) + ';' +
     html.match(/var barcodeEvidence = .*;\n/)[0] + html.match(/var starterCatalogue = [\s\S]*?;\n/)[0] + html.match(/var sourcedProductImages = .*;\n/)[0] + html.match(/var responsiveProductImages = .*;\n/)[0] + html.match(/var legacyImageReviews = .*;\n/)[0] + html.match(/var homeCategories = \[[\s\S]*?\n];/)[0] + html.match(/var perPage = \d+;/)[0], c);
   vm.runInContext(html.match(/var mergedProductIds = .*;\n/)[0] + 'var archivedProducts = [];', c);
-  for (const name of ['resolveCatalogueId', 'applyCatalogueMerges', 'recalculateScore', 'hasScoreData', 'getLegacyScoreHtml', 'getScoreBadge', 'compareProductScores',
+  for (const name of ['resolveCatalogueId', 'applyCatalogueMerges', 'recalculateScore', 'hasScoreData', 'getScoreBadge', 'compareProductScores',
     'normalizeGtin', 'getBarcodeEvidence', 'getBarcodeStatusText', 'getBarcodeStatusHtml', 'escapeHtml', 'getProductEvidence', 'getEvidenceLinks', 'getEvidenceFieldHtml', 'getProductFactsHtml', 'getEvidenceSummaryHtml', 'getIngredientListHtml', 'getFoodSVGIcon', 'adjustColor', 'getProductPlaceholder',
     'handleProductImageError', 'getSourcedProductImage', 'getLegacyImageReview', 'getLegacyProductImage', 'getProductImage', 'productHasImage', 'showProduct', 'renderProductCard', 'renderPage', 'renderCategoryPage',
     'renderFavourites', 'runOverlaySearch', 'applyFilters', 'getRecommendations', 'renderCategoryGrid',

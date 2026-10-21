@@ -1,16 +1,16 @@
-/* Mucka capture workflow. No capture is sent to a server by this page. */
+/* Drafts stay local. Only the explicit, consented Send action uploads packet reports. */
 (function () {
   'use strict';
   var $ = function (id) { return document.getElementById(id); };
   var store, records = [], current = null, dirty = false, changeNumber = 0, savePromise = null, saveTimer;
-  var photosBusy = 0, initialized = false, previewUrls = [], listUrls = [], exportUrl, exportFile, exporting = false;
+  var photosBusy = 0, initialized = false, previewUrls = [], listUrls = [], exportUrl, exportFile, exporting = false, sending = false;
   var scanner = null, scannerTask = null, scannerEpoch = 0, scanned = false, toastTimer;
   var roles = ['front', 'barcode', 'ingredients'];
   var fields = ['barcode', 'brand', 'name', 'pack', 'notes'];
   function fieldId(field) { return 'capture' + field[0].toUpperCase() + field.slice(1); }
   function keyFor(code) { return code.trim() ? (normalizeGtin(code) || 'raw:' + code.trim()) : null; }
   function newRecord(barcode) {
-    return {id: crypto.randomUUID(), barcode: barcode || '', brand: '', name: '', pack: '', notes: '', photos: {}, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(), status: 'draft', revision: 0};
+    return {id: crypto.randomUUID(), barcode: barcode || '', brand: '', name: '', pack: '', notes: '', reportType:'missing', photos: {}, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(), status: 'draft', revision: 0};
   }
   function useful(record) { return fields.some(function (f) { return !!record[f].trim(); }) || roles.some(function (r) { return !!record.photos[r]; }); }
   function snapshot(record) { return Object.assign({}, record, {photos: Object.assign({}, record.photos)}); }
@@ -31,6 +31,7 @@
   }
   function markDirty() {
     if (!current) return;
+    if (current.submission) current.submissionDirty = true;
     dirty = true; changeNumber++; status('Saving changes…');
     clearTimeout(saveTimer); saveTimer = setTimeout(function () { persist(); }, 300);
   }
@@ -64,19 +65,24 @@
     $('editorTitle').textContent = current.revision ? 'Your product capture' : 'Add a product';
     $('draftBadge').textContent = current.status === 'saved' ? 'Saved capture' : 'Draft';
     $('deleteCapture').hidden = !current.revision;
+    $('reportType').value = current.reportType || 'missing'; $('sendConsent').checked = false;
+    $('reportedProduct').hidden = !current.reportedProduct;
+    $('reportedProduct').textContent = current.reportedProduct ? 'The app opened: ' + current.reportedProduct.brand + ' · ' + current.reportedProduct.name + ' · ' + current.reportedProduct.pack + ' (App ID ' + current.reportedProduct.id + '). Tell us what the actual packet says below.' : '';
+    renderSubmission();
     status(current.revision ? 'Saved on this device' : 'Add something to start your draft');
     updateBarcodeHint(); renderPhotos(); window.scrollTo(0, 0); $('editorTitle').focus();
   }
-  async function startCapture(code) {
+  async function startCapture(code, context) {
     if (!initialized) return;
     if (photosBusy) { toast('Please wait for the photo to finish.'); return; }
     if (!(await persist())) return;
     if (store) { try { records = await store.list(); } catch (e) { showError(e); return; } }
     var key = keyFor(code || ''), existing = key && records.find(function (r) { return r.matchKey === key; });
     current = existing ? snapshot(existing) : newRecord(code); dirty = false; if (store) clearError();
+    if (context) { current.reportType = context.reportType; current.reportedProduct = context.product; markDirty(); }
     showEditor();
-    if (existing) toast('Already collected — opening your saved capture.');
-    else if (code) { markDirty(); await persist(); }
+    if (existing) { toast('Already collected — opening your saved capture.'); if (context) await persist(); }
+    else if (code || context) { markDirty(); await persist(); }
   }
   async function openCapture(id) {
     if (photosBusy || !(await persist())) return;
@@ -113,16 +119,19 @@
     var id = current.id; photosBusy++; $('photoStatus').textContent = 'Preparing your photo…'; setBusy(true);
     try {
       var photo = await compressPhoto(file); if (!current || current.id !== id) return;
-      current.photos[role] = photo; renderPhotos(); markDirty();
+      current.photos[role] = photo; renderPhotos(); markDirty(); renderSubmission();
       var ok = await persist(); $('photoStatus').textContent = ok ? 'Photo saved on this device.' : 'Photo added, but not saved yet. Retry saving or export a backup.';
     } catch (e) { $('photoStatus').textContent = e.message; }
     finally { photosBusy--; setBusy(photosBusy > 0); }
   }
   function setBusy(busy) {
-    ['saveCapture', 'backToCollection', 'deleteCapture', 'exportCurrent', 'scanEditor'].forEach(function (id) { $(id).disabled = busy; });
+    busy = busy || sending;
+    ['saveCapture', 'backToCollection', 'deleteCapture', 'exportCurrent', 'scanEditor', 'sendReview', 'sendConsent', 'reportType'].forEach(function (id) { $(id).disabled = busy; });
+    fields.forEach(function(f) { $(fieldId(f)).disabled = sending; });
     roles.forEach(function (r) { $(r + 'Input').disabled = busy; });
   }
   async function collection() {
+    if (sending) return;
     if (photosBusy) { toast('Please wait for the photo to finish.'); return; }
     if (!(await persist())) return;
     try { if (store) records = await store.list(); } catch (e) { showError(e); return; }
@@ -141,7 +150,7 @@
       var title = document.createElement('strong'); title.textContent = [record.brand, record.name].filter(Boolean).join(' · ') || 'Product details to add';
       var barcode = document.createElement('p'); barcode.textContent = [record.barcode || 'No barcode yet', record.pack].filter(Boolean).join(' · ');
       var state = document.createElement('p'); state.className = 'status-line'; var count = roles.filter(function (r) { return record.photos[r]; }).length;
-      state.textContent = (record.status === 'draft' ? 'Draft' : 'Saved') + ' · ' + count + (count === 1 ? ' photo' : ' photos') + ' · ' + new Date(record.updatedAt).toLocaleDateString('en-AU', {day: 'numeric', month: 'short'});
+      state.textContent = (record.submission && !record.submissionDirty ? 'Sent for review' : record.submission ? 'Edited since sent' : record.status === 'draft' ? 'Draft' : 'Saved') + ' · ' + count + (count === 1 ? ' photo' : ' photos') + ' · ' + new Date(record.updatedAt).toLocaleDateString('en-AU', {day: 'numeric', month: 'short'});
       summary.append(title, barcode, state); var arrow = document.createElement('span'); arrow.className = 'chevron'; arrow.textContent = '›'; arrow.setAttribute('aria-hidden', 'true'); button.append(thumb, summary, arrow);
       button.addEventListener('click', function () { openCapture(record.id); }); list.append(button);
     });
@@ -156,6 +165,7 @@
     } finally { $('saveCapture').disabled = false; }
   }
   async function deleteCapture() {
+    if (sending) return;
     if (!current || photosBusy || !(await persist())) return;
     if (!confirm('Delete this capture and its photos from this device? Export a backup first if you need to keep them.')) return;
     try { if (!store) throw new Error('Storage is unavailable.'); await store.remove(current.id, current.revision); records = records.filter(function (r) { return r.id !== current.id; }); current = null; dirty = false; await collection(); toast('Capture deleted.'); }
@@ -182,7 +192,7 @@
         manifest.push(metadata); zip.file(folder + '/details.json', JSON.stringify(metadata, null, 2));
         zip.file(folder + '/details.txt', 'MUCKA PRODUCT CAPTURE\nBarcode: ' + record.barcode + '\nBrand: ' + record.brand + '\nProduct: ' + record.name + '\nPack: ' + record.pack + '\nNotes: ' + record.notes + '\nStatus: ' + record.status + '\nCaptured: ' + record.createdAt + '\nUpdated: ' + record.updatedAt + '\nPhotos: ' + Object.keys(metadata.photos).join(', ') + '\nUnverified owner capture for review.');
       });
-      zip.file('mucka-captures.json', JSON.stringify({schemaVersion: 1, appVersion: '2026.10.14.2', exportedAt: exportedAt, captures: manifest}, null, 2));
+      zip.file('mucka-captures.json', JSON.stringify({schemaVersion: 1, appVersion: MuckaCaptureSubmission.version, exportedAt: exportedAt, captures: manifest}, null, 2));
       zip.file('READ-ME.txt', 'Mucka captures\nShare this ZIP with the Mucka reviewer. Each folder contains the product details and labelled packet photos. These are unverified captures, not approved catalogue records. Keep a copy outside the browser as a backup.');
       var blob = await zip.generateAsync({type: 'blob', compression: 'STORE'}), name = 'Mucka-captures-' + exportedAt.slice(0, 10) + '.zip';
       if (exportUrl) URL.revokeObjectURL(exportUrl); exportUrl = URL.createObjectURL(blob); exportFile = new File([blob], name, {type: 'application/zip'});
@@ -237,10 +247,41 @@
     } catch (e) { if (epoch === scannerEpoch) $('cameraStatus').textContent = 'Camera unavailable. Allow camera access in your browser settings, or enter the digits below the barcode instead.'; }
     finally { scannerTask = null; }
   }
+  function renderSubmission() {
+    var receipt = current && current.submission, target = $('submissionStatus');
+    target.classList.remove('error');
+    target.textContent = receipt ? (current.submissionDirty ? 'You have changed this capture since sending. Send again to share the changes. Previous reference: ' : 'Sent for review — awaiting a catalogue check. Reference: ') + receipt.reference : current && current.pendingSubmission ? 'Previous upload not confirmed. Retry when connected. Reference: ' + current.pendingSubmission.reference : 'Not sent yet. Your draft stays on this device until you choose Send for review.';
+    $('sendReview').textContent = receipt && !current.submissionDirty ? 'Report already sent' : receipt ? 'Send updated capture' : 'Send for review';
+  }
+  async function sendForReview() {
+    if (!current || photosBusy || sending) return;
+    var target = $('submissionStatus'); target.classList.remove('error');
+    if (current.submission && !current.submissionDirty) { renderSubmission(); return; }
+    if (!$('sendConsent').checked) { target.textContent = 'Please confirm you agree to share these packet photos and details.'; target.classList.add('error'); $('sendConsent').focus(); return; }
+    try { MuckaCaptureSubmission.validate(current); }
+    catch(e) { target.textContent = e.message; target.classList.add('error'); return; }
+    if (!(await persist())) { target.textContent = 'Please save or export your draft before sending. Nothing has been uploaded.'; target.classList.add('error'); return; }
+    sending = true; setBusy(true); target.textContent = 'Preparing your packet report…';
+    try {
+      var prepared = await MuckaCaptureSubmission.prepare(snapshot(current));
+      if (current.submission && current.submission.fingerprint === prepared.fingerprint) { current.submissionDirty = false; markDirty(); current.submissionDirty = false; await persist(); renderSubmission(); return; }
+      current.pendingSubmission = {reference:prepared.reference, fingerprint:prepared.fingerprint}; markDirty();
+      if (!(await persist())) throw new Error('Could not save the upload reference on this device. Please retry saving; no upload was started.');
+      target.textContent = 'Sending photos… Keep this page open. Reference: ' + prepared.reference;
+      var receipt = await MuckaCaptureSubmission.send(prepared);
+      current.submission = receipt; delete current.pendingSubmission; current.status = 'saved'; markDirty(); current.submissionDirty = false;
+      var saved = await persist(); renderSubmission(); $('sendConsent').checked = false;
+      if (!saved) target.textContent += ' The report was sent, but this device could not save the receipt. Keep the reference above.';
+    } catch(e) {
+      target.textContent = e.message + (prepared ? ' Reference: ' + prepared.reference : ''); target.classList.add('error');
+    } finally { sending = false; setBusy(false); }
+  }
   async function init() {
-    fields.forEach(function (f) { $(fieldId(f)).addEventListener('input', function () { if (!current) return; current[f] = this.value; if (f === 'barcode') updateBarcodeHint(); markDirty(); }); });
+    fields.forEach(function (f) { $(fieldId(f)).addEventListener('input', function () { if (!current) return; current[f] = this.value; if (f === 'barcode') updateBarcodeHint(); markDirty(); renderSubmission(); }); });
+    $('reportType').onchange = function() { if (!current) return; current.reportType = this.value; markDirty(); renderSubmission(); };
+    $('sendReview').onclick = sendForReview;
     roles.forEach(function (role) { $(role + 'Input').addEventListener('change', function () { addPhoto(role, this); }); });
-    document.querySelectorAll('[data-remove]').forEach(function (button) { button.addEventListener('click', function () { if (photosBusy) return; delete current.photos[this.dataset.remove]; renderPhotos(); markDirty(); }); });
+    document.querySelectorAll('[data-remove]').forEach(function (button) { button.addEventListener('click', function () { if (photosBusy || sending) return; delete current.photos[this.dataset.remove]; renderPhotos(); markDirty(); renderSubmission(); }); });
     $('importBackup').onchange = function () { restoreBackup(this); };
     $('newCapture').onclick = function () { startCapture(''); }; $('scanNew').onclick = openScanner; $('scanEditor').onclick = openScanner;
     $('backToCollection').onclick = collection; $('captureForm').onsubmit = saveCapture; $('deleteCapture').onclick = deleteCapture;
@@ -251,13 +292,17 @@
     $('closeScanner').onclick = closeScanner; $('scannerDialog').addEventListener('cancel', function (e) { e.preventDefault(); closeScanner(); });
     $('useManual').onclick = async function () { await closeScanner(); if (!current) await startCapture(''); $('captureBarcode').focus(); };
     document.querySelectorAll('a[href="index.html"]').forEach(function (link) { link.addEventListener('click', async function (e) { e.preventDefault(); if (photosBusy) { toast('Please wait for the photo to finish.'); return; } if (await persist()) location.href = 'index.html'; }); });
-    window.addEventListener('beforeunload', function (e) { if (dirty || savePromise || photosBusy) { e.preventDefault(); e.returnValue = ''; } });
+    window.addEventListener('beforeunload', function (e) { if (dirty || savePromise || photosBusy || sending) { e.preventDefault(); e.returnValue = ''; } });
     document.addEventListener('visibilitychange', function () { if (document.hidden) { persist(); closeScanner(); } });
     try { store = await MuckaCaptureStore.open(); records = await store.list(); } catch (e) { showError(e); }
     initialized = true; $('collectionLoading').hidden = true; renderCollection();
     var params = new URLSearchParams(location.search), barcode = params.get('barcode');
     if (params.has('capture')) await openCapture(params.get('capture'));
-    else if (barcode || params.has('new')) await startCapture((barcode || '').slice(0, 80).trim());
+    else if (barcode || params.has('new')) {
+      var context = null;
+      if (['wrong','details'].includes(params.get('report'))) context = {reportType:params.get('report'), product:{id:(params.get('product') || '').slice(0,12), brand:(params.get('brand') || '').slice(0,120), name:(params.get('name') || '').slice(0,180), pack:(params.get('pack') || '').slice(0,80)}};
+      await startCapture((barcode || '').slice(0, 80).trim(), context);
+    }
   }
   init();
 })();

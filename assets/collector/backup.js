@@ -7,6 +7,13 @@
       if (!raw || typeof raw.id !== 'string' || !/^[a-zA-Z0-9-]{1,80}$/.test(raw.id)) throw new Error('The backup contains an invalid capture ID.');
       var record = {id: raw.id, photos: {}, status: raw.status === 'saved' ? 'saved' : 'draft', revision: 0};
       Object.keys(fields).forEach(function (key) { if (typeof raw[key] !== 'string' || raw[key].length > fields[key]) throw new Error('The backup contains invalid product details.'); record[key] = raw[key]; });
+      record.reportType = ['missing','wrong','details'].includes(raw.reportType) ? raw.reportType : 'missing';
+      if (raw.reportedProduct) {
+        var p = raw.reportedProduct;
+        if (!p || typeof p !== 'object' || !/^\d{1,12}$/.test(String(p.id))) throw new Error('The reported product reference is invalid.');
+        record.reportedProduct = {id:String(p.id)};
+        ['brand','name','pack'].forEach(function(key) { if (typeof p[key] !== 'string' || p[key].length > (key==='name'?180:key==='brand'?120:80)) throw new Error('The reported product reference is invalid.'); record.reportedProduct[key]=p[key]; });
+      }
       ['createdAt', 'updatedAt'].forEach(function (key) { if (typeof raw[key] !== 'string' || !Number.isFinite(Date.parse(raw[key]))) throw new Error('The backup contains an invalid date.'); record[key] = new Date(raw[key]).toISOString(); });
       if (!raw.photos || typeof raw.photos !== 'object' || Array.isArray(raw.photos)) throw new Error('The backup photo list is invalid.');
       Object.keys(raw.photos).forEach(function (role) {

@@ -88,27 +88,26 @@ test('Raw catalogue preserves documented metadata corrections and October barcod
   }
   const actual = JSON.parse(JSON.stringify(vm.runInNewContext(productsLiteral(html))));
   assert.equal(actual.length, 1082);
+  const audit = JSON.parse(fs.readFileSync(path.join(root, 'data/quarantined-prototype-2026-10-22.json'), 'utf8'));
+  assert.equal(audit.records.length, expected.length);
+  for (const p of expected) {
+    const old = audit.records.find(r => r.appId === p.id);
+    assert.deepEqual(old.ingredients, p.ingredients || []);
+    assert.equal(old.score, p.score);
+    p.score = null; p.ingredients = [];
+  }
   assert.deepEqual(actual, expected);
 });
 
-test('Legacy numeric scores are visible only as unvalidated detail-page history, not as active ratings', () => {
+test('Legacy scores and template lists cannot appear on any active product', () => {
   const {c, element} = setup();
-  const raw = JSON.parse(JSON.stringify(vm.runInNewContext(productsLiteral(html))));
-  assert.equal(c.products.concat(c.archivedProducts).filter(p => p.ingredients?.length).length, 444);
+  assert.equal(c.products.concat(c.archivedProducts).filter(p => p.ingredients?.length).length, 0);
+  assert.doesNotMatch(html, /id="legacyScorePanel"|function getLegacyScoreHtml/);
   for (const p of c.products) {
-    assert.equal(p.score, null, 'Active score withheld for ' + p.id);
-    assert.equal(p._legacyPrototypeScore, raw.find(x => x.id === p.id).score, 'Legacy score retained for review only: ' + p.id);
-    assert.equal(p._ingredientScore, null);
-    assert.equal(p._credScore, null);
+    assert.equal(p.score, null);
+    assert.equal(p._legacyPrototypeScore, undefined);
     assert.equal(c.hasScoreData(p), false);
     c.showProduct(p.id);
-    const legacy = raw.find(x => x.id === p.id).score;
-    if (Number.isFinite(legacy)) {
-      assert.equal(element('legacyScorePanel').hidden, false);
-      assert.match(element('legacyScorePanel').innerHTML, /Legacy prototype score — unvalidated/);
-      assert.match(element('legacyScorePanel').innerHTML, new RegExp(legacy + ' \/ 100'));
-      assert.match(element('legacyScorePanel').innerHTML, /not a health rating, vet advice or a product recommendation/);
-    } else assert.equal(element('legacyScorePanel').hidden, true);
     assert.equal(element('assessmentStatus').textContent, 'Assessment under review');
   }
 });
@@ -177,16 +176,16 @@ test('Search, browse and favourites retain product access and neutral badges', (
 test('Injected scores, ingredient ratings and manufacturer flags cannot reactivate public judgements', () => {
   const {c, element} = setup();
   const p = c.products[0];
-  const originalLegacy = p._legacyPrototypeScore;
+
   p.score = 100; p._ingredientScore = 85; p._credScore = 15;
   p.ingredients = [{name: '<img src=x onerror=alert(1)> Chicken', rating: 'SECRET_RATING', desc: 'SECRET_HEALTH_CLAIM'}];
   p.cred = [{name: 'SECRET_MANUFACTURER_FLAG', value: true, points: 15}];
   assert.equal(c.hasScoreData(p), false);
   assert.equal(c.getScoreBadge(p), '<span class="assessment-badge">Under review</span>');
   c.showProduct(p.id);
-  assert.ok(!element('legacyScorePanel').innerHTML.includes('100 / 100') || originalLegacy === 100);
+  assert.doesNotMatch(html, /id="legacyScorePanel"/);
   const detail = element('ingredientList').innerHTML + element('credList').innerHTML;
-  assert.match(detail, /&lt;img/);
+  assert.doesNotMatch(detail, /Chicken|&lt;img/);
   assert.doesNotMatch(detail, /<img|SECRET_|\/85|\/15|\/100/);
   c.getRecommendations();
   assert.match(element('recResults').innerHTML, /Recommendations are paused/);
